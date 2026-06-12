@@ -1,0 +1,15 @@
+{
+  "status": "skipped",
+  "candidate_pages": [],
+  "accepted_pages": [],
+  "entry_count": 0,
+  "canonical_items": [],
+  "resolved_items": [],
+  "unresolved_items": [],
+  "outline_entries": [],
+  "page_checks": [],
+  "active_item_sequence": [],
+  "monotonic_active_progression": true,
+  "route_failure_reason": null,
+  "ready": false
+}

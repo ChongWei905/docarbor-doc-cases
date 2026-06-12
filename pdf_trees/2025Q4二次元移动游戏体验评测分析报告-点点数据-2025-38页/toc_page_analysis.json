@@ -1,0 +1,18 @@
+{
+  "selected_pages": [],
+  "source": "heuristic",
+  "candidate_pages": [],
+  "heuristic_selected_pages": [],
+  "candidate_page_scores": [],
+  "pages_checked_with_vlm": [],
+  "page_role_checks": [],
+  "text_pages_checked": [],
+  "text_page_role_checks": [],
+  "text_model_source": null,
+  "text_fallback_model_source": null,
+  "vlm_escalation_reason": "no_toc_start",
+  "vlm_review_selected_pages": [],
+  "vlm_review_disagreed": false,
+  "vlm_override_applied": false,
+  "vlm_override_reason": null
+}

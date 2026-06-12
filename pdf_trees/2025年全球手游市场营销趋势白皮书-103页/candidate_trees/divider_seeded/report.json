@@ -1,0 +1,52 @@
+{
+  "strategy": "divider_seeded",
+  "score": 100.214,
+  "score_breakdown": {
+    "non_empty": 30.0,
+    "page_coverage": 17.134,
+    "depth": 24.0,
+    "internal_nodes": 16.0,
+    "root_shape": 11.032,
+    "heading_alignment": 6.322,
+    "numbering": 0.0,
+    "title_uniqueness": 7.226,
+    "penalty_flat": 0.0,
+    "penalty_shallow": 0.0,
+    "penalty_root_explosion": -0.0,
+    "penalty_noise_roots": -0.0,
+    "penalty_garbled_roots": -0.0,
+    "penalty_bad_roots": -0.0,
+    "penalty_duplicates": -9.0,
+    "penalty_backtrack": -2.5
+  },
+  "metrics": {
+    "root_count": 15,
+    "node_count": 186,
+    "max_depth": 4,
+    "depth_histogram": {
+      "1": 15,
+      "2": 43,
+      "3": 75,
+      "4": 53
+    },
+    "unique_page_count": 99,
+    "page_coverage_ratio": 0.9519,
+    "duplicate_title_count": 18,
+    "title_uniqueness_ratio": 0.9032,
+    "heading_alignment_ratio": 0.7903,
+    "numbered_consistency_ratio": 0.0,
+    "page_backtrack_count": 1,
+    "noise_root_count": 0,
+    "garbled_root_count": 0,
+    "low_quality_root_count": 0,
+    "bad_root_count": 0,
+    "internal_node_count": 47
+  },
+  "artifact_paths": {
+    "raw_tree_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\docarbor_raw.json",
+    "result_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\result.json",
+    "report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\report.json",
+    "summary_report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\summary_report.json",
+    "build_outline_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\build_outline.json"
+  }
+}

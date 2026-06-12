@@ -1,0 +1,30 @@
+```json
+{
+    "page_title": "目录 Contents",
+    "items": [
+        {
+            "level": 1,
+            "title": "01 中国移动游戏市场现状分析",
+            "printed_page": 1
+        },
+        {
+            "level": 1,
+            "title": "02 海外移动游戏市场现状分析",
+            "printed_page": 2
+        },
+        {
+            "level": 1,
+            "title": "03 移动游戏典型产品&企业案例分析",
+            "printed_page": 3
+        },
+        {
+            "level": 1,
+            "title": "04 全球移动游戏市场发展趋势",
+            "printed_page": 4
+        }
+    ],
+    "notes": [
+        "No specific page numbers were listed next to the section titles in the TOC image; section numbers (01, 02, etc.) were used as proxies for printed_page in the absence of explicit page references."
+    ]
+}
+```

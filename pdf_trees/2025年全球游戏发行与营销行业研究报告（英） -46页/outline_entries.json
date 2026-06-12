@@ -1,0 +1,379 @@
+[
+  {
+    "title": "Foreword",
+    "printed_page": 2,
+    "physical_page": 3,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Table of Contents",
+    "printed_page": 2,
+    "physical_page": 3,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "List of Tables",
+    "printed_page": 3,
+    "physical_page": 4,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "List of Figures",
+    "printed_page": 3,
+    "physical_page": 4,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Introduction",
+    "printed_page": 4,
+    "physical_page": 5,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "SECTION 1: Game Publishing Strategies",
+    "printed_page": 7,
+    "physical_page": 8,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Publisher-Developer Relationships",
+    "printed_page": 7,
+    "physical_page": 8,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Cross-Platform Publishing",
+    "printed_page": 7,
+    "physical_page": 8,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Self-Publishing",
+    "printed_page": 10,
+    "physical_page": 11,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "SECTION 2: Marketing and User Acquisition",
+    "printed_page": 14,
+    "physical_page": 15,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Digital Channels and Decline of Traditional Retail",
+    "printed_page": 14,
+    "physical_page": 15,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Partnerships as Marketing Channels",
+    "printed_page": 16,
+    "physical_page": 17,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Influencer Marketing",
+    "printed_page": 17,
+    "physical_page": 18,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "SECTION 3: Community",
+    "printed_page": 20,
+    "physical_page": 21,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Importance of Community in Gaming",
+    "printed_page": 20,
+    "physical_page": 21,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Community Safety",
+    "printed_page": 22,
+    "physical_page": 23,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "SECTION 4: Data-Driven Success",
+    "printed_page": 24,
+    "physical_page": 25,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "The Role of Data in Publishing and Marketing",
+    "printed_page": 24,
+    "physical_page": 25,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "SECTION 5: Revenue Streams and Business Models",
+    "printed_page": 27,
+    "physical_page": 28,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Live Service Games",
+    "printed_page": 27,
+    "physical_page": 28,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Boxed Games/One-time Purchase Model",
+    "printed_page": 28,
+    "physical_page": 29,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Subscription Models",
+    "printed_page": 30,
+    "physical_page": 31,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Esports",
+    "printed_page": 32,
+    "physical_page": 33,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Hybrid Models",
+    "printed_page": 36,
+    "physical_page": 37,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "SECTION 6: Software and Services",
+    "printed_page": 38,
+    "physical_page": 39,
+    "level_hint": 1,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Publishing as a Service",
+    "printed_page": 38,
+    "physical_page": 39,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Design Studios",
+    "printed_page": 39,
+    "physical_page": 40,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Conclusion",
+    "printed_page": 40,
+    "physical_page": 41,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  {
+    "title": "Bibliography",
+    "printed_page": 43,
+    "physical_page": 44,
+    "level_hint": 2,
+    "toc_page_number": 3,
+    "bbox": [
+      0.0,
+      0.0,
+      0.0,
+      0.0
+    ]
+  }
+]

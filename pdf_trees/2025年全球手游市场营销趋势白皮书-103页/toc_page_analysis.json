@@ -1,0 +1,63 @@
+{
+  "selected_pages": [
+    6
+  ],
+  "source": "text_confirmed",
+  "candidate_pages": [
+    6,
+    5,
+    7
+  ],
+  "heuristic_selected_pages": [
+    6
+  ],
+  "candidate_page_scores": [
+    {
+      "page_number": 6,
+      "score": 7,
+      "candidate_kind": "explicit",
+      "has_explicit_toc_title": true,
+      "parsed_line_matches": 0,
+      "heading_like_matches": 0,
+      "toc_pattern_matches": 0,
+      "text_block_count": 20,
+      "short_line_count": 42,
+      "long_line_count": 0,
+      "value_like_line_count": 8
+    }
+  ],
+  "pages_checked_with_vlm": [],
+  "page_role_checks": [],
+  "text_pages_checked": [
+    6,
+    5,
+    7
+  ],
+  "text_page_role_checks": [
+    {
+      "page_number": 6,
+      "role": "toc_start",
+      "confidence": "high",
+      "reason": "Page features an explicit '目录 CONTENTS' title and lists numbered main sections (1-4) with corresponding chapter titles, clearly marking the start of the main table of contents."
+    },
+    {
+      "page_number": 5,
+      "role": "not_toc",
+      "confidence": "high",
+      "reason": "Page contains company introduction, marketing statistics, and descriptive bullet points, with zero TOC patterns or section/chapter listings."
+    },
+    {
+      "page_number": 7,
+      "role": "not_toc",
+      "confidence": "high",
+      "reason": "The page displays a single chapter title and number, functioning as a section divider rather than a table of contents listing multiple report sections."
+    }
+  ],
+  "text_model_source": "Qwen3.6-Plus",
+  "text_fallback_model_source": "Qwen3.6-Plus",
+  "vlm_escalation_reason": null,
+  "vlm_review_selected_pages": [],
+  "vlm_review_disagreed": false,
+  "vlm_override_applied": false,
+  "vlm_override_reason": null
+}

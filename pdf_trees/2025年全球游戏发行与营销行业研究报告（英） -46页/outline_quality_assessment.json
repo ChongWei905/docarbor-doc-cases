@@ -1,0 +1,22 @@
+{
+  "quality": "high",
+  "entry_count": 29,
+  "outline_entry_count": 29,
+  "mapped_entry_ratio": 1.0,
+  "hierarchy_signal": true,
+  "section_parent_count": 6,
+  "low_quality_count": 5,
+  "low_quality_ratio": 0.1724137931034483,
+  "section_like_count": 6,
+  "low_quality_titles": [
+    "SECTION 1: Game Publishing Strategies",
+    "SECTION 2: Marketing and User Acquisition",
+    "Digital Channels and Decline of Traditional Retail",
+    "The Role of Data in Publishing and Marketing",
+    "SECTION 5: Revenue Streams and Business Models"
+  ],
+  "reasons": [
+    "strong_page_mapping",
+    "hierarchy_signal_present"
+  ]
+}

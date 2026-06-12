@@ -1,0 +1,44 @@
+{
+  "status": "empty",
+  "candidate_pages": [
+    6
+  ],
+  "accepted_pages": [],
+  "entry_count": 0,
+  "canonical_items": [],
+  "resolved_items": [],
+  "unresolved_items": [],
+  "outline_entries": [],
+  "page_checks": [
+    {
+      "page_number": 6,
+      "text_block_count": 20,
+      "plain_text_length": 256,
+      "heading_like_matches": 0,
+      "parsed_line_matches": 0,
+      "candidate_rows": [],
+      "top_lines": [
+        "目录 CONTENTS",
+        "1",
+        "2",
+        "3",
+        "4",
+        "全球手游市场",
+        "营销趋势洞察",
+        "全球手游"
+      ],
+      "role": "not_catalog_repeat",
+      "items": [],
+      "active_item": null,
+      "resolved_active_key": null,
+      "confidence": "high",
+      "reason": "This is a traditional front table-of-contents page listing all sections (1-7 and special thanks) at once, with a footer instruction to click to jump, rather than a repeated navigation page highlighting a single current section.",
+      "accepted": false,
+      "rejection_reason": "not_catalog_repeat"
+    }
+  ],
+  "active_item_sequence": [],
+  "monotonic_active_progression": true,
+  "route_failure_reason": null,
+  "ready": false
+}

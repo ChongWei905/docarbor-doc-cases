@@ -1,0 +1,419 @@
+{
+  "requested_strategy": "auto",
+  "toc_page_analysis_source": "heuristic",
+  "outline_source": "none",
+  "outline_status": "skipped",
+  "outline_error_type": null,
+  "outline_error_message": null,
+  "toc_assessment": {
+    "confidence": "none",
+    "score": 0.0,
+    "candidate_pages": [],
+    "toc_page_number": null,
+    "outline_entry_count": 0,
+    "mapped_entry_ratio": 0.0,
+    "distinct_level_count": 0,
+    "numbered_entry_ratio": 0.0,
+    "page_span": 0,
+    "has_explicit_toc_title": false
+  },
+  "outline_quality_assessment": {
+    "quality": "none",
+    "entry_count": 0,
+    "outline_entry_count": 0,
+    "mapped_entry_ratio": 0.0,
+    "hierarchy_signal": false,
+    "section_parent_count": 0,
+    "low_quality_count": 0,
+    "low_quality_ratio": 0.0,
+    "section_like_count": 0,
+    "low_quality_titles": [],
+    "reasons": [
+      "no_outline_entries"
+    ]
+  },
+  "catalog_repeat_analysis": {
+    "status": "skipped",
+    "candidate_pages": [],
+    "accepted_pages": [],
+    "entry_count": 0,
+    "canonical_items": [],
+    "resolved_items": [],
+    "unresolved_items": [],
+    "page_checks": [],
+    "active_item_sequence": [],
+    "monotonic_active_progression": true,
+    "route_failure_reason": null,
+    "ready": false
+  },
+  "divider_analysis": {
+    "status": "empty",
+    "candidate_pages": [
+      1,
+      3,
+      9,
+      12,
+      38,
+      39
+    ],
+    "accepted_pages": [
+      1
+    ],
+    "entry_count": 1,
+    "page_span": 0,
+    "page_checks": [
+      {
+        "page_number": 1,
+        "candidate_title": "二次元移动游戏体验评测分析报告",
+        "normalized_title": "二次元移动游戏体验评测分析报告",
+        "text_block_count": 2,
+        "plain_text_length": 22,
+        "heading_candidates": [
+          {
+            "title": "二次元移动游戏体验评测分析报告",
+            "size": 44.05,
+            "bold": true,
+            "bbox": [
+              50.2,
+              218.7,
+              728.8,
+              276.8
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "二次元移动游戏体验评测分析报告",
+        "level": 1,
+        "ordinal": "2025 Q4",
+        "confidence": "high",
+        "reason": "The page displays a prominent title stack '二次元移动游戏体验评测 分析报告' and a time period '2025 Q4' against a background collage, characteristic of a report cover or major section divider.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 3,
+        "candidate_title": "2025年二次元移动游",
+        "normalized_title": "2025年二次元移动游",
+        "text_block_count": 9,
+        "plain_text_length": 140,
+        "heading_candidates": [
+          {
+            "title": "2025年二次元移动游",
+            "size": 18.0,
+            "bold": true,
+            "bbox": [
+              246.7,
+              162.0,
+              419.7,
+              183.9
+            ]
+          },
+          {
+            "title": "二次元移",
+            "size": 27.95,
+            "bold": false,
+            "bbox": [
+              91.3,
+              194.9,
+              203.2,
+              231.0
+            ]
+          },
+          {
+            "title": "戏收入同比产生明显下",
+            "size": 18.0,
+            "bold": true,
+            "bbox": [
+              246.7,
+              205.2,
+              433.7,
+              227.1
+            ]
+          },
+          {
+            "title": "动游戏市",
+            "size": 27.95,
+            "bold": false,
+            "bbox": [
+              91.3,
+              228.5,
+              203.2,
+              264.6
+            ]
+          },
+          {
+            "title": "滑，收入TP1的二游产",
+            "size": 18.0,
+            "bold": true,
+            "bbox": [
+              246.7,
+              248.4,
+              428.2,
+              270.3
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page is explicitly labeled '目录 Content' (Table of Contents) and lists multiple sections (Overview, Review, Trends), fitting the exclusion criteria for table-of-contents pages.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 9,
+        "candidate_title": "点点数据-二次元移动游戏体验评测体系",
+        "normalized_title": "点点数据-二次元移动游戏体验评测体系",
+        "text_block_count": 5,
+        "plain_text_length": 103,
+        "heading_candidates": [
+          {
+            "title": "点点数据-二次元移动游戏体验评测体系",
+            "size": 32.05,
+            "bold": true,
+            "bbox": [
+              63.4,
+              31.9,
+              621.4,
+              74.1
+            ]
+          },
+          {
+            "title": "5大维度体系、18项细分指标构筑点点数据游戏体验测评模型",
+            "size": 24.0,
+            "bold": false,
+            "bbox": [
+              63.5,
+              74.9,
+              705.6,
+              105.9
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains detailed content describing an evaluation framework with 5 dimensions and 18 indicators, including specific criteria bullet points, making it a body content page rather than a simple section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 12,
+        "candidate_title": "典型二次元移动游戏综合评分对比",
+        "normalized_title": "典型二次元移动游戏综合评分对比",
+        "text_block_count": 4,
+        "plain_text_length": 149,
+        "heading_candidates": [
+          {
+            "title": "典型二次元移动游戏综合评分对比",
+            "size": 32.05,
+            "bold": true,
+            "bbox": [
+              63.4,
+              35.1,
+              543.5,
+              77.4
+            ]
+          },
+          {
+            "title": "没有产品能做到全维度“通杀” 画面与玩法仍是核心考评点",
+            "size": 24.0,
+            "bold": false,
+            "bbox": [
+              63.4,
+              77.2,
+              694.5,
+              108.2
+            ]
+          },
+          {
+            "title": "11",
+            "size": 18.0,
+            "bold": false,
+            "bbox": [
+              922.0,
+              507.8,
+              950.5,
+              531.0
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains a detailed ranking table and bar charts comparing mobile games (scores, dimensions), which classifies it as a normal body page with charts/rankings, not a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 38,
+        "candidate_title": "火热申报中",
+        "normalized_title": "火热申报中",
+        "text_block_count": 9,
+        "plain_text_length": 153,
+        "heading_candidates": [
+          {
+            "title": "火热申报中",
+            "size": 34.3,
+            "bold": false,
+            "bbox": [
+              561.4,
+              105.4,
+              732.9,
+              149.6
+            ]
+          },
+          {
+            "title": "年度实力出海移动游戏",
+            "size": 19.1,
+            "bold": true,
+            "bbox": [
+              151.2,
+              396.0,
+              342.2,
+              421.2
+            ]
+          },
+          {
+            "title": "2025",
+            "size": 19.1,
+            "bold": true,
+            "bbox": [
+              108.8,
+              396.1,
+              151.3,
+              423.4
+            ]
+          },
+          {
+            "title": "先锋出海游戏",
+            "size": 19.1,
+            "bold": true,
+            "bbox": [
+              422.1,
+              396.1,
+              536.7,
+              421.3
+            ]
+          },
+          {
+            "title": "应用",
+            "size": 19.1,
+            "bold": true,
+            "bbox": [
+              542.0,
+              396.1,
+              580.2,
+              421.3
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This is a promotional advertisement page for 'POINT AWARDS' containing detailed information, bullet points, award categories, a QR code, and a deadline, rather than a structural section divider or chapter opener.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 39,
+        "candidate_title": "游戏数据/移动应用分析平台",
+        "normalized_title": "游戏数据/移动应用分析平台",
+        "text_block_count": 3,
+        "plain_text_length": 25,
+        "heading_candidates": [
+          {
+            "title": "游戏数据/移动应用分析平台",
+            "size": 44.05,
+            "bold": true,
+            "bbox": [
+              201.9,
+              213.8,
+              769.3,
+              271.9
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": "游戏数据/移动应用分析平台",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This page is a promotional or informational slide for the data provider 'Diandian Data' (点点数据). It lists platform features, supported app stores, company statistics (coverage, active devices, etc.), and includes a QR code for a community. It functions as an advertisement or 'About Us' page rather than a section divider introducing a specific report chapter.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      }
+    ],
+    "exhibit_pages": [],
+    "ready": false
+  },
+  "route_decision": {
+    "primary_strategy": "docarbor_native",
+    "fallback_chain": [
+      "layout_fallback",
+      "minimal_fallback"
+    ],
+    "decision_reason": "no_reliable_toc_or_outline",
+    "has_many_exhibits": false,
+    "exhibit_pages": []
+  },
+  "attempts": [
+    {
+      "strategy": "docarbor_native",
+      "status": "success",
+      "score": -23.5,
+      "score_breakdown": {
+        "non_empty": 30.0,
+        "page_coverage": 17.1,
+        "depth": 0.0,
+        "internal_nodes": 0.0,
+        "root_shape": 0.0,
+        "heading_alignment": 7.4,
+        "numbering": 0.0,
+        "title_uniqueness": 8.0,
+        "penalty_flat": -8.0,
+        "penalty_shallow": -10.0,
+        "penalty_root_explosion": -68.0,
+        "penalty_noise_roots": -0.0,
+        "penalty_garbled_roots": -0.0,
+        "penalty_bad_roots": -0.0,
+        "penalty_duplicates": -0.0,
+        "penalty_backtrack": -0.0
+      },
+      "metrics": {
+        "root_count": 40,
+        "node_count": 40,
+        "max_depth": 1,
+        "depth_histogram": {
+          "1": 40
+        },
+        "unique_page_count": 38,
+        "page_coverage_ratio": 0.95,
+        "duplicate_title_count": 0,
+        "title_uniqueness_ratio": 1.0,
+        "heading_alignment_ratio": 0.925,
+        "numbered_consistency_ratio": 0.0,
+        "page_backtrack_count": 0,
+        "noise_root_count": 0,
+        "garbled_root_count": 0,
+        "low_quality_root_count": 0,
+        "bad_root_count": 0,
+        "internal_node_count": 0
+      },
+      "artifact_paths": {
+        "raw_tree_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\docarbor_raw.json",
+        "result_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\result.json",
+        "report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\report.json",
+        "summary_report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\summary_report.json"
+      }
+    }
+  ]
+}

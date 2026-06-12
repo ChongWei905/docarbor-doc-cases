@@ -1,0 +1,207 @@
+{
+  "requested_strategy": "auto",
+  "toc_page_analysis_source": "text_confirmed",
+  "outline_source": "vlm",
+  "outline_status": "success",
+  "outline_error_type": null,
+  "outline_error_message": null,
+  "toc_assessment": {
+    "confidence": "high",
+    "score": 1.0,
+    "candidate_pages": [
+      3
+    ],
+    "toc_page_number": 3,
+    "outline_entry_count": 29,
+    "mapped_entry_ratio": 1.0,
+    "distinct_level_count": 2,
+    "numbered_entry_ratio": 0.0,
+    "page_span": 41,
+    "has_explicit_toc_title": true
+  },
+  "outline_quality_assessment": {
+    "quality": "high",
+    "entry_count": 29,
+    "outline_entry_count": 29,
+    "mapped_entry_ratio": 1.0,
+    "hierarchy_signal": true,
+    "section_parent_count": 6,
+    "low_quality_count": 5,
+    "low_quality_ratio": 0.1724137931034483,
+    "section_like_count": 6,
+    "low_quality_titles": [
+      "SECTION 1: Game Publishing Strategies",
+      "SECTION 2: Marketing and User Acquisition",
+      "Digital Channels and Decline of Traditional Retail",
+      "The Role of Data in Publishing and Marketing",
+      "SECTION 5: Revenue Streams and Business Models"
+    ],
+    "reasons": [
+      "strong_page_mapping",
+      "hierarchy_signal_present"
+    ]
+  },
+  "catalog_repeat_analysis": {
+    "status": "skipped",
+    "candidate_pages": [],
+    "accepted_pages": [],
+    "entry_count": 0,
+    "canonical_items": [],
+    "resolved_items": [],
+    "unresolved_items": [],
+    "page_checks": [],
+    "active_item_sequence": [],
+    "monotonic_active_progression": true,
+    "route_failure_reason": null,
+    "ready": false
+  },
+  "divider_analysis": {
+    "status": "empty",
+    "candidate_pages": [
+      1
+    ],
+    "accepted_pages": [],
+    "entry_count": 0,
+    "page_span": 0,
+    "page_checks": [
+      {
+        "page_number": 1,
+        "candidate_title": "THE GLOBAL",
+        "normalized_title": "theglobal",
+        "text_block_count": 5,
+        "plain_text_length": 156,
+        "heading_candidates": [
+          {
+            "title": "THE GLOBAL",
+            "size": 52.0,
+            "bold": false,
+            "bbox": [
+              70.0,
+              160.5,
+              394.3,
+              252.1
+            ]
+          },
+          {
+            "title": "STATE OF GAME",
+            "size": 52.0,
+            "bold": false,
+            "bbox": [
+              70.0,
+              208.5,
+              480.7,
+              300.1
+            ]
+          },
+          {
+            "title": "PUBLISHING &",
+            "size": 52.0,
+            "bold": false,
+            "bbox": [
+              70.0,
+              256.5,
+              450.4,
+              348.1
+            ]
+          },
+          {
+            "title": "MARKETING 2025",
+            "size": 52.0,
+            "bold": false,
+            "bbox": [
+              70.0,
+              304.5,
+              535.4,
+              396.1
+            ]
+          },
+          {
+            "title": "INDUSTRY REPORT",
+            "size": 40.0,
+            "bold": false,
+            "bbox": [
+              70.0,
+              363.9,
+              404.0,
+              429.4
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This is a promotional cover page or flyer for an event and report, featuring call-to-action buttons ('Visit Site', 'Book Online') and event dates, rather than a section divider within a document.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      }
+    ],
+    "exhibit_pages": [],
+    "ready": false
+  },
+  "route_decision": {
+    "primary_strategy": "toc_seeded",
+    "fallback_chain": [
+      "docarbor_native",
+      "layout_fallback",
+      "minimal_fallback"
+    ],
+    "decision_reason": "high_toc_confidence_with_stable_outline_mapping",
+    "has_many_exhibits": false,
+    "exhibit_pages": []
+  },
+  "attempts": [
+    {
+      "strategy": "toc_seeded",
+      "status": "success",
+      "score": 84.176,
+      "score_breakdown": {
+        "non_empty": 30.0,
+        "page_coverage": 7.659,
+        "depth": 10.0,
+        "internal_nodes": 15.0,
+        "root_shape": 7.448,
+        "heading_alignment": 6.069,
+        "numbering": 0.0,
+        "title_uniqueness": 8.0,
+        "penalty_flat": 0.0,
+        "penalty_shallow": 0.0,
+        "penalty_root_explosion": -0.0,
+        "penalty_noise_roots": -0.0,
+        "penalty_garbled_roots": -0.0,
+        "penalty_bad_roots": -0.0,
+        "penalty_duplicates": -0.0,
+        "penalty_backtrack": -0.0
+      },
+      "metrics": {
+        "root_count": 11,
+        "node_count": 29,
+        "max_depth": 2,
+        "depth_histogram": {
+          "1": 11,
+          "2": 18
+        },
+        "unique_page_count": 20,
+        "page_coverage_ratio": 0.4255,
+        "duplicate_title_count": 0,
+        "title_uniqueness_ratio": 1.0,
+        "heading_alignment_ratio": 0.7586,
+        "numbered_consistency_ratio": 0.0,
+        "page_backtrack_count": 0,
+        "noise_root_count": 0,
+        "garbled_root_count": 0,
+        "low_quality_root_count": 0,
+        "bad_root_count": 0,
+        "internal_node_count": 6
+      },
+      "artifact_paths": {
+        "raw_tree_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result\\2025年全球游戏发行与营销行业研究报告（英） -46页\\candidate_trees\\toc_seeded\\docarbor_raw.json",
+        "result_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result\\2025年全球游戏发行与营销行业研究报告（英） -46页\\candidate_trees\\toc_seeded\\result.json",
+        "report_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result\\2025年全球游戏发行与营销行业研究报告（英） -46页\\candidate_trees\\toc_seeded\\report.json",
+        "summary_report_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result\\2025年全球游戏发行与营销行业研究报告（英） -46页\\candidate_trees\\toc_seeded\\summary_report.json",
+        "build_outline_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result\\2025年全球游戏发行与营销行业研究报告（英） -46页\\candidate_trees\\toc_seeded\\build_outline.json"
+      }
+    }
+  ]
+}

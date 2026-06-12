@@ -1,0 +1,86 @@
+{
+  "status": "empty",
+  "candidate_pages": [
+    1
+  ],
+  "accepted_pages": [],
+  "entry_count": 0,
+  "page_span": 0,
+  "outline_entries": [],
+  "page_checks": [
+    {
+      "page_number": 1,
+      "candidate_title": "THE GLOBAL",
+      "normalized_title": "theglobal",
+      "text_block_count": 5,
+      "plain_text_length": 156,
+      "heading_candidates": [
+        {
+          "title": "THE GLOBAL",
+          "size": 52.0,
+          "bold": false,
+          "bbox": [
+            70.0,
+            160.5,
+            394.3,
+            252.1
+          ]
+        },
+        {
+          "title": "STATE OF GAME",
+          "size": 52.0,
+          "bold": false,
+          "bbox": [
+            70.0,
+            208.5,
+            480.7,
+            300.1
+          ]
+        },
+        {
+          "title": "PUBLISHING &",
+          "size": 52.0,
+          "bold": false,
+          "bbox": [
+            70.0,
+            256.5,
+            450.4,
+            348.1
+          ]
+        },
+        {
+          "title": "MARKETING 2025",
+          "size": 52.0,
+          "bold": false,
+          "bbox": [
+            70.0,
+            304.5,
+            535.4,
+            396.1
+          ]
+        },
+        {
+          "title": "INDUSTRY REPORT",
+          "size": 40.0,
+          "bold": false,
+          "bbox": [
+            70.0,
+            363.9,
+            404.0,
+            429.4
+          ]
+        }
+      ],
+      "role": "not_divider",
+      "title": null,
+      "level": 1,
+      "ordinal": null,
+      "confidence": "high",
+      "reason": "This is a promotional cover page or flyer for an event and report, featuring call-to-action buttons ('Visit Site', 'Book Online') and event dates, rather than a section divider within a document.",
+      "accepted": false,
+      "rejection_reason": "not_divider"
+    }
+  ],
+  "exhibit_pages": [],
+  "ready": false
+}

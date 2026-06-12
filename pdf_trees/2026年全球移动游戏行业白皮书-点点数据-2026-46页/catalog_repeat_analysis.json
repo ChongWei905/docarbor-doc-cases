@@ -1,0 +1,353 @@
+{
+  "status": "success",
+  "candidate_pages": [
+    3,
+    14,
+    29,
+    36
+  ],
+  "accepted_pages": [
+    3,
+    14,
+    29,
+    36
+  ],
+  "entry_count": 4,
+  "canonical_items": [
+    {
+      "ordinal": "01",
+      "title": "中国移动游戏市场现状分析",
+      "display_title": "01 中国移动游戏市场现状分析",
+      "key": "01"
+    },
+    {
+      "ordinal": "02",
+      "title": "海外移动游戏市场现状分析",
+      "display_title": "02 海外移动游戏市场现状分析",
+      "key": "02"
+    },
+    {
+      "ordinal": "03",
+      "title": "移动游戏典型产品&企业案例分析",
+      "display_title": "03 移动游戏典型产品&企业案例分析",
+      "key": "03"
+    },
+    {
+      "ordinal": "04",
+      "title": "全球移动游戏市场发展趋势",
+      "display_title": "04 全球移动游戏市场发展趋势",
+      "key": "04"
+    }
+  ],
+  "resolved_items": [
+    {
+      "ordinal": "01",
+      "title": "中国移动游戏市场现状分析",
+      "display_title": "01 中国移动游戏市场现状分析",
+      "key": "01",
+      "start_page": 4,
+      "source_page": 3
+    },
+    {
+      "ordinal": "02",
+      "title": "海外移动游戏市场现状分析",
+      "display_title": "02 海外移动游戏市场现状分析",
+      "key": "02",
+      "start_page": 15,
+      "source_page": 14
+    },
+    {
+      "ordinal": "03",
+      "title": "移动游戏典型产品&企业案例分析",
+      "display_title": "03 移动游戏典型产品&企业案例分析",
+      "key": "03",
+      "start_page": 30,
+      "source_page": 29
+    },
+    {
+      "ordinal": "04",
+      "title": "全球移动游戏市场发展趋势",
+      "display_title": "04 全球移动游戏市场发展趋势",
+      "key": "04",
+      "start_page": 37,
+      "source_page": 36
+    }
+  ],
+  "unresolved_items": [],
+  "outline_entries": [
+    {
+      "title": "01 中国移动游戏市场现状分析",
+      "printed_page": null,
+      "physical_page": 4,
+      "level_hint": 1,
+      "toc_page_number": 3,
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "title": "02 海外移动游戏市场现状分析",
+      "printed_page": null,
+      "physical_page": 15,
+      "level_hint": 1,
+      "toc_page_number": 14,
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "title": "03 移动游戏典型产品&企业案例分析",
+      "printed_page": null,
+      "physical_page": 30,
+      "level_hint": 1,
+      "toc_page_number": 29,
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "title": "04 全球移动游戏市场发展趋势",
+      "printed_page": null,
+      "physical_page": 37,
+      "level_hint": 1,
+      "toc_page_number": 36,
+      "bbox": [
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "page_checks": [
+    {
+      "page_number": 3,
+      "text_block_count": 16,
+      "plain_text_length": 188,
+      "heading_like_matches": 0,
+      "parsed_line_matches": 1,
+      "candidate_rows": [
+        {
+          "raw_text": "状分析 4",
+          "title": "状分析",
+          "printed_page": 4,
+          "kind": "page_anchored"
+        }
+      ],
+      "top_lines": [
+        "目录Contents",
+        "01",
+        "中国移动游戏市场现",
+        "状分析",
+        "02",
+        "03",
+        "04",
+        "海外移动游戏市场现"
+      ],
+      "role": "catalog_repeat_page",
+      "items": [
+        {
+          "ordinal": "01",
+          "title": "中国移动游戏市场现状分析",
+          "display_title": "01 中国移动游戏市场现状分析",
+          "key": "01"
+        },
+        {
+          "ordinal": "02",
+          "title": "海外移动游戏市场现状分析",
+          "display_title": "02 海外移动游戏市场现状分析",
+          "key": "02"
+        },
+        {
+          "ordinal": "03",
+          "title": "移动游戏典型产品&企业案例分析",
+          "display_title": "03 移动游戏典型产品&企业案例分析",
+          "key": "03"
+        },
+        {
+          "ordinal": "04",
+          "title": "全球移动游戏市场发展趋势",
+          "display_title": "04 全球移动游戏市场发展趋势",
+          "key": "04"
+        }
+      ],
+      "active_item": "01",
+      "resolved_active_key": "01",
+      "confidence": "high",
+      "reason": "The page is titled '目录 Contents', lists four numbered sections, and visually highlights item '01' with a blue background while the others are grey, indicating it is the active section.",
+      "accepted": true,
+      "rejection_reason": null
+    },
+    {
+      "page_number": 14,
+      "text_block_count": 15,
+      "plain_text_length": 200,
+      "heading_like_matches": 0,
+      "parsed_line_matches": 0,
+      "candidate_rows": [],
+      "top_lines": [
+        "目录Contents",
+        "02",
+        "海外移动游戏市场现",
+        "状分析",
+        "01",
+        "03",
+        "04",
+        "中国移动游戏市场现"
+      ],
+      "role": "catalog_repeat_page",
+      "items": [
+        {
+          "ordinal": "01",
+          "title": "中国移动游戏市场现状分析",
+          "display_title": "01 中国移动游戏市场现状分析",
+          "key": "01"
+        },
+        {
+          "ordinal": "02",
+          "title": "海外移动游戏市场现状分析",
+          "display_title": "02 海外移动游戏市场现状分析",
+          "key": "02"
+        },
+        {
+          "ordinal": "03",
+          "title": "移动游戏典型产品&企业案例分析",
+          "display_title": "03 移动游戏典型产品&企业案例分析",
+          "key": "03"
+        },
+        {
+          "ordinal": "04",
+          "title": "全球移动游戏市场发展趋势",
+          "display_title": "04 全球移动游戏市场发展趋势",
+          "key": "04"
+        }
+      ],
+      "active_item": "02",
+      "resolved_active_key": "02",
+      "confidence": "high",
+      "reason": "The page is titled '目录 Contents', lists four sections (01-04), and visually highlights item '02' with a blue background while the others are greyed out, indicating it is the current section.",
+      "accepted": true,
+      "rejection_reason": null
+    },
+    {
+      "page_number": 29,
+      "text_block_count": 15,
+      "plain_text_length": 187,
+      "heading_like_matches": 0,
+      "parsed_line_matches": 0,
+      "candidate_rows": [],
+      "top_lines": [
+        "目录Contents",
+        "03",
+        "移动游戏典型产品&",
+        "企业案例分析",
+        "01",
+        "02",
+        "04",
+        "中国移动游戏市场现"
+      ],
+      "role": "catalog_repeat_page",
+      "items": [
+        {
+          "ordinal": "01",
+          "title": "中国移动游戏市场现状分析",
+          "display_title": "01 中国移动游戏市场现状分析",
+          "key": "01"
+        },
+        {
+          "ordinal": "02",
+          "title": "海外移动游戏市场现状分析",
+          "display_title": "02 海外移动游戏市场现状分析",
+          "key": "02"
+        },
+        {
+          "ordinal": "03",
+          "title": "移动游戏典型产品&企业案例分析",
+          "display_title": "03 移动游戏典型产品&企业案例分析",
+          "key": "03"
+        },
+        {
+          "ordinal": "04",
+          "title": "全球移动游戏市场发展趋势",
+          "display_title": "04 全球移动游戏市场发展趋势",
+          "key": "04"
+        }
+      ],
+      "active_item": "03",
+      "resolved_active_key": "03",
+      "confidence": "high",
+      "reason": "The page features a 'Contents' header and lists four sections. Section 03 is highlighted with a blue background and white text, distinguishing it as the active item, while the others are greyed out.",
+      "accepted": true,
+      "rejection_reason": null
+    },
+    {
+      "page_number": 36,
+      "text_block_count": 15,
+      "plain_text_length": 190,
+      "heading_like_matches": 0,
+      "parsed_line_matches": 0,
+      "candidate_rows": [],
+      "top_lines": [
+        "目录Contents",
+        "04",
+        "全球移动游戏市场发",
+        "展趋势",
+        "01",
+        "02",
+        "03",
+        "中国移动游戏市场现"
+      ],
+      "role": "catalog_repeat_page",
+      "items": [
+        {
+          "ordinal": "01",
+          "title": "中国移动游戏市场现状分析",
+          "display_title": "01 中国移动游戏市场现状分析",
+          "key": "01"
+        },
+        {
+          "ordinal": "02",
+          "title": "海外移动游戏市场现状分析",
+          "display_title": "02 海外移动游戏市场现状分析",
+          "key": "02"
+        },
+        {
+          "ordinal": "03",
+          "title": "移动游戏典型产品&企业案例分析",
+          "display_title": "03 移动游戏典型产品&企业案例分析",
+          "key": "03"
+        },
+        {
+          "ordinal": "04",
+          "title": "全球移动游戏市场发展趋势",
+          "display_title": "04 全球移动游戏市场发展趋势",
+          "key": "04"
+        }
+      ],
+      "active_item": "04",
+      "resolved_active_key": "04",
+      "confidence": "high",
+      "reason": "The page displays a 'Contents' header and a list of four sections (01-04). Section 04 is visually emphasized with a blue background, indicating it is the current active section.",
+      "accepted": true,
+      "rejection_reason": null
+    }
+  ],
+  "active_item_sequence": [
+    "01",
+    "02",
+    "03",
+    "04"
+  ],
+  "monotonic_active_progression": true,
+  "route_failure_reason": null,
+  "ready": true
+}

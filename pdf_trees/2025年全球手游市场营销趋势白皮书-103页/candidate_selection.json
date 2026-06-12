@@ -1,0 +1,2675 @@
+{
+  "requested_strategy": "auto",
+  "toc_page_analysis_source": "text_confirmed",
+  "outline_source": "divider",
+  "outline_status": "success",
+  "outline_error_type": null,
+  "outline_error_message": null,
+  "toc_assessment": {
+    "confidence": "low",
+    "score": 0.6,
+    "candidate_pages": [
+      6
+    ],
+    "toc_page_number": 6,
+    "outline_entry_count": 8,
+    "mapped_entry_ratio": 0.5,
+    "distinct_level_count": 1,
+    "numbered_entry_ratio": 0.0,
+    "page_span": 62,
+    "has_explicit_toc_title": true
+  },
+  "outline_quality_assessment": {
+    "quality": "medium",
+    "entry_count": 8,
+    "outline_entry_count": 8,
+    "mapped_entry_ratio": 0.5,
+    "hierarchy_signal": false,
+    "section_parent_count": 0,
+    "low_quality_count": 0,
+    "low_quality_ratio": 0.0,
+    "section_like_count": 0,
+    "low_quality_titles": [],
+    "reasons": [
+      "no_hierarchy_signal",
+      "low_noise_outline"
+    ]
+  },
+  "catalog_repeat_analysis": {
+    "status": "empty",
+    "candidate_pages": [
+      6
+    ],
+    "accepted_pages": [],
+    "entry_count": 0,
+    "canonical_items": [],
+    "resolved_items": [],
+    "unresolved_items": [],
+    "page_checks": [
+      {
+        "page_number": 6,
+        "text_block_count": 20,
+        "plain_text_length": 256,
+        "heading_like_matches": 0,
+        "parsed_line_matches": 0,
+        "candidate_rows": [],
+        "top_lines": [
+          "目录 CONTENTS",
+          "1",
+          "2",
+          "3",
+          "4",
+          "全球手游市场",
+          "营销趋势洞察",
+          "全球手游"
+        ],
+        "role": "not_catalog_repeat",
+        "items": [],
+        "active_item": null,
+        "resolved_active_key": null,
+        "confidence": "high",
+        "reason": "This is a traditional front table-of-contents page listing all sections (1-7 and special thanks) at once, with a footer instruction to click to jump, rather than a repeated navigation page highlighting a single current section.",
+        "accepted": false,
+        "rejection_reason": "not_catalog_repeat"
+      }
+    ],
+    "active_item_sequence": [],
+    "monotonic_active_progression": true,
+    "route_failure_reason": null,
+    "ready": false
+  },
+  "divider_analysis": {
+    "status": "success",
+    "candidate_pages": [
+      1,
+      3,
+      7,
+      15,
+      17,
+      18,
+      19,
+      20,
+      27,
+      28,
+      29,
+      30,
+      31,
+      34,
+      35,
+      39,
+      40,
+      41,
+      51,
+      56,
+      58,
+      60,
+      62,
+      64,
+      66,
+      67,
+      68,
+      69,
+      70,
+      71,
+      80,
+      81,
+      82,
+      83,
+      84,
+      85,
+      87,
+      91,
+      93,
+      94,
+      96,
+      97,
+      98,
+      99,
+      101,
+      102
+    ],
+    "accepted_pages": [
+      1,
+      7,
+      15,
+      19,
+      20,
+      27,
+      30,
+      40,
+      41,
+      51,
+      71,
+      85,
+      94,
+      97,
+      99
+    ],
+    "entry_count": 15,
+    "page_span": 98,
+    "page_checks": [
+      {
+        "page_number": 1,
+        "candidate_title": "2025年",
+        "normalized_title": "2025年",
+        "text_block_count": 4,
+        "plain_text_length": 107,
+        "heading_candidates": [
+          {
+            "title": "2025年",
+            "size": 66.0,
+            "bold": true,
+            "bbox": [
+              58.4,
+              144.2,
+              295.3,
+              220.4
+            ]
+          },
+          {
+            "title": "全球手游市场",
+            "size": 66.0,
+            "bold": true,
+            "bbox": [
+              295.3,
+              144.2,
+              691.3,
+              220.4
+            ]
+          },
+          {
+            "title": "营销趋势白皮书",
+            "size": 66.02,
+            "bold": true,
+            "bbox": [
+              58.4,
+              223.2,
+              520.4,
+              299.4
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "2025年全球手游市场营销趋势白皮书",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This is the main title page of the report, featuring a large prominent title and subtitle with no body content, functioning as the primary section header for the document.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 3,
+        "candidate_title": "600 万",
+        "normalized_title": "600万",
+        "text_block_count": 18,
+        "plain_text_length": 371,
+        "heading_candidates": [
+          {
+            "title": "600 万",
+            "size": 44.04,
+            "bold": true,
+            "bbox": [
+              668.0,
+              60.2,
+              817.0,
+              111.0
+            ]
+          },
+          {
+            "title": "APP 广告主",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              671.1,
+              120.0,
+              743.9,
+              133.8
+            ]
+          },
+          {
+            "title": "17 亿",
+            "size": 44.06,
+            "bold": true,
+            "bbox": [
+              668.0,
+              196.6,
+              776.4,
+              247.5
+            ]
+          },
+          {
+            "title": "APP 创意素材",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              671.1,
+              256.5,
+              756.9,
+              270.3
+            ]
+          },
+          {
+            "title": "投放天数、展现曝光、热度、互动、人气值",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              143.3,
+              268.1,
+              375.3,
+              282.0
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains multiple paragraphs of descriptive text explaining the platform's features and coverage, along with key statistics, functioning as an informational or 'About Us' page rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 7,
+        "candidate_title": "2025年全球手游",
+        "normalized_title": "2025年全球手游",
+        "text_block_count": 4,
+        "plain_text_length": 72,
+        "heading_candidates": [
+          {
+            "title": "2025年全球手游",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              195.8,
+              517.9,
+              258.1
+            ]
+          },
+          {
+            "title": "市场营销趋势洞察",
+            "size": 54.02,
+            "bold": true,
+            "bbox": [
+              108.1,
+              262.7,
+              540.3,
+              325.1
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "2025年全球手游市场营销趋势洞察",
+        "level": 1,
+        "ordinal": "01",
+        "confidence": "high",
+        "reason": "The page displays a large chapter number '01' and a prominent title block, clearly marking the beginning of a new major section.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 15,
+        "candidate_title": "一线洞察",
+        "normalized_title": "一线洞察",
+        "text_block_count": 3,
+        "plain_text_length": 30,
+        "heading_candidates": [
+          {
+            "title": "一线洞察",
+            "size": 96.02,
+            "bold": true,
+            "bbox": [
+              93.8,
+              90.8,
+              477.8,
+              201.7
+            ]
+          },
+          {
+            "title": "益世界、NEOCRAFT、英雄游戏、游艺春秋",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              104.4,
+              221.2,
+              382.2,
+              237.4
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "一线洞察",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page features a single large, prominent title '一线洞察' (Frontline Insights) with a subtitle listing specific companies, which is characteristic of a section divider introducing a new major topic.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 17,
+        "candidate_title": "NEOCRAFT",
+        "normalized_title": "neocraft",
+        "text_block_count": 7,
+        "plain_text_length": 805,
+        "heading_candidates": [
+          {
+            "title": "NEOCRAFT",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              389.5,
+              154.1
+            ]
+          },
+          {
+            "title": "从流量博弈转向“效率革命”与“方法论迁移”",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              167.7,
+              341.6,
+              183.9
+            ]
+          },
+          {
+            "title": "●",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              227.9,
+              88.2,
+              241.8
+            ]
+          },
+          {
+            "title": "赛道升维：IAP精品方法论对IAA赛道的向下兼容",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              88.2,
+              227.9,
+              352.9,
+              241.8
+            ]
+          },
+          {
+            "title": "MMO与卡牌类IAP发行体系",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              307.8,
+              256.7,
+              458.4,
+              270.6
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body text, including an introductory paragraph, four detailed bullet points with headers, and a concluding paragraph. This density of information characterizes it as a normal body page (likely a company profile or strategy overview) rather than a sparse section divider page.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 18,
+        "candidate_title": "英雄游戏",
+        "normalized_title": "英雄游戏",
+        "text_block_count": 7,
+        "plain_text_length": 553,
+        "heading_candidates": [
+          {
+            "title": "英雄游戏",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              292.2,
+              154.1
+            ]
+          },
+          {
+            "title": "从多赛道深耕到高品质突破：英雄游戏全球化战略的升维",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              167.7,
+              426.5,
+              183.9
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body text, multiple paragraphs, and bullet points detailing the company's strategy and products, which classifies it as a normal body page rather than a sparse section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 19,
+        "candidate_title": "游艺春秋",
+        "normalized_title": "游艺春秋",
+        "text_block_count": 6,
+        "plain_text_length": 773,
+        "heading_candidates": [
+          {
+            "title": "游艺春秋",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              292.2,
+              154.1
+            ]
+          },
+          {
+            "title": "论前期玩法验证测试：存量博弈时代的产品突围之道",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              167.7,
+              398.6,
+              183.9
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "游艺春秋",
+        "level": 1,
+        "ordinal": "1",
+        "confidence": "high",
+        "reason": "The page features a large chapter number '1' and a prominent title '游艺春秋', indicating it is a chapter opener, despite containing introductory text.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 20,
+        "candidate_title": "2025年全球手游",
+        "normalized_title": "2025年全球手游",
+        "text_block_count": 4,
+        "plain_text_length": 52,
+        "heading_candidates": [
+          {
+            "title": "02",
+            "size": 48.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              112.4,
+              171.1,
+              167.8
+            ]
+          },
+          {
+            "title": "2025年全球手游",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              195.8,
+              517.9,
+              258.1
+            ]
+          },
+          {
+            "title": "热门榜单",
+            "size": 54.02,
+            "bold": true,
+            "bbox": [
+              108.1,
+              262.7,
+              324.2,
+              325.1
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "2025年全球手游热门榜单 TOP GLOBAL MOBILE GAMES OF 2025",
+        "level": 1,
+        "ordinal": "02",
+        "confidence": "high",
+        "reason": "Page features a large chapter number '02' and a prominent title introducing a new section.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 27,
+        "candidate_title": "媒体声音",
+        "normalized_title": "媒体声音",
+        "text_block_count": 3,
+        "plain_text_length": 23,
+        "heading_candidates": [
+          {
+            "title": "媒体声音",
+            "size": 96.02,
+            "bold": true,
+            "bbox": [
+              93.8,
+              90.8,
+              477.8,
+              201.7
+            ]
+          },
+          {
+            "title": "游戏葡萄 & GameLook",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              104.4,
+              221.2,
+              259.1,
+              237.4
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "媒体声音",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "Page features a single large, prominent title '媒体声音' with a subtitle, characteristic of a section divider.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 28,
+        "candidate_title": "游戏葡萄",
+        "normalized_title": "游戏葡萄",
+        "text_block_count": 6,
+        "plain_text_length": 281,
+        "heading_candidates": [
+          {
+            "title": "游戏葡萄",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              292.2,
+              154.1
+            ]
+          },
+          {
+            "title": "对中国手游行业来说，2025年是一个变化很大的年份。",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              167.7,
+              420.8,
+              183.9
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body text (three paragraphs) analyzing market trends and future predictions, which classifies it as a normal body page rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 29,
+        "candidate_title": "GameLook",
+        "normalized_title": "gamelook",
+        "text_block_count": 7,
+        "plain_text_length": 859,
+        "heading_candidates": [
+          {
+            "title": "GameLook",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              374.1,
+              154.1
+            ]
+          },
+          {
+            "title": "聚焦核心赛道、长青游戏战略的正确性",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              617.8,
+              167.9,
+              821.8,
+              181.8
+            ]
+          },
+          {
+            "title": "放眼全球市场，越来越多的国内以及海外厂商开始调整发行策略，聚焦老产品或者长青游戏的经营",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              326.4,
+              592.2,
+              340.2
+            ]
+          },
+          {
+            "title": "28",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              12.4,
+              495.7,
+              28.2,
+              509.5
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains multiple paragraphs of detailed body text analyzing the 2025 game market, which characterizes it as a normal body content page rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 30,
+        "candidate_title": "2025年游戏获客",
+        "normalized_title": "2025年游戏获客",
+        "text_block_count": 4,
+        "plain_text_length": 78,
+        "heading_candidates": [
+          {
+            "title": "03",
+            "size": 48.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              112.4,
+              171.3,
+              167.8
+            ]
+          },
+          {
+            "title": "2025年游戏获客：",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              195.8,
+              571.9,
+              258.1
+            ]
+          },
+          {
+            "title": "真实变革何在",
+            "size": 54.02,
+            "bold": true,
+            "bbox": [
+              108.1,
+              262.7,
+              432.2,
+              325.1
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "2025年游戏获客：真实变革何在 GAMING USER ACQUISITION IN 2025: WHAT ACTUALLY CHANGED",
+        "level": 1,
+        "ordinal": "03",
+        "confidence": "high",
+        "reason": "Page features a large section number '03' and a prominent title overlaying a background image, typical of a chapter opener.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 31,
+        "candidate_title": "2025年游戏获客：真实变革何在",
+        "normalized_title": "2025年游戏获客:真实变革何在",
+        "text_block_count": 9,
+        "plain_text_length": 342,
+        "heading_candidates": [
+          {
+            "title": "2025年游戏获客：真实变革何在",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              401.2,
+              96.1
+            ]
+          },
+          {
+            "title": "从动荡走向规范",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              65.5,
+              104.9,
+              164.0,
+              121.1
+            ]
+          },
+          {
+            "title": "30",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              12.4,
+              495.7,
+              28.2,
+              509.5
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "Page contains multiple paragraphs of body text and a large illustration, fitting the description of a normal body page rather than a sparse section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 34,
+        "candidate_title": "2025年游戏获客：究竟发生了哪些变化",
+        "normalized_title": "2025年游戏获客:究竟发生了哪些变化",
+        "text_block_count": 9,
+        "plain_text_length": 377,
+        "heading_candidates": [
+          {
+            "title": "2025年游戏获客：究竟发生了哪些变化",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              470.2,
+              96.1
+            ]
+          },
+          {
+            "title": "市场周期性规律日益清晰，且更具落地价值",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              65.5,
+              104.9,
+              332.4,
+              121.1
+            ]
+          },
+          {
+            "title": "www.singular.net",
+            "size": 18.0,
+            "bold": true,
+            "bbox": [
+              591.1,
+              413.4,
+              759.4,
+              434.2
+            ]
+          },
+          {
+            "title": "33",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              12.6,
+              495.7,
+              28.0,
+              509.5
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains multiple substantial paragraphs of body text analyzing quarterly trends and market factors, which classifies it as a normal body page (specifically an introductory or summary page) rather than a sparse section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 35,
+        "candidate_title": "2025年广告预算流向解析",
+        "normalized_title": "2025年广告预算流向解析",
+        "text_block_count": 11,
+        "plain_text_length": 330,
+        "heading_candidates": [
+          {
+            "title": "2025年广告预算流向解析",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              332.2,
+              96.1
+            ]
+          },
+          {
+            "title": "安卓以规模制胜，iOS以效率见长。",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              65.5,
+              104.9,
+              287.3,
+              121.1
+            ]
+          },
+          {
+            "title": "从全球市场来看，各移动平台的总体格局保持稳定。",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              65.5,
+              142.9,
+              342.1,
+              156.7
+            ]
+          },
+          {
+            "title": "Android 推动安装量增长，",
+            "size": 20.04,
+            "bold": true,
+            "bbox": [
+              582.9,
+              191.3,
+              834.1,
+              214.4
+            ]
+          },
+          {
+            "title": "iOS 则带来价值提升",
+            "size": 20.04,
+            "bold": true,
+            "bbox": [
+              616.6,
+              215.3,
+              800.3,
+              238.4
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body text, bullet points, and informational graphics comparing Android and iOS, classifying it as a normal body content page rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 39,
+        "candidate_title": "2025年游戏营销者的启示：迈向2026年的关键洞察",
+        "normalized_title": "2025年游戏营销者的启示:迈向2026年的关键洞察",
+        "text_block_count": 7,
+        "plain_text_length": 195,
+        "heading_candidates": [
+          {
+            "title": "2025年游戏营销者的启示：迈向2026年的关键洞察",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              598.2,
+              96.1
+            ]
+          },
+          {
+            "title": "1",
+            "size": 18.02,
+            "bold": true,
+            "bbox": [
+              94.1,
+              181.6,
+              103.4,
+              202.4
+            ]
+          },
+          {
+            "title": "稳扎稳打胜于激进扩张，体系化增长优于盲目追逐流量规模。",
+            "size": 15.0,
+            "bold": true,
+            "bbox": [
+              124.8,
+              184.0,
+              529.8,
+              201.3
+            ]
+          },
+          {
+            "title": "2",
+            "size": 18.0,
+            "bold": true,
+            "bbox": [
+              93.8,
+              275.4,
+              105.2,
+              296.2
+            ]
+          },
+          {
+            "title": "创意迭代比单纯拓宽渠道更能铸就持久优势。",
+            "size": 15.0,
+            "bold": true,
+            "bbox": [
+              130.4,
+              277.8,
+              430.4,
+              295.1
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": "2025年游戏营销者的启示：迈向2026年的关键洞察",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body content consisting of three numbered points with detailed explanatory text and a large illustration, characterizing it as a summary or content page rather than a sparse section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 40,
+        "candidate_title": "全球手游",
+        "normalized_title": "全球手游",
+        "text_block_count": 4,
+        "plain_text_length": 60,
+        "heading_candidates": [
+          {
+            "title": "04",
+            "size": 48.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              112.4,
+              172.3,
+              167.8
+            ]
+          },
+          {
+            "title": "全球手游",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              195.8,
+              324.1,
+              258.1
+            ]
+          },
+          {
+            "title": "全链路增长策略指南",
+            "size": 54.02,
+            "bold": true,
+            "bbox": [
+              108.1,
+              262.7,
+              594.3,
+              325.1
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "全球手游全链路增长策略指南",
+        "level": 1,
+        "ordinal": "04",
+        "confidence": "high",
+        "reason": "The page features a large chapter number '04' and a prominent title stack overlaying a background image, which is characteristic of a major section divider.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 41,
+        "candidate_title": "全链路增长策略指南",
+        "normalized_title": "全链路增长策略指南",
+        "text_block_count": 13,
+        "plain_text_length": 361,
+        "heading_candidates": [
+          {
+            "title": "全链路增长策略指南",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              274.1,
+              96.1
+            ]
+          },
+          {
+            "title": "一套简单、可复制的盈利增长框架，助力移动应用在2026年破局盈利",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              65.5,
+              104.9,
+              494.6,
+              121.1
+            ]
+          },
+          {
+            "title": "早期用户流失",
+            "size": 12.02,
+            "bold": true,
+            "bbox": [
+              391.1,
+              198.4,
+              463.2,
+              212.2
+            ]
+          },
+          {
+            "title": "2026年将成为一个关键拐点",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              149.6,
+              220.0,
+              300.9,
+              233.9
+            ]
+          },
+          {
+            "title": "以留存为核心驱动的全链路增长框架",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              229.9,
+              275.2,
+              421.9,
+              289.1
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "全链路增长策略指南",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page features a large, prominent title and introductory text that explicitly mentions 'In this chapter' (在本章节中), indicating it serves as a chapter opener or section divider introducing a new major topic.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 51,
+        "candidate_title": "2025年手游",
+        "normalized_title": "2025年手游",
+        "text_block_count": 4,
+        "plain_text_length": 71,
+        "heading_candidates": [
+          {
+            "title": "05",
+            "size": 48.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              112.4,
+              171.6,
+              167.8
+            ]
+          },
+          {
+            "title": "2025年手游",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              195.8,
+              409.9,
+              258.1
+            ]
+          },
+          {
+            "title": "热门品类营销洞察",
+            "size": 54.02,
+            "bold": true,
+            "bbox": [
+              108.1,
+              262.7,
+              540.3,
+              325.1
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "2025年手游热门品类营销洞察",
+        "level": 1,
+        "ordinal": "05",
+        "confidence": "high",
+        "reason": "The page features a large chapter number '05' and a prominent title overlaying a background image, which is characteristic of a major section divider.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 56,
+        "candidate_title": "策略手游 热门创意策略",
+        "normalized_title": "策略手游热门创意策略",
+        "text_block_count": 8,
+        "plain_text_length": 236,
+        "heading_candidates": [
+          {
+            "title": "策略手游 热门创意策略",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              304.4,
+              96.1
+            ]
+          },
+          {
+            "title": "热门玩法：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              130.4,
+              779.7,
+              148.8
+            ]
+          },
+          {
+            "title": "常用素材套路：",
+            "size": 15.98,
+            "bold": true,
+            "bbox": [
+              699.9,
+              183.1,
+              811.6,
+              201.6
+            ]
+          },
+          {
+            "title": "未来创意趋势：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              269.6,
+              811.6,
+              288.0
+            ]
+          },
+          {
+            "title": "选择门跑酷副玩法+AI 3D模拟+故意失败引导下载",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              83.3,
+              464.0,
+              394.3,
+              480.2
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains detailed content including three example images, lists of gameplay types, common material tropes, and future trends, along with a specific caption at the bottom. It is a standard body page analyzing a topic, not a transition or title page.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 58,
+        "candidate_title": "RPG手游 热门创意策略",
+        "normalized_title": "rpg手游热门创意策略",
+        "text_block_count": 8,
+        "plain_text_length": 260,
+        "heading_candidates": [
+          {
+            "title": "RPG手游 热门创意策略",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              308.1,
+              96.1
+            ]
+          },
+          {
+            "title": "热门玩法：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              130.4,
+              779.7,
+              148.8
+            ]
+          },
+          {
+            "title": "常用素材套路：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              200.0,
+              811.6,
+              218.4
+            ]
+          },
+          {
+            "title": "未来创意趋势：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              303.2,
+              811.6,
+              321.6
+            ]
+          },
+          {
+            "title": "夸张/诡异AI+玩法展示+角色魅力渲染",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              83.3,
+              464.0,
+              319.8,
+              480.2
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This is a content-heavy body page featuring game ad examples, lists of popular gameplay, material tropes, and trend analysis, rather than a sparse transition or divider page.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 60,
+        "candidate_title": "模拟手游 热门创意策略",
+        "normalized_title": "模拟手游热门创意策略",
+        "text_block_count": 9,
+        "plain_text_length": 242,
+        "heading_candidates": [
+          {
+            "title": "模拟手游 热门创意策略",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              304.4,
+              96.1
+            ]
+          },
+          {
+            "title": "热门玩法：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.0,
+              130.4,
+              778.9,
+              148.8
+            ]
+          },
+          {
+            "title": "常用素材套路：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.0,
+              200.0,
+              810.8,
+              218.4
+            ]
+          },
+          {
+            "title": "未来创意趋势：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.0,
+              320.0,
+              810.8,
+              338.4
+            ]
+          },
+          {
+            "title": "合成/连线小游戏+AI美女诱惑+3D还原现实",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              83.3,
+              464.0,
+              353.9,
+              480.2
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains detailed content including game screenshots, lists of popular gameplay, common material tropes, and future trends, along with a source citation and page number (59). This indicates it is a normal body page presenting analysis rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 62,
+        "candidate_title": "休闲手游 热门创意策略",
+        "normalized_title": "休闲手游热门创意策略",
+        "text_block_count": 9,
+        "plain_text_length": 241,
+        "heading_candidates": [
+          {
+            "title": "休闲手游 热门创意策略",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              304.4,
+              96.1
+            ]
+          },
+          {
+            "title": "热门玩法：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              130.4,
+              779.7,
+              148.8
+            ]
+          },
+          {
+            "title": "常用素材套路：",
+            "size": 15.98,
+            "bold": true,
+            "bbox": [
+              699.9,
+              183.1,
+              811.6,
+              201.6
+            ]
+          },
+          {
+            "title": "未来创意趋势：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              303.2,
+              811.6,
+              321.6
+            ]
+          },
+          {
+            "title": "AI搞怪开头+短视频病毒meme+热梗化用",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              83.3,
+              464.0,
+              343.7,
+              480.2
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This is a content page containing detailed text, lists, and images explaining specific strategies ('Popular gameplay', 'Common material routines'), rather than a standalone section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 64,
+        "candidate_title": "益智解谜手游 热门创意策略",
+        "normalized_title": "益智解谜手游热门创意策略",
+        "text_block_count": 9,
+        "plain_text_length": 247,
+        "heading_candidates": [
+          {
+            "title": "益智解谜手游 热门创意策略",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              350.5,
+              96.1
+            ]
+          },
+          {
+            "title": "热门玩法：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              130.4,
+              779.7,
+              148.8
+            ]
+          },
+          {
+            "title": "常用素材套路：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              200.0,
+              811.6,
+              218.4
+            ]
+          },
+          {
+            "title": "未来创意趋势：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              320.0,
+              811.6,
+              338.4
+            ]
+          },
+          {
+            "title": "恶作剧短视频+微恐/无厘头脑洞+现实还原游戏",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              83.3,
+              464.0,
+              374.5,
+              480.2
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body content including bullet points, detailed text analysis, and multiple example images, fitting the description of a normal body page rather than a sparse section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 66,
+        "candidate_title": "娱乐场手游 热门创意策略",
+        "normalized_title": "娱乐场手游热门创意策略",
+        "text_block_count": 9,
+        "plain_text_length": 227,
+        "heading_candidates": [
+          {
+            "title": "娱乐场手游 热门创意策略",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              327.4,
+              96.1
+            ]
+          },
+          {
+            "title": "热门玩法：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              130.4,
+              779.7,
+              148.8
+            ]
+          },
+          {
+            "title": "常用素材套路：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              216.8,
+              811.6,
+              235.2
+            ]
+          },
+          {
+            "title": "未来创意趋势：",
+            "size": 15.96,
+            "bold": true,
+            "bbox": [
+              699.9,
+              336.8,
+              811.6,
+              355.2
+            ]
+          },
+          {
+            "title": "真金诱惑+真人演出+金色夸张特效",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              83.3,
+              464.0,
+              298.0,
+              480.2
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body content including multiple images, detailed text descriptions of strategies, routines, and trends, which characterizes it as a normal body page rather than a sparse section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 67,
+        "candidate_title": "媒体声音",
+        "normalized_title": "媒体声音",
+        "text_block_count": 3,
+        "plain_text_length": 25,
+        "heading_candidates": [
+          {
+            "title": "媒体声音",
+            "size": 96.02,
+            "bold": true,
+            "bbox": [
+              93.8,
+              90.8,
+              477.8,
+              201.7
+            ]
+          },
+          {
+            "title": "白鲸出海、独立出海联合体、扬帆出海",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              104.4,
+              221.2,
+              342.8,
+              237.4
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "媒体声音",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page features a single, very large prominent title '媒体声音' with a smaller subtitle below it, and ample white space, which is characteristic of a section divider or chapter opener.",
+        "accepted": false,
+        "rejection_reason": "duplicate_title"
+      },
+      {
+        "page_number": 68,
+        "candidate_title": "白鲸出海",
+        "normalized_title": "白鲸出海",
+        "text_block_count": 7,
+        "plain_text_length": 680,
+        "heading_candidates": [
+          {
+            "title": "白鲸出海",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              292.2,
+              154.1
+            ]
+          },
+          {
+            "title": "67",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              12.8,
+              495.7,
+              27.9,
+              509.5
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": "白鲸出海",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body text consisting of five paragraphs analyzing market trends (SLG, Merge games), which classifies it as a normal body page rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 69,
+        "candidate_title": "独立出海联合体",
+        "normalized_title": "独立出海联合体",
+        "text_block_count": 7,
+        "plain_text_length": 1016,
+        "heading_candidates": [
+          {
+            "title": "独立出海联合体",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              454.3,
+              154.1
+            ]
+          },
+          {
+            "title": "68",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              12.2,
+              495.7,
+              28.4,
+              509.5
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains multiple paragraphs of dense body text below the title, characterizing it as a normal body content page rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 70,
+        "candidate_title": "扬帆出海",
+        "normalized_title": "扬帆出海",
+        "text_block_count": 6,
+        "plain_text_length": 342,
+        "heading_candidates": [
+          {
+            "title": "扬帆出海",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              292.2,
+              154.1
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": "扬帆出海",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body text (four paragraphs) summarizing market data, trends, and revenue figures, which characterizes it as an executive summary or body page rather than a sparse section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 71,
+        "candidate_title": "2025年全球热门地区",
+        "normalized_title": "2025年全球热门地区",
+        "text_block_count": 4,
+        "plain_text_length": 73,
+        "heading_candidates": [
+          {
+            "title": "06",
+            "size": 48.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              112.4,
+              172.8,
+              167.8
+            ]
+          },
+          {
+            "title": "2025年全球热门地区",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              195.8,
+              625.9,
+              258.1
+            ]
+          },
+          {
+            "title": "手游营销观察",
+            "size": 54.02,
+            "bold": true,
+            "bbox": [
+              108.1,
+              262.7,
+              432.2,
+              325.1
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "2025年全球热门地区手游营销观察",
+        "level": 1,
+        "ordinal": "06",
+        "confidence": "high",
+        "reason": "Page features a large chapter number '06' and a prominent centered title stack, characteristic of a major section opener.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 80,
+        "candidate_title": "媒体声音",
+        "normalized_title": "媒体声音",
+        "text_block_count": 3,
+        "plain_text_length": 35,
+        "heading_candidates": [
+          {
+            "title": "媒体声音",
+            "size": 96.02,
+            "bold": true,
+            "bbox": [
+              93.8,
+              90.8,
+              477.8,
+              201.7
+            ]
+          },
+          {
+            "title": "罗斯基、龙虾游戏推荐、急速行走的小U盘、一枚游戏干饭人",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              104.4,
+              221.2,
+              479.6,
+              237.4
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "媒体声音",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page features a single large, prominent title '媒体声音' (Media Voice) with a subtitle listing specific media sources, characteristic of a section divider introducing a new topic.",
+        "accepted": false,
+        "rejection_reason": "duplicate_title"
+      },
+      {
+        "page_number": 81,
+        "candidate_title": "当下，出海仍是行业大势所趋，但入局者增多让多品类竞争愈发激烈。除游戏外，短剧、社交工具、金融产品等赛道崛起，正成为出海",
+        "normalized_title": "当下，出海仍是行业大势所趋，但入局者增多让多品类竞争愈发激烈。除游戏外，短剧、社交工具、金融产品等赛道崛起，正成为出海",
+        "text_block_count": 7,
+        "plain_text_length": 452,
+        "heading_candidates": [
+          {
+            "title": "罗斯基",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              238.2,
+              154.1
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": "罗斯基",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains multiple paragraphs of body text discussing industry trends (mobile games, AI, PC games), which characterizes it as a normal body content page (likely an opinion piece or column) rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 82,
+        "candidate_title": "龙虾游戏推荐",
+        "normalized_title": "龙虾游戏推荐",
+        "text_block_count": 10,
+        "plain_text_length": 382,
+        "heading_candidates": [
+          {
+            "title": "龙虾游戏推荐",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              400.3,
+              154.1
+            ]
+          },
+          {
+            "title": "2025年我观察到海外的几个点：",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              167.7,
+              280.8,
+              183.9
+            ]
+          },
+          {
+            "title": "1、",
+            "size": 14.06,
+            "bold": true,
+            "bbox": [
+              76.2,
+              201.3,
+              97.4,
+              217.5
+            ]
+          },
+          {
+            "title": "国内IAA游戏改IAAP出海：",
+            "size": 14.06,
+            "bold": true,
+            "bbox": [
+              97.4,
+              201.3,
+              272.4,
+              217.5
+            ]
+          },
+          {
+            "title": "2、",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              251.7,
+              99.1,
+              267.9
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains a main title followed by a subtitle and a detailed numbered list of 7 specific points/observations. This density of content identifies it as a body page (likely a summary or key takeaways slide) rather than a simple section divider page.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 83,
+        "candidate_title": "急速行走的小U盘",
+        "normalized_title": "急速行走的小u盘",
+        "text_block_count": 6,
+        "plain_text_length": 446,
+        "heading_candidates": [
+          {
+            "title": "急速行走的小U盘",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              495.9,
+              154.1
+            ]
+          },
+          {
+            "title": "2025游戏工业化明显！SLG蜂拥而上！2026展望Tiktok小游戏",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              167.7,
+              477.7,
+              183.9
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": "急速行走的小U盘",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body text consisting of three paragraphs discussing 2025/2026 trends, which classifies it as a normal body page rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 84,
+        "candidate_title": "一枚游戏干饭人",
+        "normalized_title": "一枚游戏干饭人",
+        "text_block_count": 6,
+        "plain_text_length": 235,
+        "heading_candidates": [
+          {
+            "title": "一枚游戏干饭人",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              454.3,
+              154.1
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains a prominent title but is followed by four substantial paragraphs of body text detailing industry insights, fitting the description of a normal body page rather than a sparse section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 85,
+        "candidate_title": "2025年手游",
+        "normalized_title": "2025年手游",
+        "text_block_count": 4,
+        "plain_text_length": 72,
+        "heading_candidates": [
+          {
+            "title": "07",
+            "size": 48.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              112.4,
+              169.0,
+              167.8
+            ]
+          },
+          {
+            "title": "2025年手游",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              108.1,
+              195.8,
+              409.9,
+              258.1
+            ]
+          },
+          {
+            "title": "热门广告主营销洞察",
+            "size": 54.02,
+            "bold": true,
+            "bbox": [
+              108.1,
+              262.7,
+              594.3,
+              325.1
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "2025年手游热门广告主营销洞察",
+        "level": 1,
+        "ordinal": "07",
+        "confidence": "high",
+        "reason": "Page features a large chapter number '07' and a prominent title overlay, indicating a new section.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 87,
+        "candidate_title": "MapleStory : Idle RPG",
+        "normalized_title": "maplestory:idlerpg",
+        "text_block_count": 17,
+        "plain_text_length": 300,
+        "heading_candidates": [
+          {
+            "title": "MapleStory : Idle RPG",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              330.9,
+              96.1
+            ]
+          },
+          {
+            "title": "2025优质在投创意",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              329.8,
+              68.3,
+              527.5,
+              96.1
+            ]
+          },
+          {
+            "title": "投放渠道：",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              135.1,
+              129.0,
+              205.2,
+              145.2
+            ]
+          },
+          {
+            "title": "素材数据：横版",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              135.1,
+              154.2,
+              233.3,
+              170.4
+            ]
+          },
+          {
+            "title": "素材特点：",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              135.1,
+              179.4,
+              205.2,
+              195.6
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This is a normal body page containing detailed analysis of a specific ad creative, including descriptive paragraphs, specific metrics (impressions, popularity), and a visual mockup, rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 91,
+        "candidate_title": "Gossip Harbor",
+        "normalized_title": "gossipharbor",
+        "text_block_count": 16,
+        "plain_text_length": 281,
+        "heading_candidates": [
+          {
+            "title": "Gossip Harbor",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              242.7,
+              96.1
+            ]
+          },
+          {
+            "title": "2025优质在投创意",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              241.2,
+              68.3,
+              438.8,
+              96.1
+            ]
+          },
+          {
+            "title": "投放渠道：",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              135.1,
+              129.0,
+              205.2,
+              145.2
+            ]
+          },
+          {
+            "title": "素材数据：",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              135.1,
+              154.2,
+              205.2,
+              170.4
+            ]
+          },
+          {
+            "title": "素材特点：",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              135.1,
+              179.4,
+              205.2,
+              195.6
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains detailed body content including specific ad metrics (impressions, popularity), descriptive text about creative features, and a visual example of an ad, indicating it is a content/analysis page rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 93,
+        "candidate_title": "Kingshot",
+        "normalized_title": "kingshot",
+        "text_block_count": 16,
+        "plain_text_length": 284,
+        "heading_candidates": [
+          {
+            "title": "Kingshot",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              171.2,
+              96.1
+            ]
+          },
+          {
+            "title": "2025优质在投创意",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              171.2,
+              68.3,
+              375.2,
+              96.1
+            ]
+          },
+          {
+            "title": "投放渠道：",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              135.1,
+              129.0,
+              205.2,
+              145.2
+            ]
+          },
+          {
+            "title": "素材数据：",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              135.1,
+              154.2,
+              205.2,
+              170.4
+            ]
+          },
+          {
+            "title": "素材特点：",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              135.1,
+              179.4,
+              205.2,
+              195.6
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This is a detailed body page analyzing a specific ad creative ('Kingshot'), featuring descriptive text, specific metrics (impressions, popularity), and a visual example of the ad. It is not a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 94,
+        "candidate_title": "独家视角",
+        "normalized_title": "独家视角",
+        "text_block_count": 3,
+        "plain_text_length": 43,
+        "heading_candidates": [
+          {
+            "title": "独家视角",
+            "size": 96.02,
+            "bold": true,
+            "bbox": [
+              93.8,
+              90.8,
+              477.8,
+              201.7
+            ]
+          },
+          {
+            "title": "Youdao",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              104.4,
+              221.2,
+              159.9,
+              237.4
+            ]
+          },
+          {
+            "title": "Ads、OneSight、ToBid、Joyce游戏运营",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              164.7,
+              221.2,
+              444.8,
+              237.4
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "独家视角",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page features a large, prominent title '独家视角' (Exclusive Perspective) with a subtitle listing specific entities, set against a clean background with a supporting image, which is characteristic of a major section divider.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 96,
+        "candidate_title": "OneSight",
+        "normalized_title": "onesight",
+        "text_block_count": 7,
+        "plain_text_length": 435,
+        "heading_candidates": [
+          {
+            "title": "OneSight",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              337.4,
+              154.1
+            ]
+          },
+          {
+            "title": "一、“重角色” VS “重故事”：游戏品牌的叙事锚点分化与心智占领",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              218.1,
+              484.2,
+              234.3
+            ]
+          },
+          {
+            "title": "二、和社区玩在一起：竞技类游戏的 “玩家共创式” 品牌运营新范式",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              352.5,
+              492.0,
+              368.7
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains detailed body text, an introductory paragraph, and two numbered sections with sub-points, characteristic of a normal body content page or executive summary rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 97,
+        "candidate_title": "ToBid",
+        "normalized_title": "tobid",
+        "text_block_count": 7,
+        "plain_text_length": 427,
+        "heading_candidates": [
+          {
+            "title": "ToBid",
+            "size": 54.0,
+            "bold": true,
+            "bbox": [
+              76.2,
+              91.8,
+              239.1,
+              154.1
+            ]
+          },
+          {
+            "title": "效率重构周期：2025走向理性，2026走向结构红利",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              167.7,
+              401.5,
+              183.9
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "ToBid",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page features a large, prominent title 'ToBid' and acts as an introduction to a major section (indicated by the 'Exclusive Perspective' watermark and partner logos), functioning as a section opener despite containing introductory body text.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 98,
+        "candidate_title": "Joyce独家观点2026用户运营范式：告别“流量思维”，重构“信任资产”",
+        "normalized_title": "joyce独家观点2026用户运营范式:告别“流量思维”，重构“信任资产”",
+        "text_block_count": 5,
+        "plain_text_length": 537,
+        "heading_candidates": [
+          {
+            "title": "Joyce独家观点2026用户运营范式：告别“流量思维”，重构“信任资产”",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              167.7,
+              520.0,
+              183.9
+            ]
+          },
+          {
+            "title": "一、0-1破局：DTC社区驱动，把玩家变成“合伙人”",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              251.7,
+              395.8,
+              267.9
+            ]
+          },
+          {
+            "title": "二、运营升维：AI情感基建，用“高维心力”对抗内卷",
+            "size": 14.04,
+            "bold": true,
+            "bbox": [
+              76.2,
+              318.9,
+              399.3,
+              335.1
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body text, including an introductory paragraph and two numbered subsections with detailed content, indicating it is a content page (expert viewpoint) rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 99,
+        "candidate_title": "报告说明",
+        "normalized_title": "报告说明",
+        "text_block_count": 2,
+        "plain_text_length": 44,
+        "heading_candidates": [
+          {
+            "title": "致谢&",
+            "size": 60.02,
+            "bold": true,
+            "bbox": [
+              59.2,
+              150.0,
+              226.7,
+              219.3
+            ]
+          },
+          {
+            "title": "报告说明",
+            "size": 60.0,
+            "bold": true,
+            "bbox": [
+              59.2,
+              215.2,
+              299.2,
+              284.5
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "致谢 & 报告说明",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page features a large, prominent title '致谢 & 报告说明' (Special Thanks & Report Description) with a subtitle, styled clearly as a section opener.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 101,
+        "candidate_title": "About",
+        "normalized_title": "about",
+        "text_block_count": 9,
+        "plain_text_length": 284,
+        "heading_candidates": [
+          {
+            "title": "About",
+            "size": 60.02,
+            "bold": true,
+            "bbox": [
+              448.3,
+              35.6,
+              639.3,
+              104.9
+            ]
+          },
+          {
+            "title": "关于Funtap",
+            "size": 24.0,
+            "bold": true,
+            "bbox": [
+              65.2,
+              125.8,
+              199.9,
+              153.5
+            ]
+          },
+          {
+            "title": "Games：东南亚领先发行商之一",
+            "size": 24.0,
+            "bold": true,
+            "bbox": [
+              208.4,
+              125.8,
+              556.9,
+              153.5
+            ]
+          },
+          {
+            "title": "320",
+            "size": 60.02,
+            "bold": true,
+            "bbox": [
+              65.2,
+              335.2,
+              182.3,
+              404.5
+            ]
+          },
+          {
+            "title": "150",
+            "size": 60.02,
+            "bold": true,
+            "bbox": [
+              239.0,
+              335.2,
+              349.3,
+              404.5
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page contains substantial body paragraphs, detailed statistics (320 games, 150 partners, 29M downloads), and multiple game images, functioning as a content page (company profile) rather than a simple transition or title page.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 102,
+        "candidate_title": "特别鸣谢",
+        "normalized_title": "特别鸣谢",
+        "text_block_count": 2,
+        "plain_text_length": 19,
+        "heading_candidates": [
+          {
+            "title": "特别鸣谢",
+            "size": 24.02,
+            "bold": true,
+            "bbox": [
+              65.5,
+              68.3,
+              158.8,
+              96.1
+            ]
+          },
+          {
+            "title": "101",
+            "size": 12.0,
+            "bold": true,
+            "bbox": [
+              10.1,
+              495.7,
+              30.6,
+              509.5
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": "特别鸣谢",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This is a 'Special Thanks' (credits) page listing a grid of partner logos. It is a content page for acknowledgments, not a transition divider page.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      }
+    ],
+    "exhibit_pages": [],
+    "ready": true
+  },
+  "route_decision": {
+    "primary_strategy": "divider_seeded",
+    "fallback_chain": [
+      "docarbor_native",
+      "layout_fallback",
+      "minimal_fallback"
+    ],
+    "decision_reason": "divider_pages_provide_best_available_outline",
+    "has_many_exhibits": false,
+    "exhibit_pages": []
+  },
+  "attempts": [
+    {
+      "strategy": "divider_seeded",
+      "status": "success",
+      "score": 100.214,
+      "score_breakdown": {
+        "non_empty": 30.0,
+        "page_coverage": 17.134,
+        "depth": 24.0,
+        "internal_nodes": 16.0,
+        "root_shape": 11.032,
+        "heading_alignment": 6.322,
+        "numbering": 0.0,
+        "title_uniqueness": 7.226,
+        "penalty_flat": 0.0,
+        "penalty_shallow": 0.0,
+        "penalty_root_explosion": -0.0,
+        "penalty_noise_roots": -0.0,
+        "penalty_garbled_roots": -0.0,
+        "penalty_bad_roots": -0.0,
+        "penalty_duplicates": -9.0,
+        "penalty_backtrack": -2.5
+      },
+      "metrics": {
+        "root_count": 15,
+        "node_count": 186,
+        "max_depth": 4,
+        "depth_histogram": {
+          "1": 15,
+          "2": 43,
+          "3": 75,
+          "4": 53
+        },
+        "unique_page_count": 99,
+        "page_coverage_ratio": 0.9519,
+        "duplicate_title_count": 18,
+        "title_uniqueness_ratio": 0.9032,
+        "heading_alignment_ratio": 0.7903,
+        "numbered_consistency_ratio": 0.0,
+        "page_backtrack_count": 1,
+        "noise_root_count": 0,
+        "garbled_root_count": 0,
+        "low_quality_root_count": 0,
+        "bad_root_count": 0,
+        "internal_node_count": 47
+      },
+      "artifact_paths": {
+        "raw_tree_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\docarbor_raw.json",
+        "result_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\result.json",
+        "report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\report.json",
+        "summary_report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\summary_report.json",
+        "build_outline_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\build_outline.json"
+      }
+    }
+  ]
+}

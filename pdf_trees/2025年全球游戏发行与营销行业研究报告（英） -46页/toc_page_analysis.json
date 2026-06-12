@@ -1,0 +1,63 @@
+{
+  "selected_pages": [
+    3
+  ],
+  "source": "text_confirmed",
+  "candidate_pages": [
+    3,
+    2,
+    4
+  ],
+  "heuristic_selected_pages": [
+    3
+  ],
+  "candidate_page_scores": [
+    {
+      "page_number": 3,
+      "score": 10,
+      "candidate_kind": "explicit",
+      "has_explicit_toc_title": true,
+      "parsed_line_matches": 0,
+      "heading_like_matches": 6,
+      "toc_pattern_matches": 0,
+      "text_block_count": 89,
+      "short_line_count": 114,
+      "long_line_count": 0,
+      "value_like_line_count": 55
+    }
+  ],
+  "pages_checked_with_vlm": [],
+  "page_role_checks": [],
+  "text_pages_checked": [
+    3,
+    2,
+    4
+  ],
+  "text_page_role_checks": [
+    {
+      "page_number": 3,
+      "role": "toc_start",
+      "confidence": "high",
+      "reason": "Page explicitly lists the report's main sections (Foreword, Sections 1-6) with corresponding page numbers and contains explicit TOC titles like 'Contents' and 'Table of Contents'."
+    },
+    {
+      "page_number": 2,
+      "role": "not_toc",
+      "confidence": "high",
+      "reason": "Page contains no text, lines, or TOC patterns to indicate a table of contents."
+    },
+    {
+      "page_number": 4,
+      "role": "not_toc",
+      "confidence": "high",
+      "reason": "The page exclusively lists tables and their corresponding page numbers, which classifies it as an auxiliary index (List of Tables) rather than the main table of contents per Rule 1."
+    }
+  ],
+  "text_model_source": "Qwen3.6-Plus",
+  "text_fallback_model_source": "Qwen3.6-Plus",
+  "vlm_escalation_reason": null,
+  "vlm_review_selected_pages": [],
+  "vlm_review_disagreed": false,
+  "vlm_override_applied": false,
+  "vlm_override_reason": null
+}

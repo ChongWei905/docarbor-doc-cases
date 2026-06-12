@@ -1,0 +1,538 @@
+{
+  "requested_strategy": "auto",
+  "toc_page_analysis_source": "text_confirmed",
+  "outline_source": "catalog_repeat",
+  "outline_status": "success",
+  "outline_error_type": null,
+  "outline_error_message": null,
+  "toc_assessment": {
+    "confidence": "low",
+    "score": 0.6,
+    "candidate_pages": [
+      3
+    ],
+    "toc_page_number": 3,
+    "outline_entry_count": 4,
+    "mapped_entry_ratio": 1.0,
+    "distinct_level_count": 1,
+    "numbered_entry_ratio": 1.0,
+    "page_span": 0,
+    "has_explicit_toc_title": true
+  },
+  "outline_quality_assessment": {
+    "quality": "medium",
+    "entry_count": 4,
+    "outline_entry_count": 4,
+    "mapped_entry_ratio": 1.0,
+    "hierarchy_signal": false,
+    "section_parent_count": 0,
+    "low_quality_count": 0,
+    "low_quality_ratio": 0.0,
+    "section_like_count": 0,
+    "low_quality_titles": [],
+    "reasons": [
+      "strong_page_mapping",
+      "no_hierarchy_signal",
+      "low_noise_outline"
+    ]
+  },
+  "catalog_repeat_analysis": {
+    "status": "success",
+    "candidate_pages": [
+      3,
+      14,
+      29,
+      36
+    ],
+    "accepted_pages": [
+      3,
+      14,
+      29,
+      36
+    ],
+    "entry_count": 4,
+    "canonical_items": [
+      {
+        "ordinal": "01",
+        "title": "中国移动游戏市场现状分析",
+        "display_title": "01 中国移动游戏市场现状分析",
+        "key": "01"
+      },
+      {
+        "ordinal": "02",
+        "title": "海外移动游戏市场现状分析",
+        "display_title": "02 海外移动游戏市场现状分析",
+        "key": "02"
+      },
+      {
+        "ordinal": "03",
+        "title": "移动游戏典型产品&企业案例分析",
+        "display_title": "03 移动游戏典型产品&企业案例分析",
+        "key": "03"
+      },
+      {
+        "ordinal": "04",
+        "title": "全球移动游戏市场发展趋势",
+        "display_title": "04 全球移动游戏市场发展趋势",
+        "key": "04"
+      }
+    ],
+    "resolved_items": [
+      {
+        "ordinal": "01",
+        "title": "中国移动游戏市场现状分析",
+        "display_title": "01 中国移动游戏市场现状分析",
+        "key": "01",
+        "start_page": 4,
+        "source_page": 3
+      },
+      {
+        "ordinal": "02",
+        "title": "海外移动游戏市场现状分析",
+        "display_title": "02 海外移动游戏市场现状分析",
+        "key": "02",
+        "start_page": 15,
+        "source_page": 14
+      },
+      {
+        "ordinal": "03",
+        "title": "移动游戏典型产品&企业案例分析",
+        "display_title": "03 移动游戏典型产品&企业案例分析",
+        "key": "03",
+        "start_page": 30,
+        "source_page": 29
+      },
+      {
+        "ordinal": "04",
+        "title": "全球移动游戏市场发展趋势",
+        "display_title": "04 全球移动游戏市场发展趋势",
+        "key": "04",
+        "start_page": 37,
+        "source_page": 36
+      }
+    ],
+    "unresolved_items": [],
+    "page_checks": [
+      {
+        "page_number": 3,
+        "text_block_count": 16,
+        "plain_text_length": 188,
+        "heading_like_matches": 0,
+        "parsed_line_matches": 1,
+        "candidate_rows": [
+          {
+            "raw_text": "状分析 4",
+            "title": "状分析",
+            "printed_page": 4,
+            "kind": "page_anchored"
+          }
+        ],
+        "top_lines": [
+          "目录Contents",
+          "01",
+          "中国移动游戏市场现",
+          "状分析",
+          "02",
+          "03",
+          "04",
+          "海外移动游戏市场现"
+        ],
+        "role": "catalog_repeat_page",
+        "items": [
+          {
+            "ordinal": "01",
+            "title": "中国移动游戏市场现状分析",
+            "display_title": "01 中国移动游戏市场现状分析",
+            "key": "01"
+          },
+          {
+            "ordinal": "02",
+            "title": "海外移动游戏市场现状分析",
+            "display_title": "02 海外移动游戏市场现状分析",
+            "key": "02"
+          },
+          {
+            "ordinal": "03",
+            "title": "移动游戏典型产品&企业案例分析",
+            "display_title": "03 移动游戏典型产品&企业案例分析",
+            "key": "03"
+          },
+          {
+            "ordinal": "04",
+            "title": "全球移动游戏市场发展趋势",
+            "display_title": "04 全球移动游戏市场发展趋势",
+            "key": "04"
+          }
+        ],
+        "active_item": "01",
+        "resolved_active_key": "01",
+        "confidence": "high",
+        "reason": "The page is titled '目录 Contents', lists four numbered sections, and visually highlights item '01' with a blue background while the others are grey, indicating it is the active section.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 14,
+        "text_block_count": 15,
+        "plain_text_length": 200,
+        "heading_like_matches": 0,
+        "parsed_line_matches": 0,
+        "candidate_rows": [],
+        "top_lines": [
+          "目录Contents",
+          "02",
+          "海外移动游戏市场现",
+          "状分析",
+          "01",
+          "03",
+          "04",
+          "中国移动游戏市场现"
+        ],
+        "role": "catalog_repeat_page",
+        "items": [
+          {
+            "ordinal": "01",
+            "title": "中国移动游戏市场现状分析",
+            "display_title": "01 中国移动游戏市场现状分析",
+            "key": "01"
+          },
+          {
+            "ordinal": "02",
+            "title": "海外移动游戏市场现状分析",
+            "display_title": "02 海外移动游戏市场现状分析",
+            "key": "02"
+          },
+          {
+            "ordinal": "03",
+            "title": "移动游戏典型产品&企业案例分析",
+            "display_title": "03 移动游戏典型产品&企业案例分析",
+            "key": "03"
+          },
+          {
+            "ordinal": "04",
+            "title": "全球移动游戏市场发展趋势",
+            "display_title": "04 全球移动游戏市场发展趋势",
+            "key": "04"
+          }
+        ],
+        "active_item": "02",
+        "resolved_active_key": "02",
+        "confidence": "high",
+        "reason": "The page is titled '目录 Contents', lists four sections (01-04), and visually highlights item '02' with a blue background while the others are greyed out, indicating it is the current section.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 29,
+        "text_block_count": 15,
+        "plain_text_length": 187,
+        "heading_like_matches": 0,
+        "parsed_line_matches": 0,
+        "candidate_rows": [],
+        "top_lines": [
+          "目录Contents",
+          "03",
+          "移动游戏典型产品&",
+          "企业案例分析",
+          "01",
+          "02",
+          "04",
+          "中国移动游戏市场现"
+        ],
+        "role": "catalog_repeat_page",
+        "items": [
+          {
+            "ordinal": "01",
+            "title": "中国移动游戏市场现状分析",
+            "display_title": "01 中国移动游戏市场现状分析",
+            "key": "01"
+          },
+          {
+            "ordinal": "02",
+            "title": "海外移动游戏市场现状分析",
+            "display_title": "02 海外移动游戏市场现状分析",
+            "key": "02"
+          },
+          {
+            "ordinal": "03",
+            "title": "移动游戏典型产品&企业案例分析",
+            "display_title": "03 移动游戏典型产品&企业案例分析",
+            "key": "03"
+          },
+          {
+            "ordinal": "04",
+            "title": "全球移动游戏市场发展趋势",
+            "display_title": "04 全球移动游戏市场发展趋势",
+            "key": "04"
+          }
+        ],
+        "active_item": "03",
+        "resolved_active_key": "03",
+        "confidence": "high",
+        "reason": "The page features a 'Contents' header and lists four sections. Section 03 is highlighted with a blue background and white text, distinguishing it as the active item, while the others are greyed out.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 36,
+        "text_block_count": 15,
+        "plain_text_length": 190,
+        "heading_like_matches": 0,
+        "parsed_line_matches": 0,
+        "candidate_rows": [],
+        "top_lines": [
+          "目录Contents",
+          "04",
+          "全球移动游戏市场发",
+          "展趋势",
+          "01",
+          "02",
+          "03",
+          "中国移动游戏市场现"
+        ],
+        "role": "catalog_repeat_page",
+        "items": [
+          {
+            "ordinal": "01",
+            "title": "中国移动游戏市场现状分析",
+            "display_title": "01 中国移动游戏市场现状分析",
+            "key": "01"
+          },
+          {
+            "ordinal": "02",
+            "title": "海外移动游戏市场现状分析",
+            "display_title": "02 海外移动游戏市场现状分析",
+            "key": "02"
+          },
+          {
+            "ordinal": "03",
+            "title": "移动游戏典型产品&企业案例分析",
+            "display_title": "03 移动游戏典型产品&企业案例分析",
+            "key": "03"
+          },
+          {
+            "ordinal": "04",
+            "title": "全球移动游戏市场发展趋势",
+            "display_title": "04 全球移动游戏市场发展趋势",
+            "key": "04"
+          }
+        ],
+        "active_item": "04",
+        "resolved_active_key": "04",
+        "confidence": "high",
+        "reason": "The page displays a 'Contents' header and a list of four sections (01-04). Section 04 is visually emphasized with a blue background, indicating it is the current active section.",
+        "accepted": true,
+        "rejection_reason": null
+      }
+    ],
+    "active_item_sequence": [
+      "01",
+      "02",
+      "03",
+      "04"
+    ],
+    "monotonic_active_progression": true,
+    "route_failure_reason": null,
+    "ready": true
+  },
+  "divider_analysis": {
+    "status": "empty",
+    "candidate_pages": [
+      1,
+      41,
+      46
+    ],
+    "accepted_pages": [
+      1
+    ],
+    "entry_count": 1,
+    "page_span": 0,
+    "page_checks": [
+      {
+        "page_number": 1,
+        "candidate_title": "全球移动游戏行业白皮书",
+        "normalized_title": "全球移动游戏行业白皮书",
+        "text_block_count": 2,
+        "plain_text_length": 16,
+        "heading_candidates": [
+          {
+            "title": "全球移动游戏行业白皮书",
+            "size": 44.05,
+            "bold": true,
+            "bbox": [
+              50.2,
+              218.7,
+              552.8,
+              276.8
+            ]
+          }
+        ],
+        "role": "section_divider",
+        "title": "2026全球移动游戏行业白皮书",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "The page features a large, prominent title stack ('2026', 'Global Mobile Game Industry', 'White Paper') centered on a blue background with illustrative graphics, characteristic of a main title page or major section divider.",
+        "accepted": true,
+        "rejection_reason": null
+      },
+      {
+        "page_number": 41,
+        "candidate_title": "法律声明",
+        "normalized_title": "法律声明",
+        "text_block_count": 5,
+        "plain_text_length": 392,
+        "heading_candidates": [
+          {
+            "title": "法律声明",
+            "size": 42.6,
+            "bold": true,
+            "bbox": [
+              44.7,
+              29.9,
+              215.1,
+              86.1
+            ]
+          },
+          {
+            "title": "Legal Statement",
+            "size": 24.0,
+            "bold": false,
+            "bbox": [
+              220.2,
+              50.4,
+              405.6,
+              81.4
+            ]
+          },
+          {
+            "title": "免责声明",
+            "size": 18.0,
+            "bold": true,
+            "bbox": [
+              58.7,
+              154.6,
+              130.7,
+              178.3
+            ]
+          },
+          {
+            "title": "法律条款",
+            "size": 18.0,
+            "bold": true,
+            "bbox": [
+              58.7,
+              293.1,
+              130.7,
+              316.8
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": "法律声明 Legal Statement",
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This is a legal page containing full text paragraphs (Disclaimer and Legal Terms), which classifies it as a content page rather than a section divider.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      },
+      {
+        "page_number": 46,
+        "candidate_title": "游戏数据/移动应用分析平台",
+        "normalized_title": "游戏数据/移动应用分析平台",
+        "text_block_count": 3,
+        "plain_text_length": 25,
+        "heading_candidates": [
+          {
+            "title": "游戏数据/移动应用分析平台",
+            "size": 44.05,
+            "bold": true,
+            "bbox": [
+              201.9,
+              213.8,
+              769.3,
+              271.9
+            ]
+          }
+        ],
+        "role": "not_divider",
+        "title": null,
+        "level": 1,
+        "ordinal": null,
+        "confidence": "high",
+        "reason": "This is an introductory or company profile page for 'Diandian Data', featuring a logo, platform icons, feature lists, a descriptive paragraph, a QR code, and key statistics. It is a content-rich page, not a sparse section divider or chapter opener.",
+        "accepted": false,
+        "rejection_reason": "not_divider"
+      }
+    ],
+    "exhibit_pages": [],
+    "ready": false
+  },
+  "route_decision": {
+    "primary_strategy": "catalog_repeat_seeded",
+    "fallback_chain": [
+      "docarbor_native",
+      "layout_fallback",
+      "minimal_fallback"
+    ],
+    "decision_reason": "repeated_catalog_pages_provide_best_available_outline",
+    "has_many_exhibits": false,
+    "exhibit_pages": []
+  },
+  "attempts": [
+    {
+      "strategy": "catalog_repeat_seeded",
+      "status": "success",
+      "score": 109.629,
+      "score_breakdown": {
+        "non_empty": 30.0,
+        "page_coverage": 13.405,
+        "depth": 24.0,
+        "internal_nodes": 16.0,
+        "root_shape": 11.304,
+        "heading_alignment": 7.536,
+        "numbering": 0.0,
+        "title_uniqueness": 7.884,
+        "penalty_flat": 0.0,
+        "penalty_shallow": 0.0,
+        "penalty_root_explosion": -0.0,
+        "penalty_noise_roots": -0.0,
+        "penalty_garbled_roots": -0.0,
+        "penalty_bad_roots": -0.0,
+        "penalty_duplicates": -0.5,
+        "penalty_backtrack": -0.0
+      },
+      "metrics": {
+        "root_count": 4,
+        "node_count": 69,
+        "max_depth": 4,
+        "depth_histogram": {
+          "1": 4,
+          "2": 33,
+          "3": 28,
+          "4": 4
+        },
+        "unique_page_count": 35,
+        "page_coverage_ratio": 0.7447,
+        "duplicate_title_count": 1,
+        "title_uniqueness_ratio": 0.9855,
+        "heading_alignment_ratio": 0.942,
+        "numbered_consistency_ratio": 0.0,
+        "page_backtrack_count": 0,
+        "noise_root_count": 0,
+        "garbled_root_count": 0,
+        "low_quality_root_count": 0,
+        "bad_root_count": 0,
+        "internal_node_count": 29
+      },
+      "artifact_paths": {
+        "raw_tree_json": "D:\\code\\semantic-construct\\0630转测\\results\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\candidate_trees\\catalog_repeat_seeded\\docarbor_raw.json",
+        "result_json": "D:\\code\\semantic-construct\\0630转测\\results\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\candidate_trees\\catalog_repeat_seeded\\result.json",
+        "report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\candidate_trees\\catalog_repeat_seeded\\report.json",
+        "summary_report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\candidate_trees\\catalog_repeat_seeded\\summary_report.json",
+        "build_outline_json": "D:\\code\\semantic-construct\\0630转测\\results\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\candidate_trees\\catalog_repeat_seeded\\build_outline.json"
+      }
+    }
+  ]
+}

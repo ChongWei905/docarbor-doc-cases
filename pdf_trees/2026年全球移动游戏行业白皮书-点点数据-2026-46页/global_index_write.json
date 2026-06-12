@@ -1,0 +1,66 @@
+{
+  "model": "embedding-3",
+  "embedding_dimensions": 1024,
+  "sections_with_text_count": 69,
+  "chunk_count": 102,
+  "records": [
+    {
+      "chunk_id": "f014bd25-9902-5993-8387-029da026a955",
+      "section_id": "f5a270f7-885d-59e7-86c1-f0e563cbe664",
+      "node_id": "0000",
+      "chunk_index": 0,
+      "title": "01中国移动游戏市场现状分析",
+      "title_path": "01中国移动游戏市场现状分析",
+      "page_index": 4,
+      "token_count": 400,
+      "text_hash": "4d3c81448823a65ebdff2fbc1c65ba82de93f38c853629c3ea5308429a19da73"
+    },
+    {
+      "chunk_id": "f34f5cef-de49-545e-9627-b58ae48f881f",
+      "section_id": "f5a270f7-885d-59e7-86c1-f0e563cbe664",
+      "node_id": "0000",
+      "chunk_index": 1,
+      "title": "01中国移动游戏市场现状分析",
+      "title_path": "01中国移动游戏市场现状分析",
+      "page_index": 4,
+      "token_count": 227,
+      "text_hash": "61745ca934db209843d222eeba9ab8a151ff23002a2e8cf723bfea8749611927"
+    },
+    {
+      "chunk_id": "5561db05-6d59-5275-bd49-3cb2dff68d88",
+      "section_id": "d012b33b-0845-5516-a11e-84fb231361f0",
+      "node_id": "0002",
+      "chunk_index": 0,
+      "title": "行业情绪从“复苏焦虑”转为“战略蛰伏”",
+      "title_path": "01中国移动游戏市场现状分析 > 4中国移动游戏市场收入规模 > 行业情绪从“复苏焦虑”转为“战略蛰伏”",
+      "page_index": 4,
+      "token_count": 291,
+      "text_hash": "c53f9629fbf3e4b16f897864743b3f58cc703aafe98b804e948ff01f6a69b795"
+    },
+    {
+      "chunk_id": "c43ffee7-9d33-58ce-8bb9-cc3073e21417",
+      "section_id": "30278ee3-cefc-5bf0-bbc0-50bb17a47a6a",
+      "node_id": "0004",
+      "chunk_index": 0,
+      "title": "少数巨头的生态守卫战 vs 庞大长尾的残酷生存战",
+      "title_path": "01中国移动游戏市场现状分析 > 5中国移动游戏市场收入集中度 > 少数巨头的生态守卫战 vs 庞大长尾的残酷生存战",
+      "page_index": 5,
+      "token_count": 400,
+      "text_hash": "78d86728cb6af4cef77fd6d6824b0eb13053599f1ca57b6a4624ba0dbcba5f38"
+    },
+    {
+      "chunk_id": "066b7f91-c073-54d4-9f6c-c0522f6ee115",
+      "section_id": "30278ee3-cefc-5bf0-bbc0-50bb17a47a6a",
+      "node_id": "0004",
+      "chunk_index": 1,
+      "title": "少数巨头的生态守卫战 vs 庞大长尾的残酷生存战",
+      "title_path": "01中国移动游戏市场现状分析 > 5中国移动游戏市场收入集中度 > 少数巨头的生态守卫战 vs 庞大长尾的残酷生存战",
+      "page_index": 5,
+      "token_count": 297,
+      "text_hash": "e4500fedb2cb16c45ffb0f525dd7d6f3dcea3fd6c614322f881b64128d135942"
+    }
+  ],
+  "table_name": "section_chunks",
+  "doc_id": "d600a704-c410-5d08-b3cd-ad5c2d60e85e",
+  "row_count": 102
+}

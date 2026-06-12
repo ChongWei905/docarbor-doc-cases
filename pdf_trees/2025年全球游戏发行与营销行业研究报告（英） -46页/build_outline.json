@@ -1,0 +1,147 @@
+[
+  {
+    "structure": "1",
+    "title": "Foreword",
+    "physical_index": 3
+  },
+  {
+    "structure": "2",
+    "title": "Table of Contents",
+    "physical_index": 3
+  },
+  {
+    "structure": "3",
+    "title": "List of Tables",
+    "physical_index": 4
+  },
+  {
+    "structure": "4",
+    "title": "List of Figures",
+    "physical_index": 4
+  },
+  {
+    "structure": "5",
+    "title": "Introduction",
+    "physical_index": 5
+  },
+  {
+    "structure": "6",
+    "title": "SECTION 1: Game Publishing Strategies",
+    "physical_index": 8
+  },
+  {
+    "structure": "6.1",
+    "title": "Publisher-Developer Relationships",
+    "physical_index": 8
+  },
+  {
+    "structure": "6.2",
+    "title": "Cross-Platform Publishing",
+    "physical_index": 8
+  },
+  {
+    "structure": "6.3",
+    "title": "Self-Publishing",
+    "physical_index": 11
+  },
+  {
+    "structure": "7",
+    "title": "SECTION 2: Marketing and User Acquisition",
+    "physical_index": 15
+  },
+  {
+    "structure": "7.1",
+    "title": "Digital Channels and Decline of Traditional Retail",
+    "physical_index": 15
+  },
+  {
+    "structure": "7.2",
+    "title": "Partnerships as Marketing Channels",
+    "physical_index": 17
+  },
+  {
+    "structure": "7.3",
+    "title": "Influencer Marketing",
+    "physical_index": 18
+  },
+  {
+    "structure": "8",
+    "title": "SECTION 3: Community",
+    "physical_index": 21
+  },
+  {
+    "structure": "8.1",
+    "title": "Importance of Community in Gaming",
+    "physical_index": 21
+  },
+  {
+    "structure": "8.2",
+    "title": "Community Safety",
+    "physical_index": 23
+  },
+  {
+    "structure": "9",
+    "title": "SECTION 4: Data-Driven Success",
+    "physical_index": 25
+  },
+  {
+    "structure": "9.1",
+    "title": "The Role of Data in Publishing and Marketing",
+    "physical_index": 25
+  },
+  {
+    "structure": "10",
+    "title": "SECTION 5: Revenue Streams and Business Models",
+    "physical_index": 28
+  },
+  {
+    "structure": "10.1",
+    "title": "Live Service Games",
+    "physical_index": 28
+  },
+  {
+    "structure": "10.2",
+    "title": "Boxed Games/One-time Purchase Model",
+    "physical_index": 29
+  },
+  {
+    "structure": "10.3",
+    "title": "Subscription Models",
+    "physical_index": 31
+  },
+  {
+    "structure": "10.4",
+    "title": "Esports",
+    "physical_index": 33
+  },
+  {
+    "structure": "10.5",
+    "title": "Hybrid Models",
+    "physical_index": 37
+  },
+  {
+    "structure": "11",
+    "title": "SECTION 6: Software and Services",
+    "physical_index": 39
+  },
+  {
+    "structure": "11.1",
+    "title": "Publishing as a Service",
+    "physical_index": 39
+  },
+  {
+    "structure": "11.2",
+    "title": "Design Studios",
+    "physical_index": 40
+  },
+  {
+    "structure": "11.3",
+    "title": "Conclusion",
+    "physical_index": 41
+  },
+  {
+    "structure": "11.4",
+    "title": "Bibliography",
+    "physical_index": 44
+  }
+]
