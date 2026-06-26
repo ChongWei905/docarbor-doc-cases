@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:14:43.908128+00:00",
+  "sequence": 478,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 18452,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年全球手游热投公司 TOP20.\n    The given page_text is 24\n# 公司名称 投放产品数 主投产品\n11益世界 10\n12博乐游戏 17\n13VOODOO 232\n14Guru Puzzle Game 42\n15CASUAL AZUR GAMES 197\n16君海游戏 33\n17VERTEX GAMES PTE. LTD. 6\n18Supercent 139\n19乐牛游戏 16\n20HOMA 70# 公司名称 投放产品数 主投产品\n1乐信圣文 62\n2冰川网络 72\n3FunPlus 46\n4友塔网络 21\n5LoveColoring Game 23\n6Hungry Studio 14\n7Rollic Games 160\n8Florere Game 4\n9IGG 33\n10腾讯（ Level Infinite ） 89\n2025年全球手游热投公司 TOP20\nSource ：广大大 -广告Intelligence -公司分析，按照公司投放产品累计去重后素材数量高低排序，每个游戏包算作一个产品数；\nDate Range ：2025/1 -2025/12\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-e365bb40-cbb2-9ed0-a38e-057677ec2329",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** `2025年全球手游热投公司 TOP20`\n   - **Page Text:**\n     ```\n     24\n     # 公司名称 投放产品数 主投产品\n     11益世界 10\n     12博乐游戏 17\n     13VOODOO 232\n     14Guru Puzzle Game 42\n     15CASUAL AZUR GAMES 197\n     16君海游戏 33\n     17VERTEX GAMES PTE. LTD. 6\n     18Supercent 139\n     19乐牛游戏 16\n     20HOMA 70# 公司名称 投放产品数 主投产品\n     1乐信圣文 62\n     2冰川网络 72\n     3FunPlus 46\n     4友塔网络 21\n     5LoveColoring Game 23\n     6Hungry Studio 14\n     7Rollic Games 160\n     8Florere Game 4\n     9IGG 33\n     10腾讯（ Level Infinite ） 89\n     2025年全球手游热投公司 TOP20\n     Source ：广大大 -广告Intelligence -公司分析，按照公司投放产品累计去重后素材数量高低排序，每个游戏包算作一个产品数；\n     Date Range ：2025/1 -2025/12\n     .\n     ```\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning. Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate Page Text vs Section Title:**\n   - The `page_text` starts with `24\\n# 公司名称 投放产品数 主投产品\\n11益世界 10...`\n   - The section title `2025年全球手游热投公司 TOP20` appears near the *end* of the provided text, right before the `Source` line.\n   - Clearly, there is a lot of content before the section title in the `page_text`.\n   - Therefore, the section does *not* start at the beginning of the page text.\n\n3.  **Determine Output:**\n   - `start_begin`: \"no\"\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All steps verified. Output matches requirement.✅\n   Proceed. \n   Self-Correction/Verification during thought: \n   Wait, let's carefully read the prompt: \"If the current section title is the first content in the given page_text, then the current section starts in the beginning of the given page_text.\"\n   The page text clearly starts with \"24\\n# 公司名称...\". The title is at the bottom. So \"no\" is correct.\n   Fuzzy matching note: Even if we ignore spaces, the title is not at the start.\n   Output matches exactly.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches request.✅\n   Proceeds. \n   [Final Check]\n   Input: `2025年全球手游热投公司 TOP20`\n   Page text starts with: `24\\n# 公司名称...`\n   Result: no\n   JSON: `{\"start_begin\": \"no\"}`\n   All good. \n   Output matches. \n   [Done] \n   *Self-Correction/Refinement during thought*: None needed. The logic is straightforward. The prompt asks for a direct JSON response. I will provide exactly that. \n   Output Generation. \n   `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no extra text is included as per instructions.) \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** `2025年全球手游热投公司 TOP20`\n   - **Page Text:**\n     ```\n     24\n     # 公司名称 投放产品数 主投产品\n     11益世界 10\n     12博乐游戏 17\n     13VOODOO 232\n     14Guru Puzzle Game 42\n     15CASUAL AZUR GAMES 197\n     16君海游戏 33\n     17VERTEX GAMES PTE. LTD. 6\n     18Supercent 139\n     19乐牛游戏 16\n     20HOMA 70# 公司名称 投放产品数 主投产品\n     1乐信圣文 62\n     2冰川网络 72\n     3FunPlus 46\n     4友塔网络 21\n     5LoveColoring Game 23\n     6Hungry Studio 14\n     7Rollic Games 160\n     8Florere Game 4\n     9IGG 33\n     10腾讯（ Level Infinite ） 89\n     2025年全球手游热投公司 TOP20\n     Source ：广大大 -广告Intelligence -公司分析，按照公司投放产品累计去重后素材数量高低排序，每个游戏包算作一个产品数；\n     Date Range ：2025/1 -2025/12\n     .\n     ```\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning. Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate Page Text vs Section Title:**\n   - The `page_text` starts with `24\\n# 公司名称 投放产品数 主投产品\\n11益世界 10...`\n   - The section title `2025年全球手游热投公司 TOP20` appears near the *end* of the provided text, right before the `Source` line.\n   - Clearly, there is a lot of content before the section title in the `page_text`.\n   - Therefore, the section does *not* start at the beginning of the page text.\n\n3.  **Determine Output:**\n   - `start_begin`: \"no\"\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All steps verified. Output matches requirement.✅\n   Proceed. \n   Self-Correction/Verification during thought: \n   Wait, let's carefully read the prompt: \"If the current section title is the first content in the given page_text, then the current section starts in the beginning of the given page_text.\"\n   The page text clearly starts with \"24\\n# 公司名称...\". The title is at the bottom. So \"no\" is correct.\n   Fuzzy matching note: Even if we ignore spaces, the title is not at the start.\n   Output matches exactly.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches request.✅\n   Proceeds. \n   [Final Check]\n   Input: `2025年全球手游热投公司 TOP20`\n   Page text starts with: `24\\n# 公司名称...`\n   Result: no\n   JSON: `{\"start_begin\": \"no\"}`\n   All good. \n   Output matches. \n   [Done] \n   *Self-Correction/Refinement during thought*: None needed. The logic is straightforward. The prompt asks for a direct JSON response. I will provide exactly that. \n   Output Generation. \n   `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no extra text is included as per instructions.) \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360888,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 995,
+      "prompt_tokens": 505,
+      "total_tokens": 1500,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 983,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 995
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 505
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:02:27.835926+00:00",
+  "sequence": 297,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 11639,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 效率重构周期：2025走向理性，2026走向结构红利.\n    The given page_text is 96\nToBid\n效率重构周期： 2025走向理性， 2026走向结构红利\n2025年，移动广告变现行业正从“规模优先”迈入“效率优先”的新阶段。流量增速放缓、广告主预算趋紧，开发者已逐步意识到，单纯追\n求高eCPM 或短期峰值收益难以支撑可持续的商业增长，变现体系的系统能力与稳定性开始成为核心竞争因素。\n展望2026年，行业增量将更多来自存量流量价值的再挖掘与结构性释放。不同应用类型、用户阶段与广告位之间的价值差异持续扩大，\n变现优化不再是简单的价格排序，而是围绕整体收益进行的全局判断。广告变现正从“单点 eCPM 最优”，走向“整体收益最优”，填充率、\n频控、用户体验与长期 ARPDAU 被纳入同一决策框架。\n在这一变化中，通用化方案的有效性正在下降，真正的效率提升既依赖系统能力，也依赖对垂类业务的深度理解。\nToBid 在持续打磨变现系统的同时，通过专业团队深耕垂类场景，帮助开发者制定更匹配业务阶段的变现策略，在效率重构周期中实现\n稳定、可持续的增长。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-76861e58-7122-9e05-ba00-9ebafb0dd97e",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if a given section title appears or starts in the given page text.\n   - **Section Title:** `效率重构周期：2025走向理性，2026走向结构红利`\n   - **Page Text:** \n     ```\n     96\n     ToBid\n     效率重构周期： 2025走向理性， 2026走向结构红利\n     2025年，移动广告变现行业正从“规模优先”迈入“效率优先”的新阶段。流量增速放缓、广告主预算趋紧，开发者已逐步意识到，单纯追\n     求高eCPM 或短期峰值收益难以支撑可持续的商业增长，变现体系的系统能力与稳定性开始成为核心竞争因素。\n     展望2026年，行业增量将更多来自存量流量价值的再挖掘与结构性释放。不同应用类型、用户阶段与广告位之间的价值差异持续扩大，\n     变现优化不再是简单的价格排序，而是围绕整体收益进行的全局判断。广告变现正从“单点 eCPM 最优”，走向“整体收益最优”，填充率、\n     频控、用户体验与长期 ARPDAU 被纳入同一决策框架。\n     在这一变化中，通用化方案的有效性正在下降，真正的效率提升既依赖系统能力，也依赖对垂类业务的深度理解。\n     ToBid 在持续打磨变现系统的同时，通过专业团队深耕垂类场景，帮助开发者制定更匹配业务阶段的变现策略，在效率重构周期中实现\n     稳定、可持续的增长。\n     .\n     ```\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply with JSON: `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Compare Section Title with Page Text:**\n   - Section Title: `效率重构周期：2025走向理性，2026走向结构红利`\n   - Page Text contains: `效率重构周期： 2025走向理性， 2026走向结构红利`\n   - Differences: Extra spaces after the colon and comma in the page text.\n   - Instruction says: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\n   - Therefore, they match.\n\n3.  **Determine Output:**\n   - The section appears in the page text.\n   - Answer should be \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Matches exactly except for spaces.\n   - Fuzzy matching allowed.\n   - JSON format correct.\n   - No extra text.\n   - Ready.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if a given section title appears or starts in the given page text.\n   - **Section Title:** `效率重构周期：2025走向理性，2026走向结构红利`\n   - **Page Text:** \n     ```\n     96\n     ToBid\n     效率重构周期： 2025走向理性， 2026走向结构红利\n     2025年，移动广告变现行业正从“规模优先”迈入“效率优先”的新阶段。流量增速放缓、广告主预算趋紧，开发者已逐步意识到，单纯追\n     求高eCPM 或短期峰值收益难以支撑可持续的商业增长，变现体系的系统能力与稳定性开始成为核心竞争因素。\n     展望2026年，行业增量将更多来自存量流量价值的再挖掘与结构性释放。不同应用类型、用户阶段与广告位之间的价值差异持续扩大，\n     变现优化不再是简单的价格排序，而是围绕整体收益进行的全局判断。广告变现正从“单点 eCPM 最优”，走向“整体收益最优”，填充率、\n     频控、用户体验与长期 ARPDAU 被纳入同一决策框架。\n     在这一变化中，通用化方案的有效性正在下降，真正的效率提升既依赖系统能力，也依赖对垂类业务的深度理解。\n     ToBid 在持续打磨变现系统的同时，通过专业团队深耕垂类场景，帮助开发者制定更匹配业务阶段的变现策略，在效率重构周期中实现\n     稳定、可持续的增长。\n     .\n     ```\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply with JSON: `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Compare Section Title with Page Text:**\n   - Section Title: `效率重构周期：2025走向理性，2026走向结构红利`\n   - Page Text contains: `效率重构周期： 2025走向理性， 2026走向结构红利`\n   - Differences: Extra spaces after the colon and comma in the page text.\n   - Instruction says: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\n   - Therefore, they match.\n\n3.  **Determine Output:**\n   - The section appears in the page text.\n   - Answer should be \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Matches exactly except for spaces.\n   - Fuzzy matching allowed.\n   - JSON format correct.\n   - No extra text.\n   - Ready.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360152,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 606,
+      "prompt_tokens": 417,
+      "total_tokens": 1023,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 595,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 606
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 417
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

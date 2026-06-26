@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:00:59.420673+00:00",
+  "sequence": 269,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 3498,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 一枚游戏干饭人.\n    The given page_text is 83\n一枚游戏干饭人\n行业的变革很快， AI正深度重构手游行业，从前期立项到后期运营全链路覆盖。\n尤其在美术创作和产品设计中， AI可快速产出 2D/3D 角色立绘、场景原画、 UI图标及动态特效，支持多风格迁移，将产品筹备周期缩短\n70%。\n现宣发端， AI可以通过玩家行为画像生成个性化广告素材，预判流失节点推送召回内容，实时监测效果动态调整投放策略。\n未来游戏行业的工种将会逐渐模糊，真正的破局在于 AI赋能的人文表达 ——用技术解放重复劳动， AI将成为放大创意与温度的效率杠杆。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-dea84231-8001-9a42-846b-2101eec3e078",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"一枚游戏干饭人\" appears or starts in the given page_text.\nThe page_text starts with \"83\\n一枚游戏干饭人\\n行业的变革很快...\"\nThe section title exactly matches the text on the second line.\nSo the answer should be \"yes\".\nI will output the JSON format as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput matches exactly.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"一枚游戏干饭人\" appears or starts in the given page_text.\nThe page_text starts with \"83\\n一枚游戏干饭人\\n行业的变革很快...\"\nThe section title exactly matches the text on the second line.\nSo the answer should be \"yes\".\nI will output the JSON format as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput matches exactly.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360063,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 146,
+      "prompt_tokens": 286,
+      "total_tokens": 432,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 130,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 146
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 286
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-06-25T02:11:21.142165+00:00",
+  "sequence": 4,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 26099,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are reading exactly one confirmed TOC page.\n\nYour task is to extract the main report TOC hierarchy from these images, not the body text.\n\nVery important rules:\n1. Ignore body paragraphs that belong to chapter content rather than the TOC.\n2. Ignore author cards, footer buttons, footer report titles, page number badges that are not part of TOC entries, logos, watermarks, and decorative graphics.\n3. Extract only the actual main table of contents entries.\n4. Merge entries from all provided TOC pages into one ordered hierarchy.\n5. The hierarchy is visual across the whole TOC run:\n   - standalone entries before the first section stay at level 1.\n   - lines beginning with SECTION / PART / CHAPTER are level-1 section parents.\n   - entries visually grouped beneath the same section box or card are level-2 children of that section.\n   - if later TOC pages continue children under the most recent visible parent section, keep those children nested under that parent.\n6. Preserve the visible title wording, but normalize whitespace and line wraps.\n7. Preserve the printed page numbers shown in the TOC.\n8. Do not invent titles that are not visible in the provided TOC pages.\n9. Output JSON only.\n\nReturn this schema:\n{\n  \"page_title\": <string>,\n  \"items\": [\n    {\"level\": 1, \"title\": <string>, \"printed_page\": <int>},\n    {\"level\": 1, \"title\": <string>, \"printed_page\": <int>, \"children\": [\n      {\"level\": 2, \"title\": <string>, \"printed_page\": <int>}\n    ]}\n  ],\n  \"notes\": [<string>]\n}\n"
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url": {
+                  "media_type": "image/png",
+                  "base64_chars": 318208,
+                  "redacted": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-b506a6cc-158b-9b31-b5af-c98c4a547820",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"page_title\": \"目录 CONTENTS\",\n  \"items\": [\n    {\n      \"level\": 1,\n      \"title\": \"1 全球手游市场营销趋势洞察\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"2 全球手游热门榜单\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"3 游戏获客：真实变革何在\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"4 全球手游全链路增长策略指南\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"5 全球手游热门品类营销洞察\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"6 全球热门地区手游营销观察\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"7 全球手游热门广告主营销观察\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"特别鸣谢 &报告说明\",\n      \"printed_page\": null\n    }\n  ],\n  \"notes\": [\n    \"No page numbers are visible in the provided TOC image.\"\n  ]\n}\n```",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants the Table of Contents (TOC) extracted from the image.\n\n1.  **Identify the main title:** \"目录 CONTENTS\".\n2.  **Identify the main sections:** There are numbered blocks from 1 to 7, plus a final unnumbered block.\n    *   Block 1: \"1 全球手游市场 营销趋势洞察\"\n    *   Block 2: \"2 全球手游 热门榜单\"\n    *   Block 3: \"3 游戏获客： 真实变革何在\"\n    *   Block 4: \"4 全球手游全链路 增长策略指南\"\n    *   Block 5: \"5 全球手游热门 品类营销洞察\"\n    *   Block 6: \"6 全球热门地区 手游营销观察\"\n    *   Block 7: \"7 全球手游热门 广告主营销观察\"\n    *   Final Block: \"特别鸣谢 &报告说明\"\n3.  **Check for page numbers:** There are no visible page numbers next to the entries in this specific visual TOC. The prompt asks to \"Preserve the printed page numbers shown in the TOC.\" Since none are shown, I will omit the `printed_page` field or set it to null if required, but the schema says `<int>`. Looking closely at the image, there are absolutely no page numbers listed next to the chapter titles. The prompt says \"Preserve the printed page numbers shown in the TOC.\" If none are shown, I cannot invent them. I will check the schema again. It requires `printed_page`. I will look really closely. No, there are no page numbers. I will have to omit that field or provide a null/placeholder if the schema strictly enforces it, but usually, if data is missing, it's better to omit or note it. However, the schema example shows `printed_page`. I will assume the user wants the structure. Wait, looking at the bottom right, there is text \"点击目录快速跳转对应章节\" (Click TOC to jump to corresponding chapter), implying this is a digital PDF. But no page numbers are visible. I will extract the titles. I will not include `printed_page` if it's not there, or I will include it as null if the parser allows, but the schema says `<int>`. I will just extract the titles and levels. Actually, looking at the prompt \"Preserve the printed page numbers shown in the TOC\", if none are shown, I can't preserve them. I will output the JSON without page numbers or with a note. Let's look at the schema again. It's a strict schema. I will try to find page numbers. Maybe they are hidden? No. Okay, I will extract the text. I will assume the prompt implies \"if present\". I will output the JSON. I will not include page numbers since they are absent.\n\nWait, I need to follow the schema. If I can't find page numbers, I might have to leave them out or the validation will fail. But I can't invent them. I will extract the text.\n\nLet's refine the text:\n1. 全球手游市场营销趋势洞察\n2. 全球手游热门榜单\n3. 游戏获客：真实变革何在\n4. 全球手游全链路增长策略指南\n5. 全球手游热门品类营销洞察\n6. 全球热门地区手游营销观察\n7. 全球手游热门广告主营销观察\n特别鸣谢 &报告说明\n\nAll are level 1. There are no children visible.\n\nFinal check on page numbers: Definitely none. I will proceed without them or check if I missed something subtle. No.\n\nI will formulate the JSON.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants the Table of Contents (TOC) extracted from the image.\n\n1.  **Identify the main title:** \"目录 CONTENTS\".\n2.  **Identify the main sections:** There are numbered blocks from 1 to 7, plus a final unnumbered block.\n    *   Block 1: \"1 全球手游市场 营销趋势洞察\"\n    *   Block 2: \"2 全球手游 热门榜单\"\n    *   Block 3: \"3 游戏获客： 真实变革何在\"\n    *   Block 4: \"4 全球手游全链路 增长策略指南\"\n    *   Block 5: \"5 全球手游热门 品类营销洞察\"\n    *   Block 6: \"6 全球热门地区 手游营销观察\"\n    *   Block 7: \"7 全球手游热门 广告主营销观察\"\n    *   Final Block: \"特别鸣谢 &报告说明\"\n3.  **Check for page numbers:** There are no visible page numbers next to the entries in this specific visual TOC. The prompt asks to \"Preserve the printed page numbers shown in the TOC.\" Since none are shown, I will omit the `printed_page` field or set it to null if required, but the schema says `<int>`. Looking closely at the image, there are absolutely no page numbers listed next to the chapter titles. The prompt says \"Preserve the printed page numbers shown in the TOC.\" If none are shown, I cannot invent them. I will check the schema again. It requires `printed_page`. I will look really closely. No, there are no page numbers. I will have to omit that field or provide a null/placeholder if the schema strictly enforces it, but usually, if data is missing, it's better to omit or note it. However, the schema example shows `printed_page`. I will assume the user wants the structure. Wait, looking at the bottom right, there is text \"点击目录快速跳转对应章节\" (Click TOC to jump to corresponding chapter), implying this is a digital PDF. But no page numbers are visible. I will extract the titles. I will not include `printed_page` if it's not there, or I will include it as null if the parser allows, but the schema says `<int>`. I will just extract the titles and levels. Actually, looking at the prompt \"Preserve the printed page numbers shown in the TOC\", if none are shown, I can't preserve them. I will output the JSON without page numbers or with a note. Let's look at the schema again. It's a strict schema. I will try to find page numbers. Maybe they are hidden? No. Okay, I will extract the text. I will assume the prompt implies \"if present\". I will output the JSON. I will not include page numbers since they are absent.\n\nWait, I need to follow the schema. If I can't find page numbers, I might have to leave them out or the validation will fail. But I can't invent them. I will extract the text.\n\nLet's refine the text:\n1. 全球手游市场营销趋势洞察\n2. 全球手游热门榜单\n3. 游戏获客：真实变革何在\n4. 全球手游全链路增长策略指南\n5. 全球手游热门品类营销洞察\n6. 全球热门地区手游营销观察\n7. 全球手游热门广告主营销观察\n特别鸣谢 &报告说明\n\nAll are level 1. There are no children visible.\n\nFinal check on page numbers: Definitely none. I will proceed without them or check if I missed something subtle. No.\n\nI will formulate the JSON."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782353485,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1128,
+      "prompt_tokens": 2427,
+      "total_tokens": 3555,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 786,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 342
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 385,
+        "image_tokens": 2042
+      }
+    }
+  },
+  "response_text": "```json\n{\n  \"page_title\": \"目录 CONTENTS\",\n  \"items\": [\n    {\n      \"level\": 1,\n      \"title\": \"1 全球手游市场营销趋势洞察\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"2 全球手游热门榜单\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"3 游戏获客：真实变革何在\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"4 全球手游全链路增长策略指南\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"5 全球手游热门品类营销洞察\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"6 全球热门地区手游营销观察\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"7 全球手游热门广告主营销观察\",\n      \"printed_page\": null\n    },\n    {\n      \"level\": 1,\n      \"title\": \"特别鸣谢 &报告说明\",\n      \"printed_page\": null\n    }\n  ],\n  \"notes\": [\n    \"No page numbers are visible in the provided TOC image.\"\n  ]\n}\n```",
+  "error_type": null,
+  "error_message": null
+}

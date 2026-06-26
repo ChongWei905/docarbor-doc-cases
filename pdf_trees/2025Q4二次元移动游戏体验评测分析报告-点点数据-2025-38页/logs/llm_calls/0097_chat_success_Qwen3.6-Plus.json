@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:46:55.099502+00:00",
+  "sequence": 97,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 10055,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 《绝区零》基础数据.\n    The given page_text is © 2025 DianDian.All Rights Reserved.\n 18《绝区零》基础数据\n来源：点点数据自主研究及绘制在复古潮酷画风与高速ACT赛道上确立了自身旗帜\n2025年《绝区零》国服收入规模与活跃用户数据表现\n0.0 0.4 0.8 1.2 \n1月2月3月4月5月6月7月8月9月10月\nAppStore月流水（亿元）用户兴趣偏好\n聊天社交2025Q1-Q3用户留存\n平均次留：\n平均月留：约24.4%\n约3.4%影音娱乐效率办公\n购物 生活实用 阅读0 10 20 30 40 50 60 70 \n1月2月3月4月5月6月7月8月9月\n10月\niOS月活跃用户数（万人）男生占比： 约68.1%《绝区零》在视听表现上延续了米哈游的高品质，凭借独特的“潮酷漫画风”与多元文化融合，塑造了鲜明的美术与音乐风格，带来沉浸式体验。战斗系统兼具流畅手感与操作深\n度，通过连携技、弹刀等机制，实现易上手、难精通。运营方面，版本更新稳定，并成功实现iOS、安卓、PC与PS5多平台覆盖，展现出优秀的跨端能力。但相较于米哈游的其他\n产品，《绝区零》的问题也同样明显：在受众定位上面临挑战，硬核与轻度玩家对难度感受不一，部分战斗机制前期提示不足，导致体验分化。主线流程的“走格子”玩法在前期\n节奏偏慢，初期引发玩家不满（后续已全部重做）。此外，角色、武器及驱动盘等多维养成系统，即存在一定的审美疲劳，也给追求多角色发展的玩家带来一定的资源压力。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-d8b9be94-3d36-9b6a-90b7-3dc823a3ea82",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** 《绝区零》基础数据\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved.\\n 18《绝区零》基础数据\\n来源：点点数据自主研究及绘制在复古潮酷画风与高速ACT赛道上确立了自身旗帜...` (and more text)\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Return JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Look for `《绝区零》基础数据` in the `page_text`.\n   - The `page_text` contains: ` 18《绝区零》基础数据`\n   - This is an exact match (ignoring the leading number \"18\" and spaces, which fits the \"fuzzy matching\" and \"ignore space inconsistency\" instruction).\n   - The section title clearly appears/starts in the text.\n\n3.  **Determine Output:**\n   - Since it appears, the answer is \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Does the section appear? Yes.\n   - Format correct? Yes.\n   - No extra text? Yes.\n   - Proceed. \n   - Output matches requirement.✅\n   - Generate response. \n   - `{\"answer\": \"yes\"}`\n   - All constraints met.✅\n   - Done. \n   - *Self-Correction/Verification during thought:* \n     - The prompt says \"ignore any space inconsistency\". The text has ` 18《绝区零》基础数据`. The number `18` might be a page number or list index. Fuzzy matching should still catch it. The exact string `《绝区零》基础数据` is present. So \"yes\" is correct.\n     - Output format strictly requires JSON.\n     - Ready. \n   - Output matches exactly. \n   - Proceeds. \n   - `[Done]`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** 《绝区零》基础数据\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved.\\n 18《绝区零》基础数据\\n来源：点点数据自主研究及绘制在复古潮酷画风与高速ACT赛道上确立了自身旗帜...` (and more text)\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Return JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Look for `《绝区零》基础数据` in the `page_text`.\n   - The `page_text` contains: ` 18《绝区零》基础数据`\n   - This is an exact match (ignoring the leading number \"18\" and spaces, which fits the \"fuzzy matching\" and \"ignore space inconsistency\" instruction).\n   - The section title clearly appears/starts in the text.\n\n3.  **Determine Output:**\n   - Since it appears, the answer is \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Does the section appear? Yes.\n   - Format correct? Yes.\n   - No extra text? Yes.\n   - Proceed. \n   - Output matches requirement.✅\n   - Generate response. \n   - `{\"answer\": \"yes\"}`\n   - All constraints met.✅\n   - Done. \n   - *Self-Correction/Verification during thought:* \n     - The prompt says \"ignore any space inconsistency\". The text has ` 18《绝区零》基础数据`. The number `18` might be a page number or list index. Fuzzy matching should still catch it. The exact string `《绝区零》基础数据` is present. So \"yes\" is correct.\n     - Output format strictly requires JSON.\n     - Ready. \n   - Output matches exactly. \n   - Proceeds. \n   - `[Done]`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355619,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 495,
+      "prompt_tokens": 564,
+      "total_tokens": 1059,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 484,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 495
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 564
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

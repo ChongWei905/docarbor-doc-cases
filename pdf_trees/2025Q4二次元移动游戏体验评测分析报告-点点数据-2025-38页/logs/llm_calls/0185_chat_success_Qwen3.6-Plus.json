@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:52:09.486517+00:00",
+  "sequence": 185,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 17117,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 典型二次元移动游戏综合评分对比.\n    The given page_text is © 2025 DianDian.All Rights Reserved. 11典型二次元移动游戏综合评分对比\n没有产品能做到全维度“通杀” 画面与玩法仍是核心考评点\n来源：点点数据自主研究及绘制。（注：典型产品由点点数据专家团队基于市场热度与玩家关注度选取，下方排名不代表市场整体的TOP10）\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-fa1dea75-07f8-982d-bfc5-91ad346f8d75",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `典型二次元移动游戏综合评分对比`\n   - **Current Page Text:** `© 2025 DianDian.All Rights Reserved. 11典型二次元移动游戏综合评分对比\\n没有产品能做到全维度“通杀” 画面与玩法仍是核心考评点\\n来源：点点数据自主研究及绘制。（注：典型产品由点点数据专家团队基于市场热度与玩家关注度选取，下方排名不代表市场整体的TOP10）\\n.`\n   - **Task:** Check if the section title starts at the beginning of the page text.\n   - **Rule:** If there are other contents before the section title, it does *not* start at the beginning. If it's the first content, it *does*.\n   - **Note:** Do fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The page text starts with: `© 2025 DianDian.All Rights Reserved. 11典型二次元移动游戏综合评分对比`\n   Before the section title `典型二次元移动游戏综合评分对比`, there is `© 2025 DianDian.All Rights Reserved. 11`.\n   This means there is other content before the section title.\n\n3.  **Apply Rule:**\n   Since there is content before the title, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: The prompt says \"ignore any space inconsistency\", but the copyright text is clearly before the title. So it's definitely \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Self-Correction/Verification during thought: \n   Could \"11\" be a page number? Yes, but it's still content before the title. The rule says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" So \"no\" is correct.\n   Format is exact.\n   Proceed. \n   Output: `{\"start_begin\": \"no\"}`\n   (Note: I will strictly follow the JSON format requested.) \n   Final check of the prompt: \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure.\"\n   All set. \n   Output matches. \n   [Done] \n   *Self-Correction/Refinement during thought*: Wait, sometimes page headers/footers like copyright and page numbers are considered separate from the main text, but the prompt explicitly says: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" It doesn't make exceptions for headers/footers. So \"no\" is strictly correct based on the prompt's literal instruction.\n   I will output `{\"start_begin\": \"no\"}`. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I'll make sure it's valid JSON with double quotes.)\n   All good. \n   *Output Generation* (matches exactly)\n   `{\"start_begin\": \"no\"}`\n   Done. \n   [Final Check]\n   Page text: `© 2025 DianDian.All Rights Reserved. 11典型二次元移动游戏综合评分对比...`\n   Title: `典型二次元移动游戏综合评分对比`\n   Content before title: `© 2025 DianDian.All Rights Reserved. 11`\n   Result: no\n   Format: JSON\n   Constraint: Directly return JSON, no extra text.\n   Ready. \n   Output matches. \n   [Proceeds]",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `典型二次元移动游戏综合评分对比`\n   - **Current Page Text:** `© 2025 DianDian.All Rights Reserved. 11典型二次元移动游戏综合评分对比\\n没有产品能做到全维度“通杀” 画面与玩法仍是核心考评点\\n来源：点点数据自主研究及绘制。（注：典型产品由点点数据专家团队基于市场热度与玩家关注度选取，下方排名不代表市场整体的TOP10）\\n.`\n   - **Task:** Check if the section title starts at the beginning of the page text.\n   - **Rule:** If there are other contents before the section title, it does *not* start at the beginning. If it's the first content, it *does*.\n   - **Note:** Do fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The page text starts with: `© 2025 DianDian.All Rights Reserved. 11典型二次元移动游戏综合评分对比`\n   Before the section title `典型二次元移动游戏综合评分对比`, there is `© 2025 DianDian.All Rights Reserved. 11`.\n   This means there is other content before the section title.\n\n3.  **Apply Rule:**\n   Since there is content before the title, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: The prompt says \"ignore any space inconsistency\", but the copyright text is clearly before the title. So it's definitely \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Self-Correction/Verification during thought: \n   Could \"11\" be a page number? Yes, but it's still content before the title. The rule says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" So \"no\" is correct.\n   Format is exact.\n   Proceed. \n   Output: `{\"start_begin\": \"no\"}`\n   (Note: I will strictly follow the JSON format requested.) \n   Final check of the prompt: \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure.\"\n   All set. \n   Output matches. \n   [Done] \n   *Self-Correction/Refinement during thought*: Wait, sometimes page headers/footers like copyright and page numbers are considered separate from the main text, but the prompt explicitly says: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" It doesn't make exceptions for headers/footers. So \"no\" is strictly correct based on the prompt's literal instruction.\n   I will output `{\"start_begin\": \"no\"}`. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I'll make sure it's valid JSON with double quotes.)\n   All good. \n   *Output Generation* (matches exactly)\n   `{\"start_begin\": \"no\"}`\n   Done. \n   [Final Check]\n   Page text: `© 2025 DianDian.All Rights Reserved. 11典型二次元移动游戏综合评分对比...`\n   Title: `典型二次元移动游戏综合评分对比`\n   Content before title: `© 2025 DianDian.All Rights Reserved. 11`\n   Result: no\n   Format: JSON\n   Constraint: Directly return JSON, no extra text.\n   Ready. \n   Output matches. \n   [Proceeds]"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355933,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 907,
+      "prompt_tokens": 304,
+      "total_tokens": 1211,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 895,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 907
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 304
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

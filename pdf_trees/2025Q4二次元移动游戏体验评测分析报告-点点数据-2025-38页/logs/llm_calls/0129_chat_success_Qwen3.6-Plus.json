@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:48:54.718467+00:00",
+  "sequence": 129,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 20354,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 核心战斗与玩法体验.\n    The given page_text is © 2025 DianDian.All Rights Reserved.\n 26《阴阳师》基础数据\n来源：点点数据自主研究及绘制和风美学构建了独一无二的视觉符号 九年的内容焕新使IP生命力历久弥新\n2025年《阴阳师》国服收入规模与活跃用户数据表现\n0.0 0.2 0.4 0.6 \n1月2月3月4月5月6月7月8月9月10月\nAppStore月流水（亿元）ASO关键词覆盖\n阴阳师2025Q1-Q3用户留存\n平均次留：\n平均月留：约22.1%\n约4.8%式神 痒痒鼠\n日和风 晴明 onmyoji0 30 60 90 \n1月2月3月4月5月6月7月8月9月\n10月\niOS月活跃用户数（万人）男生占比： 约74.8%游戏凭借唯美和风打造了极强的视听辨识度，其美术与音乐质量在长期运营中保持了高水准，并形成了独特的文化符号。核心的回合制战斗与御魂搭配系统，经过近九年的沉淀，\n具有丰富的策略深度。此外，游戏也积累了如秘闻副本、为崽而战、超鬼王等大量经典玩法模式。对于免费玩家和月卡党，游戏通过持续的活动和福利，提供了相对良性的资源循\n环，支持长线养成。但部分月度活动被玩家认为存在模板化倾向，创新玩法的频率和力度有待提升，玩家在游戏后期容易感到内容重复。御魂的强化随机性（俗称“强歪”）是长\n期存在的痛点。并且随着式神数量和系统复杂度的累积，新玩家的“入坑”门槛偏高。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-4a8beb01-167f-9b2e-ba11-d8436bca0ddf",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** `核心战斗与玩法体验`\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved. 26《阴阳师》基础数据 来源：点点数据自主研究及绘制和风美学构建了独一无二的视觉符号 九年的内容焕新使IP生命力历久弥新 2025年《阴阳师》国服收入规模与活跃用户数据表现 0.0 0.2 0.4 0.6 1月2月3月4月5月6月7月8月9月10月 AppStore月流水（亿元）ASO关键词覆盖 阴阳师2025Q1-Q3用户留存 平均次留： 平均月留：约22.1% 约4.8%式神 痒痒鼠 日和风 晴明 onmyoji0 30 60 90 1月2月3月4月5月6月7月8月9月 10月 iOS月活跃用户数（万人）男生占比： 约74.8%游戏凭借唯美和风打造了极强的视听辨识度，其美术与音乐质量在长期运营中保持了高水准，并形成了独特的文化符号。核心的回合制战斗与御魂搭配系统，经过近九年的沉淀， 具有丰富的策略深度。此外，游戏也积累了如秘闻副本、为崽而战、超鬼王等大量经典玩法模式。对于免费玩家和月卡党，游戏通过持续的活动和福利，提供了相对良性的资源循 环，支持长线养成。但部分月度活动被玩家认为存在模板化倾向，创新玩法的频率和力度有待提升，玩家在游戏后期容易感到内容重复。御魂的强化随机性（俗称“强歪”）是长 期存在的痛点。并且随着式神数量和系统复杂度的累积，新玩家的“入坑”门槛偏高。 .`\n   - **Instructions:** Fuzzy matching allowed, ignore space inconsistencies. Return JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Target: `核心战斗与玩法体验`\n   - Scan `page_text` for this exact string or a close fuzzy match.\n   - Let's look at the text carefully:\n     `...核心的回合制战斗与御魂搭配系统，经过近九年的沉淀， 具有丰富的策略深度。此外，游戏也积累了如秘闻副本、为崽而战、超鬼王等大量经典玩法模式。...`\n   - The exact phrase `核心战斗与玩法体验` does *not* appear in the text.\n   - Does it start the text? No.\n   - Is there a fuzzy match? The text mentions \"核心的回合制战斗\" and \"玩法模式\", but not the exact section title `核心战斗与玩法体验`.\n   - I will check if it's hidden with spaces or line breaks: `核心战斗与玩法体验` vs `核心的回合制战斗与御魂搭配系统...`. Not a match.\n   - The prompt says \"check if the given section appears or starts in the given page_text.\"\n   - Since it's not there, the answer should be \"no\".\n\n3.  **Formulate Output:**\n   - JSON: `{\"answer\": \"no\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   Could it be a heading that got merged into the text? The text starts with copyright, then \"26《阴阳师》基础数据\", then charts/data descriptions, then a paragraph starting with \"游戏凭借唯美和风...\". The exact string \"核心战斗与玩法体验\" is absent. Fuzzy matching usually allows for minor typos or spacing, but not completely different phrasing. So \"no\" is correct.\n   Output matches requirement.✅\n   Final JSON: `{\"answer\": \"no\"}`\n   Proceeds. \n   Output Generation. \n   *(Self-Correction/Refinement during thought)*: Wait, let's double check the exact text provided. Sometimes OCR merges headings. The text says: `...约74.8%游戏凭借唯美和风打造了极强的视听辨识度...核心的回合制战斗与御魂搭配系统...`. No heading. So definitely \"no\".\n   I will output exactly `{\"answer\": \"no\"}`. \n   All steps verified.✅\n   Output matches. \n   [Done] \n   *Self-Correction/Note during generation prep*: I must ensure the JSON format is exact.\n   `{\"answer\": \"no\"}` is correct.\n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** `核心战斗与玩法体验`\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved. 26《阴阳师》基础数据 来源：点点数据自主研究及绘制和风美学构建了独一无二的视觉符号 九年的内容焕新使IP生命力历久弥新 2025年《阴阳师》国服收入规模与活跃用户数据表现 0.0 0.2 0.4 0.6 1月2月3月4月5月6月7月8月9月10月 AppStore月流水（亿元）ASO关键词覆盖 阴阳师2025Q1-Q3用户留存 平均次留： 平均月留：约22.1% 约4.8%式神 痒痒鼠 日和风 晴明 onmyoji0 30 60 90 1月2月3月4月5月6月7月8月9月 10月 iOS月活跃用户数（万人）男生占比： 约74.8%游戏凭借唯美和风打造了极强的视听辨识度，其美术与音乐质量在长期运营中保持了高水准，并形成了独特的文化符号。核心的回合制战斗与御魂搭配系统，经过近九年的沉淀， 具有丰富的策略深度。此外，游戏也积累了如秘闻副本、为崽而战、超鬼王等大量经典玩法模式。对于免费玩家和月卡党，游戏通过持续的活动和福利，提供了相对良性的资源循 环，支持长线养成。但部分月度活动被玩家认为存在模板化倾向，创新玩法的频率和力度有待提升，玩家在游戏后期容易感到内容重复。御魂的强化随机性（俗称“强歪”）是长 期存在的痛点。并且随着式神数量和系统复杂度的累积，新玩家的“入坑”门槛偏高。 .`\n   - **Instructions:** Fuzzy matching allowed, ignore space inconsistencies. Return JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Target: `核心战斗与玩法体验`\n   - Scan `page_text` for this exact string or a close fuzzy match.\n   - Let's look at the text carefully:\n     `...核心的回合制战斗与御魂搭配系统，经过近九年的沉淀， 具有丰富的策略深度。此外，游戏也积累了如秘闻副本、为崽而战、超鬼王等大量经典玩法模式。...`\n   - The exact phrase `核心战斗与玩法体验` does *not* appear in the text.\n   - Does it start the text? No.\n   - Is there a fuzzy match? The text mentions \"核心的回合制战斗\" and \"玩法模式\", but not the exact section title `核心战斗与玩法体验`.\n   - I will check if it's hidden with spaces or line breaks: `核心战斗与玩法体验` vs `核心的回合制战斗与御魂搭配系统...`. Not a match.\n   - The prompt says \"check if the given section appears or starts in the given page_text.\"\n   - Since it's not there, the answer should be \"no\".\n\n3.  **Formulate Output:**\n   - JSON: `{\"answer\": \"no\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   Could it be a heading that got merged into the text? The text starts with copyright, then \"26《阴阳师》基础数据\", then charts/data descriptions, then a paragraph starting with \"游戏凭借唯美和风...\". The exact string \"核心战斗与玩法体验\" is absent. Fuzzy matching usually allows for minor typos or spacing, but not completely different phrasing. So \"no\" is correct.\n   Output matches requirement.✅\n   Final JSON: `{\"answer\": \"no\"}`\n   Proceeds. \n   Output Generation. \n   *(Self-Correction/Refinement during thought)*: Wait, let's double check the exact text provided. Sometimes OCR merges headings. The text says: `...约74.8%游戏凭借唯美和风打造了极强的视听辨识度...核心的回合制战斗与御魂搭配系统...`. No heading. So definitely \"no\".\n   I will output exactly `{\"answer\": \"no\"}`. \n   All steps verified.✅\n   Output matches. \n   [Done] \n   *Self-Correction/Note during generation prep*: I must ensure the JSON format is exact.\n   `{\"answer\": \"no\"}` is correct.\n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355739,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1077,
+      "prompt_tokens": 527,
+      "total_tokens": 1604,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1066,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1077
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 527
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

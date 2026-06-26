@@ -1,0 +1,49 @@
+{
+  "strategy": "docarbor_native",
+  "score": 1935.2,
+  "score_breakdown": {
+    "non_empty": 30.0,
+    "page_coverage": 1872.0,
+    "depth": 10.0,
+    "internal_nodes": 2.5,
+    "root_shape": 11.886,
+    "heading_alignment": 0.0,
+    "numbering": 6.0,
+    "title_uniqueness": 7.314,
+    "penalty_flat": 0.0,
+    "penalty_shallow": 0.0,
+    "penalty_root_explosion": -0.0,
+    "penalty_noise_roots": -0.0,
+    "penalty_garbled_roots": -0.0,
+    "penalty_bad_roots": -0.0,
+    "penalty_duplicates": -4.5,
+    "penalty_backtrack": -0.0
+  },
+  "metrics": {
+    "root_count": 1,
+    "node_count": 105,
+    "max_depth": 2,
+    "depth_histogram": {
+      "1": 1,
+      "2": 104
+    },
+    "unique_page_count": 104,
+    "page_coverage_ratio": 104.0,
+    "duplicate_title_count": 9,
+    "title_uniqueness_ratio": 0.9143,
+    "heading_alignment_ratio": 0.0,
+    "numbered_consistency_ratio": 1.0,
+    "page_backtrack_count": 0,
+    "noise_root_count": 0,
+    "garbled_root_count": 0,
+    "low_quality_root_count": 0,
+    "bad_root_count": 0,
+    "internal_node_count": 1
+  },
+  "artifact_paths": {
+    "raw_tree_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\docarbor_native\\docarbor_raw.json",
+    "result_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\docarbor_native\\result.json",
+    "report_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\docarbor_native\\report.json",
+    "summary_report_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\docarbor_native\\summary_report.json"
+  }
+}

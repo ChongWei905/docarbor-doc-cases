@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:51:52.366664+00:00",
+  "sequence": 180,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5646,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 02典型二次元移动游戏体验测评.\n    The given page_text is © 2025 DianDian.All Rights Reserved. 1002典型二次元移动游戏体验测评\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-5d8d2721-5cf3-9432-aefc-cd6b1c7cd3b7",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"02典型二次元移动游戏体验测评\" starts at the beginning of the given `page_text`.\nThe `page_text` is: \"© 2025 DianDian.All Rights Reserved. 1002典型二次元移动游戏体验测评\\n.\"\nThe section title is \"02典型二次元移动游戏体验测评\".\nThe `page_text` starts with \"© 2025 DianDian.All Rights Reserved. 1002典型二次元移动游戏体验测评\".\nThere is content before the section title (\"© 2025 DianDian.All Rights Reserved. 1002\").\nWait, the section title is \"02典型二次元移动游戏体验测评\".\nIn the page text, it appears as \"1002典型二次元移动游戏体验测评\". This might be a page number \"10\" followed by \"02典型...\".\nRegardless, there is text before it: \"© 2025 DianDian.All Rights Reserved. 1002\".\nSo the section does NOT start at the beginning of the page_text.\nTherefore, \"start_begin\" should be \"no\".\n\nCheck format:\n{\n    \"start_begin\": \"no\"\n}\nDone.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"02典型二次元移动游戏体验测评\" starts at the beginning of the given `page_text`.\nThe `page_text` is: \"© 2025 DianDian.All Rights Reserved. 1002典型二次元移动游戏体验测评\\n.\"\nThe section title is \"02典型二次元移动游戏体验测评\".\nThe `page_text` starts with \"© 2025 DianDian.All Rights Reserved. 1002典型二次元移动游戏体验测评\".\nThere is content before the section title (\"© 2025 DianDian.All Rights Reserved. 1002\").\nWait, the section title is \"02典型二次元移动游戏体验测评\".\nIn the page text, it appears as \"1002典型二次元移动游戏体验测评\". This might be a page number \"10\" followed by \"02典型...\".\nRegardless, there is text before it: \"© 2025 DianDian.All Rights Reserved. 1002\".\nSo the section does NOT start at the beginning of the page_text.\nTherefore, \"start_begin\" should be \"no\".\n\nCheck format:\n{\n    \"start_begin\": \"no\"\n}\nDone."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355916,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 285,
+      "prompt_tokens": 251,
+      "total_tokens": 536,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 268,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 285
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 251
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

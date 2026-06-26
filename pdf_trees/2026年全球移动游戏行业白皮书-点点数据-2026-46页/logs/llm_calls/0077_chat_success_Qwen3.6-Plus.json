@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:57:50.664373+00:00",
+  "sequence": 77,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4677,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 港澳台移动游戏市场收入规模.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 27港澳台移动游戏市场收入规模\n“头部稳定、腰部增强”的竞争格局形成均衡的市场驱动力\n来源：点点数据自主研究及绘制。2025年港澳台移动游戏市场收入规模2025年港澳台移动游戏市场收入规模达到364.6亿元，几乎追平2021年的历史高点。更为重要的是，市场收入集中度数据揭示了其健康、分散的竞争结构：2023年至2025年间，\n头部TOP10产品的收入占比稳定在23%-24%之间，未有明显扩张；与此同时，占据市场中坚力量的11-50名产品份额则从26.82%稳步提升至28.34%。这种“头部稳定、腰部增\n强”的格局，与日、韩等市场头部效应加剧的趋势形成鲜明对比，说明港澳台市场的增长驱动力相对均衡，并未被少数超级应用垄断，为中腰部产品的创新与生存留下了可观的空\n间。市场的韧性正源于此——它不是依靠一两款“爆款”的脉冲式拉动，而是建立在玩家稳定的付费习惯、多元的品类需求以及厂商持续稳定的内容供给之上。\n364.8350.8 347.2361.0 364.6-3.82%-1.05%3.98%\n0.99%\n2021年 2022年 2023年 2024年 2025年\n增长率（% 港澳台移动游戏市场收入规模（亿元/人民币） ）23.67%23.45%23.24%\n26.82%26.97%28.34%\n25.49%26.11%25.37%\n24.02%23.46%23.05%\n0% 20% 40% 60% 80% 100%2023年2024年2025年1-10名收入占比 11-50名收入占比 51-200名收入占比 其他移动游戏收入占比2025年港澳台移动游戏市场收入集中度\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-43041b37-d277-98bd-88f0-6ad16684f499",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"港澳台移动游戏市场收入规模\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the `page_text`:\n\"© 2026 DianDian.All Rights Reserved. 27港澳台移动游戏市场收入规模\\n“头部稳定、腰部增强”的竞争格局形成均衡的市场驱动力...\"\nThe exact string \"港澳台移动游戏市场收入规模\" appears right after \"27\".\nSo it definitely appears.\nThe answer should be \"yes\".\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nI will produce exactly the JSON.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"港澳台移动游戏市场收入规模\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the `page_text`:\n\"© 2026 DianDian.All Rights Reserved. 27港澳台移动游戏市场收入规模\\n“头部稳定、腰部增强”的竞争格局形成均衡的市场驱动力...\"\nThe exact string \"港澳台移动游戏市场收入规模\" appears right after \"27\".\nSo it definitely appears.\nThe answer should be \"yes\".\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nI will produce exactly the JSON."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359874,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 180,
+      "prompt_tokens": 655,
+      "total_tokens": 835,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 164,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 180
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 655
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

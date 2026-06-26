@@ -1,0 +1,11 @@
+{
+  "extraction_mode": "per_page",
+  "pages": [
+    {
+      "page_number": 3,
+      "response_text": "```json\n{\n  \"page_title\": \"目录Contents\",\n  \"items\": [\n    {\"level\": 1, \"title\": \"01 中国移动游戏市场现状分析\", \"printed_page\": 4},\n    {\"level\": 1, \"title\": \"02 海外移动游戏市场现状分析\"},\n    {\"level\": 1, \"title\": \"03 移动游戏典型产品&企业案例分析\"},\n    {\"level\": 1, \"title\": \"04 全球移动游戏市场发展趋势\"}\n  ],\n  \"notes\": [\n    \"Page numbers for chapters 02-04 were not visible in the provided text extraction.\",\n    \"The descriptive paragraph under chapter 01 was excluded as it is a market summary, not a TOC entry.\"\n  ]\n}\n```",
+      "error_type": null,
+      "error_message": null
+    }
+  ]
+}

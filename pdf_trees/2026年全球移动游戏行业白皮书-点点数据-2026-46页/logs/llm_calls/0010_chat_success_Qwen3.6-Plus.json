@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-06-25T03:27:19.605397+00:00",
+  "sequence": 10,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 14368,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are inspecting exactly one report page image.\n\nDecide whether this page is part of the table of contents.\n\nRoles:\n- \"toc_start\": the page is the first TOC page.\n- \"toc_continuation\": the page continues TOC entries from a previous TOC page.\n- \"not_toc\": the page is not part of the TOC.\n\nRules:\n1. Ignore body paragraphs, author bios, logos, decorative graphics, buttons, footer CTA text, and page footers.\n2. A page is TOC only if a substantial part of the page is listing contents entries.\n3. Multi-column TOC layouts still count as TOC.\n4. If the page contains a clear Contents/Table of Contents/目录 heading or visibly begins the TOC list, prefer toc_start.\n5. If the page mainly continues TOC entries without the main heading, prefer toc_continuation.\n6. If the page mostly contains chapter/body text, figures, charts, or tables, return not_toc.\n7. Output JSON only.\n\nReturn this schema:\n{\n  \"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\",\n  \"confidence\": \"high\" | \"medium\" | \"low\",\n  \"reason\": <short string>\n}\n"
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url": {
+                  "media_type": "image/png",
+                  "base64_chars": 388724,
+                  "redacted": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-e6d06eaf-66a2-970f-a6dc-a4e78b8580d8",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"role\": \"not_toc\",\n  \"confidence\": \"high\",\n  \"reason\": \"The page contains data charts, analysis text, and a specific section title regarding overseas mobile game market revenue and downloads, rather than a list of contents.\"\n}\n```",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants me to classify the provided image as either a Table of Contents (TOC) page or not.\n\n1.  **Analyze the image content:**\n    *   **Header:** \"海外移动游戏市场收入规模&下载量\" (Overseas mobile game market revenue scale & downloads).\n    *   **Sub-header:** \"市场收入规模增长持续平缓 双平台下载量发生显著迁移\" (Market revenue scale growth continues to be flat, significant migration in downloads on dual platforms).\n    *   **Text body:** A paragraph explaining the trends in 2025, mentioning Google Play and App Store download shares.\n    *   **Charts:** Two bar charts.\n        *   Left chart: \"2025年海外移动游戏市场 收入规模 (亿元)\" (2025 Overseas mobile game market revenue scale (100 million yuan)). It shows stacked bars for Google Play and App Store from 2022 to 2025.\n        *   Right chart: \"2025年海外移动游戏市场 下载量 (亿次)\" (2025 Overseas mobile game market downloads (100 million times)). It shows stacked bars for Google Play and App Store from 2022 to 2025.\n    *   **Footer:** Notes and source information. Page number \"15\". Logo \"点点数据\".\n\n2.  **Evaluate against TOC criteria:**\n    *   Does it list chapters or sections? No.\n    *   Does it have a \"Contents\" or \"Table of Contents\" heading? No.\n    *   Is it a list of links to other pages? No.\n    *   It contains data visualization (charts) and analysis text. This is clearly a content page within a report, specifically page 15.\n\n3.  **Determine the role:**\n    *   It is not a TOC start.\n    *   It is not a TOC continuation.\n    *   It is a regular content page (\"not_toc\").\n\n4.  **Formulate the output:**\n    *   role: \"not_toc\"\n    *   confidence: \"high\"\n    *   reason: The page contains charts, data analysis, and explanatory text about the mobile game market, not a list of contents.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants me to classify the provided image as either a Table of Contents (TOC) page or not.\n\n1.  **Analyze the image content:**\n    *   **Header:** \"海外移动游戏市场收入规模&下载量\" (Overseas mobile game market revenue scale & downloads).\n    *   **Sub-header:** \"市场收入规模增长持续平缓 双平台下载量发生显著迁移\" (Market revenue scale growth continues to be flat, significant migration in downloads on dual platforms).\n    *   **Text body:** A paragraph explaining the trends in 2025, mentioning Google Play and App Store download shares.\n    *   **Charts:** Two bar charts.\n        *   Left chart: \"2025年海外移动游戏市场 收入规模 (亿元)\" (2025 Overseas mobile game market revenue scale (100 million yuan)). It shows stacked bars for Google Play and App Store from 2022 to 2025.\n        *   Right chart: \"2025年海外移动游戏市场 下载量 (亿次)\" (2025 Overseas mobile game market downloads (100 million times)). It shows stacked bars for Google Play and App Store from 2022 to 2025.\n    *   **Footer:** Notes and source information. Page number \"15\". Logo \"点点数据\".\n\n2.  **Evaluate against TOC criteria:**\n    *   Does it list chapters or sections? No.\n    *   Does it have a \"Contents\" or \"Table of Contents\" heading? No.\n    *   Is it a list of links to other pages? No.\n    *   It contains data visualization (charts) and analysis text. This is clearly a content page within a report, specifically page 15.\n\n3.  **Determine the role:**\n    *   It is not a TOC start.\n    *   It is not a TOC continuation.\n    *   It is a regular content page (\"not_toc\").\n\n4.  **Formulate the output:**\n    *   role: \"not_toc\"\n    *   confidence: \"high\"\n    *   reason: The page contains charts, data analysis, and explanatory text about the mobile game market, not a list of contents."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782358044,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 565,
+      "prompt_tokens": 2332,
+      "total_tokens": 2897,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 499,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 66
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 290,
+        "image_tokens": 2042
+      }
+    }
+  },
+  "response_text": "```json\n{\n  \"role\": \"not_toc\",\n  \"confidence\": \"high\",\n  \"reason\": \"The page contains data charts, analysis text, and a specific section title regarding overseas mobile game market revenue and downloads, rather than a list of contents.\"\n}\n```",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:14:28.960019+00:00",
+  "sequence": 473,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4126,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年GooglePlay 下载收入 TOP20.\n    The given page_text is 23\n11 Gardenscapes Playrix\n12 Free Fire Garena\n13Last Z: Survival \nShooterFlorere\nGame\n14 Township Playrix\n15 Kingshot 点点互动\n16 리니지 M NCSOFT\n17 eFootball\n KONAMI\n18 PUBG MOBILE 腾讯\n19 Brawl Stars Supercell\n20 Fishdom Playrix1Last War:Survival\nGameFUNFLY\n2 Roblox Roblox\n3 MONOPOLY GO! Scopely\n4 Coin MasterMoon \nActive\n5 Royal MatchDream \nGames\n6 Whiteout Survival 点点互动\n7 Candy Crush Saga King\n8 Gossip Harbor® 柠檬微趣\n9 Pokémon GO Niantic\n10Pokémon TCG \nPocketPokemon11 Tile Explorer 乐信圣文\n12Extreme Car Driving \nSimulatorAxesInMotio\nnRacing\n13 Snake Calsh Supercent\n14Mini Games: Brainrot \nChallengeUnicorn \nStudio \nOfficial\n15 8 Ball Pool Miniclip\n16 Candy Crush Saga King\n17 Tile ClubGamo\nVation\n18Subway Princess \nRunner常春藤移动\n19 Football LeagueMOBILE \nSOCCER\n20 Moto Race GoXGAME \nSTUDIO1 Roblox Roblox\n2 Block  Blast!Hungry \nStudio\n3 Ludo King Gametion\n4 Subway SurfersSYBO \nGames\n5 Pizza Ready Supercent\n6 Free Fire MAX Garena\n7 Free Fire Garena\n8 Hole.io VOODOO\n9 Vita Mahjong 乐信圣文\n10 My Talking Tom 2 金科汤姆猫\n下载榜 收入榜\nSource ：广大大 -APP Intelligence ；收入数据来自 GooglePlay 商店应用内收入，不包括第三方安卓渠道数据，不包含第三方广告收入；\nDate Range ：2025/1~2025/122025年GooglePlay 下载收入 TOP20\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-4a0b1d63-65ad-9307-8115-e75509a906ad",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年GooglePlay 下载收入 TOP20\" starts at the beginning of the provided `page_text`.\nThe `page_text` starts with:\n\"23\n11 Gardenscapes Playrix\n12 Free Fire Garena\n...\n2025年GooglePlay 下载收入 TOP20\n.\"\n\nThe section title appears at the very end of the `page_text`, not at the beginning.\nTherefore, the section does not start at the beginning of the page_text.\nThe answer should be \"no\".\nFormat: JSON with key \"start_begin\".\nCheck carefully: \"2025年GooglePlay 下载收入 TOP20\" is at the end. So \"start_begin\": \"no\".\nDone. \nOutput matches requirement.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年GooglePlay 下载收入 TOP20\" starts at the beginning of the provided `page_text`.\nThe `page_text` starts with:\n\"23\n11 Gardenscapes Playrix\n12 Free Fire Garena\n...\n2025年GooglePlay 下载收入 TOP20\n.\"\n\nThe section title appears at the very end of the `page_text`, not at the beginning.\nTherefore, the section does not start at the beginning of the page_text.\nThe answer should be \"no\".\nFormat: JSON with key \"start_begin\".\nCheck carefully: \"2025年GooglePlay 下载收入 TOP20\" is at the end. So \"start_begin\": \"no\".\nDone. \nOutput matches requirement."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360873,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 192,
+      "prompt_tokens": 665,
+      "total_tokens": 857,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 175,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 192
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 665
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

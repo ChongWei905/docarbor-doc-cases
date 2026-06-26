@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:54:27.370079+00:00",
+  "sequence": 141,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 10956,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 使用广大大洞察竞争对手的广告数据.\n    The given page_text is 2使用广大大洞察竞争对手的广告数据 ，可通过全球渠道 、媒体、广告主的不同\n维度广告数据获取信息和灵感 。我们覆盖超 70个国家 /地区，80+全球广告渠\n道。比如Facebook ，X(原Twitter) ，YouTube ，TikTok ，Unity等知名广告渠\n道，全部广告创意已经达到 17亿级别 ，并保持小时级别更新频率 。\n通过投放天数 、展现曝光 、热度、互动、人气值 5大指标 ，我们可以快速定位\n出在投优质素材 ，为您提供实时的市场营销参考 。\n广大大作为全球领先的广告营销平台 ，凭借庞大的数据库和服务上千家移动应\n用客户的经验 ，为移动营销从业者提供更切实可行的方法论 ，\n助力打造出更受玩家喜爱的应用作品 。\n官网： www.guangdada.net\n600 万\nAPP 广告主\n17 亿\nAPP 创意素材\n120 万\n每日新增\n关注官方微信号\n广大大出海笔记\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-814d656a-7a0a-98bb-8ff2-27b62ddd9dfe",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"使用广大大洞察竞争对手的广告数据\" appears or starts in the given page_text.\nThe page_text starts with \"2使用广大大洞察竞争对手的广告数据 ，可通过全球渠道...\"\nIgnoring spaces and the leading number \"2\", the exact phrase \"使用广大大洞察竞争对手的广告数据\" is present at the beginning.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nMatches exactly.\nProceed. \nOutput matches requirement.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"使用广大大洞察竞争对手的广告数据\" appears or starts in the given page_text.\nThe page_text starts with \"2使用广大大洞察竞争对手的广告数据 ，可通过全球渠道...\"\nIgnoring spaces and the leading number \"2\", the exact phrase \"使用广大大洞察竞争对手的广告数据\" is present at the beginning.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nMatches exactly.\nProceed. \nOutput matches requirement.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359671,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 166,
+      "prompt_tokens": 354,
+      "total_tokens": 520,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 150,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 166
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 354
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

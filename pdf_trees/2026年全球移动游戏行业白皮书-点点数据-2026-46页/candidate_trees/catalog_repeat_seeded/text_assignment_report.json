@@ -1,0 +1,164 @@
+{
+  "version": "layout_line_span_v1",
+  "status": "ok",
+  "assignment_method": "layout_line_span",
+  "include_labels": false,
+  "node_count": 46,
+  "changed_node_count": 46,
+  "structural_duplicate_node_count": 0,
+  "layout_anchor_count": 46,
+  "layout_anchor_missing_count": 0,
+  "layout_anchor_page_adjust_count": 4,
+  "title_offset_missing_count": 0,
+  "fallback_page_range_count": 0,
+  "invalid_page_range_count": 0,
+  "empty_text_after_split_count": 0,
+  "same_page_sibling_group_count": 2,
+  "exact_duplicate_text_group_count": 0,
+  "exact_duplicate_text_node_count": 0,
+  "layout_anchor_examples": [
+    {
+      "node_id": "0000",
+      "title": "01 中国移动游戏市场现状分析",
+      "page": 3,
+      "line_index": 2,
+      "method": "layout_line_compact_exact",
+      "line_text": "01 中国移动游戏市场现 状分析"
+    },
+    {
+      "node_id": "0001",
+      "title": "4中国移动游戏市场收入规模",
+      "page": 4,
+      "line_index": 32,
+      "method": "layout_line_compact_exact",
+      "line_text": "4 中国移动游戏市场收入规模"
+    },
+    {
+      "node_id": "0002",
+      "title": "5中国移动游戏市场收入集中度",
+      "page": 5,
+      "line_index": 1,
+      "method": "layout_line_compact_exact",
+      "line_text": "5 中国移动游戏市场收入集中度"
+    },
+    {
+      "node_id": "0003",
+      "title": "6中国移动游戏市场用户规模",
+      "page": 6,
+      "line_index": 1,
+      "method": "layout_line_compact_exact",
+      "line_text": "6 中国移动游戏市场用户规模"
+    },
+    {
+      "node_id": "0004",
+      "title": "7中国移动游戏市场用户设备特点",
+      "page": 7,
+      "line_index": 1,
+      "method": "layout_line_compact_exact",
+      "line_text": "7 中国移动游戏市场用户设备特点"
+    },
+    {
+      "node_id": "0005",
+      "title": "8中国游戏版号发布情况",
+      "page": 8,
+      "line_index": 1,
+      "method": "layout_line_compact_exact",
+      "line_text": "8 中国游戏版号发布情况"
+    },
+    {
+      "node_id": "0006",
+      "title": "9中国移动游戏收入TOP榜",
+      "page": 9,
+      "line_index": 1,
+      "method": "layout_line_compact_exact",
+      "line_text": "9 中国移动游戏收入TOP榜"
+    },
+    {
+      "node_id": "0007",
+      "title": "10中国移动游戏2025年新品收入TOP榜",
+      "page": 10,
+      "line_index": 1,
+      "method": "layout_line_compact_exact",
+      "line_text": "10 中国移动游戏2025年新品收入TOP榜"
+    },
+    {
+      "node_id": "0008",
+      "title": "11中国移动游戏市场新品收入占比",
+      "page": 11,
+      "line_index": 7,
+      "method": "layout_line_compact_exact",
+      "line_text": "11 中国移动游戏市场新品收入占比"
+    },
+    {
+      "node_id": "0009",
+      "title": "12中国移动游戏下载量TOP榜",
+      "page": 12,
+      "line_index": 1,
+      "method": "layout_line_compact_exact",
+      "line_text": "12 中国移动游戏下载量TOP榜"
+    }
+  ],
+  "layout_anchor_missing_examples": [],
+  "layout_anchor_page_adjust_examples": [
+    {
+      "node_id": "0000",
+      "title": "01 中国移动游戏市场现状分析",
+      "declared_page": 4,
+      "resolved_page": 3
+    },
+    {
+      "node_id": "0011",
+      "title": "02 海外移动游戏市场现状分析",
+      "declared_page": 15,
+      "resolved_page": 14
+    },
+    {
+      "node_id": "0026",
+      "title": "03 移动游戏典型产品&企业案例分析",
+      "declared_page": 30,
+      "resolved_page": 29
+    },
+    {
+      "node_id": "0039",
+      "title": "04 全球移动游戏市场发展趋势",
+      "declared_page": 37,
+      "resolved_page": 36
+    }
+  ],
+  "structural_duplicate_examples": [],
+  "title_offset_missing_examples": [],
+  "fallback_examples": [],
+  "invalid_page_range_examples": [],
+  "empty_text_examples": [],
+  "duplicate_text_examples": [],
+  "generated_at": "2026-06-25T04:02:19Z",
+  "layout_anchor_page_adjust_enabled": true,
+  "title_span_attempt": {
+    "version": "non_overlapping_title_span_v1",
+    "status": "ok",
+    "assignment_method": "title_span",
+    "node_count": 0,
+    "structural_duplicate_node_count": 0,
+    "layout_anchor_count": 0,
+    "layout_anchor_missing_count": 0,
+    "layout_anchor_page_adjust_count": 0,
+    "exact_duplicate_text_group_count": 0,
+    "exact_duplicate_text_node_count": 0,
+    "invalid_page_range_count": 0,
+    "empty_text_after_split_count": 0
+  },
+  "base_layout_attempt": {
+    "version": "layout_line_span_v1",
+    "status": "ok",
+    "assignment_method": "layout_line_span",
+    "node_count": 46,
+    "structural_duplicate_node_count": 0,
+    "layout_anchor_count": 42,
+    "layout_anchor_missing_count": 4,
+    "layout_anchor_page_adjust_count": 0,
+    "exact_duplicate_text_group_count": 0,
+    "exact_duplicate_text_node_count": 0,
+    "invalid_page_range_count": 0,
+    "empty_text_after_split_count": 0
+  }
+}

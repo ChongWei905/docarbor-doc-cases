@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-06-25T03:27:52.252944+00:00",
+  "sequence": 11,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 32595,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are reading exactly one confirmed TOC page.\n\nYour task is to extract the main report TOC hierarchy from these images, not the body text.\n\nVery important rules:\n1. Ignore body paragraphs that belong to chapter content rather than the TOC.\n2. Ignore author cards, footer buttons, footer report titles, page number badges that are not part of TOC entries, logos, watermarks, and decorative graphics.\n3. Extract only the actual main table of contents entries.\n4. Merge entries from all provided TOC pages into one ordered hierarchy.\n5. The hierarchy is visual across the whole TOC run:\n   - standalone entries before the first section stay at level 1.\n   - lines beginning with SECTION / PART / CHAPTER are level-1 section parents.\n   - entries visually grouped beneath the same section box or card are level-2 children of that section.\n   - if later TOC pages continue children under the most recent visible parent section, keep those children nested under that parent.\n6. Preserve the visible title wording, but normalize whitespace and line wraps.\n7. Preserve the printed page numbers shown in the TOC.\n8. Do not invent titles that are not visible in the provided TOC pages.\n9. Output JSON only.\n\nReturn this schema:\n{\n  \"page_title\": <string>,\n  \"items\": [\n    {\"level\": 1, \"title\": <string>, \"printed_page\": <int>},\n    {\"level\": 1, \"title\": <string>, \"printed_page\": <int>, \"children\": [\n      {\"level\": 2, \"title\": <string>, \"printed_page\": <int>}\n    ]}\n  ],\n  \"notes\": [<string>]\n}\n"
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url": {
+                  "media_type": "image/png",
+                  "base64_chars": 160764,
+                  "redacted": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-686947cd-3a6c-986a-8c73-5de38aed2fb6",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n    \"page_title\": \"目录 Contents\",\n    \"items\": [\n        {\n            \"level\": 1,\n            \"title\": \"01 中国移动游戏市场现状分析\"\n        },\n        {\n            \"level\": 1,\n            \"title\": \"02 海外移动游戏市场现状分析\"\n        },\n        {\n            \"level\": 1,\n            \"title\": \"03 移动游戏典型产品&企业案例分析\"\n        },\n        {\n            \"level\": 1,\n            \"title\": \"04 全球移动游戏市场发展趋势\"\n        }\n    ],\n    \"notes\": [\n        \"No specific page numbers were listed next to the TOC entries in the image.\",\n        \"The text under section 01 is a summary paragraph, not a sub-entry.\"\n    ]\n}\n```",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants the Table of Contents extracted from the image.\n\n1.  **Identify the main title:** \"目录 Contents\".\n2.  **Identify the sections:** There are four distinct blocks labeled 01, 02, 03, 04.\n3.  **Extract Section 01:**\n    *   Number: 01\n    *   Title: \"中国移动游戏市场现状分析\"\n    *   There is descriptive text below it (\"2025年中国移动游戏市场收入规模约2859.2亿元...\"), but the instructions say to ignore body paragraphs that belong to chapter content. This text looks like a summary/abstract for the section, not a sub-chapter title. I will treat the main bold title as the Level 1 entry. The descriptive text is not a TOC entry.\n    *   Page number: The bottom right corner shows \"3\". This is likely the page number of the TOC itself, not the start of the sections. However, looking closely at the image, there are no specific page numbers listed next to the items 01, 02, 03, 04. The \"3\" at the bottom right is the page number of the current slide/page. Since no specific page numbers are associated with the TOC items in the visual layout (like \"01 ....... 5\"), I cannot extract specific page numbers for the items. Wait, let me re-read the prompt. \"Preserve the printed page numbers shown in the TOC.\" There are no page numbers next to the items. I will omit `printed_page` or set it to null if not found, but the schema requires `<int>`. Let's look really closely. No, there are no page numbers next to the titles. The \"3\" is the page number of the TOC page itself. I will have to make a judgment call. Usually, if page numbers aren't there, I can't invent them. But the schema demands `printed_page: <int>`. I will look for any other numbers. The \"01\", \"02\" etc are section numbers. I will assume the prompt implies extracting page numbers *if* they exist. If they don't, I might have to leave them out or use the section number if it acts as a page reference (unlikely). Let's look at the schema again. `printed_page` is required. This is a problem. Let me re-examine the image. Is it possible the section numbers *are* the page numbers? No, \"01\" is clearly a section index. Is it possible the page numbers are missing? Yes. In this case, I will extract what is visible. If `printed_page` is mandatory in the schema but not in the image, I will have to decide. Usually, these prompts allow for null or missing if not present, but the schema says `<int>`. I will check if I missed anything. Ah, the prompt says \"Preserve the printed page numbers shown in the TOC.\" It doesn't explicitly say \"if missing, invent them\". It implies they should be there. Since they are not, I will not include the `printed_page` field for the items, or I will include the section number if it's the only number. Actually, looking at the JSON schema provided in the prompt: `{\"level\": 1, \"title\": <string>, \"printed_page\": <int>}`. This suggests it's expected. However, I cannot hallucinate. I will extract the items. If I can't find a page number, I will likely have to omit that key or use a placeholder, but the best approach is to extract what is there. Wait, looking at the bottom right, there is a \"3\". This is the page number of the TOC. The items don't have page numbers. I will proceed without `printed_page` for the items if I can't find them, or perhaps the prompt implies the section number *is* the identifier. No, \"01\" is the section number. I will assume the user wants the structure. I will output the JSON. I will not include `printed_page` if it's not there, even if the schema suggests it, because \"Do not invent titles that are not visible\" applies to data too. Actually, I'll check the schema again. It's a template. I will follow the visual evidence. There are no page numbers for the sections. I will omit `printed_page` from the items.\n\n    *Self-Correction*: The prompt says \"Preserve the printed page numbers shown in the TOC.\" It doesn't say \"Every item must have a page number\". It says extract the hierarchy. I will extract the titles.\n\n    *Refined Plan*:\n    - Item 1: \"01 中国移动游戏市场现状分析\" -> Title: \"中国移动游戏市场现状分析\"\n    - Item 2: \"02 海外移动游戏市场现状分析\" -> Title: \"海外移动游戏市场现状分析\"\n    - Item 3: \"03 移动游戏典型产品&企业案例分析\" -> Title: \"移动游戏典型产品&企业案例分析\"\n    - Item 4: \"04 全球移动游戏市场发展趋势\" -> Title: \"全球移动游戏市场发展趋势\"\n\n    There are no children visible. These are top-level sections.\n\n    Let's check the text under 01 again. \"2025年中国移动游戏市场收入规模约2859.2亿元...\". This is definitely body text/summary, not a sub-TOC entry.\n\n    So, 4 Level 1 items. No Level 2 items.\n\n    Page numbers: None visible for the items. I will exclude the `printed_page` field from the JSON objects to avoid inventing data, or I will check if the prompt allows optional fields. The schema shows `printed_page` as a key. I will try to find if I missed it. No, definitely not there. I will output the JSON without `printed_page` or with `null` if the parser is strict, but standard JSON allows missing keys. However, the prompt says \"Return this schema\". I will try to adhere. If I must provide an int, I'm stuck. But usually, these tasks prioritize accuracy. I will omit `printed_page`.\n\n    Wait, I see \"3\" at the bottom right. That is the page number of the *current* page (the TOC page). It is not the page number for section 04.\n\n    Final decision: Extract titles. No page numbers for sections.\n\n    One distinct detail: The first block is blue, others are grey. This highlights the current section or just design. It doesn't change the hierarchy.\n\n    Titles:\n    1. 中国移动游戏市场现状分析\n    2. 海外移动游戏市场现状分析\n    3. 移动游戏典型产品&企业案例分析\n    4. 全球移动游戏市场发展趋势\n\n    I will format the JSON.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants the Table of Contents extracted from the image.\n\n1.  **Identify the main title:** \"目录 Contents\".\n2.  **Identify the sections:** There are four distinct blocks labeled 01, 02, 03, 04.\n3.  **Extract Section 01:**\n    *   Number: 01\n    *   Title: \"中国移动游戏市场现状分析\"\n    *   There is descriptive text below it (\"2025年中国移动游戏市场收入规模约2859.2亿元...\"), but the instructions say to ignore body paragraphs that belong to chapter content. This text looks like a summary/abstract for the section, not a sub-chapter title. I will treat the main bold title as the Level 1 entry. The descriptive text is not a TOC entry.\n    *   Page number: The bottom right corner shows \"3\". This is likely the page number of the TOC itself, not the start of the sections. However, looking closely at the image, there are no specific page numbers listed next to the items 01, 02, 03, 04. The \"3\" at the bottom right is the page number of the current slide/page. Since no specific page numbers are associated with the TOC items in the visual layout (like \"01 ....... 5\"), I cannot extract specific page numbers for the items. Wait, let me re-read the prompt. \"Preserve the printed page numbers shown in the TOC.\" There are no page numbers next to the items. I will omit `printed_page` or set it to null if not found, but the schema requires `<int>`. Let's look really closely. No, there are no page numbers next to the titles. The \"3\" is the page number of the TOC page itself. I will have to make a judgment call. Usually, if page numbers aren't there, I can't invent them. But the schema demands `printed_page: <int>`. I will look for any other numbers. The \"01\", \"02\" etc are section numbers. I will assume the prompt implies extracting page numbers *if* they exist. If they don't, I might have to leave them out or use the section number if it acts as a page reference (unlikely). Let's look at the schema again. `printed_page` is required. This is a problem. Let me re-examine the image. Is it possible the section numbers *are* the page numbers? No, \"01\" is clearly a section index. Is it possible the page numbers are missing? Yes. In this case, I will extract what is visible. If `printed_page` is mandatory in the schema but not in the image, I will have to decide. Usually, these prompts allow for null or missing if not present, but the schema says `<int>`. I will check if I missed anything. Ah, the prompt says \"Preserve the printed page numbers shown in the TOC.\" It doesn't explicitly say \"if missing, invent them\". It implies they should be there. Since they are not, I will not include the `printed_page` field for the items, or I will include the section number if it's the only number. Actually, looking at the JSON schema provided in the prompt: `{\"level\": 1, \"title\": <string>, \"printed_page\": <int>}`. This suggests it's expected. However, I cannot hallucinate. I will extract the items. If I can't find a page number, I will likely have to omit that key or use a placeholder, but the best approach is to extract what is there. Wait, looking at the bottom right, there is a \"3\". This is the page number of the TOC. The items don't have page numbers. I will proceed without `printed_page` for the items if I can't find them, or perhaps the prompt implies the section number *is* the identifier. No, \"01\" is the section number. I will assume the user wants the structure. I will output the JSON. I will not include `printed_page` if it's not there, even if the schema suggests it, because \"Do not invent titles that are not visible\" applies to data too. Actually, I'll check the schema again. It's a template. I will follow the visual evidence. There are no page numbers for the sections. I will omit `printed_page` from the items.\n\n    *Self-Correction*: The prompt says \"Preserve the printed page numbers shown in the TOC.\" It doesn't say \"Every item must have a page number\". It says extract the hierarchy. I will extract the titles.\n\n    *Refined Plan*:\n    - Item 1: \"01 中国移动游戏市场现状分析\" -> Title: \"中国移动游戏市场现状分析\"\n    - Item 2: \"02 海外移动游戏市场现状分析\" -> Title: \"海外移动游戏市场现状分析\"\n    - Item 3: \"03 移动游戏典型产品&企业案例分析\" -> Title: \"移动游戏典型产品&企业案例分析\"\n    - Item 4: \"04 全球移动游戏市场发展趋势\" -> Title: \"全球移动游戏市场发展趋势\"\n\n    There are no children visible. These are top-level sections.\n\n    Let's check the text under 01 again. \"2025年中国移动游戏市场收入规模约2859.2亿元...\". This is definitely body text/summary, not a sub-TOC entry.\n\n    So, 4 Level 1 items. No Level 2 items.\n\n    Page numbers: None visible for the items. I will exclude the `printed_page` field from the JSON objects to avoid inventing data, or I will check if the prompt allows optional fields. The schema shows `printed_page` as a key. I will try to find if I missed it. No, definitely not there. I will output the JSON without `printed_page` or with `null` if the parser is strict, but standard JSON allows missing keys. However, the prompt says \"Return this schema\". I will try to adhere. If I must provide an int, I'm stuck. But usually, these tasks prioritize accuracy. I will omit `printed_page`.\n\n    Wait, I see \"3\" at the bottom right. That is the page number of the *current* page (the TOC page). It is not the page number for section 04.\n\n    Final decision: Extract titles. No page numbers for sections.\n\n    One distinct detail: The first block is blue, others are grey. This highlights the current section or just design. It doesn't change the hierarchy.\n\n    Titles:\n    1. 中国移动游戏市场现状分析\n    2. 海外移动游戏市场现状分析\n    3. 移动游戏典型产品&企业案例分析\n    4. 全球移动游戏市场发展趋势\n\n    I will format the JSON."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782358076,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1677,
+      "prompt_tokens": 2427,
+      "total_tokens": 4104,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1479,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 198
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 385,
+        "image_tokens": 2042
+      }
+    }
+  },
+  "response_text": "```json\n{\n    \"page_title\": \"目录 Contents\",\n    \"items\": [\n        {\n            \"level\": 1,\n            \"title\": \"01 中国移动游戏市场现状分析\"\n        },\n        {\n            \"level\": 1,\n            \"title\": \"02 海外移动游戏市场现状分析\"\n        },\n        {\n            \"level\": 1,\n            \"title\": \"03 移动游戏典型产品&企业案例分析\"\n        },\n        {\n            \"level\": 1,\n            \"title\": \"04 全球移动游戏市场发展趋势\"\n        }\n    ],\n    \"notes\": [\n        \"No specific page numbers were listed next to the TOC entries in the image.\",\n        \"The text under section 01 is a summary paragraph, not a sub-entry.\"\n    ]\n}\n```",
+  "error_type": null,
+  "error_message": null
+}

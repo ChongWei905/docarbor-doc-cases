@@ -76,11 +76,10 @@
       "level": 1,
       "ordinal": null,
       "confidence": "high",
-      "reason": "This is a promotional cover page or flyer for an event and report, featuring call-to-action buttons ('Visit Site', 'Book Online') and event dates, rather than a section divider within a document.",
+      "reason": "This is a cover page or promotional image for the report and summit, featuring event dates, location, and call-to-action buttons ('Visit Site', 'Book Online'), rather than an internal section divider.",
       "accepted": false,
       "rejection_reason": "not_divider"
     }
   ],
-  "exhibit_pages": [],
   "ready": false
 }

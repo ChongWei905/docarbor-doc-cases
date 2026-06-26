@@ -1,8 +1,0 @@
-{
-  "input_path": "D:\\code\\semantic-construct\\0630转测\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页.pdf",
-  "artifacts_dir": "D:\\code\\semantic-construct\\0630转测\\results\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页",
-  "output_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\tree.json",
-  "pdf_strategy": "auto",
-  "success": true,
-  "node_count": 40
-}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:42:55.274813+00:00",
+  "sequence": 63,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 10887,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 全链路增长策略指南.\n    The given page_text is 40\n一套简单、可复制的盈利增长框架，助力移动应用在 2026年破局盈利\n获客成本持续上升、用户增长趋于停滞以及用户快速流失，正在暴露“效果至上”   \n（performance -first）的营销模式所面临的结构性瓶颈。随着 早期用户流失 逐渐成为增长的\n核心制约因素， 2026年将成为一个关键拐点 ——未来的增长将不再依赖单纯的预算投入或\n割裂式的局部优化。\n在本章节中， Aarki 提出了一套 以留存为核心驱动的全链路增长框架 ，将用户获取、互动与\n再营销统一到一个持续演进的学习系统之中。在这一系统内，数据信号不断叠加，而智能化\n能力则随着每一次用户交互不断增强。\n未来真正能够胜出的营销者，将是那些 从“单一投放活动”转向“系统化增长体系” ，并且 从短\n期转化目标迈向长期价值创造 的人。全链路增长策略指南\nwww.aarki.com\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-9096f979-3485-9c15-852b-c89a8999f617",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** `全链路增长策略指南`\n   - **Page Text:** \n     ```\n     40\n     一套简单、可复制的盈利增长框架，助力移动应用在 2026年破局盈利\n     获客成本持续上升、用户增长趋于停滞以及用户快速流失，正在暴露“效果至上”   \n     （performance -first）的营销模式所面临的结构性瓶颈。随着 早期用户流失 逐渐成为增长的\n     核心制约因素， 2026年将成为一个关键拐点 ——未来的增长将不再依赖单纯的预算投入或\n     割裂式的局部优化。\n     在本章节中， Aarki 提出了一套 以留存为核心驱动的全链路增长框架 ，将用户获取、互动与\n     再营销统一到一个持续演进的学习系统之中。在这一系统内，数据信号不断叠加，而智能化\n     能力则随着每一次用户交互不断增强。\n     未来真正能够胜出的营销者，将是那些 从“单一投放活动”转向“系统化增长体系” ，并且 从短\n     期转化目标迈向长期价值创造 的人。全链路增长策略指南\n     www.aarki.com\n     .\n     ```\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*. Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate Page Text against Section Title:**\n   - The `page_text` starts with \"40\\n一套简单、可复制的盈利增长框架...\"\n   - The section title `全链路增长策略指南` appears near the end of the text: \"...的人。全链路增长策略指南\\nwww.aarki.com\\n.\"\n   - Clearly, there is a lot of content before the section title.\n   - Therefore, the section does *not* start at the beginning of the page text.\n\n3.  **Determine Output:**\n   - `start_begin`: \"no\"\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n   - Ensure no extra text, explanations, or thinking fields are included. Directly return the JSON.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** `全链路增长策略指南`\n   - **Page Text:** \n     ```\n     40\n     一套简单、可复制的盈利增长框架，助力移动应用在 2026年破局盈利\n     获客成本持续上升、用户增长趋于停滞以及用户快速流失，正在暴露“效果至上”   \n     （performance -first）的营销模式所面临的结构性瓶颈。随着 早期用户流失 逐渐成为增长的\n     核心制约因素， 2026年将成为一个关键拐点 ——未来的增长将不再依赖单纯的预算投入或\n     割裂式的局部优化。\n     在本章节中， Aarki 提出了一套 以留存为核心驱动的全链路增长框架 ，将用户获取、互动与\n     再营销统一到一个持续演进的学习系统之中。在这一系统内，数据信号不断叠加，而智能化\n     能力则随着每一次用户交互不断增强。\n     未来真正能够胜出的营销者，将是那些 从“单一投放活动”转向“系统化增长体系” ，并且 从短\n     期转化目标迈向长期价值创造 的人。全链路增长策略指南\n     www.aarki.com\n     .\n     ```\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*. Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate Page Text against Section Title:**\n   - The `page_text` starts with \"40\\n一套简单、可复制的盈利增长框架...\"\n   - The section title `全链路增长策略指南` appears near the end of the text: \"...的人。全链路增长策略指南\\nwww.aarki.com\\n.\"\n   - Clearly, there is a lot of content before the section title.\n   - Therefore, the section does *not* start at the beginning of the page text.\n\n3.  **Determine Output:**\n   - `start_begin`: \"no\"\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n   - Ensure no extra text, explanations, or thinking fields are included. Directly return the JSON.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355379,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 556,
+      "prompt_tokens": 435,
+      "total_tokens": 991,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 539,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 556
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 435
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

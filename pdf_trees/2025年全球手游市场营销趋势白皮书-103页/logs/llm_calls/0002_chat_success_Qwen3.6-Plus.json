@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:10:30.676905+00:00",
+  "sequence": 2,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 20688,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are deciding whether one report page belongs to the MAIN table of contents.\n\nA MAIN TOC page lists the report's actual section or chapter structure.\nVery important rules:\n1. Pages that only list tables, figures, charts, illustrations, abbreviations, or other auxiliary indexes are NOT main TOC pages.\n2. Chapter divider pages with one large title are NOT TOC pages.\n3. Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\n4. A page can be `toc_start` only if it clearly starts the main contents listing.\n5. A page can be `toc_continuation` only if it clearly continues a TOC list from a previous page.\n6. If there is no clear TOC evidence, return `not_toc`.\n7. Output JSON only.\n\nReturn this schema:\n{\n  \"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\",\n  \"confidence\": \"high\" | \"medium\" | \"low\",\n  \"reason\": <short string>\n}\n\nPage payload:\n```json\n{\n  \"page_number\": 5,\n  \"total_pages\": 104,\n  \"candidate_rank\": 2,\n  \"has_explicit_toc_title\": false,\n  \"top_lines\": [\n    \"2200亿\",\n    \"每日竞价请求\",\n    \"Aarki是一家专注于人工智能的广告科技公司,我们致力于通过可衡量的智能解决方案\",\n    \",帮助品牌与应用开发者实现可持续的移动收入增长。\",\n    \"65亿\",\n    \"我们的核心是由人工智能深度驱动的需求方平台(DSP)。平台基于对海量用户参与行\",\n    \"为的智能建模,以及对实时竞价(RTB)市场动态机制的精准洞察,助力市场营销人员\",\n    \"实现高效的广告投放决策,规模化获取高价值用户。\",\n    \"独立用户覆盖\",\n    \"全流程、全方位、全覆盖的移动广告技术平台\",\n    \"100亿\",\n    \"Aarki的效能源于我们独特且完整的三大技术支柱:\"\n  ],\n  \"short_lines\": [\n    \"2200亿\",\n    \"每日竞价请求\",\n    \"Aarki是一家专注于人工智能的广告科技公司,我们致力于通过可衡量的智能解决方案\",\n    \",帮助品牌与应用开发者实现可持续的移动收入增长。\",\n    \"65亿\",\n    \"我们的核心是由人工智能深度驱动的需求方平台(DSP)。平台基于对海量用户参与行\",\n    \"为的智能建模,以及对实时竞价(RTB)市场动态机制的精准洞察,助力市场营销人员\",\n    \"实现高效的广告投放决策,规模化获取高价值用户。\",\n    \"独立用户覆盖\",\n    \"全流程、全方位、全覆盖的移动广告技术平台\",\n    \"100亿\",\n    \"Aarki的效能源于我们独特且完整的三大技术支柱:\",\n    \"●\",\n    \"领先的AI 广告技术平台:基于多层DNN 与动态出价模型,在保障流量质量的\",\n    \"同时,智能最大化每一次投放的ROI。\",\n    \"可触达移动设备\",\n    \"●\",\n    \"隐私为先的用户策略:在全球超100 亿设备的无ID 环境中,通过每秒500 万\"\n  ],\n  \"candidate_rows\": [],\n  \"stats\": {\n    \"text_block_count\": 20,\n    \"parsed_line_matches\": 0,\n    \"heading_like_matches\": 0,\n    \"toc_pattern_matches\": 0,\n    \"short_line_count\": 32,\n    \"long_line_count\": 0,\n    \"sentence_like_line_count\": 3,\n    \"value_like_line_count\": 1\n  }\n}\n```"
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-163e70fc-d0bc-90af-b5a1-eea332a462a0",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"role\": \"not_toc\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page contains company introduction, key metrics, and descriptive bullet points, clearly functioning as a body or overview page rather than a table of contents.\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Determine if a report page belongs to the MAIN table of contents.\n   - **Rules:**\n     1. Auxiliary indexes (tables, figures, abbreviations, etc.) -> NOT main TOC.\n     2. Chapter divider pages (one large title) -> NOT TOC.\n     3. Body pages (paragraphs, charts, data, etc.) -> NOT TOC.\n     4. `toc_start`: clearly starts main contents listing.\n     5. `toc_continuation`: clearly continues TOC list from previous page.\n     6. No clear TOC evidence -> `not_toc`.\n     7. Output JSON only.\n   - **Schema:** `{\"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\", \"confidence\": \"high\" | \"medium\" | \"low\", \"reason\": \"<short string>\"}`\n   - **Page Payload:**\n     - `page_number`: 5\n     - `total_pages`: 104\n     - `has_explicit_toc_title`: false\n     - `top_lines` & `short_lines`: Contain marketing/company intro text: \"2200亿 每日竞价请求\", \"Aarki是一家专注于人工智能的广告科技公司...\", \"65亿 独立用户覆盖\", \"100亿 可触达移动设备\", bullet points about AI ad tech platform, privacy-first strategy.\n     - `stats`: `text_block_count`: 20, `parsed_line_matches`: 0, `heading_like_matches`: 0, `toc_pattern_matches`: 0, `short_line_count`: 32, `long_line_count`: 0, `sentence_like_line_count`: 3, `value_like_line_count`: 1.\n     - `candidate_rows`: []\n\n2.  **Evaluate against Rules:**\n   - Does it look like a TOC? No. It contains company introduction, key metrics (2200亿, 65亿, 100亿), and bullet points describing technology pillars. This is clearly a body/introductory page, likely an \"About Us\" or \"Company Overview\" page.\n   - Rule 3 explicitly says: \"Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\" This matches perfectly.\n   - `has_explicit_toc_title` is false.\n   - `toc_pattern_matches` is 0.\n   - Conclusion: `not_toc`.\n\n3.  **Formulate Output:**\n   - `role`: \"not_toc\"\n   - `confidence`: \"high\"\n   - `reason`: \"Page contains company introduction, key metrics, and descriptive bullet points, matching a body/overview page rather than a table of contents.\"\n   - Check JSON format: Valid.\n   - Ensure only JSON is output.\n\n   All steps align. Proceed. \n   Self-Correction/Verification during thought:\n   - Check schema: `role`, `confidence`, `reason`.\n   - Check rules: Rule 3 applies directly.\n   - Confidence: High, because the content is clearly descriptive/marketing text with stats, zero TOC patterns.\n   - Reason: Concise and accurate.\n   - Output matches requirements.✅\n   Generate response. \n   ```json\n   {\n     \"role\": \"not_toc\",\n     \"confidence\": \"high\",\n     \"reason\": \"Page contains company introduction, key performance metrics, and descriptive bullet points, clearly functioning as a body or overview page rather than a table of contents.\"\n   }\n   ```\n   Matches exactly. Proceeds. \n   Output matches the requested format. No extra text.✅\n   Final Check of the prompt: \"Output JSON only.\" -> I will output strictly the JSON.✅\n   All good. \n   Proceeds. \n   [Output Generation] -> *Self-Correction/Refinement during generation prep*: I'll make sure the JSON is perfectly formatted and matches the schema exactly.\n   `{ \"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page contains company introduction, key metrics, and descriptive bullet points, clearly functioning as a body/overview page rather than a table of contents.\" }` -> Valid.✅\n   Done. \n   Output matches response. \n   [Proceeds]",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Determine if a report page belongs to the MAIN table of contents.\n   - **Rules:**\n     1. Auxiliary indexes (tables, figures, abbreviations, etc.) -> NOT main TOC.\n     2. Chapter divider pages (one large title) -> NOT TOC.\n     3. Body pages (paragraphs, charts, data, etc.) -> NOT TOC.\n     4. `toc_start`: clearly starts main contents listing.\n     5. `toc_continuation`: clearly continues TOC list from previous page.\n     6. No clear TOC evidence -> `not_toc`.\n     7. Output JSON only.\n   - **Schema:** `{\"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\", \"confidence\": \"high\" | \"medium\" | \"low\", \"reason\": \"<short string>\"}`\n   - **Page Payload:**\n     - `page_number`: 5\n     - `total_pages`: 104\n     - `has_explicit_toc_title`: false\n     - `top_lines` & `short_lines`: Contain marketing/company intro text: \"2200亿 每日竞价请求\", \"Aarki是一家专注于人工智能的广告科技公司...\", \"65亿 独立用户覆盖\", \"100亿 可触达移动设备\", bullet points about AI ad tech platform, privacy-first strategy.\n     - `stats`: `text_block_count`: 20, `parsed_line_matches`: 0, `heading_like_matches`: 0, `toc_pattern_matches`: 0, `short_line_count`: 32, `long_line_count`: 0, `sentence_like_line_count`: 3, `value_like_line_count`: 1.\n     - `candidate_rows`: []\n\n2.  **Evaluate against Rules:**\n   - Does it look like a TOC? No. It contains company introduction, key metrics (2200亿, 65亿, 100亿), and bullet points describing technology pillars. This is clearly a body/introductory page, likely an \"About Us\" or \"Company Overview\" page.\n   - Rule 3 explicitly says: \"Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\" This matches perfectly.\n   - `has_explicit_toc_title` is false.\n   - `toc_pattern_matches` is 0.\n   - Conclusion: `not_toc`.\n\n3.  **Formulate Output:**\n   - `role`: \"not_toc\"\n   - `confidence`: \"high\"\n   - `reason`: \"Page contains company introduction, key metrics, and descriptive bullet points, matching a body/overview page rather than a table of contents.\"\n   - Check JSON format: Valid.\n   - Ensure only JSON is output.\n\n   All steps align. Proceed. \n   Self-Correction/Verification during thought:\n   - Check schema: `role`, `confidence`, `reason`.\n   - Check rules: Rule 3 applies directly.\n   - Confidence: High, because the content is clearly descriptive/marketing text with stats, zero TOC patterns.\n   - Reason: Concise and accurate.\n   - Output matches requirements.✅\n   Generate response. \n   ```json\n   {\n     \"role\": \"not_toc\",\n     \"confidence\": \"high\",\n     \"reason\": \"Page contains company introduction, key performance metrics, and descriptive bullet points, clearly functioning as a body or overview page rather than a table of contents.\"\n   }\n   ```\n   Matches exactly. Proceeds. \n   Output matches the requested format. No extra text.✅\n   Final Check of the prompt: \"Output JSON only.\" -> I will output strictly the JSON.✅\n   All good. \n   Proceeds. \n   [Output Generation] -> *Self-Correction/Refinement during generation prep*: I'll make sure the JSON is perfectly formatted and matches the schema exactly.\n   `{ \"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page contains company introduction, key metrics, and descriptive bullet points, clearly functioning as a body/overview page rather than a table of contents.\" }` -> Valid.✅\n   Done. \n   Output matches response. \n   [Proceeds]"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782353435,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1010,
+      "prompt_tokens": 830,
+      "total_tokens": 1840,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 950,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1010
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 830
+      }
+    }
+  },
+  "response_text": "{\n  \"role\": \"not_toc\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page contains company introduction, key metrics, and descriptive bullet points, clearly functioning as a body or overview page rather than a table of contents.\"\n}",
+  "error_type": null,
+  "error_message": null
+}

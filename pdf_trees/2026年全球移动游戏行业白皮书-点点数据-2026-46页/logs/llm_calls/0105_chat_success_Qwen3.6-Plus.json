@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:59:24.661597+00:00",
+  "sequence": 105,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 15449,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 11中国移动游戏市场新品收入占比.\n    The given page_text is © 2026 DianDian.All Rights Reserved.15.3%\n84.7%18.9%\n81.1%7.5%\n92.5%\n11中国移动游戏市场新品收入占比\n头部超级产品缺位致使新品整体收入大幅缩水\n来源：点点数据自主研究及绘制。2023-2025年 新上线移动游戏 在当年的市场收入规模占比（仅App Store）2025年新上线移动游戏市场收入占比从18.9%骤降至7.3%，这一数据或许会使得资本市场不再将新游作为短期财务增长引擎的预期。从往年新游TOP5名单可以看出，成功产品\n多依托于成熟的端游IP移植（如《逆水寒》《地下城与勇士》）、已验证的赛道融合（如《无尽冬日》）或强势的垂直品类（如《恋与深空》），其成功逻辑可以说是“确定性创\n新”。而到了2025年，市场环境使得这种“确定性”也在急剧减弱。高昂的研发与营销成本，迫使厂商在新项目立项上极度保守，倾向于在已有成功公式内进行微调，而非探索\n未知领域；同时，用户对范式化内容的厌倦加剧，使得缺乏真正颠覆性体验的产品即便制作精良，也难以引发广泛的付费热潮。但需要明确的是，在7.3%的占比背后，同样也包\n含了大量中等规模新游的集体失声——它们既无法在品质上对标顶级大作，又无法在创意上形成稀缺性，最终在激烈的流量争夺中迅速沉寂。\n逆水寒 崩坏：星穹铁道\n冒险岛：枫之传说 合金弹头：觉醒 晶核当年新品\nTOP5：\n地下城与勇士：起源 无尽冬日\n三国：谋定天下 向僵尸开炮 恋与深空\n燕云十六声 英雄没有闪\n杖剑传说 永远的蔚蓝星球 无畏契约：源能行动2023年 2024年 2025年\n当年新品\nTOP5：当年新品\nTOP5：\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-90c5bbb6-2f91-947d-acb3-9c846412ce06",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `11中国移动游戏市场新品收入占比`\n   - **Current Page Text:** `© 2026 DianDian.All Rights Reserved.15.3%\\n84.7%18.9%\\n81.1%7.5%\\n92.5%\\n11中国移动游戏市场新品收入占比\\n头部超级产品缺位致使新品整体收入大幅缩水\\n...`\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Condition:** If there are other contents before the section title, it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The `page_text` starts with:\n   `© 2026 DianDian.All Rights Reserved.15.3%`\n   `84.7%18.9%`\n   `81.1%7.5%`\n   `92.5%`\n   `11中国移动游戏市场新品收入占比`\n   ...\n\n   Clearly, there is content before the section title `11中国移动游戏市场新品收入占比`. The text starts with a copyright notice and some percentage numbers.\n\n3.  **Evaluate Condition:**\n   Since there is content before the section title, the section does *not* start at the beginning of the page text.\n   Therefore, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   Construct the JSON as requested:\n   `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   Wait, let's double check the exact text.\n   `© 2026 DianDian.All Rights Reserved.15.3%\\n84.7%18.9%\\n81.1%7.5%\\n92.5%\\n11中国移动游戏市场新品收入占比`\n   Yes, definitely other content before it.\n   Result: \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches exactly.✅\n   Proceeds. \n   [Final Check]\n   Input: `11中国移动游戏市场新品收入占比`\n   Page starts with: `© 2026 DianDian...`\n   Conclusion: `no`\n   Format: JSON\n   Ready. \n   Output Generation. \n   `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no extra whitespace or newlines are added if possible, but standard JSON formatting is fine.)\n   All constraints met.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Self-Correction/Refinement during thought)*: I should make sure the JSON is exactly as requested. The prompt says:\n   `{\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }`\n   I will output exactly `{\"start_begin\": \"no\"}`.\n   Done. \n   [Output] `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `11中国移动游戏市场新品收入占比`\n   - **Current Page Text:** `© 2026 DianDian.All Rights Reserved.15.3%\\n84.7%18.9%\\n81.1%7.5%\\n92.5%\\n11中国移动游戏市场新品收入占比\\n头部超级产品缺位致使新品整体收入大幅缩水\\n...`\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Condition:** If there are other contents before the section title, it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The `page_text` starts with:\n   `© 2026 DianDian.All Rights Reserved.15.3%`\n   `84.7%18.9%`\n   `81.1%7.5%`\n   `92.5%`\n   `11中国移动游戏市场新品收入占比`\n   ...\n\n   Clearly, there is content before the section title `11中国移动游戏市场新品收入占比`. The text starts with a copyright notice and some percentage numbers.\n\n3.  **Evaluate Condition:**\n   Since there is content before the section title, the section does *not* start at the beginning of the page text.\n   Therefore, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   Construct the JSON as requested:\n   `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   Wait, let's double check the exact text.\n   `© 2026 DianDian.All Rights Reserved.15.3%\\n84.7%18.9%\\n81.1%7.5%\\n92.5%\\n11中国移动游戏市场新品收入占比`\n   Yes, definitely other content before it.\n   Result: \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches exactly.✅\n   Proceeds. \n   [Final Check]\n   Input: `11中国移动游戏市场新品收入占比`\n   Page starts with: `© 2026 DianDian...`\n   Conclusion: `no`\n   Format: JSON\n   Ready. \n   Output Generation. \n   `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no extra whitespace or newlines are added if possible, but standard JSON formatting is fine.)\n   All constraints met.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Self-Correction/Refinement during thought)*: I should make sure the JSON is exactly as requested. The prompt says:\n   `{\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }`\n   I will output exactly `{\"start_begin\": \"no\"}`.\n   Done. \n   [Output] `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359969,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 825,
+      "prompt_tokens": 679,
+      "total_tokens": 1504,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 813,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 825
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 679
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

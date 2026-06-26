@@ -1,0 +1,164 @@
+{
+  "run_metadata": {
+    "input_path": "D:\\code\\semantic-construct\\0630转测\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页.pdf",
+    "input_kind": "pdf",
+    "artifact_root": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页",
+    "output_json": null,
+    "model": "Qwen3.6-Plus",
+    "fallback_model": "Qwen3.6-Plus",
+    "include_summary": true,
+    "write_postgres": false,
+    "write_global_index": false,
+    "global_index_model": "embedding-3",
+    "markdown_layout": "auto",
+    "pdf_strategy": "auto",
+    "toc_text_role_model": "Qwen3.6-Plus",
+    "toc_text_role_fallback_model": "Qwen3.6-Plus",
+    "toc_vlm_model": "Qwen3.6-Plus",
+    "toc_vlm_fallback_model": "Qwen3.6-Plus",
+    "native_model": "Qwen3.6-Plus",
+    "native_fallback_model": "Qwen3.6-Plus",
+    "summary_model": "Qwen3.6-Plus",
+    "summary_fallback_model": "Qwen3.6-Plus"
+  },
+  "stage_records": [
+    {
+      "stage": "load_docarbor_config",
+      "status": "success",
+      "started_at": "2026-06-25T02:04:54.717897+00:00",
+      "duration_ms": 0
+    },
+    {
+      "stage": "get_page_tokens",
+      "status": "success",
+      "started_at": "2026-06-25T02:04:54.718418+00:00",
+      "duration_ms": 1238
+    },
+    {
+      "stage": "extract_page_artifacts",
+      "status": "success",
+      "started_at": "2026-06-25T02:04:55.957625+00:00",
+      "duration_ms": 10722
+    },
+    {
+      "stage": "analyze_toc_pages",
+      "status": "success",
+      "started_at": "2026-06-25T02:05:06.681055+00:00",
+      "duration_ms": 84
+    },
+    {
+      "stage": "extract_canonical_toc_outline",
+      "status": "success",
+      "started_at": "2026-06-25T02:05:06.766157+00:00",
+      "duration_ms": 2
+    },
+    {
+      "stage": "analyze_catalog_repeat_pages",
+      "status": "success",
+      "started_at": "2026-06-25T02:05:06.771718+00:00",
+      "duration_ms": 2
+    },
+    {
+      "stage": "analyze_divider_pages",
+      "status": "success",
+      "started_at": "2026-06-25T02:05:06.775227+00:00",
+      "duration_ms": 340296
+    },
+    {
+      "stage": "candidate_docarbor_native_build_tree",
+      "status": "success",
+      "started_at": "2026-06-25T02:10:47.076760+00:00",
+      "duration_ms": 2790296
+    },
+    {
+      "stage": "candidate_docarbor_native_write_node_ids",
+      "status": "success",
+      "started_at": "2026-06-25T02:57:17.374357+00:00",
+      "duration_ms": 0
+    },
+    {
+      "stage": "candidate_docarbor_native_add_node_text",
+      "status": "success",
+      "started_at": "2026-06-25T02:57:17.376486+00:00",
+      "duration_ms": 123
+    },
+    {
+      "stage": "candidate_docarbor_native_summaries",
+      "status": "success",
+      "started_at": "2026-06-25T02:57:17.499438+00:00",
+      "duration_ms": 1126497
+    },
+    {
+      "stage": "candidate_docarbor_native_convert_tree",
+      "status": "success",
+      "started_at": "2026-06-25T03:16:04.000056+00:00",
+      "duration_ms": 1
+    },
+    {
+      "stage": "candidate_docarbor_native_normalize_output",
+      "status": "success",
+      "started_at": "2026-06-25T03:16:04.002585+00:00",
+      "duration_ms": 6
+    },
+    {
+      "stage": "candidate_docarbor_native_summarize_metrics",
+      "status": "success",
+      "started_at": "2026-06-25T03:16:04.009092+00:00",
+      "duration_ms": 6
+    },
+    {
+      "stage": "candidate_docarbor_native_score",
+      "status": "success",
+      "started_at": "2026-06-25T03:16:04.016622+00:00",
+      "duration_ms": 0
+    },
+    {
+      "stage": "candidate_docarbor_native_write_artifacts",
+      "status": "success",
+      "started_at": "2026-06-25T03:16:04.016622+00:00",
+      "duration_ms": 5
+    },
+    {
+      "stage": "candidate_docarbor_native",
+      "status": "success",
+      "started_at": "2026-06-25T02:10:47.074761+00:00",
+      "duration_ms": 3916948
+    },
+    {
+      "stage": "finalize_selected_candidate",
+      "status": "success",
+      "started_at": "2026-06-25T03:16:04.026468+00:00",
+      "duration_ms": 6
+    },
+    {
+      "stage": "save_final_output",
+      "status": "success",
+      "started_at": "2026-06-25T03:16:04.033643+00:00",
+      "duration_ms": 1
+    }
+  ],
+  "llm_usage_totals": {
+    "prompt_tokens": 387439,
+    "completion_tokens": 486175,
+    "total_tokens": 873614
+  },
+  "llm_call_counts": {
+    "chat": 359,
+    "embedding": 0,
+    "rerank": 0,
+    "success": 359,
+    "error": 0
+  },
+  "artifacts": {
+    "events_jsonl": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\logs\\debug.log.jsonl",
+    "progress_log": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\logs\\build_progress.log",
+    "llm_calls_dir": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\logs\\llm_calls",
+    "manifest": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\logs\\manifest.json"
+  },
+  "target_output_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页_docarbor_tree.json",
+  "docarbor_raw_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\docarbor_raw.json",
+  "outline_entries_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\outline_entries.json",
+  "build_outline_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\build_outline.json",
+  "toc_assessment_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\toc_assessment.json",
+  "candidate_selection_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_selection.json"
+}

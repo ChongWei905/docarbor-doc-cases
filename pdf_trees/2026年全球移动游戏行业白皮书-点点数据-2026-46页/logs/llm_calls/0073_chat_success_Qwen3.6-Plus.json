@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:57:44.081035+00:00",
+  "sequence": 73,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4360,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 日本移动游戏市场收入规模.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 23日本移动游戏市场收入规模\n应用侧载与第三方支付相关法案于年末正式落地生效\n来源：点点数据自主研究及绘制。2025年日本移动游戏市场收入规模2025年，日本移动游戏市场在总收入达到1129.8亿元、实现4.21%的同比增长。日本移动游戏玩家的“情感羁绊”与“社群归属”始终是比单纯玩法更重要的付费核心与运营壁\n垒，老牌产品能持续产生高额流水，其成功远超游戏性本身，根植于长期构建的角色故事、声优阵容、同人文化及玩家间的社群认同。需特别指出的是，日本《智能手机特定软件\n竞争促进法》已于2015年12月18日正式生效，与美国类似，该法案也同样要求平台开放应用侧载、允许第三方支付系统接入以及提供选择界面等。长远来看，这必将改变现有的\n渠道格局，为游戏厂商在日本市场带来新的分发与支付选择。\n1418.6\n1056.5 1064.1 1084.21129.8-25.53%0.72% 1.89% 4.21%\n2021年 2022年 2023年 2024年 2025年\n日本移动游戏市场收入规模（亿元/人民币） 增长率（%）29.72%27.33%27.60%\n27.87%31.06%31.45%\n24.69%24.06%23.95%\n17.72%17.55%17.01%\n0% 20% 40% 60% 80% 100%2023年2024年2025年1-10名收入占比 11-50名收入占比 51-200名收入占比 其他移动游戏收入占比2025年日本移动游戏市场收入集中度\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-23b181df-23c0-91d7-a6bb-8c29b2c5c167",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"日本移动游戏市场收入规模\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the `page_text`:\n\"© 2026 DianDian.All Rights Reserved. 23日本移动游戏市场收入规模\"\nIt clearly contains \"日本移动游戏市场收入规模\".\nSo the answer should be \"yes\".\nI will output the JSON format as requested.\nCheck format:\n{\n    \"answer\": \"yes\"\n}\nDone. \nNo extra text.\nProceed. \nOutput matches exactly. \nFinal check of the prompt: \"Reply format: { \"answer\": \"yes or no\" } Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput: {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"日本移动游戏市场收入规模\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the `page_text`:\n\"© 2026 DianDian.All Rights Reserved. 23日本移动游戏市场收入规模\"\nIt clearly contains \"日本移动游戏市场收入规模\".\nSo the answer should be \"yes\".\nI will output the JSON format as requested.\nCheck format:\n{\n    \"answer\": \"yes\"\n}\nDone. \nNo extra text.\nProceed. \nOutput matches exactly. \nFinal check of the prompt: \"Reply format: { \"answer\": \"yes or no\" } Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput: {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359868,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 198,
+      "prompt_tokens": 628,
+      "total_tokens": 826,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 182,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 198
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 628
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

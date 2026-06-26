@@ -38,19 +38,19 @@
       "page_number": 6,
       "role": "toc_start",
       "confidence": "high",
-      "reason": "Page features an explicit '目录 CONTENTS' title and lists numbered main sections (1-4) with corresponding chapter titles, clearly marking the start of the main table of contents."
+      "reason": "Page explicitly titled '目录 CONTENTS' and lists numbered main sections, clearly marking the start of the report's main table of contents."
     },
     {
       "page_number": 5,
       "role": "not_toc",
       "confidence": "high",
-      "reason": "Page contains company introduction, marketing statistics, and descriptive bullet points, with zero TOC patterns or section/chapter listings."
+      "reason": "Page contains company introduction, key metrics, and descriptive bullet points, clearly functioning as a body or overview page rather than a table of contents."
     },
     {
       "page_number": 7,
       "role": "not_toc",
       "confidence": "high",
-      "reason": "The page displays a single chapter title and number, functioning as a section divider rather than a table of contents listing multiple report sections."
+      "reason": "Page contains only a chapter number, title, and page number with no section listings or TOC patterns, clearly indicating a chapter divider page."
     }
   ],
   "text_model_source": "Qwen3.6-Plus",

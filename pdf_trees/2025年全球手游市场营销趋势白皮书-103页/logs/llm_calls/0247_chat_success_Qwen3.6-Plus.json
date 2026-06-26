@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:59:54.818588+00:00",
+  "sequence": 247,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 11489,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 休闲手游 热门创意策略.\n    The given page_text is 61\nAI搞怪开头 +短视频病毒 meme+ 热梗化用\n休闲手游  热门创意策略\nSource ：广大大 -广告创意模块，选取时间段内热度最高创意素材展现\nDate Range ：2025/1~2025/12热门玩法：\n跑酷、跳跃、消除、水排序\n常用素材套路：\nAI开头→切入游戏实机画面 →玩法\n展示\n热门短视频开头 →游戏内还原 →玩\n法展示\n未来创意趋势：\n更多休闲创意取材于 TikTok 热热门\n视频，甚至于直接用博主视频作推\n广用，搞怪有趣成为买量素材开头\n的核心标准，\n点击图片播放完整创意\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-d2cb30fc-69a6-9cee-b840-aa1c7c0183b6",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given page_text.\n   - **Section Title:** `休闲手游 热门创意策略`\n   - **Page Text:** \n     ```\n     61\n     AI搞怪开头 +短视频病毒 meme+ 热梗化用\n     休闲手游  热门创意策略\n     Source ：广大大 -广告创意模块，选取时间段内热度最高创意素材展现\n     Date Range ：2025/1~2025/12热门玩法：\n     跑酷、跳跃、消除、水排序\n     常用素材套路：\n     AI开头→切入游戏实机画面 →玩法\n     展示\n     热门短视频开头 →游戏内还原 →玩\n     法展示\n     未来创意趋势：\n     更多休闲创意取材于 TikTok 热热门\n     视频，甚至于直接用博主视频作推\n     广用，搞怪有趣成为买量素材开头\n     的核心标准，\n     点击图片播放完整创意\n     .\n     ```\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply with JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Section Title: `休闲手游 热门创意策略`\n   - Page Text contains: `休闲手游  热门创意策略` (note the double space between 手游 and 热门)\n   - Ignoring space inconsistencies, they match exactly.\n   - It appears on the third line of the page text.\n\n3.  **Determine Answer:**\n   - Since it appears in the text, the answer is \"yes\".\n\n4.  **Format Output:**\n   - JSON: `{\"answer\": \"yes\"}`\n   - Ensure no extra text, thinking, or reasoning is included.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" -> Matches.\n\n   Proceed. \n   Output: `{\"answer\": \"yes\"}`✅\n   All steps verified. No extra fluff. Ready. \n   Output matches exactly. \n   [Done] \n   *Self-Correction/Verification during thought:*\n   - Check exact string: `休闲手游  热门创意策略` vs `休闲手游 热门创意策略`. Fuzzy match ignores spaces, so it's a match.\n   - The prompt says \"appears or starts in the given page_text\". It clearly appears.\n   - JSON format is strict.\n   - All good.✅\n   Output generation. \n   `{\"answer\": \"yes\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given page_text.\n   - **Section Title:** `休闲手游 热门创意策略`\n   - **Page Text:** \n     ```\n     61\n     AI搞怪开头 +短视频病毒 meme+ 热梗化用\n     休闲手游  热门创意策略\n     Source ：广大大 -广告创意模块，选取时间段内热度最高创意素材展现\n     Date Range ：2025/1~2025/12热门玩法：\n     跑酷、跳跃、消除、水排序\n     常用素材套路：\n     AI开头→切入游戏实机画面 →玩法\n     展示\n     热门短视频开头 →游戏内还原 →玩\n     法展示\n     未来创意趋势：\n     更多休闲创意取材于 TikTok 热热门\n     视频，甚至于直接用博主视频作推\n     广用，搞怪有趣成为买量素材开头\n     的核心标准，\n     点击图片播放完整创意\n     .\n     ```\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply with JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Section Title: `休闲手游 热门创意策略`\n   - Page Text contains: `休闲手游  热门创意策略` (note the double space between 手游 and 热门)\n   - Ignoring space inconsistencies, they match exactly.\n   - It appears on the third line of the page text.\n\n3.  **Determine Answer:**\n   - Since it appears in the text, the answer is \"yes\".\n\n4.  **Format Output:**\n   - JSON: `{\"answer\": \"yes\"}`\n   - Ensure no extra text, thinking, or reasoning is included.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" -> Matches.\n\n   Proceed. \n   Output: `{\"answer\": \"yes\"}`✅\n   All steps verified. No extra fluff. Ready. \n   Output matches exactly. \n   [Done] \n   *Self-Correction/Verification during thought:*\n   - Check exact string: `休闲手游  热门创意策略` vs `休闲手游 热门创意策略`. Fuzzy match ignores spaces, so it's a match.\n   - The prompt says \"appears or starts in the given page_text\". It clearly appears.\n   - JSON format is strict.\n   - All good.✅\n   Output generation. \n   `{\"answer\": \"yes\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359999,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 605,
+      "prompt_tokens": 294,
+      "total_tokens": 899,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 594,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 605
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 294
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

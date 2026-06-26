@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:56:27.548813+00:00",
+  "sequence": 182,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 13071,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 从动荡走向规范.\n    The given page_text is 30\n从动荡走向规范\n时至2025年，移动游戏获客领域终于摆脱了持续的  “紧急状态”。\n经历了隐私政策变更、宏观经济压力及获客成本攀升等多重冲击，市场逐渐趋于稳定。\n但这并不意味着行业回归旧有运作模式，相反，游戏营销人员主动做出了调整，在预\n算分配、测试方式与效果评估上变得更加审慎。\n因此， 2025年的主题不再是波动与无序，而是自律与规范。\n全球游戏广告支出在 2025年实现小幅稳步增长，虽未呈现爆发式扩张，但意义重大。\n全年游戏广告支出同比呈现低个位数增幅，这标志着行业信心有所恢复，又避免了此\n前周期中的盲目扩张。\n营销人员不再一味追求规模增长，而是致力于从每一笔增量投入中挖掘可持续的价值。2025年游戏获客：真实变革何在\n数据来源： Singular 2025 年季度趋势报告\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-809c487f-eb3c-9c15-91c1-d7358f6622e8",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Thinking Process:\n1.  **Analyze User Input:**\n   - **Task:** Check if a given section title appears or starts in the given page text.\n   - **Section Title:** 从动荡走向规范\n   - **Page Text:** \"30\\n从动荡走向规范\\n时至2025年，移动游戏获客领域终于摆脱了持续的  “紧急状态”。\\n经历了隐私政策变更、宏观经济压力及获客成本攀升等多重冲击，市场逐渐趋于稳定。\\n但这并不意味着行业回归旧有运作模式，相反，游戏营销人员主动做出了调整，在预\\n算分配、测试方式与效果评估上变得更加审慎。\\n因此， 2025年的主题不再是波动与无序，而是自律与规范。\\n全球游戏广告支出在 2025年实现小幅稳步增长，虽未呈现爆发式扩张，但意义重大。\\n全年游戏广告支出同比呈现低个位数增幅，这标志着行业信心有所恢复，又避免了此\\n前周期中的盲目扩张。\\n营销人员不再一味追求规模增长，而是致力于从每一笔增量投入中挖掘可持续的价值。2025年游戏获客：真实变革何在\\n数据来源： Singular 2025 年季度趋势报告\\n.\"\n   - **Constraints:** Fuzzy matching, ignore space inconsistencies. Return JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Evaluate Match:**\n   - Look for \"从动荡走向规范\" in the page text.\n   - The page text starts with \"30\\n从动荡走向规范\\n...\".\n   - Exact match found at the beginning (after the page number \"30\").\n   - Fuzzy matching constraint is satisfied trivially since it's an exact match.\n\n3.  **Formulate Output:**\n   - `{\"answer\": \"yes\"}`\n   - Check format requirements: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All conditions met. Proceed. \n   Output matches exactly.✅\n   Final JSON: `{\"answer\": \"yes\"}`\n   No extra text.\n   Done. \n   Self-Correction/Verification during thought: \n   Does it appear or start? Yes, it's literally the second line.\n   Format: `{\"answer\": \"yes\"}`\n   Ready. \n   Output matches request. \n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   (Note: I will make sure the JSON is strictly formatted as requested.) \n   All good. \n   *Self-Correction/Refinement during generation prep*: The prompt says `{\"answer\": \"yes or no\"}`. I will output exactly `{\"answer\": \"yes\"}`.\n   Done. \n   Output matches. \n   [Final Check]\n   Section: 从动荡走向规范\n   Text: 30\\n从动荡走向规范\\n...\n   Match: Yes.\n   Format: JSON.\n   Constraint: No extra text.\n   Result: `{\"answer\": \"yes\"}`.✅\n   Proceeds. \n   [Output Generation] (Proceeds)",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Thinking Process:\n1.  **Analyze User Input:**\n   - **Task:** Check if a given section title appears or starts in the given page text.\n   - **Section Title:** 从动荡走向规范\n   - **Page Text:** \"30\\n从动荡走向规范\\n时至2025年，移动游戏获客领域终于摆脱了持续的  “紧急状态”。\\n经历了隐私政策变更、宏观经济压力及获客成本攀升等多重冲击，市场逐渐趋于稳定。\\n但这并不意味着行业回归旧有运作模式，相反，游戏营销人员主动做出了调整，在预\\n算分配、测试方式与效果评估上变得更加审慎。\\n因此， 2025年的主题不再是波动与无序，而是自律与规范。\\n全球游戏广告支出在 2025年实现小幅稳步增长，虽未呈现爆发式扩张，但意义重大。\\n全年游戏广告支出同比呈现低个位数增幅，这标志着行业信心有所恢复，又避免了此\\n前周期中的盲目扩张。\\n营销人员不再一味追求规模增长，而是致力于从每一笔增量投入中挖掘可持续的价值。2025年游戏获客：真实变革何在\\n数据来源： Singular 2025 年季度趋势报告\\n.\"\n   - **Constraints:** Fuzzy matching, ignore space inconsistencies. Return JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Evaluate Match:**\n   - Look for \"从动荡走向规范\" in the page text.\n   - The page text starts with \"30\\n从动荡走向规范\\n...\".\n   - Exact match found at the beginning (after the page number \"30\").\n   - Fuzzy matching constraint is satisfied trivially since it's an exact match.\n\n3.  **Formulate Output:**\n   - `{\"answer\": \"yes\"}`\n   - Check format requirements: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All conditions met. Proceed. \n   Output matches exactly.✅\n   Final JSON: `{\"answer\": \"yes\"}`\n   No extra text.\n   Done. \n   Self-Correction/Verification during thought: \n   Does it appear or start? Yes, it's literally the second line.\n   Format: `{\"answer\": \"yes\"}`\n   Ready. \n   Output matches request. \n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   (Note: I will make sure the JSON is strictly formatted as requested.) \n   All good. \n   *Self-Correction/Refinement during generation prep*: The prompt says `{\"answer\": \"yes or no\"}`. I will output exactly `{\"answer\": \"yes\"}`.\n   Done. \n   Output matches. \n   [Final Check]\n   Section: 从动荡走向规范\n   Text: 30\\n从动荡走向规范\\n...\n   Match: Yes.\n   Format: JSON.\n   Constraint: No extra text.\n   Result: `{\"answer\": \"yes\"}`.✅\n   Proceeds. \n   [Output Generation] (Proceeds)"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359791,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 687,
+      "prompt_tokens": 350,
+      "total_tokens": 1037,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 676,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 687
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 350
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

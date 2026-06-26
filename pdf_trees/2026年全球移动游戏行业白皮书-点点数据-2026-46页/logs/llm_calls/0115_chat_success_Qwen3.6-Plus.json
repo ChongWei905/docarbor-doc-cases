@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:59:53.395502+00:00",
+  "sequence": 115,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4478,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 美国移动游戏收入TOP榜.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 22美国移动游戏收入TOP榜\nAppStore开放第三方支付渠道将市场从“平台中心化”推向“服务多元化”\n来源：点点数据自主研究及绘制。2025年美国移动游戏收入TOP榜2025年美国移动游戏市场最大的变化莫过于法院判决强制苹果AppStore开放第三方支付渠道，此规则变革的核心在于打破了支付环节的绝对绑定，将市场从“平台中心化”推向\n“服务多元化”。典型如总收入榜第8的《Roblox》，看似其通过App Store和Google Play两大传统渠道产生的收入大幅下滑，但结合市场公开情报，Roblox在2025年的运营\n情况可谓再创新高，这说明了第三方支付的开放实则赋予了其前所未有的战略灵活性。然而换个视角来看，《堡垒之夜》时隔五年后重返美国AppStore并迅速跻身新品畅销榜前\n列，也印证了政策变动并未削弱App Store作为主流应用商店的核心地位，反而凸显了其作为顶级流量入口的不可替代性。\n排名icon 游戏名 厂商 全年流水（亿元） 同比增长率\n1 MONOPOLY GO! Scopely 75.21 -24.20%\n2 Royal Match Dream Games 50.94 -14.23%\n3 糖果粉碎传奇 King 45.89 -3.95%\n4 Last War:Survival First Fun 44.15 59.56%\n5 金币大师 Moon Active 27.80 3.38%\n6 无尽冬日 点点互动 23.50 3.82%\n7 宝可梦GO Niantic 21.41 1.80%\n8 Roblox Roblox 20.66 -50.21%\n9 皇室战争 Supercell 19.10 120.14%\n10 Township Playrix 18.26 2.79%\n2025年美国移动游戏收入 新品 TOP榜\n排名icon 游戏名 厂商 全年流水（亿元）总榜排名 上线时间\n1 奔奔王国 点点互动 14.54 12 2025年2月\n2 Disney Solitaire SuperPlay 5.35 63 2025年4月\n3 弓箭传说2 HABBY 4.83 69 2025年1月\n4 赛马娘（国际服） Cygames 4.42 82 2025年6月\n5 DC: Dark Legion FunPlus 3.60 102 2025年3月\n6 Screwdom Zego 2.91 124 2025年1月\n7 可狱不可囚 益世界 2.79 129 2025年3月\n8 枫之谷：放置冒险日记 NEXON 2.19 158 2025年10月\n9 堡垒之夜 Epic Games 2.01 177 2025年5月\n10 帕萌战斗日记 莉莉丝 1.65 207 2025年1月\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-19720953-0a5c-91d9-986b-57fc375db2bc",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"美国移动游戏收入TOP榜\" starts at the beginning of the given `page_text`.\nThe `page_text` starts with: \"© 2026 DianDian.All Rights Reserved. 22美国移动游戏收入TOP榜\"\nThe section title is \"美国移动游戏收入TOP榜\".\nThere is text before it: \"© 2026 DianDian.All Rights Reserved. 22\"\nTherefore, the section does not start at the beginning of the page_text.\nThe answer should be \"no\".\nFormat: JSON with key \"start_begin\".\nCheck fuzzy matching: The title appears after some copyright text and a page number \"22\". So it's not at the very beginning.\nResult: no.\nOutput: {\"start_begin\": \"no\"}\nDone. \nI will produce exactly the requested JSON.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"美国移动游戏收入TOP榜\" starts at the beginning of the given `page_text`.\nThe `page_text` starts with: \"© 2026 DianDian.All Rights Reserved. 22美国移动游戏收入TOP榜\"\nThe section title is \"美国移动游戏收入TOP榜\".\nThere is text before it: \"© 2026 DianDian.All Rights Reserved. 22\"\nTherefore, the section does not start at the beginning of the page_text.\nThe answer should be \"no\".\nFormat: JSON with key \"start_begin\".\nCheck fuzzy matching: The title appears after some copyright text and a page number \"22\". So it's not at the very beginning.\nResult: no.\nOutput: {\"start_begin\": \"no\"}\nDone. \nI will produce exactly the requested JSON."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359997,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 206,
+      "prompt_tokens": 953,
+      "total_tokens": 1159,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 189,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 206
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 953
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

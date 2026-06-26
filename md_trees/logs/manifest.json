@@ -1,0 +1,12 @@
+{
+  "events_jsonl": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\logs\\debug.log.jsonl",
+  "progress_log": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\logs\\build_progress.log",
+  "llm_calls_dir": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\logs\\llm_calls",
+  "run_summary": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\logs\\run_summary.json",
+  "description": {
+    "progress_log": "Human-readable build timeline; safe to tail while the build is running.",
+    "events_jsonl": "Structured event stream with stage, parser, route, and LLM call metadata.",
+    "llm_calls_dir": "One JSON file per LLM API call containing request and response payloads.",
+    "run_summary": "Aggregated stage timings and model API usage totals written at build completion."
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:59:27.343240+00:00",
+  "sequence": 239,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4813,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 策略手游投放趋势观察.\n    The given page_text is 54\nSource ：广大大 -广告主分析模块，选取时间段内新投放展现或热度表现较高素材展现\nDate Range ：2025/1~2025/12\n76.9%\n75.0%77.8%80.9%\n79.0%77.7%79.2% 79.7%82.2%83.2%\n80.8%86.0%\n2.5 K3.0 K3.5 K4.0 K\n1月2月3月4月5月6月7月8月9月10月11月12月广告主数量月度变化趋势\n月广告主数量 投放新素材广告主占比\n52.5%\n51.5%55.9%58.9%\n52.1%51.2%57.6%\n53.6%53.1%\n51.8%51.0%54.9%\n0200400\n1月2月3月4月5月6月7月8月9月10月11月12月月均在投素材量变化趋势\n月均素材量 当月新素材占比轻度减负 +错位社交成为策略手游常态，海量副玩法买量中跑酷副玩法成为多数厂商首选策略手游  投放趋势观察\n视频, \n83.0%图片, \n16.0%可玩, \n0.6% 其他, \n0.4%各类型素材带来展现占比\n不同系统策略素材占比\n视频, \n76.9%图片, \n21.4%\n视频, \n86.4%图片, \n12.4%8% 39% 46%视频素材时长分布\n0-15s 15-30s 30-60s 60s-Max\n20% 6% 73%图片素材形式分布\n竖版 横版 方形 横幅\nTOP100 广告主出海厂商占比\n66%\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-7ad0b092-f6fe-9d9d-8065-f2db8045aed9",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"策略手游投放趋势观察\" appears or starts in the given page_text.\nI need to perform fuzzy matching, ignoring space inconsistencies.\nLooking at the page_text:\n\"...轻度减负 +错位社交成为策略手游常态，海量副玩法买量中跑酷副玩法成为多数厂商首选策略手游  投放趋势观察...\"\nThe text contains \"策略手游  投放趋势观察\".\nThe section title is \"策略手游投放趋势观察\".\nIgnoring spaces, \"策略手游投放趋势观察\" matches \"策略手游  投放趋势观察\".\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck carefully: \"策略手游  投放趋势观察\" is in the text. Fuzzy match allows ignoring spaces. So yes.\nDone. \nOutput matches requirement. \nProceed. \nFinal JSON: {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"策略手游投放趋势观察\" appears or starts in the given page_text.\nI need to perform fuzzy matching, ignoring space inconsistencies.\nLooking at the page_text:\n\"...轻度减负 +错位社交成为策略手游常态，海量副玩法买量中跑酷副玩法成为多数厂商首选策略手游  投放趋势观察...\"\nThe text contains \"策略手游  投放趋势观察\".\nThe section title is \"策略手游投放趋势观察\".\nIgnoring spaces, \"策略手游投放趋势观察\" matches \"策略手游  投放趋势观察\".\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck carefully: \"策略手游  投放趋势观察\" is in the text. Fuzzy match allows ignoring spaces. So yes.\nDone. \nOutput matches requirement. \nProceed. \nFinal JSON: {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359971,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 221,
+      "prompt_tokens": 620,
+      "total_tokens": 841,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 205,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 221
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 620
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

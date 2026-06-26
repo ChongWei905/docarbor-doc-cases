@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:49:40.898571+00:00",
+  "sequence": 143,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 13517,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 核心战斗与玩法体验.\n    The given page_text is © 2025 DianDian.All Rights Reserved. 31《碧蓝航线》-点点数据测评分析\n情感化运营构筑玩家与舰娘深层羁绊 官方推动社区二创形成良性内容循环\n来源：点点数据自主研究及绘制。\n画面与音效表现\n核心战斗与玩法体验\n游戏内容与系统 运营、商业化与社区性能与设备适配\n（85/100） （80/100）\n（86/100） （84/100）（88/100）\n游戏大量运用Live2D动态技术，使皮肤具备动态呼吸与触摸反馈。战斗中的Q版小人\n动作流畅，炮击与爆炸特效也张弛有度。游戏在剧情演出中运用了章节式动画剧情，\n增强了玩家的沉浸感和代入感。游戏具备中日双语配音，每艘船拥有大量互动台词。\nBGM能根据场景在爵士乐、电子摇滚和交响乐间切换，有效烘托氛围。画面与音效表现（25%）\n游戏采用独特的双摇杆操作，左侧移动舰船，右侧手动瞄准射击，兼顾了策略与操作\n感。深度主要来源于舰种克制（驱逐→轻巡→重巡→战列）和阵营加成等编队策略。\n动态弹幕躲避与BOSS的阶段化机制，也考验玩家的即时反应。敌舰弹幕类型多样，包\n括扇形扩散、追踪导弹等。核心战斗与玩法体验（30%）\n游戏围绕“舰船拟人化”核心，通过12章主线战役及大型活动，逐步揭露“塞壬”势\n力的阴谋。八周年之际，官方推出了剧情线系统，将各阵营故事按时间线统一归档，\n降低了新玩家的理解成本。游戏UI简洁直观。官方持续进行人性化优化，如自律作战\n（通关后可挂机）、代理指挥、低耗队编成等，有效减轻了玩家的重复操作负担。游戏内容与系统（20%）\n游戏以皮肤和抽卡为主要付费点。抽卡资源通过日常任务获取较为充足。皮肤虽然部\n分定价较高，但可以通过月卡慢慢积攒资源获取，整体上形成了“零氪不掉队，微氪\n体验足”的平衡。玩家社群活跃，二创文化繁荣。游戏社区给人一种温和而稳定的陪\n伴感，玩家之间建立起的关系超出了游戏本身。运营、商业化与社区（15%）\n作为一款运营多年的游戏，其对主流设备的兼容性持续优化。同时，游戏也支持在模\n拟器上流畅运行。游戏在主流设备上帧率稳定，触屏操作反应流畅。性能与设备适配（10%）综合评分： 84.2\n游戏成功将“双摇杆弹幕射击”与“舰娘收集养成”结合，辅以优秀的Live2D技\n术和中日双语配音，形成了独特的视听体验和玩法辨识度。作为一款长期运营的\n游戏，其资源投放和养成曲线对免费玩家和月卡党相对友好。付费点主要集中在\n皮肤，无命座、无逼氪，社区氛围也较为和谐稳定。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-f9982a88-8abc-9e42-8107-7189b241bd4a",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** `核心战斗与玩法体验`\n   - **Page Text:** A long string containing text about a game review/analysis. I need to scan it for the exact or fuzzy match of the section title.\n   - **Constraints:** Fuzzy matching allowed, ignore space inconsistencies. Output only JSON: `{\"answer\": \"yes\" or \"no\"}`.\n\n2.  **Scan Page Text for Section Title:**\n   Let's look at the `page_text`:\n   `© 2025 DianDian.All Rights Reserved. 31《碧蓝航线》-点点数据测评分析\\n情感化运营构筑玩家与舰娘深层羁绊 官方推动社区二创形成良性内容循环\\n来源：点点数据自主研究及绘制。\\n画面与音效表现\\n核心战斗与玩法体验\\n游戏内容与系统 运营、商业化与社区性能与设备适配\\n（85/100） （80/100）\\n（86/100） （84/100）（88/100）\\n...`\n   I can clearly see `核心战斗与玩法体验` on its own line right after `画面与音效表现`.\n   Later in the text, it also appears as `核心战斗与玩法体验（30%）`.\n\n3.  **Evaluate Match:**\n   The exact string `核心战斗与玩法体验` appears in the text.\n   Therefore, the answer is \"yes\".\n\n4.  **Format Output:**\n   Must be exactly:\n   ```json\n   {\n       \"answer\": \"yes\"\n   }\n   ```\n   No extra text, no reasoning.\n\n   Check constraints: \"Reply format: { \"answer\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Output matches requirement.✅\n   Final check of the text: `核心战斗与玩法体验` is explicitly present. Fuzzy matching isn't even strictly needed, but it confirms it.\n   Result: yes.✅\n   Generate JSON. \n   `{\"answer\": \"yes\"}` (with proper formatting as requested)\n   I will output exactly that. \n   Proceeds. \n   [Done] \n   Output Generation. \n   `{\n    \"answer\": \"yes\"\n   }` (matches requested format)\n   All steps verified.✅\n   *Self-Correction/Verification during thought:* \n   The prompt says: `Reply format: { \"answer\": \"yes or no\" ... }`\n   I will output exactly that JSON.\n   Text contains: `核心战斗与玩法体验`\n   Match: Yes.\n   Ready. \n   Output matches. \n   [Final Check of the Prompt] \"Directly return the final JSON structure. Do not output anything else.\" -> I will strictly follow this.\n   Proceeds. \n   `{\n       \"answer\": \"yes\"\n   }` -> correct. \n   Output matches. \n   [Done]",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** `核心战斗与玩法体验`\n   - **Page Text:** A long string containing text about a game review/analysis. I need to scan it for the exact or fuzzy match of the section title.\n   - **Constraints:** Fuzzy matching allowed, ignore space inconsistencies. Output only JSON: `{\"answer\": \"yes\" or \"no\"}`.\n\n2.  **Scan Page Text for Section Title:**\n   Let's look at the `page_text`:\n   `© 2025 DianDian.All Rights Reserved. 31《碧蓝航线》-点点数据测评分析\\n情感化运营构筑玩家与舰娘深层羁绊 官方推动社区二创形成良性内容循环\\n来源：点点数据自主研究及绘制。\\n画面与音效表现\\n核心战斗与玩法体验\\n游戏内容与系统 运营、商业化与社区性能与设备适配\\n（85/100） （80/100）\\n（86/100） （84/100）（88/100）\\n...`\n   I can clearly see `核心战斗与玩法体验` on its own line right after `画面与音效表现`.\n   Later in the text, it also appears as `核心战斗与玩法体验（30%）`.\n\n3.  **Evaluate Match:**\n   The exact string `核心战斗与玩法体验` appears in the text.\n   Therefore, the answer is \"yes\".\n\n4.  **Format Output:**\n   Must be exactly:\n   ```json\n   {\n       \"answer\": \"yes\"\n   }\n   ```\n   No extra text, no reasoning.\n\n   Check constraints: \"Reply format: { \"answer\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Output matches requirement.✅\n   Final check of the text: `核心战斗与玩法体验` is explicitly present. Fuzzy matching isn't even strictly needed, but it confirms it.\n   Result: yes.✅\n   Generate JSON. \n   `{\"answer\": \"yes\"}` (with proper formatting as requested)\n   I will output exactly that. \n   Proceeds. \n   [Done] \n   Output Generation. \n   `{\n    \"answer\": \"yes\"\n   }` (matches requested format)\n   All steps verified.✅\n   *Self-Correction/Verification during thought:* \n   The prompt says: `Reply format: { \"answer\": \"yes or no\" ... }`\n   I will output exactly that JSON.\n   Text contains: `核心战斗与玩法体验`\n   Match: Yes.\n   Ready. \n   Output matches. \n   [Final Check of the Prompt] \"Directly return the final JSON structure. Do not output anything else.\" -> I will strictly follow this.\n   Proceeds. \n   `{\n       \"answer\": \"yes\"\n   }` -> correct. \n   Output matches. \n   [Done]"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355785,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 711,
+      "prompt_tokens": 808,
+      "total_tokens": 1519,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 695,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 711
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 808
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

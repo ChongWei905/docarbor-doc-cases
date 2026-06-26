@@ -38,19 +38,19 @@
       "page_number": 3,
       "role": "toc_start",
       "confidence": "high",
-      "reason": "Page explicitly lists the report's main sections (Foreword, Sections 1-6) with corresponding page numbers and contains explicit TOC titles like 'Contents' and 'Table of Contents'."
+      "reason": "Page explicitly lists the report's main sections (1-6) with corresponding page numbers and contains explicit 'Contents' and 'Table of Contents' headings, clearly marking the start of the main TOC."
     },
     {
       "page_number": 2,
       "role": "not_toc",
       "confidence": "high",
-      "reason": "Page contains no text, lines, or TOC patterns to indicate a table of contents."
+      "reason": "Page contains no text, lines, or structural elements indicative of a table of contents."
     },
     {
       "page_number": 4,
       "role": "not_toc",
       "confidence": "high",
-      "reason": "The page exclusively lists tables and their corresponding page numbers, which classifies it as an auxiliary index (List of Tables) rather than the main table of contents per Rule 1."
+      "reason": "Page exclusively lists tables and their corresponding page numbers, classifying it as an auxiliary 'List of Tables' index rather than the main table of contents per Rule 1."
     }
   ],
   "text_model_source": "Qwen3.6-Plus",

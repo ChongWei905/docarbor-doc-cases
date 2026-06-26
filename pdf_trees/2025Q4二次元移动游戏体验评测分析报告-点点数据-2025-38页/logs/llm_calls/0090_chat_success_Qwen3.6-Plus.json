@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:46:30.080508+00:00",
+  "sequence": 90,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 12062,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 《明日方舟》基础数据.\n    The given page_text is © 2025 DianDian.All Rights Reserved.\n 16《明日方舟》基础数据\n来源：点点数据自主研究及绘制以玩法和立绘见长的“长板”足以长到弥补短板的不足\n2025年《明日方舟》国服收入规模与活跃用户数据表现\n0.0 0.4 0.8 1.2 \n1月2月3月4月5月6月7月8月9月10月\nAppStore月流水（亿元）用户兴趣偏好\n动漫2025Q1-Q3用户留存\n平均次留：\n平均月留：约50.6%\n约15.3%电影 网络小说\n基础教育\n科目高等教育 电视剧0 20 40 60 80 100 120 140 160 \n1月2月3月4月5月6月7月8月9月\niOS月活跃用户数（万人）男生占比： 约79.6%作为一款市场热门游戏中难得一见的塔防游戏，其玩法乐趣与策略深度相当突出。游戏不仅关卡设计优秀，还通过集成战略、危机合约等模式，极大地丰富了游戏体验。虽然战斗\n中采用的仍是Q版小人形象，但独特的人物设计和精美的立绘皮肤都展现出别具一格的风味。更值得一提的是其音乐部分，其线下音乐演出活动“音律联觉”更是场场爆满一票难\n求。但需要明确的是，作为一款上线超7年的产品，部分“历史遗留问题”也对整体游戏体验稍有影响，例如主线剧情“谜语人”、剧情表现张力不够、养成材料掉率低、挂机虽\n有“代理”但仍十分费时等。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-f9b510ca-514e-9876-a56b-14644b3da57b",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given page text.\n   - **Section Title:** 《明日方舟》基础数据\n   - **Page Text:** © 2025 DianDian.All Rights Reserved.\\n 16《明日方舟》基础数据\\n来源：点点数据自主研究及绘制以玩法和立绘见长的“长板”足以长到弥补短板的不足\\n... (rest of the text)\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply format: JSON with \"answer\": \"yes\" or \"no\". Directly return JSON. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Look for \"《明日方舟》基础数据\" in the page text.\n   - The page text contains: \" 16《明日方舟》基础数据\"\n   - This matches exactly (ignoring the leading \"16\" and spaces, which is typical for page numbers/headers in extracted text).\n   - Fuzzy matching allows for this. It clearly appears/starts in the text.\n\n3.  **Determine Answer:**\n   - The section title is present.\n   - Answer should be \"yes\".\n\n4.  **Format Output:**\n   - JSON: `{\"answer\": \"yes\"}`\n   - Ensure no extra text, explanations, or thinking fields are included.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" -> Matches.\n\n   Proceed. \n   Output: `{\"answer\": \"yes\"}`✅\n   All steps verified. No extra content. Matches requirements. \n   Self-Correction/Verification during thought: \n   - Does it say \"appears or starts\"? Yes.\n   - Is it in the text? Yes, right after the copyright line: ` 16《明日方舟》基础数据`\n   - Fuzzy matching handles the `16` prefix.\n   - Output matches requested format exactly.\n   - Ready. \n   Output generation. \n   `{\"answer\": \"yes\"}`\n   (Note: I will make sure the JSON is strictly formatted as requested.) \n   All good. \n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   *(Self-Correction/Refinement during thought)*: Wait, the prompt says `{\"answer\": \"yes or no\"}`. I will output exactly `{\"answer\": \"yes\"}`. No extra whitespace or newlines if possible, but standard JSON is fine.\n   Final check of the prompt: \"Reply format: { \"answer\": \"yes or no\" }\"\n   I will output exactly that.\n   Done. \n   [Output] `{\"answer\": \"yes\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given page text.\n   - **Section Title:** 《明日方舟》基础数据\n   - **Page Text:** © 2025 DianDian.All Rights Reserved.\\n 16《明日方舟》基础数据\\n来源：点点数据自主研究及绘制以玩法和立绘见长的“长板”足以长到弥补短板的不足\\n... (rest of the text)\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply format: JSON with \"answer\": \"yes\" or \"no\". Directly return JSON. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Look for \"《明日方舟》基础数据\" in the page text.\n   - The page text contains: \" 16《明日方舟》基础数据\"\n   - This matches exactly (ignoring the leading \"16\" and spaces, which is typical for page numbers/headers in extracted text).\n   - Fuzzy matching allows for this. It clearly appears/starts in the text.\n\n3.  **Determine Answer:**\n   - The section title is present.\n   - Answer should be \"yes\".\n\n4.  **Format Output:**\n   - JSON: `{\"answer\": \"yes\"}`\n   - Ensure no extra text, explanations, or thinking fields are included.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" -> Matches.\n\n   Proceed. \n   Output: `{\"answer\": \"yes\"}`✅\n   All steps verified. No extra content. Matches requirements. \n   Self-Correction/Verification during thought: \n   - Does it say \"appears or starts\"? Yes.\n   - Is it in the text? Yes, right after the copyright line: ` 16《明日方舟》基础数据`\n   - Fuzzy matching handles the `16` prefix.\n   - Output matches requested format exactly.\n   - Ready. \n   Output generation. \n   `{\"answer\": \"yes\"}`\n   (Note: I will make sure the JSON is strictly formatted as requested.) \n   All good. \n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   *(Self-Correction/Refinement during thought)*: Wait, the prompt says `{\"answer\": \"yes or no\"}`. I will output exactly `{\"answer\": \"yes\"}`. No extra whitespace or newlines if possible, but standard JSON is fine.\n   Final check of the prompt: \"Reply format: { \"answer\": \"yes or no\" }\"\n   I will output exactly that.\n   Done. \n   [Output] `{\"answer\": \"yes\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355594,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 630,
+      "prompt_tokens": 519,
+      "total_tokens": 1149,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 619,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 630
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 519
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

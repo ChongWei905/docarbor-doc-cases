@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:04:27.511582+00:00",
+  "sequence": 330,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 15274,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 17 英雄游戏 从多赛道深耕到高品质突破：英雄游戏全球化战略的升维.\n    The given page_text is 17\n英雄游戏\n从多赛道深耕到高品质突破：英雄游戏全球化战略的升维\n英雄游戏在多年中重度手游出海实践中，已在 SLG、卡牌、沙盒等多个细分领域构建了稳固的市场版图。\n随着全球玩家对内容品质要求的迭代，英雄游戏正通过高品质、跨平台、全球化的全新产品矩阵，\n实现从“赛道覆盖”到“内容驱动”的深度进化。\n以2025年重点自研新作 《二重螺旋 》为例，该产品作为英雄游戏在动作 RPG赛道的全球化旗舰作品，在立项之初便锚定全球市场：\n• 内容升维：  通过极具辨识度的美术风格与“多维武器组合 ×立体战斗”的高自由度战斗机制，打破传统动作游戏的品类边界，在多轮全\n球测试中展现了极高的玩家期待度。\n• 多端布局：  适配PC、移动端等多平台，顺应全球玩家跨设备交互趋势，通过高精度的技术实现与沉浸式叙事，塑造差异化的全球 IP\n影响力。\n在深耕高品质新作的同时，英雄游戏依然保持着对成熟产品的精细化运营。如 《新三国志 》在日本市场的长线稳健， 《Last Island of \nSurvival 》在东南亚及中东新兴市场的持续活跃，为公司积累了深厚的全球本地化运营底座。\n总体而言，英雄游戏已形成“前置高品质研发  + 全球多端协同  + 精准本地化发行”的成熟方法论。  我们将持续以创新内容为核心，为全\n球玩家提供超越预期的多元游戏体验。\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-d1414d22-438b-9e8d-9bea-88627917e618",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Section Title:** `17 英雄游戏 从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`\n   - **Page Text:**\n     ```\n     17\n     英雄游戏\n     从多赛道深耕到高品质突破：英雄游戏全球化战略的升维\n     英雄游戏在多年中重度手游出海实践中，已在 SLG、卡牌、沙盒等多个细分领域构建了稳固的市场版图。\n     ...\n     ```\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning.\n   - **Note:** Do fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Compare Section Title with Page Text Start:**\n   - Section Title: `17 英雄游戏 从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`\n   - Page Text starts with:\n     `17`\n     `英雄游戏`\n     `从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`\n   - The page text literally begins with the exact components of the section title, just split across lines.\n   - Fuzzy matching/ignoring spaces/newlines: `17\\n英雄游戏\\n从多赛道深耕到高品质突破：英雄游戏全球化战略的升维` matches `17 英雄游戏 从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`.\n   - There is absolutely no other content before it.\n\n3.  **Determine Output:**\n   - Since the section title is the very first thing in the page text, `start_begin` should be `\"yes\"`.\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"yes\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   Wait, let's look closely at the prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   The page text starts exactly with \"17\\n英雄游戏\\n从多赛道深耕到高品质突破：英雄游戏全球化战略的升维\". This matches the title. So yes.\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"yes\"}`\n   Done. \n   Output matches exactly.✅\n   Proceeds. \n   [Final Check]\n   Title: `17 英雄游戏 从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`\n   Page start: `17\\n英雄游戏\\n从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`\n   Match: Yes.\n   Result: `{\"start_begin\": \"yes\"}`\n   All constraints met. No extra text. Ready. \n   Output matches. \n   [Done] \n   *Self-Correction/Refinement during thought*: \n   Wait, is there any chance the prompt considers the newline as \"other content\"? No, the prompt says \"ignore any space inconsistency in the page_text\" and \"do fuzzy matching\". Newlines are whitespace. So it's a match.\n   Final JSON: `{\"start_begin\": \"yes\"}`.✅\n   Proceeds. \n   Output Generation. \n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Section Title:** `17 英雄游戏 从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`\n   - **Page Text:**\n     ```\n     17\n     英雄游戏\n     从多赛道深耕到高品质突破：英雄游戏全球化战略的升维\n     英雄游戏在多年中重度手游出海实践中，已在 SLG、卡牌、沙盒等多个细分领域构建了稳固的市场版图。\n     ...\n     ```\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning.\n   - **Note:** Do fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Compare Section Title with Page Text Start:**\n   - Section Title: `17 英雄游戏 从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`\n   - Page Text starts with:\n     `17`\n     `英雄游戏`\n     `从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`\n   - The page text literally begins with the exact components of the section title, just split across lines.\n   - Fuzzy matching/ignoring spaces/newlines: `17\\n英雄游戏\\n从多赛道深耕到高品质突破：英雄游戏全球化战略的升维` matches `17 英雄游戏 从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`.\n   - There is absolutely no other content before it.\n\n3.  **Determine Output:**\n   - Since the section title is the very first thing in the page text, `start_begin` should be `\"yes\"`.\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"yes\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   Wait, let's look closely at the prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   The page text starts exactly with \"17\\n英雄游戏\\n从多赛道深耕到高品质突破：英雄游戏全球化战略的升维\". This matches the title. So yes.\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"yes\"}`\n   Done. \n   Output matches exactly.✅\n   Proceeds. \n   [Final Check]\n   Title: `17 英雄游戏 从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`\n   Page start: `17\\n英雄游戏\\n从多赛道深耕到高品质突破：英雄游戏全球化战略的升维`\n   Match: Yes.\n   Result: `{\"start_begin\": \"yes\"}`\n   All constraints met. No extra text. Ready. \n   Output matches. \n   [Done] \n   *Self-Correction/Refinement during thought*: \n   Wait, is there any chance the prompt considers the newline as \"other content\"? No, the prompt says \"ignore any space inconsistency in the page_text\" and \"do fuzzy matching\". Newlines are whitespace. So it's a match.\n   Final JSON: `{\"start_begin\": \"yes\"}`.✅\n   Proceeds. \n   Output Generation. \n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360272,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 818,
+      "prompt_tokens": 566,
+      "total_tokens": 1384,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 806,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 818
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 566
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

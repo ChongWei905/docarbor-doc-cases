@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:07:52.567912+00:00",
+  "sequence": 379,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 19173,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 扩量 Scale.\n    The given page_text is 47\n可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策\n1. Aarki internal data, 2025掌控\n节奏的力量关键在于 ——在效果信号、创意反馈与留存数据之间取得平衡，\n从而做出更理性、更具前瞻性的增长决策 。\n可持续增长，从来不是比拼速度 。\n而是在于 时机、精准度，以及知道什么时\n候应该稳住阵脚 。Aarki 的分析显示 ：\n基于留存与创意表现来调节投放节奏 的营销者，能够实现 20% 以上的\nROI 稳定性提升 ，并将 季度环比波动性降低约 25%¹。Avi Das, Aarki首席营收官\n•当新的人群细分或创意洞察展现出早期潜力，\n应及时加大投入 。\n•将预算从进入平台期的活动中转向哪些已被验\n证、能持续提升 LTV 的优质效果渠道 。•当CPI 上升速度快于 LTV，或创意疲劳度超过\n40% 时，应主动放缓节奏 。\n•重新评估人群细分、刷新创意内容，或在 UA 与\nRT 之间重新平衡资源配置 。•当留存表现显著优于中位水平，且 RT ROI 至少\n达到UA ROI 的1.5 倍时，应果断增加投入。\n•放大在跨渠道中持续带来稳定增量的高表现人群\n与创意组合。“明智的增长并非持续加速，而是对节奏的精\n准控制 ——懂得何时发力，何时调整 。”\n再投入 Reinvest 暂停Pause 扩量Scale\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-f13aa6f9-e099-96ea-be7f-65f10acffc17",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `扩量 Scale`\n   - **Current Page Text:** `47\\n可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策\\n1. Aarki internal data, 2025掌控\\n节奏的力量关键在于 ——在效果信号、创意反馈与留存数据之间取得平衡，\\n从而做出更理性、更具前瞻性的增长决策 。\\n可持续增长，从来不是比拼速度 。\\n而是在于 时机、精准度，以及知道什么时\\n候应该稳住阵脚 。Aarki 的分析显示 ：\\n基于留存与创意表现来调节投放节奏 的营销者，能够实现 20% 以上的\\nROI 稳定性提升 ，并将 季度环比波动性降低约 25%¹。Avi Das, Aarki首席营收官\\n•当新的人群细分或创意洞察展现出早期潜力，\\n应及时加大投入 。\\n•将预算从进入平台期的活动中转向哪些已被验\\n证、能持续提升 LTV 的优质效果渠道 。•当CPI 上升速度快于 LTV，或创意疲劳度超过\\n40% 时，应主动放缓节奏 。\\n•重新评估人群细分、刷新创意内容，或在 UA 与\\nRT 之间重新平衡资源配置 。•当留存表现显著优于中位水平，且 RT ROI 至少\\n达到UA ROI 的1.5 倍时，应果断增加投入。\\n•放大在跨渠道中持续带来稳定增量的高表现人群\\n与创意组合。“明智的增长并非持续加速，而是对节奏的精\\n准控制 ——懂得何时发力，何时调整 。”\\n再投入 Reinvest 暂停Pause 扩量Scale\\n.`\n   - **Task:** Check if the section title `扩量 Scale` starts at the beginning of the `page_text`.\n   - **Rule:** If there are other contents before the section title, it does NOT start at the beginning. If it's the first content, it DOES. Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The page text starts with:\n   `47`\n   `可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策`\n   ... (lots of text) ...\n   `再投入 Reinvest 暂停Pause 扩量Scale`\n   `.`\n\n   The section title `扩量 Scale` appears at the very end of the page text, preceded by a lot of other content. It is definitely not at the beginning.\n\n3.  **Determine Output:**\n   Since `扩量 Scale` is not the first content in the page text, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   The prompt says \"If the current section title is the first content in the given page_text, then the current section starts in the beginning of the given page_text.\"\n   The page text clearly starts with \"47\\n可持续的全链路增长...\". The title \"扩量 Scale\" is at the end. So \"no\" is correct.\n   Fuzzy matching doesn't change this fact.\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches exactly.✅\n   Proceeds. \n   [Final Check of the Prompt]\n   \"The given section title is 扩量 Scale.\"\n   \"The given page_text is 47\\n可持续的全链路增长...\"\n   Result: no.\n   JSON format: `{\"start_begin\": \"no\"}`\n   All constraints met.✅\n   Output matches. \n   [Done] \n   *Self-Correction/Refinement during thought*: Wait, let's look closely at the page text. It ends with `再投入 Reinvest 暂停Pause 扩量Scale\\n.`. The title is indeed at the end. So it's definitely \"no\".\n   I will output exactly the JSON.✅\n   Proceeds. \n   Output Generation. \n   `{\"start_begin\": \"no\"}`\n   (Note: I'll make sure there's no extra whitespace or newlines if possible, but standard JSON is fine.)\n   All good. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `扩量 Scale`\n   - **Current Page Text:** `47\\n可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策\\n1. Aarki internal data, 2025掌控\\n节奏的力量关键在于 ——在效果信号、创意反馈与留存数据之间取得平衡，\\n从而做出更理性、更具前瞻性的增长决策 。\\n可持续增长，从来不是比拼速度 。\\n而是在于 时机、精准度，以及知道什么时\\n候应该稳住阵脚 。Aarki 的分析显示 ：\\n基于留存与创意表现来调节投放节奏 的营销者，能够实现 20% 以上的\\nROI 稳定性提升 ，并将 季度环比波动性降低约 25%¹。Avi Das, Aarki首席营收官\\n•当新的人群细分或创意洞察展现出早期潜力，\\n应及时加大投入 。\\n•将预算从进入平台期的活动中转向哪些已被验\\n证、能持续提升 LTV 的优质效果渠道 。•当CPI 上升速度快于 LTV，或创意疲劳度超过\\n40% 时，应主动放缓节奏 。\\n•重新评估人群细分、刷新创意内容，或在 UA 与\\nRT 之间重新平衡资源配置 。•当留存表现显著优于中位水平，且 RT ROI 至少\\n达到UA ROI 的1.5 倍时，应果断增加投入。\\n•放大在跨渠道中持续带来稳定增量的高表现人群\\n与创意组合。“明智的增长并非持续加速，而是对节奏的精\\n准控制 ——懂得何时发力，何时调整 。”\\n再投入 Reinvest 暂停Pause 扩量Scale\\n.`\n   - **Task:** Check if the section title `扩量 Scale` starts at the beginning of the `page_text`.\n   - **Rule:** If there are other contents before the section title, it does NOT start at the beginning. If it's the first content, it DOES. Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The page text starts with:\n   `47`\n   `可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策`\n   ... (lots of text) ...\n   `再投入 Reinvest 暂停Pause 扩量Scale`\n   `.`\n\n   The section title `扩量 Scale` appears at the very end of the page text, preceded by a lot of other content. It is definitely not at the beginning.\n\n3.  **Determine Output:**\n   Since `扩量 Scale` is not the first content in the page text, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   The prompt says \"If the current section title is the first content in the given page_text, then the current section starts in the beginning of the given page_text.\"\n   The page text clearly starts with \"47\\n可持续的全链路增长...\". The title \"扩量 Scale\" is at the end. So \"no\" is correct.\n   Fuzzy matching doesn't change this fact.\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches exactly.✅\n   Proceeds. \n   [Final Check of the Prompt]\n   \"The given section title is 扩量 Scale.\"\n   \"The given page_text is 47\\n可持续的全链路增长...\"\n   Result: no.\n   JSON format: `{\"start_begin\": \"no\"}`\n   All constraints met.✅\n   Output matches. \n   [Done] \n   *Self-Correction/Refinement during thought*: Wait, let's look closely at the page text. It ends with `再投入 Reinvest 暂停Pause 扩量Scale\\n.`. The title is indeed at the end. So it's definitely \"no\".\n   I will output exactly the JSON.✅\n   Proceeds. \n   Output Generation. \n   `{\"start_begin\": \"no\"}`\n   (Note: I'll make sure there's no extra whitespace or newlines if possible, but standard JSON is fine.)\n   All good. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360477,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1032,
+      "prompt_tokens": 554,
+      "total_tokens": 1586,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1020,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1032
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 554
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

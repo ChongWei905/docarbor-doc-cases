@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:00:22.553856+00:00",
+  "sequence": 121,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 17965,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 港澳台移动游戏收入TOP榜.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 28港澳台移动游戏收入TOP榜\n轻量化游戏出海港澳台的红利消退 具备深度玩法的产品更获市场青睐\n来源：点点数据自主研究及绘制。2025年港澳台移动游戏收入TOP榜港澳台移动游戏收入榜宛如一面镜子映照市场的复杂构成：榜首是深耕本地多年的博彩类游戏《星城Online》；紧随其后的是大陆出海SLG的成功代表《寒霜启示录》；同时，全\n球性的IP产品如《宝可梦TCG Pocket》《天堂》《SD钢弹 G世代 永恒》等也在同台竞技。这种“本土产品、大陆出海、国际大作”三分天下的局面标志着市场的多元与成熟。\n但这其中也伴随着残酷的筛选：轻量化小游戏出海港澳台的红利期正在终结，市场偏好明确转向至玩法更具深度的产品。新品收入榜中，除《不休旅途：绘卷世界》外，传统意义\n上的轻度游戏已难觅踪影。取而代之的是如《杖剑传说》《奔奔王国》《七骑士 Re:BIRTH》等，这些产品要么本身是玩法融合的中重度游戏，要么是带有强IP和深养成线的作品。\n排名icon 游戏名 厂商 全年流水（亿元） 同比增长率\n1 星城OnlineWanin \nInternational15.33 14.63%\n2 寒霜启示录 点点互动 12.42 49.54%\n3 最后的战争 First Fun 11.31 -21.17%\n4 Garena 传说对决 Gerena 10.38 14.28%\n5 杖剑传说 雷霆游戏 7.40 2025年新品\n6 天堂W NCSOFT 6.06 -6.85%\n7 天堂M NCSOFT 5.98 -3.39%\n8 宝可梦 TCG PocketThe Pokemon \nCompany5.87 36.91%\n9 SD钢弹 G世代 永恒 万代南梦宫 5.02 2025年新品\n10 崩坏：星穹铁道 米哈游 4.93 -10.59%\n2025年港澳台移动游戏收入 新品 TOP榜\n排名icon 游戏名 厂商 全年流水（亿元）总榜排名 上线时间\n1 杖剑传说 雷霆游戏 7.40 5 2025年7月\n2 SD钢弹 G世代 永恒 万代南梦宫 5.02 9 2025年4月\n3 奔奔王国 点点互动 4.35 15 2025年2月\n4 不休旅途：绘卷世界 4399 3.51 19 2025年3月\n5 枫之谷：放置冒险记 NEXON 2.67 28 2025年10月\n6 七骑士 Re:BIRTH 网石游戏 1.62 45 2025年9月\n7 RO仙境传说：曙光 GRAVITY 1.53 47 2025年7月\n8 时光杂货店 绝妙游戏M 1.42 50 2025年1月\n9 尸鬼三国 天游网络 1.36 52 2025年2月\n10 第七天炎 Funforge 1.24 55 2025年5月\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-6a320871-41e4-95d0-9872-8a0248c07986",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** `港澳台移动游戏收入TOP榜`\n   - **Page Text:** `© 2026 DianDian.All Rights Reserved. 28港澳台移动游戏收入TOP榜\\n轻量化游戏出海港澳台的红利消退...`\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning. Use fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The `page_text` starts with: `© 2026 DianDian.All Rights Reserved. 28港澳台移动游戏收入TOP榜`\n   Before the section title `港澳台移动游戏收入TOP榜`, there is `© 2026 DianDian.All Rights Reserved. 28`.\n   This means there is other content before the section title.\n\n3.  **Apply Rule:**\n   Since there is content before the title, the section does *not* start at the beginning of the page text.\n   Therefore, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   Construct the JSON as requested: `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: The prompt says \"ignore any space inconsistency in the page_text\" and \"do fuzzy matching\". Even with fuzzy matching, the copyright text and page number \"28\" clearly precede the title. So it's definitely \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Self-Correction/Verification during thought: \n   Could \"28\" be part of the title? No, it's a page number. The title is exactly \"港澳台移动游戏收入TOP榜\". The text before it is \"© 2026 DianDian.All Rights Reserved. 28\". So it's not at the beginning. Result is \"no\". All correct. \n   Output matches exactly. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no extra whitespace or newlines are added if possible, but standard JSON formatting is fine.) \n   Final check of the prompt: \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure.\"\n   Ready. \n   Output: `{\"start_begin\": \"no\"}`\n   [Done] \n   *(Self-Correction/Refinement during thought)*: Wait, let's look closely at the text: `© 2026 DianDian.All Rights Reserved. 28港澳台移动游戏收入TOP榜`. There is no space between `28` and the title. But it's still other content. The rule says \"If there are other contents before the current section title, then the current section does not start in the beginning\". So it's definitely \"no\".\n   All good.✅\n   Output matches. \n   Proceeds. \n   [Final Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** `港澳台移动游戏收入TOP榜`\n   - **Page Text:** `© 2026 DianDian.All Rights Reserved. 28港澳台移动游戏收入TOP榜\\n轻量化游戏出海港澳台的红利消退...`\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning. Use fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The `page_text` starts with: `© 2026 DianDian.All Rights Reserved. 28港澳台移动游戏收入TOP榜`\n   Before the section title `港澳台移动游戏收入TOP榜`, there is `© 2026 DianDian.All Rights Reserved. 28`.\n   This means there is other content before the section title.\n\n3.  **Apply Rule:**\n   Since there is content before the title, the section does *not* start at the beginning of the page text.\n   Therefore, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   Construct the JSON as requested: `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: The prompt says \"ignore any space inconsistency in the page_text\" and \"do fuzzy matching\". Even with fuzzy matching, the copyright text and page number \"28\" clearly precede the title. So it's definitely \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Self-Correction/Verification during thought: \n   Could \"28\" be part of the title? No, it's a page number. The title is exactly \"港澳台移动游戏收入TOP榜\". The text before it is \"© 2026 DianDian.All Rights Reserved. 28\". So it's not at the beginning. Result is \"no\". All correct. \n   Output matches exactly. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no extra whitespace or newlines are added if possible, but standard JSON formatting is fine.) \n   Final check of the prompt: \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure.\"\n   Ready. \n   Output: `{\"start_begin\": \"no\"}`\n   [Done] \n   *(Self-Correction/Refinement during thought)*: Wait, let's look closely at the text: `© 2026 DianDian.All Rights Reserved. 28港澳台移动游戏收入TOP榜`. There is no space between `28` and the title. But it's still other content. The rule says \"If there are other contents before the current section title, then the current section does not start in the beginning\". So it's definitely \"no\".\n   All good.✅\n   Output matches. \n   Proceeds. \n   [Final Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360026,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 793,
+      "prompt_tokens": 1025,
+      "total_tokens": 1818,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 781,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 793
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 1025
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

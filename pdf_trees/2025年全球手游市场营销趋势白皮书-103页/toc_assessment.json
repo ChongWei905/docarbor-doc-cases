@@ -1,14 +1,14 @@
 {
   "confidence": "low",
-  "score": 0.6,
+  "score": 0.4,
   "candidate_pages": [
     6
   ],
   "toc_page_number": 6,
-  "outline_entry_count": 8,
-  "mapped_entry_ratio": 0.5,
+  "outline_entry_count": 7,
+  "mapped_entry_ratio": 0.429,
   "distinct_level_count": 1,
   "numbered_entry_ratio": 0.0,
-  "page_span": 62,
+  "page_span": 0,
   "has_explicit_toc_title": true
 }

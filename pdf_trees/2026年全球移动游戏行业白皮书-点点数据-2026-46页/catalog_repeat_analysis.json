@@ -183,7 +183,7 @@
       "active_item": "01",
       "resolved_active_key": "01",
       "confidence": "high",
-      "reason": "The page is titled '目录 Contents', lists four numbered sections, and visually highlights item '01' with a blue background while the others are grey, indicating it is the active section.",
+      "reason": "The page is titled '目录 Contents', lists four sections (01-04), and visually highlights item '01' with a blue background while the others are greyed out, indicating it is the active section.",
       "accepted": true,
       "rejection_reason": null
     },
@@ -234,7 +234,7 @@
       "active_item": "02",
       "resolved_active_key": "02",
       "confidence": "high",
-      "reason": "The page is titled '目录 Contents', lists four sections (01-04), and visually highlights item '02' with a blue background while the others are greyed out, indicating it is the current section.",
+      "reason": "The page is titled '目录 Contents', lists four sections (01-04), and visually highlights section 02 with a blue background while the others are greyed out, indicating it is the current section.",
       "accepted": true,
       "rejection_reason": null
     },
@@ -285,7 +285,7 @@
       "active_item": "03",
       "resolved_active_key": "03",
       "confidence": "high",
-      "reason": "The page features a 'Contents' header and lists four sections. Section 03 is highlighted with a blue background and white text, distinguishing it as the active item, while the others are greyed out.",
+      "reason": "The page features a 'Contents' heading and displays four numbered sections. Section 03 is visually highlighted with a blue background and additional text, distinguishing it as the active section, while the others are in a neutral grey state.",
       "accepted": true,
       "rejection_reason": null
     },
@@ -336,7 +336,7 @@
       "active_item": "04",
       "resolved_active_key": "04",
       "confidence": "high",
-      "reason": "The page displays a 'Contents' header and a list of four sections (01-04). Section 04 is visually emphasized with a blue background, indicating it is the current active section.",
+      "reason": "The page is titled '目录 Contents', lists four sections with ordinals (01-04), and visually highlights section 04 with a distinct blue background, indicating it is the active section.",
       "accepted": true,
       "rejection_reason": null
     }

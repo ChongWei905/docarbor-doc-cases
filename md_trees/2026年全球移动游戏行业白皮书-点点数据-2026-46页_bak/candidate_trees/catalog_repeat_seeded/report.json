@@ -1,0 +1,51 @@
+{
+  "strategy": "catalog_repeat_seeded",
+  "score": 735.605,
+  "score_breakdown": {
+    "non_empty": 30.0,
+    "page_coverage": 684.0,
+    "depth": 24.0,
+    "internal_nodes": 16.0,
+    "root_shape": 11.721,
+    "heading_alignment": 0.0,
+    "numbering": 0.0,
+    "title_uniqueness": 6.884,
+    "penalty_flat": 0.0,
+    "penalty_shallow": 0.0,
+    "penalty_root_explosion": -0.0,
+    "penalty_noise_roots": -0.0,
+    "penalty_garbled_roots": -0.0,
+    "penalty_bad_roots": -0.0,
+    "penalty_duplicates": -12.0,
+    "penalty_backtrack": -25.0
+  },
+  "metrics": {
+    "root_count": 4,
+    "node_count": 172,
+    "max_depth": 4,
+    "depth_histogram": {
+      "1": 4,
+      "2": 125,
+      "3": 36,
+      "4": 7
+    },
+    "unique_page_count": 38,
+    "page_coverage_ratio": 38.0,
+    "duplicate_title_count": 24,
+    "title_uniqueness_ratio": 0.8605,
+    "heading_alignment_ratio": 0.0,
+    "numbered_consistency_ratio": 0.0,
+    "page_backtrack_count": 10,
+    "noise_root_count": 0,
+    "garbled_root_count": 0,
+    "low_quality_root_count": 0,
+    "bad_root_count": 0,
+    "internal_node_count": 15
+  },
+  "artifact_paths": {
+    "raw_tree_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\candidate_trees\\catalog_repeat_seeded\\docarbor_raw.json",
+    "result_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\candidate_trees\\catalog_repeat_seeded\\result.json",
+    "report_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\candidate_trees\\catalog_repeat_seeded\\report.json",
+    "summary_report_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\candidate_trees\\catalog_repeat_seeded\\summary_report.json"
+  }
+}

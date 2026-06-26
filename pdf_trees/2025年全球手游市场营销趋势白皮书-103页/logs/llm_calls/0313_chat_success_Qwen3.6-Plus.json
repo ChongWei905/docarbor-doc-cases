@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:03:16.806575+00:00",
+  "sequence": 313,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 18803,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%.\n    The given page_text is 8\n每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%\n•2025年每月投放新素材广告主平均占比超过 82%，对比去年同期提升了 14.6%。\n且投新素材广告主占比稳定攀升，在 12月份达到峰值 88.2% ；\n•每月新素材占比在 11月份超过 60%于12月份达到峰值 63.2% ，新素材占比趋势逐\n步提升， 2025年月均新素材占比为 58.1% ，比去年高出 5.9个百分点。2025年全球手游 新投放趋势观察\nSource ：广大大，根据后台抓取数据整理统计后展现；\nDate Range ：2024/1~2025/12\n63.6% 62.8%61.1% 61.9%63.4%67.8%69.3% 69.6%70.6%72.8%75.4%76.9%77.9% 77.2%82.0%83.4%82.0% 81.5% 81.4%82.6%83.9%85.4% 85.2%88.2%\n51.4%\n46.9%49.9%50.7% 50.9%59.0%\n54.9%\n52.1% 51.7%52.8% 52.5% 53.2%54.3%52.9%57.4%59.4%57.8% 57.2%59.1%58.3% 58.9% 58.2%60.1%63.2%\n2024年2月 3月 4月 5月 6月 7月 8月 9月 10月 11月 12月2025年2月 3月 4月 5月 6月 7月 8月 9月 10月 11月 12月2024&2025 每月投新素材和新素材占比趋势\n投新素材广告主占比 新投素材占比\n82.5%\n2025年 月均投新广告主占比\n58.1%\n2025年每月新素材占比同比： 14.6% ↑ 同比： 5.9%↑\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-d2d58f7b-96c0-9e74-98ce-b110215349a0",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the section title in `page_text`, then `start_begin` is \"no\". If the section title is the first content, then `start_begin` is \"yes\".\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%.`\n   - **Page Text:** `8\\n每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%\\n•2025年每月投放新素材广告主平均占比超过 82%...` (followed by more text)\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine `page_text`:**\n   The `page_text` starts with:\n   `8`\n   `每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%`\n   `•2025年每月投放新素材广告主平均占比超过 82%...`\n\n   The very first character/content is `8` (likely a page number).\n   Then comes the section title: `每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%`\n\n3.  **Apply Rules:**\n   - Is there other content before the section title? Yes, the number `8`.\n   - Does the section title start at the *beginning* of the page text? No, because `8` precedes it.\n   - The prompt says: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   - Therefore, `start_begin` should be \"no\".\n\n4.  **Consider Fuzzy Matching/Space Inconsistency:**\n   - The prompt says to ignore space inconsistencies, but `8` is clearly a separate piece of content (page number) before the title.\n   - Even with fuzzy matching, the title is not the *first* content. The `8` is first.\n\n5.  **Formulate Output:**\n   - JSON: `{\"start_begin\": \"no\"}`\n   - Check format: Directly return the final JSON structure. Do not output anything else.\n\n   All steps confirm \"no\". I will generate the exact JSON.✅\n   One minor point: Sometimes page numbers are considered part of the page layout and not \"content\", but the prompt explicitly says \"If there are other contents before the current section title, then the current section does not start in the beginning\". `8` is content. I'll stick with \"no\".\n   Let's double check the exact text:\n   `8\\n每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%`\n   The title matches exactly after the `8\\n`. So it's not at the beginning.\n   Result: `{\"start_begin\": \"no\"}`.✅\n   Output matches requirement.✅\n   Proceed. \n   Self-Correction/Refinement during thought: Could `8` be part of the title? No, it's clearly a page number. The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning\". So \"no\" is correct.\n   Final JSON: `{\"start_begin\": \"no\"}`. \n   Output matches exactly.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no extra text is included as requested.) \n   All good. \n   *Self-Correction/Verification during generation prep*: \n   Wait, sometimes in these tasks, page numbers are ignored if they are just layout artifacts, but the prompt explicitly says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" I will strictly follow this. `8` is before it. So `no`.\n   Final answer: `{\"start_begin\": \"no\"}`. \n   Proceeds. \n   [Output] `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the section title in `page_text`, then `start_begin` is \"no\". If the section title is the first content, then `start_begin` is \"yes\".\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%.`\n   - **Page Text:** `8\\n每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%\\n•2025年每月投放新素材广告主平均占比超过 82%...` (followed by more text)\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine `page_text`:**\n   The `page_text` starts with:\n   `8`\n   `每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%`\n   `•2025年每月投放新素材广告主平均占比超过 82%...`\n\n   The very first character/content is `8` (likely a page number).\n   Then comes the section title: `每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%`\n\n3.  **Apply Rules:**\n   - Is there other content before the section title? Yes, the number `8`.\n   - Does the section title start at the *beginning* of the page text? No, because `8` precedes it.\n   - The prompt says: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   - Therefore, `start_begin` should be \"no\".\n\n4.  **Consider Fuzzy Matching/Space Inconsistency:**\n   - The prompt says to ignore space inconsistencies, but `8` is clearly a separate piece of content (page number) before the title.\n   - Even with fuzzy matching, the title is not the *first* content. The `8` is first.\n\n5.  **Formulate Output:**\n   - JSON: `{\"start_begin\": \"no\"}`\n   - Check format: Directly return the final JSON structure. Do not output anything else.\n\n   All steps confirm \"no\". I will generate the exact JSON.✅\n   One minor point: Sometimes page numbers are considered part of the page layout and not \"content\", but the prompt explicitly says \"If there are other contents before the current section title, then the current section does not start in the beginning\". `8` is content. I'll stick with \"no\".\n   Let's double check the exact text:\n   `8\\n每月投新素材广告主已经稳超 8成，新素材占比在 11月份突破 60%`\n   The title matches exactly after the `8\\n`. So it's not at the beginning.\n   Result: `{\"start_begin\": \"no\"}`.✅\n   Output matches requirement.✅\n   Proceed. \n   Self-Correction/Refinement during thought: Could `8` be part of the title? No, it's clearly a page number. The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning\". So \"no\" is correct.\n   Final JSON: `{\"start_begin\": \"no\"}`. \n   Output matches exactly.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no extra text is included as requested.) \n   All good. \n   *Self-Correction/Verification during generation prep*: \n   Wait, sometimes in these tasks, page numbers are ignored if they are just layout artifacts, but the prompt explicitly says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" I will strictly follow this. `8` is before it. So `no`.\n   Final answer: `{\"start_begin\": \"no\"}`. \n   Proceeds. \n   [Output] `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360201,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1002,
+      "prompt_tokens": 863,
+      "total_tokens": 1865,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 990,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1002
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 863
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

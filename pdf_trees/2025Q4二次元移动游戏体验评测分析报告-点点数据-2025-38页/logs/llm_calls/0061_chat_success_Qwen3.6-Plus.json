@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:44:56.406658+00:00",
+  "sequence": 61,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 9790,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 二次元移动游戏市场概况&体验指标分析.\n    The given page_text is © 2025 DianDian.All Rights Reserved. 2二次元移\n动游戏市\n场概况&\n体验指标\n分析2025年二次元移动游\n戏收入同比产生明显下\n滑，收入TP1的二游产\n品已跌至游戏畅销总榜\n第9。市场竞争转移至\n玩法层面突破，同时商\n业化变革悄然进行中。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-15c676fc-1174-9282-88a3-827886bac493",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"二次元移动游戏市场概况&体验指标分析\" appears or starts in the given page_text.\nThe page_text is: \"© 2025 DianDian.All Rights Reserved. 2二次元移\\n动游戏市\\n场概况&\\n体验指标\\n分析2025年二次元移动游\\n戏收入同比产生明显下\\n滑，收入TP1的二游产\\n品已跌至游戏畅销总榜\\n第9。市场竞争转移至\\n玩法层面突破，同时商\\n业化变革悄然进行中。\\n.\"\n\nLet's remove spaces/newlines from the page_text to check for fuzzy matching:\n\"©2025DianDian.AllRightsReserved.2二次元移动游戏市场概况&体验指标分析2025年二次元移动游戏收入同比产生明显下滑，收入TP1的二游产品已跌至游戏畅销总榜第9。市场竞争转移至玩法层面突破，同时商业化变革悄然进行中。.\"\n\nThe section title is \"二次元移动游戏市场概况&体验指标分析\".\nIt clearly appears in the text: \"2二次元移动游戏市场概况&体验指标分析2025年...\"\nSo the answer is yes.\n\nFormat required:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nI will produce exactly that. \nWait, let's verify the exact string in page_text:\n\"2二次元移\\n动游戏市\\n场概况&\\n体验指标\\n分析\"\nMatches exactly when ignoring newlines/spaces.\nAnswer is yes.\nOutput matches format.\nProceed. \nNo extra text.\nDone. \nOutput:\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"二次元移动游戏市场概况&体验指标分析\" appears or starts in the given page_text.\nThe page_text is: \"© 2025 DianDian.All Rights Reserved. 2二次元移\\n动游戏市\\n场概况&\\n体验指标\\n分析2025年二次元移动游\\n戏收入同比产生明显下\\n滑，收入TP1的二游产\\n品已跌至游戏畅销总榜\\n第9。市场竞争转移至\\n玩法层面突破，同时商\\n业化变革悄然进行中。\\n.\"\n\nLet's remove spaces/newlines from the page_text to check for fuzzy matching:\n\"©2025DianDian.AllRightsReserved.2二次元移动游戏市场概况&体验指标分析2025年二次元移动游戏收入同比产生明显下滑，收入TP1的二游产品已跌至游戏畅销总榜第9。市场竞争转移至玩法层面突破，同时商业化变革悄然进行中。.\"\n\nThe section title is \"二次元移动游戏市场概况&体验指标分析\".\nIt clearly appears in the text: \"2二次元移动游戏市场概况&体验指标分析2025年...\"\nSo the answer is yes.\n\nFormat required:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nI will produce exactly that. \nWait, let's verify the exact string in page_text:\n\"2二次元移\\n动游戏市\\n场概况&\\n体验指标\\n分析\"\nMatches exactly when ignoring newlines/spaces.\nAnswer is yes.\nOutput matches format.\nProceed. \nNo extra text.\nDone. \nOutput:\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355498,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 395,
+      "prompt_tokens": 230,
+      "total_tokens": 625,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 379,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 395
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 230
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

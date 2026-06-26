@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-06-25T02:21:00.783419+00:00",
+  "sequence": 15,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 14744,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are inspecting exactly one report page image.\n\nDecide whether this page is a section divider or chapter opener page.\n\nA section divider page is a transition page that introduces the next major report section.\nIt usually has one prominent title or one short stack of title lines, often with a part or chapter number.\n\nNot divider pages:\n1. table-of-contents pages or repeated catalogue/navigation pages listing multiple sections;\n2. normal body pages with paragraphs, charts, tables, or rankings;\n3. appendix, credits, or legal pages unless they are clearly styled as a section opener.\n\nIf it is a divider page, extract the main section title shown on the page.\nUse level 1 for major section dividers unless the visual hierarchy clearly indicates a nested subsection divider.\nReturn JSON only.\n\nReturn this schema:\n{\n  \"role\": \"section_divider\" | \"not_divider\",\n  \"title\": <string>,\n  \"level\": <int>,\n  \"ordinal\": <string|null>,\n  \"confidence\": \"high\" | \"medium\" | \"low\",\n  \"reason\": <short string>\n}\n"
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url": {
+                  "media_type": "image/png",
+                  "base64_chars": 1342600,
+                  "redacted": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-b345081a-3eef-9f25-b734-ce102495045c",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"role\": \"section_divider\",\n  \"title\": \"媒体声音\",\n  \"level\": 1,\n  \"ordinal\": null,\n  \"confidence\": \"high\",\n  \"reason\": \"The page features a large, prominent title '媒体声音' with a subtitle, typical of a section opener introducing a new topic.\"\n}\n```",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants me to classify the provided image as a \"section divider\" or \"not_divider\" and extract relevant information if it is a divider.\n\n1.  **Analyze the image:**\n    *   **Visuals:** There's a large, bold title in Chinese characters: \"媒体声音\". Below it, smaller text says \"游戏葡萄 & GameLook\".\n    *   **Layout:** The layout is very clean, with lots of white space. The title is prominent and centered-left. There are logos in the top right corner (\"SocialPeta\", \"singular\", \"aarki\"). There are two people on the right side holding a laptop with charts.\n    *   **Content:** The large text \"媒体声音\" translates roughly to \"Media Voice\" or \"Media Coverage\". The subtitle \"游戏葡萄 & GameLook\" refers to specific media outlets.\n    *   **Context:** This looks like a slide or a page in a report introducing a section about what media outlets are saying. It fits the description of a \"section divider page\" which introduces the next major report section. It has one prominent title.\n\n2.  **Determine Role:**\n    *   Is it a TOC? No.\n    *   Is it a normal body page? No, it lacks dense text, charts (except the prop held by the person), or tables. It's a title slide.\n    *   Is it a section divider? Yes. It introduces a new section titled \"媒体声音\".\n\n3.  **Extract Information:**\n    *   **Title:** \"媒体声音\" (Media Voice).\n    *   **Level:** It looks like a major section header. Level 1.\n    *   **Ordinal:** There is no visible chapter number like \"Chapter 3\" or \"03\". Just the title. So, null.\n    *   **Confidence:** High. The visual hierarchy is clear. Large text, minimal other content.\n\n4.  **Construct JSON:**\n    *   `role`: \"section_divider\"\n    *   `title`: \"媒体声音\"\n    *   `level`: 1\n    *   `ordinal`: null\n    *   `confidence`: \"high\"\n    *   `reason`: \"The page features a large, prominent title '媒体声音' with a subtitle, typical of a section opener introducing a new topic.\"",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants me to classify the provided image as a \"section divider\" or \"not_divider\" and extract relevant information if it is a divider.\n\n1.  **Analyze the image:**\n    *   **Visuals:** There's a large, bold title in Chinese characters: \"媒体声音\". Below it, smaller text says \"游戏葡萄 & GameLook\".\n    *   **Layout:** The layout is very clean, with lots of white space. The title is prominent and centered-left. There are logos in the top right corner (\"SocialPeta\", \"singular\", \"aarki\"). There are two people on the right side holding a laptop with charts.\n    *   **Content:** The large text \"媒体声音\" translates roughly to \"Media Voice\" or \"Media Coverage\". The subtitle \"游戏葡萄 & GameLook\" refers to specific media outlets.\n    *   **Context:** This looks like a slide or a page in a report introducing a section about what media outlets are saying. It fits the description of a \"section divider page\" which introduces the next major report section. It has one prominent title.\n\n2.  **Determine Role:**\n    *   Is it a TOC? No.\n    *   Is it a normal body page? No, it lacks dense text, charts (except the prop held by the person), or tables. It's a title slide.\n    *   Is it a section divider? Yes. It introduces a new section titled \"媒体声音\".\n\n3.  **Extract Information:**\n    *   **Title:** \"媒体声音\" (Media Voice).\n    *   **Level:** It looks like a major section header. Level 1.\n    *   **Ordinal:** There is no visible chapter number like \"Chapter 3\" or \"03\". Just the title. So, null.\n    *   **Confidence:** High. The visual hierarchy is clear. Large text, minimal other content.\n\n4.  **Construct JSON:**\n    *   `role`: \"section_divider\"\n    *   `title`: \"媒体声音\"\n    *   `level`: 1\n    *   `ordinal`: null\n    *   `confidence`: \"high\"\n    *   `reason`: \"The page features a large, prominent title '媒体声音' with a subtitle, typical of a section opener introducing a new topic.\""
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782354065,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 587,
+      "prompt_tokens": 2295,
+      "total_tokens": 2882,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 501,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 86
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 253,
+        "image_tokens": 2042
+      }
+    }
+  },
+  "response_text": "```json\n{\n  \"role\": \"section_divider\",\n  \"title\": \"媒体声音\",\n  \"level\": 1,\n  \"ordinal\": null,\n  \"confidence\": \"high\",\n  \"reason\": \"The page features a large, prominent title '媒体声音' with a subtitle, typical of a section opener introducing a new topic.\"\n}\n```",
+  "error_type": null,
+  "error_message": null
+}

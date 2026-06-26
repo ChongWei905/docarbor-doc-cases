@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:45:40.187588+00:00",
+  "sequence": 75,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5309,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 典型二次元移动游戏综合评分对比.\n    The given page_text is © 2025 DianDian.All Rights Reserved. 11典型二次元移动游戏综合评分对比\n没有产品能做到全维度“通杀” 画面与玩法仍是核心考评点\n来源：点点数据自主研究及绘制。（注：典型产品由点点数据专家团队基于市场热度与玩家关注度选取，下方排名不代表市场整体的TOP10）\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-3c40403d-77e5-90ca-99d9-ee4b6eb22d6d",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"典型二次元移动游戏综合评分对比\" appears or starts in the given `page_text`.\nThe `page_text` is: \"© 2025 DianDian.All Rights Reserved. 11典型二次元移动游戏综合评分对比\\n没有产品能做到全维度“通杀” 画面与玩法仍是核心考评点\\n来源：点点数据自主研究及绘制。（注：典型产品由点点数据专家团队基于市场热度与玩家关注度选取，下方排名不代表市场整体的TOP10）\\n.\"\n\nThe section title is exactly \"典型二次元移动游戏综合评分对比\".\nIn the `page_text`, it appears as \"11典型二次元移动游戏综合评分对比\".\nIgnoring space inconsistency and doing fuzzy matching, it clearly appears.\nSo the answer should be \"yes\".\nFormat required:\n{\n    \"answer\": \"yes\"\n}\nI will output exactly this JSON.\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON:\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"典型二次元移动游戏综合评分对比\" appears or starts in the given `page_text`.\nThe `page_text` is: \"© 2025 DianDian.All Rights Reserved. 11典型二次元移动游戏综合评分对比\\n没有产品能做到全维度“通杀” 画面与玩法仍是核心考评点\\n来源：点点数据自主研究及绘制。（注：典型产品由点点数据专家团队基于市场热度与玩家关注度选取，下方排名不代表市场整体的TOP10）\\n.\"\n\nThe section title is exactly \"典型二次元移动游戏综合评分对比\".\nIn the `page_text`, it appears as \"11典型二次元移动游戏综合评分对比\".\nIgnoring space inconsistency and doing fuzzy matching, it clearly appears.\nSo the answer should be \"yes\".\nFormat required:\n{\n    \"answer\": \"yes\"\n}\nI will output exactly this JSON.\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON:\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355544,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 260,
+      "prompt_tokens": 221,
+      "total_tokens": 481,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 244,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 260
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 221
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

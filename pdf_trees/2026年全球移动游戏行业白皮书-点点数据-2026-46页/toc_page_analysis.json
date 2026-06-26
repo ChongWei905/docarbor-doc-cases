@@ -53,25 +53,25 @@
       "page_number": 3,
       "role": "toc_start",
       "confidence": "high",
-      "reason": "The page features a prominent '目录 Contents' heading and lists four numbered sections (01-04) outlining the report's structure."
+      "reason": "The page contains a clear '目录 Contents' heading and lists four numbered sections (01-04) with titles, indicating it is the start of the table of contents."
     },
     {
       "page_number": 4,
       "role": "not_toc",
       "confidence": "high",
-      "reason": "The page contains a section title, a paragraph of analysis text, and a bar/line chart showing market revenue data. It is a content page of a report, not a list of contents."
+      "reason": "The page contains a specific market analysis section with a title, descriptive text, and a bar/line chart showing revenue data. It does not list report sections or chapters."
     },
     {
       "page_number": 14,
       "role": "toc_start",
       "confidence": "high",
-      "reason": "The page features a prominent '目录 Contents' heading and lists numbered sections (01-04) outlining the report structure."
+      "reason": "The page contains a clear '目录 Contents' heading and lists sections 01 through 04, indicating the start of the table of contents."
     },
     {
       "page_number": 15,
       "role": "not_toc",
       "confidence": "high",
-      "reason": "The page contains data charts, analysis text, and a specific topic heading ('Overseas mobile game market revenue scale & downloads'), indicating it is a content page (page 15) rather than a table of contents."
+      "reason": "The page contains data charts, analysis text, and a specific section title regarding overseas mobile game market revenue and downloads, rather than a list of contents."
     }
   ],
   "text_pages_checked": [
@@ -87,37 +87,37 @@
       "page_number": 3,
       "role": "toc_start",
       "confidence": "high",
-      "reason": "Page explicitly titled '目录Contents' and lists numbered main sections (01-04) with corresponding titles, clearly marking the start of the report's main table of contents."
+      "reason": "Explicit '目录Contents' title with numbered section listings (01-04) and page anchors, clearly starting the main table of contents."
     },
     {
       "page_number": 14,
       "role": "toc_start",
       "confidence": "high",
-      "reason": "Page features explicit '目录Contents' heading and lists primary report sections (01-04) with chapter titles and brief summaries, clearly marking the start of the main table of contents."
+      "reason": "Explicitly titled '目录Contents' and lists numbered main report sections (01-04), clearly indicating the start of the main table of contents."
     },
     {
       "page_number": 2,
       "role": "not_toc",
       "confidence": "high",
-      "reason": "Page contains no text, lines, or structural indicators of a table of contents."
+      "reason": "Page contains no extractable text, lines, or structural features indicative of a table of contents."
     },
     {
       "page_number": 4,
       "role": "not_toc",
       "confidence": "high",
-      "reason": "Page contains analytical paragraphs, market data, and percentages, clearly functioning as a body/content page rather than a table of contents."
+      "reason": "Page contains analytical paragraphs, percentages, and data values typical of a report body or executive summary, with no section/chapter listing structure."
     },
     {
       "page_number": 13,
       "role": "not_toc",
       "confidence": "high",
-      "reason": "Page contains analytical paragraphs, data summaries, and chart labels rather than a structured list of report sections. Matches rule 3 for body pages."
+      "reason": "Page contains narrative paragraphs, market analysis, and data summaries/percentages, clearly identifying it as a body page rather than a table of contents."
     },
     {
       "page_number": 15,
       "role": "not_toc",
       "confidence": "high",
-      "reason": "Page contains analytical paragraphs, market data, and percentages typical of a report body section, with no chapter/section listing or TOC structure."
+      "reason": "Page contains analytical paragraphs, chart titles, and numerical data values, clearly identifying it as a body/content page rather than a table of contents."
     }
   ],
   "text_model_source": "Qwen3.6-Plus",

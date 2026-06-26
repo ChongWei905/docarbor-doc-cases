@@ -1,0 +1,59 @@
+{
+  "page_title": "Merged text-only TOC outline",
+  "items": [
+    {
+      "level": 1,
+      "title": "01 中国移动游戏市场现状分析",
+      "printed_page": 4
+    },
+    {
+      "level": 1,
+      "title": "02 海外移动游戏市场现状分析"
+    },
+    {
+      "level": 1,
+      "title": "03 移动游戏典型产品&企业案例分析"
+    },
+    {
+      "level": 1,
+      "title": "04 全球移动游戏市场发展趋势"
+    }
+  ],
+  "notes": [
+    "text_fallback_extraction_mode:per_page"
+  ],
+  "extraction_mode": "per_page",
+  "page_payloads": [
+    {
+      "page_number": 3,
+      "item_count": 4,
+      "payload": {
+        "page_title": "目录Contents",
+        "items": [
+          {
+            "level": 1,
+            "title": "01 中国移动游戏市场现状分析",
+            "printed_page": 4
+          },
+          {
+            "level": 1,
+            "title": "02 海外移动游戏市场现状分析"
+          },
+          {
+            "level": 1,
+            "title": "03 移动游戏典型产品&企业案例分析"
+          },
+          {
+            "level": 1,
+            "title": "04 全球移动游戏市场发展趋势"
+          }
+        ],
+        "notes": [
+          "Page numbers for chapters 02-04 were not visible in the provided text extraction.",
+          "The descriptive paragraph under chapter 01 was excluded as it is a market summary, not a TOC entry."
+        ]
+      }
+    }
+  ],
+  "page_errors": []
+}

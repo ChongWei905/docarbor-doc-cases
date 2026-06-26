@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:42:39.247273+00:00",
+  "sequence": 55,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5043,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年全球手游热门榜单.\n    The given page_text is 19\nTOP GLOBAL MOBILE GAMES OF 20252025年全球手游\n热门榜单02\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-82eeb50d-c816-9836-bb8f-67bcb8aa80a3",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年全球手游热门榜单\" starts at the beginning of the given `page_text`.\nThe `page_text` is:\n\"19\nTOP GLOBAL MOBILE GAMES OF 20252025年全球手游\n热门榜单02\n.\"\n\nThe section title is \"2025年全球手游热门榜单\".\nLooking at the `page_text`, it starts with \"19\\nTOP GLOBAL MOBILE GAMES OF 20252025年全球手游\\n热门榜单02\\n.\"\nThere is content before the section title: \"19\\nTOP GLOBAL MOBILE GAMES OF 2025\".\nTherefore, the section does not start at the beginning of the page_text.\nSo `start_begin` should be \"no\".\n\nCheck format:\n{\n    \"start_begin\": \"no\"\n}\nDone.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年全球手游热门榜单\" starts at the beginning of the given `page_text`.\nThe `page_text` is:\n\"19\nTOP GLOBAL MOBILE GAMES OF 20252025年全球手游\n热门榜单02\n.\"\n\nThe section title is \"2025年全球手游热门榜单\".\nLooking at the `page_text`, it starts with \"19\\nTOP GLOBAL MOBILE GAMES OF 20252025年全球手游\\n热门榜单02\\n.\"\nThere is content before the section title: \"19\\nTOP GLOBAL MOBILE GAMES OF 2025\".\nTherefore, the section does not start at the beginning of the page_text.\nSo `start_begin` should be \"no\".\n\nCheck format:\n{\n    \"start_begin\": \"no\"\n}\nDone."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355363,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 213,
+      "prompt_tokens": 256,
+      "total_tokens": 469,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 196,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 213
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 256
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

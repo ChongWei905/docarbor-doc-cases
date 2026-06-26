@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:42:54.248609+00:00",
+  "sequence": 62,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 8696,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年全球热门地区手游营销观察.\n    The given page_text is 70\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\n手游营销观察06\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-ccdf1011-0376-9144-9d5c-a4f55a1581d9",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年全球热门地区手游营销观察\" starts at the beginning of the given `page_text`.\nThe `page_text` is:\n\"70\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\n手游营销观察06\n.\"\n\nThe section title is \"2025年全球热门地区手游营销观察\".\nLooking at the `page_text`, it starts with \"70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n手游营销观察06\\n.\"\nThere is content before the section title: \"70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n\".\nWait, the title is split across lines in the page_text: \"2025年全球热门地区\\n手游营销观察\".\nBut regardless, there is \"70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS\" before it.\nSo the section does NOT start at the beginning of the page_text.\nTherefore, \"start_begin\" should be \"no\".\n\nCheck carefully:\npage_text: \"70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n手游营销观察06\\n.\"\nThe title is \"2025年全球热门地区手游营销观察\".\nIt appears after \"70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS\".\nSo it's not at the beginning.\nResult: no.\nFormat: JSON.\n{\"start_begin\": \"no\"}\nDone. \nI will output exactly that. \nNo extra text.\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput matches requirement. \nProceed. \n{\"start_begin\": \"no\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年全球热门地区手游营销观察\" starts at the beginning of the given `page_text`.\nThe `page_text` is:\n\"70\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\n手游营销观察06\n.\"\n\nThe section title is \"2025年全球热门地区手游营销观察\".\nLooking at the `page_text`, it starts with \"70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n手游营销观察06\\n.\"\nThere is content before the section title: \"70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n\".\nWait, the title is split across lines in the page_text: \"2025年全球热门地区\\n手游营销观察\".\nBut regardless, there is \"70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS\" before it.\nSo the section does NOT start at the beginning of the page_text.\nTherefore, \"start_begin\" should be \"no\".\n\nCheck carefully:\npage_text: \"70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n手游营销观察06\\n.\"\nThe title is \"2025年全球热门地区手游营销观察\".\nIt appears after \"70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS\".\nSo it's not at the beginning.\nResult: no.\nFormat: JSON.\n{\"start_begin\": \"no\"}\nDone. \nI will output exactly that. \nNo extra text.\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput matches requirement. \nProceed. \n{\"start_begin\": \"no\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355378,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 436,
+      "prompt_tokens": 263,
+      "total_tokens": 699,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 419,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 436
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 263
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

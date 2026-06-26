@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:24:54.648531+00:00",
+  "sequence": 4,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 22471,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are deciding whether one report page belongs to the MAIN table of contents.\n\nA MAIN TOC page lists the report's actual section or chapter structure.\nVery important rules:\n1. Pages that only list tables, figures, charts, illustrations, abbreviations, or other auxiliary indexes are NOT main TOC pages.\n2. Chapter divider pages with one large title are NOT TOC pages.\n3. Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\n4. A page can be `toc_start` only if it clearly starts the main contents listing.\n5. A page can be `toc_continuation` only if it clearly continues a TOC list from a previous page.\n6. If there is no clear TOC evidence, return `not_toc`.\n7. Output JSON only.\n\nReturn this schema:\n{\n  \"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\",\n  \"confidence\": \"high\" | \"medium\" | \"low\",\n  \"reason\": <short string>\n}\n\nPage payload:\n```json\n{\n  \"page_number\": 4,\n  \"total_pages\": 47,\n  \"candidate_rank\": 4,\n  \"has_explicit_toc_title\": false,\n  \"top_lines\": [\n    \"中国移动游戏市场收入规模\",\n    \"行业情绪从“复苏焦虑”转为“战略蛰伏”\",\n    \"2025年中国移动游戏市场以2859.2亿元的收入规模与0.56%的微弱增长率,清晰地标志着市场正式进入一个以存量平台期为特征的“新常态”。与往年因政策或周期调整带来的\",\n    \"波动不同,2025年的停滞根植于更根本的结构性瓶颈——内容范式与用户需求的代差。过去十年驱动市场前进的核心动力,无论是端游IP移植、二次元内容升级还是开放世界技\",\n    \"术扩散,其红利已基本释放完毕;而用户经过多年洗礼,对基于现有框架的“高品质换皮”产生了高度审美疲劳与消费倦怠。在此背景下,行业的集体心态也发生了根本性转变,\",\n    \"从过去几年在“寒冬”中寻求“复苏”的焦虑,转向对“平台期”的冷静接受与长期适应。这意味着企业战略重心从追求增长规模,全面转向捍卫存量份额与提升运营确定性。未\",\n    \"来中国移动游戏的突破将不再来源于对过去成功路径的优化,而必然依赖于能够弥合当前“代差”的、根本性的体验革新。这可能是AI从生产工具演变为核心玩法引擎后催生的交\",\n    \"互革命,也可能是AR、VR、云游戏等硬件成熟后带来的体验重构。\",\n    \"2025年中国移动游戏市场收入规模\",\n    \"10.74%\",\n    \"3.21%\",\n    \"2.82%\"\n  ],\n  \"short_lines\": [\n    \"中国移动游戏市场收入规模\",\n    \"行业情绪从“复苏焦虑”转为“战略蛰伏”\",\n    \"互革命,也可能是AR、VR、云游戏等硬件成熟后带来的体验重构。\",\n    \"2025年中国移动游戏市场收入规模\",\n    \"10.74%\",\n    \"3.21%\",\n    \"2.82%\",\n    \"2.19%\",\n    \"1.83%\",\n    \"0.56%\",\n    \"-10.18%\",\n    \"3059.2\",\n    \"3004.2\",\n    \"2939.9\",\n    \"2859.2\",\n    \"2843.3\",\n    \"2769.4\",\n    \"2567.4\"\n  ],\n  \"candidate_rows\": [],\n  \"stats\": {\n    \"text_block_count\": 22,\n    \"parsed_line_matches\": 0,\n    \"heading_like_matches\": 0,\n    \"toc_pattern_matches\": 0,\n    \"short_line_count\": 32,\n    \"long_line_count\": 2,\n    \"sentence_like_line_count\": 9,\n    \"value_like_line_count\": 16\n  }\n}\n```"
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-3c024d27-3bb3-96bc-be03-2e0b6faf5b93",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"role\": \"not_toc\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page contains analytical paragraphs, percentages, and data values typical of a report body or executive summary, with no section/chapter listing structure.\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Determine if a report page belongs to the MAIN table of contents.\n   - **Rules:**\n     1. Auxiliary indexes (tables, figures, abbreviations, etc.) -> NOT main TOC.\n     2. Chapter divider pages (one large title) -> NOT TOC.\n     3. Body pages (paragraphs, charts, rankings, prices, percentages, data tables) -> NOT TOC.\n     4. `toc_start` only if clearly starts main contents listing.\n     5. `toc_continuation` only if clearly continues TOC list.\n     6. No clear TOC evidence -> `not_toc`.\n     7. Output JSON only.\n   - **Schema:** `{\"role\": \"...\", \"confidence\": \"...\", \"reason\": \"...\"}`\n   - **Page Payload:**\n     - `page_number`: 4\n     - `total_pages`: 47\n     - `has_explicit_toc_title`: false\n     - `top_lines`: Contains a title \"中国移动游戏市场收入规模\", a subtitle \"行业情绪从“复苏焦虑”转为“战略蛰伏”\", followed by a long paragraph discussing market trends, revenue scale (2859.2 billion), growth rate (0.56%), structural bottlenecks, user fatigue, strategic shifts, and future tech (AI, AR/VR). Then repeats the title and lists percentages (10.74%, 3.21%, 2.82%).\n     - `short_lines`: Mix of titles, sentence fragments, percentages, and large numbers (likely chart data points: 3059.2, 3004.2, etc.).\n     - `stats`: `text_block_count`: 22, `parsed_line_matches`: 0, `heading_like_matches`: 0, `toc_pattern_matches`: 0, `short_line_count`: 32, `long_line_count`: 2, `sentence_like_line_count`: 9, `value_like_line_count`: 16.\n     - `candidate_rows`: []\n\n2.  **Evaluate against Rules:**\n   - Does it list sections/chapters? No. It contains a long analytical paragraph, a title, and data points/percentages.\n   - Rule 3 explicitly says: \"Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\" This page clearly has paragraphs, percentages, and data values. It looks like the beginning of a report chapter or an executive summary/body page.\n   - `has_explicit_toc_title` is false.\n   - `toc_pattern_matches` is 0.\n   - Conclusion: It is definitely `not_toc`.\n\n3.  **Determine Output Fields:**\n   - `role`: \"not_toc\"\n   - `confidence`: \"high\" (The content is clearly body text with data/percentages, matching Rule 3 exactly)\n   - `reason`: \"Page contains analytical paragraphs, percentages, and data values typical of a report body or executive summary, with no section/chapter listing structure.\"\n\n4.  **Format Output:**\n   - Must be valid JSON only.\n   - Check schema compliance.\n   - Construct JSON.\n\n   ```json\n   {\n     \"role\": \"not_toc\",\n     \"confidence\": \"high\",\n     \"reason\": \"Page contains analytical paragraphs, percentages, and data values typical of a report body or executive summary, with no section/chapter listing structure.\"\n   }\n   ```\n\n   All constraints met. Proceed. \n   Self-Correction/Verification during thought:\n   - Check rule 3: \"Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\" -> Matches perfectly.\n   - Check stats: `toc_pattern_matches: 0`, `sentence_like_line_count: 9`, `value_like_line_count: 16`. Confirms body/data page.\n   - Output matches requested schema exactly.\n   - Ready.✅\n   - Output matches exactly.✅\n   - Proceeds. \n   - Output Generation. \n   *(Self-Correction/Refinement during generation prep)*: I will ensure the JSON is strictly formatted as requested. No extra text. All good. \n   Output matches the final JSON.✅\n   Proceeds. \n   [Output Generation] -> *Proceeds*\n   `{ \"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page contains analytical paragraphs, percentages, and data values typical of a report body or executive summary, with no section/chapter listing structure.\" }` -> Valid.✅\n   Done. \n   [Final Check of the Prompt]: \"Output JSON only.\" -> I will output just the JSON block.\n   All good. \n   *Self-Correction/Note during thought*: I should make sure the reason is concise. \"Page contains analytical paragraphs, percentages, and data values typical of a report body, lacking any section/chapter listing structure.\" is fine.\n   Proceeds. \n   [Output Generation] (matches the final JSON)✅\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Determine if a report page belongs to the MAIN table of contents.\n   - **Rules:**\n     1. Auxiliary indexes (tables, figures, abbreviations, etc.) -> NOT main TOC.\n     2. Chapter divider pages (one large title) -> NOT TOC.\n     3. Body pages (paragraphs, charts, rankings, prices, percentages, data tables) -> NOT TOC.\n     4. `toc_start` only if clearly starts main contents listing.\n     5. `toc_continuation` only if clearly continues TOC list.\n     6. No clear TOC evidence -> `not_toc`.\n     7. Output JSON only.\n   - **Schema:** `{\"role\": \"...\", \"confidence\": \"...\", \"reason\": \"...\"}`\n   - **Page Payload:**\n     - `page_number`: 4\n     - `total_pages`: 47\n     - `has_explicit_toc_title`: false\n     - `top_lines`: Contains a title \"中国移动游戏市场收入规模\", a subtitle \"行业情绪从“复苏焦虑”转为“战略蛰伏”\", followed by a long paragraph discussing market trends, revenue scale (2859.2 billion), growth rate (0.56%), structural bottlenecks, user fatigue, strategic shifts, and future tech (AI, AR/VR). Then repeats the title and lists percentages (10.74%, 3.21%, 2.82%).\n     - `short_lines`: Mix of titles, sentence fragments, percentages, and large numbers (likely chart data points: 3059.2, 3004.2, etc.).\n     - `stats`: `text_block_count`: 22, `parsed_line_matches`: 0, `heading_like_matches`: 0, `toc_pattern_matches`: 0, `short_line_count`: 32, `long_line_count`: 2, `sentence_like_line_count`: 9, `value_like_line_count`: 16.\n     - `candidate_rows`: []\n\n2.  **Evaluate against Rules:**\n   - Does it list sections/chapters? No. It contains a long analytical paragraph, a title, and data points/percentages.\n   - Rule 3 explicitly says: \"Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\" This page clearly has paragraphs, percentages, and data values. It looks like the beginning of a report chapter or an executive summary/body page.\n   - `has_explicit_toc_title` is false.\n   - `toc_pattern_matches` is 0.\n   - Conclusion: It is definitely `not_toc`.\n\n3.  **Determine Output Fields:**\n   - `role`: \"not_toc\"\n   - `confidence`: \"high\" (The content is clearly body text with data/percentages, matching Rule 3 exactly)\n   - `reason`: \"Page contains analytical paragraphs, percentages, and data values typical of a report body or executive summary, with no section/chapter listing structure.\"\n\n4.  **Format Output:**\n   - Must be valid JSON only.\n   - Check schema compliance.\n   - Construct JSON.\n\n   ```json\n   {\n     \"role\": \"not_toc\",\n     \"confidence\": \"high\",\n     \"reason\": \"Page contains analytical paragraphs, percentages, and data values typical of a report body or executive summary, with no section/chapter listing structure.\"\n   }\n   ```\n\n   All constraints met. Proceed. \n   Self-Correction/Verification during thought:\n   - Check rule 3: \"Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\" -> Matches perfectly.\n   - Check stats: `toc_pattern_matches: 0`, `sentence_like_line_count: 9`, `value_like_line_count: 16`. Confirms body/data page.\n   - Output matches requested schema exactly.\n   - Ready.✅\n   - Output matches exactly.✅\n   - Proceeds. \n   - Output Generation. \n   *(Self-Correction/Refinement during generation prep)*: I will ensure the JSON is strictly formatted as requested. No extra text. All good. \n   Output matches the final JSON.✅\n   Proceeds. \n   [Output Generation] -> *Proceeds*\n   `{ \"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page contains analytical paragraphs, percentages, and data values typical of a report body or executive summary, with no section/chapter listing structure.\" }` -> Valid.✅\n   Done. \n   [Final Check of the Prompt]: \"Output JSON only.\" -> I will output just the JSON block.\n   All good. \n   *Self-Correction/Note during thought*: I should make sure the reason is concise. \"Page contains analytical paragraphs, percentages, and data values typical of a report body, lacking any section/chapter listing structure.\" is fine.\n   Proceeds. \n   [Output Generation] (matches the final JSON)✅\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782357899,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1184,
+      "prompt_tokens": 949,
+      "total_tokens": 2133,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1125,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1184
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 949
+      }
+    }
+  },
+  "response_text": "{\n  \"role\": \"not_toc\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page contains analytical paragraphs, percentages, and data values typical of a report body or executive summary, with no section/chapter listing structure.\"\n}",
+  "error_type": null,
+  "error_message": null
+}

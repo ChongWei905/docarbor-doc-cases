@@ -1,0 +1,8 @@
+{
+  "input_path": "D:\\code\\semantic-construct\\md_and_pdf\\result(2)\\result\\2026年全球移动游戏行业白皮书-点点数据-2026-46页",
+  "artifacts_dir": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2026年全球移动游戏行业白皮书-点点数据-2026-46页",
+  "output_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\tree.json",
+  "pdf_strategy": "auto",
+  "success": true,
+  "node_count": 178
+}

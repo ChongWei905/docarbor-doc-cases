@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:00:08.583755+00:00",
+  "sequence": 119,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 16181,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 韩国移动游戏市场收入规模.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 25韩国移动游戏市场收入规模\n社会动荡未影响游戏行业根基 政策推动下巨头厂商集体发力\n来源：点点数据自主研究及绘制。2025年韩国移动游戏市场收入规模尽管2025年韩国遭遇了宪政震荡、外部贸易冲击、医生罢工、半导体产业被制裁等动荡，导致消费者信心指数一度骤降，但移动游戏市场总收入仍实现了513.6亿元的规模，维持\n了微弱的正增长。这一“韧性”表现，固然离不开韩国移动游戏玩家极成熟的游戏行为与消费惯性，更深层次看，2025年韩国政府对游戏产业的定位也发生了历史性转变：从过\n去的严格管控转向主动扶持与正名，为产业提供了关键的政策缓冲。韩国总统公开宣称“游戏是文化产业的核心组成部分”，并废除了严苛的事前审查制度，大幅提升了游戏发行\n效率和透明度，也间接鼓励了游戏厂商加大投入与发行力度。这使得以NEXON、网石游戏为首的韩国本土巨头在2025年集中发力，罕见地推出了等多款基于经典端游IP改编的重\n磅MMORPG新品，以其高确定性的吸引力，在不确定的经济环境下形成了强大的供给刺激。\n467.4 455.4 462.7513.4 513.6-2.56%1.60%10.95%\n0.05%\n2021年 2022年 2023年 2024年 2025年\n韩国移动游戏市场收入规模（亿元/人民币） 增长率（%）34.27%36.39%33.19%\n26.32%25.48%29.62%\n22.78%23.07%23.26%\n16.63%15.06%13.93%\n0% 20% 40% 60% 80% 100%2023年2024年2025年1-10名收入占比 11-50名收入占比 51-200名收入占比 其他移动游戏收入占比2025年韩国移动游戏市场收入集中度\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-1a7d340f-1753-9bb9-9a3b-7e759da35519",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** 韩国移动游戏市场收入规模\n   - **Current Page Text:** `© 2026 DianDian.All Rights Reserved. 25韩国移动游戏市场收入规模\\n社会动荡未影响游戏行业根基 政策推动下巨头厂商集体发力\\n来源：点点数据自主研究及绘制。2025年韩国移动游戏市场收入规模尽管2025年韩国遭遇了宪政震荡...`\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning. Use fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The `page_text` starts with: `© 2026 DianDian.All Rights Reserved. 25韩国移动游戏市场收入规模`\n   Before the section title `韩国移动游戏市场收入规模`, there is `© 2026 DianDian.All Rights Reserved. 25`.\n   This means there is other content before the section title.\n\n3.  **Apply Rule:**\n   Since there is content (`© 2026 DianDian.All Rights Reserved. 25`) before the section title, the section does *not* start at the beginning of the page text.\n   Therefore, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   Construct the JSON as requested: `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: The prompt says \"ignore any space inconsistency in the page_text\" and \"do fuzzy matching\". Even with fuzzy matching, the copyright text and page number \"25\" clearly precede the title. So it's definitely \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Self-Correction/Verification during thought: \n   Could \"25\" be part of the title? No, it's a page number. The copyright is definitely before it. So \"no\" is correct.\n   The prompt asks for exactly the JSON. I will output just that.✅\n   Final Output Generation. \n   `{\"start_begin\": \"no\"}`\n   Matches perfectly. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will make sure the JSON is valid and matches the exact requested format.) \n   All steps verified.✅\n   Output matches. \n   [Done.] \n   *(Self-Correction/Refinement during thought)*: Wait, let's look closely at the text: `© 2026 DianDian.All Rights Reserved. 25韩国移动游戏市场收入规模`. The title is `韩国移动游戏市场收入规模`. It is preceded by `© 2026 DianDian.All Rights Reserved. 25`. So definitely not at the beginning. Result is \"no\".\n   Format: `{\"start_begin\": \"no\"}`.\n   Ready. \n   Output matches request.✅\n   Proceeds. \n   [Final Check of the Prompt]: \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n   All good. \n   Output: `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** 韩国移动游戏市场收入规模\n   - **Current Page Text:** `© 2026 DianDian.All Rights Reserved. 25韩国移动游戏市场收入规模\\n社会动荡未影响游戏行业根基 政策推动下巨头厂商集体发力\\n来源：点点数据自主研究及绘制。2025年韩国移动游戏市场收入规模尽管2025年韩国遭遇了宪政震荡...`\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning. Use fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The `page_text` starts with: `© 2026 DianDian.All Rights Reserved. 25韩国移动游戏市场收入规模`\n   Before the section title `韩国移动游戏市场收入规模`, there is `© 2026 DianDian.All Rights Reserved. 25`.\n   This means there is other content before the section title.\n\n3.  **Apply Rule:**\n   Since there is content (`© 2026 DianDian.All Rights Reserved. 25`) before the section title, the section does *not* start at the beginning of the page text.\n   Therefore, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   Construct the JSON as requested: `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: The prompt says \"ignore any space inconsistency in the page_text\" and \"do fuzzy matching\". Even with fuzzy matching, the copyright text and page number \"25\" clearly precede the title. So it's definitely \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Self-Correction/Verification during thought: \n   Could \"25\" be part of the title? No, it's a page number. The copyright is definitely before it. So \"no\" is correct.\n   The prompt asks for exactly the JSON. I will output just that.✅\n   Final Output Generation. \n   `{\"start_begin\": \"no\"}`\n   Matches perfectly. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will make sure the JSON is valid and matches the exact requested format.) \n   All steps verified.✅\n   Output matches. \n   [Done.] \n   *(Self-Correction/Refinement during thought)*: Wait, let's look closely at the text: `© 2026 DianDian.All Rights Reserved. 25韩国移动游戏市场收入规模`. The title is `韩国移动游戏市场收入规模`. It is preceded by `© 2026 DianDian.All Rights Reserved. 25`. So definitely not at the beginning. Result is \"no\".\n   Format: `{\"start_begin\": \"no\"}`.\n   Ready. \n   Output matches request.✅\n   Proceeds. \n   [Final Check of the Prompt]: \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n   All good. \n   Output: `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360013,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 850,
+      "prompt_tokens": 753,
+      "total_tokens": 1603,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 838,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 850
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 753
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

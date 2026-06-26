@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:10:54.988284+00:00",
+  "sequence": 3,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 24285,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are deciding whether one report page belongs to the MAIN table of contents.\n\nA MAIN TOC page lists the report's actual section or chapter structure.\nVery important rules:\n1. Pages that only list tables, figures, charts, illustrations, abbreviations, or other auxiliary indexes are NOT main TOC pages.\n2. Chapter divider pages with one large title are NOT TOC pages.\n3. Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\n4. A page can be `toc_start` only if it clearly starts the main contents listing.\n5. A page can be `toc_continuation` only if it clearly continues a TOC list from a previous page.\n6. If there is no clear TOC evidence, return `not_toc`.\n7. Output JSON only.\n\nReturn this schema:\n{\n  \"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\",\n  \"confidence\": \"high\" | \"medium\" | \"low\",\n  \"reason\": <short string>\n}\n\nPage payload:\n```json\n{\n  \"page_number\": 7,\n  \"total_pages\": 104,\n  \"candidate_rank\": 3,\n  \"has_explicit_toc_title\": false,\n  \"top_lines\": [\n    \"01\",\n    \"2025年全球手游\",\n    \"市场营销趋势洞察\",\n    \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING\",\n    \"6\"\n  ],\n  \"short_lines\": [\n    \"01\",\n    \"2025年全球手游\",\n    \"市场营销趋势洞察\",\n    \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING\",\n    \"6\"\n  ],\n  \"candidate_rows\": [],\n  \"stats\": {\n    \"text_block_count\": 4,\n    \"parsed_line_matches\": 0,\n    \"heading_like_matches\": 0,\n    \"toc_pattern_matches\": 0,\n    \"short_line_count\": 5,\n    \"long_line_count\": 0,\n    \"sentence_like_line_count\": 0,\n    \"value_like_line_count\": 2\n  }\n}\n```"
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-7efcd19e-7b66-9419-81d4-e9b3b86a5836",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"role\": \"not_toc\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page contains only a chapter number, title, and page number with no section listings or TOC patterns, clearly indicating a chapter divider page.\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Determine if a report page belongs to the MAIN table of contents.\n   - **Rules:**\n     1. Auxiliary indexes (tables, figures, etc.) -> NOT main TOC.\n     2. Chapter divider pages (one large title) -> NOT TOC.\n     3. Body pages (paragraphs, charts, data, etc.) -> NOT TOC.\n     4. `toc_start`: clearly starts main contents listing.\n     5. `toc_continuation`: clearly continues TOC list.\n     6. No clear TOC evidence -> `not_toc`.\n     7. Output JSON only.\n   - **Schema:** `{\"role\": \"...\", \"confidence\": \"...\", \"reason\": \"...\"}`\n   - **Page Payload:**\n     - `page_number`: 7\n     - `total_pages`: 104\n     - `candidate_rank`: 3\n     - `has_explicit_toc_title`: false\n     - `top_lines`: [\"01\", \"2025年全球手游\", \"市场营销趋势洞察\", \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING\", \"6\"]\n     - `short_lines`: same as top_lines\n     - `candidate_rows`: []\n     - `stats`: text_block_count: 4, parsed_line_matches: 0, heading_like_matches: 0, toc_pattern_matches: 0, short_line_count: 5, long_line_count: 0, sentence_like_line_count: 0, value_like_line_count: 2\n\n2.  **Evaluate Page Content against Rules:**\n   - The `top_lines` show: \"01\", \"2025年全球手游\", \"市场营销趋势洞察\", \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING\", \"6\".\n   - This looks like a chapter title/divider page. \"01\" is likely the chapter number. \"2025年全球手游市场营销趋势洞察\" is the chapter title. \"6\" is likely the page number.\n   - There is no list of sections, no page numbers aligned with section titles, no TOC structure.\n   - `has_explicit_toc_title` is false.\n   - `toc_pattern_matches` is 0.\n   - `candidate_rows` is empty.\n   - This strongly matches Rule 2: \"Chapter divider pages with one large title are NOT TOC pages.\"\n   - Therefore, role should be `not_toc`.\n\n3.  **Determine Confidence & Reason:**\n   - Confidence: high (clear chapter divider format, no TOC patterns, stats confirm 0 TOC matches)\n   - Reason: Page contains only a chapter number, title, and page number, matching a chapter divider page rather than a table of contents list.\n\n4.  **Format Output:**\n   - Must be valid JSON matching the schema.\n   - `{\"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page displays a single chapter title and number without any section listing or TOC structure, indicating it is a chapter divider page.\"}`\n\n   Check against constraints:\n   - JSON only? Yes.\n   - Schema matches? Yes.\n   - Rules applied correctly? Yes.\n\n   All good. Proceed. \n   Self-Correction/Verification during thought:\n   - Could it be a TOC start? No, TOC usually has multiple entries with page numbers. This has just one title and a \"6\" (likely page number).\n   - Stats show `toc_pattern_matches: 0`, `heading_like_matches: 0`, `candidate_rows: []`. This confirms it's not a TOC.\n   - Output matches requirements.✅\n   Generate response. \n   ```json\n   {\n     \"role\": \"not_toc\",\n     \"confidence\": \"high\",\n     \"reason\": \"Page contains only a chapter number, title, and page number, matching a chapter divider page rather than a table of contents list.\"\n   }\n   ```\n   Matches exactly. Proceeds. \n   Output matches the requested format. No extra text.✅\n   Final Check of the prompt: \"Output JSON only.\" -> I will output just the JSON.\n   All constraints met.✅\n   Proceeds. \n   [Output Generation] -> *Self-Correction/Refinement during generation prep*: I'll make sure the JSON is strictly valid and matches the schema exactly.\n   `{ \"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page displays a single chapter title and number without any section listing or TOC structure, indicating it is a chapter divider page.\" }` -> Valid.✅\n   Done. \n   Output matches response. \n   [Proceeds]",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Determine if a report page belongs to the MAIN table of contents.\n   - **Rules:**\n     1. Auxiliary indexes (tables, figures, etc.) -> NOT main TOC.\n     2. Chapter divider pages (one large title) -> NOT TOC.\n     3. Body pages (paragraphs, charts, data, etc.) -> NOT TOC.\n     4. `toc_start`: clearly starts main contents listing.\n     5. `toc_continuation`: clearly continues TOC list.\n     6. No clear TOC evidence -> `not_toc`.\n     7. Output JSON only.\n   - **Schema:** `{\"role\": \"...\", \"confidence\": \"...\", \"reason\": \"...\"}`\n   - **Page Payload:**\n     - `page_number`: 7\n     - `total_pages`: 104\n     - `candidate_rank`: 3\n     - `has_explicit_toc_title`: false\n     - `top_lines`: [\"01\", \"2025年全球手游\", \"市场营销趋势洞察\", \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING\", \"6\"]\n     - `short_lines`: same as top_lines\n     - `candidate_rows`: []\n     - `stats`: text_block_count: 4, parsed_line_matches: 0, heading_like_matches: 0, toc_pattern_matches: 0, short_line_count: 5, long_line_count: 0, sentence_like_line_count: 0, value_like_line_count: 2\n\n2.  **Evaluate Page Content against Rules:**\n   - The `top_lines` show: \"01\", \"2025年全球手游\", \"市场营销趋势洞察\", \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING\", \"6\".\n   - This looks like a chapter title/divider page. \"01\" is likely the chapter number. \"2025年全球手游市场营销趋势洞察\" is the chapter title. \"6\" is likely the page number.\n   - There is no list of sections, no page numbers aligned with section titles, no TOC structure.\n   - `has_explicit_toc_title` is false.\n   - `toc_pattern_matches` is 0.\n   - `candidate_rows` is empty.\n   - This strongly matches Rule 2: \"Chapter divider pages with one large title are NOT TOC pages.\"\n   - Therefore, role should be `not_toc`.\n\n3.  **Determine Confidence & Reason:**\n   - Confidence: high (clear chapter divider format, no TOC patterns, stats confirm 0 TOC matches)\n   - Reason: Page contains only a chapter number, title, and page number, matching a chapter divider page rather than a table of contents list.\n\n4.  **Format Output:**\n   - Must be valid JSON matching the schema.\n   - `{\"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page displays a single chapter title and number without any section listing or TOC structure, indicating it is a chapter divider page.\"}`\n\n   Check against constraints:\n   - JSON only? Yes.\n   - Schema matches? Yes.\n   - Rules applied correctly? Yes.\n\n   All good. Proceed. \n   Self-Correction/Verification during thought:\n   - Could it be a TOC start? No, TOC usually has multiple entries with page numbers. This has just one title and a \"6\" (likely page number).\n   - Stats show `toc_pattern_matches: 0`, `heading_like_matches: 0`, `candidate_rows: []`. This confirms it's not a TOC.\n   - Output matches requirements.✅\n   Generate response. \n   ```json\n   {\n     \"role\": \"not_toc\",\n     \"confidence\": \"high\",\n     \"reason\": \"Page contains only a chapter number, title, and page number, matching a chapter divider page rather than a table of contents list.\"\n   }\n   ```\n   Matches exactly. Proceeds. \n   Output matches the requested format. No extra text.✅\n   Final Check of the prompt: \"Output JSON only.\" -> I will output just the JSON.\n   All constraints met.✅\n   Proceeds. \n   [Output Generation] -> *Self-Correction/Refinement during generation prep*: I'll make sure the JSON is strictly valid and matches the schema exactly.\n   `{ \"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page displays a single chapter title and number without any section listing or TOC structure, indicating it is a chapter divider page.\" }` -> Valid.✅\n   Done. \n   Output matches response. \n   [Proceeds]"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782353459,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1103,
+      "prompt_tokens": 506,
+      "total_tokens": 1609,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1043,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1103
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 506
+      }
+    }
+  },
+  "response_text": "{\n  \"role\": \"not_toc\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page contains only a chapter number, title, and page number with no section listings or TOC patterns, clearly indicating a chapter divider page.\"\n}",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:52:32.432679+00:00",
+  "sequence": 193,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 15167,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 《原神》基础数据.\n    The given page_text is © 2025 DianDian.All Rights Reserved.\n 14《原神》基础数据\n来源：点点数据自主研究及绘制顶尖视听、玩法设计、极致技术力等多个方面都对当代二游发展影响颇深\n2025年《原神》国服收入规模与活跃用户数据表现\n0.0 0.5 1.0 1.5 2.0 2.5 \n1月2月3月4月5月6月7月8月9月10月\nAppStore月流水（亿元）用户兴趣偏好\n动漫2025Q1-Q3用户留存\n平均次留：\n平均月留：约56.5%\n约21.4%基础教育 电影\n高等教育 网络小说 电视剧0 100 200 300 400 500 600 \n1月2月3月4月5月6月7月8月9月\niOS月活跃用户数（万人）男生占比： 约68.5%《原神》虽然已上线5年有余，但其画面表现与音乐设计至今仍是行业顶尖水准，并且不同国度的美术风格既融合了超现实主义风格，又叠加了丰富的奇幻元素，构建出辨识度极\n高的视觉系统。在开放世界的大框架下，地图探索设计的精巧不失乐趣，配合围绕元素反应体系建立的角色技能策略，再加之成熟的战斗动作表现，形成了深度与广度兼备的游戏\n体验。游戏另一大特点，是实现了手机、PC与主机端的账号互通与数据同步，虽然这并非《原神》首创，但其背后是游戏在不同性能硬件上均能保持高水平画面表现的优化能力，\n这是游戏厂商技术力的重要体现，并且可以说是《原神》引领了移动游戏跨端的潮流风向。\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-6e47197c-af6c-9446-9b44-2c5708fe8af1",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** 《原神》基础数据\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved.\\n 14《原神》基础数据\\n来源：点点数据自主研究及绘制顶尖视听、玩法设计、极致技术力等多个方面都对当代二游发展影响颇深...`\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Do fuzzy matching, ignore space inconsistency.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The `page_text` starts with: `© 2025 DianDian.All Rights Reserved.\\n 14《原神》基础数据`\n   Before the section title `《原神》基础数据`, there is `© 2025 DianDian.All Rights Reserved.\\n 14`.\n   This means there is content before the section title.\n\n3.  **Apply Rule:**\n   Since there is content (`© 2025 DianDian.All Rights Reserved.\\n 14`) before the section title, the section does *not* start at the beginning of the page text.\n   Therefore, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   Construct the JSON as requested: `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor check: Does \"14\" count as part of the title or separate? It's clearly a page number or list number preceding the title. The copyright notice is definitely before it. So \"no\" is correct.\n   Fuzzy matching note: Even if we ignore spaces, the copyright text is clearly before the title.\n   Result: `{\"start_begin\": \"no\"}`.✅\n   Output matches requirement. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Self-Correction/Verification during thought)\n   Wait, let's look closely at the prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   The text starts with `© 2025 DianDian.All Rights Reserved.`\n   So definitely \"no\".\n   JSON format is strict.\n   Ready. \n   Output matches exactly. \n   Proceeds. \n   [Final Check of the Prompt]\n   \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n   All constraints met.✅\n   Output: `{\"start_begin\": \"no\"}`\n   Done. \n   [Output Generation] (Proceeds)\n   *(Self-Correction/Refinement during thought)*: I will make sure the JSON is exactly as requested. No extra whitespace or newlines if possible, but standard JSON formatting is fine.\n   `{\"start_begin\": \"no\"}` is perfect. \n   Proceeds. \n   [Output] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** 《原神》基础数据\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved.\\n 14《原神》基础数据\\n来源：点点数据自主研究及绘制顶尖视听、玩法设计、极致技术力等多个方面都对当代二游发展影响颇深...`\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Do fuzzy matching, ignore space inconsistency.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The `page_text` starts with: `© 2025 DianDian.All Rights Reserved.\\n 14《原神》基础数据`\n   Before the section title `《原神》基础数据`, there is `© 2025 DianDian.All Rights Reserved.\\n 14`.\n   This means there is content before the section title.\n\n3.  **Apply Rule:**\n   Since there is content (`© 2025 DianDian.All Rights Reserved.\\n 14`) before the section title, the section does *not* start at the beginning of the page text.\n   Therefore, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   Construct the JSON as requested: `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor check: Does \"14\" count as part of the title or separate? It's clearly a page number or list number preceding the title. The copyright notice is definitely before it. So \"no\" is correct.\n   Fuzzy matching note: Even if we ignore spaces, the copyright text is clearly before the title.\n   Result: `{\"start_begin\": \"no\"}`.✅\n   Output matches requirement. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Self-Correction/Verification during thought)\n   Wait, let's look closely at the prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   The text starts with `© 2025 DianDian.All Rights Reserved.`\n   So definitely \"no\".\n   JSON format is strict.\n   Ready. \n   Output matches exactly. \n   Proceeds. \n   [Final Check of the Prompt]\n   \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n   All constraints met.✅\n   Output: `{\"start_begin\": \"no\"}`\n   Done. \n   [Output Generation] (Proceeds)\n   *(Self-Correction/Refinement during thought)*: I will make sure the JSON is exactly as requested. No extra whitespace or newlines if possible, but standard JSON formatting is fine.\n   `{\"start_begin\": \"no\"}` is perfect. \n   Proceeds. \n   [Output] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355956,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 789,
+      "prompt_tokens": 614,
+      "total_tokens": 1403,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 777,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 789
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 614
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

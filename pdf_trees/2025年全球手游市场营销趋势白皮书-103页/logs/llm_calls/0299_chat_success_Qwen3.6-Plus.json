@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:02:29.749927+00:00",
+  "sequence": 299,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4894,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 致谢& 报告说明 SPECIAL THANKS & REPORT DESCRIPTION.\n    The given page_text is 致谢&\n报告说明\nSPECIAL THANKS & REPORT DESCRIPTION\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-f099aa2e-db47-9fa7-9842-555550a3652f",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"致谢& 报告说明 SPECIAL THANKS & REPORT DESCRIPTION\" appears or starts in the given `page_text`.\nThe `page_text` is:\n\"致谢&\n报告说明\nSPECIAL THANKS & REPORT DESCRIPTION\n.\"\n\nLet's normalize spaces and newlines.\nSection title: \"致谢& 报告说明 SPECIAL THANKS & REPORT DESCRIPTION\"\nPage text: \"致谢&\\n报告说明\\nSPECIAL THANKS & REPORT DESCRIPTION\\n.\"\n\nIgnoring spaces/newlines, the page text contains exactly the words in the section title.\n\"致谢&\" matches.\n\"报告说明\" matches.\n\"SPECIAL THANKS & REPORT DESCRIPTION\" matches.\nSo it appears.\n\nAnswer should be \"yes\".\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nI will produce exactly the JSON.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"致谢& 报告说明 SPECIAL THANKS & REPORT DESCRIPTION\" appears or starts in the given `page_text`.\nThe `page_text` is:\n\"致谢&\n报告说明\nSPECIAL THANKS & REPORT DESCRIPTION\n.\"\n\nLet's normalize spaces and newlines.\nSection title: \"致谢& 报告说明 SPECIAL THANKS & REPORT DESCRIPTION\"\nPage text: \"致谢&\\n报告说明\\nSPECIAL THANKS & REPORT DESCRIPTION\\n.\"\n\nIgnoring spaces/newlines, the page text contains exactly the words in the section title.\n\"致谢&\" matches.\n\"报告说明\" matches.\n\"SPECIAL THANKS & REPORT DESCRIPTION\" matches.\nSo it appears.\n\nAnswer should be \"yes\".\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nI will produce exactly the JSON."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360154,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 220,
+      "prompt_tokens": 163,
+      "total_tokens": 383,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 204,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 220
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 163
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

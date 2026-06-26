@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:07:48.739221+00:00",
+  "sequence": 378,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 22353,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策.\n    The given page_text is 47\n可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策\n1. Aarki internal data, 2025掌控\n节奏的力量关键在于 ——在效果信号、创意反馈与留存数据之间取得平衡，\n从而做出更理性、更具前瞻性的增长决策 。\n可持续增长，从来不是比拼速度 。\n而是在于 时机、精准度，以及知道什么时\n候应该稳住阵脚 。Aarki 的分析显示 ：\n基于留存与创意表现来调节投放节奏 的营销者，能够实现 20% 以上的\nROI 稳定性提升 ，并将 季度环比波动性降低约 25%¹。Avi Das, Aarki首席营收官\n•当新的人群细分或创意洞察展现出早期潜力，\n应及时加大投入 。\n•将预算从进入平台期的活动中转向哪些已被验\n证、能持续提升 LTV 的优质效果渠道 。•当CPI 上升速度快于 LTV，或创意疲劳度超过\n40% 时，应主动放缓节奏 。\n•重新评估人群细分、刷新创意内容，或在 UA 与\nRT 之间重新平衡资源配置 。•当留存表现显著优于中位水平，且 RT ROI 至少\n达到UA ROI 的1.5 倍时，应果断增加投入。\n•放大在跨渠道中持续带来稳定增量的高表现人群\n与创意组合。“明智的增长并非持续加速，而是对节奏的精\n准控制 ——懂得何时发力，何时调整 。”\n再投入 Reinvest 暂停Pause 扩量Scale\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-9616457d-0531-918d-990a-512a9553ef78",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策`\n   - **Current Page Text:** `47\\n可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策\\n1. Aarki internal data, 2025掌控\\n节奏的力量关键在于 ——在效果信号、创意反馈与留存数据之间取得平衡，\\n从而做出更理性、更具前瞻性的增长决策 。\\n...` (rest of the text)\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning.\n   - **Note:** Do fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine `page_text`:**\n   The `page_text` starts with:\n   `47`\n   `可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策`\n   ...\n\n   The very first character/content is `47` (likely a page number).\n   Then comes the section title.\n\n3.  **Apply Rule:**\n   \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   Here, `47` appears before the section title. Therefore, the section does *not* start at the beginning.\n\n   Wait, let's consider if `47` is just a page number/header that should be ignored? The prompt says: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" It doesn't explicitly say to ignore page numbers, but usually, in these tasks, page numbers count as \"other contents\". I will strictly follow the prompt: `47` is before the title. So `start_begin` should be `no`.\n\n   Let's double-check the exact text:\n   `47\\n可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策`\n   The title matches exactly after `47\\n`.\n   Since `47` is present before it, it's not at the very beginning.\n\n   Could `47` be considered part of the page layout and not \"content\"? The prompt says \"If there are other contents before the current section title...\". I'll stick with `no` because `47` is literally there. Even if it's a page number, it's content before the title.\n\n   Let's verify fuzzy matching: The title is exactly present. But it's preceded by `47`. So `start_begin: \"no\"`.\n\n   Is there any chance `47` is ignored? Sometimes prompts imply ignoring page numbers, but it's safer to say `no` if anything precedes it. I will output `no`.\n\n   Wait, let's look at similar tasks. Often, page numbers at the start are considered \"other contents\". I'll go with `no`.\n\n   Let's construct the JSON.\n   `{\"start_begin\": \"no\"}`\n\n   Check again: \"If the current section title is the first content in the given page_text, then the current section starts in the beginning of the given page_text.\"\n   The first content is `47`. So it's not the first content.\n   Result: `no`.\n\n   Final output matches requirement.\n   I will generate exactly the JSON.✅\n   One minor point: sometimes OCR extracts page numbers as part of the text. The instruction is clear. I'll output `no`.\n   All good. \n   Output: `{\"start_begin\": \"no\"}`\n   Proceed. \n   Self-Correction/Refinement during thought: Could `47` be considered a page number that should be ignored per standard document parsing? The prompt says \"ignore any space inconsistency\", but doesn't say ignore page numbers. I will strictly follow the literal text. `47` is before the title. So `no`.\n   I'll output `{\"start_begin\": \"no\"}`. \n   Ready. \n   Output matches exactly. \n   [Done] \n   *Self-Correction/Verification during generation prep*: \n   Let's read carefully: \"47\\n可持续的全链路增长...\"\n   The prompt says: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   So `no` is correct.\n   I will produce the JSON. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches request.✅\n   *(Note: I'll make sure the JSON is exactly as requested, with no extra text.)*\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Wait, let's consider if \"47\" is just a page number and the prompt implies checking if the *section* starts at the beginning of the *page content*. Usually, in these tasks, if a page number is at the top, it's considered \"not at the beginning\". I'll stick with \"no\".)*\n   All good. \n   Final Answer Generation. \n   `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策`\n   - **Current Page Text:** `47\\n可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策\\n1. Aarki internal data, 2025掌控\\n节奏的力量关键在于 ——在效果信号、创意反馈与留存数据之间取得平衡，\\n从而做出更理性、更具前瞻性的增长决策 。\\n...` (rest of the text)\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning.\n   - **Note:** Do fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine `page_text`:**\n   The `page_text` starts with:\n   `47`\n   `可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策`\n   ...\n\n   The very first character/content is `47` (likely a page number).\n   Then comes the section title.\n\n3.  **Apply Rule:**\n   \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   Here, `47` appears before the section title. Therefore, the section does *not* start at the beginning.\n\n   Wait, let's consider if `47` is just a page number/header that should be ignored? The prompt says: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" It doesn't explicitly say to ignore page numbers, but usually, in these tasks, page numbers count as \"other contents\". I will strictly follow the prompt: `47` is before the title. So `start_begin` should be `no`.\n\n   Let's double-check the exact text:\n   `47\\n可持续的全链路增长，并不意味着一味加码。掌控投放节奏，做出理性决策`\n   The title matches exactly after `47\\n`.\n   Since `47` is present before it, it's not at the very beginning.\n\n   Could `47` be considered part of the page layout and not \"content\"? The prompt says \"If there are other contents before the current section title...\". I'll stick with `no` because `47` is literally there. Even if it's a page number, it's content before the title.\n\n   Let's verify fuzzy matching: The title is exactly present. But it's preceded by `47`. So `start_begin: \"no\"`.\n\n   Is there any chance `47` is ignored? Sometimes prompts imply ignoring page numbers, but it's safer to say `no` if anything precedes it. I will output `no`.\n\n   Wait, let's look at similar tasks. Often, page numbers at the start are considered \"other contents\". I'll go with `no`.\n\n   Let's construct the JSON.\n   `{\"start_begin\": \"no\"}`\n\n   Check again: \"If the current section title is the first content in the given page_text, then the current section starts in the beginning of the given page_text.\"\n   The first content is `47`. So it's not the first content.\n   Result: `no`.\n\n   Final output matches requirement.\n   I will generate exactly the JSON.✅\n   One minor point: sometimes OCR extracts page numbers as part of the text. The instruction is clear. I'll output `no`.\n   All good. \n   Output: `{\"start_begin\": \"no\"}`\n   Proceed. \n   Self-Correction/Refinement during thought: Could `47` be considered a page number that should be ignored per standard document parsing? The prompt says \"ignore any space inconsistency\", but doesn't say ignore page numbers. I will strictly follow the literal text. `47` is before the title. So `no`.\n   I'll output `{\"start_begin\": \"no\"}`. \n   Ready. \n   Output matches exactly. \n   [Done] \n   *Self-Correction/Verification during generation prep*: \n   Let's read carefully: \"47\\n可持续的全链路增长...\"\n   The prompt says: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   So `no` is correct.\n   I will produce the JSON. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches request.✅\n   *(Note: I'll make sure the JSON is exactly as requested, with no extra text.)*\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Wait, let's consider if \"47\" is just a page number and the prompt implies checking if the *section* starts at the beginning of the *page content*. Usually, in these tasks, if a page number is at the top, it's considered \"not at the beginning\". I'll stick with \"no\".)*\n   All good. \n   Final Answer Generation. \n   `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360473,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1215,
+      "prompt_tokens": 567,
+      "total_tokens": 1782,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1198,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1215
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 567
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

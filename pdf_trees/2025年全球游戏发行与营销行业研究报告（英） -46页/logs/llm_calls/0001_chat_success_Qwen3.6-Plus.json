@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:37:44.453291+00:00",
+  "sequence": 1,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 15542,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are deciding whether one report page belongs to the MAIN table of contents.\n\nA MAIN TOC page lists the report's actual section or chapter structure.\nVery important rules:\n1. Pages that only list tables, figures, charts, illustrations, abbreviations, or other auxiliary indexes are NOT main TOC pages.\n2. Chapter divider pages with one large title are NOT TOC pages.\n3. Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\n4. A page can be `toc_start` only if it clearly starts the main contents listing.\n5. A page can be `toc_continuation` only if it clearly continues a TOC list from a previous page.\n6. If there is no clear TOC evidence, return `not_toc`.\n7. Output JSON only.\n\nReturn this schema:\n{\n  \"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\",\n  \"confidence\": \"high\" | \"medium\" | \"low\",\n  \"reason\": <short string>\n}\n\nPage payload:\n```json\n{\n  \"page_number\": 3,\n  \"total_pages\": 47,\n  \"candidate_rank\": 1,\n  \"has_explicit_toc_title\": true,\n  \"top_lines\": [\n    \"Contents\",\n    \"SECTION 6: Software and Services\",\n    \"38\",\n    \"38\",\n    \"Foreword\",\n    \"2\",\n    \"Publishing as a Service\",\n    \"Table of Contents\",\n    \"38\",\n    \"38\",\n    \"2\",\n    \"2\"\n  ],\n  \"short_lines\": [\n    \"Contents\",\n    \"SECTION 6: Software and Services\",\n    \"38\",\n    \"38\",\n    \"Foreword\",\n    \"2\",\n    \"Publishing as a Service\",\n    \"Table of Contents\",\n    \"38\",\n    \"38\",\n    \"2\",\n    \"2\",\n    \"Design Studios\",\n    \"List of Tables\",\n    \"39\",\n    \"39\",\n    \"3\",\n    \"3\"\n  ],\n  \"candidate_rows\": [\n    {\n      \"raw_text\": \"SECTION 6: Software and Services\",\n      \"title\": \"SECTION 6: Software and Services\",\n      \"printed_page\": null,\n      \"kind\": \"heading_like\"\n    },\n    {\n      \"raw_text\": \"SECTION 1: Game Publishing Strategies\",\n      \"title\": \"SECTION 1: Game Publishing Strategies\",\n      \"printed_page\": null,\n      \"kind\": \"heading_like\"\n    },\n    {\n      \"raw_text\": \"SECTION 2: Marketing and User Acquisition\",\n      \"title\": \"SECTION 2: Marketing and User Acquisition\",\n      \"printed_page\": null,\n      \"kind\": \"heading_like\"\n    },\n    {\n      \"raw_text\": \"SECTION 3: Community\",\n      \"title\": \"SECTION 3: Community\",\n      \"printed_page\": null,\n      \"kind\": \"heading_like\"\n    },\n    {\n      \"raw_text\": \"SECTION 4: Data-Driven Success\",\n      \"title\": \"SECTION 4: Data-Driven Success\",\n      \"printed_page\": null,\n      \"kind\": \"heading_like\"\n    },\n    {\n      \"raw_text\": \"SECTION 5: Revenue Streams and\",\n      \"title\": \"SECTION 5: Revenue Streams and\",\n      \"printed_page\": null,\n      \"kind\": \"heading_like\"\n    }\n  ],\n  \"stats\": {\n    \"text_block_count\": 89,\n    \"parsed_line_matches\": 0,\n    \"heading_like_matches\": 6,\n    \"toc_pattern_matches\": 0,\n    \"short_line_count\": 114,\n    \"long_line_count\": 0,\n    \"sentence_like_line_count\": 3,\n    \"value_like_line_count\": 55\n  }\n}\n```"
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-71beb86d-5ac7-9a6b-80e9-ecd8605d2ded",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"role\": \"toc_start\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page explicitly lists the report's main sections (1-6) with corresponding page numbers and contains explicit 'Contents' and 'Table of Contents' headings, clearly marking the start of the main TOC.\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to classify a page as `toc_start`, `toc_continuation`, or `not_toc`.\nThe page has:\n- `has_explicit_toc_title`: true\n- `top_lines`: \"Contents\", \"SECTION 6: Software and Services\", \"38\", \"Foreword\", \"2\", \"Publishing as a Service\", \"Table of Contents\", etc.\n- `candidate_rows`: Contains \"SECTION 6: Software and Services\", \"SECTION 1: Game Publishing Strategies\", \"SECTION 2: Marketing and User Acquisition\", \"SECTION 3: Community\", \"SECTION 4: Data-Driven Success\", \"SECTION 5: Revenue Streams and\".\n- `stats`: `heading_like_matches`: 6, `value_like_line_count`: 55 (likely page numbers).\n- The page clearly lists sections 1 through 6 with page numbers. It has \"Contents\" and \"Table of Contents\" in the text.\n- This matches the definition of a MAIN TOC page.\n- Since it's page 3 of 47, and lists sections 1-6, it's likely the start of the TOC.\n- I will classify it as `toc_start` with `high` confidence.\n- Reason: The page explicitly lists the report's main sections (Sections 1-6) with corresponding page numbers and contains explicit \"Contents\" / \"Table of Contents\" titles, clearly indicating the start of the main table of contents.\n- Output JSON only.\n- Check rules: \"Pages that only list tables, figures... are NOT main TOC pages.\" -> This lists sections.\n- \"Chapter divider pages... are NOT TOC pages.\" -> This is a list.\n- \"Body pages... are NOT TOC pages.\" -> This is a TOC.\n- So `toc_start` is correct.\n- Confidence: high.\n- Reason: Page explicitly lists main report sections (1-6) with page numbers and includes \"Contents\"/\"Table of Contents\" headings, clearly marking the beginning of the main TOC.\n- Format JSON.\n- Done. \nLet's construct the JSON.\n```json\n{\n  \"role\": \"toc_start\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page explicitly lists the report's main sections (1-6) with corresponding page numbers and contains explicit 'Contents' and 'Table of Contents' headings, clearly marking the start of the main TOC.\"\n}\n```\nCheck constraints: Output JSON only. Schema matches. All good. \nProceed. \nSelf-Correction/Verification during thought:\n- `candidate_rows` shows sections 1-6.\n- `top_lines` has \"Contents\", \"Table of Contents\".\n- `value_like_line_count` is 55, which are likely page numbers.\n- It's definitely a TOC start.\n- Confidence high.\n- Reason is concise.\n- Output matches schema.\nReady. \nOutput matches exactly. \nProceeds. \n[Output Generation] -> *Proceeds*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to classify a page as `toc_start`, `toc_continuation`, or `not_toc`.\nThe page has:\n- `has_explicit_toc_title`: true\n- `top_lines`: \"Contents\", \"SECTION 6: Software and Services\", \"38\", \"Foreword\", \"2\", \"Publishing as a Service\", \"Table of Contents\", etc.\n- `candidate_rows`: Contains \"SECTION 6: Software and Services\", \"SECTION 1: Game Publishing Strategies\", \"SECTION 2: Marketing and User Acquisition\", \"SECTION 3: Community\", \"SECTION 4: Data-Driven Success\", \"SECTION 5: Revenue Streams and\".\n- `stats`: `heading_like_matches`: 6, `value_like_line_count`: 55 (likely page numbers).\n- The page clearly lists sections 1 through 6 with page numbers. It has \"Contents\" and \"Table of Contents\" in the text.\n- This matches the definition of a MAIN TOC page.\n- Since it's page 3 of 47, and lists sections 1-6, it's likely the start of the TOC.\n- I will classify it as `toc_start` with `high` confidence.\n- Reason: The page explicitly lists the report's main sections (Sections 1-6) with corresponding page numbers and contains explicit \"Contents\" / \"Table of Contents\" titles, clearly indicating the start of the main table of contents.\n- Output JSON only.\n- Check rules: \"Pages that only list tables, figures... are NOT main TOC pages.\" -> This lists sections.\n- \"Chapter divider pages... are NOT TOC pages.\" -> This is a list.\n- \"Body pages... are NOT TOC pages.\" -> This is a TOC.\n- So `toc_start` is correct.\n- Confidence: high.\n- Reason: Page explicitly lists main report sections (1-6) with page numbers and includes \"Contents\"/\"Table of Contents\" headings, clearly marking the beginning of the main TOC.\n- Format JSON.\n- Done. \nLet's construct the JSON.\n```json\n{\n  \"role\": \"toc_start\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page explicitly lists the report's main sections (1-6) with corresponding page numbers and contains explicit 'Contents' and 'Table of Contents' headings, clearly marking the start of the main TOC.\"\n}\n```\nCheck constraints: Output JSON only. Schema matches. All good. \nProceed. \nSelf-Correction/Verification during thought:\n- `candidate_rows` shows sections 1-6.\n- `top_lines` has \"Contents\", \"Table of Contents\".\n- `value_like_line_count` is 55, which are likely page numbers.\n- It's definitely a TOC start.\n- Confidence high.\n- Reason is concise.\n- Output matches schema.\nReady. \nOutput matches exactly. \nProceeds. \n[Output Generation] -> *Proceeds*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782358668,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 721,
+      "prompt_tokens": 921,
+      "total_tokens": 1642,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 649,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 721
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 921
+      }
+    }
+  },
+  "response_text": "{\n  \"role\": \"toc_start\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page explicitly lists the report's main sections (1-6) with corresponding page numbers and contains explicit 'Contents' and 'Table of Contents' headings, clearly marking the start of the main TOC.\"\n}",
+  "error_type": null,
+  "error_message": null
+}

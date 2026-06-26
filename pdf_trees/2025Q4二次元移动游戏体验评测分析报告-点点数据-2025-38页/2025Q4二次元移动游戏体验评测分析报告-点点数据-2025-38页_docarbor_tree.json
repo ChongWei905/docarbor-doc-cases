@@ -1,0 +1,900 @@
+{
+  "doc_id": "a260bb22-e30a-54c5-aeaf-50834e11ab23",
+  "status": "completed",
+  "retrieval_ready": false,
+  "result": [
+    {
+      "title": "二次元移动游戏体验评测分析报告",
+      "node_id": "0000",
+      "page_index": 1,
+      "start_index": 1,
+      "end_index": 3,
+      "summary": "This section serves as the title page for a research report and can answer retrieval queries regarding:\n- **Topic:** Evaluation and analysis of user experience in anime-style (二次元) mobile games.\n- **Date/Timeframe:** Q4 2025 (report publication or coverage period).\n- **Entity:** DianDian (copyright holder and publishing organization).\n- **Document Type:** Industry evaluation/analysis report.\nThis section does not contain definitions, procedures, specific claims, tables, figures, metrics, or evidence types. All retrievable information is strictly limited to the report title, timeframe, and copyright attribution.",
+      "chunk_ids": []
+    },
+    {
+      "title": "二次元移动游戏市场概况&体验指标分析",
+      "node_id": "0001",
+      "page_index": 3,
+      "start_index": 3,
+      "end_index": 4,
+      "summary": "**Topics:** 二次元移动游戏市场概况、体验指标分析、市场竞争趋势、商业化模式变革\n**Entities:** 二次元移动游戏（二游）、收入TP1二游产品、游戏畅销总榜、DianDian\n**Dates:** 2025年\n**Claims & Metrics:** 2025年二次元移动游戏收入同比明显下滑；收入TP1的二游产品已跌至游戏畅销总榜第9名；市场竞争重心转移至玩法层面突破；行业商业化变革正在进行中。\n**Evidence Types:** 市场收入同比数据、畅销榜排名数据、行业趋势定性分析\n**Retrieval Questions Answered:** 2025年二次元移动游戏市场收入表现如何？头部二游产品在整体畅销榜的排名有何变化？当前二游市场的核心竞争方向与商业化趋势是什么？该章节涵盖哪些市场概况与体验指标分析？",
+      "chunk_ids": []
+    },
+    {
+      "title": "二次元移动游戏的定义与特征",
+      "node_id": "0002",
+      "page_index": 4,
+      "start_index": 4,
+      "end_index": 4,
+      "summary": "This section defines and characterizes \"二次元\" (ACG/2D) mobile games across six interconnected dimensions, supporting retrieval queries on cultural boundaries, design frameworks, visual evolution, gameplay mechanics, monetization strategies, and audience segmentation.\n\n- **Topics & Entities:** Covers the conceptual relationship between \"二次元\" and \"ACGN\"; Japanese anime, manga, games, and light novels; character development assets (illustrations, 3D models, voice acting, narrative, combat systems); visual aesthetics (Japanese anime, Korean manhwa, Chinese comics); mainstream gameplay genres (card battles, ARPG, dating simulation/nurturing); PVP and PVE modes; gacha/扭蛋 mechanics; and player demographics (core vs. casual/broad ACG players).\n- **Definitions:** Clarifies \"二次元\" as a cultural attribute rather than a fixed genre; defines \"核心塑造\" (Core Character Shaping) as a character-centric design strategy aimed at fostering emotional bonds; outlines the expanded boundaries of the \"二次元\" visual style; and provides a report-specific classification for ACG mobile games based on primary targeting of core ACG players.\n- **Claims:** States that Japanese cultural products drive the 二次元-ACGN association, though iterative updates can shift initially excluded games into the category via player community recognition. Asserts that visual aesthetics have evolved from early Japanese dominance to inclusively recognize Korean and Chinese comic styles. Notes that gameplay mechanics are diverse and not restricted to PVP or PVE. Identifies gacha as the dominant monetization model, explaining its design logic through the behavioral psychology framework of the \"Skinner box.\" Distinguishes core players by their cultural affinity and investment willingness, while clarifying that these traits alone do...",
+      "nodes": [
+        {
+          "title": "文化影响",
+          "node_id": "0003",
+          "page_index": 4,
+          "start_index": 4,
+          "end_index": 4,
+          "summary": "This section answers questions regarding the cultural foundations, conceptual boundaries, and evolving classification of \"二次元\" (2D/ACG) media.\n- Topics & Entities: Covers the relationship between \"二次元\" and \"ACGN\"; the influence of Japanese anime, manga, games, and light novels; the categorization of mobile games; and the recognition role of the \"二次元\" player community.\n- Definitions: Clarifies that \"二次元\" refers to a cultural attribute rather than a specific work genre, and distinguishes it from \"ACGN\" despite their frequent interchangeable use.\n- Claims: States that Japanese cultural products drive the close link between 二次元 and ACGN. Notes that some games initially excluded from the 二次元 category have shifted toward its cultural traits through iterative updates and are now accepted as \"二次元 mobile games\" by the player base.\n- Dates, Procedures, Tables, Figures, Metrics, Evidence Types: Contains no specific dates, procedural steps, quantitative metrics, tables, figures, or formal evidence types.",
+          "chunk_ids": []
+        },
+        {
+          "title": "核心塑造",
+          "node_id": "0004",
+          "page_index": 4,
+          "start_index": 4,
+          "end_index": 4,
+          "summary": "This section defines the game design concept of \"核心塑造\" (Core Character Shaping) and outlines its implementation strategy. It can answer questions regarding:\n- **Definition/Topic:** What is \"core shaping\"? A character-centric development strategy designed to establish emotional connections between players and characters.\n- **Procedures/Methods:** What specific elements are utilized to build characters? Integration of character illustrations (立绘), 3D modeling (建模), voice acting (配音), narrative progression (剧情推进), and combat gameplay (战斗玩法).\n- **Claims/Goals:** What is the intended outcome? To foster a strong emotional bond between players and game characters through multi-dimensional character presentation and interactive design.\n- **Entities:** Players, game characters, and development assets (art, models, audio, story, combat systems).\n- **Dates, Tables, Figures, Metrics, Evidence Types:** None mentioned in this section.",
+          "chunk_ids": []
+        },
+        {
+          "title": "画面风格",
+          "node_id": "0005",
+          "page_index": 4,
+          "start_index": 4,
+          "end_index": 4,
+          "summary": "This section addresses the evolution of visual aesthetics within \"二次元\" (ACG) culture. It can answer retrieval queries regarding:\n- **Topics & Claims:** The historical expansion and shifting boundaries of what constitutes a \"二次元\" visual style.\n- **Entities:** Japanese anime, Korean manhwa, Chinese comics (国漫), players, and the \"二次元\" category.\n- **Definitions:** Defines the \"二次元\" visual style as initially dominated by Japanese anime, but now broadly inclusive of Korean and Chinese comic styles due to cultural development.\n- **Dates/Timeframe:** References an unspecified \"early period\" versus later cultural evolution (no exact dates or years provided).\n- **Procedures, Tables, Figures, Metrics, Evidence Types:** None present; the section offers a qualitative cultural claim without step-by-step procedures, quantitative metrics, visual aids, or cited evidence.\n- **Retrievable Questions:** What was the dominant early visual style for 二次元? How has the recognized visual style for 二次元 changed over time? Which non-Japanese comic styles are now accepted by players as part of the 二次元 aesthetic?",
+          "chunk_ids": []
+        },
+        {
+          "title": "游戏玩法",
+          "node_id": "0006",
+          "page_index": 4,
+          "start_index": 4,
+          "end_index": 4,
+          "summary": "This section addresses the topic of gameplay mechanics in ACG (二次元) mobile games. It can answer questions regarding the most mainstream gameplay categories in this genre (card battles, ARPG, dating simulation/nurturing) and whether these mechanics are restricted to PVP or PVE modes (they are not). Key entities include ACG mobile games, card battles, ARPG, dating simulation, PVP, and PVE. The section presents claims about gameplay diversity and current mainstream trends. It does not contain specific dates, formal definitions, procedures, tables, figures, quantitative metrics, or cited evidence types.",
+          "chunk_ids": []
+        },
+        {
+          "title": "商业模式",
+          "node_id": "0007",
+          "page_index": 4,
+          "start_index": 4,
+          "end_index": 4,
+          "summary": "This section identifies the dominant business model as \"card drawing\" (alternatively termed \"扭蛋\" or \"Gacha\") and explains its underlying mechanism by linking it to the experimental principles of the \"Skinner box.\" It can answer retrieval queries regarding: the primary monetization strategy discussed, synonymous terms for gacha mechanics, and the behavioral psychology framework used to explain its design logic. The content consists of conceptual claims and theoretical evidence (psychological analogy). It does not contain specific dates, quantitative metrics, operational procedures, tables, or figures.",
+          "chunk_ids": []
+        },
+        {
+          "title": "玩家群体",
+          "node_id": "0008",
+          "page_index": 4,
+          "start_index": 4,
+          "end_index": 5,
+          "summary": "This section addresses questions regarding player segmentation and product classification in the ACG mobile gaming sector. It covers:\n- **Topics & Entities:** Player demographics (“core ACG players” vs. “casual/broad ACG players”) and “ACG mobile games.”\n- **Definitions & Claims:** Distinguishes player types based on affinity for ACG culture and willingness to invest time and money. Clarifies that while the report’s ACG mobile games align with these traits, meeting them alone does not automatically classify a product as such. Provides an alternative report-applicable definition: mobile games primarily targeting core ACG players qualify as ACG mobile games.\n- **Dates:** 2025 (report copyright/context year).\n- **Procedures, Tables, Figures, Metrics, Evidence Types:** Not covered in this section.",
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "中国移动游戏市场主要二次元移动游戏产品汇总",
+      "node_id": "0009",
+      "page_index": 5,
+      "start_index": 5,
+      "end_index": 6,
+      "summary": "This section serves as a reference catalog designed to answer the following retrieval queries:\n- **What are the major ACG (anime-style) mobile games in the Chinese market?** Provides a comprehensive list of ~100 titles, including 原神, 崩坏：星穹铁道, 明日方舟, 恋与深空, 阴阳师, 幻塔, 鸣潮, and 绝区零.\n- **Is the list ranked or based on performance metrics?** Explicitly claims the order is unranked (\"以下排名不分先后\") and contains no quantitative metrics, tables, or figures.\n- **What is the source and evidence type?** Compiled from independent research by DianDian Data (点点数据), functioning as a qualitative market inventory.\n- **What is the publication timeframe?** Features a 2025 copyright, indicating coverage of the market landscape up to the 2024–2025 period.\n- **Are there procedural or analytical details included?** No procedures, definitions, or analytical frameworks are provided; the section is strictly a textual enumeration of product names for competitor tracking, genre classification, and market mapping.",
+      "chunk_ids": []
+    },
+    {
+      "title": "中国二次元移动游戏市场收入规模",
+      "node_id": "0010",
+      "page_index": 6,
+      "start_index": 6,
+      "end_index": 7,
+      "summary": "This section enables retrieval of answers to the following categories of questions:\n\n- **Topics & Claims:** What are the current revenue trends and market dynamics in China's ACG (二次元) mobile game sector? Claims include a clear YoY revenue decline that intensified in 2025, driven by player fatigue from formulaic game design/commercialization and a partial consumption shift toward the \"merch/goods economy\" (谷子经济).\n- **Metrics & Data (Tables/Figures):** What are the specific quarterly revenue figures and growth rates for the market? Provides a table/chart of revenue (in RMB billions) and QoQ growth rates from 2024Q1 to 2025Q3: 2024Q1 (40.7, -0.88%), Q2 (40.4, -11.63%), Q3 (35.7, 11.35%), Q4 (39.7, -15.21%); 2025Q1 (33.7, 16.44%), Q2 (39.2, 1.25%), Q3 (39.7). Notes that the 2025Q3 figure is App Store-only.\n- **Definitions & Scope:** How are key market terms defined for this report? \"Chinese mobile game market\" includes only mainland China mobile releases, excluding PC/console/other platforms (counts only mobile version data). \"Revenue scale\" covers total user consumption, explicitly excluding ad monetization and third-party top-ups. This standard applies to all subsequent report statistics.\n- **Entities & Dates:** Which organizations, products, and timeframes are referenced? Entities: 点点数据 (DianDian Data), 《二重螺旋》 (game title), 谷子经济 (merch economy). Dates: 2024Q1–2025Q3, October 2024 (DianDian global report release), late October (《二重螺旋》 launch).\n- **Procedures & Strategic Shifts:** How are developers adapting to market contraction? Details a strategic shift away from traditional gacha monetization toward pure avatar/cosmetic purchasing models, exemplified by 《二重螺旋》's commercialization approach.\n- **Evidence & Sources:** What data sources and methodologies support these fi...",
+      "chunk_ids": []
+    },
+    {
+      "title": "中国二次元移动游戏市场下载量变化趋势",
+      "node_id": "0011",
+      "page_index": 7,
+      "start_index": 7,
+      "end_index": 8,
+      "summary": "This section provides retrieval-ready information on the following aspects:\n- **Topics:** Quarterly download volume trends in China’s ACG (二次元) mobile game market, the correlation between download fluctuations and new game release cycles, and the strategic shift in market competition focus.\n- **Entities:** Key titles by quarter: 《恋与深空》(2024Q1), 《鸣潮》(2024Q2), 《绝区零》(2024Q3), 《宝可梦大集结》&《航海王：壮志雄心》(2024Q4), 《永远的蔚蓝星球》&《胜利女神：新的希望》(2025Q2). Data provider: 点点数据 (DianDian Data). Platform/Region: Mainland China, App Store.\n- **Dates/Timeframes:** Quarterly periods from 2024Q1 through 2025Q3.\n- **Definitions & Scope:** “Download volume” is defined as the count of unique devices performing a first-time download of a mobile game launched in mainland China. It explicitly excludes PC/console versions, application updates, and repeat downloads on the same device. The charted dataset covers App Store only.\n- **Key Claims:** Download volume exhibits sharp, cyclical fluctuations strongly tied to the launch windows of major new titles. Market competition has transitioned from focusing on art, visuals, and lore to prioritizing gameplay depth/innovation, commercialization cost-effectiveness, and long-term content supply reliability.\n- **Metrics & Data:** App Store quarterly downloads (in 10k units) and quarter-over-quarter growth rates: 2024Q1 (1933.9, +0.93%), 2024Q2 (1951.9, +3.41%), 2024Q3 (2018.6, -0.24%), 2024Q4 (2013.8, -33.85%), 2025Q1 (1332.1, +39.26%), 2025Q2 (1855.1, -19.81%), 2025Q3 (1487.6).\n- **Evidence & Sources:** Statistical outputs from DianDian Data’s proprietary model, cross-referenced with corporate financial reports and expert interviews. A methodological note indicates potential data adjustments in future 2025 reports.",
+      "chunk_ids": []
+    },
+    {
+      "title": "中国二次元移动游戏收入排名变化",
+      "node_id": "0012",
+      "page_index": 8,
+      "start_index": 8,
+      "end_index": 9,
+      "summary": "**可回答的检索问题与核心要素：**\n- **主题/趋势：** 中国二次元移动游戏收入排名演变、市场竞争梯队变化、玩法类型对排名的影响、行业商业化策略现状。\n- **关键实体：** 游戏产品（《恋与深空》《火影忍者》《绝区零》《崩坏：星穹铁道》《原神》《光与夜之恋》《阴阳师》《明日方舟》《鸣潮》《世界之外》《如鸢》《航海王：壮志雄心》《永远的蔚蓝星球》《命运-冠位指定》）、平台（App Store）、数据机构（点点数据）。\n- **时间范围：** 2021–2023年（市场高光期）、2024Q3至2025Q3（季度排名统计期）。\n- **核心主张/结论：** \n  1. 2025年收入榜TOP4产品玩法截然不同（涵盖格斗、卡牌、动作、回合制），表明二游市场竞争重心已转向玩法突破。\n  2. 老产品表现下滑，当前市场仅质量顶尖产品具备存活空间，商业化策略趋于固化。\n  3. 2025Q3二游收入TOP1（《火影忍者》）在全部游戏畅销榜仅位列第9，头部产品统治力较2021–2023年显著减弱。\n- **数据指标/表格：** 2024Q3–2025Q3中国二次元移动游戏App Store收入TOP1–TOP10季度排名明细表（含各季度具体游戏名称及顺位）。\n- **证据类型：** 季度流水排名数据表、市场趋势定性分析、第三方自主研究数据（点点数据）。",
+      "chunk_ids": []
+    },
+    {
+      "title": "点点数据-二次元移动游戏体验评测体系",
+      "node_id": "0013",
+      "page_index": 9,
+      "start_index": 9,
+      "end_index": 10,
+      "summary": "This section introduces the \"DianDian Data ACG Mobile Game Experience Evaluation System\" and supports retrieval for the following:\n- **Topic & Entity:** What proprietary framework does DianDian Data use to assess ACG (二次元) mobile game experiences?\n- **Metrics & Structure:** How is the evaluation model organized? (Answer: Constructed from 5 major dimensions and 18 sub-indicators.)\n- **Source & Date:** Who developed the model and when was it published? (Answer: Independently researched and drawn by DianDian Data; © 2025.)\n- **Content Type & Location:** What format presents the methodology? (Answer: A proprietary visual model/framework diagram spanning pages 9-10.)\n- **Claims & Evidence:** What is the core assertion of the system? (Answer: Mobile game experience can be systematically evaluated using this specific dimensional and indicator-based architecture, backed by DianDian's internal research.)\nThe section serves as a foundational reference for the structural components, proprietary metrics, and methodological claims of DianDian's game experience assessment framework.",
+      "chunk_ids": []
+    },
+    {
+      "title": "点点数据-二次元移动游戏体验评测方法与原则",
+      "node_id": "0014",
+      "page_index": 10,
+      "start_index": 10,
+      "end_index": 11,
+      "summary": "**Topics:** Methodology and core principles for evaluating ACG (二次元) mobile game experiences; construction of a scientific evaluation framework.\n**Entities:** 点点数据 (DianDian Data), App Store, Google Play, TapTap, 好游快爆, DianDian Data Game Expert Team.\n**Dates:** 2025 (copyright/publication year).\n**Definitions/Concepts:** \"Data-User-Expert\" triad evaluation system; six core evaluation principles: User Immersion (代入感与角色/世界关怀), Core Drive (日常登录的实质性目标与动力), Fair Perception & Value (付费尊重感与物有所值), Emotional Connection & Community (社群归属感), Technical Performance & Adaptation (多设备美术与技术优化), Honest Operation & Long-termism (研发运营诚意与长期健康运营).\n**Procedures/Methods:** Three-component assessment workflow: (1) Big data analysis contextualized by product lifecycle stage; (2) Aggregation of user ratings, reviews, and social/forum feedback from major app stores and gaming platforms; (3) Expert panel evaluation across graphics, gameplay, systems, events, UI, and innovation. Guided by principles of comprehensiveness, value-orientation, objective quantifiability, and emotional experience.\n**Claims:** The framework is user-centric, scientifically systematic, and treats product innovation and gameplay experience as foundational. It ensures evaluation rigor by combining quantitative data, crowd-sourced feedback, and expert qualitative judgment.\n**Metrics & Evidence Types:** Quantitative metrics: revenue, download volume, active users, retention rates, usage distribution, user demographics. Qualitative evidence: platform ratings, user comments, social media/forum discourse, expert multi-dimensional assessments.\n**Figures/Tables:** Structured framework diagram/list outlining the three evaluation components and six evaluation principles. Source attributed to DianDian Data independent research and des...",
+      "chunk_ids": []
+    },
+    {
+      "title": "02典型二次元移动游戏体验测评",
+      "node_id": "0015",
+      "page_index": 11,
+      "start_index": 11,
+      "end_index": 12,
+      "summary": "This parent section (pages 11–12) establishes a 2025 DianDian Data evaluation framework for ten typical anime-style mobile games, asserting that no single title dominates all assessment dimensions and identifying graphics and gameplay as the primary evaluation criteria. **Topics** span market performance, user demographics, core gameplay mechanics, monetization strategies, cross-platform optimization, and community dynamics across **Honkai: Star Rail**, **Genshin Impact**, **Arknights**, **Zenless Zone Zero**, **Blue Archive**, **Goddess of Victory: NIKKE**, **Love and Deepspace**, **Onmyoji**, **Wuthering Waves**, and **Azur Lane**. **Entities** include the reviewed titles, developers/publishers (e.g., miHoYo, Shift Up), platforms (iOS, Android, PC, Console, Steam), and the research source DianDian Data (©2025). **Dates** consistently reference 2025 tracking windows (January–October for AppStore revenue and iOS MAU; Q1–Q3 for retention metrics), alongside game-specific milestones (e.g., Genshin Impact’s ~2020 launch, Onmyoji’s ~9-year operation, Azur Lane’s 8th anniversary). **Metrics** feature quantitative market data (revenue scales, MAU trends, next-day retention ~21.8%–63.2%, monthly retention ~3.4%–21.4%, gender ratios, user interest categories) and a standardized weighted scoring rubric (Visual/Audio 25%, Core Combat 30%, Content/Systems 20%, Operations/Community 15%, Performance/Device 10%), producing comprehensive scores from 84.2 to 87.8/100. **Claims** highlight industry benchmarks in technical optimization and artistic presentation, the retention impact of stable update cadences and F2P-friendly economies, and recurring pain points including late-game repetition, optimization bottlenecks, gacha fatigue, and localization adjustments. **Definitions and Proced...",
+      "nodes": [
+        {
+          "title": "典型二次元移动游戏综合评分对比",
+          "node_id": "0016",
+          "page_index": 12,
+          "start_index": 12,
+          "end_index": 13,
+          "summary": "This section supports retrieval for questions regarding:\n- **Topics/Claims:** Whether any anime-style mobile game dominates all evaluation dimensions (answer: no), and which criteria are most critical for assessment (answer: graphics and gameplay).\n- **Entities/Dates:** DianDian Data as the research and visualization source, and 2025 as the publication/copyright year.\n- **Definitions/Procedures:** How \"typical products\" are defined and selected (curated by DianDian's expert team based on market popularity and player attention), and the methodological scope (explicitly states the rankings do not represent the overall market TOP 10).\n- **Metrics/Evidence:** Multi-dimensional comprehensive scoring metrics, with specific emphasis on graphics and gameplay as primary indicators. Evidence type is independent industry research and expert curation.\n- **Tables/Figures:** A comparative chart/table visualizing the comprehensive scores of selected anime-style mobile games, located on pages 12-13.",
+          "chunk_ids": []
+        },
+        {
+          "title": "《崩坏：星穹铁道》基础数据",
+          "node_id": "0017",
+          "page_index": 13,
+          "start_index": 13,
+          "end_index": 14,
+          "summary": "This section provides 2025 performance data and design analysis for 《崩坏：星穹铁道》(Honkai: Star Rail), enabling retrieval for the following:\n- **Topics & Entities:** Game revenue, user activity, retention, demographics, and core gameplay mechanics for Honkai: Star Rail (miHoYo) on iOS/AppStore.\n- **Dates & Timelines:** Launch date (April 2023), data reporting periods (Jan–Oct 2025 for revenue, Jan–Sep 2025 for MAU, Q1–Q3 2025 for retention), and 2025 major version releases (April v3.2, July v3.4).\n- **Metrics & Figures:** AppStore monthly revenue (亿元), iOS MAU (万人), average next-day retention (~48.9%), average monthly retention (~17.6%), male user ratio (~67.9%), and user interest categories. Includes trend charts for revenue and MAU.\n- **Claims & Definitions:** Strategic depth in turn-based combat is defined by “action order” and “weakness break” mechanics; high replayability is attributed to Roguelite integration; consistent update cadence since 2023 sustains vitality; 2025 key versions drove strong financial results.\n- **Evidence Types:** Quantitative trend charts, retention/demographic statistics, and qualitative analysis of production quality and gameplay design, sourced from DianDian Data research.",
+          "chunk_ids": []
+        },
+        {
+          "title": "《崩坏：星穹铁道》-点点数据测评分析",
+          "node_id": "0018",
+          "page_index": 14,
+          "start_index": 14,
+          "end_index": 14,
+          "summary": "This parent section presents a structured evaluation and analysis of the game *Honkai: Star Rail* (《崩坏：星穹铁道》) by DianDian Data, located on page 14. It is organized into five thematic subsections: Visual and Audio Performance, Core Combat and Gameplay Experience, Game Content and Systems, Operations/Commercialization/Community, and Performance and Device Adaptation. While the first four subsections currently contain only headings without substantive text, the final subsection provides a comprehensive assessment framework. The document covers topics including turn-based RPG mechanics, audiovisual presentation, progression systems, gacha monetization, cross-platform performance, and market reception. Key entities mentioned include the Honkai IP, in-game locations (Belobog, Xianzhou Luofu), supported platforms (iOS, Android, PC, Console), in-game currency (Stellar Jade), and the reviewer/publisher (DianDian). The analysis is dated 2025. Quantitative metrics include an overall rating of 87.8/100, with category weights and individual scores: Visuals/Audio (25%, 90), Combat/Gameplay (30%, 85), Content/Systems (20%, 87), Operations/Community (15%, 86), and Performance/Device (10%, 92). Gacha system metrics specify a 0.6% base drop rate and a 160-pull hard guarantee. Claims and features highlighted encompass high-fidelity modeling, dynamic cutscenes, turn-based strategy with weakness-break and shared skill point mechanics, randomized equipment builds, streamlined UI/daily tasks, a gacha model offset by generous free currency distribution, and stable cross-platform performance with optimized thermal management. Evidence types consist of structured scoring rubrics, weighted category evaluations, and descriptive feature analyses. No tables, figures, definitions, or step-by-step pr...",
+          "nodes": [
+            {
+              "title": "画面与音效表现",
+              "node_id": "0019",
+              "page_index": 14,
+              "start_index": 14,
+              "end_index": 14,
+              "summary": "This section contains only the heading \"画面与音效表现\" (Visual and Audio Performance) with no accompanying text, data, or references. Consequently, it cannot answer specific retrieval questions regarding entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. It solely indicates that the broader document addresses visual and audio presentation topics, but detailed queries on this subject must be directed to other sections containing substantive content.",
+              "chunk_ids": []
+            },
+            {
+              "title": "核心战斗与玩法体验",
+              "node_id": "0020",
+              "page_index": 14,
+              "start_index": 14,
+              "end_index": 14,
+              "summary": "This section contains only the heading “核心战斗与玩法体验” (Core Combat and Gameplay Experience) on page 14. It provides no substantive content, so it cannot answer questions regarding specific gameplay topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. It can only answer structural or navigational questions, such as: “Does the document contain a section dedicated to core combat and gameplay experience?” and “On which page is this section located?” No detailed information, mechanics, or supporting evidence are present in this excerpt.",
+              "chunk_ids": []
+            },
+            {
+              "title": "游戏内容与系统",
+              "node_id": "0021",
+              "page_index": 14,
+              "start_index": 14,
+              "end_index": 14,
+              "summary": "This section consists solely of the heading “游戏内容与系统” (Game Content and Systems) and contains no substantive text, data, or references. It can only answer the question of what general topic the section covers. It does not contain specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types, and therefore cannot answer detailed retrieval questions on those aspects. Any specific information regarding game content or system mechanics would be expected in subsequent or related sections.",
+              "chunk_ids": []
+            },
+            {
+              "title": "运营、商业化与社区",
+              "node_id": "0022",
+              "page_index": 14,
+              "start_index": 14,
+              "end_index": 14,
+              "summary": "This section consists solely of the heading \"运营、商业化与社区\" (Operations, Commercialization, and Community). It signals that the associated document content covers operational management, monetization/commercialization strategies, and community engagement. The provided excerpt contains no specific details, entities, dates, definitions, procedures, claims, metrics, tables, figures, or evidence. Consequently, it can only answer structural or navigational queries about the document's thematic organization, indicating where detailed information on these three topics is located, but cannot answer substantive factual or analytical questions based on this text alone.",
+              "chunk_ids": []
+            },
+            {
+              "title": "性能与设备适配",
+              "node_id": "0023",
+              "page_index": 14,
+              "start_index": 14,
+              "end_index": 15,
+              "summary": "This section functions as a structured game evaluation that can answer retrieval queries regarding:\n- **Topics:** Comprehensive assessment of a turn-based card RPG, covering audiovisual quality, combat mechanics, content systems, monetization strategy, device performance, and overall market/player reception.\n- **Entities:** Game IP/universe (“崩坏”IP, locations: 贝洛伯格, 仙舟「罗浮」), supported platforms (iOS, Android, PC, 主机), in-game currency (星琼), reviewer/publisher (DianDian).\n- **Dates:** 2025 (document copyright/publication year).\n- **Metrics & Scores:** Overall rating: 87.8. Category weights: 画面与音效表现 (25%), 核心战斗与玩法体验 (30%), 游戏内容与系统 (20%), 运营、商业化与社区 (15%), 性能与设备适配 (10%). Individual scores: 90, 85, 87, 86, 92 (/100). Gacha metrics: 0.6% base probability, 160-pull hard guarantee.\n- **Claims & Features:** \n  - *Visuals/Audio:* High-fidelity modeling, diverse environmental aesthetics, chapter-based animations, real-time cutscenes, and dynamic expression bubbles enhance immersion.\n  - *Combat:* Turn-based strategy utilizing action sequences, shared skill points, weakness-break mechanics, and character skill synergy.\n  - *Content/Systems:* Cosmic-scale worldview expansion, clear progression paths, randomized equipment attributes for build diversity, streamlined UI, time-efficient daily tasks, and station-free material synthesis.\n  - *Monetization:* Gacha-driven with separate character/weapon banners; higher pricing tier mitigated by abundant free currency distribution via updates/events, supporting monthly card viability.\n  - *Performance:* Full cross-platform data sync, stable frame rates on mainstream hardware, optimized thermal and power management relative to visual output.\n  - *Overall:* Industry-leading presentation, strategic depth enhanced by Roguelite modes, consistent...",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "《原神》基础数据",
+          "node_id": "0024",
+          "page_index": 15,
+          "start_index": 15,
+          "end_index": 16,
+          "summary": "**Topics:** Genshin Impact (《原神》) market performance, user demographics & retention, core gameplay & artistic design, cross-platform technology, industry influence on ACG/mobile games.\n\n**Entities:** 《原神》(Genshin Impact), 点点数据 (DianDian Data), AppStore, iOS, PC, Consoles.\n\n**Dates/Timeframes:** 2025 (Jan–Oct for revenue/MAU tracking; Q1–Q3 for retention metrics); game launched 5+ years prior (~2020); data copyright 2025.\n\n**Metrics & Figures:**\n- AppStore monthly revenue (Jan–Oct 2025, scale: 0.0–2.5 亿元 RMB)\n- iOS monthly active users (Jan–Oct 2025, scale: 0–600 万人)\n- 2025 Q1–Q3 average next-day retention: ~56.5%\n- 2025 Q1–Q3 average monthly retention: ~21.4%\n- Male user proportion: ~68.5%\n- Top user interest categories: Anime, basic education, movies, higher education, web novels, TV dramas\n\n**Claims & Insights:**\n- Genshin Impact has profoundly influenced contemporary ACG/mobile game development through top-tier audiovisuals, gameplay design, and technical optimization.\n- Visuals and music remain industry-leading after 5+ years, featuring a highly recognizable art system that blends surrealism and fantasy across distinct regional themes.\n- Gameplay depth stems from open-world exploration, an elemental reaction-based skill system, and mature combat mechanics.\n- Cross-platform account/data sync (mobile, PC, console) is backed by strong hardware optimization, positioning the title as a trendsetter for mobile cross-platform gaming.\n\n**Evidence & Source Types:** Self-researched charts/figures by DianDian Data (monthly revenue line/bar chart, MAU trend chart, retention metrics, demographic/interest breakdowns), analytical descriptive text.\n\n**Retrieval Questions Answered:**\n- What were Genshin Impact's AppStore revenue and iOS MAU trends from Jan–Oct 2025?\n- What are the g...",
+          "chunk_ids": []
+        },
+        {
+          "title": "《原神》-点点数据测评分析",
+          "node_id": "0025",
+          "page_index": 16,
+          "start_index": 16,
+          "end_index": 16,
+          "summary": "This parent section presents a structured review and analysis of *Genshin Impact* by DianDian Data (©2025), organized across five thematic sub-sections: Visual and Audio Performance, Core Combat and Gameplay Experience, Game Content and Systems, Operations/Commercialization & Community, and Performance and Device Adaptation. While the first four sub-sections function strictly as structural headings without accompanying body text, the section collectively delivers a comprehensive evaluative framework. **Topics** covered include open-world anime-style mobile game benchmarking, cross-platform optimization, combat mechanics, content pacing, monetization strategy, and community dynamics. **Entities** referenced include in-game regions (Mondstadt, Liyue, Natlan), core gameplay systems (elemental reactions, Spiral Abyss, Serenitea Pot, gacha mechanics, primogems, character progression/random stat rolls), and the reviewer DianDian. The **date** 2025 is noted as the publication/copyright year. A contextual **definition** is provided for \"长草期\" (content drought period), described as the post-update phase characterized by high daily gameplay repetition. No explicit **procedures**, **tables**, or **figures** are detailed in the provided excerpt. **Claims and evaluations** identify strengths such as industry-leading visuals/audio with cultural integration, mature strategic combat, deep character progression, stable update cadence, excellent multi-platform compatibility, and active fan creation, while noting challenges including power creep, complex boss mechanics, repetitive gameplay during drought periods, unskippable text-heavy quests, expanding installation sizes, and community polarization. Monetization is assessed as having shifted from an industry benchmark to a mid-tier prici...",
+          "nodes": [
+            {
+              "title": "画面与音效表现",
+              "node_id": "0026",
+              "page_index": 16,
+              "start_index": 16,
+              "end_index": 16,
+              "summary": "This section is titled \"画面与音效表现\" (Visual and Audio Performance) and functions solely as a topic heading. It can only answer high-level navigational questions regarding the section's focus on graphical and sound presentation. The provided text contains no body content, so it does not provide specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. For retrieval purposes, this node should be indexed strictly as a structural marker for visual/audio evaluation topics rather than a source of factual or analytical content.",
+              "chunk_ids": []
+            },
+            {
+              "title": "核心战斗与玩法体验",
+              "node_id": "0027",
+              "page_index": 16,
+              "start_index": 16,
+              "end_index": 16,
+              "summary": "This section consists solely of the heading \"核心战斗与玩法体验\" (Core Combat and Gameplay Experience) on page 16. It contains no substantive text, entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. Consequently, it can only answer high-level structural or navigational questions, such as whether the document addresses core combat and gameplay experience, or where that topic is introduced. It cannot answer detailed questions regarding specific mechanics, design claims, quantitative data, or procedural steps due to the complete absence of supporting content.",
+              "chunk_ids": []
+            },
+            {
+              "title": "游戏内容与系统",
+              "node_id": "0028",
+              "page_index": 16,
+              "start_index": 16,
+              "end_index": 16,
+              "summary": "This section contains only the heading \"游戏内容与系统\" (Game Content and Systems) on page 16, with no accompanying body text, data, or visual elements. It can only answer structural or navigational questions, such as identifying the section title on page 16 or confirming the document's organizational structure includes a dedicated segment for game content and systems. It does not contain substantive information to answer questions regarding specific topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.",
+              "chunk_ids": []
+            },
+            {
+              "title": "运营、商业化与社区",
+              "node_id": "0029",
+              "page_index": 16,
+              "start_index": 16,
+              "end_index": 16,
+              "summary": "This section consists solely of the heading \"运营、商业化与社区\" (Operations, Commercialization & Community). It indicates a thematic scope covering operational management, monetization/commercialization models, and community engagement. However, the provided excerpt contains no substantive content, definitions, procedures, dates, entities, metrics, claims, tables, figures, or evidence. Consequently, it cannot currently answer specific factual, procedural, or analytical queries. It functions strictly as a structural marker, indicating that associated or subsequent content would address questions related to operational workflows, revenue generation strategies, and community governance or engagement practices, pending further text.",
+              "chunk_ids": []
+            },
+            {
+              "title": "性能与设备适配",
+              "node_id": "0030",
+              "page_index": 16,
+              "start_index": 16,
+              "end_index": 17,
+              "summary": "**Topics:** Game performance evaluation, cross-platform optimization, combat mechanics, content pacing, monetization strategy, community dynamics, visual/audio design, open-world & anime-style mobile game benchmarks.\n\n**Entities & References:** In-game regions (Mondstadt, Liyue, Natlan), core systems (elemental reactions, Spiral Abyss/深渊, Serenitea Pot/尘歌壶, gacha mechanics, primogems/原石, character progression/random stat rolls), publisher/reviewer (DianDian, ©2025).\n\n**Dates:** 2025 (publication/copyright year).\n\n**Definitions:** Contextually defines \"长草期\" (content drought period) as the post-update phase characterized by high daily gameplay repetition.\n\n**Procedures:** None explicitly detailed.\n\n**Claims & Evaluations:** \n- *Strengths:* Industry-leading visuals/audio with distinct regional aesthetics and cultural integration; mature, strategy-rich elemental combat; industry-benchmark character progression with deep random stat systems; stable, high-quality update cadence; excellent multi-platform compatibility (high-end PC to mid-range mobile); active community with prosperous fan creation.\n- *Weaknesses/Challenges:* Power creep and overly complex boss mechanics hinder player understanding; rapid content consumption leads to repetitive gameplay during drought periods; unskippable, text-heavy quest pacing disrupts narrative flow; continuously expanding installation file size; noticeable player polarization within the community.\n- *Monetization:* Gacha pricing has shifted from an industry benchmark to a mid-tier level; consistent play yields sufficient premium currency for acquiring key characters.\n\n**Metrics & Scoring Data:** Category weights (Visual/Audio 25%, Combat 30%, Content/Systems 20%, Ops/Monetization/Community 15%, Performance/Device 10%); individual category...",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "《明日方舟》基础数据",
+          "node_id": "0031",
+          "page_index": 17,
+          "start_index": 17,
+          "end_index": 18,
+          "summary": "This section provides market performance data and qualitative analysis for the mobile game *Arknights* (《明日方舟》). It can answer retrieval queries regarding:\n- **Topics & Entities:** *Arknights* core features (tower defense, strategy depth, crisis contract, integrated strategy modes), audio-visual elements (\"音律联觉\" concerts, character art/skins), user demographics, and research source (DianDian Data).\n- **Dates & Timeframes:** 2025 (January–October for revenue/MAU tracking, Q1–Q3 for retention analysis); notes the game has been operational for over 7 years.\n- **Metrics & Data Points:** AppStore monthly revenue (0.0–1.2 billion RMB scale), iOS monthly active users (0–1.6 million scale), 2025 Q1–Q3 average next-day retention (~50.6%), average monthly retention (~15.3%), male user proportion (~79.6%), and top user interest categories (anime, movies, web novels, basic/higher education, TV dramas).\n- **Claims & Analysis:** Asserts that strong gameplay and art/music design compensate for known flaws. Identifies specific pain points: cryptic main storyline (\"谜语人\"), weak narrative presentation, low upgrade material drop rates, and time-consuming progression despite auto-battle (\"代理\") features.\n- **Figures/Tables & Evidence Types:** Contains charts for 2025 monthly revenue, iOS MAU, retention rates, gender distribution, and interest preferences. Evidence is based on DianDian Data's proprietary market research and user analytics.",
+          "chunk_ids": []
+        },
+        {
+          "title": "《明日方舟》-点点数据测评分析",
+          "node_id": "0032",
+          "page_index": 18,
+          "start_index": 18,
+          "end_index": 18,
+          "summary": "This parent section presents a structured evaluation framework for the mobile game *Arknights* (《明日方舟》), organized across five assessment dimensions: visual and audio performance, core combat and gameplay experience, game content and systems, operations/commercialization/community, and performance and device adaptation. While the first four dimensions function primarily as structural headings, the section collectively delivers a comprehensive evaluation score of 86.8/100, with category weights assigned as Core Combat & Gameplay (30%), Graphics & Sound (25%), Game Content & Systems (20%), Operations/Commercialization/Community (15%), and Performance & Device Adaptation (10%), alongside discrete category scores of 85, 90, 82, 85, and 88 out of 100. Topics and entities covered include tower defense mechanics (deployment positions, orientation, range, attack types), level design, character progression, gacha systems, monthly card monetization, official compensation policies, in-game social features, player communities, secondary culture, and hardware performance. Key definitions include “集成战略” (Integrated Strategy) as a roguelike gameplay mode and “音律联觉” (Ambience Synesthesia) as an offline music concert series inaugurated in 2021. Claims, supported by player consensus, market comparisons, and quantitative scoring, note a high-quality but occasionally inconsistent art style, top-tier audio design, gameplay evolution from early monotony to improved engagement via roguelike integration, extended but low-engagement character grinding, favorable gacha rates with low off-banner frequency, sufficient monthly card value for roster completion, industry-benchmark official compensation, and a highly active external community contrasted with weak in-game social systems. The section i...",
+          "nodes": [
+            {
+              "title": "画面与音效表现",
+              "node_id": "0033",
+              "page_index": 18,
+              "start_index": 18,
+              "end_index": 18,
+              "summary": "This section addresses the topic of visual and audio performance. It can answer questions regarding graphical quality, sound design, and overall audio-visual presentation. No specific entities, dates, definitions, procedures, claims, metrics, tables, figures, or evidence types are detailed in the provided text.",
+              "chunk_ids": []
+            },
+            {
+              "title": "核心战斗与玩法体验",
+              "node_id": "0034",
+              "page_index": 18,
+              "start_index": 18,
+              "end_index": 18,
+              "summary": "This section contains only the heading \"核心战斗与玩法体验\" (Core Combat and Gameplay Experience) on page 18. It can answer only high-level structural or navigational questions regarding document organization, specifically identifying the location where core combat mechanics and gameplay experience are introduced. It does not contain any substantive body text, entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types, and therefore cannot answer detailed factual, procedural, or analytical questions.",
+              "chunk_ids": []
+            },
+            {
+              "title": "游戏内容与系统",
+              "node_id": "0035",
+              "page_index": 18,
+              "start_index": 18,
+              "end_index": 18,
+              "summary": "This section functions solely as a heading titled “游戏内容与系统” (Game Content and Systems). It signals that the document covers topics related to gameplay features, mechanics, and system architecture. However, the provided text contains no substantive content, definitions, procedures, metrics, specific entities, dates, claims, tables, figures, or evidence types. It can only answer high-level navigational or structural questions regarding the location and general subject matter of game-related content within the document.",
+              "chunk_ids": []
+            },
+            {
+              "title": "运营、商业化与社区",
+              "node_id": "0036",
+              "page_index": 18,
+              "start_index": 18,
+              "end_index": 18,
+              "summary": "This section consists solely of the heading \"运营、商业化与社区\" (Operations, Commercialization & Community) on page 18 and contains no substantive text, data, or references. It does not provide definitions, procedures, metrics, entities, dates, claims, tables, figures, or evidence. Consequently, it cannot answer specific retrieval questions but serves only as a structural indicator that the broader document addresses operational management, commercialization strategies, and community development topics in adjacent or subsequent content.",
+              "chunk_ids": []
+            },
+            {
+              "title": "性能与设备适配",
+              "node_id": "0037",
+              "page_index": 18,
+              "start_index": 18,
+              "end_index": 19,
+              "summary": "This section provides a structured evaluation of a 2D mobile tower defense game, designed to answer retrieval queries across the following dimensions:\n- **Metrics & Scoring:** Comprehensive score of 86.8/100. Category weights: Core Combat & Gameplay (30%), Graphics & Sound (25%), Game Content & Systems (20%), Operations/Commercialization/Community (15%), Performance & Device Adaptation (10%). Five discrete scores are listed at the top: 85, 90, 82, 85, and 88 out of 100.\n- **Topics & Entities:** Game evaluation framework, tower defense mechanics (deployment positions, orientation, range, attack types), level design, character progression, gacha system, monthly card monetization, official compensation policy, in-game social system, player community, secondary culture, and hardware performance.\n- **Definitions & Concepts:** “集成战略” is defined as a roguelike gameplay mode; “音律联觉” is identified as an offline music concert series.\n- **Claims & Evidence:** Art style is high-quality but criticized for inconsistency (mitigated by faction grouping); music is top-tier; early gameplay was monotonous but improved by roguelike integration; character grinding extends playtime but lacks engagement; gacha rates are perceived as high with low off-banner frequency; monthly cards suffice for near-complete rosters; official compensation is a domestic industry benchmark; community is active but in-game social features are weak. Evidence relies on player consensus, market comparisons, and quantitative scoring.\n- **Dates:** 2021 (inaugural year for the “音律联觉” concert series).\n- **Tables/Figures/Procedures:** Implies a scoring breakdown table or list structure. No step-by-step procedures are described.\nThis section answers questions regarding the game’s evaluation criteria, technical performanc...",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "《绝区零》基础数据",
+          "node_id": "0038",
+          "page_index": 19,
+          "start_index": 19,
+          "end_index": 20,
+          "summary": "This section provides a 2025 market performance and design evaluation of the game 《绝区零》(Zenless Zone Zero), sourced from DianDian Data. It supports retrieval for the following:\n\n- **Metrics & Dates:** Jan–Oct 2025 monthly AppStore revenue (0–1.2 billion RMB scale) and iOS MAU (0–700k scale); Q1–Q3 2025 average next-day retention (~24.4%) and monthly retention (~3.4%); male user proportion (~68.1%).\n- **Entities & Platforms:** 《绝区零》, miHoYo, DianDian Data; supported platforms include iOS, Android, PC, and PS5.\n- **User Preferences:** Ranked interest categories: chat/social, audio/video entertainment, productivity, shopping, lifestyle, reading.\n- **Game Mechanics & Procedures:** Combat systems (chain attacks, parrying), \"grid\" exploration gameplay, multi-dimensional progression loops (characters, weapons, drive discs).\n- **Claims & Analysis:** Documented strengths include high production value, \"trendy comic\" audiovisual style, accessible yet deep combat, stable update cadence, and cross-platform capability. Documented challenges include split audience reception on difficulty, insufficient early combat hints, initial pacing complaints for the \"grid\" mode (noted as fully remade later), and progression system fatigue/resource strain.\n- **Evidence Types:** Line charts tracking revenue and MAU trends, retention/demographic metrics, user interest breakdowns, and qualitative market/design analysis.\n- **Retrievable Questions Addressed:** What are the 2025 revenue and active user trends for 《绝区零》? What are its retention rates and user demographics? What are the game's core combat mechanics and platform support? What design strengths and player-reported issues are documented? What data sources and visualizations support these claims?",
+          "chunk_ids": []
+        },
+        {
+          "title": "《绝区零》-点点数据测评分析",
+          "node_id": "0039",
+          "page_index": 20,
+          "start_index": 20,
+          "end_index": 20,
+          "summary": "This parent section (pages 20–21) presents a structured review and analytical evaluation of 《绝区零》 (Zenless Zone Zero) by DianDian Data. It is organized into five subsections: Visual and Audio Performance, Core Combat and Gameplay Experience, Game Content and Systems, Operations/Commercialization/Community, and Performance and Device Compatibility. The first four function as structural headings without substantive text, while the final subsection contains the comprehensive evaluation data applicable to the entire report. \n\nTopics: Game performance optimization, device compatibility, combat mechanics, audio-visual presentation, content systems, monetization models, and community management.\nEntities: Supported platforms (iOS, Android, PC, PS5), developer (miHoYo), in-game setting (\"New Eridu\", \"Hollows\"), and reviewing entity (DianDian Data).\nDates/Timeframes: Developer iteration cycle for criticized gameplay mechanics (\"less than half a year\"), report copyright year (2025).\nDefinitions/Concepts: \"Hollows\" (setting-defining supernatural disaster), \"bullet time\" (combat slow-motion state triggered by dodge/parry), gacha monetization model, and \"grid-based\" gameplay (early criticized mechanic).\nProcedures: Combat input execution (4 primary actions modified by long/short press and QTEs), defensive mechanics (dodge/parry to trigger bullet time), and performance optimization steps (reducing graphics settings on mid/low-end hardware to sustain 30 FPS).\nClaims: Combat is accessible yet offers high skill depth; community reception is polarized due to action-game difficulty barriers; developer actively listens and rapidly patches core gameplay; frame rate stability is reliable across mainstream devices.\nMetrics: Comprehensive score (86.6/100); weighted category scores (Audio-Visu...",
+          "nodes": [
+            {
+              "title": "画面与音效表现",
+              "node_id": "0040",
+              "page_index": 20,
+              "start_index": 20,
+              "end_index": 20,
+              "summary": "This section, titled \"画面与音效表现\" (Visual and Audio Performance) on page 20, contains only the section heading with no accompanying content. It can answer basic structural or navigational questions regarding the document's organization and the presence of a dedicated topic for visual and audio evaluation. It does not contain any specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types, and therefore cannot support retrieval for detailed factual, analytical, or technical queries on this subject.",
+              "chunk_ids": []
+            },
+            {
+              "title": "核心战斗与玩法体验",
+              "node_id": "0041",
+              "page_index": 20,
+              "start_index": 20,
+              "end_index": 20,
+              "summary": "This section consists solely of the heading \"核心战斗与玩法体验\" (Core Combat and Gameplay Experience) with no accompanying descriptive text, data, or visual elements. As provided, it does not contain substantive information to answer specific retrieval questions regarding combat mechanics, gameplay procedures, entities, dates, definitions, metrics, claims, tables, figures, or evidence types. It functions strictly as a structural placeholder indicating that the intended topic covers core combat systems and player experience, but requires additional content to support factual retrieval.",
+              "chunk_ids": []
+            },
+            {
+              "title": "游戏内容与系统",
+              "node_id": "0042",
+              "page_index": 20,
+              "start_index": 20,
+              "end_index": 20,
+              "summary": "This section consists solely of the heading \"游戏内容与系统\" (Game Content and Systems) on page 20. It contains no substantive text, definitions, procedures, metrics, tables, figures, or evidence. Consequently, it can only answer structural or navigational questions, such as identifying the existence, title, and page location of a section dedicated to game content and systems. It does not provide information on specific topics, entities, dates, claims, mechanics, or supporting evidence.",
+              "chunk_ids": []
+            },
+            {
+              "title": "运营、商业化与社区",
+              "node_id": "0043",
+              "page_index": 20,
+              "start_index": 20,
+              "end_index": 20,
+              "summary": "This section functions as a structural heading covering three core topics: operations, commercialization, and community management. It can answer high-level navigational questions about where the document discusses operational workflows, monetization or business models, and user/community engagement strategies. Based on the provided text, it contains no specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. Retrieval systems should treat this node as a topical signpost rather than a source of detailed factual or analytical content.",
+              "chunk_ids": []
+            },
+            {
+              "title": "性能与设备适配",
+              "node_id": "0044",
+              "page_index": 20,
+              "start_index": 20,
+              "end_index": 21,
+              "summary": "This section functions as a structured game evaluation report that can answer retrieval queries regarding:\n- **Topics:** Game performance optimization, device compatibility, combat mechanics, audio-visual presentation, content systems, monetization models, and developer community management.\n- **Entities:** Supported platforms (iOS, Android, PC, PS5), developer (miHoYo), in-game setting (\"New Eridu\", \"Hollows\" supernatural disaster), and reviewing entity (DianDian).\n- **Dates/Timeframes:** Developer iteration cycle for criticized gameplay mechanics (\"less than half a year\"), report copyright year (2025).\n- **Definitions/Concepts:** \"Hollows\" (setting-defining disaster), \"bullet time\" (combat slow-motion state triggered by dodge/parry), gacha monetization model, and \"grid-based\" gameplay (early criticized mechanic).\n- **Procedures:** Combat input execution (4 primary actions modified by long/short press and QTEs), defensive mechanics (dodge/parry to trigger bullet time), and performance optimization steps (reducing graphics settings on mid/low-end hardware to sustain 30 FPS).\n- **Claims:** Combat is accessible yet offers high skill depth; community reception is polarized due to action-game difficulty barriers; developer actively listens and rapidly patches core gameplay; frame rate stability is reliable across mainstream devices.\n- **Metrics:** Comprehensive score (86.6/100); weighted category scores (Audio-Visuals 25%, Core Combat 30%, Content & Systems 20%, Operations & Community 15%, Performance & Device Compatibility 10%); individual category ratings (84/100 to 92/100); target performance metric (30 FPS on low-end devices).\n- **Tables/Figures:** Structured scoring breakdowns and weighted evaluation categories functioning as tabular assessment data.\n- **Evidence Type...",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "《蔚蓝档案》基础数据",
+          "node_id": "0045",
+          "page_index": 21,
+          "start_index": 21,
+          "end_index": 22,
+          "summary": "本节提供《蔚蓝档案》国服2025年运营数据与产品分析，可支持以下维度的检索问答：\n- **可回答的核心问题**：2025年《蔚蓝档案》国服的月度流水与活跃用户趋势如何？玩家留存率、性别比例与兴趣偏好分布是什么？该游戏在美术风格、剧情叙事、运营策略、战斗系统及后期内容方面的优势与短板有哪些？其跨端表现与社区认可度如何量化？\n- **主题与实体**：《蔚蓝档案》（Blue Archive）国服、二次元手游市场、玩家画像、游戏系统设计（美术/叙事/战斗）、运营策略。\n- **时间范围**：2025年全年背景；2025年Q1-Q3（留存统计）；2025年1月至10月（月度流水与MAU追踪）。\n- **指标与图表数据**：AppStore月流水（0-300万元区间折线/柱状图）、iOS月活跃用户数（0-5万人区间折线/柱状图）、2025Q1-Q3平均次日留存率（约63.2%）、平均月留存率（约18.6%）、男性玩家占比（约69.1%）、Steam版本好评率（93%）。\n- **用户兴趣偏好分类**：动漫、电影、基础教育、网络小说、高等教育、文学（图表维度，未提供具体数值）。\n- **核心主张与分析结论**：肯定其赛璐璐美术与“老师-学生”羁绊叙事达“二游T1水准”，具情感共鸣与跨端认可；运营端版本更新稳定且积极响应用户反馈；战斗系统含cost机制但自动推进为主，缺乏操作纵深与战术变化；后期玩法内容消耗快、重复体验明显，需持续注入新内容。\n- **证据类型**：点点数据自主研究绘制的趋势图表、平台公开数据（AppStore/iOS/Steam）、社区评价统计、用户画像分类。\n- **流程与定义**：本节未涉及具体操作流程或专业术语定义。",
+          "chunk_ids": []
+        },
+        {
+          "title": "《蔚蓝档案》-点点数据测评分析",
+          "node_id": "0046",
+          "page_index": 22,
+          "start_index": 22,
+          "end_index": 22,
+          "summary": "This section presents a multi-dimensional review and analysis of 《蔚蓝档案》 (Blue Archive) by DianDian Data, structured across five evaluation domains: Visual & Audio Performance, Core Combat & Gameplay Experience, Game Content & Systems, Operations/Commercialization/Community, and Performance & Device Compatibility. The first four domains appear solely as structural headings without substantive text in this excerpt, while the fifth domain contains the complete analytical framework. **Topics** cover game mechanics, narrative quality, monetization, technical compatibility, and community engagement. **Entities** referenced include Steam, DianDian, Federal Investigation, and the Kivotos teacher. **Metrics** detail a weighted scoring system: Visuals & Audio (88/100, 25%), Core Combat (83/100, 30%), Content & Systems (85/100, 20%), Operations & Monetization (86/100, 15%), and Performance & Compatibility (90/100, 10%), yielding a comprehensive score of 86.2/100, alongside a >90% \"Very Positive\" Steam rating. **Definitions** include the cel-shaded (赛璐璐) art style, a cost-based skill resource system, and dynamic cover mechanics (static vs. destructible/environmental). **Procedures** outline character progression: gacha acquisition → star-up via shards → weapon upgrade via accumulated materials. **Claims** assert the narrative ranks at a \"T1 level\" among anime-style games with generous rewards, though late-game gameplay lacks depth and increases in repetition. **Evidence types** supporting these claims consist of weighted scoring metrics, player community consensus, and verifiable platform data. **Performance & Compatibility** notes highlight low hardware requirements, broad mobile optimization, and an official Steam PC release. **Dates & Metadata** indicate a © 2025 DianDian copyr...",
+          "nodes": [
+            {
+              "title": "画面与音效表现",
+              "node_id": "0047",
+              "page_index": 22,
+              "start_index": 22,
+              "end_index": 22,
+              "summary": "This section consists solely of the heading \"画面与音效表现\" (Visual and Audio Performance) on page 22. It contains no additional text, data, or references. Therefore, it cannot currently answer retrieval questions regarding specific topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types related to visual or audio performance. It serves only as a structural section title.",
+              "chunk_ids": []
+            },
+            {
+              "title": "核心战斗与玩法体验",
+              "node_id": "0048",
+              "page_index": 22,
+              "start_index": 22,
+              "end_index": 22,
+              "summary": "This section, titled \"核心战斗与玩法体验\" (Core Combat and Gameplay Experience) on page 22, functions solely as a structural heading. It can only answer high-level topic questions regarding the document's intended coverage of core combat mechanics and player gameplay experience. The provided text contains no specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.",
+              "chunk_ids": []
+            },
+            {
+              "title": "游戏内容与系统",
+              "node_id": "0049",
+              "page_index": 22,
+              "start_index": 22,
+              "end_index": 22,
+              "summary": "This section contains only the heading \"游戏内容与系统\" (Game Content and Systems) and lacks substantive content. It can only answer high-level topic questions regarding the document's coverage of game mechanics, features, or system architecture. It provides no information to answer questions about specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.",
+              "chunk_ids": []
+            },
+            {
+              "title": "运营、商业化与社区",
+              "node_id": "0050",
+              "page_index": 22,
+              "start_index": 22,
+              "end_index": 22,
+              "summary": "This section functions solely as a thematic heading covering three domains: operations, commercialization, and community. The provided excerpt contains no substantive text, definitions, procedures, metrics, entities, dates, tables, figures, or evidence. Consequently, it cannot currently answer specific factual or procedural questions, but it signals that associated content may address operational workflows, monetization or business models, and community management or engagement strategies.",
+              "chunk_ids": []
+            },
+            {
+              "title": "性能与设备适配",
+              "node_id": "0051",
+              "page_index": 22,
+              "start_index": 22,
+              "end_index": 23,
+              "summary": "This section answers retrieval questions regarding a game's evaluation framework, mechanics, narrative, monetization, and technical compatibility. \n- **Topics & Entities:** Covers a multi-dimensional game review. Mentions entities including Steam, DianDian, Federal Investigation, and Kivotos teacher.\n- **Metrics & Scores:** Provides weighted category scores: Visuals & Audio 88/100 (25%), Core Combat 83/100 (30%), Content & Systems 85/100 (20%), Operations & Monetization 86/100 (15%), Performance & Compatibility 90/100 (10%). Comprehensive score: 86.2/100. Steam positive rating: >90% (\"Very Positive\").\n- **Definitions & Procedures:** Defines cel-shaded (赛璐璐) art style, cost-based skill resource system, and dynamic cover mechanics (static vs. destructible/environmental). Outlines progression procedures: gacha acquisition → character star-up via shards → weapon upgrade via accumulated materials.\n- **Claims & Evidence:** Claims the narrative is \"T1 level\" among anime-style games, rewards are generous, and gameplay lacks late-game depth with rising repetition. Evidence includes weighted scoring metrics, player community consensus (\"二游中的T1水平\", \"备受玩家认可\"), and verifiable platform data (Steam rating).\n- **Performance & Compatibility:** Answers hardware requirement questions (low specs, optimized for most mobile devices) and platform availability (official Steam PC release).\n- **Dates & Metadata:** Copyright © 2025 DianDian. Document spans pages 22-23. No tables or figures are present in the provided text.",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "《胜利女神：新的希望》基础数据",
+          "node_id": "0052",
+          "page_index": 23,
+          "start_index": 23,
+          "end_index": 24,
+          "summary": "**可检索主题与核心问题**\n- 《胜利女神：新的希望》国服2025年的商业化表现、用户规模与留存数据如何？\n- 该游戏的美术风格、核心玩法与叙事设计有何特点？\n- 国服本地化调整及角色养成机制对玩家体验产生哪些具体影响？\n\n**关键实体与时间范围**\n- 实体：《胜利女神：新的希望》（国服）、点点数据（数据源）、金亨泰（前《剑灵》美术总监）、Shift Up（开发商）、玛丽安（剧情角色）、同步器（养成系统）\n- 时间：2025年（数据覆盖5-10月流水、7-10月活跃、Q1-Q3留存）\n\n**核心指标与数据（图表/表格）**\n- 收入规模：AppStore月流水（2025年5-10月，纵轴量级0-6,000万元）\n- 活跃用户：iOS月活跃用户数（2025年7-10月，纵轴量级0-40万人）\n- 留存表现：2025年Q1-Q3平均次日留存约23.3%，平均月留存约3.6%\n- 用户画像：男性玩家占比约81.7%\n- ASO关键词覆盖：二次元、射击、nikke、二次元游戏、胜利女神、抽卡、射击游戏\n\n**核心观点与机制定义**\n- 风格定位：金亨泰主导的紧身服饰/夸张曲线/光线质感美学，结合第三人称背身站桩射击视角，在二游赛道形成差异化风格；玩法设计兼顾战斗保障与角色视觉突出。\n- 叙事评价：末世背景剧情与细腻角色塑造获玩家好评（如开场处决伙伴“玛丽安”桥段）。\n- 本地化影响：国服部分角色立绘与剧情文本调整，对追求原汁原味体验的玩家造成负面影响。\n- 养成规则：多角色横向培养压力较大；“同步器”系统用于大幅缓解该压力；角色等级上限需满破SSR角色方可解锁，对中前期玩家构成挑战。\n\n**证据类型与来源**\n- 数据图表：点点数据自主研究绘制的流水趋势图、MAU趋势图、留存率统计、ASO关键词覆盖图\n- 分析依据：开发商背景溯源、玩法机制拆解、剧情桥段举例、玩家反馈归纳、系统规则说明",
+          "chunk_ids": []
+        },
+        {
+          "title": "《胜利女神：新的希望》-点点数据测评分析",
+          "node_id": "0053",
+          "page_index": 24,
+          "start_index": 24,
+          "end_index": 24,
+          "summary": "This parent section provides a structured review and scoring analysis of 《胜利女神：新的希望》 (Goddess of Victory: NIKKE), organized across five subsections: Visual & Audio Performance, Core Combat & Gameplay Experience, Game Content & Systems, Operations/Commercialization & Community, and Performance & Device Adaptation. The first four subsections function solely as structural placeholders without substantive content. The fifth subsection contains the complete analytical report, enabling retrieval for the following: **Topics** include audiovisual presentation, combat mechanics, progression systems, monetization models, community operations, and cross-platform adaptation. **Entities** feature developer Shift Up, art director Kim Hyung-tae, characters Marian & Doro, core systems (Synchronizer, Burst I/II/III), and copyright holder DianDian. **Dates** reference 2025 (copyright/publication year). **Definitions & Procedures** detail the Burst combat loop (sequentially combining stage skills for team-wide states), progression rules (Synchronizer system reducing horizontal grinding; max levels requiring max-ascended SSRs), and gacha pity mechanics (200-pull event banner guarantee, none for standard). **Claims** assert top-tier dynamic art, balanced auto/manual gameplay, high narrative tension, a mid/small-spender-friendly economy, active community meme integration, and flexible mobile/PC cross-play with orientation switching. **Metrics** present weighted category scores: Visuals & Audio (88/100, 25%), Combat & Gameplay (83/100, 30%), Content & Systems (85/100, 20%), Operations & Community (86/100, 15%), and Performance & Device Adaptation (90/100, 10%), culminating in a Comprehensive Score of 85.5/100. **Evidence Types** consist of qualitative critical analysis, gameplay/system mecha...",
+          "nodes": [
+            {
+              "title": "画面与音效表现",
+              "node_id": "0054",
+              "page_index": 24,
+              "start_index": 24,
+              "end_index": 24,
+              "summary": "This section contains only the heading \"画面与音效表现\" (Visual and Audio Performance) with no accompanying text, data, or references. It identifies the general topic of audiovisual presentation but provides no specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. Consequently, it cannot answer detailed retrieval questions and functions solely as a structural placeholder indicating where content on visual and audio performance would be located.",
+              "chunk_ids": []
+            },
+            {
+              "title": "核心战斗与玩法体验",
+              "node_id": "0055",
+              "page_index": 24,
+              "start_index": 24,
+              "end_index": 24,
+              "summary": "This section, titled \"Core Combat and Gameplay Experience,\" functions as a structural heading indicating coverage of fundamental combat mechanics and player interaction design. It can answer high-level navigational or topical questions regarding the section's intended subject matter. However, the provided text contains no additional content, entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. Consequently, it cannot answer specific or detailed queries about gameplay features, combat systems, design rules, or performance data.",
+              "chunk_ids": []
+            },
+            {
+              "title": "游戏内容与系统",
+              "node_id": "0056",
+              "page_index": 24,
+              "start_index": 24,
+              "end_index": 24,
+              "summary": "This section consists solely of the heading \"游戏内容与系统\" (Game Content and Systems) on page 24. It functions as a structural marker and can only answer navigational questions regarding the document's organization, specifically identifying the location and title of the section dedicated to game mechanics and system architecture. It contains no substantive content, and therefore provides no specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. Any detailed information addressing these categories would be located in the subsequent subsections under this heading.",
+              "chunk_ids": []
+            },
+            {
+              "title": "运营、商业化与社区",
+              "node_id": "0057",
+              "page_index": 24,
+              "start_index": 24,
+              "end_index": 24,
+              "summary": "This section contains only the heading \"运营、商业化与社区\" (Operations, Commercialization, and Community) and provides no substantive content. It cannot answer specific questions regarding definitions, procedures, metrics, dates, entities, claims, tables, figures, or evidence types. It serves solely as a structural marker, indicating that associated or subsequent content would address operational strategies, monetization models, and community engagement practices. Retrieval queries should target this section only for high-level document navigation or topic categorization.",
+              "chunk_ids": []
+            },
+            {
+              "title": "性能与设备适配",
+              "node_id": "0058",
+              "page_index": 24,
+              "start_index": 24,
+              "end_index": 25,
+              "summary": "This section functions as a structured game review and scoring report, enabling retrieval for the following query types:\n- **Topics:** Visual/audio presentation, combat mechanics, progression systems, monetization models, community operations, and cross-platform/device adaptation.\n- **Entities:** Shift Up (developer), Kim Hyung-tae (art director), Marian & Doro (characters/memes), Synchronizer & Burst I/II/III (core systems), DianDian (copyright holder).\n- **Dates:** 2025 (copyright/publication year).\n- **Definitions & Procedures:** Explains the Burst combat loop (sequentially combining Burst I, II, and III stage skills to trigger a team-wide state), progression rules (Synchronizer system reduces horizontal grinding; maximum character level requires max-ascended SSRs), and gacha pity mechanics (200-pull guarantee for event banners, no guarantee for standard banners).\n- **Claims:** Asserts the game features top-tier dynamic character art and strong visual impact; balances auto-battle convenience with manual skill engagement; delivers high emotional narrative tension with notable story scenes; maintains a mid/small-spender-friendly economy despite high nominal pricing; fosters an active community with official meme integration; and supports mobile/PC cross-play with portrait/landscape switching to cater to diverse player preferences.\n- **Metrics:** Weighted category scores: Visuals & Audio (88/100, 25%), Combat & Gameplay (83/100, 30%), Content & Systems (85/100, 20%), Operations & Community (86/100, 15%), Performance & Device Adaptation (90/100, 10%). Comprehensive Score: 85.5/100.\n- **Evidence Types:** Qualitative critical analysis, gameplay/system mechanics breakdown, community engagement observation, and quantitative scoring rubric.\n- **Tables/Figures:** No explicit...",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "《恋与深空》基础数据",
+          "node_id": "0059",
+          "page_index": 25,
+          "start_index": 25,
+          "end_index": 26,
+          "summary": "This section answers questions regarding the 2025 market performance, user demographics, gameplay mechanics, and community reception of the mobile game 《恋与深空》. It provides specific metrics including monthly AppStore revenue and iOS active user trends (January–October 2025), Q1–Q3 2025 average next-day retention (~24.8%) and monthly retention (~3.4%), and a female player ratio of ~75.4%. It identifies primary user interest categories (anime, movies, web novels, basic education, TV dramas, food) and details core technical and design features such as full 3D modeling, first-person perspective, integrated action-romance combat, and high-customization systems (character creation, voice options, mini-games). The section also addresses qualitative claims and criticisms, noting narrative pacing issues, static dialogue (\"站桩\"), limited story depth, and emerging \"fandom\" community dynamics that may impact new player acquisition. Evidence is drawn from DianDian proprietary research and presented through trend charts, retention metrics, demographic breakdowns, and qualitative gameplay/community analysis.",
+          "chunk_ids": []
+        },
+        {
+          "title": "《恋与深空》-点点数据测评分析",
+          "node_id": "0060",
+          "page_index": 26,
+          "start_index": 26,
+          "end_index": 26,
+          "summary": "This parent section, titled \"《恋与深空》-点点数据测评分析\" (Love and Deepspace - DianDian Data Review Analysis) on page 26, serves as a structural framework for a comprehensive game evaluation. It is divided into five child subsections. Four subsections—\"画面与音效表现\" (Visual and Audio Performance), \"核心战斗与玩法体验\" (Core Combat and Gameplay Experience), \"游戏内容与系统\" (Game Content and Systems), and \"运营、商业化与社区\" (Operations, Commercialization, and Community)—function solely as structural headings with no accompanying text, tables, figures, or retrievable facts. All substantive content is concentrated in the \"性能与设备适配\" (Performance and Device Compatibility) subsection (pages 26–27).\n\n**Topics:** Visual/audio quality, combat design, content systems, monetization/community dynamics, device compatibility, and global genre benchmarking.\n**Entities & Dates:** 3D otome mobile game (《恋与深空》), vocalist Sarah Brightman (theme song performer), iOS App Store (commercial ranking benchmark), DianDian (© 2025 copyright holder).\n**Definitions & Concepts:** \"Companionship\" design philosophy (combat structured as interactive support/partnership rather than pure challenge); \"T0 level\" (top-tier industry ranking for narrative and character interaction); \"饭圈化\" (fandom-like community behavior and polarization).\n**Procedures & Mechanics:** Gacha-based monetization with dense banner schedules and limited diamond acquisition; team composition rules requiring same-male-lead cards with attribute differentiation; high-resource progression loops for high-star cards; daily/long-term interaction features (sports companionship, photo modes, mini-games, sleep mode, handbook system).\n**Claims & Evidence:** Artistic presentation (full 3D modeling, first-person real-time rendering, premium UI, soundtrack) exceeds global genre peers;...",
+          "nodes": [
+            {
+              "title": "画面与音效表现",
+              "node_id": "0061",
+              "page_index": 26,
+              "start_index": 26,
+              "end_index": 26,
+              "summary": "This section contains only the heading \"画面与音效表现\" (Visual and Audio Performance) with no accompanying text, data, or references. It identifies the topic of visual and audio performance but provides no substantive content to answer retrieval questions regarding specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. Queries should treat this section as a structural heading or placeholder rather than a source of detailed information.",
+              "chunk_ids": []
+            },
+            {
+              "title": "核心战斗与玩法体验",
+              "node_id": "0062",
+              "page_index": 26,
+              "start_index": 26,
+              "end_index": 26,
+              "summary": "This section consists solely of the heading \"核心战斗与玩法体验\" (Core Combat and Gameplay Experience) and contains no substantive body text. It can only answer high-level topic identification questions regarding fundamental combat mechanics and player experience. It provides no specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types, and therefore cannot answer detailed, factual, or procedural queries.",
+              "chunk_ids": []
+            },
+            {
+              "title": "游戏内容与系统",
+              "node_id": "0063",
+              "page_index": 26,
+              "start_index": 26,
+              "end_index": 26,
+              "summary": "This section consists solely of the heading “游戏内容与系统” (Game Content and Systems) and contains no substantive text. It cannot answer specific questions regarding topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. It functions only as a structural marker indicating that the broader document may cover game mechanics, features, or system architecture, but no retrievable facts or details are present in this excerpt.",
+              "chunk_ids": []
+            },
+            {
+              "title": "运营、商业化与社区",
+              "node_id": "0064",
+              "page_index": 26,
+              "start_index": 26,
+              "end_index": 26,
+              "summary": "This section contains only the heading \"运营、商业化与社区\" (Operations, Commercialization, and Community) on page 26. It can answer high-level navigational and structural questions, such as identifying which part of the document covers operational strategies, commercialization models, and community engagement, or confirming the title and location of this thematic segment. The provided text contains no substantive content, definitions, procedures, dates, entities, metrics, claims, tables, figures, or evidence types. Consequently, it cannot answer detailed factual, analytical, or data-driven questions. Retrieval from this excerpt is strictly limited to confirming the topic scope and document structure.",
+              "chunk_ids": []
+            },
+            {
+              "title": "性能与设备适配",
+              "node_id": "0065",
+              "page_index": 26,
+              "start_index": 26,
+              "end_index": 27,
+              "summary": "This section provides a structured evaluation of a 3D female-oriented (otome) mobile game, optimized to answer retrieval queries across the following dimensions:\n\n**Topics & Answerable Questions:** What are the game’s performance metrics across visual/audio quality, combat design, content systems, monetization/community, and device compatibility? How does it benchmark against global peers in the genre? What drives its commercial success and player engagement?\n\n**Entities & Dates:** Unnamed 3D otome mobile game; vocalist Sarah Brightman (theme song performer); iOS App Store (commercial ranking benchmark); DianDian (© 2025 copyright holder).\n\n**Definitions & Concepts:** “Companionship” design philosophy (combat structured as interactive support and partnership rather than pure challenge); “T0 level” (top-tier industry ranking for narrative and character interaction in otome games); “饭圈化” (fandom-like community behavior and polarization).\n\n**Procedures & Mechanics:** Gacha-based monetization with dense banner schedules and limited diamond acquisition; team composition rules (requires same-male-lead cards with attribute differentiation); progression loops (clear but high resource pressure for high-star cards); daily/long-term interaction features (sports companionship, photo modes, mini-games, sleep mode, handbook system).\n\n**Claims & Evaluations:** Artistic presentation (full 3D modeling, first-person real-time rendering, premium UI, soundtrack) exceeds global genre peers; combat prioritizes voice interaction and cooperative partnership; story/interaction is industry-leading; stable, high-quality version updates correlate with multiple iOS grossing chart #1 rankings; large storage footprint but maintains stable frame rates on mainstream devices; community environment exhi...",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "《阴阳师》基础数据",
+          "node_id": "0066",
+          "page_index": 27,
+          "start_index": 27,
+          "end_index": 28,
+          "summary": "This section provides foundational operational data and analytical insights for the mobile game 《阴阳师》(Onmyoji), structured to support retrieval across the following dimensions:\n\n- **Topics & Entities:** 《阴阳师》game IP, DianDian Data (research source), core mechanics (turn-based combat, 御魂/Soul matching system), classic modes (秘闻副本, 为崽而战, 超鬼王), player segments (F2P, monthly card users, new players).\n- **Dates & Timeframes:** 2025 (Jan–Oct monthly tracking), 2025 Q1–Q3 (retention measurement window), 9 years (cumulative IP operation history).\n- **Metrics & Figures:** App Store monthly revenue (亿元, Jan–Oct 2025), iOS monthly active users (万人, Jan–Oct 2025), Q1–Q3 average next-day retention (~22.1%), average monthly retention (~4.8%), male player demographic share (~74.8%).\n- **ASO Keywords:** 阴阳师, 式神, 痒痒鼠, 日和风, 晴明, onmyoji.\n- **Claims & Operational Analysis:** \n  • *Strengths:* 和风 (Japanese-style) aesthetics and audio maintain high quality and unique cultural recognition; long-term iteration yields deep strategic gameplay; continuous events provide a sustainable resource cycle for non-paying/low-spending players.\n  • *Pain Points:* RNG in Soul enhancement (\"强歪\"); templated monthly events with low innovation frequency; late-game content repetition; high onboarding barrier for new players due to accumulated character/system complexity.\n- **Evidence Types:** Time-series charts (revenue, MAU), statistical retention/demographic metrics, ASO keyword coverage lists, qualitative operational assessment.\n- **Key Retrieval Questions Answered:** What are the 2025 monthly revenue and MAU trends for Onmyoji? What are its current retention rates and gender demographics? What core systems and classic modes define its gameplay? What are the documented player pain points and monetization str...",
+          "chunk_ids": []
+        },
+        {
+          "title": "《阴阳师》-点点数据测评分析",
+          "node_id": "0067",
+          "page_index": 28,
+          "start_index": 28,
+          "end_index": 28,
+          "summary": "This parent section presents a structured review and analysis of the game \"Onmyoji\" (《阴阳师》) by DianDian Data (点点数据), organized across five subsections. While the first four subsections (\"Visual and Audio Performance,\" \"Core Combat and Gameplay Experience,\" \"Game Content and Systems,\" and \"Operations, Commercialization, and Community\") function exclusively as structural headings without substantive content, the final subsection (\"Performance and Device Compatibility\") consolidates the complete evaluation. The review covers topics including audio-visual presentation, turn-based combat mechanics, game systems, monetization, community engagement, and device optimization. Key entities and features include Shikigami (式神), the Soul system (御魂), UR/SSR rarity tiers, PVE Secret Realms, PVP Arena, LBS social features, and an official desktop emulator. Dates and timeline references include 2025 (noting the UR shikigami introduction and copyright year) and approximately nine years of continuous operation. Definitions and procedures detail turn-based strategy combat focused on skill timing, shikigami combos, and soul set matching; a gacha monetization model featuring a free UR acquisition path for players who collect all SSRs; iterative UI/modeling updates; and official \"developer letters\" for community feedback. Claims and evaluations highlight sustained high-quality Japanese-style art and music, deep strategic combat offset by rapid PVP meta shifts, persistent player complaints regarding soul stat RNG, stable update rhythms, highly active community and fan creation, and well-optimized device compatibility offering a near-PC experience via emulator. No tables or figures are visible in the provided excerpts. Metrics specify evaluation weights (Core Combat 30%, Audio-Visual 25%, Con...",
+          "nodes": [
+            {
+              "title": "画面与音效表现",
+              "node_id": "0068",
+              "page_index": 28,
+              "start_index": 28,
+              "end_index": 28,
+              "summary": "This section, titled \"画面与音效表现\" (Visual and Audio Performance), functions exclusively as a structural heading. It indicates that the document addresses the visual and audio quality or presentation of a subject, but the provided excerpt contains no substantive content. As such, it can only answer high-level navigational or structural questions regarding where visual and audio performance is discussed. It does not provide specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.",
+              "chunk_ids": []
+            },
+            {
+              "title": "核心战斗与玩法体验",
+              "node_id": "0069",
+              "page_index": 28,
+              "start_index": 28,
+              "end_index": 28,
+              "summary": "This section functions solely as a structural heading for the topic of \"Core Combat and Gameplay Experience.\" It can answer high-level navigational questions regarding where combat mechanics and player experience are discussed within the document. The provided text contains no specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types, and therefore cannot answer detailed factual, procedural, or analytical questions. It serves exclusively as a topical marker for associated gameplay design content.",
+              "chunk_ids": []
+            },
+            {
+              "title": "游戏内容与系统",
+              "node_id": "0070",
+              "page_index": 28,
+              "start_index": 28,
+              "end_index": 28,
+              "summary": "This section consists solely of the heading \"游戏内容与系统\" (Game Content and Systems). It can only answer high-level navigational or structural questions regarding where the document discusses game mechanics, features, and system architecture. Based on the provided excerpt, it contains no specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types, and therefore cannot answer detailed factual, procedural, or analytical questions.",
+              "chunk_ids": []
+            },
+            {
+              "title": "运营、商业化与社区",
+              "node_id": "0071",
+              "page_index": 28,
+              "start_index": 28,
+              "end_index": 28,
+              "summary": "This section functions as a structural heading indicating coverage of three primary topics: operations, commercialization, and community. It can answer high-level navigational questions regarding where the document addresses operational management, monetization strategies, and community engagement. The provided excerpt contains no specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types, and therefore cannot answer detailed factual, procedural, or data-driven queries without additional content.",
+              "chunk_ids": []
+            },
+            {
+              "title": "性能与设备适配",
+              "node_id": "0072",
+              "page_index": 28,
+              "start_index": 28,
+              "end_index": 29,
+              "summary": "This section provides a structured evaluation of a long-running turn-based card RPG, designed to answer retrieval queries across the following dimensions:\n- **Topics:** Game review covering audio-visual presentation, core combat, content/systems, operations/monetization/community, and device compatibility.\n- **Entities & Features:** Shikigami (式神), Soul system (御魂), UR/SSR rarity tiers, PVE Secret Realms (秘闻副本), PVP Arena (斗技), LBS social features, official desktop emulator, DianDian (2025).\n- **Dates & Timeline:** 2025 (UR shikigami introduction, copyright year); approximately 9 years of continuous operation.\n- **Definitions & Procedures:** Turn-based strategy combat centered on skill timing, shikigami combos, and soul set matching; gacha monetization with a free UR acquisition path for players who collect all SSRs; iterative UI/modeling updates; official \"developer letters\" for community feedback.\n- **Claims & Evaluations:** Japanese-style art and music maintain high quality with improved modeling over time; combat offers deep strategy but PVP meta shifts rapidly with new units; soul stat RNG is a persistent player complaint; update/event rhythm is stable; community and fan creation are highly active; device compatibility is well-optimized with near-PC experience via emulator.\n- **Metrics & Scoring:** Evaluation weights: Core Combat/Gameplay (30%), Audio-Visual (25%), Content/Systems (20%), Operations/Community (15%), Performance/Compatibility (10%). Category scores: 84, 83, 82, 84, 90 (out of 100). Overall composite score: 84.9.\n- **Evidence Types:** Reviewer analysis, documented player feedback (praise for audio-visuals, criticism of soul RNG), operational claims (update frequency, longevity), and feature specifications.",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "《鸣潮》基础数据",
+          "node_id": "0073",
+          "page_index": 29,
+          "start_index": 29,
+          "end_index": 30,
+          "summary": "This section addresses retrieval queries regarding 《鸣潮》(Wuthering Waves) 2025 market performance and gameplay design. It covers: **Topics/Entities** (game title, combat system, open-world exploration, progression/gacha mechanics, player demographics); **Dates** (2025 Jan–Oct tracking period, 2025 Q1–Q3 retention window); **Metrics** (AppStore monthly revenue 0–1.2 billion RMB, iOS MAU 0–500k, average Day-1 retention ~31.9%, average Month-1 retention ~4.9%, male player ratio ~83.1%, top user interests: anime, movies, web novels, music, higher/basic education); **Claims** (combat is rated as an ACT genre benchmark with precise parry/\"弹刀\", dodge, and aerial combo feedback; exploration movement via grappling/wall-running/gliding is smooth but open-world content depth and landmark design are considered bland; character/weapon/Echo progression is resource-intensive with late-game stat-grinding pressure; gacha pity aligns with competitors but the mixed character/weapon banner faces criticism; optimization issues like stuttering, frame drops, and clipping persist on mobile and select PCs); **Definitions/Procedures** (\"合轴\" defined as a precision skill-timing system that triggers resonance reactions for strategic depth; core combat inputs and feedback loops outlined); **Figures/Tables** (line charts plotting monthly AppStore revenue and iOS MAU, alongside retention and demographic statistics); **Evidence Types** (DianDian Data independent market research, quantitative performance tracking, and qualitative gameplay/player sentiment analysis).",
+          "chunk_ids": []
+        },
+        {
+          "title": "《鸣潮》-点点数据测评分析",
+          "node_id": "0074",
+          "page_index": 30,
+          "start_index": 30,
+          "end_index": 30,
+          "summary": "This parent section (page 30) presents a structured review analysis of 《鸣潮》 (Wuthering Waves) by Diandian Data, organized into five evaluation categories: Visual and Audio Performance, Core Combat and Gameplay Experience, Game Content and Systems, Operations/Commercialization/Community, and Performance & Device Adaptation. While the first four subsections function solely as structural headings without substantive text, the final subsection contains detailed analytical content. **Topics** covered include performance optimization, device compatibility, audiovisual evaluation, combat mechanics, narrative pacing, progression systems, and monetization strategies. **Entities & Versions** referenced include Unreal Engine, Version 2.0 (map/visual improvements), Version 2.7「暗潮将映的黎明」 (narrative/content updates), and target platforms (high-spec PC, low-spec PC, mobile). **Dates** note post-2.0 improvements, the V2.7 update release, and a ©2025 publication. **Definitions** detail core mechanics: \"合轴\" (concerto/synergy trigger) for precise skill-timing combat, \"声骸\" (echo progression) for long-term stat farming, and exploration tools (grappling hooks, wall-running, gliding). **Claims & Evaluations** highlight a refined post-2.0 art style blending post-apocalyptic environments with vibrant characters, highly fluid combat with strategic depth, improved narrative pacing in V2.7, and a 0.8% gacha base rate that exceeds competitors but faces scrutiny over pool composition. Performance is optimal on high-end PCs but suffers from stuttering, frame drops, and clipping on low-end PCs and mobile. **Metrics** include an overall composite score of 84.6/100, with category weightings: Core Combat & Gameplay (30%), Art & Audio (25%), Content & Systems (20%), Operations/Monetization/Community (15%)...",
+          "nodes": [
+            {
+              "title": "画面与音效表现",
+              "node_id": "0075",
+              "page_index": 30,
+              "start_index": 30,
+              "end_index": 30,
+              "summary": "This section consists solely of the heading \"画面与音效表现\" (Visual and Audio Performance) on page 30. It contains no substantive content, data, or references. Therefore, it can only answer high-level structural or navigational questions, such as identifying the section title or confirming the document includes a topic dedicated to visual and audio performance. It does not provide information to answer questions regarding specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.",
+              "chunk_ids": []
+            },
+            {
+              "title": "核心战斗与玩法体验",
+              "node_id": "0076",
+              "page_index": 30,
+              "start_index": 30,
+              "end_index": 30,
+              "summary": "This section consists solely of the heading \"核心战斗与玩法体验\" (Core Combat and Gameplay Experience) on page 30. It can only answer high-level structural or navigational questions regarding the document's organization, specifically identifying that this page is designated for the topic of core combat mechanics and gameplay experience. It contains no substantive body text, entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types, and therefore cannot answer detailed factual, procedural, or analytical questions.",
+              "chunk_ids": []
+            },
+            {
+              "title": "游戏内容与系统",
+              "node_id": "0077",
+              "page_index": 30,
+              "start_index": 30,
+              "end_index": 30,
+              "summary": "This section contains only the heading \"游戏内容与系统\" (Game Content and Systems) and lacks substantive content. It can only address a broad topic question about the general category of game mechanics, features, or system architecture. It provides no information to answer questions regarding specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. No factual data or descriptive text is present in this excerpt.",
+              "chunk_ids": []
+            },
+            {
+              "title": "运营、商业化与社区",
+              "node_id": "0078",
+              "page_index": 30,
+              "start_index": 30,
+              "end_index": 30,
+              "summary": "This section functions solely as a structural heading indicating coverage of three core topics: operational management, commercialization/monetization strategies, and community development/engagement. Based on the provided text, it contains no specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. It can only answer high-level navigational questions about where the document addresses operations, revenue models, and community initiatives, but lacks substantive factual content for detailed retrieval.",
+              "chunk_ids": []
+            },
+            {
+              "title": "性能与设备适配",
+              "node_id": "0079",
+              "page_index": 30,
+              "start_index": 30,
+              "end_index": 31,
+              "summary": "**Topics:** Game performance optimization, device compatibility, audiovisual evaluation, combat mechanics, narrative pacing, progression systems, monetization/gacha, community engagement, and comprehensive review scoring.\n**Entities & Versions:** Unreal Engine; Version 2.0 (map/visual improvements); Version 2.7/V2.7「暗潮将映的黎明」 (narrative/content updates); Core mechanics: \"弹刀\" (parry), \"闪避\" (dodge), \"合轴\" (concerto/synergy trigger), \"声骸\" (echo progression); Platforms: High-spec PC, low-spec PC, mobile.\n**Dates & Updates:** Post-2.0 version improvements; V2.7 update release; © 2025 publication.\n**Definitions & Mechanics:** \"合轴\" defined as the core combat system requiring precise skill timing to trigger concerto reactions for high damage, visual effects, and strategic depth. \"声骸\" described as a long-term progression system with stat-farming pressure. Exploration utilizes grappling hooks, wall-running, and gliding.\n**Claims & Evaluations:** Art style combines cold post-apocalyptic environments with vibrant character designs (initially disjointed, refined post-2.0). Combat is highly praised for fluidity, clear feedback, and strategic depth. Early narrative suffered from weak protagonist presence and pacing, improved in 2.7. Gacha base rate (0.8%) exceeds some competitors, though mixed pools and character availability draw discussion. Performance is optimal on high-end PCs; low-end PCs and mobile suffer from stuttering, frame drops, and clipping.\n**Metrics & Scoring:** Overall composite score: 84.6/100. Category weight distribution: Art & Audio (25%), Core Combat & Gameplay (30%), Content & Systems (20%), Operations/Monetization/Community (15%), Performance & Device Adaptation (10%). Gacha base probability: 0.8%. Unlabeled preliminary scores listed at section start: 80/100, 90/...",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "《碧蓝航线》基础数据",
+          "node_id": "0080",
+          "page_index": 31,
+          "start_index": 31,
+          "end_index": 32,
+          "summary": "This section provides foundational market and operational data for the Chinese server of 《碧蓝航线》 (Azur Lane), sourced from DianDian Data (2025). It answers retrieval queries regarding:\n- **Topics & Entities:** 《碧蓝航线》 (Azur Lane), DianDian Data, AppStore, iOS, Chinese server, shipgirl collection/raising, dual-stick bullet-hell shooter, Live2D, CN/JP bilingual voice acting, cosmetic skins, monthly card players, F2P players.\n- **Dates & Timeframes:** 2025 (Jan–Oct for monthly tracking), 2025 Q1–Q3 (retention measurement period), 8th anniversary milestone.\n- **Metrics & Figures:** AppStore monthly revenue (in 10k RMB) and iOS monthly active users (in 10k) tracked Jan–Oct 2025 via charts; 2025 Q1–Q3 average next-day retention (~21.8%) and monthly retention (~3.9%); male user proportion (~79.9%); top user interest categories (anime, movies, web novels, basic education, live streaming, TV dramas).\n- **Claims & Definitions:** Gameplay merges dual-stick shooting with collection mechanics; progression curve is F2P and monthly-card friendly; monetization relies on skins with no \"constellation\" (duplicate character) systems or aggressive paywalls; content cadence uses monthly events and quarterly major updates; 8th-anniversary patches optimized newbie guides and story integration; community atmosphere is stable; core progression criticized as \"electronic bonsai\" (low-intensity/idle-like) with relatively weak overall gameplay depth.\n- **Evidence Types:** Proprietary line/bar charts (revenue, MAU), retention/demographic statistics, interest preference lists, and qualitative market analysis. Source: DianDian Data proprietary research.",
+          "chunk_ids": []
+        },
+        {
+          "title": "《碧蓝航线》-点点数据测评分析",
+          "node_id": "0081",
+          "page_index": 32,
+          "start_index": 32,
+          "end_index": 32,
+          "summary": "This parent section presents a structured review and analysis of the mobile game *Azur Lane* (《碧蓝航线》) by DianDian Data (©2025), located on pages 32–33. It is organized into five evaluation dimensions: Visual & Audio Performance, Core Combat & Gameplay Experience, Game Content & Systems, Operations/Commercialization/Community, and Performance & Device Compatibility. The first four subsections function exclusively as structural headings without accompanying descriptive text, data, tables, or figures. Substantive analytical content is concentrated in the final subsection, which provides a weighted scoring framework and detailed feature breakdown. Metrics include category-specific scores (Audiovisual: 85/100 at 25% weight; Core Combat: 80/100 at 30%; Content & Systems: 86/100 at 20%; Operations & Community: 84/100 at 15%; Performance & Compatibility: 88/100 at 10%) and an overall comprehensive score of 84.2. Entities and features covered include Live2D technology, chibi combat models, CN/JP dual voice acting, dynamic BGM (jazz, electronic rock, symphony), dual-joystick controls, the \"Siren\" faction, gacha/skin monetization, monthly cards, and emulators. The date referenced is the game's 8th anniversary, marking the introduction of a timeline-based storyline archive system. Definitions and mechanics detail the ship-type counter chain (Destroyer→Light Cruiser→Heavy Cruiser→Battleship), dynamic bullet-hell dodging, phased boss encounters, enemy bullet patterns (fan spread, homing missiles), and a \"zero-spend competitive, micro-spend sufficient\" economic balance. Procedures and systems encompass the left-stick movement/right-stick aiming scheme, daily task resource farming, monthly card skin accumulation, chronological storyline archiving, and QoL automation setups (auto-battl...",
+          "nodes": [
+            {
+              "title": "画面与音效表现",
+              "node_id": "0082",
+              "page_index": 32,
+              "start_index": 32,
+              "end_index": 32,
+              "summary": "This section, titled \"画面与音效表现\" (Visual and Audio Performance), indicates coverage of topics related to graphical presentation and sound design. Based on the provided text, it contains no specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types. Consequently, it can only answer high-level navigational questions confirming the presence of a segment dedicated to visual and audio evaluation, but lacks the substantive content required to answer detailed factual, analytical, or data-driven queries.",
+              "chunk_ids": []
+            },
+            {
+              "title": "核心战斗与玩法体验",
+              "node_id": "0083",
+              "page_index": 32,
+              "start_index": 32,
+              "end_index": 32,
+              "summary": "This section consists solely of the heading \"核心战斗与玩法体验\" (Core Combat and Gameplay Experience) on page 32, with no accompanying descriptive text, data, or visual elements. As a result, it does not contain information to answer questions regarding specific combat mechanics, gameplay procedures, entities, dates, definitions, claims, metrics, tables, figures, or evidence types. It functions exclusively as a structural section title.",
+              "chunk_ids": []
+            },
+            {
+              "title": "游戏内容与系统",
+              "node_id": "0084",
+              "page_index": 32,
+              "start_index": 32,
+              "end_index": 32,
+              "summary": "This section consists solely of the heading \"游戏内容与系统\" (Game Content and Systems) on page 32. It contains no substantive text, definitions, procedures, metrics, entities, dates, claims, tables, figures, or evidence. It can only answer structural or navigational retrieval questions, such as identifying the section title, its page location, and where the document transitions into discussing game content and systems. No specific gameplay details, system mechanics, or supporting data are provided in this excerpt.",
+              "chunk_ids": []
+            },
+            {
+              "title": "运营、商业化与社区",
+              "node_id": "0085",
+              "page_index": 32,
+              "start_index": 32,
+              "end_index": 32,
+              "summary": "This section functions solely as a heading indicating coverage of operations, commercialization, and community topics. It contains no substantive text, data, definitions, procedures, metrics, dates, entities, tables, figures, or evidence. Consequently, it cannot answer specific factual questions but signals that associated content would address operational frameworks, monetization strategies, and community engagement practices.",
+              "chunk_ids": []
+            },
+            {
+              "title": "性能与设备适配",
+              "node_id": "0086",
+              "page_index": 32,
+              "start_index": 32,
+              "end_index": 33,
+              "summary": "This section provides a structured, weighted evaluation of a long-running ship-anthropomorphism game, designed to answer retrieval queries across the following dimensions:\n\n- **Topics:** Game performance, device compatibility, audiovisual presentation, core combat mechanics, content progression, monetization model, and community ecosystem.\n- **Metrics:** Category-specific scores with weights: Audiovisual (85/100, 25%), Core Combat (80/100, 30%), Content & Systems (86/100, 20%), Operations & Community (84/100, 15%), Performance & Compatibility (88/100, 10%). Overall comprehensive score: 84.2.\n- **Entities & Features:** Live2D technology, chibi combat models, CN/JP dual voice acting, dynamic BGM (jazz, electronic rock, symphony), dual-joystick controls, ship-type counter chain (Destroyer→Light Cruiser→Heavy Cruiser→Battleship), \"Siren\" faction, auto-battle/proxy command/low-cost fleets, gacha/skin monetization, monthly card, emulators, DianDian (©2025).\n- **Dates:** 8th anniversary (introduction of the timeline-based storyline archive system).\n- **Definitions & Mechanics:** Ship-type counter system, dynamic bullet-hell dodging, phased boss encounters, enemy bullet patterns (fan spread, homing missiles), \"zero-spend competitive, micro-spend sufficient\" economic balance.\n- **Procedures & Systems:** Left-stick movement/right-stick aiming scheme, daily task resource farming, monthly card skin accumulation, chronological storyline archiving, QoL automation setup (auto-battle, proxy command, low-cost fleet composition).\n- **Claims:** Successful integration of dual-joystick bullet hell with ship collection/nurturing; F2P/low-spend friendly economy with no forced spending or duplicate mechanics; stable long-term device/emulator compatibility with responsive touch controls; harmo...",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "03二次元移动游戏市场发展趋势",
+      "node_id": "0087",
+      "page_index": 33,
+      "start_index": 33,
+      "end_index": 34,
+      "summary": "**Section:** 03二次元移动游戏市场发展趋势 (Pages 33-34)\n**Topics:** AI-driven multi-threaded narrative integration, business model diversification (gacha iteration & monetization paradigm shift), and the evolution of simulation/management mechanics into core gameplay loops in anime-style (二次元) mobile games.\n**Entities:** Games/Products: 《逆水寒》手游, 《Whispers from the star》, 《和平精英》, 《伊瑟》, 《二重螺旋》, 《蓝色星原：旅遥》, 《明日方舟：终末地》, 《望月》, 《明日方舟》, 《原神》, 《重返未来1999》. Key Figures/Developers: 蔡浩宇 (miHoYo founder), 蛮湫网络, 鹰角网络, 诗悦网络. AI Feature: AI队友“吉莉”. Data/Research Source: 点点数据 (DianDian Data).\n**Dates:** 2025 (Report copyright & research year); 2026–2027 (Projected launch window for upcoming simulation-heavy titles).\n**Definitions:** OOC/人设崩塌 (character persona breakdown); “人设防火墙” (technical/logical constraints ensuring AI outputs align with core traits); “有限自由” (strategic restriction of AI to non-mainline, supplementary interactions); “深度付费” (monetizing heavy character mechanics/fragments to extract high ARPU); “广度付费” (lowering core paywalls to prioritize player base scale & ecosystem health); “小保底歪池” (gacha probability offset mechanism); “类模拟经营” (heavy construction/farming/automated production loops vs. past low-pressure decorative \"home systems\").\n**Procedures/Strategies:** Deploy AI dialogue as daily companion features outside core storylines; implement persona firewalls to filter/constrain AI responses; maintain narrative authority by separating AI from main plot progression. Gacha reform paths: 1) limit duplicate rewards to numerical growth only, 2) optimize probabilities (remove pity offsets, raise base rates), 3) restructure monetization (make core characters/weapons free via gameplay, shift revenue entirely to non-stat cosmetics). Integrate simulation resource loops directly with character pr...",
+      "nodes": [
+        {
+          "title": "AI参与的多线程叙事是趋势还是陷阱？",
+          "node_id": "0088",
+          "page_index": 34,
+          "start_index": 34,
+          "end_index": 35,
+          "summary": "**Topics:** AI integration in ACG (二次元) game narratives, multi-threaded storytelling, narrative control vs. interactive freedom, AI NPC implementation strategies, commercial risks of AI in character-driven monetization.\n**Entities:** 《逆水寒》手游 (Justice Mobile), 《Whispers from the star》, 蔡浩宇 (Cai Haoyu, miHoYo founder), 《和平精英》 (Game for Peace), AI队友“吉莉” (AI teammate Jili), 点点数据 (DianDian Data).\n**Dates:** Copyright 2025; references to current industry status and \"recent years\" (no specific release or implementation dates provided).\n**Definitions:** OOC (Out of Character/人设崩塌 - breakdown of established character persona); “人设防火墙” (persona firewall - technical/logical constraints ensuring AI outputs strictly align with core character traits); “有限自由” (limited freedom - strategic approach restricting AI to non-mainline, supplementary interactions).\n**Procedures:** Deploy AI dialogue outside core storylines as daily companion features; implement persona firewalls to filter and constrain AI responses; maintain narrative authority by separating AI interactions from main plot progression.\n**Claims:** AI dialogue enhances emotional companionship and immersion but creates a fundamental conflict between narrative control and interactive freedom. Unrestricted AI risks OOC behavior, which dilutes character appeal, undermines official narrative authority, and reduces player spending motivation. Current market implementations treat AI NPCs primarily as entertainment features rather than core narrative drivers. A viable commercial strategy requires balancing technical experimentation with strict persona constraints.\n**Tables/Figures:** Includes a chart/figure sourced from DianDian Data’s independent research and visualization.\n**Metrics:** 《Whispers from the star》 PC version price: ¥33.9...",
+          "chunk_ids": []
+        },
+        {
+          "title": "商业模式的多元化探索",
+          "node_id": "0089",
+          "page_index": 35,
+          "start_index": 35,
+          "end_index": 36,
+          "summary": "**可回答的检索问题与核心信息摘要：**\n- **主题/Topics：** 二次元移动游戏商业模式多元化探索；变现路径与玩家价值感受重塑；抽卡付费模式的困境与迭代；从“深度付费”向“广度付费”的行业转型趋势。\n- **实体/Entities：** 游戏产品：《伊瑟》《二重螺旋》；研究/发布机构：点点数据（DianDian Data）。\n- **日期/Dates：** 2025年（文档版权/数据研究年份）。\n- **定义与概念/Definitions：** “深度付费”（通过拆分角色机制/命座/碎片深度挖掘重氪玩家价值）；“广度付费”（降低核心内容付费门槛，注重玩家基数规模与长期生态健康）；“小保底歪池”（抽卡保底机制中的概率偏移设定）；“卖角色”到“卖体验”（商业化重心从角色强度获取转向整体游玩体验与外观消费）。\n- **流程与机制/Procedures：** 抽卡商业化改革路径：1）机制微调（重复抽取收益限定为数值成长，不解锁新机制）；2）概率优化（取消小保底歪池、提高基础概率）；3）模式重构（取消角色与武器抽卡，核心内容通过玩法/活动免费产出，付费点完全转移至不影响强度的外观/皮肤）。\n- **核心主张/Claims：** 传统抽卡模式面临两大困境：机制商品化损害普通玩家体验，随机性透支引发玩家焦虑疲惫；行业正从榨取单客价值转向注重基数与生态的“广度付费”；新模式商业成效尚待验证，但转向“卖体验”是二次元游戏红海竞争中寻求差异化与可持续发展的必然路径。\n- **图表/Tables & Figures：** 包含可视化图表“部分二次元移动游戏商业化迭代展示”，具体对比《伊瑟》（初始完全体，重复碎片仅提升数值）与《二重螺旋》（角色/武器免费获取，付费集中于皮肤外观）的机制设计差异。\n- **指标与证据类型/Metrics & Evidence：** 无具体量化数据指标；证据类型为定性行业趋势分析、典型产品案例对比、机制设计逻辑推演；数据来源标注为“点点数据自主研究及绘制”。",
+          "chunk_ids": []
+        },
+        {
+          "title": "“类模拟经营”元素进一步深化核心玩法循环中",
+          "node_id": "0090",
+          "page_index": 36,
+          "start_index": 36,
+          "end_index": 37,
+          "summary": "**Topics:** Evolution of simulation/management mechanics in anime-style mobile games; transition from decorative home systems to core gameplay loops; integration of resource management with character progression and combat; balancing heavy simulation with traditional low-burden player expectations; future competitive differentiation in the genre.\n**Entities:** Games: 《蓝色星原：旅遥》, 《明日方舟：终末地》, 《望月》, 《明日方舟》(Base System), 《原神》(Serenitea Pot), 《重返未来1999》(Home System). Developers: 蛮湫网络, 鹰角网络, 诗悦网络. Research Source: 点点数据 (DianDian Data).\n**Dates:** 2026–2027 (projected launch window for upcoming titles emphasizing simulation features); 2025 (report copyright year).\n**Definitions:** \"Home systems\" (家园系统) in past titles: low-pressure, static, narrative/progression extensions focused on \"decorative companionship.\" \"Simulation/management\" (类模拟经营) in current titles: heavy gameplay involving construction, farming, and automated production that drives systemic resource loops and daily engagement.\n**Procedures:** None explicitly detailed.\n**Claims:** Simulation elements are evolving into a key competitive dimension. Three primary drivers: (1) providing long-term content to mitigate post-update gameplay droughts, (2) creating organic resource loops tied to progression/combat, and (3) increasing player agency and immersion. Heavy simulation may conflict with traditional players' preference for low-burden experiences; success requires deep integration with character narrative. Successful integration could establish a sustainable competitive moat.\n**Tables/Figures:** Includes a comparative display titled \"部分新老二次元移动游戏“类模拟经营”要素展示\" (Simulation Elements in Select New/Legacy Anime Mobile Games), sourced from DianDian Data's independent research.\n**Metrics:** None provided.\n**Evidence Types:** I...",
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "版权声明",
+      "node_id": "0091",
+      "page_index": 37,
+      "start_index": 37,
+      "end_index": 37,
+      "summary": "This section answers questions regarding the report's intellectual property rights, usage restrictions, and legal compliance. \n- **Topics:** Copyright protection, content ownership, reproduction/distribution permissions, legal violations.\n- **Entities:** Publishing company (new media department), original authors, advertisers, Copyright Law of the People's Republic of China, international conventions.\n- **Dates:** None specified.\n- **Definitions:** Implicitly defines the scope of protected content (all text, images, and tables within the report).\n- **Procedures:** Requires explicit prior permission from the company's new media department before any organization or individual may copy or distribute the report.\n- **Claims:** All report content is legally protected; publicly sourced text/data remains owned by original authors; all report material copyrights belong to advertisers; unauthorized commercial use violates applicable laws.\n- **Tables/Figures/Metrics:** None presented; explicitly notes that existing tables and figures in the report are covered by the stated copyright protections.\n- **Evidence Types:** Legal references to the Copyright Law of the People's Republic of China, other domestic regulations, and international conventions.",
+      "chunk_ids": []
+    },
+    {
+      "title": "法律声明",
+      "node_id": "0092",
+      "page_index": 37,
+      "start_index": 37,
+      "end_index": 37,
+      "summary": "This section (法律声明, page 37) functions as a legal disclaimer and methodology statement. It covers topics including report disclaimers, data usage guidelines, liability boundaries, and issuer credentials/marketing claims. Key entities mentioned are 点点数据 (Diandian Data), 路透社 (Reuters), and report analysts. No specific dates are provided. The section details definitions and procedures for deriving industry data and market forecasts, which rely on desktop research, industry interviews, Diandian Data team product monitoring, and statistical prediction model estimation. Core claims state that the report is strictly for reference and market research, with Diandian Data assuming no legal responsibility for its data or viewpoints; all legal consequences and disputes from actions taken based on the report are borne solely by the user. Additional claims highlight 100% data-driven selection for financing/cooperation, coverage by 200+ global media outlets, and long-tail traffic generation via white papers and official account articles. No tables or figures are present. Notable metrics include 100% (data-driven selection) and 200+ (global media reports). Evidence types referenced encompass analyst research, industry interviews, monitored product data, statistical modeling, and third-party media coverage.",
+      "nodes": [
+        {
+          "title": "免责条款",
+          "node_id": "0093",
+          "page_index": 37,
+          "start_index": 37,
+          "end_index": 38,
+          "summary": "This section functions as a legal disclaimer and methodology statement, enabling retrieval for questions across the following categories:\n- **Topics:** Report disclaimer, data usage guidelines, liability boundaries, and issuer credentials/marketing claims.\n- **Entities:** 点点数据 (Diandian Data), 路透社 (Reuters), report analysts.\n- **Dates:** None specified.\n- **Definitions & Procedures:** How industry data and market forecasts are derived (desktop research, industry interviews, Diandian Data team product monitoring, and statistical prediction model estimation).\n- **Claims:** The report is strictly for reference/market research; Diandian Data assumes no legal responsibility for its data or viewpoints; all legal consequences and disputes from actions taken based on the report are borne solely by the user/actor. Additional claims include 100% data-driven selection for financing/cooperation, coverage by 200+ global media outlets, and long-tail traffic generation via white papers and official account articles.\n- **Tables & Figures:** None present.\n- **Metrics:** 100% (data-driven selection), 200+ (global media reports).\n- **Evidence Types:** Analyst research, industry interviews, monitored product data, statistical modeling, and third-party media coverage.",
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "2025年度实力出海移动游戏",
+      "node_id": "0094",
+      "page_index": 38,
+      "start_index": 38,
+      "end_index": 39,
+      "summary": "This section serves as a call-for-submissions announcement for 2025 overseas industry awards. It can answer questions regarding:\n- **Topics & Entities:** Four specific 2025 award categories: \"Powerful Overseas Mobile Games,\" \"Powerful Overseas Apps,\" \"Pioneer Overseas Games/Apps,\" and \"Outstanding Overseas Service Enterprises.\" The organizing entity is identified as a game data and mobile app analytics platform.\n- **Dates & Procedures:** Applications are currently open with a submission deadline of December 31.\n- **Claims:** The platform is actively soliciting entries for these 2025 recognition programs.\n- **Definitions, Tables, Figures, Metrics & Evidence Types:** None present; the text functions solely as an administrative/promotional notice without analytical data, visual elements, or supporting evidence.",
+      "chunk_ids": []
+    },
+    {
+      "title": "点点数据",
+      "node_id": "0095",
+      "page_index": 39,
+      "start_index": 39,
+      "end_index": 40,
+      "summary": "This section identifies the entity \"点点数据\" (Diandian Data) and functions as a heading for product-related inquiries. It can answer questions regarding where or how to direct product consultation, support requests, or general inquiries for 点点数据's offerings. The section does not contain dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.",
+      "chunk_ids": []
+    }
+  ],
+  "summary": "This section serves as the title page for a research report and can answer retrieval queries regarding:\n- **Topic:** Evaluation and analysis of user experience in anime-style (二次元) mobile games.\n- **Date/Timeframe:** Q4 2025 (report publication or coverage period).\n- **Entity:** DianDian (copyright holder and publishing organization).\n- **Document Type:** Industry evaluation/analysis report.\nThis section does not contain definitions, procedures, specific claims, tables, figures, metrics, or evidence types. All retrievable information is strictly limited to the report title, timeframe, and copyright attribution. **Topics:** 二次元移动游戏市场概况、体验指标分析、市场竞争趋势、商业化模式变革\n**Entities:** 二次元移动游戏（二游）、收入TP1二游产品、游戏畅销总榜、DianDian\n**Dates:** 2025年\n**Claims & Metrics:** 2025年二次元移动游戏收入同比明显下滑；收入TP1的二游产品已跌至游戏畅销总榜第9名；市场竞争重心转移至玩法层面突破；行业商业化变革正在进行中。\n**Evidence Types:** 市场收入同比数据、畅销榜排名数据、行业趋势定性分析\n**Retrieval Questions Answered:** 2025年二次元移动游戏市场收入表现如何？头部二游产品在整体畅销榜的排名有何变化？当前二游市场的核心竞争方向与商业化趋势是什么？该章节涵盖哪些市场概况与体验指标分析？ This section defines and characterizes \"二次元\" (ACG/2D) mobile games across six interconnected dimensions, supporting retrieval queries on cultural boundaries, design frameworks, visual evolution, gameplay mechanics, monetization strategies, and audience segmentation.\n\n- **Topics & Entities:** Covers the conceptual relationship between \"二次元\" and \"ACGN\"; Japanese anime, manga, games, and light novels; character development assets (illustrations, 3D models, voice acting, narrative, combat systems); visual aesthetics (Japanese anime, Korean manhwa, Chinese comics); mainstream gameplay genres (card battles, ARPG, dating simulation/nurturing); PVP and PVE modes; gacha/扭蛋 mechanics; and player demographics (core vs. casual/broad ACG players).\n- **Definitions:** Clarifies \"二次元\" as a cultural attribute r..."
+}

@@ -1,0 +1,164 @@
+{
+  "run_metadata": {
+    "input_path": "D:\\code\\semantic-construct\\0630转测\\2026年全球移动游戏行业白皮书-点点数据-2026-46页.pdf",
+    "input_kind": "pdf",
+    "artifact_root": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页",
+    "output_json": null,
+    "model": "Qwen3.6-Plus",
+    "fallback_model": "Qwen3.6-Plus",
+    "include_summary": true,
+    "write_postgres": false,
+    "write_global_index": false,
+    "global_index_model": "embedding-3",
+    "markdown_layout": "auto",
+    "pdf_strategy": "auto",
+    "toc_text_role_model": "Qwen3.6-Plus",
+    "toc_text_role_fallback_model": "Qwen3.6-Plus",
+    "toc_vlm_model": "Qwen3.6-Plus",
+    "toc_vlm_fallback_model": "Qwen3.6-Plus",
+    "native_model": "Qwen3.6-Plus",
+    "native_fallback_model": "Qwen3.6-Plus",
+    "summary_model": "Qwen3.6-Plus",
+    "summary_fallback_model": "Qwen3.6-Plus"
+  },
+  "stage_records": [
+    {
+      "stage": "load_docarbor_config",
+      "status": "success",
+      "started_at": "2026-06-25T03:22:29.753073+00:00",
+      "duration_ms": 0
+    },
+    {
+      "stage": "get_page_tokens",
+      "status": "success",
+      "started_at": "2026-06-25T03:22:29.754073+00:00",
+      "duration_ms": 1800
+    },
+    {
+      "stage": "extract_page_artifacts",
+      "status": "success",
+      "started_at": "2026-06-25T03:22:31.555135+00:00",
+      "duration_ms": 11475
+    },
+    {
+      "stage": "analyze_toc_pages",
+      "status": "success",
+      "started_at": "2026-06-25T03:22:43.031507+00:00",
+      "duration_ms": 276579
+    },
+    {
+      "stage": "extract_canonical_toc_outline",
+      "status": "success",
+      "started_at": "2026-06-25T03:27:19.615035+00:00",
+      "duration_ms": 96964
+    },
+    {
+      "stage": "analyze_catalog_repeat_pages",
+      "status": "success",
+      "started_at": "2026-06-25T03:28:56.589598+00:00",
+      "duration_ms": 109455
+    },
+    {
+      "stage": "analyze_divider_pages",
+      "status": "success",
+      "started_at": "2026-06-25T03:30:46.049214+00:00",
+      "duration_ms": 163817
+    },
+    {
+      "stage": "candidate_catalog_repeat_seeded_build_tree",
+      "status": "success",
+      "started_at": "2026-06-25T03:33:29.873363+00:00",
+      "duration_ms": 1729264
+    },
+    {
+      "stage": "candidate_catalog_repeat_seeded_write_node_ids",
+      "status": "success",
+      "started_at": "2026-06-25T04:02:19.139097+00:00",
+      "duration_ms": 1
+    },
+    {
+      "stage": "candidate_catalog_repeat_seeded_add_node_text",
+      "status": "success",
+      "started_at": "2026-06-25T04:02:19.141098+00:00",
+      "duration_ms": 121
+    },
+    {
+      "stage": "candidate_catalog_repeat_seeded_summaries",
+      "status": "success",
+      "started_at": "2026-06-25T04:02:19.263386+00:00",
+      "duration_ms": 728400
+    },
+    {
+      "stage": "candidate_catalog_repeat_seeded_convert_tree",
+      "status": "success",
+      "started_at": "2026-06-25T04:14:27.665143+00:00",
+      "duration_ms": 0
+    },
+    {
+      "stage": "candidate_catalog_repeat_seeded_normalize_output",
+      "status": "success",
+      "started_at": "2026-06-25T04:14:27.666143+00:00",
+      "duration_ms": 1
+    },
+    {
+      "stage": "candidate_catalog_repeat_seeded_summarize_metrics",
+      "status": "success",
+      "started_at": "2026-06-25T04:14:27.669216+00:00",
+      "duration_ms": 3
+    },
+    {
+      "stage": "candidate_catalog_repeat_seeded_score",
+      "status": "success",
+      "started_at": "2026-06-25T04:14:27.672745+00:00",
+      "duration_ms": 0
+    },
+    {
+      "stage": "candidate_catalog_repeat_seeded_write_artifacts",
+      "status": "success",
+      "started_at": "2026-06-25T04:14:27.672745+00:00",
+      "duration_ms": 6
+    },
+    {
+      "stage": "candidate_catalog_repeat_seeded",
+      "status": "success",
+      "started_at": "2026-06-25T03:33:29.871858+00:00",
+      "duration_ms": 2457808
+    },
+    {
+      "stage": "finalize_selected_candidate",
+      "status": "success",
+      "started_at": "2026-06-25T04:14:27.683781+00:00",
+      "duration_ms": 7
+    },
+    {
+      "stage": "save_final_output",
+      "status": "success",
+      "started_at": "2026-06-25T04:14:27.692834+00:00",
+      "duration_ms": 1
+    }
+  ],
+  "llm_usage_totals": {
+    "prompt_tokens": 204767,
+    "completion_tokens": 298525,
+    "total_tokens": 503292
+  },
+  "llm_call_counts": {
+    "chat": 188,
+    "embedding": 0,
+    "rerank": 0,
+    "success": 188,
+    "error": 0
+  },
+  "artifacts": {
+    "events_jsonl": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\logs\\debug.log.jsonl",
+    "progress_log": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\logs\\build_progress.log",
+    "llm_calls_dir": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\logs\\llm_calls",
+    "manifest": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\logs\\manifest.json"
+  },
+  "target_output_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\2026年全球移动游戏行业白皮书-点点数据-2026-46页_docarbor_tree.json",
+  "docarbor_raw_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\docarbor_raw.json",
+  "outline_entries_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\outline_entries.json",
+  "build_outline_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\build_outline.json",
+  "toc_assessment_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\toc_assessment.json",
+  "candidate_selection_path": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2026年全球移动游戏行业白皮书-点点数据-2026-46页\\candidate_selection.json"
+}

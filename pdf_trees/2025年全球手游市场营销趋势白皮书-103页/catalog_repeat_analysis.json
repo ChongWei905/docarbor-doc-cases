@@ -32,7 +32,7 @@
       "active_item": null,
       "resolved_active_key": null,
       "confidence": "high",
-      "reason": "This is a traditional front table-of-contents page listing all sections (1-7 and special thanks) at once, with a footer instruction to click to jump, rather than a repeated navigation page highlighting a single current section.",
+      "reason": "This is a traditional front table-of-contents page listing all chapters (1-7) and a final section uniformly. It does not visually emphasize a single current item to indicate a specific section, fitting the exclusion criteria for a repeated catalogue page.",
       "accepted": false,
       "rejection_reason": "not_catalog_repeat"
     }

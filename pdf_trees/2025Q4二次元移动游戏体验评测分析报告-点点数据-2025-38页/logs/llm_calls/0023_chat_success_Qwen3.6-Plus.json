@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:18:05.150502+00:00",
+  "sequence": 23,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 20429,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to detect if there is a table of content provided in the given text.\n\n    Given text: {content}\n\n    return the following JSON format:\n    {{\n        \"toc_detected\": \"<yes or no>\",\n    }}\n\n    Directly return the final JSON structure. Do not output anything else.\n    Please note: abstract,summary, notation list, figure list, table list, etc. are not table of contents.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-7aa047c6-54ed-9a63-8855-7aef8565e1a4",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"toc_detected\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Detect if a table of contents (TOC) is provided in the given text.\n   - **Input Format:** `Given text: {content}` (Note: The user didn't provide the actual `{content}`, but I need to handle this as a prompt template. Wait, the prompt says \"Given text: {content}\" but doesn't replace it. I should assume the user will provide the content, or maybe this is a system prompt template. Actually, in this interaction, the user just pasted the prompt template without the actual content. I need to respond based on the instruction. Wait, the prompt says \"Given text: {content}\" literally. I should probably just output a JSON based on the instruction, but since there's no actual content, I'll assume `{content}` is a placeholder. However, the instruction says \"Directly return the final JSON structure. Do not output anything else.\" I will just output the JSON with a default or ask for content? No, I must follow the exact format. I'll assume the user wants me to process a hypothetical or missing content, but typically in these prompts, I should just output the JSON structure as requested. Wait, maybe the user forgot to paste the content. I will just output `{\"toc_detected\": \"no\"}` or `{\"toc_detected\": \"yes\"}`? Actually, I should just follow the instruction strictly. Since no content is provided, I'll default to \"no\", or I can just output the JSON structure as requested. But the prompt says \"Given text: {content}\". I will treat `{content}` as the literal text provided. It doesn't contain a TOC. So `toc_detected` should be \"no\".\n   - **Constraints:** Return only JSON. No thinking, no explanation. Format: `{\"toc_detected\": \"<yes or no>\"}`. Note: abstract, summary, notation list, figure list, table list are NOT TOC.\n\n2.  **Identify Key Requirements:**\n   - Output must be strictly JSON.\n   - Keys: `toc_detected`\n   - Values: `\"yes\"` or `\"no\"`\n   - No extra text.\n\n3.  **Handle Missing Content:**\n   - The prompt literally says `Given text: {content}`. This is likely a template where `{content}` wasn't replaced. I will assume the input text is just `{content}` or empty. In either case, it doesn't contain a TOC. So `\"no\"` is appropriate.\n   - I will output exactly: `{\"toc_detected\": \"no\"}`\n\n   Wait, what if the user expects me to just output the JSON structure as a template? No, the instruction says \"return the following JSON format\". I'll just output `{\"toc_detected\": \"no\"}`.\n\n   Let's double check. Sometimes users paste prompts with placeholders. I will strictly follow the instruction. I'll output `{\"toc_detected\": \"no\"}`.\n\n   Actually, to be safe, I'll just output the JSON as requested. Since there's no actual content to analyze, \"no\" is the logical default.\n\n   Final decision: `{\"toc_detected\": \"no\"}`.\n   I will ensure absolutely no extra text.\n   Proceed. \n   Self-Correction/Refinement during thought: What if the prompt is a test and expects me to just output the JSON regardless? Yes. I will output exactly `{\"toc_detected\": \"no\"}`.\n   Wait, could `{content}` be a variable that the system will replace later? In this interface, I just respond to what's given. I'll stick with \"no\".\n   Output matches requirement.✅\n   Generate. \n   `{\"toc_detected\": \"no\"}`\n   Done. \n   *Self-Correction/Verification during generation prep*: \n   The prompt says: \"Given text: {content}\". It's a placeholder. I will just output the JSON. No extra words. \n   Ready. \n   Output: `{\"toc_detected\": \"no\"}`\n   (Note: If the user actually meant to provide text but forgot, this is the safest compliant response.) \n   Proceeds. \n   [Output Generation] -> `{\"toc_detected\": \"no\"}`\n   *Wait*, let's consider if I should just output the exact JSON structure as requested. The prompt says \"return the following JSON format: {{ \"toc_detected\": \"<yes or no>\", }}\". I will output exactly that with \"no\".\n   All good. \n   Output matches.✅\n   *Output Generation* (matches response)\n   `{\"toc_detected\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Detect if a table of contents (TOC) is provided in the given text.\n   - **Input Format:** `Given text: {content}` (Note: The user didn't provide the actual `{content}`, but I need to handle this as a prompt template. Wait, the prompt says \"Given text: {content}\" but doesn't replace it. I should assume the user will provide the content, or maybe this is a system prompt template. Actually, in this interaction, the user just pasted the prompt template without the actual content. I need to respond based on the instruction. Wait, the prompt says \"Given text: {content}\" literally. I should probably just output a JSON based on the instruction, but since there's no actual content, I'll assume `{content}` is a placeholder. However, the instruction says \"Directly return the final JSON structure. Do not output anything else.\" I will just output the JSON with a default or ask for content? No, I must follow the exact format. I'll assume the user wants me to process a hypothetical or missing content, but typically in these prompts, I should just output the JSON structure as requested. Wait, maybe the user forgot to paste the content. I will just output `{\"toc_detected\": \"no\"}` or `{\"toc_detected\": \"yes\"}`? Actually, I should just follow the instruction strictly. Since no content is provided, I'll default to \"no\", or I can just output the JSON structure as requested. But the prompt says \"Given text: {content}\". I will treat `{content}` as the literal text provided. It doesn't contain a TOC. So `toc_detected` should be \"no\".\n   - **Constraints:** Return only JSON. No thinking, no explanation. Format: `{\"toc_detected\": \"<yes or no>\"}`. Note: abstract, summary, notation list, figure list, table list are NOT TOC.\n\n2.  **Identify Key Requirements:**\n   - Output must be strictly JSON.\n   - Keys: `toc_detected`\n   - Values: `\"yes\"` or `\"no\"`\n   - No extra text.\n\n3.  **Handle Missing Content:**\n   - The prompt literally says `Given text: {content}`. This is likely a template where `{content}` wasn't replaced. I will assume the input text is just `{content}` or empty. In either case, it doesn't contain a TOC. So `\"no\"` is appropriate.\n   - I will output exactly: `{\"toc_detected\": \"no\"}`\n\n   Wait, what if the user expects me to just output the JSON structure as a template? No, the instruction says \"return the following JSON format\". I'll just output `{\"toc_detected\": \"no\"}`.\n\n   Let's double check. Sometimes users paste prompts with placeholders. I will strictly follow the instruction. I'll output `{\"toc_detected\": \"no\"}`.\n\n   Actually, to be safe, I'll just output the JSON as requested. Since there's no actual content to analyze, \"no\" is the logical default.\n\n   Final decision: `{\"toc_detected\": \"no\"}`.\n   I will ensure absolutely no extra text.\n   Proceed. \n   Self-Correction/Refinement during thought: What if the prompt is a test and expects me to just output the JSON regardless? Yes. I will output exactly `{\"toc_detected\": \"no\"}`.\n   Wait, could `{content}` be a variable that the system will replace later? In this interface, I just respond to what's given. I'll stick with \"no\".\n   Output matches requirement.✅\n   Generate. \n   `{\"toc_detected\": \"no\"}`\n   Done. \n   *Self-Correction/Verification during generation prep*: \n   The prompt says: \"Given text: {content}\". It's a placeholder. I will just output the JSON. No extra words. \n   Ready. \n   Output: `{\"toc_detected\": \"no\"}`\n   (Note: If the user actually meant to provide text but forgot, this is the safest compliant response.) \n   Proceeds. \n   [Output Generation] -> `{\"toc_detected\": \"no\"}`\n   *Wait*, let's consider if I should just output the exact JSON structure as requested. The prompt says \"return the following JSON format: {{ \"toc_detected\": \"<yes or no>\", }}\". I will output exactly that with \"no\".\n   All good. \n   Output matches.✅\n   *Output Generation* (matches response)\n   `{\"toc_detected\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782353889,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1008,
+      "prompt_tokens": 125,
+      "total_tokens": 1133,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 996,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1008
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 125
+      }
+    }
+  },
+  "response_text": "{\"toc_detected\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

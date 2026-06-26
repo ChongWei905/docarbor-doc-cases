@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:05:36.998963+00:00",
+  "sequence": 349,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 15500,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 三大核心要义：2025年游戏营销者的启示：迈向2026年的关键洞察.\n    The given page_text is 38\n三大核心要义：2025年游戏营销者的启示：迈向 2026年的关键洞察\n数据来源： Singular 2025 年季度趋势报告1稳扎稳打胜于激进扩张，体系化增长优于盲目追逐流量规模。\n2创意迭代比单纯拓宽渠道更能铸就持久优势。\n3尤为关键的是，信心成就智慧增长。信赖自身衡量体系的广告主，\n以更敏捷的步伐应对竞争，在 2025年的征程中实现了实力跃升，\n以比年初更稳健的姿态迎接新程。\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-52841e59-cde5-98ac-b61d-e62fdb7ed4be",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Rule:** If there's other content before the section title in `page_text`, then `start_begin` is \"no\". If the section title is the first content, then `start_begin` is \"yes\".\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `三大核心要义：2025年游戏营销者的启示：迈向2026年的关键洞察`\n   - **Page Text:**\n     ```\n     38\n     三大核心要义：2025年游戏营销者的启示：迈向 2026年的关键洞察\n     数据来源： Singular 2025 年季度趋势报告1稳扎稳打胜于激进扩张，体系化增长优于盲目追逐流量规模。\n     2创意迭代比单纯拓宽渠道更能铸就持久优势。\n     3尤为关键的是，信心成就智慧增长。信赖自身衡量体系的广告主，\n     以更敏捷的步伐应对竞争，在 2025年的征程中实现了实力跃升，\n     以比年初更稳健的姿态迎接新程。\n     .\n     ```\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate `page_text` against `section_title`:**\n   - The `page_text` starts with `38\\n`.\n   - Then comes the section title: `三大核心要义：2025年游戏营销者的启示：迈向 2026年的关键洞察`.\n   - There is content (`38`) before the section title.\n   - Therefore, the section does *not* start at the beginning of the page text.\n\n3.  **Determine Output:**\n   - `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: The prompt says \"ignore any space inconsistency in the page_text\" and \"do fuzzy matching\". The title in the text has a space: `迈向 2026年`, while the given title is `迈向2026年`. This matches fuzzily. But the key is the `38` at the very beginning. So it's definitely \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Self-Correction/Verification during thought: \n   Does \"38\" count as content before the section? Yes, it's a page number. The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" So \"no\" is correct.\n   Format is exact.\n   Proceed. \n   Output: `{\"start_begin\": \"no\"}`\n   (Note: I will strictly follow the JSON format requested.) \n   All steps verified.✅\n   Output matches. \n   [Done] \n   *Self-Correction/Refinement during generation prep*: I'll just output the exact JSON string as requested. No extra text.\n   `{\"start_begin\": \"no\"}` is correct.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Rule:** If there's other content before the section title in `page_text`, then `start_begin` is \"no\". If the section title is the first content, then `start_begin` is \"yes\".\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `三大核心要义：2025年游戏营销者的启示：迈向2026年的关键洞察`\n   - **Page Text:**\n     ```\n     38\n     三大核心要义：2025年游戏营销者的启示：迈向 2026年的关键洞察\n     数据来源： Singular 2025 年季度趋势报告1稳扎稳打胜于激进扩张，体系化增长优于盲目追逐流量规模。\n     2创意迭代比单纯拓宽渠道更能铸就持久优势。\n     3尤为关键的是，信心成就智慧增长。信赖自身衡量体系的广告主，\n     以更敏捷的步伐应对竞争，在 2025年的征程中实现了实力跃升，\n     以比年初更稳健的姿态迎接新程。\n     .\n     ```\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate `page_text` against `section_title`:**\n   - The `page_text` starts with `38\\n`.\n   - Then comes the section title: `三大核心要义：2025年游戏营销者的启示：迈向 2026年的关键洞察`.\n   - There is content (`38`) before the section title.\n   - Therefore, the section does *not* start at the beginning of the page text.\n\n3.  **Determine Output:**\n   - `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: The prompt says \"ignore any space inconsistency in the page_text\" and \"do fuzzy matching\". The title in the text has a space: `迈向 2026年`, while the given title is `迈向2026年`. This matches fuzzily. But the key is the `38` at the very beginning. So it's definitely \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Self-Correction/Verification during thought: \n   Does \"38\" count as content before the section? Yes, it's a page number. The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" So \"no\" is correct.\n   Format is exact.\n   Proceed. \n   Output: `{\"start_begin\": \"no\"}`\n   (Note: I will strictly follow the JSON format requested.) \n   All steps verified.✅\n   Output matches. \n   [Done] \n   *Self-Correction/Refinement during generation prep*: I'll just output the exact JSON string as requested. No extra text.\n   `{\"start_begin\": \"no\"}` is correct.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360341,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 806,
+      "prompt_tokens": 367,
+      "total_tokens": 1173,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 794,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 806
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 367
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

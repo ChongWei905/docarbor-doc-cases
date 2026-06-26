@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:00:31.155071+00:00",
+  "sequence": 260,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 14897,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年全球热门地区手游营销观察06.\n    The given page_text is 70\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\n手游营销观察06\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-709418f7-1a0a-94b2-a784-1b24a8ecfec7",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Thinking Process:\n1.  **Analyze User Input:**\n   - **Task:** Check if a given section title appears or starts in the given page text.\n   - **Section Title:** `2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年全球热门地区手游营销观察06.`\n   - **Page Text:** `70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n手游营销观察06\\n.`\n   - **Constraints:** Fuzzy matching, ignore space inconsistencies. Return JSON `{\"answer\": \"yes\"}` or `{\"answer\": \"no\"}`. No extra text.\n\n2.  **Compare Section Title and Page Text:**\n   - Section Title: `2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年全球热门地区手游营销观察06.`\n   - Page Text (normalized/concatenated): `70 2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区手游营销观察06 .`\n   - Let's remove spaces/newlines from both for exact/fuzzy comparison:\n     - Title: `2025GLOBALMOBILEGAMEMARKETINGTRENDINSIGHTS2025年全球热门地区手游营销观察06.`\n     - Page: `702025GLOBALMOBILEGAMEMARKETINGTRENDINSIGHTS2025年全球热门地区手游营销观察06.`\n   - The page text contains the exact sequence of characters from the title, just with a \"70\" at the beginning and some line breaks/spaces.\n   - The prompt says \"ignore any space inconsistency\".\n   - The title matches the content in the page text exactly (ignoring spaces/newlines).\n   - Therefore, the answer should be \"yes\".\n\n3.  **Format Output:**\n   - JSON: `{\"answer\": \"yes\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought:\n   - Title: `2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年全球热门地区手游营销观察06.`\n   - Page: `70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n手游营销观察06\\n.`\n   - Matches perfectly when ignoring whitespace.\n   - Output matches requested format.\n   - Ready. \n   Output: `{\"answer\": \"yes\"}`\n   No extra text.✅\n   Proceeds. \n   [Final Check]\n   Input: `2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年全球热门地区手游营销观察06.`\n   Page: `70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n手游营销观察06\\n.`\n   Fuzzy match: Yes.\n   JSON: `{\"answer\": \"yes\"}`\n   Matches constraints.✅\n   Output matches exactly. \n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   (Note: I will make sure it's strictly JSON as requested.) \n   All steps verified. \n   Output matches request. \n   Done. \n   [Final Output Generation] -> `{\"answer\": \"yes\"}`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Thinking Process:\n1.  **Analyze User Input:**\n   - **Task:** Check if a given section title appears or starts in the given page text.\n   - **Section Title:** `2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年全球热门地区手游营销观察06.`\n   - **Page Text:** `70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n手游营销观察06\\n.`\n   - **Constraints:** Fuzzy matching, ignore space inconsistencies. Return JSON `{\"answer\": \"yes\"}` or `{\"answer\": \"no\"}`. No extra text.\n\n2.  **Compare Section Title and Page Text:**\n   - Section Title: `2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年全球热门地区手游营销观察06.`\n   - Page Text (normalized/concatenated): `70 2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区手游营销观察06 .`\n   - Let's remove spaces/newlines from both for exact/fuzzy comparison:\n     - Title: `2025GLOBALMOBILEGAMEMARKETINGTRENDINSIGHTS2025年全球热门地区手游营销观察06.`\n     - Page: `702025GLOBALMOBILEGAMEMARKETINGTRENDINSIGHTS2025年全球热门地区手游营销观察06.`\n   - The page text contains the exact sequence of characters from the title, just with a \"70\" at the beginning and some line breaks/spaces.\n   - The prompt says \"ignore any space inconsistency\".\n   - The title matches the content in the page text exactly (ignoring spaces/newlines).\n   - Therefore, the answer should be \"yes\".\n\n3.  **Format Output:**\n   - JSON: `{\"answer\": \"yes\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought:\n   - Title: `2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年全球热门地区手游营销观察06.`\n   - Page: `70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n手游营销观察06\\n.`\n   - Matches perfectly when ignoring whitespace.\n   - Output matches requested format.\n   - Ready. \n   Output: `{\"answer\": \"yes\"}`\n   No extra text.✅\n   Proceeds. \n   [Final Check]\n   Input: `2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年全球热门地区手游营销观察06.`\n   Page: `70\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年全球热门地区\\n手游营销观察06\\n.`\n   Fuzzy match: Yes.\n   JSON: `{\"answer\": \"yes\"}`\n   Matches constraints.✅\n   Output matches exactly. \n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   (Note: I will make sure it's strictly JSON as requested.) \n   All steps verified. \n   Output matches request. \n   Done. \n   [Final Output Generation] -> `{\"answer\": \"yes\"}`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360035,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 780,
+      "prompt_tokens": 198,
+      "total_tokens": 978,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 769,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 780
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 198
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

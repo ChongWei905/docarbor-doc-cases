@@ -5,26 +5,10 @@
     41,
     46
   ],
-  "accepted_pages": [
-    1
-  ],
-  "entry_count": 1,
+  "accepted_pages": [],
+  "entry_count": 0,
   "page_span": 0,
-  "outline_entries": [
-    {
-      "title": "2026全球移动游戏行业白皮书",
-      "printed_page": null,
-      "physical_page": 1,
-      "level_hint": 1,
-      "toc_page_number": 1,
-      "bbox": [
-        0.0,
-        0.0,
-        0.0,
-        0.0
-      ]
-    }
-  ],
+  "outline_entries": [],
   "page_checks": [
     {
       "page_number": 1,
@@ -45,14 +29,14 @@
           ]
         }
       ],
-      "role": "section_divider",
+      "role": "not_divider",
       "title": "2026全球移动游戏行业白皮书",
       "level": 1,
       "ordinal": null,
       "confidence": "high",
-      "reason": "The page features a large, prominent title stack ('2026', 'Global Mobile Game Industry', 'White Paper') centered on a blue background with illustrative graphics, characteristic of a main title page or major section divider.",
-      "accepted": true,
-      "rejection_reason": null
+      "reason": "This is the main cover page of the report, indicated by the report title '2026 Global Mobile Game Industry White Paper', publisher logo, and introductory layout, rather than an internal section divider.",
+      "accepted": false,
+      "rejection_reason": "not_divider"
     },
     {
       "page_number": 41,
@@ -107,11 +91,11 @@
         }
       ],
       "role": "not_divider",
-      "title": "法律声明 Legal Statement",
+      "title": null,
       "level": 1,
       "ordinal": null,
       "confidence": "high",
-      "reason": "This is a legal page containing full text paragraphs (Disclaimer and Legal Terms), which classifies it as a content page rather than a section divider.",
+      "reason": "The page contains substantial body text paragraphs under subheadings ('Disclaimer', 'Legal Terms'), characterizing it as a content page (legal page) rather than a transitional section divider.",
       "accepted": false,
       "rejection_reason": "not_divider"
     },
@@ -139,11 +123,10 @@
       "level": 1,
       "ordinal": null,
       "confidence": "high",
-      "reason": "This is an introductory or company profile page for 'Diandian Data', featuring a logo, platform icons, feature lists, a descriptive paragraph, a QR code, and key statistics. It is a content-rich page, not a sparse section divider or chapter opener.",
+      "reason": "This is a promotional or 'About Us' page for the data platform (Diandian Data), featuring feature lists, a company description, a QR code, and key metrics, rather than a section divider introducing a report chapter.",
       "accepted": false,
       "rejection_reason": "not_divider"
     }
   ],
-  "exhibit_pages": [],
   "ready": false
 }

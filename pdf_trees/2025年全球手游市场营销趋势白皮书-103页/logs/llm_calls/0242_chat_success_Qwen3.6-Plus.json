@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:59:36.841554+00:00",
+  "sequence": 242,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 9494,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is RPG手游 投放趋势观察.\n    The given page_text is 56\nSource ：广大大 -广告主分析模块，选取时间段内新投放展现或热度表现较高素材展现\nDate Range ：2025/1~2025/12\n77.2%\n74.2%77.4%81.1%\n78.7% 78.9% 79.3% 79.4%82.7% 82.9%81.2%89.3%\n4.0 K4.5 K5.0 K5.5 K\n1月2月3月4月5月6月7月8月9月10月11月12月广告主数量月度变化趋势\n月广告主数量 投放新素材广告主占比\n57.2%\n53.0%54.0%60.0%58.4%59.4%62.6%\n59.0%60.5%\n56.8%60.7%65.8%\n0200400\n1月2月3月4月5月6月7月8月9月10月11月12月月均在投素材量变化趋势\n月均素材量 当月新素材占比传统数值养成加 IP联动养成新式放置、肉鸽 RPG，武侠、微恐 MMO 占据视听宣传优势成为目前主流RPG手游 投放趋势观察\n视频, \n70.1%图片, \n29.0%可玩, \n0.4% 其他, \n0.5%各类型素材带来展现占比\n不同系统策略素材占比\n视频, \n68.0%图片, \n31.0%\n视频, \n74.3%图片, \n24.6%11% 44% 42%视频素材时长分布\n0-15s 15-30s 30-60s 60s-Max\n16% 6% 77%图片素材形式分布\n竖版 横版 方形 横幅\nTOP100 广告主出海厂商占比\n71%\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-611487d4-543e-9858-affc-16bfb36ab8ac",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"RPG手游 投放趋势观察\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching, ignoring space inconsistencies.\nLooking at the `page_text`:\n\"...传统数值养成加 IP联动养成新式放置、肉鸽 RPG，武侠、微恐 MMO 占据视听宣传优势成为目前主流RPG手游 投放趋势观察\\n视频, ...\"\nThe exact phrase \"RPG手游 投放趋势观察\" is present in the text.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches exactly. \nNo extra text.\nDone. \nSelf-Correction/Verification during thought:\nThe text says: \"...成为目前主流RPG手游 投放趋势观察\\n视频, ...\"\nMatches exactly. Fuzzy matching is allowed anyway.\nResult: yes.\nJSON: {\"answer\": \"yes\"}\nReady. \nOutput matches request. \nProceeds. \n[Final Check]\nSection title: RPG手游 投放趋势观察\nPage text contains: RPG手游 投放趋势观察\nAnswer: yes\nFormat: JSON\nAll good. \nOutput Generation. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nWait, the prompt says \"Reply format: { \"answer\": \"yes or no\" }\". I will just output that JSON.\nDone. \nProceeds. \n[Output Generation] -> `{\"answer\": \"yes\"}`\nDone. \n(Self-Correction/Refinement during generation prep: I will make sure it's strictly valid JSON without markdown if possible, but markdown is usually fine. I'll just output the raw JSON as requested.)\n\"Directly return the final JSON structure. Do not output anything else.\"\nI will output exactly:\n{\n    \"answer\": \"yes\"\n}\nDone. \nProceeds. \n[Final Output Generation] -> matches exactly. \nDone. \n[Output]\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"RPG手游 投放趋势观察\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching, ignoring space inconsistencies.\nLooking at the `page_text`:\n\"...传统数值养成加 IP联动养成新式放置、肉鸽 RPG，武侠、微恐 MMO 占据视听宣传优势成为目前主流RPG手游 投放趋势观察\\n视频, ...\"\nThe exact phrase \"RPG手游 投放趋势观察\" is present in the text.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches exactly. \nNo extra text.\nDone. \nSelf-Correction/Verification during thought:\nThe text says: \"...成为目前主流RPG手游 投放趋势观察\\n视频, ...\"\nMatches exactly. Fuzzy matching is allowed anyway.\nResult: yes.\nJSON: {\"answer\": \"yes\"}\nReady. \nOutput matches request. \nProceeds. \n[Final Check]\nSection title: RPG手游 投放趋势观察\nPage text contains: RPG手游 投放趋势观察\nAnswer: yes\nFormat: JSON\nAll good. \nOutput Generation. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nWait, the prompt says \"Reply format: { \"answer\": \"yes or no\" }\". I will just output that JSON.\nDone. \nProceeds. \n[Output Generation] -> `{\"answer\": \"yes\"}`\nDone. \n(Self-Correction/Refinement during generation prep: I will make sure it's strictly valid JSON without markdown if possible, but markdown is usually fine. I'll just output the raw JSON as requested.)\n\"Directly return the final JSON structure. Do not output anything else.\"\nI will output exactly:\n{\n    \"answer\": \"yes\"\n}\nDone. \nProceeds. \n[Final Output Generation] -> matches exactly. \nDone. \n[Output]\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359981,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 485,
+      "prompt_tokens": 627,
+      "total_tokens": 1112,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 469,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 485
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 627
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:04:38.814065+00:00",
+  "sequence": 335,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4164,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 游戏葡萄.\n    The given page_text is 27\n游戏葡萄\n对中国手游行业来说， 2025年是一个变化很大的年份。\n全年出海收入依然稳定突破 200亿美元，创下了新高，市场方面也有不少新的增长机会。比如传统重度游戏的统治力相对松动了一些，\n取而代之从诸多赛道里杀出来的，是 SLG+X 混合玩法、合成类及小游戏等赛道。\n市场方面，欧美日韩仍然是中国手游出海的基本盘，但中东、拉美等新兴市场也在这一年展现出了惊人的爆发力。\n在2026年，出海竞争或许会从单纯的卷内容、卷买量，更深度地转向玩法融合与题材洞察的竞争。与此同时，继续加深本地化的文化适\n配，并通过轻量化的外在和相对重度的内核吸引泛用户，也会是成功的关键。\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-afc40195-bee2-9045-9ee1-69963db51265",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"游戏葡萄\" starts at the beginning of the given `page_text`.\nThe `page_text` is:\n\"27\n游戏葡萄\n对中国手游行业来说， 2025年是一个变化很大的年份。...\"\n\nThe first line is \"27\", which is likely a page number.\nThen comes \"游戏葡萄\".\nSo the section title is NOT the first content in the page_text. There is \"27\" before it.\nTherefore, `start_begin` should be \"no\".\n\nCheck instructions: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n\"27\" is other content.\nSo answer is no.\nFormat: JSON with \"start_begin\": \"no\".\nDone. \nI will output exactly the JSON.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"游戏葡萄\" starts at the beginning of the given `page_text`.\nThe `page_text` is:\n\"27\n游戏葡萄\n对中国手游行业来说， 2025年是一个变化很大的年份。...\"\n\nThe first line is \"27\", which is likely a page number.\nThen comes \"游戏葡萄\".\nSo the section title is NOT the first content in the page_text. There is \"27\" before it.\nTherefore, `start_begin` should be \"no\".\n\nCheck instructions: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n\"27\" is other content.\nSo answer is no.\nFormat: JSON with \"start_begin\": \"no\".\nDone. \nI will output exactly the JSON."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360283,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 203,
+      "prompt_tokens": 391,
+      "total_tokens": 594,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 186,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 203
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 391
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

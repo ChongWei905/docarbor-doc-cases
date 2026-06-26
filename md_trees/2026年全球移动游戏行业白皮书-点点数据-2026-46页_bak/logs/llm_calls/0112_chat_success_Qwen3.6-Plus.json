@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-23T14:52:04.646300+00:00",
+  "sequence": 112,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 22522,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a retrieval-oriented summary for this section of a document.\nFocus on what questions this section can answer: topics, entities, dates,\ndefinitions, procedures, claims, tables, figures, metrics, and evidence types.\nDo not invent facts. Return only the summary text.\n\nSection metadata:\n{\n  \"node_id\": \"0167\",\n  \"title\": \"AI\",\n  \"page_index\": 1,\n  \"page_range\": \"1\"\n}\n\nSection text:\n## AI\n\nPolyBuzz\n\nKling Al\n\nSaylo"
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-2a09a8c9-e791-92b7-a45d-c87a1a1e03c9",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions regarding which specific AI tools or platforms are mentioned under the \"AI\" heading. The section does not contain dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Create a retrieval-oriented summary for a document section.\n   - **Focus:** What questions this section can answer (topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, evidence types).\n   - **Constraint:** Do not invent facts. Return only the summary text.\n   - **Input Data:**\n     - Metadata: node_id: \"0167\", title: \"AI\", page_index: 1, page_range: \"1\"\n     - Section text: \"## AI\\n\\nPolyBuzz\\n\\nKling Al\\n\\nSaylo\"\n\n2.  **Analyze Section Content:**\n   - The section is titled \"AI\".\n   - It contains three names/entities: \"PolyBuzz\", \"Kling Al\" (likely a typo for \"Kling AI\", but I must stick to the text), and \"Saylo\".\n   - There are no dates, definitions, procedures, claims, tables, figures, metrics, or evidence types mentioned.\n   - It's essentially a list of AI-related entities/tools under the \"AI\" heading.\n\n3.  **Determine Retrieval-Oriented Summary Focus:**\n   - What questions can it answer?\n     - What AI tools/entities are listed in this section?\n     - Which specific AI platforms are mentioned under the \"AI\" heading?\n   - Topics: AI tools/platforms\n   - Entities: PolyBuzz, Kling Al, Saylo\n   - Other categories (dates, definitions, etc.): None present.\n\n4.  **Draft Summary (Mental Refinement):**\n   This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions regarding which specific AI tools or platforms are mentioned under the \"AI\" heading. No definitions, procedures, dates, metrics, tables, figures, or supporting evidence are provided in this section.\n\n5.  **Check Constraints:**\n   - Retrieval-oriented? Yes, focuses on what questions it answers.\n   - Covers requested aspects? Yes, explicitly mentions topics/entities and notes the absence of others.\n   - No invented facts? Yes, strictly based on the provided text.\n   - Return only the summary text? Yes.\n\n   The draft looks solid. I will format it concisely to match the prompt's request for a retrieval-oriented summary.\n\n   Refined version:\n   This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions about which specific AI tools or platforms are mentioned under the \"AI\" heading. The section does not contain dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.\n\n6.  **Final Output Generation:** (Matches the refined version) Ensure it strictly follows \"Return only the summary text.\" constraint. No extra greetings or explanations.✅\n   All constraints met. Proceed. \n   Output matches the refined version.✅\n   Self-Correction/Verification during thought: \n   - Check if \"Kling Al\" should be corrected to \"Kling AI\"? The prompt says \"Do not invent facts.\" I will keep it exactly as written: \"Kling Al\".\n   - The summary should explicitly map to the requested focus areas. I'll structure it to clearly state what it can answer and what it lacks.\n   - \"This section identifies three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions regarding which specific AI tools or platforms are listed under the 'AI' heading. No dates, definitions, procedures, claims, tables, figures, metrics, or evidence types are present.\" -> This is precise and retrieval-oriented.✅\n   Ready. \n   Output matches exactly. \n   Proceeds. \n   [Output Generation] -> *Proceeds*\n   *(Self-Correction/Note during drafting)*: I should make it slightly more structured to directly address the prompt's focus areas, but keep it concise.\n   \"This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions about which specific AI tools or platforms are mentioned under the 'AI' heading. The text does not provide dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.\" -> Perfect.✅\n   Output matches. \n   [Done.] \n   *Output Generation* (matches the final refined version)\n   \"This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions regarding which specific AI tools or platforms are mentioned under the 'AI' heading. The section does not contain dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.\" -> Proceeds. \n   [Final Check of the Prompt]: \"Focus on what questions this section can answer: topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, and evidence types. Do not invent facts. Return only the summary text.\" -> All good. \n   Output matches. \n   [Proceeds] -> *Output Generation* (exact text)\n   \"This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions regarding which specific AI tools or platforms are mentioned under the 'AI' heading. The section does not contain dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.\" -> Done. \n   [Output Generation] (Proceeds)",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Create a retrieval-oriented summary for a document section.\n   - **Focus:** What questions this section can answer (topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, evidence types).\n   - **Constraint:** Do not invent facts. Return only the summary text.\n   - **Input Data:**\n     - Metadata: node_id: \"0167\", title: \"AI\", page_index: 1, page_range: \"1\"\n     - Section text: \"## AI\\n\\nPolyBuzz\\n\\nKling Al\\n\\nSaylo\"\n\n2.  **Analyze Section Content:**\n   - The section is titled \"AI\".\n   - It contains three names/entities: \"PolyBuzz\", \"Kling Al\" (likely a typo for \"Kling AI\", but I must stick to the text), and \"Saylo\".\n   - There are no dates, definitions, procedures, claims, tables, figures, metrics, or evidence types mentioned.\n   - It's essentially a list of AI-related entities/tools under the \"AI\" heading.\n\n3.  **Determine Retrieval-Oriented Summary Focus:**\n   - What questions can it answer?\n     - What AI tools/entities are listed in this section?\n     - Which specific AI platforms are mentioned under the \"AI\" heading?\n   - Topics: AI tools/platforms\n   - Entities: PolyBuzz, Kling Al, Saylo\n   - Other categories (dates, definitions, etc.): None present.\n\n4.  **Draft Summary (Mental Refinement):**\n   This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions regarding which specific AI tools or platforms are mentioned under the \"AI\" heading. No definitions, procedures, dates, metrics, tables, figures, or supporting evidence are provided in this section.\n\n5.  **Check Constraints:**\n   - Retrieval-oriented? Yes, focuses on what questions it answers.\n   - Covers requested aspects? Yes, explicitly mentions topics/entities and notes the absence of others.\n   - No invented facts? Yes, strictly based on the provided text.\n   - Return only the summary text? Yes.\n\n   The draft looks solid. I will format it concisely to match the prompt's request for a retrieval-oriented summary.\n\n   Refined version:\n   This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions about which specific AI tools or platforms are mentioned under the \"AI\" heading. The section does not contain dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.\n\n6.  **Final Output Generation:** (Matches the refined version) Ensure it strictly follows \"Return only the summary text.\" constraint. No extra greetings or explanations.✅\n   All constraints met. Proceed. \n   Output matches the refined version.✅\n   Self-Correction/Verification during thought: \n   - Check if \"Kling Al\" should be corrected to \"Kling AI\"? The prompt says \"Do not invent facts.\" I will keep it exactly as written: \"Kling Al\".\n   - The summary should explicitly map to the requested focus areas. I'll structure it to clearly state what it can answer and what it lacks.\n   - \"This section identifies three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions regarding which specific AI tools or platforms are listed under the 'AI' heading. No dates, definitions, procedures, claims, tables, figures, metrics, or evidence types are present.\" -> This is precise and retrieval-oriented.✅\n   Ready. \n   Output matches exactly. \n   Proceeds. \n   [Output Generation] -> *Proceeds*\n   *(Self-Correction/Note during drafting)*: I should make it slightly more structured to directly address the prompt's focus areas, but keep it concise.\n   \"This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions about which specific AI tools or platforms are mentioned under the 'AI' heading. The text does not provide dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.\" -> Perfect.✅\n   Output matches. \n   [Done.] \n   *Output Generation* (matches the final refined version)\n   \"This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions regarding which specific AI tools or platforms are mentioned under the 'AI' heading. The section does not contain dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.\" -> Proceeds. \n   [Final Check of the Prompt]: \"Focus on what questions this section can answer: topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, and evidence types. Do not invent facts. Return only the summary text.\" -> All good. \n   Output matches. \n   [Proceeds] -> *Output Generation* (exact text)\n   \"This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions regarding which specific AI tools or platforms are mentioned under the 'AI' heading. The section does not contain dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.\" -> Done. \n   [Output Generation] (Proceeds)"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782226325,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1225,
+      "prompt_tokens": 130,
+      "total_tokens": 1355,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1159,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1225
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 130
+      }
+    }
+  },
+  "response_text": "This section lists three AI-related entities: PolyBuzz, Kling Al, and Saylo. It can answer questions regarding which specific AI tools or platforms are mentioned under the \"AI\" heading. The section does not contain dates, definitions, procedures, claims, tables, figures, metrics, or evidence types.",
+  "error_type": null,
+  "error_message": null
+}

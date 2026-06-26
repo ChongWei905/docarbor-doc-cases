@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:46:06.218634+00:00",
+  "sequence": 82,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 11954,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 《原神》基础数据.\n    The given page_text is © 2025 DianDian.All Rights Reserved.\n 14《原神》基础数据\n来源：点点数据自主研究及绘制顶尖视听、玩法设计、极致技术力等多个方面都对当代二游发展影响颇深\n2025年《原神》国服收入规模与活跃用户数据表现\n0.0 0.5 1.0 1.5 2.0 2.5 \n1月2月3月4月5月6月7月8月9月10月\nAppStore月流水（亿元）用户兴趣偏好\n动漫2025Q1-Q3用户留存\n平均次留：\n平均月留：约56.5%\n约21.4%基础教育 电影\n高等教育 网络小说 电视剧0 100 200 300 400 500 600 \n1月2月3月4月5月6月7月8月9月\niOS月活跃用户数（万人）男生占比： 约68.5%《原神》虽然已上线5年有余，但其画面表现与音乐设计至今仍是行业顶尖水准，并且不同国度的美术风格既融合了超现实主义风格，又叠加了丰富的奇幻元素，构建出辨识度极\n高的视觉系统。在开放世界的大框架下，地图探索设计的精巧不失乐趣，配合围绕元素反应体系建立的角色技能策略，再加之成熟的战斗动作表现，形成了深度与广度兼备的游戏\n体验。游戏另一大特点，是实现了手机、PC与主机端的账号互通与数据同步，虽然这并非《原神》首创，但其背后是游戏在不同性能硬件上均能保持高水平画面表现的优化能力，\n这是游戏厂商技术力的重要体现，并且可以说是《原神》引领了移动游戏跨端的潮流风向。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-0c840bcc-7a5a-9584-b777-795f698cc40e",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** 《原神》基础数据\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved.\\n 14《原神》基础数据\\n来源：点点数据自主研究及绘制顶尖视听、玩法设计、极致技术力等多个方面都对当代二游发展影响颇深\\n...` (and more text)\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply format: JSON `{\"answer\": \"yes\" or \"no\"}`. Directly return JSON, no extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Look for `《原神》基础数据` in the `page_text`.\n   - The `page_text` contains: ` 14《原神》基础数据`\n   - This matches exactly (ignoring the leading space and the number \"14\", which is common in PDF/text extraction). The instruction says \"fuzzy matching, ignore any space inconsistency\".\n   - So, the section title definitely appears/starts in the text.\n\n3.  **Determine Output:**\n   - Answer should be \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Does the section appear? Yes.\n   - Format correct? Yes.\n   - No extra text? Yes.\n   - Proceed. \n   - Output matches requirement.✅\n   - Generate response. \n   - `{\"answer\": \"yes\"}`\n   - All constraints met.✅\n   - Done. \n   - *Self-Correction/Verification during thought:* \n     - The prompt says \"ignore any space inconsistency\". The text has ` 14《原神》基础数据`. The number 14 might be a page number or list item, but the exact string `《原神》基础数据` is present. Fuzzy matching covers this.\n     - Output format is strictly JSON.\n     - Ready. \n   - Output matches exactly. \n   - Proceeds. \n   - `[Output Generation]` -> `{\"answer\": \"yes\"}`\n   - Done. \n   - *Self-Correction/Note during generation prep:* I will strictly output only the JSON as requested. No markdown formatting if possible, or just standard JSON. The prompt says \"Directly return the final JSON structure. Do not output anything else.\" I will output exactly `{\"answer\": \"yes\"}`.\n   - All good. \n   - Proceeds. \n   - [Final Output Generation] -> `{\"answer\": \"yes\"}`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** 《原神》基础数据\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved.\\n 14《原神》基础数据\\n来源：点点数据自主研究及绘制顶尖视听、玩法设计、极致技术力等多个方面都对当代二游发展影响颇深\\n...` (and more text)\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply format: JSON `{\"answer\": \"yes\" or \"no\"}`. Directly return JSON, no extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Look for `《原神》基础数据` in the `page_text`.\n   - The `page_text` contains: ` 14《原神》基础数据`\n   - This matches exactly (ignoring the leading space and the number \"14\", which is common in PDF/text extraction). The instruction says \"fuzzy matching, ignore any space inconsistency\".\n   - So, the section title definitely appears/starts in the text.\n\n3.  **Determine Output:**\n   - Answer should be \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Does the section appear? Yes.\n   - Format correct? Yes.\n   - No extra text? Yes.\n   - Proceed. \n   - Output matches requirement.✅\n   - Generate response. \n   - `{\"answer\": \"yes\"}`\n   - All constraints met.✅\n   - Done. \n   - *Self-Correction/Verification during thought:* \n     - The prompt says \"ignore any space inconsistency\". The text has ` 14《原神》基础数据`. The number 14 might be a page number or list item, but the exact string `《原神》基础数据` is present. Fuzzy matching covers this.\n     - Output format is strictly JSON.\n     - Ready. \n   - Output matches exactly. \n   - Proceeds. \n   - `[Output Generation]` -> `{\"answer\": \"yes\"}`\n   - Done. \n   - *Self-Correction/Note during generation prep:* I will strictly output only the JSON as requested. No markdown formatting if possible, or just standard JSON. The prompt says \"Directly return the final JSON structure. Do not output anything else.\" I will output exactly `{\"answer\": \"yes\"}`.\n   - All good. \n   - Proceeds. \n   - [Final Output Generation] -> `{\"answer\": \"yes\"}`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355570,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 599,
+      "prompt_tokens": 531,
+      "total_tokens": 1130,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 588,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 599
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 531
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

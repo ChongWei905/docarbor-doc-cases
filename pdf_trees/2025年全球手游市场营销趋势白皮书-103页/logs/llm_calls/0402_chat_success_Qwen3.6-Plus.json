@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:09:28.368219+00:00",
+  "sequence": 402,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 13641,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 模拟手游 投放趋势观察.\n    The given page_text is 58\nSource ：广大大 -广告主分析模块，选取时间段内新投放展现或热度表现较高素材展现\nDate Range ：2025/1~2025/12\n76.9%\n74.3%77.3%82.3%\n81.3%\n78.9%79.8%78.9%82.7%84.6%\n82.7%87.0%\n5.5 K6.0 K6.5 K7.0 K7.5 K\n1月2月3月4月5月6月7月8月9月10月11月12月广告主数量月度变化趋势\n月广告主数量 投放新素材广告主占比\n42.6% 42.5%47.8% 48.2%\n40.1%48.2%50.8%\n48.7%\n48.0%47.5%50.3%51.9%\n0100200\n1月2月3月4月5月6月7月8月9月10月11月12月月均在投素材量变化趋势\n月均素材量 当月新素材占比模拟玩法中写实经营表现亮眼，经典买量素材复用率高于其他品类模拟手游  投放趋势观察\n视频, \n81.2%图片, \n16.0%可玩, \n2.1% 其他, \n0.7%各类型素材带来展现占比\n不同系统策略素材占比\n视频, \n75.6%图片, \n19.6%\n视频, \n77.8%图片, \n14.1%11% 45% 39%视频素材时长分布\n0-15s 15-30s 30-60s 60s-Max\n21% 6% 72%图片素材形式分布\n竖版 横版 方形 横幅\nTOP100 广告主出海厂商占比\n47%\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-e6228930-1162-999b-9f09-a888857a417b",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Section Title:** `模拟手游 投放趋势观察`\n   - **Page Text:** Starts with `58\\nSource ：广大大 -广告主分析模块...` and contains various charts/data. Near the end, it says `...当月新素材占比模拟手游  投放趋势观察\\n视频, \\n81.2%...`\n   - **Task:** Check if the current section starts at the beginning of the `page_text`.\n   - **Rule:** If there are other contents before the section title, it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n\n2.  **Scan Page Text for Section Title:**\n   - I need to find `模拟手游 投放趋势观察` in the `page_text`.\n   - Looking at the text: `...当月新素材占比模拟手游  投放趋势观察\\n视频, ...`\n   - The title appears roughly in the middle/end of the provided text, preceded by a lot of data/chart labels (`58\\nSource...`, `76.9%...`, `广告主数量月度变化趋势...`, `月均在投素材量变化趋势...`, `当月新素材占比`).\n   - Clearly, there is a significant amount of content *before* the section title.\n\n3.  **Determine Output:**\n   - Since the title is not at the beginning of the `page_text`, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   - JSON structure: `{\"start_begin\": \"no\"}`\n   - Ensure no extra text, explanations, or thinking fields are included.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Output matches requirement.✅\n   Final JSON: `{\"start_begin\": \"no\"}`\n   Self-Correction/Verification during thought: \n   - Does the prompt say \"ignore any space inconsistency\"? Yes. The title in text is `模拟手游  投放趋势观察` (two spaces), prompt has `模拟手游 投放趋势观察` (one space). Fuzzy match handles this.\n   - Is it at the beginning? No, it's preceded by page number \"58\", source info, dates, percentages, chart titles, etc.\n   - Result is definitively \"no\".\n   - Output format is strictly JSON.\n   - Ready. \n   Output matches exactly. \n   Proceeds. \n   `[{\"start_begin\": \"no\"}]` -> Wait, the prompt says `{\"start_begin\": \"yes or no\"}`. I will output exactly that.\n   Final: `{\"start_begin\": \"no\"}`.✅\n   All steps verified. Output matches request. \n   Generating response. \n   *(Self-Correction/Refinement during thought)*: I should make sure the JSON is exactly as requested.\n   `{\n        \"start_begin\": \"no\"\n    }`\n   Matches perfectly. No extra text. Done. \n   Output Generation. \n   `[Done]`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Section Title:** `模拟手游 投放趋势观察`\n   - **Page Text:** Starts with `58\\nSource ：广大大 -广告主分析模块...` and contains various charts/data. Near the end, it says `...当月新素材占比模拟手游  投放趋势观察\\n视频, \\n81.2%...`\n   - **Task:** Check if the current section starts at the beginning of the `page_text`.\n   - **Rule:** If there are other contents before the section title, it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n\n2.  **Scan Page Text for Section Title:**\n   - I need to find `模拟手游 投放趋势观察` in the `page_text`.\n   - Looking at the text: `...当月新素材占比模拟手游  投放趋势观察\\n视频, ...`\n   - The title appears roughly in the middle/end of the provided text, preceded by a lot of data/chart labels (`58\\nSource...`, `76.9%...`, `广告主数量月度变化趋势...`, `月均在投素材量变化趋势...`, `当月新素材占比`).\n   - Clearly, there is a significant amount of content *before* the section title.\n\n3.  **Determine Output:**\n   - Since the title is not at the beginning of the `page_text`, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   - JSON structure: `{\"start_begin\": \"no\"}`\n   - Ensure no extra text, explanations, or thinking fields are included.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Output matches requirement.✅\n   Final JSON: `{\"start_begin\": \"no\"}`\n   Self-Correction/Verification during thought: \n   - Does the prompt say \"ignore any space inconsistency\"? Yes. The title in text is `模拟手游  投放趋势观察` (two spaces), prompt has `模拟手游 投放趋势观察` (one space). Fuzzy match handles this.\n   - Is it at the beginning? No, it's preceded by page number \"58\", source info, dates, percentages, chart titles, etc.\n   - Result is definitively \"no\".\n   - Output format is strictly JSON.\n   - Ready. \n   Output matches exactly. \n   Proceeds. \n   `[{\"start_begin\": \"no\"}]` -> Wait, the prompt says `{\"start_begin\": \"yes or no\"}`. I will output exactly that.\n   Final: `{\"start_begin\": \"no\"}`.✅\n   All steps verified. Output matches request. \n   Generating response. \n   *(Self-Correction/Refinement during thought)*: I should make sure the JSON is exactly as requested.\n   `{\n        \"start_begin\": \"no\"\n    }`\n   Matches perfectly. No extra text. Done. \n   Output Generation. \n   `[Done]`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360572,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 708,
+      "prompt_tokens": 704,
+      "total_tokens": 1412,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 691,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 708
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 704
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

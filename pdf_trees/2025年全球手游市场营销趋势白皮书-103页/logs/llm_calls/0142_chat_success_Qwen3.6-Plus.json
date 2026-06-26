@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:54:31.648998+00:00",
+  "sequence": 142,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5183,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年全球手游市场营销趋势洞察.\n    The given page_text is 6\n2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING2025年全球手游\n市场营销趋势洞察01\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-d7c7da3c-e1a6-904f-84b8-70392cbf4c03",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年全球手游市场营销趋势洞察\" appears or starts in the given page_text.\nThe page_text is:\n\"6\n2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING2025年全球手游\n市场营销趋势洞察01\n.\"\n\nLet's check the text:\n\"2025年全球手游\\n市场营销趋势洞察\"\nThe title is \"2025年全球手游市场营销趋势洞察\".\nIn the page_text, it's split across two lines: \"2025年全球手游\\n市场营销趋势洞察\".\nIgnoring spaces/newlines, it matches exactly.\nSo the answer should be \"yes\".\n\nFormat required:\n{\n    \"answer\": \"yes\"\n}\nNo extra text.\nDone. \nCheck carefully: \"2025年全球手游市场营销趋势洞察\" vs \"2025年全球手游\\n市场营销趋势洞察\". Fuzzy matching, ignore space inconsistency. Matches.\nOutput matches requirement.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年全球手游市场营销趋势洞察\" appears or starts in the given page_text.\nThe page_text is:\n\"6\n2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING2025年全球手游\n市场营销趋势洞察01\n.\"\n\nLet's check the text:\n\"2025年全球手游\\n市场营销趋势洞察\"\nThe title is \"2025年全球手游市场营销趋势洞察\".\nIn the page_text, it's split across two lines: \"2025年全球手游\\n市场营销趋势洞察\".\nIgnoring spaces/newlines, it matches exactly.\nSo the answer should be \"yes\".\n\nFormat required:\n{\n    \"answer\": \"yes\"\n}\nNo extra text.\nDone. \nCheck carefully: \"2025年全球手游市场营销趋势洞察\" vs \"2025年全球手游\\n市场营销趋势洞察\". Fuzzy matching, ignore space inconsistency. Matches.\nOutput matches requirement.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359675,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 230,
+      "prompt_tokens": 176,
+      "total_tokens": 406,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 214,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 230
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 176
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

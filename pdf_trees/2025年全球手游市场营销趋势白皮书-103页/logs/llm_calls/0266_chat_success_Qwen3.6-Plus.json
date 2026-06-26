@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:00:51.214852+00:00",
+  "sequence": 266,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5364,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 南美地区 手游投放趋势观察.\n    The given page_text is 78\nSource ：广大大 -广告主分析模块，选取时间段内新投放展现或热度表现较高素材展现\nDate Range ：2025/1~2025/12\n手游广告主数 同比增长  40%\n11.8W↑\n视频创意占比\n74.2%\n手游素材去重创意 同比增长  76%\n19.6M↑\n热投产品\nBible Word \nPuzzle\nBeast's Creed\n Rise of \nKingdoms爆款新品\nACECRAFT\n Huntopia\n Street Motor \nRider Racing\n40.2%39.2%42.3%45.3% 45.2% 45.6%44.8%47.7% 47.9% 47.4%49.2%50.8%\n0M2M4M\n1月2月3月4月5月6月7月8月9月10月11月12月在投素材月度变化趋势\n月素材数量 当月新素材占比\n各系统占比\n83% 82%安卓系统广告主、素材数量占比居全球之首，创意数量涨幅高达 76%，投放峰值出现在 5月、8月，新素材占比也呈稳定上升趋势南美地区  手游投放趋势观察\n广告主 素材数\n66.0%\n63.1%68.8%74.3% 73.3% 74.0%72.4%74.0%77.1%79.9%81.4%83.8%\n0.0 K20.0 K40.0 K\n1月2月3月4月5月6月7月8月9月10月11月12月广告主数量月度变化趋势\n月广告主数量 投放新素材广告主占比\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-16e98fb6-a8cd-94ab-b51f-288933b9f18a",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"南美地区 手游投放趋势观察\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching, ignoring space inconsistencies.\n\nGiven section title: 南美地区 手游投放趋势观察\nGiven page_text: ...南美地区  手游投放趋势观察...\n\nLooking at the page_text:\n\"...南美地区  手游投放趋势观察\" is present exactly (with two spaces instead of one, but fuzzy matching ignores space inconsistency).\n\nSo the answer should be \"yes\".\nI will output the JSON format as requested.\nCheck format:\n{\n    \"answer\": \"yes\"\n}\nDone. \nNo extra text.\nProceed. \nSelf-Correction/Verification:\nThe prompt says: \"南美地区 手游投放趋势观察\"\nPage text contains: \"南美地区  手游投放趋势观察\"\nMatches exactly ignoring spaces.\nAnswer is yes.\nOutput matches requested format.\nDone. \nProceeds. \nOutput:\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"南美地区 手游投放趋势观察\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching, ignoring space inconsistencies.\n\nGiven section title: 南美地区 手游投放趋势观察\nGiven page_text: ...南美地区  手游投放趋势观察...\n\nLooking at the page_text:\n\"...南美地区  手游投放趋势观察\" is present exactly (with two spaces instead of one, but fuzzy matching ignores space inconsistency).\n\nSo the answer should be \"yes\".\nI will output the JSON format as requested.\nCheck format:\n{\n    \"answer\": \"yes\"\n}\nDone. \nNo extra text.\nProceed. \nSelf-Correction/Verification:\nThe prompt says: \"南美地区 手游投放趋势观察\"\nPage text contains: \"南美地区  手游投放趋势观察\"\nMatches exactly ignoring spaces.\nAnswer is yes.\nOutput matches requested format.\nDone. \nProceeds. \nOutput:\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360055,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 242,
+      "prompt_tokens": 580,
+      "total_tokens": 822,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 226,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 242
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 580
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

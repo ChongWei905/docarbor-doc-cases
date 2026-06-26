@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:57:41.335788+00:00",
+  "sequence": 71,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 12410,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 海外移动游戏2025年新品收入TOP榜.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 18海外移动游戏2025年新品收入TOP榜\n全新原创的大制作在2025几乎缺席 IP是对冲市场不确定性的核心资产\n来源：点点数据自主研究及绘制。2025年海外移动游戏新品收入TOP榜回顾2024年的新品榜单，涌现了多款大制作、高期待、全新原创的重磅大作，如《绝区零》《鸣潮》《恋与深空》等。而2025年的新品头部阵营呈现出明显的“收敛”态势：\n《奔奔王国》《可狱不可囚》《吸血鬼》三款产品虽为原创IP，但他们的成功皆源于厂商对自身爆款产品框架的精准复用，其核心是成熟商业模型的优化与高效营销，而非玩法范\n式的颠覆；除此之外，其他上榜产品清一色是经典游戏IP的改编或重启。在用户获取成本高昂、市场注意力被长线运营产品牢牢固化的环境下，“IP情怀”与“已验证玩法模型的\n微创新”成为对冲市场不确定性、保障基础回报的最重要资产。新品不再被要求去凭空创造一个新世界，而是被期望能更安全、更高效地承接某个现有IP的粉丝情感，或满足某个\n已被验证的用户需求。\n奔奔王国\n全年流水：42.26亿元\n点点互动1\nSD钢弹 G世代 永恒（日服）\n全年流水：20.62亿元\n万代南梦宫2\n弓箭传说2\n全年流水：17.48亿元\n海彼游戏3\n七骑士 Re:BIRTH\n全年流水：15.86亿元\n网石游戏4\n枫之谷：放置冒险记\n全年流水：14.26亿元\nNEXON5\nDisney Solitaire\n全年流水：10.89亿元\nSuperPlay9\nI9\n全年流水：8.15亿元\n乐牛游戏13\n洛奇M\n全年流水：13.05亿元\nNEXON6\n吸血鬼\n全年流水：12.10亿元\n网石游戏7\nRF ONLINE NEXT\n全年流水：10.91亿元\n网石游戏8\n可狱不可囚\n全年流水：8.89亿元\n益世界10\n暗影诗章：凌越世界\n全年流水：8.58亿元\nCyGames11\nSD钢弹 G世代 永恒（国际服）\n全年流水：8.39亿元\n万代南梦宫12\n杖剑传说（港澳台新马服）\n全年流水：7.73亿元\n雷霆游戏14\n赛马娘（国际服）\n全年流水：7.03亿元\nCyGames15\nDC: Dark Legion\n全年流水：6.04亿元\nFunPlus16\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-a356fa4c-0b04-957e-a7f6-85df13b99bc9",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** `海外移动游戏2025年新品收入TOP榜`\n   - **Page Text:** `© 2026 DianDian.All Rights Reserved. 18海外移动游戏2025年新品收入TOP榜\\n全新原创的大制作在2025几乎缺席 IP是对冲市场不确定性的核心资产...` (and continues)\n   - **Instructions:** Fuzzy matching allowed, ignore space inconsistencies. Return JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Look at the beginning of `page_text`: `© 2026 DianDian.All Rights Reserved. 18海外移动游戏2025年新品收入TOP榜`\n   - The exact string `海外移动游戏2025年新品收入TOP榜` is present right after `18`.\n   - It matches exactly (ignoring the preceding `18` and copyright text, the prompt says \"appears or starts in the given page_text\").\n   - Fuzzy matching/space inconsistency rule is satisfied trivially here since it's an exact match.\n\n3.  **Determine Answer:**\n   - The section title appears in the text.\n   - Answer should be \"yes\".\n\n4.  **Format Output:**\n   - JSON: `{\"answer\": \"yes\"}`\n   - Ensure no extra text, explanations, or thinking fields are included.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" -> Matches.\n\n   Proceed. \n   Output: `{\"answer\": \"yes\"}`✅\n   Self-Correction/Verification during thought: \n   Does it start with it? No, it starts with copyright. But it *appears* in it. The prompt says \"appears or starts in\". So \"yes\" is correct.\n   Fuzzy matching: exact match found.\n   JSON format matches requirement.\n   Ready. \n   Output matches exactly. \n   Proceeds. \n   `[Output Generation]` -> `{\"answer\": \"yes\"}`\n   *(Self-Correction/Refinement during thought)*: Wait, let's double check the exact string in the text: `18海外移动游戏2025年新品收入TOP榜`. The title is `海外移动游戏2025年新品收入TOP榜`. It's a direct substring. So \"yes\" is definitively correct.\n   All constraints met. Output matches.✅\n   Final Output Generation. \n   `{\"answer\": \"yes\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** `海外移动游戏2025年新品收入TOP榜`\n   - **Page Text:** `© 2026 DianDian.All Rights Reserved. 18海外移动游戏2025年新品收入TOP榜\\n全新原创的大制作在2025几乎缺席 IP是对冲市场不确定性的核心资产...` (and continues)\n   - **Instructions:** Fuzzy matching allowed, ignore space inconsistencies. Return JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Look at the beginning of `page_text`: `© 2026 DianDian.All Rights Reserved. 18海外移动游戏2025年新品收入TOP榜`\n   - The exact string `海外移动游戏2025年新品收入TOP榜` is present right after `18`.\n   - It matches exactly (ignoring the preceding `18` and copyright text, the prompt says \"appears or starts in the given page_text\").\n   - Fuzzy matching/space inconsistency rule is satisfied trivially here since it's an exact match.\n\n3.  **Determine Answer:**\n   - The section title appears in the text.\n   - Answer should be \"yes\".\n\n4.  **Format Output:**\n   - JSON: `{\"answer\": \"yes\"}`\n   - Ensure no extra text, explanations, or thinking fields are included.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" -> Matches.\n\n   Proceed. \n   Output: `{\"answer\": \"yes\"}`✅\n   Self-Correction/Verification during thought: \n   Does it start with it? No, it starts with copyright. But it *appears* in it. The prompt says \"appears or starts in\". So \"yes\" is correct.\n   Fuzzy matching: exact match found.\n   JSON format matches requirement.\n   Ready. \n   Output matches exactly. \n   Proceeds. \n   `[Output Generation]` -> `{\"answer\": \"yes\"}`\n   *(Self-Correction/Refinement during thought)*: Wait, let's double check the exact string in the text: `18海外移动游戏2025年新品收入TOP榜`. The title is `海外移动游戏2025年新品收入TOP榜`. It's a direct substring. So \"yes\" is definitively correct.\n   All constraints met. Output matches.✅\n   Final Output Generation. \n   `{\"answer\": \"yes\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359865,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 617,
+      "prompt_tokens": 760,
+      "total_tokens": 1377,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 606,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 617
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 760
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

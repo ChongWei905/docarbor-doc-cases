@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:56:56.439266+00:00",
+  "sequence": 192,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 15675,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 成熟的衡量能力，铸就竞争优势.\n    The given page_text is 37\n成熟的 衡量能力，铸就竞争优势\n•2025年，精细化衡量能力，往往决定了企业是迈向自信扩张，还是陷于谨慎停滞。\n•拥有先进归因框架的广告主，能更果断地分配预算，优化方向也更清晰；而依赖简单模\n型的广告主，在日益复杂的市场环境中，难以准确解读绩效信号。衡量不完善信号下的 增长\n数据来源： Singular 2025 年季度趋势报告突破末次点击归因的局限\n“末次点击归因”  模式仍在低估漏斗上层\n和中层活动的价值。采用  “多触点归因”\n（Multi-Touch Attribution ）的游戏广\n告主，能够清晰洞察  “辅助价值”  与 “跨\n渠道影响”。\n这一洞察助力广告主制定更均衡的媒体\n策略，减少了为追求短期效果而过度投\n入漏斗底层策略、进而损害长期增长潜\n力的倾向。用模型填补信号缺失的空白\n2025年，由隐私保护导致的信号缺失\n（尤其在  iOS 端）并未消失，但领先的\n广告主已找到应对之法。\n“模型转化”（ Modeled Conversions ）\n与 “混合绩效指标”  让团队得以维持优化\n工作的连续性。围绕模型化产出结果凝\n聚各相关方共识，头部企业有效减少了\n内部摩擦，加速了决策进程。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-e69bc7b1-7dd2-9cca-8034-c7a9e5989e68",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given page text.\n   - **Section Title:** `成熟的衡量能力，铸就竞争优势`\n   - **Page Text:** `37\\n成熟的 衡量能力，铸就竞争优势\\n•2025年，精细化衡量能力，往往决定了企业是迈向自信扩张，还是陷于谨慎停滞。\\n•拥有先进归因框架的广告主，能更果断地分配预算，优化方向也更清晰；而依赖简单模\\n型的广告主，在日益复杂的市场环境中，难以准确解读绩效信号。衡量不完善信号下的 增长\\n数据来源： Singular 2025 年季度趋势报告突破末次点击归因的局限\\n“末次点击归因”  模式仍在低估漏斗上层\\n和中层活动的价值。采用  “多触点归因”\\n（Multi-Touch Attribution ）的游戏广\\n告主，能够清晰洞察  “辅助价值”  与 “跨\\n渠道影响”。\\n这一洞察助力广告主制定更均衡的媒体\\n策略，减少了为追求短期效果而过度投\\n入漏斗底层策略、进而损害长期增长潜\\n力的倾向。用模型填补信号缺失的空白\\n2025年，由隐私保护导致的信号缺失\\n（尤其在  iOS 端）并未消失，但领先的\\n广告主已找到应对之法。\\n“模型转化”（ Modeled Conversions ）\\n与 “混合绩效指标”  让团队得以维持优化\\n工作的连续性。围绕模型化产出结果凝\\n聚各相关方共识，头部企业有效减少了\\n内部摩擦，加速了决策进程。\\n.`\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Return JSON: `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Compare Section Title with Page Text:**\n   - Section Title: `成熟的衡量能力，铸就竞争优势`\n   - Page Text starts with: `37\\n成熟的 衡量能力，铸就竞争优势`\n   - Ignoring spaces: `成熟的衡量能力，铸就竞争优势` matches exactly with `成熟的 衡量能力，铸就竞争优势` (just an extra space after 的).\n   - The instruction says \"ignore any space inconsistency\".\n   - Therefore, it appears/starts in the page text.\n\n3.  **Determine Output:**\n   - Answer should be \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Does the section appear or start in the text? Yes.\n   - Fuzzy matching applied? Yes.\n   - JSON format correct? Yes.\n   - No extra text? Yes.\n   - Ready.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given page text.\n   - **Section Title:** `成熟的衡量能力，铸就竞争优势`\n   - **Page Text:** `37\\n成熟的 衡量能力，铸就竞争优势\\n•2025年，精细化衡量能力，往往决定了企业是迈向自信扩张，还是陷于谨慎停滞。\\n•拥有先进归因框架的广告主，能更果断地分配预算，优化方向也更清晰；而依赖简单模\\n型的广告主，在日益复杂的市场环境中，难以准确解读绩效信号。衡量不完善信号下的 增长\\n数据来源： Singular 2025 年季度趋势报告突破末次点击归因的局限\\n“末次点击归因”  模式仍在低估漏斗上层\\n和中层活动的价值。采用  “多触点归因”\\n（Multi-Touch Attribution ）的游戏广\\n告主，能够清晰洞察  “辅助价值”  与 “跨\\n渠道影响”。\\n这一洞察助力广告主制定更均衡的媒体\\n策略，减少了为追求短期效果而过度投\\n入漏斗底层策略、进而损害长期增长潜\\n力的倾向。用模型填补信号缺失的空白\\n2025年，由隐私保护导致的信号缺失\\n（尤其在  iOS 端）并未消失，但领先的\\n广告主已找到应对之法。\\n“模型转化”（ Modeled Conversions ）\\n与 “混合绩效指标”  让团队得以维持优化\\n工作的连续性。围绕模型化产出结果凝\\n聚各相关方共识，头部企业有效减少了\\n内部摩擦，加速了决策进程。\\n.`\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Return JSON: `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Compare Section Title with Page Text:**\n   - Section Title: `成熟的衡量能力，铸就竞争优势`\n   - Page Text starts with: `37\\n成熟的 衡量能力，铸就竞争优势`\n   - Ignoring spaces: `成熟的衡量能力，铸就竞争优势` matches exactly with `成熟的 衡量能力，铸就竞争优势` (just an extra space after 的).\n   - The instruction says \"ignore any space inconsistency\".\n   - Therefore, it appears/starts in the page text.\n\n3.  **Determine Output:**\n   - Answer should be \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Does the section appear or start in the text? Yes.\n   - Fuzzy matching applied? Yes.\n   - JSON format correct? Yes.\n   - No extra text? Yes.\n   - Ready.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359820,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 610,
+      "prompt_tokens": 444,
+      "total_tokens": 1054,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 594,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 610
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 444
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

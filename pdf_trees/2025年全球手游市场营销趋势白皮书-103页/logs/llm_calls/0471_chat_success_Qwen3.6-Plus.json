@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:14:24.829072+00:00",
+  "sequence": 471,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4876,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年AppStore 下载收入 TOP20.\n    The given page_text is 21\n11 Pokémon GO Niantic\n12 Gardenscapes Playrix\n13 Kingshot 点点互动\n14 PUBG MOBILE 腾讯\n15 eFootball\n KONAMI\n16 Clash of Clans Supercell\n17 Call of Duty®: Mobile 腾讯&动视\n18 Toon Blast Peak Games\n19 Royal KingdomDream \nGames\n20 Brawl Stars Supercell1 Royal MatchDream \nGames\n2 Last War:Survival FUNFLY\n3 MONOPOLY GO! Scopely\n4 Candy Crush Saga King\n5 Whiteout Survival 点点互动\n6Pokémon TCG \nPocketPokemon\n7 Clash Royale Supercell\n8 Gossip Harbor® 柠檬微趣\n9 Township Playrix\n10 Coin MasterMoon \nActive11Goods Puzzle: Sort \nChallengeONESOFT\n12 Royal KingdomDream \nGames\n13 8 Ball Pool\n Miniclip\n14 Pizza Ready Supercent\n15 Among Us! InnerSloth\n16 Candy Crush Saga King\n17 Free Fire Garena\n18 Royal MatchDream \nGames\n19 Gardenscapes Playrix\n20 Hole.io Voodoo1 Block  Blast!Hungry \nStudio\n2 Roblox Roblox\n3 Subway SurfersSybo \nGames\n4 Township Playrix\n5 Clash Royale Supercell\n6 Color Block JamRollic\nGames\n7 Last War:Survival FUNFLY\n8 Magic Tiles 3 Amanotes\n9 Vita Mahjong 乐信圣文\n10 Whiteout Survival 点点互动\n下载榜 收入榜\nSource ：广大大 -APP Intelligence ；收入数据来自 AppStore 商店应用内收入，不包括中国大陆地区数据，不包含第三方广告收入；\nDate Range ：2025/1~2025/122025年AppStore 下载收入 TOP20\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-50b74ee6-1b9b-90e4-8297-b485476e6984",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年AppStore 下载收入 TOP20\" starts at the beginning of the provided `page_text`.\nThe `page_text` starts with \"21\\n11 Pokémon GO Niantic...\" and ends with \"...2025年AppStore 下载收入 TOP20\\n.\"\nThe section title appears at the very end of the `page_text`, not at the beginning.\nTherefore, the section does not start at the beginning of the page_text.\nOutput should be `{\"start_begin\": \"no\"}`.\nCheck carefully: The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\nThe `page_text` has a lot of content before the title.\nSo \"no\".\nFormat: JSON.\nDone. \nI will produce exactly the requested JSON.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年AppStore 下载收入 TOP20\" starts at the beginning of the provided `page_text`.\nThe `page_text` starts with \"21\\n11 Pokémon GO Niantic...\" and ends with \"...2025年AppStore 下载收入 TOP20\\n.\"\nThe section title appears at the very end of the `page_text`, not at the beginning.\nTherefore, the section does not start at the beginning of the page_text.\nOutput should be `{\"start_begin\": \"no\"}`.\nCheck carefully: The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\nThe `page_text` has a lot of content before the title.\nSo \"no\".\nFormat: JSON.\nDone. \nI will produce exactly the requested JSON."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360869,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 213,
+      "prompt_tokens": 638,
+      "total_tokens": 851,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 196,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 213
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 638
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

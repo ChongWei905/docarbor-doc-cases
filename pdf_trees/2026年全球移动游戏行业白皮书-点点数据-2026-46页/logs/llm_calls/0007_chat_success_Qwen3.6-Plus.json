@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-06-25T03:26:17.384814+00:00",
+  "sequence": 7,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 29945,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are inspecting exactly one report page image.\n\nDecide whether this page is part of the table of contents.\n\nRoles:\n- \"toc_start\": the page is the first TOC page.\n- \"toc_continuation\": the page continues TOC entries from a previous TOC page.\n- \"not_toc\": the page is not part of the TOC.\n\nRules:\n1. Ignore body paragraphs, author bios, logos, decorative graphics, buttons, footer CTA text, and page footers.\n2. A page is TOC only if a substantial part of the page is listing contents entries.\n3. Multi-column TOC layouts still count as TOC.\n4. If the page contains a clear Contents/Table of Contents/目录 heading or visibly begins the TOC list, prefer toc_start.\n5. If the page mainly continues TOC entries without the main heading, prefer toc_continuation.\n6. If the page mostly contains chapter/body text, figures, charts, or tables, return not_toc.\n7. Output JSON only.\n\nReturn this schema:\n{\n  \"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\",\n  \"confidence\": \"high\" | \"medium\" | \"low\",\n  \"reason\": <short string>\n}\n"
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url": {
+                  "media_type": "image/png",
+                  "base64_chars": 160764,
+                  "redacted": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-b4bdf450-4ec9-9353-9376-7b4a245b8672",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"role\": \"toc_start\",\n  \"confidence\": \"high\",\n  \"reason\": \"The page contains a clear '目录 Contents' heading and lists four numbered sections (01-04) with titles, indicating it is the start of the table of contents.\"\n}\n```",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants me to classify the provided image as a Table of Contents (TOC) page or not.\n\n1.  **Analyze the image:**\n    *   **Heading:** The top left clearly says \"目录 Contents\". This is a strong indicator.\n    *   **Structure:** There are four distinct blocks labeled \"01\", \"02\", \"03\", \"04\".\n    *   **Content:**\n        *   Block 01: \"中国移动游戏市场现状分析\" (Analysis of the current status of China's mobile game market). It also has a small summary text below it.\n        *   Block 02: \"海外移动游戏市场现状分析\" (Analysis of the current status of overseas mobile game market).\n        *   Block 03: \"移动游戏典型产品&企业案例分析\" (Analysis of typical mobile game products & corporate cases).\n        *   Block 04: \"全球移动游戏市场发展趋势\" (Development trends of the global mobile game market).\n    *   **Footer:** \"© 2026 DianDian. All Rights Reserved.\" and page number \"3\".\n\n2.  **Evaluate against rules:**\n    *   Rule 1: Ignore body paragraphs, etc. The text in block 01 looks like a summary, but the overall structure is clearly a list of sections.\n    *   Rule 2: \"A page is TOC only if a substantial part of the page is listing contents entries.\" Yes, the four blocks (01-04) are clearly chapter/section titles.\n    *   Rule 4: \"If the page contains a clear Contents/Table of Contents/目录 heading or visibly begins the TOC list, prefer toc_start.\" The heading \"目录 Contents\" is present.\n\n3.  **Determine Role:**\n    *   It has the heading \"目录 Contents\".\n    *   It lists the main sections (01, 02, 03, 04).\n    *   Therefore, it is `toc_start`.\n\n4.  **Determine Confidence:**\n    *   The heading is explicit. The layout is a classic TOC layout. Confidence is high.\n\n5.  **Formulate Reason:**\n    *   The page has a clear \"目录 Contents\" heading and lists four main sections (01-04) with titles, which is the definition of a Table of Contents.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants me to classify the provided image as a Table of Contents (TOC) page or not.\n\n1.  **Analyze the image:**\n    *   **Heading:** The top left clearly says \"目录 Contents\". This is a strong indicator.\n    *   **Structure:** There are four distinct blocks labeled \"01\", \"02\", \"03\", \"04\".\n    *   **Content:**\n        *   Block 01: \"中国移动游戏市场现状分析\" (Analysis of the current status of China's mobile game market). It also has a small summary text below it.\n        *   Block 02: \"海外移动游戏市场现状分析\" (Analysis of the current status of overseas mobile game market).\n        *   Block 03: \"移动游戏典型产品&企业案例分析\" (Analysis of typical mobile game products & corporate cases).\n        *   Block 04: \"全球移动游戏市场发展趋势\" (Development trends of the global mobile game market).\n    *   **Footer:** \"© 2026 DianDian. All Rights Reserved.\" and page number \"3\".\n\n2.  **Evaluate against rules:**\n    *   Rule 1: Ignore body paragraphs, etc. The text in block 01 looks like a summary, but the overall structure is clearly a list of sections.\n    *   Rule 2: \"A page is TOC only if a substantial part of the page is listing contents entries.\" Yes, the four blocks (01-04) are clearly chapter/section titles.\n    *   Rule 4: \"If the page contains a clear Contents/Table of Contents/目录 heading or visibly begins the TOC list, prefer toc_start.\" The heading \"目录 Contents\" is present.\n\n3.  **Determine Role:**\n    *   It has the heading \"目录 Contents\".\n    *   It lists the main sections (01, 02, 03, 04).\n    *   Therefore, it is `toc_start`.\n\n4.  **Determine Confidence:**\n    *   The heading is explicit. The layout is a classic TOC layout. Confidence is high.\n\n5.  **Formulate Reason:**\n    *   The page has a clear \"目录 Contents\" heading and lists four main sections (01-04) with titles, which is the definition of a Table of Contents."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782357981,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 584,
+      "prompt_tokens": 2332,
+      "total_tokens": 2916,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 513,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 71
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 290,
+        "image_tokens": 2042
+      }
+    }
+  },
+  "response_text": "```json\n{\n  \"role\": \"toc_start\",\n  \"confidence\": \"high\",\n  \"reason\": \"The page contains a clear '目录 Contents' heading and lists four numbered sections (01-04) with titles, indicating it is the start of the table of contents.\"\n}\n```",
+  "error_type": null,
+  "error_message": null
+}

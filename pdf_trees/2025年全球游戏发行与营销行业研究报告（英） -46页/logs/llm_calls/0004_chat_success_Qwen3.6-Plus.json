@@ -1,0 +1,88 @@
+{
+  "timestamp": "2026-06-25T03:38:49.996326+00:00",
+  "sequence": 4,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 33464,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": [
+          {
+            "type": "text",
+            "text": "You are reading exactly one confirmed TOC page.\n\nYour task is to extract the main report TOC hierarchy from these images, not the body text.\n\nVery important rules:\n1. Ignore body paragraphs that belong to chapter content rather than the TOC.\n2. Ignore author cards, footer buttons, footer report titles, page number badges that are not part of TOC entries, logos, watermarks, and decorative graphics.\n3. Extract only the actual main table of contents entries.\n4. Merge entries from all provided TOC pages into one ordered hierarchy.\n5. The hierarchy is visual across the whole TOC run:\n   - standalone entries before the first section stay at level 1.\n   - lines beginning with SECTION / PART / CHAPTER are level-1 section parents.\n   - entries visually grouped beneath the same section box or card are level-2 children of that section.\n   - if later TOC pages continue children under the most recent visible parent section, keep those children nested under that parent.\n6. Preserve the visible title wording, but normalize whitespace and line wraps.\n7. Preserve the printed page numbers shown in the TOC.\n8. Do not invent titles that are not visible in the provided TOC pages.\n9. Output JSON only.\n\nReturn this schema:\n{\n  \"page_title\": <string>,\n  \"items\": [\n    {\"level\": 1, \"title\": <string>, \"printed_page\": <int>},\n    {\"level\": 1, \"title\": <string>, \"printed_page\": <int>, \"children\": [\n      {\"level\": 2, \"title\": <string>, \"printed_page\": <int>}\n    ]}\n  ],\n  \"notes\": [<string>]\n}\n"
+          },
+          {
+            "type": "image_url",
+            "image_url": {
+              "url": {
+                "data_url": {
+                  "media_type": "image/png",
+                  "base64_chars": 598440,
+                  "redacted": true
+                }
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-5f2e7666-e966-9dcf-a677-b1206a6559f6",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "```json\n{\n  \"page_title\": \"Contents\",\n  \"items\": [\n    {\n      \"level\": 1,\n      \"title\": \"Foreword\",\n      \"printed_page\": 2\n    },\n    {\n      \"level\": 1,\n      \"title\": \"Table of Contents\",\n      \"printed_page\": 2\n    },\n    {\n      \"level\": 1,\n      \"title\": \"List of Tables\",\n      \"printed_page\": 3\n    },\n    {\n      \"level\": 1,\n      \"title\": \"List of Figures\",\n      \"printed_page\": 3\n    },\n    {\n      \"level\": 1,\n      \"title\": \"Introduction\",\n      \"printed_page\": 4\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 1: Game Publishing Strategies\",\n      \"printed_page\": 7,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"Publisher-Developer Relationships\",\n          \"printed_page\": 7\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Cross-Platform Publishing\",\n          \"printed_page\": 7\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Self-Publishing\",\n          \"printed_page\": 10\n        }\n      ]\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 2: Marketing and User Acquisition\",\n      \"printed_page\": 14,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"Digital Channels and Decline of Traditional Retail\",\n          \"printed_page\": 14\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Partnerships as Marketing Channels\",\n          \"printed_page\": 16\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Influencer Marketing\",\n          \"printed_page\": 17\n        }\n      ]\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 3: Community\",\n      \"printed_page\": 20,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"Importance of Community in Gaming\",\n          \"printed_page\": 20\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Community Safety\",\n          \"printed_page\": 22\n        }\n      ]\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 4: Data-Driven Success\",\n      \"printed_page\": 24,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"The Role of Data in Publishing and Marketing\",\n          \"printed_page\": 24\n        }\n      ]\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 5: Revenue Streams and Business Models\",\n      \"printed_page\": 27,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"Live Service Games\",\n          \"printed_page\": 27\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Boxed Games/One-time Purchase Model\",\n          \"printed_page\": 28\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Subscription Models\",\n          \"printed_page\": 30\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Esports\",\n          \"printed_page\": 32\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Hybrid Models\",\n          \"printed_page\": 36\n        }\n      ]\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 6: Software and Services\",\n      \"printed_page\": 38,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"Publishing as a Service\",\n          \"printed_page\": 38\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Design Studios\",\n          \"printed_page\": 39\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Conclusion\",\n          \"printed_page\": 40\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Bibliography\",\n          \"printed_page\": 43\n        }\n      ]\n    }\n  ],\n  \"notes\": []\n}\n```",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants the Table of Contents extracted from the image.\n\n1.  **Identify the TOC area:** The left column and top right column contain the TOC. The right column bottom contains \"Foreword\" text and an author card, which should be ignored.\n2.  **Extract Level 1 items (Standalone):**\n    *   Foreword (Page 2)\n    *   Table of Contents (Page 2)\n    *   List of Tables (Page 3)\n    *   List of Figures (Page 3)\n    *   Introduction (Page 4)\n3.  **Extract Section 1:**\n    *   Header: SECTION 1: Game Publishing Strategies (Page 7)\n    *   Children:\n        *   Publisher-Developer Relationships (Page 7)\n        *   Cross-Platform Publishing (Page 7)\n        *   Self-Publishing (Page 10)\n4.  **Extract Section 2:**\n    *   Header: SECTION 2: Marketing and User Acquisition (Page 14)\n    *   Children:\n        *   Digital Channels and Decline of Traditional Retail (Page 14)\n        *   Partnerships as Marketing Channels (Page 16)\n        *   Influencer Marketing (Page 17)\n5.  **Extract Section 3:**\n    *   Header: SECTION 3: Community (Page 20)\n    *   Children:\n        *   Importance of Community in Gaming (Page 20)\n        *   Community Safety (Page 22)\n6.  **Extract Section 4:**\n    *   Header: SECTION 4: Data-Driven Success (Page 24)\n    *   Children:\n        *   The Role of Data in Publishing and Marketing (Page 24)\n7.  **Extract Section 5:**\n    *   Header: SECTION 5: Revenue Streams and Business Models (Page 27)\n    *   Children:\n        *   Live Service Games (Page 27)\n        *   Boxed Games/One-time Purchase Model (Page 28)\n        *   Subscription Models (Page 30)\n        *   Esports (Page 32)\n        *   Hybrid Models (Page 36)\n8.  **Extract Section 6:**\n    *   Header: SECTION 6: Software and Services (Page 38)\n    *   Children:\n        *   Publishing as a Service (Page 38)\n        *   Design Studios (Page 39)\n        *   Conclusion (Page 40)\n        *   Bibliography (Page 43)\n\nConstruct the JSON.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants the Table of Contents extracted from the image.\n\n1.  **Identify the TOC area:** The left column and top right column contain the TOC. The right column bottom contains \"Foreword\" text and an author card, which should be ignored.\n2.  **Extract Level 1 items (Standalone):**\n    *   Foreword (Page 2)\n    *   Table of Contents (Page 2)\n    *   List of Tables (Page 3)\n    *   List of Figures (Page 3)\n    *   Introduction (Page 4)\n3.  **Extract Section 1:**\n    *   Header: SECTION 1: Game Publishing Strategies (Page 7)\n    *   Children:\n        *   Publisher-Developer Relationships (Page 7)\n        *   Cross-Platform Publishing (Page 7)\n        *   Self-Publishing (Page 10)\n4.  **Extract Section 2:**\n    *   Header: SECTION 2: Marketing and User Acquisition (Page 14)\n    *   Children:\n        *   Digital Channels and Decline of Traditional Retail (Page 14)\n        *   Partnerships as Marketing Channels (Page 16)\n        *   Influencer Marketing (Page 17)\n5.  **Extract Section 3:**\n    *   Header: SECTION 3: Community (Page 20)\n    *   Children:\n        *   Importance of Community in Gaming (Page 20)\n        *   Community Safety (Page 22)\n6.  **Extract Section 4:**\n    *   Header: SECTION 4: Data-Driven Success (Page 24)\n    *   Children:\n        *   The Role of Data in Publishing and Marketing (Page 24)\n7.  **Extract Section 5:**\n    *   Header: SECTION 5: Revenue Streams and Business Models (Page 27)\n    *   Children:\n        *   Live Service Games (Page 27)\n        *   Boxed Games/One-time Purchase Model (Page 28)\n        *   Subscription Models (Page 30)\n        *   Esports (Page 32)\n        *   Hybrid Models (Page 36)\n8.  **Extract Section 6:**\n    *   Header: SECTION 6: Software and Services (Page 38)\n    *   Children:\n        *   Publishing as a Service (Page 38)\n        *   Design Studios (Page 39)\n        *   Conclusion (Page 40)\n        *   Bibliography (Page 43)\n\nConstruct the JSON."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782358734,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1679,
+      "prompt_tokens": 2348,
+      "total_tokens": 4027,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 590,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1089
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 385,
+        "image_tokens": 1963
+      }
+    }
+  },
+  "response_text": "```json\n{\n  \"page_title\": \"Contents\",\n  \"items\": [\n    {\n      \"level\": 1,\n      \"title\": \"Foreword\",\n      \"printed_page\": 2\n    },\n    {\n      \"level\": 1,\n      \"title\": \"Table of Contents\",\n      \"printed_page\": 2\n    },\n    {\n      \"level\": 1,\n      \"title\": \"List of Tables\",\n      \"printed_page\": 3\n    },\n    {\n      \"level\": 1,\n      \"title\": \"List of Figures\",\n      \"printed_page\": 3\n    },\n    {\n      \"level\": 1,\n      \"title\": \"Introduction\",\n      \"printed_page\": 4\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 1: Game Publishing Strategies\",\n      \"printed_page\": 7,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"Publisher-Developer Relationships\",\n          \"printed_page\": 7\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Cross-Platform Publishing\",\n          \"printed_page\": 7\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Self-Publishing\",\n          \"printed_page\": 10\n        }\n      ]\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 2: Marketing and User Acquisition\",\n      \"printed_page\": 14,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"Digital Channels and Decline of Traditional Retail\",\n          \"printed_page\": 14\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Partnerships as Marketing Channels\",\n          \"printed_page\": 16\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Influencer Marketing\",\n          \"printed_page\": 17\n        }\n      ]\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 3: Community\",\n      \"printed_page\": 20,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"Importance of Community in Gaming\",\n          \"printed_page\": 20\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Community Safety\",\n          \"printed_page\": 22\n        }\n      ]\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 4: Data-Driven Success\",\n      \"printed_page\": 24,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"The Role of Data in Publishing and Marketing\",\n          \"printed_page\": 24\n        }\n      ]\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 5: Revenue Streams and Business Models\",\n      \"printed_page\": 27,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"Live Service Games\",\n          \"printed_page\": 27\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Boxed Games/One-time Purchase Model\",\n          \"printed_page\": 28\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Subscription Models\",\n          \"printed_page\": 30\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Esports\",\n          \"printed_page\": 32\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Hybrid Models\",\n          \"printed_page\": 36\n        }\n      ]\n    },\n    {\n      \"level\": 1,\n      \"title\": \"SECTION 6: Software and Services\",\n      \"printed_page\": 38,\n      \"children\": [\n        {\n          \"level\": 2,\n          \"title\": \"Publishing as a Service\",\n          \"printed_page\": 38\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Design Studios\",\n          \"printed_page\": 39\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Conclusion\",\n          \"printed_page\": 40\n        },\n        {\n          \"level\": 2,\n          \"title\": \"Bibliography\",\n          \"printed_page\": 43\n        }\n      ]\n    }\n  ],\n  \"notes\": []\n}\n```",
+  "error_type": null,
+  "error_message": null
+}

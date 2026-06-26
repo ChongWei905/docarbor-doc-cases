@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:14:42.397651+00:00",
+  "sequence": 477,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 13435,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年手游出海品牌社媒影响力榜单.\n    The given page_text is 25\n2025年 手游出海品牌社媒影响力榜单\nSource ：海外社交媒体如  Facebook 、X(原 Twitter) 、Instagram 、YouTube 、TikTok 、Linkedln 等平台公开数据\nDate Range ：2025/1/1~2025/12/31\n排名 品牌中文名 品牌英文名 OneSight 评分\n1 鸣潮 Wuthering Waves 486.3 \n2 原神 Genshin Impact 477.9 \n3 绝区零 Zenless Zone Zero 476.0 \n4 决胜巅峰Mobile Legends: Bang \nBang461.7 \n5 崩坏：星穹铁道 Honkai : Star Rail 460.5 \n6 王者荣耀 Honor of Kings 446.5 \n7 恋与深空 Love and Deepspace 441.8 \n8 绝地求生：刺激战场 PUBG MOBILE 432.5 \n9 使命召唤手游 Call of Duty Mobile 428.5 \n10 代号：血战 Blood Strike 407.3 排名 品牌中文名 品牌英文名 OneSight 评分\n11 第五人格 Identity V 404.3 \n12 重返未来： 1999 Reverse: 1999 398.6 \n13 英雄联盟手游League of Legends: Wild \nRift394.0 \n14 胜利女神 :妮姬GODDESS OF \nVICTORY:NIKKE392.7 \n15 燕云十六声 Where Winds Meet 384.5 \n16 碧蓝档案 Blue Archive 384.2 \n17 明日方舟 Arknights 376.2 \n18 三角洲行动 Delta Force 372.7 \n19 暗区突围 Arena Breakout 363.6 \n20 传说对决 Arena of Valor 348.1 \n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-dbcb064e-7333-959b-a84b-d60951abc9ef",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Condition:** If there are other contents before the current section title, it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning.\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Given Section Title:** `2025年手游出海品牌社媒影响力榜单`\n   - **Given page_text:** \n     ```\n     25\n     2025年 手游出海品牌社媒影响力榜单\n     Source ：海外社交媒体如  Facebook 、X(原 Twitter) 、Instagram 、YouTube 、TikTok 、Linkedln 等平台公开数据\n     ...\n     ```\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate `page_text` against `section_title`:**\n   - The `page_text` starts with `25\\n2025年 手游出海品牌社媒影响力榜单`.\n   - The very first content is `25` (likely a page number).\n   - The section title `2025年手游出海品牌社媒影响力榜单` appears *after* `25`.\n   - Therefore, there is content (`25`) before the section title.\n   - According to the prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n\n3.  **Determine Output:**\n   - `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: Fuzzy matching ignores spaces, so `2025年 手游出海品牌社媒影响力榜单` matches `2025年手游出海品牌社媒影响力榜单`. But the presence of `25` at the very beginning means it's not at the start. So \"no\" is correct.✅\n   Output matches requirement. \n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Self-Correction/Verification during thought: \n   Could `25` be part of the title? No, it's clearly a page number on a separate line. The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning\". So \"no\" is definitively correct.\n   Output matches exactly.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will strictly follow the JSON format requested.) \n   All steps verified.✅\n   Final Answer Generation. \n   `{\"start_begin\": \"no\"}`\n   (Done.) \n   [Output Generation] (Proceeds)",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Condition:** If there are other contents before the current section title, it does *not* start at the beginning. If the title is the first content, it *does* start at the beginning.\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Given Section Title:** `2025年手游出海品牌社媒影响力榜单`\n   - **Given page_text:** \n     ```\n     25\n     2025年 手游出海品牌社媒影响力榜单\n     Source ：海外社交媒体如  Facebook 、X(原 Twitter) 、Instagram 、YouTube 、TikTok 、Linkedln 等平台公开数据\n     ...\n     ```\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate `page_text` against `section_title`:**\n   - The `page_text` starts with `25\\n2025年 手游出海品牌社媒影响力榜单`.\n   - The very first content is `25` (likely a page number).\n   - The section title `2025年手游出海品牌社媒影响力榜单` appears *after* `25`.\n   - Therefore, there is content (`25`) before the section title.\n   - According to the prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n\n3.  **Determine Output:**\n   - `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: Fuzzy matching ignores spaces, so `2025年 手游出海品牌社媒影响力榜单` matches `2025年手游出海品牌社媒影响力榜单`. But the presence of `25` at the very beginning means it's not at the start. So \"no\" is correct.✅\n   Output matches requirement. \n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Self-Correction/Verification during thought: \n   Could `25` be part of the title? No, it's clearly a page number on a separate line. The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning\". So \"no\" is definitively correct.\n   Output matches exactly.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will strictly follow the JSON format requested.) \n   All steps verified.✅\n   Final Answer Generation. \n   `{\"start_begin\": \"no\"}`\n   (Done.) \n   [Output Generation] (Proceeds)"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360886,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 694,
+      "prompt_tokens": 664,
+      "total_tokens": 1358,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 682,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 694
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 664
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

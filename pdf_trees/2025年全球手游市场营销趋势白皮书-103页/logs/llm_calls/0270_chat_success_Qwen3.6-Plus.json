@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:00:59.531799+00:00",
+  "sequence": 270,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 8312,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 龙虾游戏推荐.\n    The given page_text is 81\n龙虾游戏推荐\n2025年我观察到海外的几个点：\n1、国内IAA游戏改 IAAP出海： 国内厂商的打龙玩法，在小游戏平台验证，借由国内出海厂商发行，达到了二三十万美金的日耗，比肩\n一些IAP产品。\n2、国内IAA游戏出海 ：还是以北京厂商的休闲益智产品为标杆，但也观察到长沙、广州地区等厂商的休闲 IAA游戏频繁曝光。\n3、国内IAP游戏出海： 与往年类似，个人观察到国内微恐题材产品在海外取得了不错的成绩。\n4、海外游戏引进： 仍有不少国内厂商在引入海外休闲游戏正版上线小游戏平台。\n5、海外游戏借鉴： 箭头、词语接龙，是我关注到比较代表的海外休闲旗舰。\n6、平台侧： 了解到 TikTok CEO 有在tiktok平台试玩国内厂商的游戏，加速了 TikTok 小游戏在国内开发者心中的地位。\n7、国家&地区：越南和土耳其的休闲厂商增长势头很猛。越南厂商较土耳其厂商更关注中国市场。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-d3e2a03e-e97b-9f87-925a-0b85e7469a35",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"龙虾游戏推荐\" appears or starts in the given page_text.\nThe page_text starts with \"81\\n龙虾游戏推荐\\n2025年我观察到海外的几个点：...\"\nThe section title exactly matches the text on the second line.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nEverything matches.\nProceed. \nOutput matches exactly.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"龙虾游戏推荐\" appears or starts in the given page_text.\nThe page_text starts with \"81\\n龙虾游戏推荐\\n2025年我观察到海外的几个点：...\"\nThe section title exactly matches the text on the second line.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nEverything matches.\nProceed. \nOutput matches exactly.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360064,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 154,
+      "prompt_tokens": 372,
+      "total_tokens": 526,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 138,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 154
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 372
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

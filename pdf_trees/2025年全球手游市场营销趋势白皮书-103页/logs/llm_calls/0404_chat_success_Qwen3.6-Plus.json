@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:09:32.095700+00:00",
+  "sequence": 404,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 20440,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is RPG手游 投放趋势观察.\n    The given page_text is 56\nSource ：广大大 -广告主分析模块，选取时间段内新投放展现或热度表现较高素材展现\nDate Range ：2025/1~2025/12\n77.2%\n74.2%77.4%81.1%\n78.7% 78.9% 79.3% 79.4%82.7% 82.9%81.2%89.3%\n4.0 K4.5 K5.0 K5.5 K\n1月2月3月4月5月6月7月8月9月10月11月12月广告主数量月度变化趋势\n月广告主数量 投放新素材广告主占比\n57.2%\n53.0%54.0%60.0%58.4%59.4%62.6%\n59.0%60.5%\n56.8%60.7%65.8%\n0200400\n1月2月3月4月5月6月7月8月9月10月11月12月月均在投素材量变化趋势\n月均素材量 当月新素材占比传统数值养成加 IP联动养成新式放置、肉鸽 RPG，武侠、微恐 MMO 占据视听宣传优势成为目前主流RPG手游 投放趋势观察\n视频, \n70.1%图片, \n29.0%可玩, \n0.4% 其他, \n0.5%各类型素材带来展现占比\n不同系统策略素材占比\n视频, \n68.0%图片, \n31.0%\n视频, \n74.3%图片, \n24.6%11% 44% 42%视频素材时长分布\n0-15s 15-30s 30-60s 60s-Max\n16% 6% 77%图片素材形式分布\n竖版 横版 方形 横幅\nTOP100 广告主出海厂商占比\n71%\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-72eea420-0827-93bd-9bb2-4f9d204a2a15",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** `RPG手游 投放趋势观察`\n   - **Page Text:** Starts with `56\\nSource ：广大大 -广告主分析模块...` and contains a lot of data, charts, and text. I need to scan the `page_text` to see where the section title appears.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If it's the first content, then it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Scan Page Text for Section Title:**\n   Let's look at the provided `page_text`:\n   ```\n   56\n   Source ：广大大 -广告主分析模块，选取时间段内新投放展现或热度表现较高素材展现\n   Date Range ：2025/1~2025/12\n   77.2%\n   74.2%77.4%81.1%\n   78.7% 78.9% 79.3% 79.4%82.7% 82.9%81.2%89.3%\n   4.0 K4.5 K5.0 K5.5 K\n   1月2月3月4月5月6月7月8月9月10月11月12月广告主数量月度变化趋势\n   月广告主数量 投放新素材广告主占比\n   57.2%\n   53.0%54.0%60.0%58.4%59.4%62.6%\n   59.0%60.5%\n   56.8%60.7%65.8%\n   0200400\n   1月2月3月4月5月6月7月8月9月10月11月12月月均在投素材量变化趋势\n   月均素材量 当月新素材占比传统数值养成加 IP联动养成新式放置、肉鸽 RPG，武侠、微恐 MMO 占据视听宣传优势成为目前主流RPG手游 投放趋势观察\n   视频, \n   70.1%图片, \n   ...\n   ```\n   I see the section title `RPG手游 投放趋势观察` appears near the middle/end of the text block: `...成为目前主流RPG手游 投放趋势观察\\n视频, ...`\n   There is a lot of content before it (page number \"56\", source info, date range, chart data, axis labels, etc.).\n\n3.  **Evaluate Condition:**\n   - Does the section title start at the beginning of the page text? No.\n   - There is significant content before it.\n\n4.  **Formulate Output:**\n   - JSON: `{\"start_begin\": \"no\"}`\n   - Check format requirements: Directly return the final JSON structure. Do not output anything else.\n\n   All steps confirm the answer is \"no\". I will generate the exact JSON.✅\n   Note: I'll make sure the JSON matches exactly: `{\"start_begin\": \"no\"}`. No extra text.✅\n   Proceed. \n   Output matches requirement.✅\n   Final Check of the prompt: \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n   Ready. \n   Output: `{\"start_begin\": \"no\"}`\n   (Self-Correction/Verification during thought)\n   Let's double check the exact string in page_text: `成为目前主流RPG手游 投放趋势观察`\n   The title is `RPG手游 投放趋势观察`. It's embedded in a sentence or follows other text. Definitely not at the beginning.\n   Result is \"no\".\n   Output matches.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will strictly follow the format requested.) \n   All good. \n   *Self-Correction/Refinement during thought*: Wait, the prompt says `RPG手游 投放趋势观察`. In the text it's `RPG手游 投放趋势观察`. Matches. It's clearly not at the start.\n   Final JSON: `{\"start_begin\": \"no\"}`.✅\n   Output matches exactly. \n   Proceeds. \n   [Done] \n   *Output Generation* (matches the final JSON)\n   `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** `RPG手游 投放趋势观察`\n   - **Page Text:** Starts with `56\\nSource ：广大大 -广告主分析模块...` and contains a lot of data, charts, and text. I need to scan the `page_text` to see where the section title appears.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If it's the first content, then it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Scan Page Text for Section Title:**\n   Let's look at the provided `page_text`:\n   ```\n   56\n   Source ：广大大 -广告主分析模块，选取时间段内新投放展现或热度表现较高素材展现\n   Date Range ：2025/1~2025/12\n   77.2%\n   74.2%77.4%81.1%\n   78.7% 78.9% 79.3% 79.4%82.7% 82.9%81.2%89.3%\n   4.0 K4.5 K5.0 K5.5 K\n   1月2月3月4月5月6月7月8月9月10月11月12月广告主数量月度变化趋势\n   月广告主数量 投放新素材广告主占比\n   57.2%\n   53.0%54.0%60.0%58.4%59.4%62.6%\n   59.0%60.5%\n   56.8%60.7%65.8%\n   0200400\n   1月2月3月4月5月6月7月8月9月10月11月12月月均在投素材量变化趋势\n   月均素材量 当月新素材占比传统数值养成加 IP联动养成新式放置、肉鸽 RPG，武侠、微恐 MMO 占据视听宣传优势成为目前主流RPG手游 投放趋势观察\n   视频, \n   70.1%图片, \n   ...\n   ```\n   I see the section title `RPG手游 投放趋势观察` appears near the middle/end of the text block: `...成为目前主流RPG手游 投放趋势观察\\n视频, ...`\n   There is a lot of content before it (page number \"56\", source info, date range, chart data, axis labels, etc.).\n\n3.  **Evaluate Condition:**\n   - Does the section title start at the beginning of the page text? No.\n   - There is significant content before it.\n\n4.  **Formulate Output:**\n   - JSON: `{\"start_begin\": \"no\"}`\n   - Check format requirements: Directly return the final JSON structure. Do not output anything else.\n\n   All steps confirm the answer is \"no\". I will generate the exact JSON.✅\n   Note: I'll make sure the JSON matches exactly: `{\"start_begin\": \"no\"}`. No extra text.✅\n   Proceed. \n   Output matches requirement.✅\n   Final Check of the prompt: \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n   Ready. \n   Output: `{\"start_begin\": \"no\"}`\n   (Self-Correction/Verification during thought)\n   Let's double check the exact string in page_text: `成为目前主流RPG手游 投放趋势观察`\n   The title is `RPG手游 投放趋势观察`. It's embedded in a sentence or follows other text. Definitely not at the beginning.\n   Result is \"no\".\n   Output matches.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will strictly follow the format requested.) \n   All good. \n   *Self-Correction/Refinement during thought*: Wait, the prompt says `RPG手游 投放趋势观察`. In the text it's `RPG手游 投放趋势观察`. Matches. It's clearly not at the start.\n   Final JSON: `{\"start_begin\": \"no\"}`.✅\n   Output matches exactly. \n   Proceeds. \n   [Done] \n   *Output Generation* (matches the final JSON)\n   `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360576,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1097,
+      "prompt_tokens": 710,
+      "total_tokens": 1807,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1085,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1097
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 710
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

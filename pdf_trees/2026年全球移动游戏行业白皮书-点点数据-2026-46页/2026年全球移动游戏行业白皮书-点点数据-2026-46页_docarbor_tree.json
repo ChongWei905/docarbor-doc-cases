@@ -1,0 +1,442 @@
+{
+  "doc_id": "d600a704-c410-5d08-b3cd-ad5c2d60e85e",
+  "status": "completed",
+  "retrieval_ready": false,
+  "result": [
+    {
+      "title": "01中国移动游戏市场现状分析",
+      "node_id": "0000",
+      "page_index": 4,
+      "start_index": 4,
+      "end_index": 4,
+      "summary": "This parent section provides a comprehensive, data-driven analysis of the current status of China's mobile gaming market, synthesizing financial, demographic, regulatory, and capital trends to support retrieval across multiple analytical dimensions.\n\n**Topics & Scope:** Covers 2025 market revenue scale, revenue concentration dynamics, user scale & demographic shifts (notably female gamers), hardware/device characteristics, game license (版号) issuance trends, annual/quarterly revenue & download rankings, new product revenue share, and industry investment/financing activity. The analytical scope is strictly confined to mainland China mobile platforms, explicitly excluding PC/console versions, ad monetization, and third-party top-ups from core revenue calculations.\n\n**Entities & Dates:** Primary reporting period is 2025, with historical comparisons spanning 2023–2024 and biannual benchmarks from Dec 2021 to Jun 2025. Key entities include data providers (DianDian Data/点点数据, CNNIC, GAMESHARK游鲨游戏圈), regulatory bodies (National Press and Publication Administration), major publishers/developers (Tencent, NetEase, miHoYo, Papergames, Giant Network, etc.), and flagship titles (e.g., 王者荣耀, 和平精英, 燕云十六声, 恋与深空, 三角洲行动). The document carries a 2026 copyright, with explicit notes that proprietary metrics may be adjusted in future DianDian reports.\n\n**Definitions & Procedures:** Defines \"revenue scale\" strictly as total user consumption. Clarifies that platform-specific license totals may exceed the number of approved games due to multi-platform approvals for single titles. Introduces \"确定性创新\" (Deterministic Innovation) as a validated development strategy relying on mature PC IP ports, proven genre fusions, or dominant vertical positioning. Data synthesis follows DianDian’s proprietary st...",
+      "nodes": [
+        {
+          "title": "4中国移动游戏市场收入规模",
+          "node_id": "0001",
+          "page_index": 4,
+          "start_index": 4,
+          "end_index": 5,
+          "summary": "This section details the 2025 revenue scale of China's mobile game market and establishes the methodological standards for all related financial metrics in the report. It answers retrieval queries regarding:\n• **Topics & Claims:** The 2025 market revenue scale and the industry sentiment shift from \"recovery anxiety\" to \"strategic dormancy.\"\n• **Definitions & Scope:** Defines the \"China mobile game market\" as titles launched on mobile platforms in mainland China only, explicitly excluding PC, console, and other hardware versions. Defines \"revenue scale\" strictly as total user consumption, excluding ad monetization and third-party top-ups. This standard applies to all subsequent \"China revenue\" statistics in the report.\n• **Procedures & Evidence Types:** Revenue figures are calculated using DianDian's statistical model, synthesized from three evidence sources: DianDian platform data, corporate financial reports, and expert interviews.\n• **Dates & Entities:** Covers the 2025 reporting period, with a 2026 publication copyright. Notes that data may be adjusted in DianDian's 2026 reports. Key entities include DianDian Data and mainland China mobile game publishers.\n• **Metrics & Visuals:** Reports the total user consumption revenue metric for 2025, corresponding to a chart/figure titled \"2025年中国移动游戏市场收入规模\" located on pages 4-5.",
+          "chunk_ids": []
+        },
+        {
+          "title": "5中国移动游戏市场收入集中度",
+          "node_id": "0002",
+          "page_index": 5,
+          "start_index": 5,
+          "end_index": 6,
+          "summary": "This section supports retrieval for queries regarding revenue concentration, market structure, and developer strategies in China's mobile gaming ecosystem (App Store only) from 2023 to 2025.\n\n**Topics:** Mobile gaming market revenue concentration, top-tier vs. long-tail competition dynamics, niche/indie game market strategies, user retention and lifecycle management.\n**Entities:** China mobile gaming market, App Store, revenue rank tiers (1-10, 11-50, 51-200, others), data provider (点点数据/DianDian), specific indie titles (《苏丹的游戏》《情感反诈模拟器》《逃离鸭科夫》).\n**Dates/Timeframe:** 2023, 2024, 2025 (data years); 2026 (report copyright).\n**Claims & Analysis:** The top 10 games absorb nearly half the market, severely narrowing growth windows for new or mid-tier titles. Competition has polarized into giants defending market share and long-tail developers fighting for survival. Top products prioritize extending lifecycle and maintaining user activity at all costs. Smaller developers succeed by targeting unmet vertical/niche demands, leveraging specific player community needs rather than competing on scale.\n**Metrics & Data Points (App Store Revenue Share by Tier):** \n- 1-10 rank: 43.14% (2023), 43.23% (2024), 44.01% (2025)\n- 11-50 rank: 26.62% (2023), 28.68% (2024), 27.20% (2025)\n- 51-200 rank: 19.45% (2023), 18.62% (2024), 19.08% (2025)\n- Others: 10.79% (2023), 9.47% (2024), 9.71% (2025)\n**Figures/Tables:** Chart titled \"2023-2025年中国移动游戏市场收入集中度（仅App Store）\" displaying stacked annual revenue distribution across the four rank tiers.\n**Evidence Types:** Proprietary quantitative market research data, industry trend analysis, qualitative case examples of breakout indie games.\n**Answerable Questions:** What is the revenue concentration trend for China's mobile gaming market on the App Store (...",
+          "chunk_ids": []
+        },
+        {
+          "title": "6中国移动游戏市场用户规模",
+          "node_id": "0003",
+          "page_index": 6,
+          "start_index": 6,
+          "end_index": 7,
+          "summary": "This section supports retrieval for questions regarding:\n- **Topics:** China mobile game market user scale, female gamer demographic growth, mobile internet penetration trends, and the impact of lightweight/casual gameplay on user acquisition.\n- **Entities:** China Internet Network Information Center (CNNIC), DianDian Data (点点数据), female mobile gamers, and specific female-oriented titles (《恋与深空》《光与夜之恋》《世界之外》).\n- **Dates & Timeframes:** Biannual data points from Dec 2021 to Jun 2025; specific benchmarks for Jun 2025 and Dec 2024; notes potential data adjustments in 2026 DianDian reports.\n- **Metrics & Data Points:** Mobile internet user volume (10.29–11.16亿), month-on-month growth rates (0.46%–1.75%), female gamer share in online games (48.0% as of Jun 2025, +3.1 percentage points from Dec 2024).\n- **Claims & Insights:** Female players are rapidly increasing and have become a core demographic in mobile gaming; this growth is driven by dedicated female-oriented titles and the broader industry shift toward lightweight gameplay; overall mobile internet user base maintains stable, steady growth.\n- **Evidence Sources & Methodology:** Official statistics from CNNIC’s 56th Statistical Report on Internet Development; mobile game user penetration calculated via DianDian’s proprietary statistical model, which integrates platform data, corporate financial reports, and expert interviews.\n- **Definitions & Scope Notes:** “China game user scale” explicitly covers mainland China totals; data is subject to potential revision in future 2026 DianDian reports.\n- **Referenced Tables/Figures:** Time-series chart/table displaying China mobile internet user counts (in 100M) and corresponding month-on-month growth rates (Dec 2021–Jun 2025); reference to a 2025 internet device distribution brea...",
+          "chunk_ids": []
+        },
+        {
+          "title": "7中国移动游戏市场用户设备特点",
+          "node_id": "0004",
+          "page_index": 7,
+          "start_index": 7,
+          "end_index": 8,
+          "summary": "This section addresses the hardware characteristics of users in the Chinese mobile gaming market, enabling retrieval for queries on device preferences, demographics, and lifecycle trends. It answers questions regarding:\n- **Topics & Claims:** iOS/Apple dominance in the high-end mobile gaming segment; devices launched 3–5 years ago comprise nearly 60% of the user base.\n- **Entities:** Game genres (FPS, MOBA, Casual representatives), operating systems (iOS, Android, Other), smartphone brands (OPPO, vivo, Huawei, Honor), and research source (DianDian).\n- **Dates & Timeframes:** 2025 (benchmark year for download rankings and volume thresholds), 2026 (report copyright), and device age categories (0–2 years to 6+ years).\n- **Figures & Metrics:** Four percentage-based bar charts comparing device OS, top brands, price tiers (1–2K, 2–3K, 3–5K, Other), and release timelines across the three game genres. Metrics are expressed as percentages (0%–60%).\n- **Evidence & Constraints:** Proprietary research by DianDian. Data is filtered to three representative titles that ranked in the 2025 TOP 10 downloads and exceeded 80 million annual downloads in 2025.\n- **Retrieval Scope:** Supports queries on mobile gamer hardware preferences, genre-specific device demographics, smartphone market share by price/brand in gaming, and device upgrade/lifecycle patterns in China.",
+          "chunk_ids": []
+        },
+        {
+          "title": "8中国游戏版号发布情况",
+          "node_id": "0005",
+          "page_index": 8,
+          "start_index": 8,
+          "end_index": 9,
+          "summary": "This section addresses retrieval queries regarding Chinese video game license (版号) issuance trends and market dynamics from 2023 to 2025. It can answer questions about:\n- **Topics:** Annual license supply growth, cross-platform (Mobile + PC) development strategies, and predicted industry capacity clearing driven by commercial ROI.\n- **Entities:** National Press and Publication Administration (official data source), Chinese game developers/publishers, mobile and PC gaming platforms.\n- **Dates:** 2023, 2024, 2025 (historical issuance data), and a 1–2 year forward-looking market projection.\n- **Definitions/Methodology:** Clarifies that platform-specific license totals may exceed the total number of approved games because a single title can receive approvals for multiple platforms.\n- **Claims:** Highlights a sharp contrast between rising license volumes and near-zero market revenue growth/declining mobile revenue share, predicting a market-driven consolidation phase. Asserts that multi-platform licensing is becoming a standard for major titles to leverage PC advantages (gameplay depth, graphics, monetization habits) and escape mobile homogeneity.\n- **Metrics:** 2025 total licenses (1,771); dual Mobile+PC approvals (118 in 2025, up from 57 in 2023 and 86 in 2024); yearly breakdowns of total, mobile, and PC license counts.\n- **Tables/Figures:** Contains three comparative data summaries/charts for 2023–2025 detailing license distributions across Overall, Domestic, and Imported categories by platform.\n- **Evidence Types:** Official government issuance statistics, comparative yearly datasets, and industry market analysis.",
+          "chunk_ids": []
+        },
+        {
+          "title": "9中国移动游戏收入TOP榜",
+          "node_id": "0006",
+          "page_index": 9,
+          "start_index": 9,
+          "end_index": 10,
+          "summary": "本章节可支持以下维度的检索与问答：\n- **主题**：中国移动游戏市场收入排名、App Store渠道流水表现、非头部厂商竞争策略、细分赛道创新趋势与市场格局。\n- **实体**：TOP15游戏产品（如王者荣耀、和平精英、无尽冬日、三角洲行动、原神、恋与深空等）；研发/发行厂商（腾讯、网易、米哈游、叠纸游戏、点点互动、海南畅梦科技、途游游戏等）；数据机构（点点数据）。\n- **日期**：2024年榜单统计周期、2025年榜单及流水预估周期、文档版权年份（2026）。\n- **核心声明/观点**：非头部厂商的唯一生存路径是在极度细分赛道中实现精准定位与创新；2025年新入围的4款游戏通过满足特定用户群体未充分满足的核心需求，并在玩法融合或题材表现上建立差异化壁垒；此类创新象征市场“毛细血管”仍具活力，但难以驱动大盘增长，仅为巨头主导格局下的补充。\n- **表格与指标**：包含两份榜单。表1为“2025年中国移动游戏收入TOP榜（仅App Store）”，字段含排名、游戏名、厂商、2025年流水预估（单位：亿元，数值区间13.73-172.34）；表2为“2024年TOP15游戏名单”，仅含排名与游戏名。\n- **证据类型与数据来源**：定量指标基于点点数据统计模型核算；数据交叉验证与支撑材料来源于企业财报与专家访谈。",
+          "chunk_ids": []
+        },
+        {
+          "title": "10中国移动游戏2025年新品收入TOP榜",
+          "node_id": "0007",
+          "page_index": 10,
+          "start_index": 10,
+          "end_index": 11,
+          "summary": "This section provides a quarterly (Q1–Q4) ranking of top-grossing new mobile games in China for 2025, enabling retrieval for:\n- **Topics & Entities:** 2025 Chinese mobile game market performance, specific game titles (e.g., 燕云十六声, 无畏契约：源能行动, 斗罗大陆：猎魂世界), genre classifications, and developer tiers (large vs. small/mid studios).\n- **Dates & Timeframes:** Revenue and reception data segmented by 2025 quarters (Q1, Q2, Q3, Q4).\n- **Metrics:** iOS App Store revenue (in 亿元), player ratings, and uncontextualized percentage values (15.3%, 84.7%, 18.9%, 81.1%, 7.5%, 92.5%) likely indicating market share or revenue distribution.\n- **Claims:** Major studios continue to lead revenue charts despite a sharp decline in release volume, while small and mid-sized studios attempt to break through via niche/edge innovations.\n- **Evidence & Scope:** Data sourced from DianDian Data (点点数据) self-research, strictly limited to iOS App Store new releases for 2025.\n- **Answerable Questions:** Which new games led iOS revenue in each 2025 quarter? What are the exact revenue figures and player ratings for specific 2025 releases? How do large vs. small studios compare in output and market positioning? What genres dominated new releases in 2025?",
+          "chunk_ids": []
+        },
+        {
+          "title": "11中国移动游戏市场新品收入占比",
+          "node_id": "0008",
+          "page_index": 11,
+          "start_index": 11,
+          "end_index": 12,
+          "summary": "**Topics:** Chinese mobile game market new product revenue share, market performance trends (2023–2025), game development & publishing strategies, user consumption behavior, capital market expectations for new titles.\n**Key Metrics & Dates:** 2023–2025 timeframe; App Store-only data; 2025 new game revenue share dropped sharply from 18.9% to 7.3%.\n**Entities:** Data source: DianDian (点点数据). Platform: App Store. Annual TOP5 new games: 2023 (逆水寒, 崩坏：星穹铁道, 冒险岛：枫之传说, 合金弹头：觉醒, 晶核); 2024 (地下城与勇士：起源, 无尽冬日, 三国：谋定天下, 向僵尸开炮, 恋与深空); 2025 (燕云十六声, 英雄没有闪, 杖剑传说, 永远的蔚蓝星球, 无畏契约：源能行动).\n**Claims & Analysis:** The revenue contraction is attributed to the absence of head/super products, which may lead capital markets to lower short-term growth expectations for new games. High R&D and marketing costs force developers toward conservative, formula-based project planning rather than exploratory innovation. User fatigue with standardized content reduces willingness to pay for non-disruptive titles. Mid-tier games collectively underperform due to an inability to match top-tier quality or offer creative scarcity in a competitive traffic environment.\n**Definitions & Concepts:** “确定性创新” (Deterministic Innovation): A validated success strategy for new games that relies on mature PC IP ports, proven genre fusions, or dominant vertical category positioning.\n**Evidence & Data Types:** Proprietary research chart tracking 2023–2025 revenue share trends; annual ranked lists of TOP5 new games; analytical commentary on market dynamics, developer behavior, and user preferences; source attribution to DianDian independent research.",
+          "chunk_ids": []
+        },
+        {
+          "title": "12中国移动游戏下载量TOP榜",
+          "node_id": "0009",
+          "page_index": 12,
+          "start_index": 12,
+          "end_index": 13,
+          "summary": "**Topics:** China mobile game market performance, annual download rankings (iOS App Store only), publisher market positioning, game genre adaptation analysis.\n**Entities:** \n- Games: 《三角洲行动》《王者荣耀》《和平精英》《开心消消乐》《无畏契约：源能行动》《蛋仔派对》《地下城与勇士：起源》《金铲铲之战》《我的世界：移动版》《燕云十六声》《地铁跑酷》《超自然行动组》《贪吃蛇大作战®》《腾讯欢乐斗地主》《迷你世界》《第五人格》《欢乐钓鱼大师》《颜色大作战》《元梦之星》《永劫无间》\n- Publishers/Developers: 腾讯、网易、乐元素、创梦天地、巨人网络、微派网络、迷你玩\n- Data Source: 点点数据（DianDian）\n**Dates:** 2025 (primary ranking year), 2024 (comparative year), January–October (partial monthly breakdown).\n**Definitions & Methodology:** Download figures are estimated annual totals restricted to the iOS App Store. Data is synthesized from DianDian tracking, corporate financial reports, and expert interviews, then calculated using DianDian’s proprietary statistical model.\n**Claims & Insights:** \n- 《三角洲行动》 secured the #1 annual download rank despite a primarily PC-focused user base, demonstrating effective mobile experience redesign.\n- 《超自然行动组》 facilitated Giant Network’s return to the top 15, validating the publisher’s expertise in low-barrier, real-time social competitive gameplay.\n**Tables & Metrics:** \n- Table 1: 2025 China Mobile Game Download TOP 15 (App Store). Columns: Rank, Game Name, Publisher, Estimated Downloads (万次). Top 3 metrics: 三角洲行动 (6104.8万), 王者荣耀 (4634.8万), 和平精英 (3371.2万).\n- Table 2: 2024 TOP 15 ranking list with partial monthly data points (Jan–Oct) for year-over-year comparison.\n**Evidence Types:** Quantitative download estimates, ranked performance lists, publisher attribution, multi-source data triangulation (tracking models + financial disclosures + expert input), qualitative market analysis on gameplay adaptation and publisher strategy.",
+          "chunk_ids": []
+        },
+        {
+          "title": "13中国游戏行业投融资相关事件",
+          "node_id": "0010",
+          "page_index": 13,
+          "start_index": 13,
+          "end_index": 13,
+          "summary": "Topics: China gaming industry investment and financing trends, market consolidation, capital strategy shifts, and the impact of technological/gameplay paradigm cycles on venture funding.\nEntities: GAMESHARK游鲨游戏圈 (data provider), 点点数据 (industry analyst), AI+游戏, 互动影游, 捉宠+种田, 合成+SLG, VR/AR hardware.\nDates: 2023–2025 industry trend comparison; data collection cutoff November 2025; three-year window for new company formation statistics.\nDefinitions & Procedures: Investment events are tracked based on equity change dates; scope limited to publicly disclosed financing events; \"multiple investors\" defined as entities making two or more investments within the calendar year.\nClaims: The absence of dominant hot tracks in 2025 caused sharp declines in both funding events and new studio formation; the market is in a bubble-clearing, fundamentals-focused transition; capital has shifted to defensive, foundational, and dispersed investments while awaiting the next major tech or content breakthrough (e.g., AI-generated dynamic worlds, mature VR/AR, novel social gameplay).\nMetrics: Investment events down 24% YoY; new gaming companies down 54% YoY; new companies over three years: 110, 85, 39; total recorded events: 142; multiple investors account for 38% of annual activity; equity changes breakdown: 102 new holdings, 13 continued holdings, 27 exits.\nTables & Figures: 2025 China gaming industry investment event data summary; monthly investment event volume chart; investor frequency distribution; equity change category breakdown.\nEvidence Types: Publicly tracked transaction data, equity registry records, YoY comparative statistics, industry analyst commentary, and dataset scope documentation (4,012 companies tracked).\nRetrieval Focus: Answers questions regarding 2025 gaming sector funding...",
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "02海外移动游戏市场现状分析",
+      "node_id": "0011",
+      "page_index": 15,
+      "start_index": 15,
+      "end_index": 15,
+      "summary": "**Topics:** Overseas mobile game market revenue & download trends, platform ecosystem shifts (iOS vs. Android), legacy title revitalization, 2025 new release performance, new product revenue share dynamics, regional market distribution (US, Japan, South Korea, HKMT), market maturity indicators, and publisher UA/ASO/resource allocation strategies.\n\n**Entities:** Markets/Regions: Overseas (excl. mainland China), US, Japan, South Korea, HKMT. Platforms/Regulators: App Store, Google Play, Japan’s Smartphone Specific Software Competition Promotion Act, Apple third-party payment rulings. Publishers/Developers: Supercell, 点点互动 (DianDian Interactive), 万代南梦宫, 海彼游戏, 网石游戏, NEXON, CyGames, FunPlus, First Fun, miHoYo, Scopely, King. Data Source: 点点数据 (DianDian Data). Key Titles: Clash Royale, Kingshot, Whiteout Survival, MONOPOLY GO!, Royal Match, Monster Strike, FGO, Lineage M, Honkai: Star Rail, SD Gundam G世代 永恒, Archero 2, Pokémon TCG Pocket, etc.\n\n**Dates:** Core analysis period: 2021–2025 (with specific focus on 2022–2025 for downloads/revenue, 2023–2025 for new releases, and 2025 for regional rankings). Policy/Report dates: Dec 18, 2015 (Japan law), 2025 (Apple ruling, primary ranking year), 2026 (report copyright & data adjustment note).\n\n**Definitions & Concepts:** \n- *Market Scope:* Excludes mainland China; covers only App Store & Google Play.\n- *Revenue Definition:* Direct user spending only; explicitly excludes ad monetization & third-party top-ups.\n- *Strategic Concepts:* “系统性重生” (systematic rebirth via gameplay/economy overhaul), “模拟经营+4X SLG” (validated core framework), “副玩法买量” (secondary gameplay UA), “Safe consumption” (player shift to established low-risk titles during economic uncertainty).\n\n**Claims & Strategic Procedures:** \n- Market revenue growth is flat (1%–2...",
+      "nodes": [
+        {
+          "title": "海外移动游戏市场收入规模&下载量",
+          "node_id": "0012",
+          "page_index": 15,
+          "start_index": 15,
+          "end_index": 16,
+          "summary": "**可回答主题**：海外移动游戏市场收入增长趋势、双平台（iOS/Android）下载量份额迁移、高价值用户生态分布变化、游戏厂商用户获取与商店优化策略。\n**核心实体**：海外移动游戏市场（不含中国大陆）、App Store、Google Play、点点数据、游戏厂商/发行商。\n**时间范围**：2022年–2025年（核心数据观测期）；2026年（报告版权年份及数据可能调整提示）。\n**定义与统计口径**：\n- 地域范围：除中国大陆以外的所有地区。\n- 渠道范围：仅限App Store与Google Play上架产品，不含其他第三方渠道或平台。\n- 收入定义：仅统计用户直接消费总金额，明确排除广告变现、第三方充值等其他收入模式。该口径统一适用于本报告后续所有“海外收入”相关统计。\n**核心主张与策略洞察**：\n- 市场收入增长持续平缓，年增速稳定在1%–2%区间。\n- 下载量份额发生结构性迁移：Google Play占比由2022年85%收缩至2025年74%，App Store由15%攀升至26%，表明高价值用户与核心市场注意力正加速向iOS生态集中。\n- 迁移归因：隐私政策变化、用户设备升级、平台营销能力等多因素综合作用。\n- 厂商策略建议：需大幅提升App Store产品页面优化（ASO）、本地化展示及争取编辑推荐的业务权重，在部分区域应将其提升至与买量投放同等的战略高度。\n**关键指标与数据**：\n- 收入规模（亿元）：提供2022–2025年逐年数值，2025年整体市场增长率维持在1%–2%。\n- 下载量（亿次）：提供2022–2025年逐年数值，整体市场年增长率分别为-6.21%（2023）、1.44%（2024）、5.42%（2025）。\n- 平台份额对比：明确标注2022年与2025年Google Play与App Store的下载量占比（85%/15% → 74%/26%）。\n**图表与可视化**：包含两张核心数据图表：①《2022-2025年海外移动游戏市场收入规模》（分平台数据与整体增长率）；②《2022-2025年海外移动游戏市场下载量》（分平台数据与整体增长率）。\n**证据类型与来源**：定量数据综合自点点数据统计模型、上市企业财报及行业专家访谈；附注声明部分数据可能在点点数据2026年后续报告中修正。无明确操作流程（Procedures），但包含明确的业务策略指导。",
+          "chunk_ids": []
+        },
+        {
+          "title": "海外移动游戏收入TOP榜",
+          "node_id": "0013",
+          "page_index": 16,
+          "start_index": 16,
+          "end_index": 17,
+          "summary": "This section (pp. 16–17) analyzes the overseas mobile game revenue TOP rankings, focusing on legacy title revitalization and 2025 new release market performance. **Topics:** Mobile game market analysis, legacy game revitalization strategies, new product market entry, gameplay & monetization design, user acquisition (UA) marketing, IP utilization vs. original creation, commercial framework reuse, and long-term operational dynamics. **Entities:** Supercell, 点点互动 (DianDian Interactive), 万代南梦宫, 海彼游戏, 网石游戏, NEXON, CyGames, FunPlus, and data provider 点点数据. Featured titles include 《皇室战争》(Clash Royale), 《奔奔王国》(Kingshot), 《荒野乱斗》, 《Whiteout Survival》, and the top 16 revenue-generating new releases of 2025 (e.g., 《SD钢弹 G世代 永恒》《弓箭传说2》《七骑士 Re:BIRTH》《枫之谷：放置冒险记》). **Dates:** 2023–2025 (annual revenue tracking), March–December 2025 (monthly tracking), 2024 (baseline comparison), and 2026 (report copyright). **Tables & Figures:** Chart 1 (2023–2025 overseas revenue scale for Clash Royale in 亿元), Chart 2 (2025 monthly overseas revenue for Kingshot in 亿元, highlighting a 94.8% metric), and a ranked table of the top 16 overseas mobile game new releases for 2025 (detailing rank, title, annual revenue, and publisher). **Definitions/Concepts:** “系统性重生” (systematic rebirth via gameplay/economy overhaul), “合成奇兵” (auto-chess synthesis mode), “模拟经营+4X SLG” (validated core framework), “副玩法买量” (saturated secondary-gameplay UA strategy), and “塔防” (tower defense for low-barrier onboarding). **Procedures/Strategies:** Clash Royale’s revival tactics include increasing trophy road limits, introducing high-tier progression modes, launching auto-chess synthesis, and decentralizing premium rewards to mid-tier players. Kingshot’s launch strategy adapts a Sim+4X SLG framework, integrates lightweight tower de...",
+          "nodes": [
+            {
+              "title": "TOP榜产品《皇室战争》《奔奔王国》深度解析",
+              "node_id": "0014",
+              "page_index": 17,
+              "start_index": 17,
+              "end_index": 18,
+              "summary": "Topics: Mobile game market analysis, legacy game revitalization strategies, new product market entry, gameplay & monetization design, user acquisition marketing.\nEntities: Supercell, 点点互动 (DianDian Interactive), 《皇室战争》(Clash Royale), 《奔奔王国》(Kingshot), 《荒野乱斗》(Brawl Stars), 《Whiteout Survival》.\nDates: 2023–2025 (annual revenue tracking), March–December 2025 (monthly revenue tracking), 2025 (Kingshot launch/listing year).\nDefinitions/Concepts: “系统性重生” (Systematic rebirth via gameplay & economy overhaul), “合成奇兵” (Auto-chess synthesis strategy mode), “模拟经营+4X SLG” (Validated core framework), “副玩法买量” (Saturated marketing strategy focusing on secondary gameplay), “塔防” (Tower defense as low-barrier onboarding).\nProcedures/Strategies: \n- Clash Royale Revival: Increased trophy road limits, introduced high-tier progression modes, launched auto-chess synthesis mode, decentralized premium rewards to mid-tier players to boost engagement and spending.\n- Kingshot Launch: Adapted proven Sim+4X SLG framework, integrated lightweight tower defense for early-game onboarding, selected complementary medieval theme/art style, executed high-frequency ad campaigns highlighting tower defense gameplay for cold-start user acquisition.\nClaims: Legacy game revival relies on deep, risk-tolerant reconstruction; new product breakthroughs depend on micro-innovation within mature models. Supercell demonstrates strong operational capability through legacy game revitalization. Kingshot is the sole new product on the 2025 TOP list.\nFigures & Metrics: \n- Chart 1: 2023–2025 overseas revenue scale for Clash Royale (unit: 亿元).\n- Chart 2: 2025 monthly overseas revenue scale for Kingshot (unit: 亿元), covering March–December, featuring a highlighted 94.8% metric.\nEvidence Types: Proprietary industry research data,...",
+              "chunk_ids": []
+            },
+            {
+              "title": "海外移动游戏2025年新品收入TOP榜",
+              "node_id": "0015",
+              "page_index": 18,
+              "start_index": 18,
+              "end_index": 19,
+              "summary": "**Topics:** 2025 overseas mobile game new release revenue rankings, market development trends, IP utilization vs. original IP creation, commercial framework reuse, user acquisition cost impact, long-term operation market dynamics.\n**Entities:** Top 16 revenue-generating new games (《奔奔王国》《SD钢弹 G世代 永恒》《弓箭传说2》《七骑士 Re:BIRTH》《枫之谷：放置冒险记》《Disney Solitaire》《I9》《洛奇M》《吸血鬼》《RF ONLINE NEXT》《可狱不可囚》《暗影诗章：凌越世界》《杖剑传说》《赛马娘》《DC: Dark Legion》); publishers/developers (点点互动, 万代南梦宫, 海彼游戏, 网石游戏, NEXON, SuperPlay, 乐牛游戏, 益世界, CyGames, 雷霆游戏, FunPlus); data provider (点点数据).\n**Dates:** 2024 (baseline comparison year), 2025 (primary analysis period), 2026 (report copyright year).\n**Claims/Insights:** 2025 lacks major original AAA releases; top revenue is dominated by classic IP adaptations/reboots and titles that precisely reuse proven commercial frameworks; \"IP nostalgia\" and \"micro-innovations on validated models\" are core assets to hedge against market uncertainty and high user acquisition costs; new releases are expected to efficiently capture existing IP fanbases rather than pioneer new gameplay paradigms.\n**Metrics:** Annual revenue (流水) in RMB (亿元) for each of the top 16 ranked games, ranging from 42.26亿元 (#1) to 6.04亿元 (#16).\n**Evidence/Format:** Ranked list/table of top-grossing overseas mobile game new releases for 2025, detailing rank, title, annual revenue, and publisher; analytical commentary on market convergence; sourced from 点点数据 proprietary research. No procedural steps or formal definitions are included.",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "海外移动游戏市场新品收入占比",
+          "node_id": "0016",
+          "page_index": 19,
+          "start_index": 19,
+          "end_index": 20,
+          "summary": "本章节可支持以下维度的检索问答：\n- **核心主题**：海外移动游戏市场新品收入占比变化趋势、市场成熟度特征、厂商新品策略与资源配置建议。\n- **关键主张/结论**：海外新品收入占比呈下降态势但降幅较缓，源于新品生态位相对稳固；剔除《MONOPOLY GO!》等超级爆款后，2023-2025年TOP新品收入曲线高度重合，表明市场已进入“基数稳固、尖峰难现”的成熟阶段；超级爆款属小概率“黑天鹅”事件，厂商需务实校准预期，瞄准特定生态位进行产品设计与资源配置，追求健康投资回报率而非盲目追求规模。\n- **关键指标与时间**：统计周期为2023-2025年。2024年新品收入占比12.0%（老游戏88.1%），2025年占比10.8%（老游戏89.2%）。图表追踪TOP1-TOP10新品收入分布。\n- **涉及实体/案例**：数据来源为点点数据。代表游戏包括《MONOPOLY GO!》（2023年超级爆款）、SD钢弹 G世代 永恒、弓箭传说2、奔奔王国（2025年代表）、菇勇者传说、剑与远征：启程、宝可梦TCG Pocket（2024年代表）。\n- **图表信息**：折线图对比2023、2024、2025年TOP1-TOP10新品收入规模分布曲线，并包含“2023年剔除TOP1超级爆款后”的对照曲线。\n- **证据类型**：点点数据自主研究数据、跨年度趋势对比分析、典型产品案例佐证。",
+          "chunk_ids": []
+        },
+        {
+          "title": "海外各地区移动游戏收入占比分布",
+          "node_id": "0017",
+          "page_index": 20,
+          "start_index": 20,
+          "end_index": 21,
+          "summary": "**Topics:** Overseas mobile game market revenue distribution across the United States, Japan, South Korea, and Hong Kong/Macau/Taiwan (HKMT); regional market scale and year-over-year growth trends (2021–2025); revenue concentration dynamics by product/publisher tiers; 2025 top-grossing and new-release game rankings; impact of macroeconomic conditions, regulatory policies, and platform ecosystem changes on player consumption and publisher strategy.\n**Entities:** Regional markets (US, Japan, South Korea, HKMT); top-grossing games (e.g., MONOPOLY GO!, Royal Match, 怪物弹珠, Fate/Grand Order, 天堂M, 星城Online, 崩坏：星穹铁道); publishers/developers (e.g., NEXON, Netmarble, 点点互动, First Fun, miHoYo, Scopely, King); platforms & regulators (Apple AppStore, Google Play, Japan’s Smartphone Specific Software Competition Promotion Act); data source (DianDian Data/点点数据).\n**Dates:** 2021–2025 (historical and current market data period); 2025 (primary analysis and ranking year); specific policy timelines (2025 Apple third-party payment court ruling, December 18, 2015 effective date for Japan’s competition law); 2026 (report copyright).\n**Figures:** Time-series line/bar charts depicting regional annual market revenue (in 100M RMB/亿元) and YoY growth rates (2021–2025); stacked bar charts illustrating revenue concentration breakdowns by rank tiers (Top 1–10, 11–50, 51–200, Others) for 2023–2025.\n**Tables:** Structured ranked lists for each region’s 2025 Overall Revenue TOP 10 and New Release Revenue TOP 10, containing columns for rank, game name, publisher, annual revenue (亿元), YoY growth rate, overall market rank, and launch month.\n**Definitions:** \"Safe consumption\" defined as player preference for socially established, low-risk top-tier products during economic uncertainty; platform compliance requ...",
+          "nodes": [
+            {
+              "title": "美国移动游戏市场收入规模",
+              "node_id": "0018",
+              "page_index": 21,
+              "start_index": 21,
+              "end_index": 22,
+              "summary": "**Topics:** US mobile game market revenue trends, market concentration dynamics, player consumption behavior under macroeconomic conditions, strategic resource allocation for game publishers.\n**Entities:** US mobile game market, top-tier products (Rank 1–10), mid-tier products (Rank 11–200), players, game developers/publishers, DianDian (data source).\n**Dates:** 2021, 2022, 2023, 2024, 2025.\n**Metrics:** Annual market revenue in 100M RMB (2021: 1740.0; 2022: 1648.6; 2023: 1702.2; 2024: 1634.5; 2025: 1658.4); YoY growth rates (-5.25%, 3.25%, -3.97%, 1.46%); revenue concentration shares by rank for 2023–2025 (e.g., TOP10 at 23.17% in 2024, ~21% in 2023/2025; mid-tier 11–200 expanding to ~53% during growth periods).\n**Claims:** Overall market revenue and top-product concentration exhibit a negative correlation. Economic downturns/revenue contraction trigger \"safe consumption,\" increasing top-product market share. Market recovery periods reduce top-product share and expand mid-tier share, driven by differentiated or well-operated titles. Publisher strategy should adapt to macroeconomic forecasts and player risk tolerance.\n**Figures/Tables:** Line/bar chart depicting US mobile game market revenue and growth rates (2021–2025); stacked bar chart showing revenue concentration breakdown by product rank (1–10, 11–50, 51–200, others) for 2023–2025.\n**Definitions/Procedures:** Defines \"safe consumption\" as player preference for socially established, low-risk top products during economic uncertainty. Outlines a strategic decision procedure: forecast macroeconomic conditions → assess player safety expectations → choose between deepening existing user value/operational efficiency or launching new products to capture market share.\n**Evidence Types:** Quantitative market revenue data,...",
+              "chunk_ids": []
+            },
+            {
+              "title": "美国移动游戏收入TOP榜",
+              "node_id": "0019",
+              "page_index": 22,
+              "start_index": 22,
+              "end_index": 23,
+              "summary": "**Topics:** 2025 US mobile game market revenue rankings; impact of Apple AppStore third-party payment policy changes; top-grossing and new-release mobile games in the US market.\n\n**Entities:** \n- Games: MONOPOLY GO!, Royal Match, 糖果粉碎传奇, Last War: Survival, 金币大师, 无尽冬日, 宝可梦GO, Roblox, 皇室战争, Township, 奔奔王国, Disney Solitaire, 弓箭传说2, 赛马娘（国际服）, DC: Dark Legion, Screwdom, 可狱不可囚, 枫之谷：放置冒险日记, 堡垒之夜, 帕萌战斗日记.\n- Developers/Publishers: Scopely, Dream Games, King, First Fun, Moon Active, 点点互动, Niantic, Roblox, Supercell, Playrix, SuperPlay, HABBY, Cygames, FunPlus, Zego, 益世界, NEXON, Epic Games, 莉莉丝.\n- Platforms & Sources: Apple App Store, Google Play, 点点数据 (DianDian Data).\n\n**Dates:** Data year: 2025. Policy context: 2025 court ruling. New game launch months: Jan, Feb, Mar, Apr, May, Jun, Oct 2025. Copyright: 2026.\n\n**Claims & Market Analysis:** A 2025 court ruling mandated Apple’s AppStore to open third-party payment channels, shifting the market from “platform-centric” to “service-diversified” by breaking absolute payment binding. Roblox’s traditional channel revenue declined significantly, but overall operations reached new highs due to strategic flexibility from third-party payments. Fortnite’s return to the US AppStore after five years and rapid ascent on new charts confirms the AppStore’s continued dominance as an irreplaceable core traffic hub.\n\n**Tables & Metrics:** \n- Table 1: 2025 US Mobile Game Overall Revenue Top 10 (Columns: Rank, Game Name, Developer, Annual Revenue in 亿元, YoY Growth %). Key metrics: MONOPOLY GO! (75.21亿元, -24.20%), Royal Match (50.94亿元, -14.23%), 皇室战争 (19.10亿元, +120.14%), Roblox (20.66亿元, -50.21%).\n- Table 2: 2025 US Mobile Game New Release Revenue Top 10 (Columns: Rank, Game Name, Developer, Annual Revenue in 亿元, Overall Rank, Launch Month). Key metr...",
+              "chunk_ids": []
+            },
+            {
+              "title": "日本移动游戏市场收入规模",
+              "node_id": "0020",
+              "page_index": 23,
+              "start_index": 23,
+              "end_index": 24,
+              "summary": "**Topics:** Japan mobile game market revenue scale, year-over-year growth trends (2021–2025), market revenue concentration by game ranking tiers, regulatory impact on app distribution and payment ecosystems, player monetization drivers.\n**Entities:** Japan mobile game market, DianDian (research/data source), 《智能手机特定软件竞争促进法》(Smartphone Specific Software Competition Promotion Act), legacy game titles, voice actors, fan/creator communities, platform operators.\n**Dates:** 2021–2025 (market data period), 2025 (primary analysis year), December 18, 2015 (stated effective date of the competition law), year-end (law implementation timeframe), 2026 (report copyright).\n**Definitions/Concepts:** App sideloading, third-party payment integration, platform choice screens, revenue concentration tiers (Top 1–10, 11–50, 51–200, Others).\n**Procedures/Requirements:** Platform compliance mandates to enable app sideloading, integrate third-party payment systems, and display user choice interfaces per the competition law.\n**Claims:** Emotional connection and community belonging outweigh pure gameplay as core monetization drivers; legacy titles sustain high revenue through long-term character narratives, voice acting, fan culture, and community identity; the competition law will fundamentally reshape distribution channels and payment options for developers.\n**Tables/Figures:** (1) Time-series chart of Japan mobile game market revenue (亿元/RMB) and YoY growth rates (2021–2025). (2) Stacked chart showing revenue concentration distribution across game ranking tiers (2023–2025).\n**Metrics:** 2025 total revenue: 1129.8亿元; 2025 YoY growth: 4.21%; Historical revenue (2021–2024): 1418.6, 1056.5, 1064.1, 1084.2亿元; Historical growth rates: -25.53%, 0.72%, 1.89%; Revenue share ranges by tier (2023–2025):...",
+              "chunk_ids": []
+            },
+            {
+              "title": "日本移动游戏收入TOP榜",
+              "node_id": "0021",
+              "page_index": 24,
+              "start_index": 24,
+              "end_index": 25,
+              "summary": "This section can answer retrieval queries regarding:\n- **Topics:** 2025 Japanese mobile game revenue rankings, market competition dynamics (\"IP adaptation\" vs. \"gameplay-driven\" models), and player acceptance trends.\n- **Entities:** Top-grossing mobile games and their publishers in Japan (e.g., 怪物弹珠/XFLAG, Fate/Grand Order/Aniplex, 宝可梦 TCG Pocket/The Pokemon Company, 崩坏：星穹铁道/米哈游, 无尽冬日/点点互动, SD钢弹 G世代 永恒/万代南梦宫), and the research source (点点数据/DianDian).\n- **Dates:** Full-year 2025 revenue tracking period; specific 2025 launch months for new releases (January through October 2025).\n- **Definitions:** None provided.\n- **Procedures:** None provided.\n- **Claims:** The Japanese market exhibits a \"dual-track\" competition where classic IPs retain strong commercial appeal, while gameplay-innovative titles with high-intensity operations are gaining traction, reflecting increased player acceptance of new mechanics and continuous content updates.\n- **Tables:** Two structured ranked lists: (1) 2025 Overall Revenue TOP 10 (columns: Rank, Game Name, Publisher, Annual Revenue, YoY Growth Rate); (2) 2025 New Product Revenue TOP 10 (columns: Rank, Game Name, Publisher, Annual Revenue, Overall Rank, Launch Date).\n- **Figures:** None provided.\n- **Metrics:** Annual revenue (单位：亿元/100M RMB), year-over-year (YoY) growth rates (%), overall market rank, and new product rank.\n- **Evidence Types:** Proprietary quantitative market data (revenue figures, growth percentages, rankings) supplemented by qualitative trend analysis from 点点数据 (DianDian) research.",
+              "chunk_ids": []
+            },
+            {
+              "title": "韩国移动游戏市场收入规模",
+              "node_id": "0022",
+              "page_index": 25,
+              "start_index": 25,
+              "end_index": 26,
+              "summary": "**Topics:** South Korean mobile game market revenue scale, market resilience amid socio-economic/political instability, government regulatory policy shifts, publisher market concentration, and IP-driven product strategy.\n**Entities:** South Korea, NEXON, Netmarble (网石游戏), South Korean President, DianDian (research source).\n**Dates/Periods:** Annual data coverage 2021–2025; specific analytical focus on 2025 market conditions and policy changes.\n**Metrics & Figures:** \n- Annual Revenue (RMB 100M): 467.4 (2021), 455.4 (2022), 462.7 (2023), 513.4 (2024), 513.6 (2025).\n- YoY Growth Rates: -2.56% (2022), 1.60% (2023), 10.95% (2024), 0.05% (2025).\n- Market Concentration: Revenue share percentages for publisher tiers (Top 10, 11–50, 51–200, Others) across 2023–2025.\n**Claims & Context:** Despite 2025 domestic turmoil (constitutional crisis, trade shocks, doctor strikes, semiconductor sanctions) and declining consumer confidence, the market maintained slight positive growth. This resilience is attributed to mature player consumption habits and a historic policy shift from strict pre-review controls to active government support and industry endorsement. Major local publishers drove supply by launching classic PC-to-mobile MMORPG adaptations.\n**Evidence Types:** Proprietary market research data, time-series revenue and growth charts, market concentration distribution charts, policy/regulatory analysis, and industry trend commentary.\n**Answerable Retrieval Questions:** What was the South Korean mobile game market revenue and YoY growth from 2021 to 2025? How did 2025 socio-political events and government policy changes impact market performance? Which companies and product strategies drove 2025 market supply? How is revenue distributed among top, mid-tier, and smaller publishers?...",
+              "chunk_ids": []
+            },
+            {
+              "title": "韩国移动游戏收入TOP榜",
+              "node_id": "0023",
+              "page_index": 26,
+              "start_index": 26,
+              "end_index": 27,
+              "summary": "This section provides a data-driven analysis of the 2025 South Korea mobile game revenue rankings, designed to answer queries on market performance, genre shifts, and top-performing titles. \n**Topics & Claims:** Addresses the historically rare dominance of new releases in the TOP 10 revenue list, noting they are predominantly MMORPGs adapted from classic Korean PC IPs. Claims that intra-company self-competition and new-title success reflect market vitality, while the sharp contraction of casual, idle, and sports genres indicates MMORPG market overconsumption, suggesting untapped potential for other categories over the next 1–2 years. Highlights the entry of Chinese developer Leniu Games’ *I9* into the TOP 10.\n**Entities:** Lists top-grossing games (天堂M, 无尽冬日, Last War:Survival, 奥丁：神判, 洛奇M, 吸血鬼, 七骑士 Re:BIRTH, RF ONLINE NEXT, 枫之谷：放置冒险记, I9, 奔奔王国, 尤弥尔传奇, 不休旅途：绘卷世界, 缔造者:放逐之地) and publishers/developers (NCSOFT, 点点互动, First Fun, Kakao Games, NEXON, 网石游戏, 乐牛游戏, 娱美德, 4399, DRIMAGE).\n**Dates:** Covers full-year 2025 revenue data; specifies new game launch months from January to October 2025.\n**Tables & Metrics:** Features two structured tables: (1) 2025 Overall Revenue TOP 10 (rank, game name, publisher, annual revenue in 亿元, YoY growth rate); (2) 2025 New Release Revenue TOP 10 (rank, game name, publisher, annual revenue, overall rank, launch date). Key metrics include revenue figures, year-over-year growth/decline percentages, and ranking positions.\n**Evidence Types:** Combines quantitative financial/ranking data with qualitative market trend analysis, attributed to 点点数据 (Diandian Data) proprietary research.\n**Answerable Questions:** What were the top-grossing mobile games in South Korea in 2025? Which new releases and publishers led the revenue chart? How did MMORPGs perform...",
+              "chunk_ids": []
+            },
+            {
+              "title": "港澳台移动游戏市场收入规模",
+              "node_id": "0024",
+              "page_index": 27,
+              "start_index": 27,
+              "end_index": 28,
+              "summary": "Topics & Entities: Hong Kong, Macau, and Taiwan (港澳台) mobile game market; market revenue scale; revenue concentration/competitive landscape; DianDian Data (research source).\nDates: 2021–2025 (annual reporting period).\nMetrics: Annual market revenue (RMB billion): 2021 (364.8), 2022 (350.8), 2023 (347.2), 2024 (361.0), 2025 (364.6). YoY growth rates: 2022 (-3.82%), 2023 (-1.05%), 2024 (3.98%), 2025 (0.99%). Revenue concentration by product rank (2023–2025): TOP 10 (~23–24%), 11–50 (26.82% → 28.34%), 51–200 (~25–26%), Others (~23–24%).\nClaims & Insights: 2025 revenue nearly matches the 2021 historical peak. The market exhibits a “stable top, strengthened middle” structure, indicating a healthy, dispersed competitive landscape that contrasts with the intensifying top-heavy trends in Japan and Korea. Market resilience is driven by stable player payment habits, diverse genre demand, and consistent content supply, rather than reliance on a few blockbuster titles.\nFigures/Tables & Evidence Types: Figure 1: 2021–2025 market revenue scale and YoY growth rate chart. Figure 2: 2023–2025 revenue concentration breakdown by product ranking tiers. Evidence type: Quantitative market data, comparative regional analysis, and proprietary industry research (DianDian Data).\nAnswerable Retrieval Questions: What was the total mobile game market revenue in HK/Macau/Taiwan from 2021 to 2025? What are the year-over-year growth rates for this market? How is revenue distributed among top, mid-tier, and long-tail mobile games? How does the competitive concentration in this region compare to Japan and Korea? What factors drive market growth and resilience? What specific data supports the “stable top, strengthened middle” claim?",
+              "chunk_ids": []
+            },
+            {
+              "title": "港澳台移动游戏收入TOP榜",
+              "node_id": "0025",
+              "page_index": 28,
+              "start_index": 28,
+              "end_index": 28,
+              "summary": "**Topics & Scope:** 2025 mobile game revenue rankings, market composition, and genre preference trends in Hong Kong, Macau, and Taiwan (HKMT).\n\n**Key Claims & Insights:** The export bonus period for lightweight/casual games to the HKMT region is ending. Market preference has explicitly shifted toward mid-heavy games featuring deep gameplay, strong IP backing, or complex progression systems. The market exhibits a mature, tripartite structure comprising established local titles, successful mainland exports (notably SLG), and global IP products.\n\n**Entities (Games & Publishers):** \n- *Top Grossing Titles:* 《星城Online》(Wanin International), 《寒霜启示录》(点点互动), 《最后的战争》(First Fun), 《Garena 传说对决》(Garena), 《杖剑传说》(雷霆游戏), 《天堂W/M》(NCSOFT), 《宝可梦 TCG Pocket》(The Pokemon Company), 《SD钢弹 G世代 永恒》(万代南梦宫), 《崩坏：星穹铁道》(米哈游).\n- *Top New Releases (2025):* 《杖剑传说》, 《SD钢弹 G世代 永恒》, 《奔奔王国》(点点互动), 《不休旅途：绘卷世界》(4399), 《枫之谷：放置冒险记》(NEXON), 《七骑士 Re:BIRTH》(网石游戏), 《RO仙境传说：曙光》(GRAVITY), 《时光杂货店》(绝妙游戏M), 《尸鬼三国》(天游网络), 《第七天炎》(Funforge).\n\n**Dates & Timeframes:** Full-year 2025 performance data; specific 2025 launch months for new titles (January, February, March, April, May, July, September, October).\n\n**Tables & Metrics:** \n- *Table 1 (Overall Revenue TOP 10):* Ranks games by 2025 annual revenue (unit: 亿元 RMB) and provides year-over-year growth rates.\n- *Table 2 (New Product Revenue TOP 10):* Ranks 2025 releases by revenue, cross-references their overall market rank, and lists launch months.\n\n**Evidence Types:** Quantitative financial metrics (revenue figures, YoY growth percentages), ranked performance lists, qualitative market trend analysis, and publisher/game attribution. Data sourced from 点点数据 (Diandian Data) independent research.",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "03移动游戏典型产品&企业案例分析",
+      "node_id": "0026",
+      "page_index": 30,
+      "start_index": 30,
+      "end_index": 30,
+      "summary": "**Topics:** Case study analyses of mobile game product positioning, gameplay innovation, commercial performance, post-launch turnaround dynamics, and corporate long-termism, covering strategic trade-offs in monetization, user experience purity, and platform-ecosystem synergies.\n**Entities:** 《燕云十六声》, 网易 (NetEase), 《杖剑传说》, 厦门吉比特网络技术股份有限公司 (G-bits Network Technology), 心动网络 (XD Inc.), 创始人黄一孟, TapTap平台, Steam, App Store, 点点数据 (DianDian Data), and representative titles including 《天天打波利》《不休的乌拉拉》《心动小镇》《出发吧麦芬》《伊瑟》《火炬之光：无限》《香肠派对》《仙境传说M》.\n**Dates & Timeframes:** Performance tracking and financial reporting across calendar year 2025; specific windows include a November 2025 global launch, May 29–December 31, 2025 daily revenue tracking, Q3 2025 financial reporting, and post-beta IP collaboration milestones at launch, 2, 4, and 6 months. Document copyright is marked 2026.\n**Definitions & Concepts:** Realistic wuxia open-world; \"Single-player + Multiplayer\" hybrid mode; strategic frameworks of \"restraint vs. radicalism,\" \"dangerous fusion,\" and \"bold abandonment\"; \"light MMO\" niche and \"idle surface, MMO core\" philosophy; XD Inc.'s \"unconventional\" (妖) differentiation strategy; TapTap's \"no joint operation, zero revenue share\" policy; \"long-term patience\" (不着急); trust culture/anti-KPI management; 致意金 (voluntary departure compensation); \"social idle\" (组队挂机) and \"social freedom\" (社交自由).\n**Procedures & Mechanics:** Semi-real-time command queue combat; pre-configuration of 8 active/passive skills; equipment affix build (BD) construction; structured social progression (independent idle grinding → team-dependent high-yield dungeons → guild participation → veteran carry culture); platform commercial loop (zero share → quality content acquisition → hardcore player aggregation → high-sticki...",
+      "nodes": [
+        {
+          "title": "典型移动游戏产品案例分析：《燕云十六声》",
+          "node_id": "0027",
+          "page_index": 30,
+          "start_index": 30,
+          "end_index": 30,
+          "summary": "**Topics:** Case study analysis of the mobile game 《燕云十六声》, covering market positioning strategy, player reception evolution, global expansion performance, cross-cultural appeal of historical wuxia titles, post-launch turnaround dynamics, and strategic trade-offs across business models, gameplay innovation, and user experience purity.\n**Entities:** 《燕云十六声》, 网易 (NetEase), 点点数据 (DianDian Data), Steam, App Store.\n**Dates & Timeframes:** Historical setting: Five Dynasties and Ten Kingdoms to early Song dynasty; Global version launch: November 2025; Performance tracking: Calendar year 2025; Document copyright: 2026.\n**Definitions/Concepts:** Realistic-style wuxia open-world game; \"Single-player + Multiplayer\" hybrid mode; differentiated market positioning; cross-cultural barrier penetration; strategic frameworks of \"restraint vs. radicalism\" (business models), \"dangerous fusion\" (gameplay design), and \"bold abandonment\" (experience-first strategy).\n**Claims:** The game's highly specific historical wuxia positioning initially faced market skepticism and polarized reviews but achieved a rapid post-beta reversal in data and reputation, demonstrating that high-quality differentiated positioning can drive global breakout success. The section also establishes a conceptual framework for analyzing the strategic costs and trade-offs inherent in balancing monetization, innovation, and experience purity.\n**Metrics & Data Points:** Player milestones: 15M, 30M, 40M; Peak concurrent users: >250,000; Steam positive rating: >89%; App Store #1 free chart in >60 markets; identified as one of NetEase's fastest-growing recent products.\n**Tables/Figures:** Two 2025 China App Store-only trend charts sourced from DianDian Data: (1) Monthly revenue (unit: 10,000 RMB), (2) Daily active users (unit:...",
+          "nodes": [
+            {
+              "title": "以独特历史切口形成独特市场定位从备受质疑到全球破圈的逆袭之路",
+              "node_id": "0028",
+              "page_index": 30,
+              "start_index": 30,
+              "end_index": 31,
+              "summary": "**Topics:** Game market positioning strategy, player reception evolution, global expansion performance, cross-cultural appeal of historical wuxia titles, post-launch turnaround case study.\n**Entities:** 《燕云十六声》 (game), 网易 (NetEase), 点点数据 (DianDian Data), Steam, App Store.\n**Dates & Timeframes:** Historical setting: Five Dynasties and Ten Kingdoms to early Song dynasty; Global version launch: November 2025; Performance tracking & charts: Calendar year 2025.\n**Definitions/Concepts:** Realistic-style wuxia open-world game; \"Single-player + Multiplayer\" hybrid mode; Differentiated market positioning; Cross-cultural barrier penetration.\n**Claims:** The game's highly specific historical wuxia positioning initially faced market skepticism and polarized reviews (praised for visuals/history/immersion, criticized for combat feel/system design/mode maturity). Post-public beta content polishing triggered a rapid reversal in both data and reputation, demonstrating that high-quality differentiated positioning can achieve global breakout success and transcend cultural boundaries.\n**Metrics & Data Points:** Player milestones: 15M, 30M, 40M; Peak concurrent users: >250,000; Steam positive rating: >89%; App Store #1 free chart in >60 markets; Identified as one of NetEase's fastest-growing recent products.\n**Tables/Figures:** Two 2025 China App Store-only trend charts: (1) Monthly revenue (unit: 10,000 RMB), (2) Daily active users (unit: 10,000). Data source: DianDian Data.\n**Evidence Types:** Qualitative community/critical sentiment analysis; Quantitative performance benchmarks (player counts, CCU, ratings, regional chart rankings); Referenced time-series charts for revenue and DAU; Third-party market research attribution.\n**Retrieval Utility:** Answers queries regarding the game's hist...",
+              "chunk_ids": []
+            },
+            {
+              "title": "在商业模式、玩法创新、体验纯粹性上的取舍与代价",
+              "node_id": "0029",
+              "page_index": 31,
+              "start_index": 31,
+              "end_index": 31,
+              "summary": "This parent section (pages 31–32) establishes a high-level framework for analyzing strategic trade-offs and associated costs across three core dimensions: business models, gameplay innovation, and user experience purity. It is structured around three subtopics: the conceptual balance of \"restraint\" versus \"radicalism\" in business models, the thematic categorization of \"dangerous fusion\" in gameplay design, and an experience-first strategy characterized by \"bold abandonment.\" The provided excerpts contain only section headings and a copyright notice (Entity: DianDian; Date: 2026). No definitions, procedures, claims, tables, figures, metrics, or evidence types are visible. For retrieval purposes, this node functions strictly as a structural and topical marker; substantive answers regarding specific strategies, operational steps, analytical claims, or supporting data will require content from the full document sections.",
+              "nodes": [
+                {
+                  "title": "商业模式的“克制与激进”",
+                  "node_id": "0030",
+                  "page_index": 31,
+                  "start_index": 31,
+                  "end_index": 31,
+                  "summary": "This section can answer questions about its core topic: the conceptual contrast or balance between \"restraint\" and \"radicalism\" in business models. It cannot answer questions regarding specific entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence types, as the provided text consists solely of the section title and contains no substantive content.",
+                  "chunk_ids": []
+                },
+                {
+                  "title": "游戏玩法的“危险融合”",
+                  "node_id": "0031",
+                  "page_index": 31,
+                  "start_index": 31,
+                  "end_index": 31,
+                  "summary": "This section introduces the topic of \"dangerous fusion\" (危险融合) in gameplay. Based solely on the provided text, it can answer questions regarding the naming or thematic categorization of this specific gameplay concept. The excerpt consists only of a section heading and contains no definitions, entities, dates, procedures, claims, tables, figures, metrics, or evidence types. For retrieval purposes, this node functions as a topical marker or heading; substantive answers will require content from surrounding sections.",
+                  "chunk_ids": []
+                },
+                {
+                  "title": "体验至上的“大胆放弃”",
+                  "node_id": "0032",
+                  "page_index": 31,
+                  "start_index": 31,
+                  "end_index": 32,
+                  "summary": "This section contains only a heading and copyright notice. It can answer:\n- **Topics:** The thematic focus is on prioritizing user experience through strategic abandonment or simplification, as indicated by the title “体验至上的‘大胆放弃’”.\n- **Entities & Dates:** The copyright entity is DianDian, with a copyright year of 2026.\n- **Location:** The section spans pages 31–32.\n- **Definitions, Procedures, Claims, Tables, Figures, Metrics, Evidence:** None are present. The provided text lacks substantive content, so it cannot answer questions regarding operational steps, analytical claims, data metrics, visual aids, or supporting evidence.",
+                  "chunk_ids": []
+                }
+              ],
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "典型移动游戏产品案例分析：《杖剑传说》",
+          "node_id": "0033",
+          "page_index": 32,
+          "start_index": 32,
+          "end_index": 32,
+          "summary": "This section provides a retrieval-optimized case study analysis of the mobile game 《杖剑传说》, covering market positioning, core design mechanics, and commercial performance. **Topics & Definitions** explore the \"light MMO\" niche strategy and the \"idle surface, MMO core\" philosophy, defining the product as an idle-game framework integrated with traditional MMO elements (co-op dungeons, class roles, guild socials) to balance social depth with low daily engagement burdens. **Entities & Dates** focus on 《杖剑传说》 and publisher 厦门吉比特网络技术股份有限公司 (G-bits Network Technology), with key timeframes including Q3 2025 (financial reporting), a daily revenue tracking window from May 29 to December 31, 2025, and post-public beta IP collaboration milestones at launch, 2, 4, and 6 months (featuring IPs: 蔬菜精灵, 为美好的世界献上祝福, 洛天依 x 言和, 罗小黑战记2). **Procedures & Mechanics** detail gameplay loops including semi-real-time command queue combat, pre-configuration of 8 active/passive skills, equipment affix build (BD) construction, and a structured social progression path (independent idle grinding → team-dependent high-yield dungeons → guild participation → veteran carry culture). **Claims & Metrics** assert that the positioning successfully targets fragmented-time users while avoiding heavy MMO competition, and that MMO-style social systems combined with a pure 2D art style drive retention, revenue, and ACG IP fan conversion. Key metrics include a +59.46% YoY increase in overseas game revenue, an average IP collaboration frequency of every 2 months, 8 skill slots enabling hundreds of combinations, and server-specific daily revenue trends. **Tables, Figures & Evidence Types** feature a line chart tracking 2025 global daily revenue (in 10k RMB) across CN, Traditional Chinese, and JP servers, alongside a ch...",
+          "nodes": [
+            {
+              "title": "基于项目组擅长品类精准挖掘出“轻度MMO”的细分蓝海赛道",
+              "node_id": "0034",
+              "page_index": 32,
+              "start_index": 32,
+              "end_index": 33,
+              "summary": "本章节可支持以下维度的检索问答：\n- **可回答主题**：游戏细分赛道定位策略、“轻度MMO”品类创新逻辑、产品商业化表现与市场分析。\n- **核心实体**：《杖剑传说》（游戏产品）、厦门吉比特网络技术股份有限公司（企业主体）、点点数据（数据提供方）、服务器分区（国服/繁中服/日服/三服合计）。\n- **关键时间**：2025年第三季度（财报周期）、2025年5月29日至12月31日（日流水统计区间）。\n- **概念定义**：“轻度MMO”指在放置游戏极简框架内，系统融入组队副本、职业分工、公会社交等MMO核心元素，兼顾社交成长深度与低日常负担的产品形态。\n- **核心主张**：该定位精准契合时间碎片化用户与泛用户需求，避开传统重度MMO红海，开辟竞争缓和的蓝海赛道；该产品是吉比特2025年Q3海外游戏业务营收同比大幅增长的主要贡献者。\n- **图表与指标**：包含“2025年《杖剑传说》全球日流水（万元）”折线图（按服务器维度展示趋势）；核心量化指标为海外游戏业务营收同比+59.46%。\n- **证据类型**：企业季度财务报告、第三方数据机构自主绘制图表、典型移动游戏产品案例分析。",
+              "chunk_ids": []
+            },
+            {
+              "title": "“放置为表、MMO为里“，并通过IP联动将两者紧密藕合",
+              "node_id": "0035",
+              "page_index": 33,
+              "start_index": 33,
+              "end_index": 34,
+              "summary": "This section answers retrieval queries regarding the mobile game 《杖剑传说》, structured around the following dimensions:\n\n- **Topics & Definitions:** Explains the “放置为表、MMO为里” (idle surface, MMO core) design philosophy, defining how vertical idle progression and light exploration/puzzle mechanics lower daily engagement barriers while embedding traditional MMORPG depth.\n- **Entities & Dates:** Identifies the game 《杖剑传说》 and its post-public-beta IP collaboration timeline: 蔬菜精灵 (launch sync), 为美好的世界献上祝福 (2 months post-launch), 洛天依 x 言和 (4 months post-launch), and 罗小黑战记2 (6 months post-launch). Notes the game has been in public beta for over half a year.\n- **Procedures & Mechanics:** Details gameplay loops including semi-real-time command queue combat, pre-configuration of 8 active/passive skills, equipment affix BD (build) construction, and the social progression path (independent idle grinding → team-dependent high-yield dungeons → guild participation → “veteran carry” culture).\n- **Claims & Metrics:** Asserts that MMO-style collaborative social systems are the primary drivers of player retention and revenue. Claims the pure 2D art style ensures high compatibility with ACG IPs, enabling rapid content deployment and effective fan conversion. Cites metrics: average collab frequency of every 2 months, 8 skill slots, and hundreds of skill combinations ensuring long-term explorability.\n- **Tables/Figures & Evidence Types:** Presents a chronological collaboration timeline table/figure mapping IP names to rollout intervals. Evidence is categorized as analytical industry research and gameplay feature breakdown, sourced from 点点数据 (DianDian Data) self-research and visualization.",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        },
+        {
+          "title": "典型移动游戏企业案例分析：心动网络",
+          "node_id": "0036",
+          "page_index": 34,
+          "start_index": 34,
+          "end_index": 34,
+          "summary": "本章节（页码34-35）以心动网络为典型案例，系统剖析其差异化产品战略与长期主义组织文化在游戏研发及TapTap平台生态中的落地逻辑。内容涵盖以下检索维度：\n\n- **主题**：心动网络“反常规/差异化”战略落地、TapTap“不联运、零分成”商业逻辑、自研与平台生态闭环构建、理想主义导向的组织管理与长线战略定力。\n- **关键实体**：心动网络、创始人黄一孟、TapTap平台、数据来源点点数据；代表游戏包括《天天打波利》《不休的乌拉拉》《心动小镇》《出发吧麦芬》《伊瑟》《火炬之光：无限》《香肠派对》《仙境传说M》。\n- **日期/时间**：图表数据周期为2025年；战略收获期为“近几年”；文档版权标注年份为2026年。\n- **核心定义**：“妖”气质（放弃大众普适性，精准挖掘并放大细分用户极致乐趣的差异化策略）；“不联运、零分成”（TapTap不抽取游戏流水分成，挑战传统渠道规则）；“不着急”与长线定力（战略耐心与长期聚焦）；信任文化/反KPI管理（以高固定薪酬替代奖金、弱化内部竞争）；致意金（主动离职员工专项补偿）；“组队挂机”（重度社交与放置玩法结合）；“社交自由”（碎片化轻社交与单机沉浸兼顾）。\n- **机制与流程**：①平台商业闭环：TapTap以零分成吸引优质独立/创新内容→聚集硬核玩家→沉淀高粘性流量池→依托高毛利广告模式实现健康盈利；②产品-平台协同：自研“妖”游戏提供独家内容，平台规则反哺开发生态并提供零成本首发阵地与用户洞察，形成正向循环；③组织与产品管理：取消全员奖金、推行无限假期与业内顶级固定薪酬，不盲目扩编追风口，持续扶持商业回报有限的买断制与独立游戏，聚焦产品“长青化”深耕。\n- **核心主张**：心动网络的“妖”气质与“不着急”节奏是经市场验证的差异化路径；创始人理想主义与精密商业化运营相结合，使平台在“不赚钱”承诺下实现远超传统渠道的广告变现效率；信任文化与零分成生态共同解除短期KPI束缚，支撑公司抵御短期诱惑、实现自研线的系统性成功。\n- **图表与指标**：包含定量图表《2025年心动网络旗下部分游戏国服月流水（仅App Store）》（来源：点点数据自主研究及绘制），展示2025年1-12月6款指定游戏的月流水数据（单位：万元，Y轴刻度0-3,600）。定性指标涵盖“高毛利广告模式”“健康盈利能力”“高价值/高粘性流量基础”“广告变现效率远超传统渠道”。\n- **证据类型**：心动网络官方财报数据、点点数据研究图表、企业制度案例、战略决策描述、产品发行结果、平台商业模式说明。",
+          "nodes": [
+            {
+              "title": "从“妖”产品到“妖”平台的独特气质",
+              "node_id": "0037",
+              "page_index": 34,
+              "start_index": 34,
+              "end_index": 35,
+              "summary": "本章节聚焦心动网络“妖”（反常规/差异化）战略在游戏产品与TapTap平台端的落地逻辑，可支持以下维度的检索问答：\n\n- **可回答的核心问题/主题**：心动网络的差异化产品策略是什么？TapTap“不联运、零分成”模式的商业逻辑与盈利机制为何？自研游戏与平台业务如何形成生态闭环？\n- **关键实体**：心动网络、TapTap平台、《天天打波利》、《不休的乌拉拉》、《心动小镇》、点点数据。\n- **核心定义**：“妖”气质（指不追求大众普适性，精准挖掘并放大特定细分用户极致乐趣的差异化策略）；“组队挂机”（重度社交与放置玩法结合，实现强链接与低负担的反差融合）；“社交自由”（兼顾碎片化轻社交与单机沉浸体验）；“不联运、零分成”（TapTap不抽取游戏流水分成，挑战传统渠道规则）。\n- **商业机制/流程**：TapTap以零分成策略吸引优质独立与创新内容→聚集核心硬核玩家→沉淀高价值、高粘性流量池→依托高毛利广告模式实现健康盈利；自研“妖”游戏为平台提供独家内容，平台规则反哺开发生态并提供零成本首发阵地与用户洞察，形成“产品-平台”正向闭环。\n- **核心主张/结论**：该“妖”气质非偶然，而是经市场验证的差异化路径；创始人的理想主义定位与精密的商业化运营结合，使平台在“不赚钱”承诺下实现远超传统渠道的广告变现效率。\n- **指标与证据类型**：定性指标包括“高毛利广告模式”“盈利能力非常健康”“高价值/高粘性流量基础”“广告变现效率远超传统渠道”；证据类型为心动网络官方财报数据及点点数据自主研究绘制的图表。\n- **时间/元数据**：文档页码34-35；版权标注年份为2026年。",
+              "chunk_ids": []
+            },
+            {
+              "title": "理想主义底色下的“不着急”与长线定力",
+              "node_id": "0038",
+              "page_index": 35,
+              "start_index": 35,
+              "end_index": 35,
+              "summary": "**可回答主题**：企业战略与组织文化、长期主义与短期利益权衡、游戏平台生态治理、创始人理念对商业决策的影响。\n**关键实体**：心动网络、黄一孟（创始人）、TapTap、点点数据（数据来源）；游戏产品：《出发吧麦芬》《心动小镇》《伊瑟》《火炬之光：无限》《香肠派对》《仙境传说M》。\n**时间/日期**：2025年（图表数据周期）、近几年（战略收获期）。\n**核心概念/定义**：“不着急”与长线定力（战略耐心与长期聚焦）、零分成渠道（TapTap不抽取游戏流水分成）、买断制手游（一次性付费模式）、致意金（主动离职员工专项补偿）、信任文化/反KPI管理（以高固定薪酬替代奖金、弱化内部竞争）。\n**制度/流程/策略**：组织管理（取消全员奖金、提供业内顶级固定薪酬、推行无限假期、为主动离职员工提供6个月致意金）；产品战略（不盲目扩编追风口、持续扶持商业回报有限的买断制与独立游戏、聚焦“长青化”深耕）；平台策略（TapTap维持纯广告模式，拒绝流量榨取，构建直接纯净的玩家反馈环）。\n**核心主张/结论**：理想主义是心动网络独特运营节奏与长期定力的核心哲学；信任文化可解除员工短期KPI束缚，使其专注产品长期价值；战略耐心与TapTap零分成生态共同促成了自研线的系统性成功；坚持健康生态与作品品质为公司抵御短期诱惑、执行长线战略提供根本支撑。\n**图表/指标**：图表《2025年心动网络旗下部分游戏国服月流水（仅App Store）》（来源：点点数据自主研究及绘制）；指标维度：2025年1-12月各月流水（单位：万元，Y轴刻度0-3,600）；覆盖6款指定游戏。\n**证据类型**：企业制度案例、战略决策描述、产品发行结果、平台商业模式说明、定量流水图表数据。",
+              "chunk_ids": []
+            }
+          ],
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "04全球移动游戏市场发展趋势",
+      "node_id": "0039",
+      "page_index": 37,
+      "start_index": 37,
+      "end_index": 37,
+      "summary": "**Topics:** Global mobile gaming market evolution, cross-platform synergy, legacy product revitalization, post-IDFA user acquisition economics, 2026 genre forecasting, and player demand iteration toward light/heavy dual models.\n**Entities:** Mini-games, Native APPs, WeChat Mini Games, Apple (IDFA policy), DianDian Data, Krafton, and key titles including *Clash Royale*, *Palworld*, *Roco Kingdom*, *Mushroom Hero*, and *MapleStory: Idle Adventure*.\n**Dates:** 2016 (legacy title launch), 2018 & 2021 (ad market shifts/IDFA implementation), 2025 (trend initiation & Q4 mini-game releases), 2026 (forecast year & copyright), and recent two-year market cycles.\n**Definitions/Concepts:** “Multi-end/Dual-end synergy” (mini-games as low-cost traffic funnels, APPs as long-term value pools with complete data interoperability); “Post-IDFA era” (privacy-restricted ad targeting); “Brainwashing creatives” & “sub-gameplay acquisition” (simplified, emotion-driven, or secondary-mechanic ad formats); “Open-world pet catching + automated infrastructure” (exploration + collection + simulation/automation fusion); “Light/Heavy dual model” (low-burden daily routines vs. optional deep strategy).\n**Procedures/Strategies:** Deploying mini-games for broad acquisition before routing qualified users to APPs; implementing cross-platform data migration and synchronization protocols; optimizing ad creatives via AI scaling, emotional repetition, and sub-gameplay hooks to bypass targeting limits; designing light/heavy gameplay splits using one-click delegation, offline rewards, and restructuring high-difficulty rewards as social capital.\n**Claims:** Mini-game/APP ecosystem coupling is essential for LTV optimization and lifecycle management; ad buying remains the dominant acquisition channel despite CAC pres...",
+      "nodes": [
+        {
+          "title": "37小游戏与APP正在重新构建“多端协同”战略",
+          "node_id": "0040",
+          "page_index": 37,
+          "start_index": 37,
+          "end_index": 37,
+          "summary": "**Topics:** Mobile gaming market evolution, cross-platform synergy strategies, user acquisition & retention models, game lifecycle management, and the strategic integration of mini-games into mainstream product ecosystems.\n**Entities:** Mini-games (小游戏), Native APPs (原生APP), 《皇室战争》(Clash Royale), App Store, 点点数据 (Diandian Data).\n**Dates:** 2025 (trend initiation point for long-running APP games launching data-interoperable mini-game versions).\n**Definitions/Concepts:** “多端协同/双端协同”战略 (Multi-end/Dual-end synergy strategy); Mini-games as a “前端流量漏斗” (front-end traffic funnel for low-cost acquisition and user filtering); APPs as a “价值沉淀池” (value retention pool for complete audiovisual experiences, social systems, and long-term monetization); 数据完全互通 (complete cross-platform data interoperability).\n**Claims:** Mini-games have evolved from a supplementary channel to a high-growth \"second curve\" in the global mobile gaming industry; mini-game and APP ecosystems are strategically coupled rather than isolated; adopting a \"mini-game + APP\" synergy is no longer optional but essential for optimizing user LTV, managing product lifecycles, and building competitive barriers in a saturated market.\n**Metrics & Evidence:** Nearly half of the top-grossing mini-games simultaneously offer native APP versions. Evidence type: Independent market research and data visualization by 点点数据 (Diandian Data), supported by top-grossing list analysis and industry trend observation.\n**Figures/Tables:** References a chart/figure where games highlighted in blue boxes indicate titles that have launched native APP versions on the App Store.\n**Procedures/Strategic Logic:** Deploy mini-games for broad, low-cost user acquisition and initial screening; route qualified users to native APPs for deep engagement and...",
+          "chunk_ids": []
+        },
+        {
+          "title": "老产品借小游戏重获新生",
+          "node_id": "0041",
+          "page_index": 37,
+          "start_index": 37,
+          "end_index": 38,
+          "summary": "This section addresses the strategic revitalization of legacy gaming products via mini-game platforms. It can answer retrieval queries concerning:\n- **Topics/Claims:** Product lifecycle extension and renewal strategies for older titles through WeChat Mini Games.\n- **Entities:** WeChat Mini Games (distribution platform) and DianDian (copyright holder).\n- **Dates:** 2016 (original Chinese server launch) and Q4 2025 (WeChat Mini Games release).\n- **Procedures/Features:** User data migration and synchronization protocols, specifically confirming original data retention and cross-platform (dual-end) interoperability.\n- **Evidence/Format:** Presentation slide content (pages 37-38) with corporate copyright metadata, functioning as a strategic announcement or roadmap update. No tables, figures, definitions, or quantitative metrics are present.",
+          "chunk_ids": []
+        },
+        {
+          "title": "即便是存量竞争时代买量仍是最主要的获客手段",
+          "node_id": "0042",
+          "page_index": 38,
+          "start_index": 38,
+          "end_index": 39,
+          "summary": "**Topics:** Mobile game user acquisition (ad buying), post-IDFA advertising economics, \"brainwashing\" ad creatives, SLG sub-gameplay marketing, internet entertainment simplification trends.\n**Entities:** Apple (IDFA policy), SLG mobile games, DianDian Data (research source), Z Generation users, short-form video/live commerce platforms.\n**Dates:** 2018 (onset of industry pessimism toward ad buying), 2021 (Apple's default IDFA opt-out implementation), 2026 (publication/copyright year).\n**Definitions/Concepts:** \"Post-IDFA era\" (privacy-restricted ad targeting environment), \"brainwashing creatives\" (simplified, repetitive, emotion-driven ad formats), \"sub-gameplay acquisition\" (marketing using secondary/minigame mechanics to attract users), \"CAC > LTV death spiral\" (unsustainable user acquisition economics).\n**Procedures/Strategies:** Optimizing ad creatives via core mechanic symbolization, emotion-driven repetition, and AI-generated variant scaling; balancing gameplay tone with conversion metrics; leveraging sub-gameplay ads to bypass targeting limitations.\n**Claims:** Ad buying remains the dominant acquisition channel despite rising costs and stock competition; brainwashing creatives outperform in data validation despite polarized reception; sub-gameplay ads rescued SLG games from unsustainable CAC/LTV ratios; internet entertainment is shifting toward extreme simplification, directly influencing game marketing strategies.\n**Tables/Figures:** Contains a DianDian Data research figure/chart illustrating mobile game ad trends, SLG market shifts, or a structured breakdown of brainwashing ad advantages/disadvantages.\n**Metrics:** User Acquisition Cost (CAC), Long-term Lifetime Value (LTV), ad cost escalation, conversion rates, algorithmic traffic allocation efficiency.\n**Evid...",
+          "chunk_ids": []
+        },
+        {
+          "title": "2026年手游关键词：大世界捉宠+自动化基建",
+          "node_id": "0043",
+          "page_index": 39,
+          "start_index": 39,
+          "end_index": 40,
+          "summary": "**可检索主题**：2026年移动游戏市场趋势预测、“大世界捉宠+自动化基建”玩法赛道分析、游戏品类融合、移动端商业化设计与长线运营策略。\n**关键实体**：《幻兽帕鲁》、《洛克王国》、《帕萌战斗日记》、《蓝色星原：旅谣》、Krafton（《绝地求生》开发商）、点点数据。\n**时间节点**：2025年（市场回顾期，关键词为“搜打撤+FPS”）；2026年（趋势预测期，多款捉宠手游集中上线）；约三年（该模式产品研发周期）。\n**概念定义**：“大世界捉宠+自动化基建”指将开放世界探索、宠物收集培养与模拟经营/自动化生产深度缝合的复合玩法模式。其核心乐趣定义为“情感化的收集欲望”与“可视化的成长反馈”的深度融合。\n**核心主张/预测**：该赛道趋势明确追溯至《幻兽帕鲁》的现象级成功；2026年竞争将从创意比拼转向长线运营能力与内容工业化产能较量；市场格局预计走向“一超多强”；成功关键在于契合移动端体验、保持情感温度并构建健康商业循环，而非单纯复刻。\n**设计/运营考量（流程/机制）**：商业化需规避破坏情感联结的粗暴“抽宠/卖强度”；内容管线需应对自动化基建稳态后的快速消耗，持续进行地图扩张、宠物种类更新与生产链条深化；技术实现需攻克无缝大世界、宠物AI行为、自动化逻辑与性能优化。\n**图表/指标/证据类型**：原文档第39页标注含“点点数据自主研究及绘制”的图表（具体数值指标未在文本中披露）；证据类型为行业趋势研判、产品管线观察、厂商官方动态（Krafton宣布开发《幻兽帕鲁》手游）及逻辑推演。\n**可回答的典型检索问题**：\n- 2026年手游市场的潜在关键词是什么？该趋势的起源是哪款产品？\n- “大世界捉宠+自动化基建”模式的核心竞争力与三重体验满足具体指什么？\n- 该赛道在商业化设计、内容消耗控制和技术实现上分别面临哪些挑战？\n- 2026年预计有哪些主打“捉宠”玩法的手游上线？\n- Krafton在《幻兽帕鲁》IP的手游化方面有何布局？\n- 该新兴赛道未来的市场格局预期与成功关键因素是什么？",
+          "chunk_ids": []
+        },
+        {
+          "title": "手游玩家需求迭代：可轻度可重度的双重需求",
+          "node_id": "0044",
+          "page_index": 40,
+          "start_index": 40,
+          "end_index": 40,
+          "summary": "This section serves as a retrieval source for questions regarding the evolution of mobile game player demands and corresponding design strategies. It specifically answers queries across the following dimensions:\n\n- **Topics & Concepts:** The industry shift toward a “light/heavy dual” gameplay model; the composite player need for “high cost-performance entertainment” and “low psychological burden participation”; the strategic separation of gameplay “survival baselines” and “development ceilings.”\n- **Entities & Examples:** Specific globally successful mobile titles from the recent market cycle (《菇勇者传说》《英雄没有闪》《英勇之地》《楓之谷：放置冒險記》); applicable game genres (MOBA, FPS, party, card, puzzle, werewolf).\n- **Dates & Context:** Market trends observed over the “recent two years”; the broader “stock era” market phase; the macroeconomic context of “global economic uncertainty.”\n- **Definitions & Mechanics:** The operational definition of “light” gameplay (automated/idle systems, one-click dailies, offline rewards, ~10-minute daily maintenance to eliminate FOMO) versus “heavy” gameplay (optional deep strategy, high-difficulty dungeons, seasonal events, open-world exploration yielding rare cosmetics/achievements for extended sessions).\n- **Procedures & Design Strategies:** Genre-specific implementation guidelines: competitive games naturally fit the model; light games require long-cycle “second tracks” (e.g., high-difficulty challenges or simulation systems); heavy games must compress daily routines via “one-click delegation” or “resource catch-up” and integrate casual sub-games; high-difficulty rewards should be restructured as honor/social capital to alleviate casual player intensity anxiety.\n- **Claims:** The commercial success of recent numerically-driven games is driven by flexible...",
+          "chunk_ids": []
+        },
+        {
+          "title": "免责声明",
+          "node_id": "0045",
+          "page_index": 41,
+          "start_index": 41,
+          "end_index": 47,
+          "summary": "This section serves as a legal disclaimer and copyright notice, enabling retrieval for the following:\n- **Topics:** Copyright protection, usage restrictions, liability disclaimers, research methodology, and reference-only status.\n- **Entities:** DianDian (点点数据), advertisers, analysts, DianDian data team, report users/institutions.\n- **Dates:** 2026 (copyright year and Point Awards event year).\n- **Claims & Definitions:** The report is provided solely as a market reference; DianDian explicitly disclaims all legal liability for data limitations, methodological constraints, or consequences arising from user reliance. Unauthorized commercial use violates the PRC Copyright Law and applicable international conventions.\n- **Procedures:** Any reproduction or distribution of report content requires explicit prior permission from the company’s new media department.\n- **Evidence Types & Methodology:** Industry data and market forecasts are derived from desktop research, industry interviews, proprietary monitoring product data, and statistical prediction models.\n- **Tables, Figures & Metrics:** States that all text, images, and tables within the full report are legally protected, but this section contains no specific metrics, data tables, or figures.\n- **Answerable Questions:** What legal protections and usage restrictions apply to this report? How were the industry data and market forecasts generated? Does the publisher assume liability for data accuracy or user actions based on the report? What legal frameworks govern unauthorized reproduction? Who holds the copyright and what is the relevant publication/event year?",
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    }
+  ],
+  "summary": "This parent section provides a comprehensive, data-driven analysis of the current status of China's mobile gaming market, synthesizing financial, demographic, regulatory, and capital trends to support retrieval across multiple analytical dimensions.\n\n**Topics & Scope:** Covers 2025 market revenue scale, revenue concentration dynamics, user scale & demographic shifts (notably female gamers), hardware/device characteristics, game license (版号) issuance trends, annual/quarterly revenue & download rankings, new product revenue share, and industry investment/financing activity. The analytical scope is strictly confined to mainland China mobile platforms, explicitly excluding PC/console versions, ad monetization, and third-party top-ups from core revenue calculations.\n\n**Entities & Dates:** Primary reporting period is 2025, with historical comparisons spanning 2023–2024 and biannual benchmarks from Dec 2021 to Jun 2025. Key entities include data providers (DianDian Data/点点数据, CNNIC, GAMESHARK游鲨游戏圈), regulatory bodies (National Press and Publication Administration), major publishers/developers (Tencent, NetEase, miHoYo, Papergames, Giant Network, etc.), and flagship titles (e.g., 王者荣耀, 和平精英, 燕云十六声, 恋与深空, 三角洲行动). The document carries a 2026 copyright, with explicit notes that proprietary metrics may be adjusted in future DianDian reports.\n\n**Definitions & Procedures:** Defines \"revenue scale\" strictly as total user consumption. Clarifies that platform-specific license totals may exceed the number of approved games due to multi-platform approvals for single titles. Introduces \"确定性创新\" (Deterministic Innovation) as a validated development strategy relying on mature PC IP ports, proven genre fusions, or dominant vertical positioning. Data synthesis follows DianDian’s proprietary st..."
+}

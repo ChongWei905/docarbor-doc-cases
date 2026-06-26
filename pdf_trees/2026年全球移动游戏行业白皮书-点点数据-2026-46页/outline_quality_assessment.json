@@ -1,7 +1,7 @@
 {
-  "quality": "medium",
-  "entry_count": 4,
-  "outline_entry_count": 4,
+  "quality": "low",
+  "entry_count": 1,
+  "outline_entry_count": 1,
   "mapped_entry_ratio": 1.0,
   "hierarchy_signal": false,
   "section_parent_count": 0,
@@ -12,6 +12,7 @@
   "reasons": [
     "strong_page_mapping",
     "no_hierarchy_signal",
-    "low_noise_outline"
+    "low_noise_outline",
+    "sparse_outline_entries"
   ]
 }

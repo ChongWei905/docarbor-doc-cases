@@ -1,0 +1,49 @@
+{
+  "strategy": "docarbor_native",
+  "score": 779.426,
+  "score_breakdown": {
+    "non_empty": 30.0,
+    "page_coverage": 720.0,
+    "depth": 10.0,
+    "internal_nodes": 2.5,
+    "root_shape": 11.707,
+    "heading_alignment": 0.0,
+    "numbering": 0.0,
+    "title_uniqueness": 7.219,
+    "penalty_flat": 0.0,
+    "penalty_shallow": 0.0,
+    "penalty_root_explosion": -0.0,
+    "penalty_noise_roots": -0.0,
+    "penalty_garbled_roots": -0.0,
+    "penalty_bad_roots": -0.0,
+    "penalty_duplicates": -2.0,
+    "penalty_backtrack": -0.0
+  },
+  "metrics": {
+    "root_count": 1,
+    "node_count": 41,
+    "max_depth": 2,
+    "depth_histogram": {
+      "1": 1,
+      "2": 40
+    },
+    "unique_page_count": 40,
+    "page_coverage_ratio": 40.0,
+    "duplicate_title_count": 4,
+    "title_uniqueness_ratio": 0.9024,
+    "heading_alignment_ratio": 0.0,
+    "numbered_consistency_ratio": 0.0,
+    "page_backtrack_count": 0,
+    "noise_root_count": 0,
+    "garbled_root_count": 0,
+    "low_quality_root_count": 0,
+    "bad_root_count": 0,
+    "internal_node_count": 1
+  },
+  "artifact_paths": {
+    "raw_tree_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\docarbor_raw.json",
+    "result_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\result.json",
+    "report_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\report.json",
+    "summary_report_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\summary_report.json"
+  }
+}

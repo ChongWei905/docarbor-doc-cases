@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:52:25.718875+00:00",
+  "sequence": 190,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 16125,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 运营、商业化与社区.\n    The given page_text is © 2025 DianDian.All Rights Reserved. 13《崩坏：星穹铁道》-点点数据测评分析\n顶尖的视听表现堪称行业标杆 高质量版本更新带来稳健营收\n来源：点点数据自主研究及绘制。\n画面与音效表现\n核心战斗与玩法体验\n游戏内容与系统 运营、商业化与社区性能与设备适配\n（90/100） （85/100）\n（87/100） （86/100）（92/100）\n游戏角色建模精美，场景构建丰富多样，从贝洛伯格到仙舟「罗浮」，都展现了独特\n的美学风格。在剧情演出中运用了章节式动画剧情、实时渲染过场以及生动的表情气\n泡等，增强了玩家的沉浸感和代入感。画面与音效表现（25%）\n作为一款回合制卡牌RPG，其操作核心在于策略部署与技能释放时机的选择。在传统\n回合制基础上，引入了行动序列和共享战技点设计，属性弱点破解机制以及角色技能\n间的配合，提供了丰富的策略空间。核心战斗与玩法体验（30%）\n继承了“崩坏”IP的世界观，并将视野延展至宇宙，格局宏大。角色养成线清晰，通过\n装备随机属性形成了差异化培养策略。游戏UI界面简洁直观。日常任务（委托）耗时\n相对较短，便利性优化良好，例如合成材料无需前往特定合成台。游戏内容与系统（20%）\n游戏采用抽卡付费模式，其抽卡概率（0.6%基础概率，160抽大保底）及角色武器分\n离机制，在抽卡手游中属于定价较高的一档。不过，游戏通过活动和版本更新提供了\n较多的免费抽卡资源（星琼），月卡玩家能通过积累获得不少抽卡机会。运营、商业化与社区（15%）\n游戏支持iOS、Android、PC、主机多平台，且数据互通。在主流设备上帧率稳定，画\n面显示效果与设备耗电量发热量之间的平衡控制良好。性能与设备适配（10%）综合评分： 87.8\n顶尖的视听表现堪称行业标杆，成熟的回合制玩法与创新元素具有一定的策略深\n度。同时，游戏成功引入了Roguelite等创新玩法，极大地丰富了游戏体验。稳定\n的版本更新节奏和高质量的更新内容带来了稳健的商业表现和玩家活跃度。\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-f18de875-0227-9a6a-b08e-8ed6c343d1e0",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `运营、商业化与社区`\n   - **Current Page Text:** `© 2025 DianDian.All Rights Reserved. 13《崩坏：星穹铁道》-点点数据测评分析\\n顶尖的视听表现堪称行业标杆 高质量版本更新带来稳健营收\\n来源：点点数据自主研究及绘制。\\n画面与音效表现\\n核心战斗与玩法体验\\n游戏内容与系统 运营、商业化与社区性能与设备适配\\n（90/100） （85/100）\\n（87/100） （86/100）（92/100）\\n游戏角色建模精美...` (and so on)\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text Beginning:**\n   The `page_text` starts with: `© 2025 DianDian.All Rights Reserved. 13《崩坏：星穹铁道》-点点数据测评分析\\n顶尖的视听表现堪称行业标杆 高质量版本更新带来稳健营收\\n来源：点点数据自主研究及绘制。\\n画面与音效表现\\n核心战斗与玩法体验\\n游戏内容与系统 运营、商业化与社区性能与设备适配...`\n\n3.  **Check for Section Title at Beginning:**\n   - The very first characters are `© 2025 DianDian...`\n   - The section title `运营、商业化与社区` appears later in the text: `游戏内容与系统 运营、商业化与社区性能与设备适配` and also later as a heading for a paragraph: `运营、商业化与社区（15%）`.\n   - Clearly, there is a lot of content before the section title.\n\n4.  **Determine Output:**\n   - Since the section title is not at the beginning of the `page_text`, `start_begin` should be `\"no\"`.\n\n5.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   The page text starts with copyright info, report title, source, and other section titles. So definitely \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches exactly.✅\n   Proceeds. \n   [Final Check of the Prompt]\n   \"The given section title is 运营、商业化与社区.\"\n   \"The given page_text is © 2025 DianDian...\"\n   Result: no.\n   Format: JSON.\n   Ready. \n   Output Generation. \n   `{\"start_begin\": \"no\"}`\n   (Note: I will strictly follow the format requested.) \n   All steps verified.✅\n   Output matches.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Self-Correction/Refinement during thought: None needed. The logic is straightforward.) \n   Final Answer Generation. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   [Output Generation] (Proceeds)",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `运营、商业化与社区`\n   - **Current Page Text:** `© 2025 DianDian.All Rights Reserved. 13《崩坏：星穹铁道》-点点数据测评分析\\n顶尖的视听表现堪称行业标杆 高质量版本更新带来稳健营收\\n来源：点点数据自主研究及绘制。\\n画面与音效表现\\n核心战斗与玩法体验\\n游戏内容与系统 运营、商业化与社区性能与设备适配\\n（90/100） （85/100）\\n（87/100） （86/100）（92/100）\\n游戏角色建模精美...` (and so on)\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text Beginning:**\n   The `page_text` starts with: `© 2025 DianDian.All Rights Reserved. 13《崩坏：星穹铁道》-点点数据测评分析\\n顶尖的视听表现堪称行业标杆 高质量版本更新带来稳健营收\\n来源：点点数据自主研究及绘制。\\n画面与音效表现\\n核心战斗与玩法体验\\n游戏内容与系统 运营、商业化与社区性能与设备适配...`\n\n3.  **Check for Section Title at Beginning:**\n   - The very first characters are `© 2025 DianDian...`\n   - The section title `运营、商业化与社区` appears later in the text: `游戏内容与系统 运营、商业化与社区性能与设备适配` and also later as a heading for a paragraph: `运营、商业化与社区（15%）`.\n   - Clearly, there is a lot of content before the section title.\n\n4.  **Determine Output:**\n   - Since the section title is not at the beginning of the `page_text`, `start_begin` should be `\"no\"`.\n\n5.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   The page text starts with copyright info, report title, source, and other section titles. So definitely \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches exactly.✅\n   Proceeds. \n   [Final Check of the Prompt]\n   \"The given section title is 运营、商业化与社区.\"\n   \"The given page_text is © 2025 DianDian...\"\n   Result: no.\n   Format: JSON.\n   Ready. \n   Output Generation. \n   `{\"start_begin\": \"no\"}`\n   (Note: I will strictly follow the format requested.) \n   All steps verified.✅\n   Output matches.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Self-Correction/Refinement during thought: None needed. The logic is straightforward.) \n   Final Answer Generation. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   [Output Generation] (Proceeds)"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355950,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 867,
+      "prompt_tokens": 745,
+      "total_tokens": 1612,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 855,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 867
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 745
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

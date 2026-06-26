@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:59:29.010796+00:00",
+  "sequence": 240,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4526,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 策略手游 热门创意策略.\n    The given page_text is 55\n选择门跑酷副玩法 +AI 3D 模拟+故意失败引导下载\n策略手游  热门创意策略\nSource ：广大大 -广告创意模块，选取时间段内热度最高创意素材展现\nDate Range ：2025/1~2025/12热门玩法：\nSLG、RTS、塔防、建造\n常用素材套路：\n高空跌落 →数字成长 /选择门跑酷\n→中途顺利闯关 →结尾故意失败\n未来创意趋势：\n数字门跑酷成为休闲 SLG买量首选，\n原本传统的数字变量赛道逐渐被三\n赛道、新道具、移动选择门等新玩\n法迭代替换。\n点击图片播放完整创意\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-fffc766e-6bf7-9eef-b37b-19bc0bffad38",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"策略手游 热门创意策略\" appears or starts in the given page_text.\nThe page_text contains:\n\"55\n选择门跑酷副玩法 +AI 3D 模拟+故意失败引导下载\n策略手游  热门创意策略\nSource ：广大大 -广告创意模块，选取时间段内热度最高创意素材展现\n...\"\n\nThe section title \"策略手游 热门创意策略\" exactly matches a line in the page_text (ignoring extra spaces).\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\nMatches exactly.\nReturn only JSON.\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON: {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"策略手游 热门创意策略\" appears or starts in the given page_text.\nThe page_text contains:\n\"55\n选择门跑酷副玩法 +AI 3D 模拟+故意失败引导下载\n策略手游  热门创意策略\nSource ：广大大 -广告创意模块，选取时间段内热度最高创意素材展现\n...\"\n\nThe section title \"策略手游 热门创意策略\" exactly matches a line in the page_text (ignoring extra spaces).\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\nMatches exactly.\nReturn only JSON.\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON: {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359973,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 205,
+      "prompt_tokens": 294,
+      "total_tokens": 499,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 189,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 205
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 294
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

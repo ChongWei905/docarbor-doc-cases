@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:45:34.874714+00:00",
+  "sequence": 72,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 21421,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 中国二次元移动游戏市场收入规模.\n    The given page_text is © 2025 DianDian.All Rights Reserved. 5中国二次元移动游戏市场收入规模\n收入同比产生明显下滑 商业化变革悄然进行中\n注释：1、中国移动游戏市场统计范围：仅包含在中国大陆地区上线的移动端游戏，不包含PC端、游戏主机端或其他硬件平台上的游戏（例如一款游戏同时发布了移动端版本、PC客户端版本和游戏主机端版本，本报告也仅统计移动端版本的相关\n数据）；2、收入规模包含统计范围内用户消费的总金额，不包含广告变现、第三方充值等其他收入模式；3、本报告中后续涉及的“中国移动游戏收入”相关的统计数据，都以此标准进行统计；4、部分数据可能会在点点数据2025年相关报告中\n做出调整。\n来源：中国移动游戏市场收入规模是综合了点点数据、企业财报、专家访谈，根据点点数据统计模型核算所得。2025Q3中国二次元移动游戏市场收入规模（仅App Store）点点数据在2024年10月发布的《全球二次元移动游戏市场研究报告》中提到，2024年的市场收入规模已开始小幅收缩。而从下图来看，2025年中国二次元移动游戏市场进一步\n加剧了下滑趋势。这一方面是因为现今二次元移动游戏产品出现了明显的“定式”，包括商业化、养成体系乃至玩法层面，玩家已出现了相当程度的审美疲劳；另一方面，玩家的\n消费比例出现了部分转移（如谷子经济的崛起，虽然扩大了受众，但同样转移了玩家消费倾向）。而基于此，游戏厂商也开始进行了积极的战略调整，如10月末上线的《二重螺\n旋》完全抛弃了二游传统的抽卡商业化模式，转向了纯Avatar付费。虽然游戏正式上线后的表现难以与市面上头部二游产品比肩，但变革的种子已悄然埋在了广大玩家内心中。\n40.7 40.4\n35.739.7\n33.739.2 39.7-0.88%-11.63%11.35%\n-15.21%16.44%1.25%\n2024Q1 2024Q2 2024Q3 2024Q4 2025Q1 2025Q2 2025Q3\n中国二次元移动游戏市场收入规模（亿元/人民币） 环比增长率\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-ef3cfc23-8e5f-95ea-8d0d-1b3a81dec49d",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** `中国二次元移动游戏市场收入规模`\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved. 5中国二次元移动游戏市场收入规模\\n收入同比产生明显下滑 商业化变革悄然进行中\\n注释：1、中国移动游戏市场统计范围：仅包含在中国大陆地区上线的移动端游戏，不包含PC端、游戏主机端或其他硬件平台上的游戏（例如一款游戏同时发布了移动端版本、PC客户端版本和游戏主机端版本，本报告也仅统计移动端版本的相关\\n数据）；2、收入规模包含统计范围内用户消费的总金额，不包含广告变现、第三方充值等其他收入模式；3、本报告中后续涉及的“中国移动游戏收入”相关的统计数据，都以此标准进行统计；4、部分数据可能会在点点数据2025年相关报告中\\n做出调整。\\n来源：中国移动游戏市场收入规模是综合了点点数据、企业财报、专家访谈，根据点点数据统计模型核算所得。2025Q3中国二次元移动游戏市场收入规模（仅App Store）点点数据在2024年10月发布的《全球二次元移动游戏市场研究报告》中提到，2024年的市场收入规模已开始小幅收缩。而从下图来看，2025年中国二次元移动游戏市场进一步\\n加剧了下滑趋势。这一方面是因为现今二次元移动游戏产品出现了明显的“定式”，包括商业化、养成体系乃至玩法层面，玩家已出现了相当程度的审美疲劳；另一方面，玩家的\\n消费比例出现了部分转移（如谷子经济的崛起，虽然扩大了受众，但同样转移了玩家消费倾向）。而基于此，游戏厂商也开始进行了积极的战略调整，如10月末上线的《二重螺\\n旋》完全抛弃了二游传统的抽卡商业化模式，转向了纯Avatar付费。虽然游戏正式上线后的表现难以与市面上头部二游产品比肩，但变革的种子已悄然埋在了广大玩家内心中。\\n40.7 40.4\\n35.739.7\\n33.739.2 39.7-0.88%-11.63%11.35%\\n-15.21%16.44%1.25%\\n2024Q1 2024Q2 2024Q3 2024Q4 2025Q1 2025Q2 2025Q3\\n中国二次元移动游戏市场收入规模（亿元/人民币） 环比增长率\\n.`\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply with JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Target: `中国二次元移动游戏市场收入规模`\n   - Scan `page_text`:\n     - `© 2025 DianDian.All Rights Reserved. 5中国二次元移动游戏市场收入规模` -> Matches exactly (ignoring the \"5\" prefix which is likely a page number or artifact, but the exact string is present).\n     - Also appears later: `2025Q3中国二次元移动游戏市场收入规模（仅App Store）`\n     - Also appears later: `中国二次元移动游戏市场收入规模（亿元/人民币） 环比增长率`\n   - The exact string `中国二次元移动游戏市场收入规模` is clearly present in the text.\n\n3.  **Determine Output:**\n   - Since it appears, the answer is \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Check constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Reply format: { \"answer\": \"yes or no\" }\", \"Directly return the final JSON structure. Do not output anything else.\"\n   - The match is exact anyway.\n   - Output matches requirements.✅\n   - Proceed. \n   - Output: `{\"answer\": \"yes\"}`\n   - No extra text. All good. \n   - Self-Correction/Verification during thought: The prompt says \"appears or starts in the given page_text\". It definitely appears. I will output exactly the JSON.✅\n   - Ready. \n   - Output Generation. \n   - `{\"answer\": \"yes\"}`\n   - Matches requested format exactly. No extra fields. No reasoning. Direct JSON.✅\n   - Proceeds. \n   - [Done] \n   - Output matches response. \n   - *(Self-Correction/Refinement during thought)*: I should make sure the JSON is strictly formatted as requested. The prompt shows:\n     ```\n     {\n\n         \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n     }\n     ```\n     I will output `{\"answer\": \"yes\"}`. All good. \n   - Final Output Generation. \n   - `{\"answer\": \"yes\"}`\n   - Done. \n   - [Output Generation] -> `{\"answer\": \"yes\"}`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** `中国二次元移动游戏市场收入规模`\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved. 5中国二次元移动游戏市场收入规模\\n收入同比产生明显下滑 商业化变革悄然进行中\\n注释：1、中国移动游戏市场统计范围：仅包含在中国大陆地区上线的移动端游戏，不包含PC端、游戏主机端或其他硬件平台上的游戏（例如一款游戏同时发布了移动端版本、PC客户端版本和游戏主机端版本，本报告也仅统计移动端版本的相关\\n数据）；2、收入规模包含统计范围内用户消费的总金额，不包含广告变现、第三方充值等其他收入模式；3、本报告中后续涉及的“中国移动游戏收入”相关的统计数据，都以此标准进行统计；4、部分数据可能会在点点数据2025年相关报告中\\n做出调整。\\n来源：中国移动游戏市场收入规模是综合了点点数据、企业财报、专家访谈，根据点点数据统计模型核算所得。2025Q3中国二次元移动游戏市场收入规模（仅App Store）点点数据在2024年10月发布的《全球二次元移动游戏市场研究报告》中提到，2024年的市场收入规模已开始小幅收缩。而从下图来看，2025年中国二次元移动游戏市场进一步\\n加剧了下滑趋势。这一方面是因为现今二次元移动游戏产品出现了明显的“定式”，包括商业化、养成体系乃至玩法层面，玩家已出现了相当程度的审美疲劳；另一方面，玩家的\\n消费比例出现了部分转移（如谷子经济的崛起，虽然扩大了受众，但同样转移了玩家消费倾向）。而基于此，游戏厂商也开始进行了积极的战略调整，如10月末上线的《二重螺\\n旋》完全抛弃了二游传统的抽卡商业化模式，转向了纯Avatar付费。虽然游戏正式上线后的表现难以与市面上头部二游产品比肩，但变革的种子已悄然埋在了广大玩家内心中。\\n40.7 40.4\\n35.739.7\\n33.739.2 39.7-0.88%-11.63%11.35%\\n-15.21%16.44%1.25%\\n2024Q1 2024Q2 2024Q3 2024Q4 2025Q1 2025Q2 2025Q3\\n中国二次元移动游戏市场收入规模（亿元/人民币） 环比增长率\\n.`\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply with JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Target: `中国二次元移动游戏市场收入规模`\n   - Scan `page_text`:\n     - `© 2025 DianDian.All Rights Reserved. 5中国二次元移动游戏市场收入规模` -> Matches exactly (ignoring the \"5\" prefix which is likely a page number or artifact, but the exact string is present).\n     - Also appears later: `2025Q3中国二次元移动游戏市场收入规模（仅App Store）`\n     - Also appears later: `中国二次元移动游戏市场收入规模（亿元/人民币） 环比增长率`\n   - The exact string `中国二次元移动游戏市场收入规模` is clearly present in the text.\n\n3.  **Determine Output:**\n   - Since it appears, the answer is \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Check constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Reply format: { \"answer\": \"yes or no\" }\", \"Directly return the final JSON structure. Do not output anything else.\"\n   - The match is exact anyway.\n   - Output matches requirements.✅\n   - Proceed. \n   - Output: `{\"answer\": \"yes\"}`\n   - No extra text. All good. \n   - Self-Correction/Verification during thought: The prompt says \"appears or starts in the given page_text\". It definitely appears. I will output exactly the JSON.✅\n   - Ready. \n   - Output Generation. \n   - `{\"answer\": \"yes\"}`\n   - Matches requested format exactly. No extra fields. No reasoning. Direct JSON.✅\n   - Proceeds. \n   - [Done] \n   - Output matches response. \n   - *(Self-Correction/Refinement during thought)*: I should make sure the JSON is strictly formatted as requested. The prompt shows:\n     ```\n     {\n\n         \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n     }\n     ```\n     I will output `{\"answer\": \"yes\"}`. All good. \n   - Final Output Generation. \n   - `{\"answer\": \"yes\"}`\n   - Done. \n   - [Output Generation] -> `{\"answer\": \"yes\"}`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355539,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1145,
+      "prompt_tokens": 662,
+      "total_tokens": 1807,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1134,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1145
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 662
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

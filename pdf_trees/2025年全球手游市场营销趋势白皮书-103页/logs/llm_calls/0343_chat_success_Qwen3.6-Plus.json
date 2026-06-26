@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:05:08.972439+00:00",
+  "sequence": 343,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 14591,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年广告预算流向解析.\n    The given page_text is 34\n从全球市场来看，各移动平台的总体格局保持稳定。\n•安卓凭借其设备规模、更广泛的地域覆盖以及显著更低的平均用户获取成本\n（通常比 iOS低40%至60%），持续贡献了大部分的安装量：\n•iOS 虽安装量较少，却创造了与其数量不成比例的高额收入，进一步巩固了\n其作为高效变现渠道的核心地位。\n市场策略的关键演变在于，营销者对待两大平台的方式发生了转变：\n顶尖品牌不再以相同逻辑优化安卓与 iOS。他们将其视为截然不同的获客环境，\n针对各自特性量身定制创意方案、出价策略与效果评估体系。2025年广告预算流向解析\n数据来源： Singular 2025 年季度趋势报告Android 推动安装量增长，\niOS 则带来价值提升\n安卓以规模制胜， iOS以效率见长。\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-d2b75024-4267-9a94-a72e-ce556fe4670f",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** `2025年广告预算流向解析`\n   - **Page Text:** \n     ```\n     34\n     从全球市场来看，各移动平台的总体格局保持稳定。\n     •安卓凭借其设备规模、更广泛的地域覆盖以及显著更低的平均用户获取成本\n     （通常比 iOS低40%至60%），持续贡献了大部分的安装量：\n     •iOS 虽安装量较少，却创造了与其数量不成比例的高额收入，进一步巩固了\n     其作为高效变现渠道的核心地位。\n     市场策略的关键演变在于，营销者对待两大平台的方式发生了转变：\n     顶尖品牌不再以相同逻辑优化安卓与 iOS。他们将其视为截然不同的获客环境，\n     针对各自特性量身定制创意方案、出价策略与效果评估体系。2025年广告预算流向解析\n     数据来源： Singular 2025 年季度趋势报告Android 推动安装量增长，\n     iOS 则带来价值提升\n     安卓以规模制胜， iOS以效率见长。\n     .\n     ```\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*. Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate Page Text vs Section Title:**\n   - The `page_text` starts with \"34\\n从全球市场来看...\"\n   - The section title \"2025年广告预算流向解析\" appears *later* in the text, specifically after \"...针对各自特性量身定制创意方案、出价策略与效果评估体系。2025年广告预算流向解析\"\n   - There is clearly a lot of content before the section title.\n   - Therefore, the section does *not* start at the beginning of the page text.\n\n3.  **Determine Output:**\n   - `start_begin`: \"no\"\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   - Does the prompt say \"ignore any space inconsistency\"? Yes.\n   - Is the title exactly at the start? No.\n   - Result is definitively \"no\".\n   - Output matches requested format.✅\n   - Ready. \n   Output matches exactly. \n   Proceeds. \n   `[{\"start_begin\": \"no\"}]` -> Wait, format is just the JSON object.\n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output Generation. \n   *(Self-Correction/Refinement during thought)*: I will strictly output just the JSON as requested. No extra text.\n   `{\"start_begin\": \"no\"}` matches perfectly.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Section Title:** `2025年广告预算流向解析`\n   - **Page Text:** \n     ```\n     34\n     从全球市场来看，各移动平台的总体格局保持稳定。\n     •安卓凭借其设备规模、更广泛的地域覆盖以及显著更低的平均用户获取成本\n     （通常比 iOS低40%至60%），持续贡献了大部分的安装量：\n     •iOS 虽安装量较少，却创造了与其数量不成比例的高额收入，进一步巩固了\n     其作为高效变现渠道的核心地位。\n     市场策略的关键演变在于，营销者对待两大平台的方式发生了转变：\n     顶尖品牌不再以相同逻辑优化安卓与 iOS。他们将其视为截然不同的获客环境，\n     针对各自特性量身定制创意方案、出价策略与效果评估体系。2025年广告预算流向解析\n     数据来源： Singular 2025 年季度趋势报告Android 推动安装量增长，\n     iOS 则带来价值提升\n     安卓以规模制胜， iOS以效率见长。\n     .\n     ```\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*. Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate Page Text vs Section Title:**\n   - The `page_text` starts with \"34\\n从全球市场来看...\"\n   - The section title \"2025年广告预算流向解析\" appears *later* in the text, specifically after \"...针对各自特性量身定制创意方案、出价策略与效果评估体系。2025年广告预算流向解析\"\n   - There is clearly a lot of content before the section title.\n   - Therefore, the section does *not* start at the beginning of the page text.\n\n3.  **Determine Output:**\n   - `start_begin`: \"no\"\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   - Does the prompt say \"ignore any space inconsistency\"? Yes.\n   - Is the title exactly at the start? No.\n   - Result is definitively \"no\".\n   - Output matches requested format.✅\n   - Ready. \n   Output matches exactly. \n   Proceeds. \n   `[{\"start_begin\": \"no\"}]` -> Wait, format is just the JSON object.\n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output Generation. \n   *(Self-Correction/Refinement during thought)*: I will strictly output just the JSON as requested. No extra text.\n   `{\"start_begin\": \"no\"}` matches perfectly.✅\n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360313,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 733,
+      "prompt_tokens": 418,
+      "total_tokens": 1151,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 721,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 733
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 418
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

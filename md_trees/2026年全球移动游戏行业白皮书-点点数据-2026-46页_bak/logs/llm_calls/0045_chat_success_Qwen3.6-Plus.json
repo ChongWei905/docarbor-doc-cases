@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-23T14:41:26.590417+00:00",
+  "sequence": 45,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 24831,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a retrieval-oriented summary for this section of a document.\nFocus on what questions this section can answer: topics, entities, dates,\ndefinitions, procedures, claims, tables, figures, metrics, and evidence types.\nDo not invent facts. Return only the summary text.\n\nSection metadata:\n{\n  \"node_id\": \"0078\",\n  \"title\": \"日本移动游戏市场收入规模\",\n  \"page_index\": 23,\n  \"page_range\": \"23\"\n}\n\nSection text:\n## 日本移动游戏市场收入规模"
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-5ea9cc1c-c89e-9999-8073-13b50cc90890",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "This section addresses the revenue scale of Japan's mobile gaming market. It can answer retrieval questions regarding:\n- **Topics:** Japan's mobile game market size, revenue valuation, and industry financial scale.\n- **Entities:** Japan, mobile gaming industry/market.\n- **Metrics:** Market revenue figures (specific monetary values, currency units, and growth rates are not provided in the text).\n- **Dates/Timeframes:** Not specified in the provided excerpt.\n- **Definitions, Procedures, Claims, Tables, Figures, Evidence Types:** None present in the provided text.\n*Note: The input consists solely of a section heading; no quantitative data, temporal references, analytical claims, or supporting visual/tabular evidence are included.*",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Create a retrieval-oriented summary for a document section.\n   - **Focus:** What questions this section can answer (topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, evidence types).\n   - **Constraint:** Do not invent facts. Return only the summary text.\n   - **Input Metadata:** \n     - `node_id`: \"0078\"\n     - `title`: \"日本移动游戏市场收入规模\" (Japan Mobile Game Market Revenue Scale)\n     - `page_index`: 23\n     - `page_range`: \"23\"\n   - **Input Text:** \"## 日本移动游戏市场收入规模\" (Just the heading, no body text provided)\n\n2.  **Identify Key Information from Input:**\n   - The section title is \"日本移动游戏市场收入规模\" (Japan Mobile Game Market Revenue Scale).\n   - There is no additional text, data, tables, or figures provided in the prompt.\n   - Therefore, the summary must be strictly based on the title and metadata, acknowledging the lack of detailed content while framing it in a retrieval-oriented way.\n\n3.  **Determine Retrieval-Oriented Summary Structure:**\n   - A retrieval-oriented summary should list the types of questions the section can answer, based on available information.\n   - Since only the title is present, I can only infer the *topic* and *potential metrics/entities* it would cover, but I must explicitly state that specific data, dates, or evidence are not provided in the text.\n   - I will structure it to cover: Topics, Entities, Metrics, and note the absence of specific dates, definitions, procedures, claims, tables, figures, or evidence types due to the limited text.\n\n4.  **Draft Summary (Mental Refinement):**\n   This section addresses the revenue scale of Japan's mobile gaming market. It can answer questions regarding:\n   - **Topics:** Japan's mobile game market size, revenue trends, and market valuation.\n   - **Entities:** Japan, mobile gaming industry.\n   - **Metrics:** Market revenue figures (scale/size), likely presented in monetary units (e.g., JPY or USD), though specific values are not provided in the text.\n   - **Dates/Timeframes:** Not specified in the provided text.\n   - **Definitions/Procedures/Claims/Tables/Figures/Evidence Types:** None explicitly provided in the section text.\n   *Note: The section contains only a heading; detailed data, specific years, comparative metrics, or supporting evidence are absent from the provided excerpt.*\n\n5.  **Check Constraints:**\n   - Retrieval-oriented? Yes, frames what questions it can answer.\n   - Focus on specified categories? Yes.\n   - No invented facts? Yes, explicitly notes missing data.\n   - Return only summary text? Yes.\n   - Language: The prompt is in English, but the title is in Chinese. I'll write the summary in English for consistency with the prompt, but can reference the Chinese title if needed. I'll keep it concise.\n\n   Let's align it strictly with the requested format/focus:\n   \"This section covers the revenue scale of Japan's mobile gaming market. It can answer questions about:\n   - **Topics:** Japan mobile game market size and revenue valuation.\n   - **Entities:** Japan, mobile gaming sector.\n   - **Metrics:** Market revenue figures (specific values, currency, and timeframes are not provided in the text).\n   - **Dates, Definitions, Procedures, Claims, Tables, Figures, Evidence Types:** Not present in the provided excerpt.\n   *Note: The input contains only a section heading; no detailed data, analysis, or supporting materials are included.*\"\n\n   This meets all constraints. It's retrieval-oriented, covers the requested categories, avoids invention, and is just the summary text. I will output exactly this.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Create a retrieval-oriented summary for a document section.\n   - **Focus:** What questions this section can answer (topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, evidence types).\n   - **Constraint:** Do not invent facts. Return only the summary text.\n   - **Input Metadata:** \n     - `node_id`: \"0078\"\n     - `title`: \"日本移动游戏市场收入规模\" (Japan Mobile Game Market Revenue Scale)\n     - `page_index`: 23\n     - `page_range`: \"23\"\n   - **Input Text:** \"## 日本移动游戏市场收入规模\" (Just the heading, no body text provided)\n\n2.  **Identify Key Information from Input:**\n   - The section title is \"日本移动游戏市场收入规模\" (Japan Mobile Game Market Revenue Scale).\n   - There is no additional text, data, tables, or figures provided in the prompt.\n   - Therefore, the summary must be strictly based on the title and metadata, acknowledging the lack of detailed content while framing it in a retrieval-oriented way.\n\n3.  **Determine Retrieval-Oriented Summary Structure:**\n   - A retrieval-oriented summary should list the types of questions the section can answer, based on available information.\n   - Since only the title is present, I can only infer the *topic* and *potential metrics/entities* it would cover, but I must explicitly state that specific data, dates, or evidence are not provided in the text.\n   - I will structure it to cover: Topics, Entities, Metrics, and note the absence of specific dates, definitions, procedures, claims, tables, figures, or evidence types due to the limited text.\n\n4.  **Draft Summary (Mental Refinement):**\n   This section addresses the revenue scale of Japan's mobile gaming market. It can answer questions regarding:\n   - **Topics:** Japan's mobile game market size, revenue trends, and market valuation.\n   - **Entities:** Japan, mobile gaming industry.\n   - **Metrics:** Market revenue figures (scale/size), likely presented in monetary units (e.g., JPY or USD), though specific values are not provided in the text.\n   - **Dates/Timeframes:** Not specified in the provided text.\n   - **Definitions/Procedures/Claims/Tables/Figures/Evidence Types:** None explicitly provided in the section text.\n   *Note: The section contains only a heading; detailed data, specific years, comparative metrics, or supporting evidence are absent from the provided excerpt.*\n\n5.  **Check Constraints:**\n   - Retrieval-oriented? Yes, frames what questions it can answer.\n   - Focus on specified categories? Yes.\n   - No invented facts? Yes, explicitly notes missing data.\n   - Return only summary text? Yes.\n   - Language: The prompt is in English, but the title is in Chinese. I'll write the summary in English for consistency with the prompt, but can reference the Chinese title if needed. I'll keep it concise.\n\n   Let's align it strictly with the requested format/focus:\n   \"This section covers the revenue scale of Japan's mobile gaming market. It can answer questions about:\n   - **Topics:** Japan mobile game market size and revenue valuation.\n   - **Entities:** Japan, mobile gaming sector.\n   - **Metrics:** Market revenue figures (specific values, currency, and timeframes are not provided in the text).\n   - **Dates, Definitions, Procedures, Claims, Tables, Figures, Evidence Types:** Not present in the provided excerpt.\n   *Note: The input contains only a section heading; no detailed data, analysis, or supporting materials are included.*\"\n\n   This meets all constraints. It's retrieval-oriented, covers the requested categories, avoids invention, and is just the summary text. I will output exactly this.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782225687,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 999,
+      "prompt_tokens": 133,
+      "total_tokens": 1132,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 845,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 999
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 133
+      }
+    }
+  },
+  "response_text": "This section addresses the revenue scale of Japan's mobile gaming market. It can answer retrieval questions regarding:\n- **Topics:** Japan's mobile game market size, revenue valuation, and industry financial scale.\n- **Entities:** Japan, mobile gaming industry/market.\n- **Metrics:** Market revenue figures (specific monetary values, currency units, and growth rates are not provided in the text).\n- **Dates/Timeframes:** Not specified in the provided excerpt.\n- **Definitions, Procedures, Claims, Tables, Figures, Evidence Types:** None present in the provided text.\n*Note: The input consists solely of a section heading; no quantitative data, temporal references, analytical claims, or supporting visual/tabular evidence are included.*",
+  "error_type": null,
+  "error_message": null
+}

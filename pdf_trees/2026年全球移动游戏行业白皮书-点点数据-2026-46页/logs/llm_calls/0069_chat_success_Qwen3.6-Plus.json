@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:57:35.212841+00:00",
+  "sequence": 69,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4397,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 海外各地区移动游戏收入占比分布.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 20海外各地区移动游戏收入占比分布\n美+日独占海外市场超50%份额 中国香港连续两年稳居TOP10\n来源：点点数据自主研究及绘制。2025年海外移动游戏市场收入格局进一步固化，美国以1658.4亿元的规模占据绝对主导，仍是全球最高价值的战略区域。日本市场凭借1129.8亿元的收入稳居第二，其iOS收入\n占比接近7成，持续展现其作为高端市场的独特地位。综合报告前文海外整体的收入规模来看，美国+日本的收入规模已占据了全球超50%的份额。排名第三的韩国市场占比约\n9.51%，其则是由Google Play贡献了近8成收入。值得注意的是，中国台湾与中国香港已连续两年双双稳定在TOP10，巩固了“港澳台地区”作为中国游戏厂商出海核心板块的\n战略价值。而以欧洲市场为主的第二梯队，虽然格局稳定且市场规模可观，但由于品类固化、本地化难以及最重要的买量成本居高不下，目前仍难以成为中国游戏厂商出海的主要\n锚点。\n2025年海外各地区移动游戏收入分布\n0 200 400 600 800 1,000 \n美国 日本 韩国 中国台湾 德国 英国 加拿大 法国 澳大利亚 中国香港 巴西AppStore收入规模（亿元） GooglePlay收入规模（亿元）\n0 300 600 900 1200 1500 1800 美国\n日本\n韩国\n中国台湾\n德国\n英国\n加拿大\n法国\n澳大利亚\n中国香港\n巴西双平台总收入（亿元）\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-c3db1e41-f365-9469-90d2-6e4da06d6b8a",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"海外各地区移动游戏收入占比分布\" appears or starts in the given `page_text`.\nThe `page_text` contains: \"© 2026 DianDian.All Rights Reserved. 20海外各地区移动游戏收入占比分布\\n美+日独占海外市场超50%份额...\"\nThe exact string \"海外各地区移动游戏收入占比分布\" is present in the text (right after \"20\").\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\". The match is exact anyway.\nReturn only JSON.\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON: {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"海外各地区移动游戏收入占比分布\" appears or starts in the given `page_text`.\nThe `page_text` contains: \"© 2026 DianDian.All Rights Reserved. 20海外各地区移动游戏收入占比分布\\n美+日独占海外市场超50%份额...\"\nThe exact string \"海外各地区移动游戏收入占比分布\" is present in the text (right after \"20\").\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\". The match is exact anyway.\nReturn only JSON.\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON: {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359859,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 192,
+      "prompt_tokens": 523,
+      "total_tokens": 715,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 176,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 192
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 523
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

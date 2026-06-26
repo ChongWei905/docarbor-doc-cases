@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:59:28.887481+00:00",
+  "sequence": 106,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 12081,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 12中国移动游戏下载量TOP榜.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 12中国移动游戏下载量TOP榜\n《三角洲行动》全年强势一举夺魁 《超自然行动》助力巨人重返榜单\n来源：中国移动游戏产品收入是综合了点点数据、企业财报、专家访谈，根据点点数据统计模型核算所得。2025年中国移动游戏下载量TOP榜（仅App Store）\n排名 icon 游戏名 厂商 2025年下载量预估（万次）\n1 三角洲行动 腾讯 6104.8\n2 王者荣耀 腾讯 4634.8\n3 和平精英 腾讯 3371.2\n4 开心消消乐 乐元素 3124.3\n5 无畏契约：源能行动 腾讯 2217.5\n6 蛋仔派对 网易 2067.1\n7 地下城与勇士：起源 腾讯 2015.4\n8 金铲铲之战 腾讯 1812.0\n9 我的世界：移动版 网易 1635.8\n10 燕云十六声 网易 1516.8\n11 地铁跑酷 创梦天地 1326.4\n12 超自然行动组 巨人网络 1318.2\n13 贪吃蛇大作战® 微派网络 1129.4\n14 腾讯欢乐斗地主 腾讯 1087.5\n15 迷你世界 迷你玩 1077.9《三角洲行动》作为FPS赛道的新入局者，即便是核心用户主要集中在PC端的情况下，依然在移动端下载量取得了霸榜的成绩，可见其针对移动场景的体验重构研发能力。而另一\n款值得关注的产品《超自然行动组》，是巨人网络继《球球大作战》后再次证明其对大众化、低门槛的实时社交轻竞技玩法拥有的深刻理解与运营底蕴。\n排名 icon 游戏名\n1 王者荣耀\n2 地下城与勇士：起源\n3 和平精英\n4 蛋仔派对\n5 开心消消乐\n6 金铲铲之战\n7 第五人格\n8 欢乐钓鱼大师\n9 颜色大作战\n10 元梦之星\n11 地铁跑酷\n12 我的世界：移动版\n13 永劫无间\n14 三角洲行动\n15 贪吃蛇大作战2024年\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-7f3c999d-f1ed-9314-b58a-c5373fb1cdd2",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"12中国移动游戏下载量TOP榜\" starts at the beginning of the given `page_text`.\nThe `page_text` starts with: \"© 2026 DianDian.All Rights Reserved. 12中国移动游戏下载量TOP榜\"\nThere is content before the section title: \"© 2026 DianDian.All Rights Reserved. \"\nTherefore, the section does not start at the beginning of the page_text.\nThe answer should be \"no\".\nFormat: JSON with key \"start_begin\".\nCheck fuzzy matching: The title is exactly present after the copyright notice.\nSo \"start_begin\": \"no\".\nReturn only the JSON.\nDone. \nLet's double check.\npage_text: \"© 2026 DianDian.All Rights Reserved. 12中国移动游戏下载量TOP榜\\n《三角洲行动》...\"\nSection title: \"12中国移动游戏下载量TOP榜\"\nIs it at the beginning? No, there's copyright text before it.\nResult: no.\nJSON: {\"start_begin\": \"no\"}\nMatches instructions.\nProceed. \nOutput matches exactly. \nNo extra text.\nDone. \nFinal Output Generation. \n```json\n{\n    \"start_begin\": \"no\"\n}\n```\nWait, the prompt says \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure.\"\nI will output exactly that.\nDone. \nSelf-Correction/Verification during thought:\nCould the copyright be considered part of the header/footer and not \"content\"? The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" So yes, it counts.\nResult is definitely \"no\".\nProceeds. \nOutput matches. \nDone. \n[Final Check]\nInput: \"© 2026 DianDian.All Rights Reserved. 12中国移动游戏下载量TOP榜...\"\nTitle: \"12中国移动游戏下载量TOP榜\"\nStarts at beginning? No.\nOutput: {\"start_begin\": \"no\"}\nCorrect. \nProceeds. \n[Output Generation] -> `{\"start_begin\": \"no\"}`\nDone. \n(Self-Correction/Refinement during generation prep: I will make sure the JSON is valid and matches exactly.)\nAll good. \nOutput matches request. \nProceeds. \n[Final Output Generation] (Proceeds)",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"12中国移动游戏下载量TOP榜\" starts at the beginning of the given `page_text`.\nThe `page_text` starts with: \"© 2026 DianDian.All Rights Reserved. 12中国移动游戏下载量TOP榜\"\nThere is content before the section title: \"© 2026 DianDian.All Rights Reserved. \"\nTherefore, the section does not start at the beginning of the page_text.\nThe answer should be \"no\".\nFormat: JSON with key \"start_begin\".\nCheck fuzzy matching: The title is exactly present after the copyright notice.\nSo \"start_begin\": \"no\".\nReturn only the JSON.\nDone. \nLet's double check.\npage_text: \"© 2026 DianDian.All Rights Reserved. 12中国移动游戏下载量TOP榜\\n《三角洲行动》...\"\nSection title: \"12中国移动游戏下载量TOP榜\"\nIs it at the beginning? No, there's copyright text before it.\nResult: no.\nJSON: {\"start_begin\": \"no\"}\nMatches instructions.\nProceed. \nOutput matches exactly. \nNo extra text.\nDone. \nFinal Output Generation. \n```json\n{\n    \"start_begin\": \"no\"\n}\n```\nWait, the prompt says \"reply format: { \"start_begin\": \"yes or no\" ... } Directly return the final JSON structure.\"\nI will output exactly that.\nDone. \nSelf-Correction/Verification during thought:\nCould the copyright be considered part of the header/footer and not \"content\"? The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" So yes, it counts.\nResult is definitely \"no\".\nProceeds. \nOutput matches. \nDone. \n[Final Check]\nInput: \"© 2026 DianDian.All Rights Reserved. 12中国移动游戏下载量TOP榜...\"\nTitle: \"12中国移动游戏下载量TOP榜\"\nStarts at beginning? No.\nOutput: {\"start_begin\": \"no\"}\nCorrect. \nProceeds. \n[Output Generation] -> `{\"start_begin\": \"no\"}`\nDone. \n(Self-Correction/Refinement during generation prep: I will make sure the JSON is valid and matches exactly.)\nAll good. \nOutput matches request. \nProceeds. \n[Final Output Generation] (Proceeds)"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359973,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 548,
+      "prompt_tokens": 760,
+      "total_tokens": 1308,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 531,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 548
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 760
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

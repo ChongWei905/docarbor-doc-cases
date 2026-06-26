@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:46:13.995655+00:00",
+  "sequence": 86,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 6505,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 运营、商业化与社区.\n    The given page_text is © 2025 DianDian.All Rights Reserved. 15《原神》-点点数据测评分析\n毋庸置疑的行业先驱者与领头羊 但在长期内容迭代上已初显疲态\n来源：点点数据自主研究及绘制。\n画面与音效表现\n核心战斗与玩法体验\n游戏内容与系统 运营、商业化与社区性能与设备适配\n（88/100） （85/100）\n（86/100） （83/100）（93/100）\n从蒙德的田园诗意到璃月的山水磅礴，再到纳塔的炽热生机，每个区域都展现出独特\n的美学语言，统一而多变。音乐音效设计同样精致，不同元素的互动、角色技能的释\n放都有独特且贴合的声音反馈。角色设计上，服装细节与文化符号的融合不仅极富幻\n想色彩，同时又展现出深度的中华文化底蕴。画面与音效表现（25%）\n元素反应机制作为游戏战斗核心，提供了丰富的策略选择。但基于环境导致角色强度\n膨胀、以及过于复杂的boss机制无法被玩家有效理解，也造成了一定的体验损失。游\n戏最大的挑战在于内容消耗过快。新地图、新版本的前期体验极佳，但进入“长草期”\n后每日游玩内容重复性高。核心战斗与玩法体验（30%）\n自上线以来，多年的剧情铺陈已形成宏大的叙事框架。但在叙事节奏上，部分任务文\n本量过大且不可跳过也时常被玩家诟病。角色养成线清晰明确，已成为现在二游的标\n杆。并且随机词条的设定，也让养成深度大大增加。游戏包含的玩法也极其丰富，从\n主线任务到版本活动，从深渊挑战到尘歌壶家园系统，都让玩家津津乐道。游戏内容与系统（20%）\n游戏的付费设计以抽卡为核心，角色与武器定价已成为行业标杆，现如今处于行业中\n等水平。不过玩家通过持续游玩也能获得可观数量的原石来辅助获取主要角色。研发\n团队最大优势在于能保持稳定更新节奏，且版本质量可控。玩家社群活跃度高涨，二\n创文化繁荣，但存在明显的玩家分化问题。运营、商业化与社区（15%）\n游戏在多平台兼容上表现优异，从高端PC到中端移动设备都能提供相应画质体验。但\n目前产品存在随着版本更新导致游戏安装包体积过大的问题。性能与设备适配（10%）综合评分： 87.1\n开放世界移动游戏与二次元移动游戏的双重标杆，行业顶尖的画面表现与音乐设\n计，构建出辨识度极高的视觉系统。元素反应体系与角色技能组合经过多年打磨，\n形成了深度与广度兼备的战斗框架，核心玩法成熟且稳定。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-42335360-00d6-9451-8821-b863f67f93b7",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"运营、商业化与社区\" appears or starts in the given page_text.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the page_text:\n\"运营、商业化与社区性能与设备适配\" -> Wait, it says \"运营、商业化与社区性能与设备适配\" in the header part, but later it says \"运营、商业化与社区（15%）\".\nLet's search for \"运营、商业化与社区\" in the text.\nText contains: \"运营、商业化与社区（15%）\"\nAlso: \"运营、商业化与社区性能与设备适配\" (probably missing a newline or space in OCR).\nThe exact string \"运营、商业化与社区\" appears in the text.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nCheck format:\n{\n    \"answer\": \"yes\"\n}\nDone. \nNo extra text.\nProceed. \nSelf-Correction/Verification:\nThe prompt says: \"check if the given section appears or starts in the given page_text.\"\nSection title: 运营、商业化与社区\nPage text contains: \"运营、商业化与社区（15%）\" and \"运营、商业化与社区性能与设备适配\"\nIt clearly appears.\nAnswer is yes.\nOutput matches format.\nDone. \nProceeds. \nOutput:\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"运营、商业化与社区\" appears or starts in the given page_text.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the page_text:\n\"运营、商业化与社区性能与设备适配\" -> Wait, it says \"运营、商业化与社区性能与设备适配\" in the header part, but later it says \"运营、商业化与社区（15%）\".\nLet's search for \"运营、商业化与社区\" in the text.\nText contains: \"运营、商业化与社区（15%）\"\nAlso: \"运营、商业化与社区性能与设备适配\" (probably missing a newline or space in OCR).\nThe exact string \"运营、商业化与社区\" appears in the text.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nCheck format:\n{\n    \"answer\": \"yes\"\n}\nDone. \nNo extra text.\nProceed. \nSelf-Correction/Verification:\nThe prompt says: \"check if the given section appears or starts in the given page_text.\"\nSection title: 运营、商业化与社区\nPage text contains: \"运营、商业化与社区（15%）\" and \"运营、商业化与社区性能与设备适配\"\nIt clearly appears.\nAnswer is yes.\nOutput matches format.\nDone. \nProceeds. \nOutput:\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355578,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 330,
+      "prompt_tokens": 730,
+      "total_tokens": 1060,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 314,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 330
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 730
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

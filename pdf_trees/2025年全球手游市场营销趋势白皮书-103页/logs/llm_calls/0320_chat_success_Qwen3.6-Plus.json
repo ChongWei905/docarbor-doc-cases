@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:03:48.169193+00:00",
+  "sequence": 320,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 18074,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.\n    The given page_text is 13\n产品玩法也是重度则 iOS端创意占比越高\n重度产品 iOS端素材占比超 32%手游素材各系统占比\n13.0%26.1%32.6%87.0%73.9%67.4%\n轻度 中度 重度FB系渠道 iOS端创意占比在 28%左右\nUnityAds 渠道Android 端广素材比最高为 93.5%热门渠道各系统素材占比\n28.0% 28.9%\n10.4%19.9%15.7% 17.7%\n6.5%50.7%72.0% 71.1%\n89.6%80.1%84.3% 82.3%\n93.5%49.3%游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上2025年 全球手游 各系统素材观察\nSource ：广大大，根据后台抓取后数据整理后展现\nDate Range ：2025/1~2025/12iOS\n22.7%\nAndroid\n77.3%各系统手游素材占比\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-0d337376-c17e-9101-8ed9-5d521f0442ab",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Rule:** If there's other content before the section title in `page_text`, then `start_begin` is \"no\". If the section title is the first content, then `start_begin` is \"yes\".\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`\n   - **Page Text:** `13\\n产品玩法也是重度则 iOS端创意占比越高\\n重度产品 iOS端素材占比超 32%手游素材各系统占比\\n13.0%26.1%32.6%87.0%73.9%67.4%\\n轻度 中度 重度FB系渠道 iOS端创意占比在 28%左右\\nUnityAds 渠道Android 端广素材比最高为 93.5%热门渠道各系统素材占比\\n28.0% 28.9%\\n10.4%19.9%15.7% 17.7%\\n6.5%50.7%72.0% 71.1%\\n89.6%80.1%84.3% 82.3%\\n93.5%49.3%游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上2025年 全球手游 各系统素材观察\\nSource ：广大大，根据后台抓取后数据整理后展现\\nDate Range ：2025/1~2025/12iOS\\n22.7%\\nAndroid\\n77.3%各系统手游素材占比\\n.`\n\n2.  **Evaluate `page_text` against `section_title`:**\n   - I need to find the exact (or fuzzy) match of the section title in the `page_text`.\n   - Section title: `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`\n   - Looking at `page_text`, I see: `...93.5%49.3%游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上2025年 全球手游 各系统素材观察...`\n   - The section title appears *after* a lot of other text (`13\\n产品玩法也是重度则...93.5%49.3%`).\n   - Therefore, it does *not* start at the beginning of the `page_text`.\n\n3.  **Determine Output:**\n   - `start_begin`: \"no\"\n   - Format: JSON `{\"start_begin\": \"no\"}`\n\n4.  **Final Check:**\n   - Does the title appear at the very start? No.\n   - Is there content before it? Yes, a lot.\n   - Fuzzy matching note: Even with fuzzy matching, it's clearly not at the beginning.\n   - Output matches requested format. No extra text.✅\n   - Proceed. \n   - Output: `{\"start_begin\": \"no\"}`\n   - All constraints met.✅\n   - Generate response. \n   - *Self-Correction/Verification during thought*: \n     - Check exact string in page_text: `游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上`\n     - It's preceded by `93.5%49.3%`. So definitely not at the beginning.\n     - Result is \"no\".\n     - JSON format is correct.\n     - Ready. \n   - Output matches exactly.✅\n   - Proceeds. \n   - [Output Generation] -> `{\"start_begin\": \"no\"}`\n   - Done. \n   - *Self-Correction/Note during generation*: The prompt says \"Do not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text.\" I will strictly follow this.\n   - Final JSON: `{\"start_begin\": \"no\"}`.✅\n   - All good. \n   - Output matches. \n   - [Done]",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Rule:** If there's other content before the section title in `page_text`, then `start_begin` is \"no\". If the section title is the first content, then `start_begin` is \"yes\".\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`\n   - **Page Text:** `13\\n产品玩法也是重度则 iOS端创意占比越高\\n重度产品 iOS端素材占比超 32%手游素材各系统占比\\n13.0%26.1%32.6%87.0%73.9%67.4%\\n轻度 中度 重度FB系渠道 iOS端创意占比在 28%左右\\nUnityAds 渠道Android 端广素材比最高为 93.5%热门渠道各系统素材占比\\n28.0% 28.9%\\n10.4%19.9%15.7% 17.7%\\n6.5%50.7%72.0% 71.1%\\n89.6%80.1%84.3% 82.3%\\n93.5%49.3%游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上2025年 全球手游 各系统素材观察\\nSource ：广大大，根据后台抓取后数据整理后展现\\nDate Range ：2025/1~2025/12iOS\\n22.7%\\nAndroid\\n77.3%各系统手游素材占比\\n.`\n\n2.  **Evaluate `page_text` against `section_title`:**\n   - I need to find the exact (or fuzzy) match of the section title in the `page_text`.\n   - Section title: `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`\n   - Looking at `page_text`, I see: `...93.5%49.3%游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上2025年 全球手游 各系统素材观察...`\n   - The section title appears *after* a lot of other text (`13\\n产品玩法也是重度则...93.5%49.3%`).\n   - Therefore, it does *not* start at the beginning of the `page_text`.\n\n3.  **Determine Output:**\n   - `start_begin`: \"no\"\n   - Format: JSON `{\"start_begin\": \"no\"}`\n\n4.  **Final Check:**\n   - Does the title appear at the very start? No.\n   - Is there content before it? Yes, a lot.\n   - Fuzzy matching note: Even with fuzzy matching, it's clearly not at the beginning.\n   - Output matches requested format. No extra text.✅\n   - Proceed. \n   - Output: `{\"start_begin\": \"no\"}`\n   - All constraints met.✅\n   - Generate response. \n   - *Self-Correction/Verification during thought*: \n     - Check exact string in page_text: `游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上`\n     - It's preceded by `93.5%49.3%`. So definitely not at the beginning.\n     - Result is \"no\".\n     - JSON format is correct.\n     - Ready. \n   - Output matches exactly.✅\n   - Proceeds. \n   - [Output Generation] -> `{\"start_begin\": \"no\"}`\n   - Done. \n   - *Self-Correction/Note during generation*: The prompt says \"Do not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text.\" I will strictly follow this.\n   - Final JSON: `{\"start_begin\": \"no\"}`.✅\n   - All good. \n   - Output matches. \n   - [Done]"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360232,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 977,
+      "prompt_tokens": 526,
+      "total_tokens": 1503,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 960,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 977
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 526
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

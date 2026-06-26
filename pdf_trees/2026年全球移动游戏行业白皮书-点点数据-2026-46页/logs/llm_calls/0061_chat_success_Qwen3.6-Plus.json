@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:57:20.372014+00:00",
+  "sequence": 61,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 8298,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 11中国移动游戏市场新品收入占比.\n    The given page_text is © 2026 DianDian.All Rights Reserved.15.3%\n84.7%18.9%\n81.1%7.5%\n92.5%\n11中国移动游戏市场新品收入占比\n头部超级产品缺位致使新品整体收入大幅缩水\n来源：点点数据自主研究及绘制。2023-2025年 新上线移动游戏 在当年的市场收入规模占比（仅App Store）2025年新上线移动游戏市场收入占比从18.9%骤降至7.3%，这一数据或许会使得资本市场不再将新游作为短期财务增长引擎的预期。从往年新游TOP5名单可以看出，成功产品\n多依托于成熟的端游IP移植（如《逆水寒》《地下城与勇士》）、已验证的赛道融合（如《无尽冬日》）或强势的垂直品类（如《恋与深空》），其成功逻辑可以说是“确定性创\n新”。而到了2025年，市场环境使得这种“确定性”也在急剧减弱。高昂的研发与营销成本，迫使厂商在新项目立项上极度保守，倾向于在已有成功公式内进行微调，而非探索\n未知领域；同时，用户对范式化内容的厌倦加剧，使得缺乏真正颠覆性体验的产品即便制作精良，也难以引发广泛的付费热潮。但需要明确的是，在7.3%的占比背后，同样也包\n含了大量中等规模新游的集体失声——它们既无法在品质上对标顶级大作，又无法在创意上形成稀缺性，最终在激烈的流量争夺中迅速沉寂。\n逆水寒 崩坏：星穹铁道\n冒险岛：枫之传说 合金弹头：觉醒 晶核当年新品\nTOP5：\n地下城与勇士：起源 无尽冬日\n三国：谋定天下 向僵尸开炮 恋与深空\n燕云十六声 英雄没有闪\n杖剑传说 永远的蔚蓝星球 无畏契约：源能行动2023年 2024年 2025年\n当年新品\nTOP5：当年新品\nTOP5：\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-27674909-ea47-955f-b643-147fd21236a2",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"11中国移动游戏市场新品收入占比\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the `page_text`:\n\"© 2026 DianDian.All Rights Reserved.15.3%\n84.7%18.9%\n81.1%7.5%\n92.5%\n11中国移动游戏市场新品收入占比\n头部超级产品缺位致使新品整体收入大幅缩水...\"\n\nThe exact string \"11中国移动游戏市场新品收入占比\" is present in the text.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches requirement. \nNo extra text.\nDone. \nSelf-Correction/Verification during thought:\nThe prompt says: \"The given section title is 11中国移动游戏市场新品收入占比.\"\nThe text contains exactly \"11中国移动游戏市场新品收入占比\".\nSo it's a clear match.\nOutput JSON. \nReady. \nProceeds. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nMatches exactly. No extra text.\nDone. \nOutput matches. \nProceeds. \n[Final Check]\nSection: 11中国移动游戏市场新品收入占比\nPage text contains: 11中国移动游戏市场新品收入占比\nResult: yes\nFormat: JSON\nConstraint: Directly return the final JSON structure. Do not output anything else.\nAll good. \nOutput matches. \nProceeds. \n[Output Generation]\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"11中国移动游戏市场新品收入占比\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the `page_text`:\n\"© 2026 DianDian.All Rights Reserved.15.3%\n84.7%18.9%\n81.1%7.5%\n92.5%\n11中国移动游戏市场新品收入占比\n头部超级产品缺位致使新品整体收入大幅缩水...\"\n\nThe exact string \"11中国移动游戏市场新品收入占比\" is present in the text.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches requirement. \nNo extra text.\nDone. \nSelf-Correction/Verification during thought:\nThe prompt says: \"The given section title is 11中国移动游戏市场新品收入占比.\"\nThe text contains exactly \"11中国移动游戏市场新品收入占比\".\nSo it's a clear match.\nOutput JSON. \nReady. \nProceeds. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nMatches exactly. No extra text.\nDone. \nOutput matches. \nProceeds. \n[Final Check]\nSection: 11中国移动游戏市场新品收入占比\nPage text contains: 11中国移动游戏市场新品收入占比\nResult: yes\nFormat: JSON\nConstraint: Directly return the final JSON structure. Do not output anything else.\nAll good. \nOutput matches. \nProceeds. \n[Output Generation]\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359844,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 411,
+      "prompt_tokens": 596,
+      "total_tokens": 1007,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 395,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 411
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 596
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

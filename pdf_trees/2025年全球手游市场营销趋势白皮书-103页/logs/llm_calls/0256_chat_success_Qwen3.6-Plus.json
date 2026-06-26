@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:00:17.418464+00:00",
+  "sequence": 256,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5054,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 扬帆出海.\n    The given page_text is 69\n扬帆出海\n2025年中国企业出海整体迈入“质量跃升”新阶段，游戏与非游领域均呈现稳健增长态势，同时依托技术创新与模式升级构建核心竞争力。\n游戏出海持续高歌猛进，规模与质量双提升。数据显示， 2025年自研游戏海外市场实际销售收入达 204.55 亿美元，同比增长 10.23% ，\n连续六年超千亿元人民币，其中移动游戏贡献 184.78 亿美元，同比增长 13.16% 。\n市场布局上，美、日、韩仍是核心市场，欧洲市场稳步拓展。品类方面，策略类（含 SLG）占海外收入前 100款自研手游营收的 49.96% ，\n稳居首位，玩法融合成为增长关键。\n总体而言， 2025年中国出海企业以创新为核心驱动力，在复杂国际环境中实现稳健发展，游戏出海靠品类深耕与文化赋能突破，非游出\n海凭产业升级与模式创新拓宽空间。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-11a0f213-4982-973e-8323-aca43ed9315d",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"扬帆出海\" appears or starts in the given `page_text`.\nThe `page_text` starts with \"69\\n扬帆出海\\n2025年中国企业出海整体迈入...\"\nThe section title \"扬帆出海\" clearly appears at the beginning of the text (after the page number 69).\nFuzzy matching and ignoring space inconsistencies are allowed, but it's an exact match anyway.\nSo the answer should be \"yes\".\nI will output the JSON format as requested.\n```json\n{\n    \"answer\": \"yes\"\n}\n```\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches exactly. \nNo extra text.\nDone. \nFinal answer: `{\"answer\": \"yes\"}`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"扬帆出海\" appears or starts in the given `page_text`.\nThe `page_text` starts with \"69\\n扬帆出海\\n2025年中国企业出海整体迈入...\"\nThe section title \"扬帆出海\" clearly appears at the beginning of the text (after the page number 69).\nFuzzy matching and ignoring space inconsistencies are allowed, but it's an exact match anyway.\nSo the answer should be \"yes\".\nI will output the JSON format as requested.\n```json\n{\n    \"answer\": \"yes\"\n}\n```\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches exactly. \nNo extra text.\nDone. \nFinal answer: `{\"answer\": \"yes\"}`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360021,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 194,
+      "prompt_tokens": 368,
+      "total_tokens": 562,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 178,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 194
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 368
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

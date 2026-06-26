@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:56:10.694638+00:00",
+  "sequence": 173,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 8529,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 26媒体声音.\n    The given page_text is 26媒体声音\n游戏葡萄  & GameLook\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-7b633ab1-26c8-9887-8e26-dedf8414ba57",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"26媒体声音\" appears or starts in the given page_text.\nThe page_text is:\n\"26媒体声音\n游戏葡萄  & GameLook\n.\"\n\nThe section title exactly matches the beginning of the page_text.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput matches exactly.\nProceed. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nWait, the prompt says \"Reply format: { \"answer\": \"yes or no\" ... }\". I will just output the JSON.\nDone. \nSelf-Correction/Verification:\nSection: 26媒体声音\nPage text: 26媒体声音\\n游戏葡萄  & GameLook\\n.\nMatches exactly at the start.\nAnswer: yes.\nJSON format correct.\nProceeds. \nOutput matches requirement. \nDone. \n[Final Check]\nInput: \"26媒体声音\"\nPage: \"26媒体声音\\n游戏葡萄  & GameLook\\n.\"\nResult: yes.\nFormat: JSON.\nNo extra text.\nDone. \nOutput Generation. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nMatches exactly. Proceeds. \n(Self-Correction/Note during thought: I should make sure the JSON is exactly as requested, without markdown if possible, but markdown is usually fine. I'll just output the raw JSON string to be safe.)\nActually, the prompt says \"Directly return the final JSON structure. Do not output anything else.\"\nI will output:\n{\n    \"answer\": \"yes\"\n}\nDone. \nProceeds. \n[Output Generation] -> { \"answer\": \"yes\" }",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"26媒体声音\" appears or starts in the given page_text.\nThe page_text is:\n\"26媒体声音\n游戏葡萄  & GameLook\n.\"\n\nThe section title exactly matches the beginning of the page_text.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput matches exactly.\nProceed. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nWait, the prompt says \"Reply format: { \"answer\": \"yes or no\" ... }\". I will just output the JSON.\nDone. \nSelf-Correction/Verification:\nSection: 26媒体声音\nPage text: 26媒体声音\\n游戏葡萄  & GameLook\\n.\nMatches exactly at the start.\nAnswer: yes.\nJSON format correct.\nProceeds. \nOutput matches requirement. \nDone. \n[Final Check]\nInput: \"26媒体声音\"\nPage: \"26媒体声音\\n游戏葡萄  & GameLook\\n.\"\nResult: yes.\nFormat: JSON.\nNo extra text.\nDone. \nOutput Generation. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nMatches exactly. Proceeds. \n(Self-Correction/Note during thought: I should make sure the JSON is exactly as requested, without markdown if possible, but markdown is usually fine. I'll just output the raw JSON string to be safe.)\nActually, the prompt says \"Directly return the final JSON structure. Do not output anything else.\"\nI will output:\n{\n    \"answer\": \"yes\"\n}\nDone. \nProceeds. \n[Output Generation] -> { \"answer\": \"yes\" }"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359775,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 439,
+      "prompt_tokens": 154,
+      "total_tokens": 593,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 423,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 439
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 154
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

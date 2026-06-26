@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:57:28.925166+00:00",
+  "sequence": 65,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 8551,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 13中国游戏行业投融资相关事件.\n    The given page_text is © 2026 DianDian.All Rights Reserved.19\n620\n171921\n1115\n9\n5\n1月2月3月4月5月6月7月8月9月10月\n13中国游戏行业投融资相关事件\n市场短期无热点赛道致使投融资事件数量与新游戏公司数量双双锐减\n注释：（1）基于GAMESHARK游鲨游戏圈的公开数据进行统计推算，其数据共计包含4012家游戏公司；（2）数据统计周期截止至2025年11月。\n来源： GAMESHARK游鲨游戏圈。2025中国游戏行业投融资相关事件数据汇总回顾前两年，无论是2023年的AI技术扩散带来的“AI+游戏”军备竞赛，还是2024年互动影游、捉宠+种田、合成+SLG等玩法融合引发的规模化跟进，都为资本市场提供了相对\n明确的“叙事逻辑”和“对标对象”，资本可以基于对赛道增长潜力的预判进行下注，从而催生一批新公司与新产品。然而，2025年的游戏行业更像是市场挤出泡沫、回归商业\n本质的承上启下阶段。点点数据认为，当前资本市场的观望态度，是在用户增长见顶、流量成本高昂的背景下，对“下一轮技术或内容范式革命”的等待期。是AI驱动生成的真正\n动态游戏世界？是VR/AR硬件成熟带来的交互革命？还是某种尚未被定义的、融合了新型社交关系的玩法？在答案明朗之前，资本倾向于收缩泛化投资，转而进行更前沿、更基\n础、也更分散的“防御性”布局，这也解释了为何多次投资者占到了全年的38%之多。\n相较于2024年同比大幅下跌投融资事件数量\n-24%\n近三年新成立游戏公司数量分\n别为：110、85、39新成立游戏公司数量\n-54%\n只包含公开投融资事件投融资事件汇总\n基于股权变更日期统计每月事件数量\n投资人全年投资2次及以上多次投资者\n新增持股, 102\n持股变更\n（继续持有）, \n13持股变更（退出）, \n27\n142起\n投资2次及以上 单次投资\n38%\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-1fec2a2d-c009-9576-9c41-6a848430abeb",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"13中国游戏行业投融资相关事件\" appears or starts in the provided `page_text`.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the `page_text`:\n\"...\n1月2月3月4月5月6月7月8月9月10月\n13中国游戏行业投融资相关事件\n市场短期无热点赛道致使投融资事件数量与新游戏公司数量双双锐减\n...\"\nThe exact string \"13中国游戏行业投融资相关事件\" is present in the text.\nTherefore, the answer is \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches exactly. \nNo extra text.\nDone. \nSelf-Correction/Verification during thought:\nThe prompt says: \"13中国游戏行业投融资相关事件\"\nPage text contains: \"13中国游戏行业投融资相关事件\"\nMatches exactly.\nAnswer is yes.\nJSON format correct.\nReady. \nOutput matches requirement. \nProceeds. \n[Final Check]\nInput section: 13中国游戏行业投融资相关事件\nPage text: ...13中国游戏行业投融资相关事件...\nResult: yes\nJSON: {\"answer\": \"yes\"}\nAll good. \nOutput matches. \nProceeds. \n[Output Generation] -> `{\"answer\": \"yes\"}`\nDone. \n(Self-Correction/Note during generation: I will make sure the JSON is exactly as requested.)\n```json\n{\n    \"answer\": \"yes\"\n}\n```\nMatches perfectly. No extra text.\nDone. \nProceeds. \n[Final Output Generation] (matches the exact requested format)\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"13中国游戏行业投融资相关事件\" appears or starts in the provided `page_text`.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the `page_text`:\n\"...\n1月2月3月4月5月6月7月8月9月10月\n13中国游戏行业投融资相关事件\n市场短期无热点赛道致使投融资事件数量与新游戏公司数量双双锐减\n...\"\nThe exact string \"13中国游戏行业投融资相关事件\" is present in the text.\nTherefore, the answer is \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches exactly. \nNo extra text.\nDone. \nSelf-Correction/Verification during thought:\nThe prompt says: \"13中国游戏行业投融资相关事件\"\nPage text contains: \"13中国游戏行业投融资相关事件\"\nMatches exactly.\nAnswer is yes.\nJSON format correct.\nReady. \nOutput matches requirement. \nProceeds. \n[Final Check]\nInput section: 13中国游戏行业投融资相关事件\nPage text: ...13中国游戏行业投融资相关事件...\nResult: yes\nJSON: {\"answer\": \"yes\"}\nAll good. \nOutput matches. \nProceeds. \n[Output Generation] -> `{\"answer\": \"yes\"}`\nDone. \n(Self-Correction/Note during generation: I will make sure the JSON is exactly as requested.)\n```json\n{\n    \"answer\": \"yes\"\n}\n```\nMatches perfectly. No extra text.\nDone. \nProceeds. \n[Final Output Generation] (matches the exact requested format)\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359853,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 426,
+      "prompt_tokens": 642,
+      "total_tokens": 1068,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 410,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 426
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 642
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

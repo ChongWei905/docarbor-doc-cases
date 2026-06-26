@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:51:58.017228+00:00",
+  "sequence": 183,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4261,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 《崩坏：星穹铁道》基础数据.\n    The given page_text is © 2025 DianDian.All Rights Reserved. 12《崩坏：星穹铁道》基础数据\n来源：点点数据自主研究及绘制在传统回合制中打造出策略深度 以丰富玩法与稳定更新保持活力\n2025年《崩坏：星穹铁道》国服收入规模与活跃用户数据表现\n0.0 0.5 1.0 1.5 2.0 2.5 3.0 \n1月2月3月4月5月6月7月8月9月10月\nAppStore月流水（亿元）用户兴趣偏好\n动漫2025Q1-Q3用户留存\n平均次留：\n平均月留：约48.9%\n约17.6%网络小说科技资讯\n模拟辅助 系统工具 综艺0 50 100 150 200 250 \n1月2月3月4月5月6月7月8月9月\niOS月活跃用户数（万人）\n男生占比： 约67.9%产品优势解析：游戏在美术、音乐、演出上保持了米哈游一贯的高水准，尤其在角色建模、场景构建和剧情演出上，品质堪称行业标杆。玩法上虽然采用了较为传统的回合制玩法，\n但将“行动顺序”和“弱点破解”深度融入了核心战斗机制，使其具有相当的策略深度。同时，游戏成功引入了Roguelite等高耐玩性玩法，极大地丰富了游戏体验。从2023年4\n月上线至今，《崩坏：星穹铁道》始终保持了稳定的版本更新节奏。并且无论是在剧情还是新玩法上，都保持的较高的水准。从下方的数据可以看出，其2025年的两大重点版本\n（4月3.2版本-走过安眠地的花丛、7月3.4版本-因为太阳将要毁伤）仍取得了十分优异的流水表现。\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-25d526e7-b644-9c45-871e-39c4c18f3398",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"《崩坏：星穹铁道》基础数据\" starts at the beginning of the given `page_text`.\nThe `page_text` starts with: \"© 2025 DianDian.All Rights Reserved. 12《崩坏：星穹铁道》基础数据\"\nThere is content before the section title: \"© 2025 DianDian.All Rights Reserved. 12\"\nTherefore, the section does not start at the beginning of the page_text.\nThe answer should be \"no\".\nFormat: JSON with key \"start_begin\".\nCheck fuzzy matching: The title is exactly present after some text. So it's not at the beginning.\nResult: {\"start_begin\": \"no\"}\nDone. \nI will output exactly the JSON.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"《崩坏：星穹铁道》基础数据\" starts at the beginning of the given `page_text`.\nThe `page_text` starts with: \"© 2025 DianDian.All Rights Reserved. 12《崩坏：星穹铁道》基础数据\"\nThere is content before the section title: \"© 2025 DianDian.All Rights Reserved. 12\"\nTherefore, the section does not start at the beginning of the page_text.\nThe answer should be \"no\".\nFormat: JSON with key \"start_begin\".\nCheck fuzzy matching: The title is exactly present after some text. So it's not at the beginning.\nResult: {\"start_begin\": \"no\"}\nDone. \nI will output exactly the JSON."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355922,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 188,
+      "prompt_tokens": 645,
+      "total_tokens": 833,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 171,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 188
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 645
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

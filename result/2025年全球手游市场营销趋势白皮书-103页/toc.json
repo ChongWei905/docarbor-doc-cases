@@ -1,0 +1,57 @@
+{
+  "page_title": "目录",
+  "items": [
+    {
+      "level": 1,
+      "title": "1 全球手游市场营销趋势洞察",
+      "printed_page": null
+    },
+    {
+      "level": 1,
+      "title": "2 全球手游热门榜单",
+      "printed_page": null
+    },
+    {
+      "level": 1,
+      "title": "3 游戏获客：真实变革何在",
+      "printed_page": null
+    },
+    {
+      "level": 1,
+      "title": "4 全球手游全链路增长策略指南",
+      "printed_page": null
+    },
+    {
+      "level": 1,
+      "title": "5 全球手游热门品类营销洞察",
+      "printed_page": null
+    },
+    {
+      "level": 1,
+      "title": "6 全球热门地区手游营销观察",
+      "printed_page": null
+    },
+    {
+      "level": 1,
+      "title": "7 全球手游热门广告主营销观察",
+      "printed_page": null
+    },
+    {
+      "level": 1,
+      "title": "特别鸣谢 & 报告说明",
+      "printed_page": null
+    }
+  ],
+  "notes": [
+    "No explicit page numbers are provided for each section in the image.",
+    "The 'printed_page' field is set to null as target page numbers are not visible in the image."
+  ],
+  "metadata": {
+    "toc_page_indices": [
+      5
+    ],
+    "total_toc_pages": 1,
+    "extraction_model": "qwen-vl-plus",
+    "method": "image_stitch_vlm"
+  }
+}

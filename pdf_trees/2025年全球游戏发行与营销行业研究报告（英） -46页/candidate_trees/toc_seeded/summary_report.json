@@ -15,11 +15,11 @@
   "total_window_count": 38,
   "multi_window_leaf_count": 7,
   "llm_call_count": 51,
-  "llm_duration_ms": 2754751,
-  "prompt_char_count": 186816,
-  "response_char_count": 75759,
-  "started_at": "2026-06-11T08:57:49Z",
+  "llm_duration_ms": 2903970,
+  "prompt_char_count": 186492,
+  "response_char_count": 75659,
+  "started_at": "2026-06-25T03:39:34Z",
   "max_concurrency": 4,
-  "finished_at": "2026-06-11T09:09:51Z",
-  "duration_ms": 721647
+  "finished_at": "2026-06-25T03:52:16Z",
+  "duration_ms": 762051
 }

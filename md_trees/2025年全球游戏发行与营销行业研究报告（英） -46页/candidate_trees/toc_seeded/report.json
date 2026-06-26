@@ -1,0 +1,49 @@
+{
+  "strategy": "toc_seeded",
+  "score": 430.448,
+  "score_breakdown": {
+    "non_empty": 30.0,
+    "page_coverage": 360.0,
+    "depth": 10.0,
+    "internal_nodes": 15.0,
+    "root_shape": 7.448,
+    "heading_alignment": 0.0,
+    "numbering": 0.0,
+    "title_uniqueness": 8.0,
+    "penalty_flat": 0.0,
+    "penalty_shallow": 0.0,
+    "penalty_root_explosion": -0.0,
+    "penalty_noise_roots": -0.0,
+    "penalty_garbled_roots": -0.0,
+    "penalty_bad_roots": -0.0,
+    "penalty_duplicates": -0.0,
+    "penalty_backtrack": -0.0
+  },
+  "metrics": {
+    "root_count": 11,
+    "node_count": 29,
+    "max_depth": 2,
+    "depth_histogram": {
+      "1": 11,
+      "2": 18
+    },
+    "unique_page_count": 20,
+    "page_coverage_ratio": 20.0,
+    "duplicate_title_count": 0,
+    "title_uniqueness_ratio": 1.0,
+    "heading_alignment_ratio": 0.0,
+    "numbered_consistency_ratio": 0.0,
+    "page_backtrack_count": 0,
+    "noise_root_count": 0,
+    "garbled_root_count": 0,
+    "low_quality_root_count": 0,
+    "bad_root_count": 0,
+    "internal_node_count": 6
+  },
+  "artifact_paths": {
+    "raw_tree_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025年全球游戏发行与营销行业研究报告（英） -46页\\candidate_trees\\toc_seeded\\docarbor_raw.json",
+    "result_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025年全球游戏发行与营销行业研究报告（英） -46页\\candidate_trees\\toc_seeded\\result.json",
+    "report_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025年全球游戏发行与营销行业研究报告（英） -46页\\candidate_trees\\toc_seeded\\report.json",
+    "summary_report_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025年全球游戏发行与营销行业研究报告（英） -46页\\candidate_trees\\toc_seeded\\summary_report.json"
+  }
+}

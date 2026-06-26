@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:13:00.170739+00:00",
+  "sequence": 458,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 14128,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 效率重构周期：2025走向理性，2026走向结构红利.\n    The given page_text is 96\nToBid\n效率重构周期： 2025走向理性， 2026走向结构红利\n2025年，移动广告变现行业正从“规模优先”迈入“效率优先”的新阶段。流量增速放缓、广告主预算趋紧，开发者已逐步意识到，单纯追\n求高eCPM 或短期峰值收益难以支撑可持续的商业增长，变现体系的系统能力与稳定性开始成为核心竞争因素。\n展望2026年，行业增量将更多来自存量流量价值的再挖掘与结构性释放。不同应用类型、用户阶段与广告位之间的价值差异持续扩大，\n变现优化不再是简单的价格排序，而是围绕整体收益进行的全局判断。广告变现正从“单点 eCPM 最优”，走向“整体收益最优”，填充率、\n频控、用户体验与长期 ARPDAU 被纳入同一决策框架。\n在这一变化中，通用化方案的有效性正在下降，真正的效率提升既依赖系统能力，也依赖对垂类业务的深度理解。\nToBid 在持续打磨变现系统的同时，通过专业团队深耕垂类场景，帮助开发者制定更匹配业务阶段的变现策略，在效率重构周期中实现\n稳定、可持续的增长。\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-a270e7db-48d1-98f0-9db4-2593877a2f07",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Section Title:** `效率重构周期：2025走向理性，2026走向结构红利`\n   - **Page Text:**\n     ```\n     96\n     ToBid\n     效率重构周期： 2025走向理性， 2026走向结构红利\n     2025年，移动广告变现行业正从“规模优先”迈入“效率优先”的新阶段。...\n     ```\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Condition:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text vs. Section Title:**\n   - The `page_text` starts with:\n     `96`\n     `ToBid`\n     `效率重构周期： 2025走向理性， 2026走向结构红利`\n   - The section title is `效率重构周期：2025走向理性，2026走向结构红利`.\n   - Before the section title in the page text, there is `96` and `ToBid`.\n   - Therefore, the section title is *not* the first content in the page text.\n\n3.  **Determine Output:**\n   - Since there is content before the title, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: The prompt says \"ignore any space inconsistency in the page_text\" for fuzzy matching. The title matches the text after `96\\nToBid\\n`. So it's definitely not at the beginning.\n   Result: `{\"start_begin\": \"no\"}`.✅\n   Output matches exactly. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Self-Correction/Verification during thought)\n   Wait, let's carefully read the prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   The page text literally starts with \"96\\nToBid\\n\". So yes, there is content before.\n   Result is definitively \"no\".\n   Format is correct.\n   Ready. \n   Output matches request.✅\n   Proceeds. \n   [Final Check of the Prompt]\n   \"The given section title is 效率重构周期：2025走向理性，2026走向结构红利.\"\n   \"The given page_text is 96\\nToBid\\n效率重构周期： 2025走向理性， 2026走向结构红利\\n...\"\n   Matches logic. Output is `{\"start_begin\": \"no\"}`. \n   All constraints met. \n   Generating response. \n   `[Done]`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Section Title:** `效率重构周期：2025走向理性，2026走向结构红利`\n   - **Page Text:**\n     ```\n     96\n     ToBid\n     效率重构周期： 2025走向理性， 2026走向结构红利\n     2025年，移动广告变现行业正从“规模优先”迈入“效率优先”的新阶段。...\n     ```\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Condition:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text vs. Section Title:**\n   - The `page_text` starts with:\n     `96`\n     `ToBid`\n     `效率重构周期： 2025走向理性， 2026走向结构红利`\n   - The section title is `效率重构周期：2025走向理性，2026走向结构红利`.\n   - Before the section title in the page text, there is `96` and `ToBid`.\n   - Therefore, the section title is *not* the first content in the page text.\n\n3.  **Determine Output:**\n   - Since there is content before the title, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   - `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   One minor point: The prompt says \"ignore any space inconsistency in the page_text\" for fuzzy matching. The title matches the text after `96\\nToBid\\n`. So it's definitely not at the beginning.\n   Result: `{\"start_begin\": \"no\"}`.✅\n   Output matches exactly. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Self-Correction/Verification during thought)\n   Wait, let's carefully read the prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   The page text literally starts with \"96\\nToBid\\n\". So yes, there is content before.\n   Result is definitively \"no\".\n   Format is correct.\n   Ready. \n   Output matches request.✅\n   Proceeds. \n   [Final Check of the Prompt]\n   \"The given section title is 效率重构周期：2025走向理性，2026走向结构红利.\"\n   \"The given page_text is 96\\nToBid\\n效率重构周期： 2025走向理性， 2026走向结构红利\\n...\"\n   Matches logic. Output is `{\"start_begin\": \"no\"}`. \n   All constraints met. \n   Generating response. \n   `[Done]`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360784,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 753,
+      "prompt_tokens": 500,
+      "total_tokens": 1253,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 736,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 753
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 500
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

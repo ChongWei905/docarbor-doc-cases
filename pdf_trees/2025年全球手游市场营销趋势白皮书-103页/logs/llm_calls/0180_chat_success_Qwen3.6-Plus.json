@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:56:19.276263+00:00",
+  "sequence": 180,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5107,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is GAMING USER ACQUISITION IN 2025: WHAT ACTUALLY CHANGED 2025年游戏获客：真实变革何在.\n    The given page_text is 29\nGAMING USER ACQUISITION IN 2025: WHAT ACTUALLY CHANGED2025年游戏获客：\n真实变革何在03\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-c9a3b492-0737-90c8-b081-1c7774c629fc",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"GAMING USER ACQUISITION IN 2025: WHAT ACTUALLY CHANGED 2025年游戏获客：真实变革何在\" appears or starts in the given page_text.\nPage text: \"29\\nGAMING USER ACQUISITION IN 2025: WHAT ACTUALLY CHANGED2025年游戏获客：\\n真实变革何在03\\n.\"\nThe section title matches the text in the page_text, ignoring spaces and line breaks.\n\"GAMING USER ACQUISITION IN 2025: WHAT ACTUALLY CHANGED2025年游戏获客：\\n真实变革何在03\" contains the title.\nSo the answer is yes.\nFormat: {\"answer\": \"yes\"}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\".\nMatches exactly.\nReturn JSON.\nDone. \nOutput: {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"GAMING USER ACQUISITION IN 2025: WHAT ACTUALLY CHANGED 2025年游戏获客：真实变革何在\" appears or starts in the given page_text.\nPage text: \"29\\nGAMING USER ACQUISITION IN 2025: WHAT ACTUALLY CHANGED2025年游戏获客：\\n真实变革何在03\\n.\"\nThe section title matches the text in the page_text, ignoring spaces and line breaks.\n\"GAMING USER ACQUISITION IN 2025: WHAT ACTUALLY CHANGED2025年游戏获客：\\n真实变革何在03\" contains the title.\nSo the answer is yes.\nFormat: {\"answer\": \"yes\"}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\".\nMatches exactly.\nReturn JSON.\nDone. \nOutput: {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359783,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 220,
+      "prompt_tokens": 208,
+      "total_tokens": 428,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 209,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 220
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 208
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

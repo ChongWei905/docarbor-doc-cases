@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:45:49.764839+00:00",
+  "sequence": 77,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 12478,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 《崩坏：星穹铁道》基础数据.\n    The given page_text is © 2025 DianDian.All Rights Reserved. 12《崩坏：星穹铁道》基础数据\n来源：点点数据自主研究及绘制在传统回合制中打造出策略深度 以丰富玩法与稳定更新保持活力\n2025年《崩坏：星穹铁道》国服收入规模与活跃用户数据表现\n0.0 0.5 1.0 1.5 2.0 2.5 3.0 \n1月2月3月4月5月6月7月8月9月10月\nAppStore月流水（亿元）用户兴趣偏好\n动漫2025Q1-Q3用户留存\n平均次留：\n平均月留：约48.9%\n约17.6%网络小说科技资讯\n模拟辅助 系统工具 综艺0 50 100 150 200 250 \n1月2月3月4月5月6月7月8月9月\niOS月活跃用户数（万人）\n男生占比： 约67.9%产品优势解析：游戏在美术、音乐、演出上保持了米哈游一贯的高水准，尤其在角色建模、场景构建和剧情演出上，品质堪称行业标杆。玩法上虽然采用了较为传统的回合制玩法，\n但将“行动顺序”和“弱点破解”深度融入了核心战斗机制，使其具有相当的策略深度。同时，游戏成功引入了Roguelite等高耐玩性玩法，极大地丰富了游戏体验。从2023年4\n月上线至今，《崩坏：星穹铁道》始终保持了稳定的版本更新节奏。并且无论是在剧情还是新玩法上，都保持的较高的水准。从下方的数据可以看出，其2025年的两大重点版本\n（4月3.2版本-走过安眠地的花丛、7月3.4版本-因为太阳将要毁伤）仍取得了十分优异的流水表现。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-ca274512-3807-9caf-86c6-3af17be96e71",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** 《崩坏：星穹铁道》基础数据\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved. 12《崩坏：星穹铁道》基础数据\\n来源：点点数据自主研究及绘制在传统回合制中打造出策略深度 以丰富玩法与稳定更新保持活力...` (and more text)\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply with JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Look for `《崩坏：星穹铁道》基础数据` in the `page_text`.\n   - The `page_text` starts with: `© 2025 DianDian.All Rights Reserved. 12《崩坏：星穹铁道》基础数据`\n   - The exact string `《崩坏：星穹铁道》基础数据` is present right after `12`.\n   - Fuzzy matching/space ignoring isn't even strictly necessary here, as it's an exact match.\n\n3.  **Determine Answer:**\n   - The section title appears in the page text.\n   - Therefore, the answer is \"yes\".\n\n4.  **Format Output:**\n   - Must be exactly: `{\"answer\": \"yes\"}`\n   - No extra text, no thinking fields.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Output matches requirement.✅\n   Final JSON: `{\"answer\": \"yes\"}`\n   Self-Correction/Verification during thought: \n   - Does it appear? Yes.\n   - Does it start? It appears after \"12\", but the prompt says \"appears or starts\". So \"yes\" is correct.\n   - Format matches exactly.\n   - Ready. \n   Output generation. \n   `{\"answer\": \"yes\"}`\n   (Note: I will ensure no markdown formatting interferes if possible, but standard JSON is fine. The prompt says \"Directly return the final JSON structure.\")\n   I will output exactly `{\"answer\": \"yes\"}`.✅\n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   *(Self-Correction/Refinement during thought)*: Wait, let's double check the exact string in the prompt: `《崩坏：星穹铁道》基础数据`. In the text: `12《崩坏：星穹铁道》基础数据`. It matches perfectly. Fuzzy matching handles any minor differences, but here it's exact. Answer is definitely yes.\n   All constraints met. Output matches.✅\n   Final Output Generation. \n   `{\"answer\": \"yes\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Section Title:** 《崩坏：星穹铁道》基础数据\n   - **Page Text:** `© 2025 DianDian.All Rights Reserved. 12《崩坏：星穹铁道》基础数据\\n来源：点点数据自主研究及绘制在传统回合制中打造出策略深度 以丰富玩法与稳定更新保持活力...` (and more text)\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply with JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - Look for `《崩坏：星穹铁道》基础数据` in the `page_text`.\n   - The `page_text` starts with: `© 2025 DianDian.All Rights Reserved. 12《崩坏：星穹铁道》基础数据`\n   - The exact string `《崩坏：星穹铁道》基础数据` is present right after `12`.\n   - Fuzzy matching/space ignoring isn't even strictly necessary here, as it's an exact match.\n\n3.  **Determine Answer:**\n   - The section title appears in the page text.\n   - Therefore, the answer is \"yes\".\n\n4.  **Format Output:**\n   - Must be exactly: `{\"answer\": \"yes\"}`\n   - No extra text, no thinking fields.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Output matches requirement.✅\n   Final JSON: `{\"answer\": \"yes\"}`\n   Self-Correction/Verification during thought: \n   - Does it appear? Yes.\n   - Does it start? It appears after \"12\", but the prompt says \"appears or starts\". So \"yes\" is correct.\n   - Format matches exactly.\n   - Ready. \n   Output generation. \n   `{\"answer\": \"yes\"}`\n   (Note: I will ensure no markdown formatting interferes if possible, but standard JSON is fine. The prompt says \"Directly return the final JSON structure.\")\n   I will output exactly `{\"answer\": \"yes\"}`.✅\n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   *(Self-Correction/Refinement during thought)*: Wait, let's double check the exact string in the prompt: `《崩坏：星穹铁道》基础数据`. In the text: `12《崩坏：星穹铁道》基础数据`. It matches perfectly. Fuzzy matching handles any minor differences, but here it's exact. Answer is definitely yes.\n   All constraints met. Output matches.✅\n   Final Output Generation. \n   `{\"answer\": \"yes\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355554,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 656,
+      "prompt_tokens": 562,
+      "total_tokens": 1218,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 645,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 656
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 562
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

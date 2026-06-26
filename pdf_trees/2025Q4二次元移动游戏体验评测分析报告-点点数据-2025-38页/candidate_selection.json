@@ -82,11 +82,11 @@
           }
         ],
         "role": "section_divider",
-        "title": "二次元移动游戏体验评测分析报告",
+        "title": "2025 Q4二次元移动游戏体验评测分析报告",
         "level": 1,
         "ordinal": "2025 Q4",
         "confidence": "high",
-        "reason": "The page displays a prominent title stack '二次元移动游戏体验评测 分析报告' and a time period '2025 Q4' against a background collage, characteristic of a report cover or major section divider.",
+        "reason": "The page features a large, prominent title stack ('2025 Q4', '二次元移动游戏体验评测', '分析报告') typical of a report cover or major section opener, with no body content.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -158,7 +158,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page is explicitly labeled '目录 Content' (Table of Contents) and lists multiple sections (Overview, Review, Trends), fitting the exclusion criteria for table-of-contents pages.",
+        "reason": "The page is explicitly labeled '目录 Content' and lists three distinct sections (Market Overview, Experience Review, Development Trends) with summaries, functioning as a table of contents rather than a single section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -193,11 +193,11 @@
           }
         ],
         "role": "not_divider",
-        "title": null,
+        "title": "二次元移动游戏综合评分",
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains detailed content describing an evaluation framework with 5 dimensions and 18 indicators, including specific criteria bullet points, making it a body content page rather than a simple section divider.",
+        "reason": "The page contains a detailed infographic/chart breaking down 5 dimensions and 18 indicators with specific bullet points, which classifies it as a normal body page with charts/tables rather than a simple section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -247,7 +247,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains a detailed ranking table and bar charts comparing mobile games (scores, dimensions), which classifies it as a normal body page with charts/rankings, not a section divider.",
+        "reason": "The page contains a detailed ranking table and bar charts comparing mobile games, which classifies it as a normal body page with data visualization rather than a section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -319,7 +319,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "This is a promotional advertisement page for 'POINT AWARDS' containing detailed information, bullet points, award categories, a QR code, and a deadline, rather than a structural section divider or chapter opener.",
+        "reason": "This is a promotional page or advertisement for the 'POINT AWARDS' featuring a call to action (QR code, deadline, 'Applications Open'), rather than a structural divider introducing a report section.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -343,16 +343,15 @@
           }
         ],
         "role": "not_divider",
-        "title": "游戏数据/移动应用分析平台",
+        "title": null,
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "This page is a promotional or informational slide for the data provider 'Diandian Data' (点点数据). It lists platform features, supported app stores, company statistics (coverage, active devices, etc.), and includes a QR code for a community. It functions as an advertisement or 'About Us' page rather than a section divider introducing a specific report chapter.",
+        "reason": "This page is a company profile or promotional slide for 'Diandian Data', listing platform features, supported app stores, and key statistics. It serves as an advertisement or 'About Us' page, not a section divider for the report content.",
         "accepted": false,
         "rejection_reason": "not_divider"
       }
     ],
-    "exhibit_pages": [],
     "ready": false
   },
   "route_decision": {
@@ -361,58 +360,198 @@
       "layout_fallback",
       "minimal_fallback"
     ],
-    "decision_reason": "no_reliable_toc_or_outline",
-    "has_many_exhibits": false,
-    "exhibit_pages": []
+    "decision_reason": "no_reliable_toc_or_outline"
   },
   "attempts": [
     {
       "strategy": "docarbor_native",
       "status": "success",
-      "score": -23.5,
+      "score": 80.558,
       "score_breakdown": {
         "non_empty": 30.0,
         "page_coverage": 17.1,
-        "depth": 0.0,
-        "internal_nodes": 0.0,
-        "root_shape": 0.0,
-        "heading_alignment": 7.4,
+        "depth": 20.0,
+        "internal_nodes": 16.0,
+        "root_shape": 10.125,
+        "heading_alignment": 5.583,
         "numbering": 0.0,
-        "title_uniqueness": 8.0,
-        "penalty_flat": -8.0,
-        "penalty_shallow": -10.0,
-        "penalty_root_explosion": -68.0,
+        "title_uniqueness": 4.25,
+        "penalty_flat": 0.0,
+        "penalty_shallow": 0.0,
+        "penalty_root_explosion": -0.0,
         "penalty_noise_roots": -0.0,
         "penalty_garbled_roots": -0.0,
         "penalty_bad_roots": -0.0,
-        "penalty_duplicates": -0.0,
+        "penalty_duplicates": -22.5,
         "penalty_backtrack": -0.0
       },
       "metrics": {
-        "root_count": 40,
-        "node_count": 40,
-        "max_depth": 1,
+        "root_count": 15,
+        "node_count": 96,
+        "max_depth": 3,
         "depth_histogram": {
-          "1": 40
+          "1": 15,
+          "2": 31,
+          "3": 50
         },
         "unique_page_count": 38,
         "page_coverage_ratio": 0.95,
-        "duplicate_title_count": 0,
-        "title_uniqueness_ratio": 1.0,
-        "heading_alignment_ratio": 0.925,
+        "duplicate_title_count": 45,
+        "title_uniqueness_ratio": 0.5312,
+        "heading_alignment_ratio": 0.6979,
         "numbered_consistency_ratio": 0.0,
         "page_backtrack_count": 0,
         "noise_root_count": 0,
         "garbled_root_count": 0,
         "low_quality_root_count": 0,
         "bad_root_count": 0,
-        "internal_node_count": 0
+        "internal_node_count": 14
       },
       "artifact_paths": {
-        "raw_tree_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\docarbor_raw.json",
-        "result_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\result.json",
-        "report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\report.json",
-        "summary_report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\summary_report.json"
+        "raw_tree_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\docarbor_raw.json",
+        "result_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\result.json",
+        "report_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\report.json",
+        "text_assignment_report_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\text_assignment_report.json",
+        "summary_report_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_trees\\docarbor_native\\summary_report.json"
+      },
+      "text_assignment": {
+        "version": "layout_line_span_v1",
+        "status": "ok",
+        "assignment_method": "layout_line_span",
+        "include_labels": false,
+        "node_count": 96,
+        "changed_node_count": 96,
+        "structural_duplicate_node_count": 0,
+        "layout_anchor_count": 96,
+        "layout_anchor_missing_count": 0,
+        "layout_anchor_page_adjust_count": 0,
+        "title_offset_missing_count": 0,
+        "fallback_page_range_count": 0,
+        "invalid_page_range_count": 0,
+        "empty_text_after_split_count": 0,
+        "same_page_sibling_group_count": 12,
+        "exact_duplicate_text_group_count": 0,
+        "exact_duplicate_text_node_count": 0,
+        "layout_anchor_examples": [
+          {
+            "node_id": "0000",
+            "title": "二次元移动游戏体验评测分析报告",
+            "page": 1,
+            "line_index": 0,
+            "method": "layout_line_exact",
+            "line_text": "二次元移动游戏体验评测分析报告"
+          },
+          {
+            "node_id": "0001",
+            "title": "二次元移动游戏市场概况&体验指标分析",
+            "page": 3,
+            "line_index": 2,
+            "method": "layout_line_title_prefix",
+            "line_text": "二次元移 动游戏市"
+          },
+          {
+            "node_id": "0002",
+            "title": "二次元移动游戏的定义与特征",
+            "page": 4,
+            "line_index": 2,
+            "method": "layout_line_exact",
+            "line_text": "二次元移动游戏的定义与特征"
+          },
+          {
+            "node_id": "0003",
+            "title": "文化影响",
+            "page": 4,
+            "line_index": 7,
+            "method": "layout_line_exact",
+            "line_text": "文化影响"
+          },
+          {
+            "node_id": "0004",
+            "title": "核心塑造",
+            "page": 4,
+            "line_index": 12,
+            "method": "layout_line_exact",
+            "line_text": "核心塑造"
+          },
+          {
+            "node_id": "0005",
+            "title": "画面风格",
+            "page": 4,
+            "line_index": 14,
+            "method": "layout_line_exact",
+            "line_text": "画面风格"
+          },
+          {
+            "node_id": "0006",
+            "title": "游戏玩法",
+            "page": 4,
+            "line_index": 16,
+            "method": "layout_line_exact",
+            "line_text": "游戏玩法"
+          },
+          {
+            "node_id": "0007",
+            "title": "商业模式",
+            "page": 4,
+            "line_index": 18,
+            "method": "layout_line_exact",
+            "line_text": "商业模式"
+          },
+          {
+            "node_id": "0008",
+            "title": "玩家群体",
+            "page": 4,
+            "line_index": 20,
+            "method": "layout_line_exact",
+            "line_text": "玩家群体"
+          },
+          {
+            "node_id": "0009",
+            "title": "中国移动游戏市场主要二次元移动游戏产品汇总",
+            "page": 5,
+            "line_index": 2,
+            "method": "layout_line_exact",
+            "line_text": "中国移动游戏市场主要二次元移动游戏产品汇总"
+          }
+        ],
+        "layout_anchor_missing_examples": [],
+        "layout_anchor_page_adjust_examples": [],
+        "structural_duplicate_examples": [],
+        "title_offset_missing_examples": [],
+        "fallback_examples": [],
+        "invalid_page_range_examples": [],
+        "empty_text_examples": [],
+        "duplicate_text_examples": [],
+        "generated_at": "2026-06-25T02:57:17Z",
+        "layout_anchor_page_adjust_enabled": false,
+        "title_span_attempt": {
+          "version": "non_overlapping_title_span_v1",
+          "status": "ok",
+          "assignment_method": "title_span",
+          "node_count": 0,
+          "structural_duplicate_node_count": 0,
+          "layout_anchor_count": 0,
+          "layout_anchor_missing_count": 0,
+          "layout_anchor_page_adjust_count": 0,
+          "exact_duplicate_text_group_count": 0,
+          "exact_duplicate_text_node_count": 0,
+          "invalid_page_range_count": 0,
+          "empty_text_after_split_count": 0
+        },
+        "adjusted_layout_attempt": {
+          "version": "layout_line_span_v1",
+          "status": "ok",
+          "assignment_method": "layout_line_span",
+          "node_count": 96,
+          "structural_duplicate_node_count": 0,
+          "layout_anchor_count": 96,
+          "layout_anchor_missing_count": 0,
+          "layout_anchor_page_adjust_count": 0,
+          "exact_duplicate_text_group_count": 0,
+          "exact_duplicate_text_node_count": 0,
+          "invalid_page_range_count": 0,
+          "empty_text_after_split_count": 0
+        }
       }
     }
   ]

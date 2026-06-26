@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:57:13.226060+00:00",
+  "sequence": 60,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 3652,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 9中国移动游戏收入TOP榜.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 9中国移动游戏收入TOP榜\n非头部厂商唯一生存路径——在极度细分的赛道中做到绝对精准与创新\n来源：中国移动游戏产品收入是综合了点点数据、企业财报、专家访谈，根据点点数据统计模型核算所得。2025年中国移动游戏收入TOP榜（仅App Store）\n排名 icon 游戏名 厂商 2025年流水预估（亿元）\n1 王者荣耀 腾讯 172.34\n2 和平精英 腾讯 86.84\n3 地下城与勇士：起源 腾讯 50.98\n4 无尽冬日 点点互动 47.10\n5 三角洲行动 腾讯 45.68\n6 金铲铲之战 腾讯 38.48\n7 梦幻西游 网易 37.90\n8 穿越火线 腾讯 31.41\n9 火影忍者 腾讯 22.02\n10 英雄联盟手游 腾讯 20.73\n11 第五人格 网易 16.41\n12 恋与深空 叠纸游戏 16.09\n13 原神 米哈游 14.73\n14 向僵尸开炮 海南畅梦科技 14.53\n15 捕鱼大作战 途游游戏 13.732025年新入围榜单的4款游戏，它们的成功皆在于精准地捕捉并满足了某个特定用户群体未被充分满足的核心需求，并在玩法融合或题材表现上形成了足够的差异化壁垒。这些产\n品象征着市场在创新上的“毛细血管”仍未完全堵塞，行业仍保留着必要的多样性与活力；但这种模式难以驱动市场大盘增长，更多是巨头格局下的补充与点缀。\n排名 icon 游戏名\n1 王者荣耀\n2 和平精英\n3 地下城与勇士：起源\n4 金铲铲之战\n5 梦幻西游\n6 英雄联盟手游\n7 穿越火线\n8 逆水寒\n9 无尽冬日\n10 捕鱼大作战\n11 三国志·战略版\n12 原神\n13 崩坏：星穹铁道\n14 火影忍者\n15 第五人格2024年\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-639a009c-9734-995f-89b1-70eb456a8e97",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"9中国移动游戏收入TOP榜\" appears or starts in the given `page_text`.\nThe `page_text` starts with: \"© 2026 DianDian.All Rights Reserved. 9中国移动游戏收入TOP榜\\n非头部厂商唯一生存路径...\"\nThe section title exactly matches the text in the page.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nEverything matches.\nProceed. \nOutput matches exactly.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"9中国移动游戏收入TOP榜\" appears or starts in the given `page_text`.\nThe `page_text` starts with: \"© 2026 DianDian.All Rights Reserved. 9中国移动游戏收入TOP榜\\n非头部厂商唯一生存路径...\"\nThe section title exactly matches the text in the page.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nEverything matches.\nProceed. \nOutput matches exactly.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359837,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 168,
+      "prompt_tokens": 645,
+      "total_tokens": 813,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 152,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 168
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 645
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

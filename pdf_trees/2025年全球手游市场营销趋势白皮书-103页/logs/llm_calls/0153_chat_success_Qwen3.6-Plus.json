@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:55:10.711294+00:00",
+  "sequence": 153,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 24925,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.\n    The given page_text is 13\n产品玩法也是重度则 iOS端创意占比越高\n重度产品 iOS端素材占比超 32%手游素材各系统占比\n13.0%26.1%32.6%87.0%73.9%67.4%\n轻度 中度 重度FB系渠道 iOS端创意占比在 28%左右\nUnityAds 渠道Android 端广素材比最高为 93.5%热门渠道各系统素材占比\n28.0% 28.9%\n10.4%19.9%15.7% 17.7%\n6.5%50.7%72.0% 71.1%\n89.6%80.1%84.3% 82.3%\n93.5%49.3%游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上2025年 全球手游 各系统素材观察\nSource ：广大大，根据后台抓取后数据整理后展现\nDate Range ：2025/1~2025/12iOS\n22.7%\nAndroid\n77.3%各系统手游素材占比\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-38918112-0143-9952-914c-32f3a974fb00",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`\n   - **Page Text:** `13\\n产品玩法也是重度则 iOS端创意占比越高\\n重度产品 iOS端素材占比超 32%手游素材各系统占比\\n13.0%26.1%32.6%87.0%73.9%67.4%\\n轻度 中度 重度FB系渠道 iOS端创意占比在 28%左右\\nUnityAds 渠道Android 端广素材比最高为 93.5%热门渠道各系统素材占比\\n28.0% 28.9%\\n10.4%19.9%15.7% 17.7%\\n6.5%50.7%72.0% 71.1%\\n89.6%80.1%84.3% 82.3%\\n93.5%49.3%游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上2025年 全球手游 各系统素材观察\\nSource ：广大大，根据后台抓取后数据整理后展现\\nDate Range ：2025/1~2025/12iOS\\n22.7%\\nAndroid\\n77.3%各系统手游素材占比\\n.`\n   - **Output Format:** JSON `{\"answer\": \"yes\" or \"no\"}`\n\n2.  **Compare Section Title with Page Text:**\n   - Section Title: `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`\n   - Look for this exact or fuzzy match in the page text.\n   - Scanning the page text... I see: `游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上`\n   - Let's compare them carefully:\n     - Title: `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`\n     - Text: `游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上`\n   - Differences: Spaces around \"iOS端\", \"Android\", \"70%\". The title has a period at the end, the text doesn't (or it's followed by \"2025年...\").\n   - The prompt says: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\n   - The match is extremely close, essentially identical except for spaces and a trailing period.\n   - Therefore, it appears in the page text.\n\n3.  **Determine Output:**\n   - Answer should be \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Does the section appear or start in the page_text? Yes.\n   - Fuzzy matching applied? Yes.\n   - Output matches requested format? Yes.\n   - No extra text? Yes.\n   - Proceed. \n   - Output: `{\"answer\": \"yes\"}`✅\n   - Self-Correction/Verification during thought: The prompt says \"ignore any space inconsistency\". The text has `游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上`. The title is `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`. They match perfectly under fuzzy rules. So \"yes\" is correct.\n   - All constraints met. Output matches exactly.✅\n   - Generate response. \n   - `{\"answer\": \"yes\"}`\n   - Done. \n   - Output matches request. No extra text. Direct JSON.✅\n   - Proceeds. \n   - [Final Check of the Prompt]: \"Reply format: { \"answer\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n   - All good. \n   - Output Generation. \n   - `{\"answer\": \"yes\"}`\n   - (Note: I will make sure the JSON is strictly formatted as requested.) \n   - Ready. \n   - [Output Generation] -> `{\"answer\": \"yes\"}`\n   - (Self-Correction/Refinement during thought: Should I include the period in the match? The prompt says \"ignore space inconsistency\", but the period is punctuation. It's fine, fuzzy matching covers it. The text clearly contains the exact phrase.)\n   - Final decision: yes.✅\n   - Output matches.✅\n   - Proceeds. \n   - `{\"answer\": \"yes\"}`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`\n   - **Page Text:** `13\\n产品玩法也是重度则 iOS端创意占比越高\\n重度产品 iOS端素材占比超 32%手游素材各系统占比\\n13.0%26.1%32.6%87.0%73.9%67.4%\\n轻度 中度 重度FB系渠道 iOS端创意占比在 28%左右\\nUnityAds 渠道Android 端广素材比最高为 93.5%热门渠道各系统素材占比\\n28.0% 28.9%\\n10.4%19.9%15.7% 17.7%\\n6.5%50.7%72.0% 71.1%\\n89.6%80.1%84.3% 82.3%\\n93.5%49.3%游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上2025年 全球手游 各系统素材观察\\nSource ：广大大，根据后台抓取后数据整理后展现\\nDate Range ：2025/1~2025/12iOS\\n22.7%\\nAndroid\\n77.3%各系统手游素材占比\\n.`\n   - **Output Format:** JSON `{\"answer\": \"yes\" or \"no\"}`\n\n2.  **Compare Section Title with Page Text:**\n   - Section Title: `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`\n   - Look for this exact or fuzzy match in the page text.\n   - Scanning the page text... I see: `游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上`\n   - Let's compare them carefully:\n     - Title: `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`\n     - Text: `游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上`\n   - Differences: Spaces around \"iOS端\", \"Android\", \"70%\". The title has a period at the end, the text doesn't (or it's followed by \"2025年...\").\n   - The prompt says: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\n   - The match is extremely close, essentially identical except for spaces and a trailing period.\n   - Therefore, it appears in the page text.\n\n3.  **Determine Output:**\n   - Answer should be \"yes\".\n   - Format: `{\"answer\": \"yes\"}`\n\n4.  **Final Check:**\n   - Does the section appear or start in the page_text? Yes.\n   - Fuzzy matching applied? Yes.\n   - Output matches requested format? Yes.\n   - No extra text? Yes.\n   - Proceed. \n   - Output: `{\"answer\": \"yes\"}`✅\n   - Self-Correction/Verification during thought: The prompt says \"ignore any space inconsistency\". The text has `游戏玩法越重度则 iOS端素材创意占比越高，主流渠道 Android 素材占比大部分在 70%以上`. The title is `游戏玩法越重度则iOS端素材创意占比越高，主流渠道Android素材占比大部分在70%以上.`. They match perfectly under fuzzy rules. So \"yes\" is correct.\n   - All constraints met. Output matches exactly.✅\n   - Generate response. \n   - `{\"answer\": \"yes\"}`\n   - Done. \n   - Output matches request. No extra text. Direct JSON.✅\n   - Proceeds. \n   - [Final Check of the Prompt]: \"Reply format: { \"answer\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n   - All good. \n   - Output Generation. \n   - `{\"answer\": \"yes\"}`\n   - (Note: I will make sure the JSON is strictly formatted as requested.) \n   - Ready. \n   - [Output Generation] -> `{\"answer\": \"yes\"}`\n   - (Self-Correction/Refinement during thought: Should I include the period in the match? The prompt says \"ignore space inconsistency\", but the period is punctuation. It's fine, fuzzy matching covers it. The text clearly contains the exact phrase.)\n   - Final decision: yes.✅\n   - Output matches.✅\n   - Proceeds. \n   - `{\"answer\": \"yes\"}`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359715,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1106,
+      "prompt_tokens": 443,
+      "total_tokens": 1549,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1095,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1106
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 443
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

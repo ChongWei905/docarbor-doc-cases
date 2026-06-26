@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:02:42.225300+00:00",
+  "sequence": 306,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 7262,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年全球手游市场营销趋势白皮书.\n    The given page_text is 1\n2025年全球手游市场\n营销趋势白皮书\n2025 GLOBAL MOBILE GAME MARKETING TRENDS WHITE PAPER\n广大大数据研究院 x Singular x Aarki 数据支持：\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-dfb5d745-dd9f-9a3d-845a-43222e6a3eaa",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年全球手游市场营销趋势白皮书\" starts at the beginning of the given `page_text`.\nThe `page_text` is:\n\"1\n2025年全球手游市场\n营销趋势白皮书\n2025 GLOBAL MOBILE GAME MARKETING TRENDS WHITE PAPER\n广大大数据研究院 x Singular x Aarki 数据支持：\n.\"\n\nThe section title is \"2025年全球手游市场营销趋势白皮书\".\nIn the `page_text`, the first line is \"1\".\nThen comes \"2025年全球手游市场\\n营销趋势白皮书\".\nSince there is a \"1\" before the section title, the section does not start at the beginning of the page_text.\nTherefore, `start_begin` should be \"no\".\n\nWait, let's check carefully. The prompt says: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\nThe `page_text` starts with \"1\\n2025年...\". So there is \"1\" before it.\nThus, `start_begin` is \"no\".\n\nI will output the JSON as requested.\nFormat:\n{\n    \"start_begin\": \"no\"\n}\nDone. \nCheck fuzzy matching: The title is split across two lines in the text, but the prompt says \"ignore any space inconsistency\". However, the presence of \"1\" at the very beginning clearly means it doesn't start at the beginning.\nSo \"no\" is correct.\nOutput matches requirement.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年全球手游市场营销趋势白皮书\" starts at the beginning of the given `page_text`.\nThe `page_text` is:\n\"1\n2025年全球手游市场\n营销趋势白皮书\n2025 GLOBAL MOBILE GAME MARKETING TRENDS WHITE PAPER\n广大大数据研究院 x Singular x Aarki 数据支持：\n.\"\n\nThe section title is \"2025年全球手游市场营销趋势白皮书\".\nIn the `page_text`, the first line is \"1\".\nThen comes \"2025年全球手游市场\\n营销趋势白皮书\".\nSince there is a \"1\" before the section title, the section does not start at the beginning of the page_text.\nTherefore, `start_begin` should be \"no\".\n\nWait, let's check carefully. The prompt says: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\nThe `page_text` starts with \"1\\n2025年...\". So there is \"1\" before it.\nThus, `start_begin` is \"no\".\n\nI will output the JSON as requested.\nFormat:\n{\n    \"start_begin\": \"no\"\n}\nDone. \nCheck fuzzy matching: The title is split across two lines in the text, but the prompt says \"ignore any space inconsistency\". However, the presence of \"1\" at the very beginning clearly means it doesn't start at the beginning.\nSo \"no\" is correct.\nOutput matches requirement.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360166,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 355,
+      "prompt_tokens": 274,
+      "total_tokens": 629,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 338,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 355
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 274
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:42:48.163932+00:00",
+  "sequence": 60,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 6795,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 全球手游全链路增长策略指南.\n    The given page_text is 39\n2026  MOBILE GAMES FULL -FUNNEL FRAMEWORK全球手游\n全链路增长策略指南04\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-7cef1ee6-80d2-92a5-8baf-1c0a88716285",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"全球手游全链路增长策略指南\" starts at the beginning of the given page_text.\nThe page_text is:\n\"39\n2026  MOBILE GAMES FULL -FUNNEL FRAMEWORK全球手游\n全链路增长策略指南04\n.\"\n\nThe section title is \"全球手游全链路增长策略指南\".\nIn the page_text, it appears as \"全球手游\\n全链路增长策略指南04\".\nBefore this title, there is \"39\\n2026  MOBILE GAMES FULL -FUNNEL FRAMEWORK\".\nSo the section title is NOT at the beginning of the page_text.\nTherefore, \"start_begin\" should be \"no\".\n\nCheck format:\n{\n    \"start_begin\": \"no\"\n}\nDirectly return JSON.\nDone. \nWait, let's verify carefully.\nPage text starts with \"39\\n2026 MOBILE GAMES...\".\nThe title is \"全球手游全链路增长策略指南\".\nIt appears later in the text.\nSo it does not start at the beginning.\nResult: no.\nMatches instructions.\nOutput JSON. \nProceed. \nNo extra text.\nDone. \nOutput matches exactly. \nFinal check of the prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" -> Yes, there is content before it.\nSo \"no\".\nDone. \nOutput: {\"start_begin\": \"no\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"全球手游全链路增长策略指南\" starts at the beginning of the given page_text.\nThe page_text is:\n\"39\n2026  MOBILE GAMES FULL -FUNNEL FRAMEWORK全球手游\n全链路增长策略指南04\n.\"\n\nThe section title is \"全球手游全链路增长策略指南\".\nIn the page_text, it appears as \"全球手游\\n全链路增长策略指南04\".\nBefore this title, there is \"39\\n2026  MOBILE GAMES FULL -FUNNEL FRAMEWORK\".\nSo the section title is NOT at the beginning of the page_text.\nTherefore, \"start_begin\" should be \"no\".\n\nCheck format:\n{\n    \"start_begin\": \"no\"\n}\nDirectly return JSON.\nDone. \nWait, let's verify carefully.\nPage text starts with \"39\\n2026 MOBILE GAMES...\".\nThe title is \"全球手游全链路增长策略指南\".\nIt appears later in the text.\nSo it does not start at the beginning.\nResult: no.\nMatches instructions.\nOutput JSON. \nProceed. \nNo extra text.\nDone. \nOutput matches exactly. \nFinal check of the prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\" -> Yes, there is content before it.\nSo \"no\".\nDone. \nOutput: {\"start_begin\": \"no\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355372,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 347,
+      "prompt_tokens": 257,
+      "total_tokens": 604,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 330,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 347
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 257
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

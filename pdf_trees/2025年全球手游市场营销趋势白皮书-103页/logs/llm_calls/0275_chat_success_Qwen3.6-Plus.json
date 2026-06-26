@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:01:11.247636+00:00",
+  "sequence": 275,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 11822,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年手游热门广告主营销洞察07.\n    The given page_text is 84\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年手游\n热门广告主营销洞察07\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-b134ab74-02bc-9911-bfb3-6676bbcf5d9b",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年手游热门广告主营销洞察07\" appears or starts in the given page_text.\nThe page_text is:\n\"84\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年手游\n热门广告主营销洞察07\n.\"\n\nLet's normalize the page_text by removing spaces/newlines:\n\"842025GLOBALMOBILEGAMEMARKETINGTRENDINSIGHTS2025年手游热门广告主营销洞察07.\"\n\nThe section title normalized:\n\"2025GLOBALMOBILEGAMEMARKETINGTRENDINSIGHTS2025年手游热门广告主营销洞察07\"\n\nComparing them:\nThe page_text contains exactly the section title (ignoring the \"84\" at the beginning and the newline/space differences).\n\"2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年手游\\n热门广告主营销洞察07\" matches the title.\nSo the answer should be \"yes\".\n\nCheck format:\n{\n    \"answer\": \"yes\"\n}\nDone. \nI will output exactly this JSON.\nNo extra text.\nProceed. \nSelf-Correction/Verification:\nTitle: \"2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年手游热门广告主营销洞察07\"\nPage text: \"84\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年手游\\n热门广告主营销洞察07\\n.\"\nIgnoring spaces/newlines, the title is present.\nAnswer: yes.\nFormat matches requirement.\nReady. \nOutput matches exactly. \nProceeds. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nWait, the prompt says \"Reply format: { \"answer\": \"yes or no\" }\". I will just output that JSON.\nDone. \nAll steps verified. \nOutput matches. \nProceeds. \n[Final Check]\nSection: 2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年手游热门广告主营销洞察07\nPage: 84\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年手游\\n热门广告主营销洞察07\\n.\nMatches exactly when ignoring spaces/newlines.\nAnswer: yes.\nJSON: {\"answer\": \"yes\"}\nDone. \nOutput matches request. \nProceeds. \n[Output Generation] -> {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年手游热门广告主营销洞察07\" appears or starts in the given page_text.\nThe page_text is:\n\"84\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年手游\n热门广告主营销洞察07\n.\"\n\nLet's normalize the page_text by removing spaces/newlines:\n\"842025GLOBALMOBILEGAMEMARKETINGTRENDINSIGHTS2025年手游热门广告主营销洞察07.\"\n\nThe section title normalized:\n\"2025GLOBALMOBILEGAMEMARKETINGTRENDINSIGHTS2025年手游热门广告主营销洞察07\"\n\nComparing them:\nThe page_text contains exactly the section title (ignoring the \"84\" at the beginning and the newline/space differences).\n\"2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年手游\\n热门广告主营销洞察07\" matches the title.\nSo the answer should be \"yes\".\n\nCheck format:\n{\n    \"answer\": \"yes\"\n}\nDone. \nI will output exactly this JSON.\nNo extra text.\nProceed. \nSelf-Correction/Verification:\nTitle: \"2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年手游热门广告主营销洞察07\"\nPage text: \"84\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年手游\\n热门广告主营销洞察07\\n.\"\nIgnoring spaces/newlines, the title is present.\nAnswer: yes.\nFormat matches requirement.\nReady. \nOutput matches exactly. \nProceeds. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nWait, the prompt says \"Reply format: { \"answer\": \"yes or no\" }\". I will just output that JSON.\nDone. \nAll steps verified. \nOutput matches. \nProceeds. \n[Final Check]\nSection: 2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS 2025年手游热门广告主营销洞察07\nPage: 84\\n2025 GLOBAL MOBILE GAME MARKETING TREND INSIGHTS2025年手游\\n热门广告主营销洞察07\\n.\nMatches exactly when ignoring spaces/newlines.\nAnswer: yes.\nJSON: {\"answer\": \"yes\"}\nDone. \nOutput matches request. \nProceeds. \n[Output Generation] -> {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360075,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 604,
+      "prompt_tokens": 200,
+      "total_tokens": 804,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 588,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 604
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 200
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

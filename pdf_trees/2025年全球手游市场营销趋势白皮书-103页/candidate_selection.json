@@ -7,23 +7,23 @@
   "outline_error_message": null,
   "toc_assessment": {
     "confidence": "low",
-    "score": 0.6,
+    "score": 0.4,
     "candidate_pages": [
       6
     ],
     "toc_page_number": 6,
-    "outline_entry_count": 8,
-    "mapped_entry_ratio": 0.5,
+    "outline_entry_count": 7,
+    "mapped_entry_ratio": 0.429,
     "distinct_level_count": 1,
     "numbered_entry_ratio": 0.0,
-    "page_span": 62,
+    "page_span": 0,
     "has_explicit_toc_title": true
   },
   "outline_quality_assessment": {
-    "quality": "medium",
-    "entry_count": 8,
-    "outline_entry_count": 8,
-    "mapped_entry_ratio": 0.5,
+    "quality": "low",
+    "entry_count": 7,
+    "outline_entry_count": 7,
+    "mapped_entry_ratio": 0.42857142857142855,
     "hierarchy_signal": false,
     "section_parent_count": 0,
     "low_quality_count": 0,
@@ -31,6 +31,7 @@
     "section_like_count": 0,
     "low_quality_titles": [],
     "reasons": [
+      "weak_page_mapping",
       "no_hierarchy_signal",
       "low_noise_outline"
     ]
@@ -68,7 +69,7 @@
         "active_item": null,
         "resolved_active_key": null,
         "confidence": "high",
-        "reason": "This is a traditional front table-of-contents page listing all sections (1-7 and special thanks) at once, with a footer instruction to click to jump, rather than a repeated navigation page highlighting a single current section.",
+        "reason": "This is a traditional front table-of-contents page listing all chapters (1-7) and a final section uniformly. It does not visually emphasize a single current item to indicate a specific section, fitting the exclusion criteria for a repeated catalogue page.",
         "accepted": false,
         "rejection_reason": "not_catalog_repeat"
       }
@@ -194,7 +195,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "This is the main title page of the report, featuring a large prominent title and subtitle with no body content, functioning as the primary section header for the document.",
+        "reason": "The page features a large, prominent title '2025年全球手游市场 营销趋势白皮书' (2025 Global Mobile Game Marketing Trends White Paper) centered on the page with a background image and logos, characteristic of a cover page or main section opener.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -266,7 +267,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains multiple paragraphs of descriptive text explaining the platform's features and coverage, along with key statistics, functioning as an informational or 'About Us' page rather than a section divider.",
+        "reason": "The page contains multiple paragraphs of descriptive text about the company 'SocialPeta' and key statistics (600万, 17亿, 120万), resembling an 'About Us' or company introduction page rather than a section divider with a single prominent title.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -305,7 +306,7 @@
         "level": 1,
         "ordinal": "01",
         "confidence": "high",
-        "reason": "The page displays a large chapter number '01' and a prominent title block, clearly marking the beginning of a new major section.",
+        "reason": "The page features a large chapter number '01' and a prominent, centered title block, which is characteristic of a major section divider or chapter opener.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -344,7 +345,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page features a single large, prominent title '一线洞察' (Frontline Insights) with a subtitle listing specific companies, which is characteristic of a section divider introducing a new major topic.",
+        "reason": "The page features a single large, prominent title '一线洞察' with a subtitle listing specific companies, characteristic of a section opener introducing a new topic or case studies.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -412,11 +413,11 @@
           }
         ],
         "role": "not_divider",
-        "title": null,
+        "title": "NEOCRAFT",
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body text, including an introductory paragraph, four detailed bullet points with headers, and a concluding paragraph. This density of information characterizes it as a normal body page (likely a company profile or strategy overview) rather than a sparse section divider page.",
+        "reason": "The page contains substantial body text, multiple bullet points with detailed descriptions, and paragraphs, which characterizes it as a normal body content page rather than a section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -455,7 +456,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body text, multiple paragraphs, and bullet points detailing the company's strategy and products, which classifies it as a normal body page rather than a sparse section divider.",
+        "reason": "The page contains substantial body text, including multiple paragraphs and bullet points detailing the company's strategy and products, which classifies it as a normal body page (company profile) rather than a sparse section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -494,7 +495,7 @@
         "level": 1,
         "ordinal": "1",
         "confidence": "high",
-        "reason": "The page features a large chapter number '1' and a prominent title '游艺春秋', indicating it is a chapter opener, despite containing introductory text.",
+        "reason": "The page features a prominent number '1' and a large title '游艺春秋', indicating the start of a major section or chapter, despite containing introductory body text.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -540,11 +541,11 @@
           }
         ],
         "role": "section_divider",
-        "title": "2025年全球手游热门榜单 TOP GLOBAL MOBILE GAMES OF 2025",
+        "title": "2025年全球手游热门榜单",
         "level": 1,
         "ordinal": "02",
         "confidence": "high",
-        "reason": "Page features a large chapter number '02' and a prominent title introducing a new section.",
+        "reason": "The page features a large section number '02' and a prominent, centered title '2025年全球手游 热门榜单' (Top Global Mobile Games of 2025) overlaid on a background image, which is characteristic of a major section divider or chapter opener.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -583,7 +584,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "Page features a single large, prominent title '媒体声音' with a subtitle, characteristic of a section divider.",
+        "reason": "The page features a large, prominent title '媒体声音' with a subtitle, typical of a section opener introducing a new topic.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -622,7 +623,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body text (three paragraphs) analyzing market trends and future predictions, which classifies it as a normal body page rather than a section divider.",
+        "reason": "The page contains substantial body text (three paragraphs) discussing industry trends and forecasts, fitting the criteria for a normal body page (specifically a media contribution page) rather than a section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -683,7 +684,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains multiple paragraphs of detailed body text analyzing the 2025 game market, which characterizes it as a normal body content page rather than a section divider.",
+        "reason": "The page contains multiple paragraphs of body text analyzing the game market, making it a normal content page rather than a section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -729,11 +730,11 @@
           }
         ],
         "role": "section_divider",
-        "title": "2025年游戏获客：真实变革何在 GAMING USER ACQUISITION IN 2025: WHAT ACTUALLY CHANGED",
+        "title": "2025年游戏获客：真实变革何在",
         "level": 1,
         "ordinal": "03",
         "confidence": "high",
-        "reason": "Page features a large section number '03' and a prominent title overlaying a background image, typical of a chapter opener.",
+        "reason": "The page features a large chapter number '03' and a prominent title with a subtitle, characteristic of a major section divider.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -783,7 +784,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "Page contains multiple paragraphs of body text and a large illustration, fitting the description of a normal body page rather than a sparse section divider.",
+        "reason": "The page contains multiple paragraphs of body text and a large illustration, fitting the description of a normal body page (specifically an introductory content page) rather than a sparse section divider or chapter opener.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -844,7 +845,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains multiple substantial paragraphs of body text analyzing quarterly trends and market factors, which classifies it as a normal body page (specifically an introductory or summary page) rather than a sparse section divider.",
+        "reason": "The page contains multiple paragraphs of body text detailing quarterly trends and analysis, which classifies it as a normal body page rather than a sparse section divider or chapter opener.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -916,7 +917,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body text, bullet points, and informational graphics comparing Android and iOS, classifying it as a normal body content page rather than a section divider.",
+        "reason": "The page contains detailed body text, bullet points, and comparison graphics, indicating it is a normal content page rather than a section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -984,11 +985,11 @@
           }
         ],
         "role": "not_divider",
-        "title": "2025年游戏营销者的启示：迈向2026年的关键洞察",
+        "title": null,
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body content consisting of three numbered points with detailed explanatory text and a large illustration, characterizing it as a summary or content page rather than a sparse section divider.",
+        "reason": "The page contains a detailed numbered list of three key points (body content) summarizing insights, rather than serving as a sparse transition or title page for a new section.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1038,7 +1039,7 @@
         "level": 1,
         "ordinal": "04",
         "confidence": "high",
-        "reason": "The page features a large chapter number '04' and a prominent title stack overlaying a background image, which is characteristic of a major section divider.",
+        "reason": "The page features a large chapter number '04' and a prominent, centered title stack, clearly functioning as a transition to a new major section.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -1110,7 +1111,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page features a large, prominent title and introductory text that explicitly mentions 'In this chapter' (在本章节中), indicating it serves as a chapter opener or section divider introducing a new major topic.",
+        "reason": "The page features a large, prominent title and subtitle at the top, followed by introductory text starting with 'In this chapter...', indicating it is a chapter opener or major section divider.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -1160,7 +1161,7 @@
         "level": 1,
         "ordinal": "05",
         "confidence": "high",
-        "reason": "The page features a large chapter number '05' and a prominent title overlaying a background image, which is characteristic of a major section divider.",
+        "reason": "Page features a large chapter number '05' and a prominent title overlay, characteristic of a section divider.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -1232,7 +1233,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains detailed content including three example images, lists of gameplay types, common material tropes, and future trends, along with a specific caption at the bottom. It is a standard body page analyzing a topic, not a transition or title page.",
+        "reason": "This is a content body page (page 55) containing detailed analysis, images, and bullet points about strategy game ad creatives, rather than a simple section title page.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1304,7 +1305,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "This is a content-heavy body page featuring game ad examples, lists of popular gameplay, material tropes, and trend analysis, rather than a sparse transition or divider page.",
+        "reason": "This is a content page containing detailed analysis, lists of gameplay types, common creative tropes, future trends, and three example images. It is a normal body page, not a sparse transition or divider page.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1376,7 +1377,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains detailed content including game screenshots, lists of popular gameplay, common material tropes, and future trends, along with a source citation and page number (59). This indicates it is a normal body page presenting analysis rather than a section divider.",
+        "reason": "This is a content-rich body page containing game screenshots, detailed text analysis of gameplay trends, and specific examples, rather than a sparse transition page.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1448,7 +1449,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "This is a content page containing detailed text, lists, and images explaining specific strategies ('Popular gameplay', 'Common material routines'), rather than a standalone section divider.",
+        "reason": "This is a content body page featuring detailed analysis, three example images, and a sidebar with bullet points about gameplay and trends, rather than a sparse transition page.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1520,7 +1521,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body content including bullet points, detailed text analysis, and multiple example images, fitting the description of a normal body page rather than a sparse section divider.",
+        "reason": "This is a content page containing detailed analysis, images of game ads, and text blocks describing gameplay and creative trends, rather than a standalone section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1592,7 +1593,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body content including multiple images, detailed text descriptions of strategies, routines, and trends, which characterizes it as a normal body page rather than a sparse section divider.",
+        "reason": "This is a normal body page containing detailed content, including three example images, bullet points on popular gameplay, common material tropes, and future creative trends, rather than a sparse transition page.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1631,7 +1632,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page features a single, very large prominent title '媒体声音' with a smaller subtitle below it, and ample white space, which is characteristic of a section divider or chapter opener.",
+        "reason": "The page features a large, prominent title '媒体声音' (Media Voice) with a subtitle and a supporting image, which is characteristic of a section divider or chapter opener.",
         "accepted": false,
         "rejection_reason": "duplicate_title"
       },
@@ -1666,11 +1667,11 @@
           }
         ],
         "role": "not_divider",
-        "title": "白鲸出海",
+        "title": null,
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body text consisting of five paragraphs analyzing market trends (SLG, Merge games), which classifies it as a normal body page rather than a section divider.",
+        "reason": "The page contains substantial body text with multiple paragraphs discussing market trends (SLG, Merge games), fitting the description of a normal body page rather than a sparse section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1709,7 +1710,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains multiple paragraphs of dense body text below the title, characterizing it as a normal body content page rather than a section divider.",
+        "reason": "The page contains substantial body text consisting of multiple paragraphs, which classifies it as a content page (likely an article or foreword) rather than a section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1737,7 +1738,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body text (four paragraphs) summarizing market data, trends, and revenue figures, which characterizes it as an executive summary or body page rather than a sparse section divider.",
+        "reason": "The page contains multiple substantial paragraphs of text with specific data points and analysis, fitting the exclusion criteria for 'normal body pages with paragraphs' rather than a simple section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1787,7 +1788,7 @@
         "level": 1,
         "ordinal": "06",
         "confidence": "high",
-        "reason": "Page features a large chapter number '06' and a prominent centered title stack, characteristic of a major section opener.",
+        "reason": "Page features a large chapter number '06' and a prominent title overlaying a background image, typical of a section divider.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -1826,7 +1827,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page features a single large, prominent title '媒体声音' (Media Voice) with a subtitle listing specific media sources, characteristic of a section divider introducing a new topic.",
+        "reason": "The page features a large, prominent title '媒体声音' (Media Voice) with a subtitle listing specific media sources, typical of a section opener introducing a new topic.",
         "accepted": false,
         "rejection_reason": "duplicate_title"
       },
@@ -1854,7 +1855,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains multiple paragraphs of body text discussing industry trends (mobile games, AI, PC games), which characterizes it as a normal body content page (likely an opinion piece or column) rather than a section divider.",
+        "reason": "The page contains substantial body text (five paragraphs) analyzing industry trends, games, and AI, which characterizes it as a normal body content page (likely a column or article) rather than a sparse section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1922,11 +1923,11 @@
           }
         ],
         "role": "not_divider",
-        "title": null,
+        "title": "龙虾游戏推荐",
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains a main title followed by a subtitle and a detailed numbered list of 7 specific points/observations. This density of content identifies it as a body page (likely a summary or key takeaways slide) rather than a simple section divider page.",
+        "reason": "The page contains a detailed numbered list of 7 points/observations, functioning as a content summary or agenda page rather than a simple section divider which typically features only a title.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1965,7 +1966,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body text consisting of three paragraphs discussing 2025/2026 trends, which classifies it as a normal body page rather than a section divider.",
+        "reason": "The page contains substantial body text (three paragraphs) detailing industry trends and analysis, which fits the definition of a normal body page rather than a sparse section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -1993,7 +1994,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains a prominent title but is followed by four substantial paragraphs of body text detailing industry insights, fitting the description of a normal body page rather than a sparse section divider.",
+        "reason": "The page contains a large title but is primarily filled with four paragraphs of body text describing AI in the gaming industry, fitting the criteria for a normal body page rather than a sparse section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -2043,7 +2044,7 @@
         "level": 1,
         "ordinal": "07",
         "confidence": "high",
-        "reason": "Page features a large chapter number '07' and a prominent title overlay, indicating a new section.",
+        "reason": "Page features a large chapter number '07' and a prominent title overlay, characteristic of a section divider.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -2115,7 +2116,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "This is a normal body page containing detailed analysis of a specific ad creative, including descriptive paragraphs, specific metrics (impressions, popularity), and a visual mockup, rather than a section divider.",
+        "reason": "This is a detailed analysis page for a specific ad creative (MapleStory: Idle RPG), containing body text, metrics (impressions, popularity), and a visual mockup, rather than a section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -2187,7 +2188,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains detailed body content including specific ad metrics (impressions, popularity), descriptive text about creative features, and a visual example of an ad, indicating it is a content/analysis page rather than a section divider.",
+        "reason": "This is a detailed body page (page 90) presenting a specific case study for 'Gossip Harbor'. It contains substantial body text describing ad creatives, specific metrics (4.75 million impressions), and a visual example, rather than serving as a simple transition or title page.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -2259,7 +2260,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "This is a detailed body page analyzing a specific ad creative ('Kingshot'), featuring descriptive text, specific metrics (impressions, popularity), and a visual example of the ad. It is not a section divider.",
+        "reason": "This is a normal body page (page 92) presenting a specific case study of an ad creative ('Kingshot'), containing detailed text descriptions, metrics (impressions, popularity), and a visual example, rather than a section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -2359,7 +2360,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains detailed body text, an introductory paragraph, and two numbered sections with sub-points, characteristic of a normal body content page or executive summary rather than a section divider.",
+        "reason": "The page contains a substantial introductory paragraph and a detailed numbered list of subsections (I and II) with bullet points, functioning as a content summary or body page rather than a sparse section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -2398,7 +2399,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page features a large, prominent title 'ToBid' and acts as an introduction to a major section (indicated by the 'Exclusive Perspective' watermark and partner logos), functioning as a section opener despite containing introductory body text.",
+        "reason": "The page features a very large, prominent title 'ToBid' followed by a subtitle and introductory paragraphs, which is characteristic of a section divider or chapter opener introducing a major section or sponsor profile.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -2448,7 +2449,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body text, including an introductory paragraph and two numbered subsections with detailed content, indicating it is a content page (expert viewpoint) rather than a section divider.",
+        "reason": "The page contains substantial body text, an introductory paragraph, and numbered subsections (一, 二) with detailed content, indicating it is a normal body page (likely an expert opinion or interview) rather than a section divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -2483,11 +2484,11 @@
           }
         ],
         "role": "section_divider",
-        "title": "致谢 & 报告说明",
+        "title": "致谢 & 报告说明 SPECIAL THANKS & REPORT DESCRIPTION",
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page features a large, prominent title '致谢 & 报告说明' (Special Thanks & Report Description) with a subtitle, styled clearly as a section opener.",
+        "reason": "The page features a large, prominent title block '致谢 & 报告说明' with an English subtitle, clearly marking the start of a specific section for acknowledgments and report methodology.",
         "accepted": true,
         "rejection_reason": null
       },
@@ -2559,7 +2560,7 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "The page contains substantial body paragraphs, detailed statistics (320 games, 150 partners, 29M downloads), and multiple game images, functioning as a content page (company profile) rather than a simple transition or title page.",
+        "reason": "The page contains substantial body text, detailed statistics (320 games, 150 partners, etc.), and multiple images, functioning as an informational company profile page rather than a simple transition or title page.",
         "accepted": false,
         "rejection_reason": "not_divider"
       },
@@ -2598,12 +2599,11 @@
         "level": 1,
         "ordinal": null,
         "confidence": "high",
-        "reason": "This is a 'Special Thanks' (credits) page listing a grid of partner logos. It is a content page for acknowledgments, not a transition divider page.",
+        "reason": "This is a credits/acknowledgements page listing partner logos, which falls under the exclusion for credits pages. It contains the content of the section rather than serving as a transition divider.",
         "accepted": false,
         "rejection_reason": "not_divider"
       }
     ],
-    "exhibit_pages": [],
     "ready": true
   },
   "route_decision": {
@@ -2613,62 +2613,105 @@
       "layout_fallback",
       "minimal_fallback"
     ],
-    "decision_reason": "divider_pages_provide_best_available_outline",
-    "has_many_exhibits": false,
-    "exhibit_pages": []
+    "decision_reason": "divider_pages_provide_best_available_outline"
   },
   "attempts": [
     {
       "strategy": "divider_seeded",
       "status": "success",
-      "score": 100.214,
+      "score": 107.791,
       "score_breakdown": {
         "non_empty": 30.0,
-        "page_coverage": 17.134,
+        "page_coverage": 16.789,
         "depth": 24.0,
         "internal_nodes": 16.0,
-        "root_shape": 11.032,
-        "heading_alignment": 6.322,
-        "numbering": 0.0,
-        "title_uniqueness": 7.226,
+        "root_shape": 11.006,
+        "heading_alignment": 6.276,
+        "numbering": 2.25,
+        "title_uniqueness": 7.47,
         "penalty_flat": 0.0,
         "penalty_shallow": 0.0,
         "penalty_root_explosion": -0.0,
         "penalty_noise_roots": -0.0,
         "penalty_garbled_roots": -0.0,
         "penalty_bad_roots": -0.0,
-        "penalty_duplicates": -9.0,
-        "penalty_backtrack": -2.5
+        "penalty_duplicates": -6.0,
+        "penalty_backtrack": -0.0
       },
       "metrics": {
         "root_count": 15,
-        "node_count": 186,
-        "max_depth": 4,
+        "node_count": 181,
+        "max_depth": 5,
         "depth_histogram": {
           "1": 15,
-          "2": 43,
-          "3": 75,
-          "4": 53
+          "2": 40,
+          "3": 65,
+          "4": 46,
+          "5": 15
         },
-        "unique_page_count": 99,
-        "page_coverage_ratio": 0.9519,
-        "duplicate_title_count": 18,
-        "title_uniqueness_ratio": 0.9032,
-        "heading_alignment_ratio": 0.7903,
-        "numbered_consistency_ratio": 0.0,
-        "page_backtrack_count": 1,
+        "unique_page_count": 97,
+        "page_coverage_ratio": 0.9327,
+        "duplicate_title_count": 12,
+        "title_uniqueness_ratio": 0.9337,
+        "heading_alignment_ratio": 0.7845,
+        "numbered_consistency_ratio": 0.375,
+        "page_backtrack_count": 0,
         "noise_root_count": 0,
         "garbled_root_count": 0,
         "low_quality_root_count": 0,
         "bad_root_count": 0,
-        "internal_node_count": 47
+        "internal_node_count": 49
       },
       "artifact_paths": {
-        "raw_tree_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\docarbor_raw.json",
-        "result_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\result.json",
-        "report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\report.json",
-        "summary_report_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\summary_report.json",
-        "build_outline_json": "D:\\code\\semantic-construct\\0630转测\\results\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\build_outline.json"
+        "raw_tree_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\docarbor_raw.json",
+        "result_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\result.json",
+        "report_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\report.json",
+        "text_assignment_report_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\text_assignment_report.json",
+        "summary_report_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\summary_report.json",
+        "build_outline_json": "D:\\code\\semantic-construct\\md_and_pdf\\pdf_result_final\\2025年全球手游市场营销趋势白皮书-103页\\candidate_trees\\divider_seeded\\build_outline.json"
+      },
+      "text_assignment": {
+        "version": "non_overlapping_title_span_v1",
+        "status": "ok",
+        "assignment_method": "title_span_after_layout_fallback",
+        "include_labels": false,
+        "node_count": 0,
+        "changed_node_count": 167,
+        "structural_duplicate_node_count": 0,
+        "layout_anchor_count": 0,
+        "layout_anchor_missing_count": 0,
+        "layout_anchor_page_adjust_count": 0,
+        "title_offset_missing_count": 0,
+        "fallback_page_range_count": 0,
+        "invalid_page_range_count": 0,
+        "empty_text_after_split_count": 0,
+        "same_page_sibling_group_count": 19,
+        "exact_duplicate_text_group_count": 0,
+        "exact_duplicate_text_node_count": 0,
+        "layout_anchor_examples": [],
+        "layout_anchor_missing_examples": [],
+        "layout_anchor_page_adjust_examples": [],
+        "structural_duplicate_examples": [],
+        "title_offset_missing_examples": [],
+        "fallback_examples": [],
+        "invalid_page_range_examples": [],
+        "empty_text_examples": [],
+        "duplicate_text_examples": [],
+        "generated_at": "2026-06-25T04:14:47Z",
+        "layout_attempt": {
+          "version": "layout_line_span_v1",
+          "status": "ok",
+          "assignment_method": "layout_line_span",
+          "node_count": 181,
+          "structural_duplicate_node_count": 1,
+          "layout_anchor_count": 180,
+          "layout_anchor_missing_count": 1,
+          "layout_anchor_page_adjust_count": 0,
+          "exact_duplicate_text_group_count": 0,
+          "exact_duplicate_text_node_count": 0,
+          "invalid_page_range_count": 0,
+          "empty_text_after_split_count": 0
+        }
       }
     }
   ]

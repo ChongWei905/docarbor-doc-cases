@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:06:23.768005+00:00",
+  "sequence": 311,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 14633,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "Create a retrieval-oriented summary for this section of a document.\nFocus on what questions this section can answer: topics, entities, dates,\ndefinitions, procedures, claims, tables, figures, metrics, and evidence types.\nDo not invent facts. Return only the summary text.\n\nSection metadata:\n{\n  \"node_id\": \"0042\",\n  \"title\": \"游戏内容与系统\",\n  \"page_index\": 20,\n  \"page_range\": \"20\"\n}\n\nSection text:\n游戏内容与系统"
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-6d6b76ae-491f-994e-8d66-d5ff02709de4",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "This section consists solely of the heading \"游戏内容与系统\" (Game Content and Systems) on page 20. It contains no substantive text, definitions, procedures, metrics, tables, figures, or evidence. Consequently, it can only answer structural or navigational questions, such as identifying the existence, title, and page location of a section dedicated to game content and systems. It does not provide information on specific topics, entities, dates, claims, mechanics, or supporting evidence.",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Create a retrieval-oriented summary for a document section.\n   - **Focus:** What questions this section can answer (topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, evidence types).\n   - **Constraint:** Do not invent facts. Return only the summary text.\n   - **Input Metadata:** `node_id`: \"0042\", `title`: \"游戏内容与系统\" (Game Content and Systems), `page_index`: 20, `page_range`: \"20\"\n   - **Input Text:** \"游戏内容与系统\" (Game Content and Systems) - This is literally just the title repeated as the section text. There's no actual content.\n\n2.  **Identify Key Constraints & Challenges:**\n   - The section text is extremely minimal (just the title).\n   - I must not invent facts.\n   - I need to focus on retrieval-oriented aspects (what questions it *can* answer based on the provided text).\n   - Since there's no substantive content, the summary must reflect that it only introduces the topic/heading without providing details, definitions, procedures, metrics, etc.\n\n3.  **Formulate Summary (Mental Draft):**\n   This section serves as a heading or introductory marker for \"Game Content and Systems\" (游戏内容与系统). It does not contain substantive text, definitions, procedures, metrics, tables, figures, or evidence. Therefore, it can only answer basic structural or navigational questions, such as identifying the presence of a section dedicated to game content and systems on page 20. No specific topics, entities, dates, claims, or detailed information are provided in this excerpt.\n\n4.  **Refine according to Constraints:**\n   - Must be retrieval-oriented.\n   - Focus on question types it can answer.\n   - No invented facts.\n   - Only return the summary text.\n   - Keep it concise and aligned with the prompt's focus areas.\n\n   *Revised Draft:*\n   This section consists solely of the heading \"游戏内容与系统\" (Game Content and Systems) on page 20. It contains no substantive text, definitions, procedures, metrics, tables, figures, or evidence. Consequently, it can only answer structural or navigational questions, such as identifying the existence and location of a section dedicated to game content and systems. It does not provide information on specific topics, entities, dates, claims, or detailed system mechanics.\n\n5.  **Check against Constraints:**\n   - Retrieval-oriented? Yes, explicitly states what it can/cannot answer.\n   - Focus on specified categories? Yes, addresses topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, evidence types by stating their absence.\n   - No invented facts? Yes, strictly based on the provided text.\n   - Return only summary text? Yes.\n\n   The draft meets all criteria. I will output it exactly.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Create a retrieval-oriented summary for a document section.\n   - **Focus:** What questions this section can answer (topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, evidence types).\n   - **Constraint:** Do not invent facts. Return only the summary text.\n   - **Input Metadata:** `node_id`: \"0042\", `title`: \"游戏内容与系统\" (Game Content and Systems), `page_index`: 20, `page_range`: \"20\"\n   - **Input Text:** \"游戏内容与系统\" (Game Content and Systems) - This is literally just the title repeated as the section text. There's no actual content.\n\n2.  **Identify Key Constraints & Challenges:**\n   - The section text is extremely minimal (just the title).\n   - I must not invent facts.\n   - I need to focus on retrieval-oriented aspects (what questions it *can* answer based on the provided text).\n   - Since there's no substantive content, the summary must reflect that it only introduces the topic/heading without providing details, definitions, procedures, metrics, etc.\n\n3.  **Formulate Summary (Mental Draft):**\n   This section serves as a heading or introductory marker for \"Game Content and Systems\" (游戏内容与系统). It does not contain substantive text, definitions, procedures, metrics, tables, figures, or evidence. Therefore, it can only answer basic structural or navigational questions, such as identifying the presence of a section dedicated to game content and systems on page 20. No specific topics, entities, dates, claims, or detailed information are provided in this excerpt.\n\n4.  **Refine according to Constraints:**\n   - Must be retrieval-oriented.\n   - Focus on question types it can answer.\n   - No invented facts.\n   - Only return the summary text.\n   - Keep it concise and aligned with the prompt's focus areas.\n\n   *Revised Draft:*\n   This section consists solely of the heading \"游戏内容与系统\" (Game Content and Systems) on page 20. It contains no substantive text, definitions, procedures, metrics, tables, figures, or evidence. Consequently, it can only answer structural or navigational questions, such as identifying the existence and location of a section dedicated to game content and systems. It does not provide information on specific topics, entities, dates, claims, or detailed system mechanics.\n\n5.  **Check against Constraints:**\n   - Retrieval-oriented? Yes, explicitly states what it can/cannot answer.\n   - Focus on specified categories? Yes, addresses topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, evidence types by stating their absence.\n   - No invented facts? Yes, strictly based on the provided text.\n   - Return only summary text? Yes.\n\n   The draft meets all criteria. I will output it exactly.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782356788,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 737,
+      "prompt_tokens": 125,
+      "total_tokens": 862,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 635,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 737
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 125
+      }
+    }
+  },
+  "response_text": "This section consists solely of the heading \"游戏内容与系统\" (Game Content and Systems) on page 20. It contains no substantive text, definitions, procedures, metrics, tables, figures, or evidence. Consequently, it can only answer structural or navigational questions, such as identifying the existence, title, and page location of a section dedicated to game content and systems. It does not provide information on specific topics, entities, dates, claims, mechanics, or supporting evidence.",
+  "error_type": null,
+  "error_message": null
+}

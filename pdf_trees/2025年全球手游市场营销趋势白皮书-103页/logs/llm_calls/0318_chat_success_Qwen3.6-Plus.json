@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:03:42.133425+00:00",
+  "sequence": 318,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 25325,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年视频素材占比74.1%，比去年提升14.2%；图片素材中方形图片占比最高为67.2%.\n    The given page_text is 11\n视频类素材时长观察1\n图片类素材类型观察22025年视频素材占比 74.1% ，比去年提升 14.2% ；图片素材中方形图片占比最高为\n67.2%\n•视频类创意在今年猛增至 74.1%，对比 2024年提升 14.2%。其中 30s以下的短创意占比 58%，\n超过60s的超长创意占比 6.9%；\n•图片素材占比 24.7% ，比去年占比下降 11.6%，其中方形图片创意占比最高为 67.2% 。2025年 全球手游 素材类型观察\nSource ：广大大，根据后台抓取后数据整理后展现\nDate Range ：2025/1~2025/1212.8% 45.2% 35.1% 6.9%\n≤15s 16-30s 31-59s ≥60s\n11.5%2.2%\n67.2% 19.1%\n竖版 横版 方形 其他59.9%36.3%\n2024年\n52.2% 42.2%\n2023年视频, \n74.1%图片, \n24.7%2025年全球手游素材类型占比\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-309496fd-f828-914a-b7b3-da32717d649c",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the section title in `page_text`, then `start_begin` is \"no\". If the section title is the first content, then `start_begin` is \"yes\".\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `2025年视频素材占比74.1%，比去年提升14.2%；图片素材中方形图片占比最高为67.2%.`\n   - **Page Text:** \n     ```\n     11\n     视频类素材时长观察1\n     图片类素材类型观察22025年视频素材占比 74.1% ，比去年提升 14.2% ；图片素材中方形图片占比最高为\n     67.2%\n     •视频类创意在今年猛增至 74.1%，对比 2024年提升 14.2%。其中 30s以下的短创意占比 58%，\n     超过60s的超长创意占比 6.9%；\n     •图片素材占比 24.7% ，比去年占比下降 11.6%，其中方形图片创意占比最高为 67.2% 。2025年 全球手游 素材类型观察\n     Source ：广大大，根据后台抓取后数据整理后展现\n     Date Range ：2025/1~2025/1212.8% 45.2% 35.1% 6.9%\n     ≤15s 16-30s 31-59s ≥60s\n     11.5%2.2%\n     67.2% 19.1%\n     竖版 横版 方形 其他59.9%36.3%\n     2024年\n     52.2% 42.2%\n     2023年视频, \n     74.1%图片, \n     24.7%2025年全球手游素材类型占比\n     .\n     ```\n\n2.  **Identify Key Elements:**\n   - Section Title: `2025年视频素材占比74.1%，比去年提升14.2%；图片素材中方形图片占比最高为67.2%.`\n   - Page Text starts with: `11\\n视频类素材时长观察1\\n图片类素材类型观察22025年视频素材占比 74.1% ，比去年提升 14.2% ；图片素材中方形图片占比最高为\\n67.2%`\n   - I need to check if the section title appears at the very beginning of the page text.\n\n3.  **Compare/Match:**\n   - The page text begins with `11`, then `视频类素材时长观察1`, then `图片类素材类型观察2`, then `2025年视频素材占比 74.1% ，比去年提升 14.2% ；图片素材中方形图片占比最高为\\n67.2%`.\n   - The section title is clearly embedded *after* other content (`11`, `视频类素材时长观察1`, `图片类素材类型观察2`).\n   - Even with fuzzy matching and ignoring spaces, the title does not start at the beginning of the page text. There is preceding text.\n\n4.  **Determine Output:**\n   - `start_begin`: \"no\"\n\n5.  **Format Output:**\n   - JSON: `{\"start_begin\": \"no\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All steps verified. Output matches requirement.✅\n   Proceed. \n   Output: `{\"start_begin\": \"no\"}`\n   (Self-Correction/Verification during thought)\n   Let's double check the exact wording in page_text: `图片类素材类型观察22025年视频素材占比 74.1% ...`\n   The title is `2025年视频素材占比74.1%，比去年提升14.2%；图片素材中方形图片占比最高为67.2%.`\n   It appears after `11\\n视频类素材时长观察1\\n图片类素材类型观察2`. So definitely not at the beginning.\n   Result is \"no\".\n   JSON format matches requirement.\n   Ready. \n   Output matches exactly. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no extra whitespace or newlines are added if possible, but standard JSON formatting is fine.)\n   All good. \n   Final Answer Generation. \n   `{\"start_begin\": \"no\"}`\n   (Done.) \n   [Self-Correction/Refinement during thought]\n   Wait, let's look closely at the prompt: \"If the current section title is the first content in the given page_text, then the current section starts in the beginning of the given page_text.\"\n   The page text starts with \"11\\n视频类素材时长观察1\\n图片类素材类型观察22025年视频素材占比...\"\n   So it's clearly \"no\".\n   I will output exactly the JSON.\n   Done. \n   Output matches. \n   Proceeds. \n   [Final Check]\n   Input: Section title: `2025年视频素材占比74.1%，比去年提升14.2%；图片素材中方形图片占比最高为67.2%.`\n   Page text starts with: `11\\n视频类素材时长观察1\\n图片类素材类型观察2...`\n   Conclusion: `no`\n   Format: `{\"start_begin\": \"no\"}`\n   All correct. \n   Output matches request. \n   Proceeds. \n   [Output Generation] (done)",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the current section title starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the section title in `page_text`, then `start_begin` is \"no\". If the section title is the first content, then `start_begin` is \"yes\".\n   - **Note:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `2025年视频素材占比74.1%，比去年提升14.2%；图片素材中方形图片占比最高为67.2%.`\n   - **Page Text:** \n     ```\n     11\n     视频类素材时长观察1\n     图片类素材类型观察22025年视频素材占比 74.1% ，比去年提升 14.2% ；图片素材中方形图片占比最高为\n     67.2%\n     •视频类创意在今年猛增至 74.1%，对比 2024年提升 14.2%。其中 30s以下的短创意占比 58%，\n     超过60s的超长创意占比 6.9%；\n     •图片素材占比 24.7% ，比去年占比下降 11.6%，其中方形图片创意占比最高为 67.2% 。2025年 全球手游 素材类型观察\n     Source ：广大大，根据后台抓取后数据整理后展现\n     Date Range ：2025/1~2025/1212.8% 45.2% 35.1% 6.9%\n     ≤15s 16-30s 31-59s ≥60s\n     11.5%2.2%\n     67.2% 19.1%\n     竖版 横版 方形 其他59.9%36.3%\n     2024年\n     52.2% 42.2%\n     2023年视频, \n     74.1%图片, \n     24.7%2025年全球手游素材类型占比\n     .\n     ```\n\n2.  **Identify Key Elements:**\n   - Section Title: `2025年视频素材占比74.1%，比去年提升14.2%；图片素材中方形图片占比最高为67.2%.`\n   - Page Text starts with: `11\\n视频类素材时长观察1\\n图片类素材类型观察22025年视频素材占比 74.1% ，比去年提升 14.2% ；图片素材中方形图片占比最高为\\n67.2%`\n   - I need to check if the section title appears at the very beginning of the page text.\n\n3.  **Compare/Match:**\n   - The page text begins with `11`, then `视频类素材时长观察1`, then `图片类素材类型观察2`, then `2025年视频素材占比 74.1% ，比去年提升 14.2% ；图片素材中方形图片占比最高为\\n67.2%`.\n   - The section title is clearly embedded *after* other content (`11`, `视频类素材时长观察1`, `图片类素材类型观察2`).\n   - Even with fuzzy matching and ignoring spaces, the title does not start at the beginning of the page text. There is preceding text.\n\n4.  **Determine Output:**\n   - `start_begin`: \"no\"\n\n5.  **Format Output:**\n   - JSON: `{\"start_begin\": \"no\"}`\n   - Check constraints: \"Directly return the final JSON structure. Do not output anything else.\"\n\n   All steps verified. Output matches requirement.✅\n   Proceed. \n   Output: `{\"start_begin\": \"no\"}`\n   (Self-Correction/Verification during thought)\n   Let's double check the exact wording in page_text: `图片类素材类型观察22025年视频素材占比 74.1% ...`\n   The title is `2025年视频素材占比74.1%，比去年提升14.2%；图片素材中方形图片占比最高为67.2%.`\n   It appears after `11\\n视频类素材时长观察1\\n图片类素材类型观察2`. So definitely not at the beginning.\n   Result is \"no\".\n   JSON format matches requirement.\n   Ready. \n   Output matches exactly. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no extra whitespace or newlines are added if possible, but standard JSON formatting is fine.)\n   All good. \n   Final Answer Generation. \n   `{\"start_begin\": \"no\"}`\n   (Done.) \n   [Self-Correction/Refinement during thought]\n   Wait, let's look closely at the prompt: \"If the current section title is the first content in the given page_text, then the current section starts in the beginning of the given page_text.\"\n   The page text starts with \"11\\n视频类素材时长观察1\\n图片类素材类型观察22025年视频素材占比...\"\n   So it's clearly \"no\".\n   I will output exactly the JSON.\n   Done. \n   Output matches. \n   Proceeds. \n   [Final Check]\n   Input: Section title: `2025年视频素材占比74.1%，比去年提升14.2%；图片素材中方形图片占比最高为67.2%.`\n   Page text starts with: `11\\n视频类素材时长观察1\\n图片类素材类型观察2...`\n   Conclusion: `no`\n   Format: `{\"start_begin\": \"no\"}`\n   All correct. \n   Output matches request. \n   Proceeds. \n   [Output Generation] (done)"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360226,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1351,
+      "prompt_tokens": 579,
+      "total_tokens": 1930,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1339,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1351
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 579
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

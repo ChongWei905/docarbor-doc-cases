@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:55:55.664170+00:00",
+  "sequence": 167,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5783,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年Android 端投放 TOP30.\n    The given page_text is 22\n11Whiteout Survival\n点点互动策略\n12Last War ：Survival\nFUNFLY PTE. LTD.策略\n13MONOPOLY GO!\nScopely桌面\n14Evony\nTOP GAMES策略\n15Lords Mobile\nIGG策略\n16Mahjong Wonders\nNebula Studio休闲\n17Bible Word Puzzle\n乐信圣文文字\n18PUBG MOBILE\n腾讯动作\n19Doomsday\nIGG策略\n20Last Z: Survival\nFlorere Game策略21Total Battle: Strategy Games\nScorewarrior策略\n22Tiles Survive!\nFunPlus策略\n23Coin Master\nMoon Active冒险\n24Sudoku\n乐信圣文益智\n解谜\n25Mystery Town\nCedar Games益智\n解谜\n26Block Crush!\nWonderful Studio益智\n解谜\n27Hero Wars: Alliance\nNEXTERSRPG\n28Mobile Legends: Bang Bang\n沐瞳科技动作\n29Kingshot\n点点互动策略\n30Braindom\nLahana Games益智\n解谜2025年Android 端投放 TOP30\nSource ：广大大 -APP Intelligence ，广告主分析模块，按照广告主按照时间段内去重后素材数量高低排序；\nDate Range ：2025/1~2025/12\n1Vita Mahjong\n乐信圣文桌面\n2Tile Explorer\n乐信圣文休闲\n3Jigsawscapes ®\n乐信圣文益智\n解谜\n4Block Blast!\nHungry Studio休闲\n5Zen Word®\n乐信圣文益智\n解谜\n6Lands of Jail\n益世界策略\n7Zen Color\n乐信圣文益智\n解谜\n8Paint by Number\n乐信圣文益智\n解谜\n9The Grand Mafia\n友塔网络策略\n10Dark War Survival\nFlorere Game策略\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-dc85e1fe-f1b3-954c-b796-d2c0dd796d35",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年Android 端投放 TOP30\" appears or starts in the given page_text.\nI need to perform fuzzy matching, ignoring space inconsistencies.\nLooking at the page_text:\n\"...益智\n解谜2025年Android 端投放 TOP30\nSource ：广大大...\"\nThe exact string \"2025年Android 端投放 TOP30\" appears in the text.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches exactly. \nNo extra text.\nDone. \nSelf-Correction/Verification:\nThe prompt says: \"The given section title is 2025年Android 端投放 TOP30.\"\nPage text contains: \"解谜2025年Android 端投放 TOP30\"\nIt matches exactly.\nAnswer is yes.\nJSON format matches requirement.\nReady. \nOutput: {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年Android 端投放 TOP30\" appears or starts in the given page_text.\nI need to perform fuzzy matching, ignoring space inconsistencies.\nLooking at the page_text:\n\"...益智\n解谜2025年Android 端投放 TOP30\nSource ：广大大...\"\nThe exact string \"2025年Android 端投放 TOP30\" appears in the text.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nProceed. \nOutput matches exactly. \nNo extra text.\nDone. \nSelf-Correction/Verification:\nThe prompt says: \"The given section title is 2025年Android 端投放 TOP30.\"\nPage text contains: \"解谜2025年Android 端投放 TOP30\"\nIt matches exactly.\nAnswer is yes.\nJSON format matches requirement.\nReady. \nOutput: {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359759,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 265,
+      "prompt_tokens": 569,
+      "total_tokens": 834,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 249,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 265
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 569
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

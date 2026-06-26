@@ -1,0 +1,519 @@
+{
+  "summary": "",
+  "result": [
+    {
+      "title": "Foreword",
+      "node_id": "0000",
+      "summary": "This section contains only a heading (\"Foreword\") and no substantive content. It does not provide any topics, entities, dates, definitions, procedures, claims, tables, figures, metrics, or evidence, and therefore cannot answer any specific retrieval questions beyond indicating the structural presence of a foreword in the document.",
+      "images": [],
+      "start_index": 2,
+      "end_index": 2,
+      "chunk_ids": []
+    },
+    {
+      "title": "Table of Contents",
+      "node_id": "0001",
+      "summary": "This section provides a structural overview and contextual introduction to a commissioned industry report. It can answer retrieval queries regarding:\n\n- **Topics:** Game publishing strategies, marketing and user acquisition, community management, data-driven publishing and marketing, revenue streams and business models, and software/services.\n- **Entities:** Game Publishing and Marketing Summit (GPMSummit), Jade Tierney (GPMSummit Director), game studios/developers/publishers, influencers, and third-party service providers.\n- **Dates:** No specific dates are provided.\n- **Definitions & Concepts:** Publisher-developer relationships, cross-platform publishing, self-publishing, digital channels vs. traditional retail, influencer marketing, live service games, boxed/one-time purchase models, subscription models, esports, hybrid business models, publishing as a service, and design studios.\n- **Procedures:** No step-by-step procedures, implementation guides, or operational workflows are detailed.\n- **Claims:** Studios must adapt to rising player expectations, modern technology, and regulatory changes; reliance solely on research and digital tools is insufficient; industry success increasingly depends on user research, player/platform data analytics, third-party services, personalized engagement, and multi-platform retail strategies.\n- **Tables & Figures:** Lists of tables and figures are referenced on page 3, but specific titles, contents, or visual data are not provided in this section.\n- **Metrics:** No quantitative metrics, KPIs, financial figures, or performance benchmarks are included.\n- **Evidence Types:** Commissioned report findings, industry trend analysis, and expert insights intended as a practical resource for decision-makers across studios of all sizes.",
+      "images": [],
+      "start_index": 2,
+      "end_index": 2,
+      "chunk_ids": []
+    },
+    {
+      "title": "List of Tables",
+      "node_id": "0002",
+      "summary": "This section indexes 13 tables and 16 figures that serve as a structured reference for retrieving industry data, market analysis, and operational benchmarks. It enables answers to the following:\n\n- **Topics & Entities:** Cross-platform game development, self-publishing, influencer marketing, community management, industry safety regulations, data analytics, subscription/hybrid business models, design studios, global publishing/indie/live-service/boxed/subscription markets, console competition (PlayStation vs. Xbox), esports, video streaming, and publishing revenue streams. References specific game engines, successful titles, collaborative projects, influencers, management platforms, analytics/subscription providers, and major publishers.\n- **Dates & Timeframes:** Historical and operational data spans 2018–2024 (including 2019–2024, 2020–2024, 2023, and November 2024). Market forecasts and projections cover 2025–2030.\n- **Definitions, Procedures & Claims:** Points to industry safety rules/regulations, hybrid/monetization model frameworks, influencer marketing benefits compared to traditional advertising, and comparative claims regarding platform performance, revenue distribution, and market share.\n- **Tables & Figures (Evidence Types):** Tables provide comparative lists, benefit breakdowns, regulatory guidelines, and provider selections. Figures deliver visual market forecasts, trend analyses, revenue share breakdowns, competitive benchmarks, and consumption metrics.\n- **Metrics:** Market valuations (US$ billions/millions), revenue shares, player time allocation, installed base comparisons, number of released/hit games, quarterly streaming hours, and esports prize money distributions.\n- **Retrievable Questions:** What are the benefits, top engines, and successful exampl...",
+      "images": [],
+      "start_index": 3,
+      "end_index": 3,
+      "chunk_ids": []
+    },
+    {
+      "title": "List of Figures",
+      "node_id": "0003",
+      "summary": "**Topics:** Cross-platform game development, self-publishing trends, game engines, industry collaborations, influencer marketing, community management, gaming safety regulations, data analytics, subscription and hybrid business models, design studios, global market forecasts (publishing, indie, live service, boxed, subscription, esports), physical vs. digital revenue distribution, console market competition, esports monetization, video streaming consumption, and game publishing revenue streams.\n\n**Entities:** Game publishers, indie developers, cross-platform titles, game engines, gaming influencers, community management platforms, data analytics providers, subscription service providers, design studios, PlayStation, Xbox, esports titles, and video streaming services.\n\n**Dates & Timeframes:** Historical/recent data periods (2018–2024, 2019–2023, 2020–2024, November 2024) and forward-looking market projections (2025–2030).\n\n**Tables & Figures:** Indexes 13 tables and 16 figures that serve as reference points for market data, comparative analyses, benefit lists, regulatory guidelines, tool/provider directories, and trend visualizations.\n\n**Metrics & Units:** Market valuations (US$ billions/millions), revenue shares, player engagement/time allocation, console installed base, game release counts, and quarterly streaming hours.\n\n**Evidence Types:** Structured reference tables, market forecast charts, comparative graphs, revenue breakdown visuals, and curated industry lists.\n\n**Retrieval Questions Addressed:** What are the documented benefits of cross-platform development and influencer marketing? Which game engines, analytics providers, and subscription services lead the market? How have self-publishing and indie developer markets evolved between 2018 and 2024? What are the...",
+      "images": [],
+      "start_index": 3,
+      "end_index": 3,
+      "chunk_ids": []
+    },
+    {
+      "title": "Introduction",
+      "node_id": "0004",
+      "summary": "This Introduction section (pages 4–6) provides foundational industry context optimized for retrieval across market forecasting, publishing model evolution, agency transitions, and UGC integration.\n\n**Topics & Claims:** Covers global game publishing market trends, traditional vs. self-publishing models, industry democratization, indie developer success, and PR/marketing agencies expanding into publishing. Claims include: industry growth is moderating due to post-pandemic normalization, rising interest rates, high development costs, market saturation, and high-profile failures; digital platforms have democratized access, enabling indie titles to achieve commercial success rivaling major studios; PR/marketing agencies now enable indies to bypass traditional publishers; UGC is transforming engagement, longevity, and revenue, forcing publishers to adapt strategies; and modern creation technologies are lowering barriers to player-generated content.\n\n**Entities:** Platforms: Steam, itch.io, Epic Games Store, Unreal Editor for Fortnite (UEFN), Roblox, Xbox Game Pass. Companies/Developers/Agencies: Pocketpair, AgileIntel, Neonhive (UK), Popagenda (Canada), Electronic Arts (EA). Games: *Palworld*, *Baldur’s Gate 3*, *Phasmophobia*, *Squad*, *Ready or Not*, *Lethal Company*, *Pokémon Go*, *Minecraft*, *Fortnite*, *GTA V*, *GTA VI*, *The Sims 5*. Individuals: Takuro Mizobe. Tech/Frameworks: FiveM (modding framework), voxels, signed distance fields.\n\n**Dates & Timeframes:** 2025–2030 (market forecast), early/January 2024 (*Palworld* launch/milestones), post-pandemic era, last two decades of industry growth, September 2025 (expected *GTA VI* launch), late 2024 (unspecified project shelved).\n\n**Definitions & Roles:** Traditional publishing: developers handle creative/technical work;...",
+      "images": [
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\4\\129_1410_286_2009_image.jpg",
+          "image_caption": "这是一张柱状图。图表展示了一个橙色的垂直柱体，底部标注年份为“2025”。柱体上方通过一条垂直线连接一个圆角矩形标签，显示具体数值为“117.4”。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\4\\373_1410_534_2009_image.jpg",
+          "image_caption": "这是一张柱状图。图表展示了一个橙色的柱体，下方标注年份为2026，上方通过引线标注的具体数值为123.5。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\4\\623_1410_783_2009_image.jpg",
+          "image_caption": "这是一张柱状图。图中展示了一个橙色的垂直柱体，下方标注年份为2027，上方通过引线标注的具体数值为129.8。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\4\\870_1410_1030_2009_image.jpg",
+          "image_caption": "这是一张柱状图。图中展示了一个橙色的垂直柱体，底部标注的年份为2028，柱体上方通过引线标注的具体数值为136.4。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\4\\1116_1410_1280_2009_image.jpg",
+          "image_caption": "这是一张柱状图。图表展示了一个橙色的垂直柱体，上方通过引线标注了数值143.4，下方标注了年份2029。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\4\\1364_1410_1524_2009_image.jpg",
+          "image_caption": ""
+        }
+      ],
+      "start_index": 4,
+      "end_index": 6,
+      "chunk_ids": []
+    },
+    {
+      "title": "SECTION 1: Game Publishing Strategies",
+      "node_id": "0005",
+      "summary": "**SECTION 1: Game Publishing Strategies (pp. 7–13)**\n**Topics:** Evolution of publisher-developer dynamics, cross-platform development and publishing, indie self-publishing trends, digital distribution impact, market saturation, funding model transitions, and strategic shifts from traditional AAA publishing to independent, multi-platform releases.\n**Entities:** Developers, publishers, storefronts (Steam, Epic Games Store, Xbox Game Pass, Itch.io, Humble Bundle, Game Jolt, GOG), engines (Unity, Unreal Engine 5, Godot, Cocos2d, CryEngine, Gamemaker Studio, Monogame), industry/research firms (Bain & Co., CTA, Newzoo, AgileIntel, Gamalytic, Naavik, VG Insights, TIGA), and notable studios/titles (Pocketpair/Palworld, Zeekerss/Lethal Company, Larian Studios/Baldur’s Gate 3, InnerSloth/Among Us, Epic Games/Fortnite, Mojang/Minecraft, PUBG Corp, Supergiant Games, Remedy Entertainment, TaleWorlds, Techland, Wube Software, Offworld, VOID Interactive, Toby Fox/Undertale).\n**Dates:** 2012 (TIGA statement), 2018–2023 (Steam tracking), 2019–2023 (hit growth period), 2021–2023 (Unity multiplatform tracking), 2023–2024 (platform sales/spending data, Palworld/Lethal Company launches), 2024 (Bain & Co. study), 2025–2030 (market projections).\n**Definitions & Roles:** Developers handle creative and technical execution (frameworks, tech integration, gameplay refinement); publishers manage financing, marketing, distribution, user acquisition, live ops, monetization, and community engagement. Cross-platform publishing delivers consistent UX across PC, consoles, and mobile via a unified codebase with simultaneous updates. A \"hit\" game is defined as generating >$3M in first-year revenue.\n**Procedures & Strategies:** Alternative funding (bootstrapping, Kickstarter/Fig crowdfunding), direct-to-c...",
+      "images": [
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\8\\129_1356_1518_1974_image.jpg",
+          "image_caption": "这是一张组合图表，包含折线图和柱状图，展示了玩家在不同数量平台上玩游戏的数据对比。\n\n**图表结构与数据：**\n\n图表横向分为三个类别：\n1.  **Played on one platform**（在一个平台上玩）\n2.  **Played on two platforms**（在两个平台上玩）\n3.  **Played on three platforms**（在三个平台上玩）\n\n**上半部分（折线图）：**\n*   **指标**：Share of players（玩家份额/比例）\n*   **数据趋势**：随着平台数量增加，数值呈上升趋势。\n*   **具体数值**：\n    *   Played on one platform: **41%**\n    *   Played on two platforms: **69%**\n    *   Played on three platforms: **85%**\n\n**下半部分（柱状图）：**\n*   **指标**：Avergae time spent playing per week（每周平均游戏时间，原文\"Avergae\"为拼写错误）\n*   **数据趋势**：随着平台数量增加，游戏时间显著增加。\n*   **具体数值**：\n    *   Played on one platform: **4h**\n    *   Played on two platforms: **8h 24m**\n    *   Played on three platforms: **11h 18m**"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\12\\181_603_1473_1127_image.jpg",
+          "image_caption": "这是一张柱状图，展示了从2019年到2023年某项指标的数据变化趋势。图表包含五个橙色的垂直柱体，分别对应底部的年份标签。每个柱体上方通过细线连接着一个包含具体数值的圆角矩形标签。\n\n具体数据如下：\n- 2019年：36\n- 2020年：50\n- 2021年：49\n- 2022年：52\n- 2023年：71\n\n数据整体呈现上升趋势，其中2021年较2020年有轻微下降（从50降至49），随后在2022年和2023年持续增长，并在2023年达到最高值71。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\13\\130_846_1526_1326_image.jpg",
+          "image_caption": "这是一张堆叠柱状图，展示了从2018年到2023年的数据变化趋势。图表横轴表示年份，纵轴表示数值大小。每个柱状图由下方的橙色部分和上方的紫色部分组成，具体数据如下：\n\n*   **2018年**：橙色部分数值为 8,142，紫色部分数值为 182。\n*   **2019年**：橙色部分数值为 8,048，紫色部分数值为 177。\n*   **2020年**：橙色部分数值为 9,715，紫色部分数值为 192。\n*   **2021年**：橙色部分数值为 11,188，紫色部分数值为 151。\n*   **2022年**：橙色部分数值为 12,241，紫色部分数值为 166。\n*   **2023年**：橙色部分数值为 13,790，紫色部分数值为 181。\n\n整体来看，橙色部分代表的数值在2019年略有下降后，从2020年开始呈现逐年显著上升的趋势；紫色部分代表的数值相对较小且波动不大，维持在150至190之间。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\13\\129_1597_1524_2044_image.jpg",
+          "image_caption": "这是一张柱状图，展示了从2025年至2030年某项指标的逐年增长趋势。图表包含六个橙色柱体，每个柱体代表一个年份及其对应的数值，具体数据如下：\n- 2025年：5.3\n- 2026年：6.1\n- 2027年：7.0\n- 2028年：8.0\n- 2029年：9.2\n- 2030年：10.5"
+        }
+      ],
+      "start_index": 7,
+      "end_index": 13,
+      "nodes": [
+        {
+          "title": "Publisher-Developer Relationships",
+          "node_id": "0006",
+          "summary": "**Topics:** Historical and evolving publisher-developer dynamics; division of creative vs. commercial/technical responsibilities; impact of digital distribution on self-publishing; indie development funding and tool accessibility; market saturation challenges; modern publisher value proposition.\n**Entities:** Game developers, publishers, Steam, Epic Games Store, Kickstarter, Fig, Unity, Unreal Engine 5, Palworld, Lethal Company, Zeekerss.\n**Dates:** 2023, 2024.\n**Definitions & Roles:** Developers handle creative and technical execution (frameworks, tech integration, gameplay refinement, overall experience). Publishers handle financial, marketing, distribution, user acquisition, live ops, monetization, and community engagement.\n**Procedures/Methods:** Alternative funding pathways (bootstrapping, crowdfunding via Kickstarter/Fig); streamlined development using accessible engines (Unity, Unreal Engine 5); direct-to-consumer self-publishing via digital storefronts.\n**Claims:** Digital distribution has significantly lowered or eliminated self-publishing barriers, enabling small teams and solo developers to achieve commercial success through gameplay innovation rather than large budgets. However, market oversaturation has increased the necessity of publisher capabilities (advanced analytics, live-service support, post-launch planning, large marketing budgets) for title visibility, particularly for established IPs.\n**Metrics:** Steam sold over 718 million games in 2024; Epic Games Store recorded US$950 million in annual PC user spending in 2023.\n**Evidence Types:** Platform sales and spending statistics, industry trend analysis, case examples of successful indie titles (Palworld, Lethal Company), and comparative analysis of developer independence versus publisher support.\n**T...",
+          "images": [],
+          "start_index": 7,
+          "end_index": 7,
+          "chunk_ids": []
+        },
+        {
+          "title": "Cross-Platform Publishing",
+          "node_id": "0007",
+          "summary": "**Topics:** Cross-platform game publishing and development, multi-device gaming adoption trends, player engagement and retention, developer cost-efficiency, global gaming market valuation, industry shift away from hardware exclusivity, strategic advantages of cross-platform publishing, and game engine selection for multi-platform workflows.\n\n**Definitions:** Cross-platform development/publishing is defined as designing games to deliver a consistent user experience across PCs, consoles, and mobile devices with minimal adjustments, typically utilizing a single, unified codebase. Operational concepts include unified codebase management, cross-device player interaction, consistent post-launch experience, and simultaneous multi-platform update deployment.\n\n**Entities:**\n- *Research/Industry Firms:* Bain & Co., Consumer Technology Association (CTA), Unity, Newzoo, AgileIntel, Sony, Microsoft.\n- *Publishers/Creators:* Epic Games, InnerSloth, Toby Fox.\n- *Games:* Among Us, Fortnite, Minecraft, PUBG.\n- *Platforms:* PC, PlayStation, Xbox, Nintendo Switch, iOS, Android, Linux, macOS, Stadia, VR.\n- *Game Engines:* Unreal Engine, Unity.\n\n**Dates:** 2024 (Bain & Co. study), 2021–2023 (Unity multiplatform launch tracking period), 2030 (projected global gaming market valuation).\n\n**Metrics:**\n- 70% of U.S. gamers play on multiple devices (Bain & Co., 2024)\n- 61% multi-device adoption (CTA study)\n- ~40% of game launches were multiplatform (Unity, 2021–2023)\n- ~40% estimated revenue increase from cross-platform strategies\n- 3+ billion active gamers globally; $151B projected market value by 2030\n- Figure 2 (Newzoo, n=58,040): Player share and weekly playtime scale with platform count (1 platform: 41% share, 4h; 2 platforms: 69% share, 8h 24m; 3 platforms: 85% share, 11h 18m)\n\n**Claims:**...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\8\\129_1356_1518_1974_image.jpg",
+              "image_caption": "这是一张组合图表，包含折线图和柱状图，展示了玩家在不同数量平台上玩游戏的数据对比。\n\n**图表结构与数据：**\n\n图表横向分为三个类别：\n1.  **Played on one platform**（在一个平台上玩）\n2.  **Played on two platforms**（在两个平台上玩）\n3.  **Played on three platforms**（在三个平台上玩）\n\n**上半部分（折线图）：**\n*   **指标**：Share of players（玩家份额/比例）\n*   **数据趋势**：随着平台数量增加，数值呈上升趋势。\n*   **具体数值**：\n    *   Played on one platform: **41%**\n    *   Played on two platforms: **69%**\n    *   Played on three platforms: **85%**\n\n**下半部分（柱状图）：**\n*   **指标**：Avergae time spent playing per week（每周平均游戏时间，原文\"Avergae\"为拼写错误）\n*   **数据趋势**：随着平台数量增加，游戏时间显著增加。\n*   **具体数值**：\n    *   Played on one platform: **4h**\n    *   Played on two platforms: **8h 24m**\n    *   Played on three platforms: **11h 18m**"
+            }
+          ],
+          "start_index": 7,
+          "end_index": 9,
+          "chunk_ids": []
+        },
+        {
+          "title": "Self-Publishing",
+          "node_id": "0008",
+          "summary": "**Section Overview & Topics:** Examines the video game industry’s strategic shift toward indie self-publishing, contrasting indie and AAA development models, cross-platform engine capabilities, digital distribution strategies, funding transitions, and Steam release volume trends.\n\n**Key Entities & Dates:** Developers/Studios: Pocketpair, Zeekers/Zeekeress, Larian Studios, Toby Fox, Remedy Entertainment, Kinetic Games, TaleWorlds Entertainment, Offworld, VOID Interactive, Techland, Wube Software, Supergiant Games. Industry Figures: Dr. Richard Wilson (TIGA, June 2012), Santtu Kallionpää (CFO). Titles: Palworld (Jan 2024 launch), Lethal Company (2023), Baldur’s Gate 3, Undertale. Storefronts: Steam, Xbox Game Pass, Epic Games Store, Itch.io, Humble Bundle, Game Jolt, GOG. Engines: Unity, Unreal, Godot, Cocos2d, CryEngine, Gamemaker Studio, Monogame. Data Sources/Reports: Gamalytic, Naavik, VG Insights, AgileIntel (source attribution). Timeframes: 2018–2023 (Steam tracking), 2019–2023 (hit growth period), 2019–June 2024 (performance cutoff), 2025–2030 (market projection).\n\n**Definitions:** \"Hit\" game: A title generating >US$3 million in revenue within its first year of release.\n\n**Procedures & Strategic Rationale:** Details the operational shift from traditional publisher-funded development to self-publishing. Key strategies include retaining IP ownership, bypassing publisher revenue splits, prioritizing mass-audience targeting over investor-focused pitching, reallocating development resources to capture larger revenue shares, and engaging directly with player communities to maximize creative control, profit retention, and storefront discoverability.\n\n**Claims & Metrics:** Self-publishing fundamentally redirects development priorities toward broader audience appeal. The v...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\12\\181_603_1473_1127_image.jpg",
+              "image_caption": "这是一张柱状图，展示了从2019年到2023年某项指标的数据变化趋势。图表包含五个橙色的垂直柱体，分别对应底部的年份标签。每个柱体上方通过细线连接着一个包含具体数值的圆角矩形标签。\n\n具体数据如下：\n- 2019年：36\n- 2020年：50\n- 2021年：49\n- 2022年：52\n- 2023年：71\n\n数据整体呈现上升趋势，其中2021年较2020年有轻微下降（从50降至49），随后在2022年和2023年持续增长，并在2023年达到最高值71。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\13\\130_846_1526_1326_image.jpg",
+              "image_caption": "这是一张堆叠柱状图，展示了从2018年到2023年的数据变化趋势。图表横轴表示年份，纵轴表示数值大小。每个柱状图由下方的橙色部分和上方的紫色部分组成，具体数据如下：\n\n*   **2018年**：橙色部分数值为 8,142，紫色部分数值为 182。\n*   **2019年**：橙色部分数值为 8,048，紫色部分数值为 177。\n*   **2020年**：橙色部分数值为 9,715，紫色部分数值为 192。\n*   **2021年**：橙色部分数值为 11,188，紫色部分数值为 151。\n*   **2022年**：橙色部分数值为 12,241，紫色部分数值为 166。\n*   **2023年**：橙色部分数值为 13,790，紫色部分数值为 181。\n\n整体来看，橙色部分代表的数值在2019年略有下降后，从2020年开始呈现逐年显著上升的趋势；紫色部分代表的数值相对较小且波动不大，维持在150至190之间。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\13\\129_1597_1524_2044_image.jpg",
+              "image_caption": "这是一张柱状图，展示了从2025年至2030年某项指标的逐年增长趋势。图表包含六个橙色柱体，每个柱体代表一个年份及其对应的数值，具体数据如下：\n- 2025年：5.3\n- 2026年：6.1\n- 2027年：7.0\n- 2028年：8.0\n- 2029年：9.2\n- 2030年：10.5"
+            }
+          ],
+          "start_index": 10,
+          "end_index": 13,
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "SECTION 2: Marketing and User Acquisition",
+      "node_id": "0009",
+      "summary": "SECTION 2: Marketing and User Acquisition (pp. 14–19) details the strategic evolution of video game promotion, player acquisition, and revenue generation, tracking the industry’s shift from physical retail to digital-first, partnership-driven, and creator-led ecosystems. **Topics** covered include the decline of traditional retail distribution, the rise of digital storefronts and cross-platform accessibility, closed-loop marketing (CLM), co-development and IP licensing, cross-media adaptations (film/TV/streaming), virtual brand integrations, and influencer marketing effectiveness. **Entities** span platforms and services (Steam, YouTube, Twitch, TikTok, Facebook, Roblox, HTC Vive), publishers and studios (Electronic Arts, Take-Two, CD Projekt Group, Ubisoft, Activision Blizzard, Nintendo, Sony, Valve, Epic Games, Naughty Dog, Warner Bros. Interactive), cross-industry brands (Gucci, H&M, KFC, Pizza Hut, Marvel, Star Wars, TIME), notable titles (*Among Us*, *Death Stranding*, *Cyberpunk 2077*, *Fortnite*, *Apex Legends*, *Monopoly Go*, *The Witcher 3*, *The Last of Us*), and key individuals/creators (Norman Reedus, Keanu Reeves, Hideo Kojima, Tyler \"Ninja\" Blevins, Shroud, Post Malone, Katy Perry). **Dates/Timeframes** range from historical physical distribution baselines to modern reporting periods (FY 2022–2024, November 2024 data cutoff), with specific milestones in 2001 (Sony/Naughty Dog acquisition), 2016 (Valve/HTC Vive launch), 2018 (Fortnite/Marvel event), 2019 (Apex Legends launch), 2023 (game-to-screen adaptation surge), and a 2023–2025 Deloitte projection window. **Definitions/Concepts** include *Closed-Loop Marketing (CLM)* (data-driven player segmentation and retention tracking via connected-environment analytics), *Digital Rights & Storefront Management* (l...",
+      "images": [
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\14\\133_406_246_514_image.jpg",
+          "image_caption": ""
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\15\\398_1132_1518_1351_image.jpg",
+          "image_caption": "这是一张水平堆叠条形图，展示了四个类别（Overall, Mobile, Console, PC）在两个不同部分（橙色和紫色）的百分比分布数据。具体数据如下：\n\n*   **Overall**：橙色部分占 **4.6%**，紫色部分占 **95.4%**。\n*   **Mobile**：紫色部分占 **100%**。\n*   **Console**：橙色部分占 **16%**，紫色部分占 **84%**。\n*   **PC**：橙色部分占 **1%**，紫色部分占 **99%**。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\15\\140_1613_1521_2006_image.jpg",
+          "image_caption": "这是一张水平条形图，展示了多家知名游戏公司在特定财年（FY）的某项数据占比情况（通常此类图表用于展示数字收入与实体收入的占比，或类似的两部分构成）。图表主要由紫色和橙色两种颜色的条形组成，左侧列出了公司名称及财年，条形内部标注了具体的百分比数值。\n\n具体数据如下（从上至下）：\n\n*   **Take-Two Entertainment (FY 2024)**：紫色部分占比 **95.6%**，橙色部分占比 **4.4%**。\n*   **CD Projekt Group (FY 2023)**：紫色部分占比 **92.4%**，橙色部分占比 **7.6%**。\n*   **Electronic Arts (FY 2024)**：紫色部分占比 **91.1%**，橙色部分占比 **8.9%**。\n*   **Square Enix (FY 2023)**：紫色部分占比 **90.3%**，橙色部分占比 **9.7%**。\n*   **Ubisoft (FY 2023-24)**：紫色部分占比 **85.6%**，橙色部分占比 **14.4%**。\n*   **Activision Blizzard (FY 2022)**：紫色部分占比 **84%**，橙色部分占比 **16%**。\n*   **Nintendo (FY 2024)**：紫色部分占比 **50.2%**，橙色部分占比 **49.8%**。\n\n从数据趋势来看，除 Nintendo 外，其他公司的紫色部分占比均超过 80%，其中 Take-Two Entertainment 最高；而 Nintendo 的两部分占比几乎持平，橙色部分占比在所有列出的公司中最高。"
+        }
+      ],
+      "start_index": 14,
+      "end_index": 19,
+      "nodes": [
+        {
+          "title": "Digital Channels and Decline of Traditional Retail",
+          "node_id": "0010",
+          "summary": "**Topics:** Evolution of video game distribution from physical retail to digital channels; shifting roles of game publishers; modern digital marketing and influencer strategies; celebrity endorsements in gaming; closed-loop marketing (CLM); cross-device/platform accessibility; physical vs. digital revenue trends across platforms and publishers.\n\n**Entities:** \n- *Platforms/Services:* Steam, YouTube, Twitch, smart watches, mixed reality glasses.\n- *Companies/Publishers:* Innersloth, Take-Two Entertainment, CD Projekt Group, Electronic Arts, Square Enix, Ubisoft, Activision Blizzard, Nintendo, A24, Thinglabs.\n- *Individuals:* Norman Reedus, Mads Mikkelsen, Hideo Kojima, Keanu Reeves.\n- *Games/Titles:* Among Us, Death Stranding, Cyberpunk 2077.\n\n**Dates/Timeframes:** Early video game distribution era (historical baseline); 2024 (overall market revenue share); Fiscal Years 2022, 2023, 2023-24, and 2024 (publisher-specific reporting periods); November 2024 (data cutoff for publisher revenue comparison).\n\n**Definitions/Concepts:** \n- *Closed-Loop Marketing (CLM):* A data-driven approach where developers/publishers analyze connected-environment data (browsing, gameplay, purchases) to segment players, track behaviors, identify retention drop-offs, and optimize monetization pathways.\n- *Digital Rights & Storefront Management:* Modern publisher function focused on licensing, securing premium placement on digital platforms, and executing digital-first campaigns.\n\n**Procedures/Strategies:** \n- *Traditional:* Physical media production, retail shelf negotiation, press releases, trade publications, scheduled media events.\n- *Digital/Modern:* Securing digital storefront placements (e.g., Steam), influencer/streamer partnerships, social media leverage, celebrity casting/endorsements, C...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\15\\398_1132_1518_1351_image.jpg",
+              "image_caption": "这是一张水平堆叠条形图，展示了四个类别（Overall, Mobile, Console, PC）在两个不同部分（橙色和紫色）的百分比分布数据。具体数据如下：\n\n*   **Overall**：橙色部分占 **4.6%**，紫色部分占 **95.4%**。\n*   **Mobile**：紫色部分占 **100%**。\n*   **Console**：橙色部分占 **16%**，紫色部分占 **84%**。\n*   **PC**：橙色部分占 **1%**，紫色部分占 **99%**。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\15\\140_1613_1521_2006_image.jpg",
+              "image_caption": "这是一张水平条形图，展示了多家知名游戏公司在特定财年（FY）的某项数据占比情况（通常此类图表用于展示数字收入与实体收入的占比，或类似的两部分构成）。图表主要由紫色和橙色两种颜色的条形组成，左侧列出了公司名称及财年，条形内部标注了具体的百分比数值。\n\n具体数据如下（从上至下）：\n\n*   **Take-Two Entertainment (FY 2024)**：紫色部分占比 **95.6%**，橙色部分占比 **4.4%**。\n*   **CD Projekt Group (FY 2023)**：紫色部分占比 **92.4%**，橙色部分占比 **7.6%**。\n*   **Electronic Arts (FY 2024)**：紫色部分占比 **91.1%**，橙色部分占比 **8.9%**。\n*   **Square Enix (FY 2023)**：紫色部分占比 **90.3%**，橙色部分占比 **9.7%**。\n*   **Ubisoft (FY 2023-24)**：紫色部分占比 **85.6%**，橙色部分占比 **14.4%**。\n*   **Activision Blizzard (FY 2022)**：紫色部分占比 **84%**，橙色部分占比 **16%**。\n*   **Nintendo (FY 2024)**：紫色部分占比 **50.2%**，橙色部分占比 **49.8%**。\n\n从数据趋势来看，除 Nintendo 外，其他公司的紫色部分占比均超过 80%，其中 Take-Two Entertainment 最高；而 Nintendo 的两部分占比几乎持平，橙色部分占比在所有列出的公司中最高。"
+            }
+          ],
+          "start_index": 14,
+          "end_index": 15,
+          "chunk_ids": []
+        },
+        {
+          "title": "Partnerships as Marketing Channels",
+          "node_id": "0011",
+          "summary": "**Topics:** Gaming industry partnerships as marketing channels; co-development models; IP licensing agreements; technology and Gametech integrations; cross-media expansion (video games to film, TV, and streaming); virtual platform collaborations including celebrity virtual concerts, luxury fashion brand integrations, and licensed IP crossover costumes.\n\n**Entities:** \n- *Studios & Publishers:* CD Projekt Red, Warner Bros. Interactive, Scopely, Hasbro, Naughty Dog, Sony, Valve, HTC, Epic Games, Marvel, Gearbox, 2K Games.\n- *Technology & Cloud Providers:* Amazon, Google, Microsoft/Azure.\n- *Brands & IP:* TIME Magazine, Pizza Hut, H&M, IKEA, Diesel, Star Wars, Moschino, Hellman’s Canada, KFC, Gucci, Stella Artois, Mastercard, Validé, Ralph Lauren, Tommy Hilfiger.\n- *Games & Platforms:* The Witcher 3: Wild Hunt, Monopoly Go, The Last of Us, Castlevania: Nocturne, The Super Mario Bros. Movie, Twisted Metal, Captain Laserhawk, Fortnite, EverQuest II, The Sims, Animal Crossing: New Horizons, Pokemon, Football Manager, GTA, Borderlands, HTC Vive, Roblox, Fall Guys: Ultimate Knockout, Sonic, Untitled Goose Game, Godzilla, Ghostbusters, Doctor Who.\n- *Celebrities & Artists:* Katy Perry, Post Malone, Ed Sheeran, Dixon, Solomun, The Blessed Madonna, Miley Cyrus, Paris Hilton, Jinkx Monsoon.\n\n**Dates:** 2001 (Sony acquisition of Naughty Dog); 2016 (Valve-HTC Vive launch); 2018 (Fortnite x Marvel Avengers event); 2023 (surge in game-to-film/TV adaptations); 2023–2025 (Deloitte projection window for box office revenue growth); 10 months post-launch (Monopoly Go revenue milestone).\n\n**Definitions:** \n- *Co-development:* Collaborative game creation between developers, publishers, or vendors to pool resources, reduce costs, and access new markets.\n- *Licensing agreement:* Granting right...",
+          "images": [],
+          "start_index": 16,
+          "end_index": 16,
+          "chunk_ids": []
+        },
+        {
+          "title": "Influencer Marketing",
+          "node_id": "0012",
+          "summary": "**Topics:** Influencer marketing in the gaming industry, platform-specific content strategies, creator-driven consumer behavior, community engagement, and comparative marketing effectiveness.\n**Entities:** TikTok, YouTube, Twitch, Facebook, Tyler \"Ninja\" Blevins, Shroud, Fortnite, EA (Electronic Arts), Apex Legends, The Influencer Marketing Factory.\n**Dates:** 2019 (Apex Legends launch and associated influencer-led marketing campaign).\n**Definitions & Roles:** Influencer marketing is defined as a strategic tool for engaging endemic and non-endemic gaming audiences. Core influencer functions include delivering immersive reviews, demonstrating gameplay, generating hype via early access/sneak peeks, fostering community engagement, acting as a feedback channel between players and developers, and monetizing content through sponsorships and merchandise.\n**Procedures & Strategies:** Campaigns utilize pre-recorded VODs and live streams for game announcements, development consultations, gameplay previews, and long-term brand ambassadorships. Key tactics include stealth launches that bypass traditional social media announcements in favor of live-streamed gameplay reveals by prominent influencers.\n**Claims:** Influencers build community trust and actively shape gaming perceptions. Creator endorsements significantly drive consumer purchases, with gaming ranked as the top product category for influencer-influenced buying. Gaming influencers offer distinct marketing advantages over traditional advertising.\n**Tables & Figures:** Table 6 (\"The Role of Influencers in Shaping Gaming Trends\") details influencer contributions across reviews, demos, hype, community, feedback, and monetization. Table 7 (\"Benefits of Gaming Influencers in Marketing Over Traditional Advertising\") provides a q...",
+          "images": [],
+          "start_index": 17,
+          "end_index": 19,
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "SECTION 3: Community",
+      "node_id": "0013",
+      "summary": "SECTION 3: Community (pp. 20–23) analyzes the strategic role of player communities in gaming, covering retention drivers, monetization, eSports growth, and the evolution of trust and safety infrastructures. It details how industry shifts toward socially integrated online gaming have increased community violations, driving the adoption of AI-driven moderation and regulatory compliance frameworks.\n\n**Topics:** Strategic community building, player retention, live service/event monetization, eSports market growth, community management infrastructure, AI moderation adoption, historical evolution of online safety, regulatory compliance, platform-specific safety policies, and trust & safety workflows.\n**Entities:** Research firms (Amber Studio); publishers/developers (Scopely, Krafton); game titles (Monopoly Go!, PUBG Mobile); social/community platforms (Facebook, YouTube, TikTok, Discord, Twitch, Steam Community, Guilded, Reddit, Game Jolt, Discourse, Mobalytics); platform holders (Xbox, PlayStation, Nintendo); regulatory/industry bodies (EU, Ofcom, U.S. Federal Government, ESRB, PEGI, ESA); operational entities (BPO providers, Player Experience Teams, AI/ML systems, Kingston).\n**Dates & Timeframes:** 1990s–late 2000s (historical safety evolution); 2023 (YoY baseline); Q1/H1 2024, July 2024 (event/activity periods); 2030 (eSports market projection).\n**Definitions & Concepts:** Community touchpoints, live service strategy, Partner Events, cost per install (CPI), in-app purchases (IAP), daily active users (DAU), eSports, automated moderation, BPO moderation models, Player Experience Teams, multimodal automated detection, prosocial behavior incentivization, platform policy frameworks (Xbox Community Standards, PlayStation Code of Conduct, Nintendo Parental Controls).\n**Procedur...",
+      "images": [],
+      "start_index": 20,
+      "end_index": 23,
+      "nodes": [
+        {
+          "title": "Importance of Community in Gaming",
+          "node_id": "0014",
+          "summary": "This section analyzes the strategic role of community building in gaming, focusing on player retention drivers, live service and event monetization, eSports market growth, and community management infrastructure. It further establishes that the industry's shift toward socially integrated online gaming has increased community violations (bullying, child safety concerns, cheating, fraud), directly driving the adoption of AI-driven automated moderation tools.\n\n**Topics:** Strategic community building, player retention drivers, social media vs. in-game channels, live service/event monetization, eSports market growth, community management infrastructure, and AI moderation adoption.\n**Entities:** Research firms (Amber Studio); publishers/developers (Scopely, Krafton); game titles (Monopoly Go!, PUBG Mobile); social platforms (Facebook, YouTube, TikTok); community management tools (Discord, Twitch, Steam Community, Guilded, Reddit, Game Jolt, Discourse, Mobalytics); AI automated moderation systems.\n**Dates & Timeframes:** Q1 2024, H1 2024, July 2024 (PUBG Mobile event launch), 2023 (YoY comparison baseline), 2030 (eSports market projection).\n**Definitions/Concepts:** Community touchpoints, live service strategy, Partner Events, cost per install (CPI), in-app purchases (IAP), daily active users (DAU), eSports, automated moderation.\n**Procedures/Strategies:** Curating immersive community experiences, deploying continuous small-scale community events, leveraging IP crossovers with new gameplay modes, fostering in-game guilds/alliances, utilizing social media for peer recommendations, organizing competitive tournaments, and implementing AI-driven automated moderation to address community violations.\n**Claims:** Community engagement is a primary driver of player motivation and gam...",
+          "images": [],
+          "start_index": 20,
+          "end_index": 21,
+          "chunk_ids": []
+        },
+        {
+          "title": "Community Safety",
+          "node_id": "0015",
+          "summary": "This section (pages 22–23) details the historical evolution, technological implementation, regulatory compliance, and platform-specific policies governing community safety in online gaming. \n\n**Topics & Scope:** Addresses the transition from offline to online gaming (MMORPGs, FPS), the rise of player misconduct, trust & safety infrastructure development, platform-specific safety rules, respectful behavior enforcement, and user safety tools.\n**Entities:** Business Process Outsourcing (BPO) providers, Player Experience Teams, AI/ML systems, regulatory/industry bodies (EU, Ofcom, U.S. Federal Government, ESRB, PEGI, ESA), Xbox, PlayStation, Nintendo, and source entity Kingston (Company/Organization).\n**Dates & Timeline:** 1990s (online transition, player/admin-led oversight); late 1990s (hiring of dedicated community managers); 2000s (social/mobile gaming surge, implementation of reporting tools, outsourcing to BPOs); late 2000s onward (adoption of AI-powered automation and real-time multimodal detection).\n**Definitions & Concepts:** BPO moderation models; Player Experience Teams (proactive trust & safety gatekeepers); multimodal automated detection; prosocial behavior incentivization; official policy titles (Xbox: Community Standards; PlayStation: Code of Conduct; Nintendo: Parental Controls).\n**Procedures & Workflows:** Moderation evolved from manual oversight to AI/ML-driven systems that analyze data, recognize disruptive patterns, flag offenders, automate harm mitigation, and reward positive behavior across in-game and off-platform communities. Platform-level procedures include built-in mechanisms to block and report harmful interactions.\n**Claims:** Scaling player bases directly increased toxicity, necessitating advanced safety systems; AI/ML enables proactive, real-...",
+          "images": [],
+          "start_index": 22,
+          "end_index": 23,
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "SECTION 4: Data-Driven Success",
+      "node_id": "0016",
+      "summary": "SECTION 4: Data-Driven Success (Pages 24–26) explores how data analytics, AI/ML infrastructure, and telemetry tracking enable data-driven monetization, player retention, and LiveOps optimization across gaming and adjacent tech sectors. Covered topics include real-time versus batch analytics, cross-platform data consolidation, anti-cheat systems, personalized player experiences, cohort analysis, funnel tracking, mobile attribution, and fraud prevention. Key entities referenced include game developers and publishers such as PeopleFun (Wordscapes), Electronic Arts, Valve (Steam/VAC), Ubisoft, King Digital Entertainment, Epic Games (Fortnite), and Crystal Dynamics, alongside cloud/ML providers AWS and Amazon SageMaker. The section catalogs third-party analytics platforms including Adjust, Flurry Analytics, GameAnalytics, GameSparks, Kochava, Mixpanel, PlayFab, and Unity Analytics, with notable enterprise adopters spanning Square Enix, Tencent, Supercell, Capcom, Uber, Airbnb, Instacart, Slack, and DoorDash. Table 10 (\"Data Analytics: Leading Providers\") maps eight analytics platforms to their provider companies, core services, and enterprise user bases; no figures are referenced. Core definitions and concepts include telemetry data, real-time big data analytics, batch processing, LiveOps, clustering algorithms, A/B testing, player archetypes, and player data management. Documented procedures and methods feature adjusting difficulty curves based on payer concentration, incremental pricing optimization, and revenue reinvestment for user acquisition. No specific dates, quantitative metrics, explicit claims, or evidence types are detailed in the provided excerpt.",
+      "images": [],
+      "start_index": 24,
+      "end_index": 26,
+      "nodes": [
+        {
+          "title": "The Role of Data in Publishing and Marketing",
+          "node_id": "0017",
+          "summary": "**Section:** The Role of Data in Publishing and Marketing (Pages 24–26)\n**Topics:** Data-driven monetization, player retention, real-time vs. batch analytics, AI/ML in game development, telemetry tracking, LiveOps optimization, anti-cheat systems, personalized player experiences, cross-platform data consolidation, cloud/ML data infrastructure, third-party analytics vendor ecosystems, gameplay optimization, cohort analysis, funnel tracking, mobile attribution, and fraud prevention.\n**Entities:** PeopleFun (Wordscapes), Electronic Arts (EA), Valve (Steam, VAC), Ubisoft (Assassin’s Creed, Far Cry), King Digital Entertainment (Candy Crush Saga), Crystal Dynamics (Tomb Raider: Underworld), EcoEcho, Epic Games (Fortnite), AWS, Amazon SageMaker. Analytics Platforms: Adjust, Flurry Analytics, GameAnalytics, GameSparks, Kochava, Mixpanel, PlayFab, Unity Analytics. Notable Corporate Users: Square Enix, Tencent, Supercell, Rovio, Bandai Namco, Konami, Sega, Glu Mobile, Wizards of the Coast, Rare, Capcom, Uber, Airbnb, Instacart, Slack, DoorDash.\n**Dates:** None specified.\n**Tables & Figures:** Table 10 (\"Data Analytics: Leading Providers\") catalogs eight analytics platforms, mapping each tool's provider company, core services offered, and enterprise user base. No figures are referenced.\n**Definitions & Concepts:** Telemetry data (tracking button presses, movements, and decisions), Real-time big data analytics, Batch processing, LiveOps, Clustering algorithms, A/B testing, Player archetypes (runners, solvers, pacifists, veterans), Cohort analysis, Funnel tracking, Player data management, Mobile attribution, Fraud prevention.\n**Procedures & Methods:** Adjusting difficulty curves based on payer concentration; incremental pricing optimization; revenue reinvestment for user acquisitio...",
+          "images": [],
+          "start_index": 24,
+          "end_index": 26,
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "SECTION 5: Revenue Streams and Business Models",
+      "node_id": "0018",
+      "summary": "**Topics:** Comprehensive analysis of video game monetization frameworks, including Live Service Games (GaaS), traditional one-time purchase/boxed models, subscription ecosystems, esports revenue generation, and hybrid monetization strategies. Covers strategic industry shifts, platform marketplace dynamics, transmedia/IP partnerships, AI-driven optimization, post-launch monetization, and tournament economics.\n\n**Entities & Organizations:** Platforms/Marketplaces: Steam, GOG, Epic Games Store, PlayStation Plus, Xbox Game Pass, Twitch, YouTube Gaming, Facebook Gaming, AfreecaTV, Kick, Huya Live. Publishers/Studios: Microsoft, Sony, Activision Blizzard, Naughty Dog, Santa Monica Studio, Rockstar Games, Bungie, Epic Games, Ubisoft, Riot Games, Habby. IP/Media Partners: Marvel, Star Wars, Lionsgate, Warner Bros. Discovery, Paramount Global. Esports Sponsors/Brands: Red Bull, Mercedes-Benz, Huawei, LG UltraGear, Adidas, KitKat, Pepsi, TikTok, Amazon, Son, Tencent/Level Infinite, Gucci, PUMA, Louis Vuitton, Nike, Armani Exchange. Analytics/Research Firms: AgileIntel, Newzoo, Griffin Gaming Partners, Rendered VC, Sensor Tower.\n\n**Dates & Timeframes:** Historical baselines (2019–2023, Q1 2019–Q4 2024), current metrics (2022–2024), and forward-looking projections (2025–2030). Specific operational windows include short-term launch periods (first 3 days, first month) and brand entry dates (e.g., Mercedes-Benz in 2022).\n\n**Tables & Figures:** Figure 9 (\"Global Live Service Gaming Market in US$ billions, 2025–2030\") presents bar chart data for market forecasts. Table 12 (\"Hybrid Models Used in Selected Games and Platforms\") maps specific titles to their hybrid model combinations.\n\n**Definitions:** One-time purchase model (single upfront fee for a complete game without ongoing fees,...",
+      "images": [
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\27\\129_1644_1524_2044_image.jpg",
+          "image_caption": "这是一张柱状图，展示了从2025年至2030年的数据变化趋势。图表包含六个橙色的柱状体，高度逐年递增，表明数值呈持续上升趋势。具体数据如下：2025年为12.3，2026年为13.2，2027年为14.2，2028年为15.4，2029年为17.3，2030年为18.7。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\29\\188_1356_335_1590_image.jpg",
+          "image_caption": "这是一张数据图表（看似柱状图的一个数据条），显示2019年的数值为36。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\29\\469_1291_618_1590_image.jpg",
+          "image_caption": "这是一张数据图表（看似柱状图的一部分）。图中显示一个橙色的垂直矩形，中间标有白色数值“50”，下方标注有年份“2020”。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\29\\752_1300_899_1590_image.jpg",
+          "image_caption": "这是一张柱状图。图中显示了一个橙色的柱状条，柱体中间标有白色数值“49”，下方标有年份“2021”。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\29\\1035_1274_1180_1590_image.jpg",
+          "image_caption": "这是一张极简风格的数据图表（类似单柱柱状图或数据卡片）。图中主要包含一个橙色的垂直矩形，矩形中央显示白色数字“52”，矩形正下方显示黑色数字“2022”。这可能表示2022年对应的数值为52。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\29\\1314_1181_1463_1590_image.jpg",
+          "image_caption": "这是一张柱状图（或数据条形图）。图表展示了一个橙色的垂直长条，中间标有白色数值“71”，下方标注有年份“2023”。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\30\\129_1604_1526_2084_image.jpg",
+          "image_caption": "这是一张柱状图，展示了从2025年至2030年期间的数据增长趋势。图表包含六个橙色的垂直柱体，高度随年份递增。\n\n具体数据如下：\n- 2025年：12.1\n- 2026年：13.9\n- 2027年：15.5\n- 2028年：17.3\n- 2029年：19.3\n- 2030年：21.6\n\n图表左下角标注数据来源为“Source: AgileIntel”。整体数据显示出稳定的逐年上升趋势。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\31\\132_430_813_935_image.jpg",
+          "image_caption": "这是一张柱状图，展示了2020年至2024年间两组不同类别（以紫色和橙色区分）的数据对比情况。\n\n**图表主要信息与数据：**\n*   **横轴**：表示年份，涵盖2020年至2024年。\n*   **数据系列**：包含紫色和橙色两组柱状数据。\n*   **具体数值**：\n    *   **2020年**：紫色 3.9，橙色 5.0\n    *   **2021年**：紫色 13.5，橙色 17.9\n    *   **2022年**：紫色 23.7，橙色 33.5\n    *   **2023年**：紫色 21.0，橙色 46.6\n    *   **2024年**：紫色 44.3，橙色 67.3\n\n**数据趋势：**\n整体来看，两组数据均呈现明显的上升趋势。橙色柱状图的数值在每一年都高于紫色柱状图。其中，紫色数据在2023年（21.0）较2022年（23.7）有轻微下降，但在2024年大幅反弹至44.3；橙色数据则保持持续且加速的增长态势，从2020年的5.0增长至2024年的67.3。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\31\\927_442_1432_947_image.jpg",
+          "image_caption": "这是一个环形图（饼图的一种变体），展示了两个部分的比例分布。图表主要包含以下数据：\n- 紫色部分占比：63%\n- 橙色部分占比：37%"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\32\\132_1382_1521_2023_image.jpg",
+          "image_caption": "这是一张关于“Esports Monetization”（电子竞技变现）的思维导图或层级结构图。图表从上至下展示了电子竞技收入来源的分类结构。\n\n**主要结构如下：**\n\n*   **核心主题**：Esports Monetization（位于顶部深蓝色背景框中）\n\n图表向下分为四个主要分支（一级分类），每个分支下列出了具体的细分项目（二级分类）：\n\n1.  **SPONSORSHIPS（赞助）** - 橙色背景\n    *   Tournament Sponsorships（赛事赞助）\n    *   Team Sponsorships（战队赞助）\n    *   In-gaame Advertising（游戏内广告，原文拼写为In-gaame）\n\n2.  **TICKET SALES（门票销售）** - 紫色背景\n    *   Arena Events and Finals（场馆赛事与决赛）\n    *   Online Tickets and Virtual Access（在线门票与虚拟访问）\n    *   Fan Zones and Premium Experiences（粉丝专区与高级体验）\n\n3.  **MERCHANDIZE（商品/周边）** - 绿色背景\n    *   Team Merchandize（战队周边）\n    *   Evnt Merchandize（赛事周边，原文拼写为Evnt）\n    *   In-game Cosmetics（游戏内饰品）\n\n4.  **STREAMING & MEDIA RIGHTS（流媒体与媒体版权）** - 蓝色背景\n    *   Streaming（流媒体）\n    *   Media rights（媒体版权）"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\132_369_286_958_image.jpg",
+          "image_caption": "这是一张垂直堆叠柱状图，展示了2025年的数据分布情况。\n\n图表顶部有一个气泡标注数值 **3.0**。\n柱状图从下至上分为四个不同颜色的部分，具体数据如下：\n- 橙色部分：**58%**\n- 紫色部分：**27%**\n- 绿色部分：**7%**\n- 蓝色部分：**8%**\n\n图表底部标注年份为 **2025**。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\378_371_534_958_image.jpg",
+          "image_caption": "这是一张垂直堆叠柱状图的局部截图，展示了2026年的数据分布情况。\n\n图表顶部有一个气泡标注，数值为 **3.9**。\n柱状图主体由四个不同颜色的色块堆叠而成，从上到下依次为：\n*   蓝色部分：**8%**\n*   绿色部分：**7%**\n*   紫色部分：**28%**\n*   橙色部分：**56%**\n\n图表底部标注的年份为 **2026**。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\623_371_783_958_image.jpg",
+          "image_caption": "这是一张展示2027年数据的垂直堆叠柱状图。\n\n图表顶部有一个气泡标注数值为 **4.6**。\n柱状图主体从下至上分为四个不同颜色的部分，具体数据如下：\n- 底部橙色部分占比 **56%**\n- 中间紫色部分占比 **29%**\n- 上方绿色部分占比 **7%**\n- 顶部蓝色部分占比 **8%**\n\n图表底部标注的年份为 **2027**。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\871_371_1028_958_image.jpg",
+          "image_caption": "这是一个堆叠柱状图，展示了2028年的数据构成比例。图表顶部有一个气泡标注数值“5.4”，并通过线条连接至柱状图顶端。柱状图从下至上依次分为四个颜色区块，具体数据如下：\n- 底部橙色区块：55%\n- 中间紫色区块：30%\n- 上方绿色区块：7%\n- 顶部蓝色区块：8%\n图表底部标注年份为“2028”。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\1118_371_1276_958_image.jpg",
+          "image_caption": "这是一张堆叠柱状图。图表顶部有一个圆角框显示数值 **6.4**，并通过连线指向下方的柱状体。柱状图底部标注年份为 **2029**。\n\n柱状图从下至上由四个不同颜色的色块组成，分别代表不同的百分比数据：\n- 橙色部分：**55%**\n- 紫色部分：**30%**\n- 绿色部分：**7%**\n- 蓝色部分：**8%**"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\1364_371_1523_958_image.jpg",
+          "image_caption": "这是一张堆叠柱状图。图表顶部显示数值7.7。下方的柱状图展示了2030年的数据分布情况，从下至上各部分占比依次为：橙色区域55%，紫色区域30%，绿色区域7%，蓝色区域8%。底部标注年份为2030。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\135_1279_1521_2020_image.jpg",
+          "image_caption": "这是一张水平堆叠条形图，展示了多款电子竞技游戏在不同年份（推测为2020年至2024年，按从左至右顺序排列）的数据分布情况。图表左侧列出了游戏名称，条形图由不同颜色的色块组成，每个色块内标有具体数值。\n\n**图表数据详情（从左至右依次为不同年份/类别）：**\n\n*   **Dota 2**: 10.1 (橙色), 48.0 (紫色), 32.9 (绿色), 30.8 (蓝色), 22.8 (深蓝色)\n*   **Counter-Strike**: 16.0 (橙色), 21.5 (紫色), 16.4 (绿色), 15.2 (蓝色), 21.6 (深蓝色)\n*   **PUBG Mobile**: 8.9 (橙色), 21.9 (紫色), 23.6 (绿色), 21.2 (蓝色), 16.3 (深蓝色)\n*   **Fortnite**: 13.1 (橙色), 22.3 (紫色), 17.3 (绿色), 19.7 (蓝色), 12.9 (深蓝色)\n*   **Arena of Valor**: 10.2 (橙色), 17.9 (紫色), 31.4 (绿色), 19.2 (蓝色)\n*   **PUBG**: 6.7 (橙色), 16.3 (紫色), 8.5 (绿色), 7.6 (蓝色), 6.8 (深蓝色)\n*   **League of Legends**: 8.7 (橙色), 8.3 (紫色), 8.0 (绿色), 7.7 (蓝色), 9.2 (深蓝色)\n*   **Overwatch**: 6.8 (橙色), 5.7 (紫色), 5.7 (绿色), 4.8 (蓝色)\n\n**图例说明（位于顶部）：**\n虽然图例颜色标记存在重复（如2021、2023、2024均标记为绿色点，2020和2022均标记为橙色点），但结合条形图的实际颜色分布，数据显然分为五个时间段，颜色依次为橙色、紫色、绿色、蓝色和深蓝色。"
+        },
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\34\\129_1328_1526_2034_image.jpg",
+          "image_caption": "这是一张折线图，展示了从2019年第一季度（Q1-19）到2024年第四季度（Q4-24）期间，五个主要游戏直播平台的观看时长（单位：十亿小时）的变化趋势。\n\n**图表基本信息：**\n*   **X轴**：时间，从2019年第一季度（Q1-19）至2024年第四季度（Q4-24）。\n*   **Y轴**：观看时长（Hours Watched），单位为十亿（Billions），刻度范围从0到7。\n*   **图例**：\n    *   Twitch（橙色）\n    *   YouTube Gaming（紫色）\n    *   Facebook Gaming（绿色）\n    *   AfreecaTV（蓝色）\n    *   Kick（深蓝色/黑色）\n\n**详细数据趋势与数值（估算）：**\n\n1.  **Twitch (橙色线)**：\n    *   始终占据主导地位，观看时长远超其他平台。\n    *   2019年期间保持在2.7-2.9亿小时左右。\n    *   2020年Q1开始显著增长，Q2跃升至约5.2亿小时。\n    *   2021年Q2达到峰值，约6.5亿小时。\n    *   此后呈现波动下降趋势，但在2022年Q1反弹至约6.1亿小时。\n    *   2023年至2024年初稳定在5.4-5.5亿小时左右。\n    *   2024年Q2有所下降至约5.1亿小时，Q3和Q4保持在5.1亿小时左右。\n\n2.  **YouTube Gaming (紫色线)**：\n    *   长期处于第二位。\n    *   2019年从约0.7亿小时起步，缓慢增长。\n    *   2020年Q4达到一个小高峰，约1.9亿小时。\n    *   2021年回落至1.1-1.4亿小时区间。\n    *   2022年至2023年期间非常稳定，维持在1.1-1.2亿小时左右。\n    *   2024年Q2开始显著增长，Q3达到约2.0亿小时，Q4略降至1.9亿小时。\n\n3.  **Facebook Gaming (绿色线)**：\n    *   2019年从约0.2亿小时起步，呈现上升趋势。\n    *   2021年Q3达到峰值，约1.3亿小时，一度接近YouTube Gaming。\n    *   此后持续下滑，2022年降至0.8亿小时以下。\n    *   2023年至2024年进一步萎缩，降至0.3亿小时以下，2024年Q4接近0.1亿小时。\n\n4.  **AfreecaTV (蓝色线)**：\n    *   数据从2023年Q2开始显现。\n    *   数值较低，一直在0.2-0.3亿小时之间波动。\n    *   2024年Q4约为0.3亿小时。\n\n5.  **Kick (深蓝色/黑色线)**：\n    *   数据从2023年Q3开始显现，初始值约为0.1亿小时。\n    *   呈现缓慢但稳定的上升趋势。\n    *   2024年Q2升至约0.5亿小时。\n    *   2024年Q4达到约0.6亿小时，超过了AfreecaTV和Facebook Gaming。"
+        }
+      ],
+      "start_index": 27,
+      "end_index": 37,
+      "nodes": [
+        {
+          "title": "Live Service Games",
+          "node_id": "0019",
+          "summary": "**Topics & Definitions:** What are Live Service Games (LSG) or Games-as-a-Service (GaaS)? How do they differ from traditional one-time sales and paid DLC models? What strategic shift is occurring in AAA game development?\n\n**Entities & Organizations:** Which platforms and marketplaces dominate or challenge the LSG ecosystem (Valve/Steam, GOG, Epic Games Store)? Which major tech/media companies and IP holders are involved (Microsoft, Activision Blizzard, Lionsgate, Warner Bros. Discovery, Paramount Global, Marvel, Star Wars, Fortnite)? Which research and data firms are cited (Griffin Gaming Partners, Rendered VC, AgileIntel)?\n\n**Dates & Timeframes:** What years are referenced for industry studies, platform performance metrics, and market forecasts (2023, 2025–2030)?\n\n**Metrics & Financial Data:** What percentage of studios are developing or planning LSG titles? What is the projected global LSG market value and CAGR from 2025 to 2030? What are the Epic Games Store's user counts and 2023 player spending? What was the valuation of Microsoft's Activision Blizzard acquisition? What are the exact annual market values displayed in the forecast chart?\n\n**Procedures & Strategies:** How can game studios successfully launch and sustain LSG titles? What operational and strategic approaches are recommended to manage rising costs, expand demographics, implement new monetization models, leverage AI, and secure IP/media partnerships?\n\n**Claims & Insights:** Why is the industry shifting toward LSG? How do distribution platforms and marketplace revenue splits impact LSG success? What role do transmedia and IP collaborations play in player engagement and cross-platform revenue? How does the strategic valuation of gaming compare to traditional Hollywood studios? What challenges do studios f...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\27\\129_1644_1524_2044_image.jpg",
+              "image_caption": "这是一张柱状图，展示了从2025年至2030年的数据变化趋势。图表包含六个橙色的柱状体，高度逐年递增，表明数值呈持续上升趋势。具体数据如下：2025年为12.3，2026年为13.2，2027年为14.2，2028年为15.4，2029年为17.3，2030年为18.7。"
+            }
+          ],
+          "start_index": 27,
+          "end_index": 27,
+          "chunk_ids": []
+        },
+        {
+          "title": "Boxed Games/One-time Purchase Model",
+          "node_id": "0020",
+          "summary": "**Retrieval-Oriented Summary: Boxed Games/One-time Purchase Model**\n\n**Topics:** One-time purchase/boxed games business model, premium game economics, launch-dependent revenue cycles, subscription service competition, post-launch monetization strategies, and market sustainability.\n\n**Entities:** \n- *Games:* The Last of Us Part II, God of War, Red Dead Redemption 2, The Witcher 3, Horizon Zero Dawn, The Last of Us Part I (Remake), God of War Ragnarök.\n- *Studios:* Naughty Dog, Santa Monica Studio, Rockstar Games.\n- *Platforms/Services:* PlayStation Plus, Xbox Game Pass.\n\n**Dates:** 2019–2023 (historical chart data), 2025–2030 (market projection window), short-term launch windows (first 3 days, first month).\n\n**Definitions:** One-time purchase model: A pricing structure where consumers pay a single upfront fee for a complete, self-contained game without ongoing fees, subscriptions, or microtransactions.\n\n**Procedures:** Revenue supplementation and adaptation strategies: releasing optional post-launch DLC/expansions, developing remasters and sequels to leverage existing IP/assets, licensing titles to subscription services after initial sales windows close, and expanding franchises into transmedia (e.g., television adaptations).\n\n**Claims:** The model remains relevant for narrative-driven, high-fidelity titles; appeals to players seeking uninterrupted experiences and avoiding monetization fatigue; carries high financial risk due to heavy reliance on launch sales and lack of recurring revenue; faces marginal growth due to low-cost subscription competition; and remains sustainable only for studios capable of consistently delivering premium blockbusters.\n\n**Tables/Figures:** Figure 9 (\"Global Live Service Gaming Market in US$ billions, 2025–2030\") presents bar chart data for...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\29\\188_1356_335_1590_image.jpg",
+              "image_caption": "这是一张数据图表（看似柱状图的一个数据条），显示2019年的数值为36。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\29\\469_1291_618_1590_image.jpg",
+              "image_caption": "这是一张数据图表（看似柱状图的一部分）。图中显示一个橙色的垂直矩形，中间标有白色数值“50”，下方标注有年份“2020”。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\29\\752_1300_899_1590_image.jpg",
+              "image_caption": "这是一张柱状图。图中显示了一个橙色的柱状条，柱体中间标有白色数值“49”，下方标有年份“2021”。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\29\\1035_1274_1180_1590_image.jpg",
+              "image_caption": "这是一张极简风格的数据图表（类似单柱柱状图或数据卡片）。图中主要包含一个橙色的垂直矩形，矩形中央显示白色数字“52”，矩形正下方显示黑色数字“2022”。这可能表示2022年对应的数值为52。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\29\\1314_1181_1463_1590_image.jpg",
+              "image_caption": "这是一张柱状图（或数据条形图）。图表展示了一个橙色的垂直长条，中间标有白色数值“71”，下方标注有年份“2023”。"
+            }
+          ],
+          "start_index": 28,
+          "end_index": 29,
+          "chunk_ids": []
+        },
+        {
+          "title": "Subscription Models",
+          "node_id": "0021",
+          "summary": "**Section:** Subscription Models (Pages 30–31)\n**Overview & Scope:** Covers the gaming subscription ecosystem, detailing market trends, stakeholder impacts, pricing structures, platform competition, and direct service comparisons between major providers.\n\n**Market Metrics & Projections (2020–2030):** Global active subscriptions grew from 171M (2022) to 180M (2023), with projections exceeding 318M by 2030. Market valuation stands at $12.1B in 2025, expanding at a 12.2% CAGR to approximately $21.6B by 2030.\n\n**Competitive Landscape & Key Entities:** Market dominance is held by Microsoft (Xbox) and Sony (PlayStation). The 2024 combined installed base exceeds 110M units (PS5: 67.3M), with a 2023–2024 revenue share split of 63% (Xbox) vs. 37% (PlayStation). Additional referenced entities include Riot Games, EA, and Ubisoft. Flagship titles cited: *Halo Infinite*, *Starfield*, *God of War*, *The Last of Us*.\n\n**Pricing, Tiers & Service Differentiation:** Monthly subscription costs have shifted from $50–$70 to $10–$20. Xbox tiers: Free, Core, Standard, PC, Ultimate. PlayStation tiers: Essential, Extra, Premium. Exact monthly/annual pricing is documented. Strategic differentiators: Xbox emphasizes day-one first-party releases, cross-platform/cloud accessibility, and profitability driven by subscriber growth. PlayStation focuses on legacy library depth, a hybrid streaming/download model, and does not offer day-one first-party drops.\n\n**Stakeholder Impacts & Industry Claims:** Subscriptions provide cost-effective library access, consumer perks (early access, discounts), and cloud gaming that reduces hardware barriers. Developers gain steady/predictable revenue, increased player engagement/loyalty, and extended monetization of legacy titles. Key claims: >70% of gamers play more w...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\30\\129_1604_1526_2084_image.jpg",
+              "image_caption": "这是一张柱状图，展示了从2025年至2030年期间的数据增长趋势。图表包含六个橙色的垂直柱体，高度随年份递增。\n\n具体数据如下：\n- 2025年：12.1\n- 2026年：13.9\n- 2027年：15.5\n- 2028年：17.3\n- 2029年：19.3\n- 2030年：21.6\n\n图表左下角标注数据来源为“Source: AgileIntel”。整体数据显示出稳定的逐年上升趋势。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\31\\132_430_813_935_image.jpg",
+              "image_caption": "这是一张柱状图，展示了2020年至2024年间两组不同类别（以紫色和橙色区分）的数据对比情况。\n\n**图表主要信息与数据：**\n*   **横轴**：表示年份，涵盖2020年至2024年。\n*   **数据系列**：包含紫色和橙色两组柱状数据。\n*   **具体数值**：\n    *   **2020年**：紫色 3.9，橙色 5.0\n    *   **2021年**：紫色 13.5，橙色 17.9\n    *   **2022年**：紫色 23.7，橙色 33.5\n    *   **2023年**：紫色 21.0，橙色 46.6\n    *   **2024年**：紫色 44.3，橙色 67.3\n\n**数据趋势：**\n整体来看，两组数据均呈现明显的上升趋势。橙色柱状图的数值在每一年都高于紫色柱状图。其中，紫色数据在2023年（21.0）较2022年（23.7）有轻微下降，但在2024年大幅反弹至44.3；橙色数据则保持持续且加速的增长态势，从2020年的5.0增长至2024年的67.3。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\31\\927_442_1432_947_image.jpg",
+              "image_caption": "这是一个环形图（饼图的一种变体），展示了两个部分的比例分布。图表主要包含以下数据：\n- 紫色部分占比：63%\n- 橙色部分占比：37%"
+            }
+          ],
+          "start_index": 30,
+          "end_index": 31,
+          "chunk_ids": []
+        },
+        {
+          "title": "Esports",
+          "node_id": "0022",
+          "summary": "This retrieval-oriented summary synthesizes the global esports market analysis (pages 32–35), sourced from AgileIntel and supplemented by Newzoo and corporate disclosures. It is structured to support queries on industry growth, monetization frameworks, tournament economics, streaming trends, and publishing models.\n\n**Market Growth & Audience Projections**\n- Global esports revenue is projected to grow from $3B (2025) to $7.7B (2030).\n- The global esports audience is projected to exceed 640 million by 2025.\n\n**Revenue Streams & Monetization Frameworks**\n- Sponsorships are the dominant revenue stream, accounting for 55–58% of total revenue. Projected to grow from $1.8B (2025) to $4.2B (2030).\n- Ticket sales represent 27–30% of revenue.\n- Streaming & media rights account for 8% of revenue but are the fastest-growing category, forecast to increase from $0.8B to $2.3B (2025–2030) at a 22.6% CAGR.\n- Merchandise accounts for 7% of revenue.\n\n**Sponsorships & Brand Partnerships**\n- Key sponsoring brands include Huawei, LG UltraGear, Adidas, KitKat, Pepsi, TikTok, Amazon, Son, Red Bull, Mercedes-Benz (market entry in 2022), and Tencent/Level Infinite.\n- Notable investment: Red Bull invested $100M in a now-defunct partnership with TSM.\n- Fashion/luxury partners include Gucci, PUMA, Louis Vuitton, Nike, and Armani Exchange.\n\n**Streaming Platforms & Viewership Trends (Q1 2019–Q4 2024)**\n- Platforms tracked: Twitch, YouTube Gaming, Facebook Gaming, AfreecaTV, Kick, Huya Live.\n- Twitch maintains dominance with ~5.1–6.5B quarterly hours watched.\n- YouTube Gaming grew to ~2.0B hours (Q3 2024).\n- Facebook Gaming declined to <0.1B hours.\n- Kick rose to ~0.6B hours (Q4 2024).\n\n**Merchandising Models & Performance**\n- **Definitions:** Merchandising is categorized into \"drops\" (limited-editi...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\32\\132_1382_1521_2023_image.jpg",
+              "image_caption": "这是一张关于“Esports Monetization”（电子竞技变现）的思维导图或层级结构图。图表从上至下展示了电子竞技收入来源的分类结构。\n\n**主要结构如下：**\n\n*   **核心主题**：Esports Monetization（位于顶部深蓝色背景框中）\n\n图表向下分为四个主要分支（一级分类），每个分支下列出了具体的细分项目（二级分类）：\n\n1.  **SPONSORSHIPS（赞助）** - 橙色背景\n    *   Tournament Sponsorships（赛事赞助）\n    *   Team Sponsorships（战队赞助）\n    *   In-gaame Advertising（游戏内广告，原文拼写为In-gaame）\n\n2.  **TICKET SALES（门票销售）** - 紫色背景\n    *   Arena Events and Finals（场馆赛事与决赛）\n    *   Online Tickets and Virtual Access（在线门票与虚拟访问）\n    *   Fan Zones and Premium Experiences（粉丝专区与高级体验）\n\n3.  **MERCHANDIZE（商品/周边）** - 绿色背景\n    *   Team Merchandize（战队周边）\n    *   Evnt Merchandize（赛事周边，原文拼写为Evnt）\n    *   In-game Cosmetics（游戏内饰品）\n\n4.  **STREAMING & MEDIA RIGHTS（流媒体与媒体版权）** - 蓝色背景\n    *   Streaming（流媒体）\n    *   Media rights（媒体版权）"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\132_369_286_958_image.jpg",
+              "image_caption": "这是一张垂直堆叠柱状图，展示了2025年的数据分布情况。\n\n图表顶部有一个气泡标注数值 **3.0**。\n柱状图从下至上分为四个不同颜色的部分，具体数据如下：\n- 橙色部分：**58%**\n- 紫色部分：**27%**\n- 绿色部分：**7%**\n- 蓝色部分：**8%**\n\n图表底部标注年份为 **2025**。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\378_371_534_958_image.jpg",
+              "image_caption": "这是一张垂直堆叠柱状图的局部截图，展示了2026年的数据分布情况。\n\n图表顶部有一个气泡标注，数值为 **3.9**。\n柱状图主体由四个不同颜色的色块堆叠而成，从上到下依次为：\n*   蓝色部分：**8%**\n*   绿色部分：**7%**\n*   紫色部分：**28%**\n*   橙色部分：**56%**\n\n图表底部标注的年份为 **2026**。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\623_371_783_958_image.jpg",
+              "image_caption": "这是一张展示2027年数据的垂直堆叠柱状图。\n\n图表顶部有一个气泡标注数值为 **4.6**。\n柱状图主体从下至上分为四个不同颜色的部分，具体数据如下：\n- 底部橙色部分占比 **56%**\n- 中间紫色部分占比 **29%**\n- 上方绿色部分占比 **7%**\n- 顶部蓝色部分占比 **8%**\n\n图表底部标注的年份为 **2027**。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\871_371_1028_958_image.jpg",
+              "image_caption": "这是一个堆叠柱状图，展示了2028年的数据构成比例。图表顶部有一个气泡标注数值“5.4”，并通过线条连接至柱状图顶端。柱状图从下至上依次分为四个颜色区块，具体数据如下：\n- 底部橙色区块：55%\n- 中间紫色区块：30%\n- 上方绿色区块：7%\n- 顶部蓝色区块：8%\n图表底部标注年份为“2028”。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\1118_371_1276_958_image.jpg",
+              "image_caption": "这是一张堆叠柱状图。图表顶部有一个圆角框显示数值 **6.4**，并通过连线指向下方的柱状体。柱状图底部标注年份为 **2029**。\n\n柱状图从下至上由四个不同颜色的色块组成，分别代表不同的百分比数据：\n- 橙色部分：**55%**\n- 紫色部分：**30%**\n- 绿色部分：**7%**\n- 蓝色部分：**8%**"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\1364_371_1523_958_image.jpg",
+              "image_caption": "这是一张堆叠柱状图。图表顶部显示数值7.7。下方的柱状图展示了2030年的数据分布情况，从下至上各部分占比依次为：橙色区域55%，紫色区域30%，绿色区域7%，蓝色区域8%。底部标注年份为2030。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\33\\135_1279_1521_2020_image.jpg",
+              "image_caption": "这是一张水平堆叠条形图，展示了多款电子竞技游戏在不同年份（推测为2020年至2024年，按从左至右顺序排列）的数据分布情况。图表左侧列出了游戏名称，条形图由不同颜色的色块组成，每个色块内标有具体数值。\n\n**图表数据详情（从左至右依次为不同年份/类别）：**\n\n*   **Dota 2**: 10.1 (橙色), 48.0 (紫色), 32.9 (绿色), 30.8 (蓝色), 22.8 (深蓝色)\n*   **Counter-Strike**: 16.0 (橙色), 21.5 (紫色), 16.4 (绿色), 15.2 (蓝色), 21.6 (深蓝色)\n*   **PUBG Mobile**: 8.9 (橙色), 21.9 (紫色), 23.6 (绿色), 21.2 (蓝色), 16.3 (深蓝色)\n*   **Fortnite**: 13.1 (橙色), 22.3 (紫色), 17.3 (绿色), 19.7 (蓝色), 12.9 (深蓝色)\n*   **Arena of Valor**: 10.2 (橙色), 17.9 (紫色), 31.4 (绿色), 19.2 (蓝色)\n*   **PUBG**: 6.7 (橙色), 16.3 (紫色), 8.5 (绿色), 7.6 (蓝色), 6.8 (深蓝色)\n*   **League of Legends**: 8.7 (橙色), 8.3 (紫色), 8.0 (绿色), 7.7 (蓝色), 9.2 (深蓝色)\n*   **Overwatch**: 6.8 (橙色), 5.7 (紫色), 5.7 (绿色), 4.8 (蓝色)\n\n**图例说明（位于顶部）：**\n虽然图例颜色标记存在重复（如2021、2023、2024均标记为绿色点，2020和2022均标记为橙色点），但结合条形图的实际颜色分布，数据显然分为五个时间段，颜色依次为橙色、紫色、绿色、蓝色和深蓝色。"
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\34\\129_1328_1526_2034_image.jpg",
+              "image_caption": "这是一张折线图，展示了从2019年第一季度（Q1-19）到2024年第四季度（Q4-24）期间，五个主要游戏直播平台的观看时长（单位：十亿小时）的变化趋势。\n\n**图表基本信息：**\n*   **X轴**：时间，从2019年第一季度（Q1-19）至2024年第四季度（Q4-24）。\n*   **Y轴**：观看时长（Hours Watched），单位为十亿（Billions），刻度范围从0到7。\n*   **图例**：\n    *   Twitch（橙色）\n    *   YouTube Gaming（紫色）\n    *   Facebook Gaming（绿色）\n    *   AfreecaTV（蓝色）\n    *   Kick（深蓝色/黑色）\n\n**详细数据趋势与数值（估算）：**\n\n1.  **Twitch (橙色线)**：\n    *   始终占据主导地位，观看时长远超其他平台。\n    *   2019年期间保持在2.7-2.9亿小时左右。\n    *   2020年Q1开始显著增长，Q2跃升至约5.2亿小时。\n    *   2021年Q2达到峰值，约6.5亿小时。\n    *   此后呈现波动下降趋势，但在2022年Q1反弹至约6.1亿小时。\n    *   2023年至2024年初稳定在5.4-5.5亿小时左右。\n    *   2024年Q2有所下降至约5.1亿小时，Q3和Q4保持在5.1亿小时左右。\n\n2.  **YouTube Gaming (紫色线)**：\n    *   长期处于第二位。\n    *   2019年从约0.7亿小时起步，缓慢增长。\n    *   2020年Q4达到一个小高峰，约1.9亿小时。\n    *   2021年回落至1.1-1.4亿小时区间。\n    *   2022年至2023年期间非常稳定，维持在1.1-1.2亿小时左右。\n    *   2024年Q2开始显著增长，Q3达到约2.0亿小时，Q4略降至1.9亿小时。\n\n3.  **Facebook Gaming (绿色线)**：\n    *   2019年从约0.2亿小时起步，呈现上升趋势。\n    *   2021年Q3达到峰值，约1.3亿小时，一度接近YouTube Gaming。\n    *   此后持续下滑，2022年降至0.8亿小时以下。\n    *   2023年至2024年进一步萎缩，降至0.3亿小时以下，2024年Q4接近0.1亿小时。\n\n4.  **AfreecaTV (蓝色线)**：\n    *   数据从2023年Q2开始显现。\n    *   数值较低，一直在0.2-0.3亿小时之间波动。\n    *   2024年Q4约为0.3亿小时。\n\n5.  **Kick (深蓝色/黑色线)**：\n    *   数据从2023年Q3开始显现，初始值约为0.1亿小时。\n    *   呈现缓慢但稳定的上升趋势。\n    *   2024年Q2升至约0.5亿小时。\n    *   2024年Q4达到约0.6亿小时，超过了AfreecaTV和Facebook Gaming。"
+            }
+          ],
+          "start_index": 32,
+          "end_index": 35,
+          "chunk_ids": []
+        },
+        {
+          "title": "Hybrid Models",
+          "node_id": "0023",
+          "summary": "This section addresses questions regarding hybrid monetization strategies in the video game industry. It can answer queries across the following dimensions:\n\n- **Topics:** Hybrid revenue models, AI-driven monetization optimization, in-app purchase (IAP) design, rewarded video advertising, battle pass subscriptions, and live service integration.\n- **Entities:** Games (Warframe, Path of Exile, Brawlhalla, Archero, Destiny 2, Fortnite, Rainbow Six Siege, League of Legends), Developers/Publishers (Habby, Bungie, Epic Games, Ubisoft, Riot Games, Microsoft), Platforms/Regions (iOS, U.S., Singapore), and Analytics Providers (Sensor Tower).\n- **Dates:** None specified in this section.\n- **Definitions:** Hybrid models (blending free-to-play, IAP, subscriptions, premium cosmetics, events, and sponsorships); Hard currency (e.g., Archero’s gems used for revival, energy, coins, packs, loot boxes, and outfits); Rewarded video ads; Battle pass (free and paid subscription tiers).\n- **Procedures/Strategies:** How AI analyzes player behavior to optimize ad/IAP timing; Archero’s non-intrusive IAP pop-up strategy (triggered during exploration/upgrading with higher-than-standard value); progression-based diversification of purchase options; battle pass unlock progression (Chapter 2, Stage 26); implementation of six specific rewarded ad placements.\n- **Claims:** Hybrid models maximize publisher earnings while catering to diverse player preferences; AI optimization increases revenue generation and improves user experience; high perceived-value pricing (e.g., $4.99 for ~$150 value) drives long-term engagement and subscription sales.\n- **Tables:** Table 12 (\"Hybrid Models Used in Selected Games and Platforms\") maps specific titles to their hybrid model combinations (e.g., One-Time Purchase + L...",
+          "images": [],
+          "start_index": 36,
+          "end_index": 37,
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    },
+    {
+      "title": "SECTION 6: Software and Services",
+      "node_id": "0024",
+      "summary": "**Section 6: Software and Services (Pages 38–46)** provides a retrieval-focused overview of modern game development support ecosystems, covering publishing models, design tooling, strategic industry shifts, and reference materials.\n\n**Topics:** Publishing-as-a-service models, industry cost optimization, developer-publisher deal structures, platform distribution strategies, vendor service expansion, strategic importance of visual/audio design, UI/UX prioritization, cross-disciplinary collaboration, macro-industry trends (technological disruption, democratized development, self-publishing, cross-platform expansion, data-driven go-to-market strategies, community lifecycle management, revenue diversification), distribution shifts, user-generated content (UGC), influencer marketing, console subscription models, esports expansion, IP ownership, and compliance.\n\n**Entities:** *Companies/Platforms:* Popagenda, Neonhive, Villainous Games Studio, Byteparrot, Steam, Epic Games Store, Itch.io, Xbox Game Pass, Wargaming, Starbreeze Entertainment, EA/Respawn, Activision Blizzard, Avalanche Studios Group, plus 50+ bibliography entities (e.g., Bain & Company, Deloitte, Newzoo, Statista, PwC, TIGA, SteamDB, Ready Player Me, Active Fence, TapNation). *Tools/Engines:* Adobe Animate, Amazon Lumberyard, Blender, Cocos2d-x, Construct 3, CryEngine, GameMaker Studio 2, Godot Engine, Unity, Unreal Engine. *Titles/Events:* Cuphead, Grindstone, Ooblets, Playdate, Palworld, 2024 Esports World Cup, League of Legends. *Authors/Analysts:* Harvey Newman, Mine Okur, Jarrod Palmer, Danielle Riendeau, Nick Romano, Agostino Simonetta, Derek Strickland, Dean Takahashi.\n\n**Dates:** Early 2024 (Neonhive’s pivot to publishing-as-a-service); 9–10 September 2025 (Game Publishing and Marketing Summit, Novotel L...",
+      "images": [
+        {
+          "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\46\\893_578_1532_1098_image.jpg",
+          "image_caption": "图表类型：二维码/图标\n\n图像内容：这是一张绿色的微信二维码图片。二维码矩阵中心印有白色的微信（WeChat）双气泡图标。图片右侧有竖排黑色文字“扫码添加微信”，文字上方有三个向上的黑色箭头，二维码左下方有三个向下的黑色箭头。"
+        }
+      ],
+      "start_index": 38,
+      "end_index": 46,
+      "nodes": [
+        {
+          "title": "Publishing as a Service",
+          "node_id": "0025",
+          "summary": "**Topics:** Video game publishing-as-a-service model, industry cost optimization, developer-publisher deal structures, platform distribution strategies, vendor service expansion.\n**Entities:** Popagenda, Neonhive, Korina Abbott, Villainous Games Studio, Byteparrot, Steam, Epic Games Store, Itch.io, Cuphead, Grindstone, Landfall, Ooblets, Playdate, Harvest Hunt, Slopecrashers.\n**Dates:** Early 2024 (Neonhive's pivot to the publishing-as-a-service model).\n**Definitions:** Publishing-as-a-service describes marketing and PR firms that have expanded their scope to include release management, store-page setup, business development, social media handling, trailer editing, and strategic marketing alongside traditional PR functions.\n**Procedures:** Vendors coordinate with quality assurance teams and porting studios to ship games on consoles and other platforms, manage digital storefronts, execute end-to-end marketing campaigns, and typically maintain platform loyalty (e.g., Steam, Epic, Itch.io).\n**Claims:** The model emerged in response to high development costs, rising interest rates, cautious investors, modest consumer spending growth, and elevated consumer expectations. It enables developers to avoid aggressive traditional publisher revenue cuts, retain a larger share of profits, and achieve professional publishing standards. Neonhive explicitly declines projects involving NFTs, web3, cryptocurrency, or AI-generated art, voice work, or sound design.\n**Tables/Figures/Metrics:** None included in this section.\n**Evidence Types:** Qualitative industry trend analysis, company case studies (Popagenda, Neonhive), and direct founder statements.",
+          "images": [],
+          "start_index": 38,
+          "end_index": 38,
+          "chunk_ids": []
+        },
+        {
+          "title": "Design Studios",
+          "node_id": "0026",
+          "summary": "This section answers questions about the strategic importance of visual and audio elements in modern gaming, detailing claims that high-quality graphics, sound, motion, and animation improve first impressions, player immersion, and interface navigation. It addresses topics such as developer prioritization of intuitive UI/UX and cross-disciplinary collaboration with players in fields like typography, photography, and illustration. The section features TABLE13, which answers queries regarding ten selected game development tools and engines (Adobe Animate, Amazon Lumberyard, Blender, Cocos2d-x, Construct 3, CryEngine, GameMaker Studio 2, Godot Engine, Unity, Unreal Engine), their provider companies, core services/features, and notable associated games or projects. It enables retrieval of specific entities including software names, corporate providers, and commercial/indie titles. No dates, formal definitions, step-by-step procedures, quantitative metrics, or figures are included. Evidence is presented as a reference table sourced from company websites.",
+          "images": [],
+          "start_index": 39,
+          "end_index": 39,
+          "chunk_ids": []
+        },
+        {
+          "title": "Conclusion",
+          "node_id": "0027",
+          "summary": "**Topics:** Examines macro-trends at a gaming industry inflection point, including technological disruption, democratized development, and the evolution of publisher-developer dynamics from financial dependence to collaborative partnerships. Covers marketing/PR service expansion, the strategic role of advanced visualization and UI/UX design, self-publishing navigation, cross-platform expansion, data-driven go-to-market strategies, community lifecycle management, and revenue diversification.\n\n**Entities:** Platforms & Models: Steam, Xbox Game Pass, Live Service Games (LSGs), eSports, social media/streaming platforms, influencer networks. Services & Technology: AI/machine learning moderation systems, publishing-as-a-service vendors, marketing/PR firms. Organizations: Indie developers, AAA studios, publishers, Wargaming, Starbreeze Entertainment, Electronic Arts/Respawn Entertainment, Activision Blizzard, Avalanche Studios Group, Game Publishing and Marketing Summit.\n\n**Dates & Locations:** 9–10 September 2025; Novotel London West, London, UK.\n\n**Definitions:** Live Service Games (LSGs): Development and monetization models prioritizing ongoing content updates and player retention over traditional one-time sales. Publishing-as-a-service: A flexible operational approach for optimizing production costs while maintaining quality standards.\n\n**Procedures & Strategies:** Digital marketing execution (securing premium digital storefront placements, influencer/streamer partnerships, cross-industry tech/brand alliances). Community lifecycle management (deploying AI-driven trust & safety systems, toxicity mitigation, fostering inclusive environments). Data utilization workflows (tracking player behavior, preferences, and spending to inform acquisition, retention, and monetization)....",
+          "images": [],
+          "start_index": 40,
+          "end_index": 42,
+          "chunk_ids": []
+        },
+        {
+          "title": "Bibliography",
+          "node_id": "0028",
+          "summary": "**Section:** Bibliography (Entries 1–64) & Copyright Disclaimer | Pages 43–46\n\n**Topics:** Video game distribution shifts, self-publishing trends, gaming safety, community building & user-generated content (UGC), cross-platform development & gaming, marketing trends & influencer marketing, console subscription models & monetization, PR-to-publishing transitions, co-development, indie game funding & publishing platforms, data analytics in gaming, audience engagement & demographics, mobile developer vs. publisher roles, brand collaborations/partnerships, Publisher-as-a-Service models, global esports market expansion (specifically KSA), esports viewership & sponsorships, game-to-film adaptations, post-publishing industry shifts, digital vs. physical revenue distribution, Steam release statistics, video game graphic design, intellectual property ownership, and compliance/authorized usage scenarios.\n\n**Entities:** \n- *Organizations/Platforms:* 1D3 Digitech, Active Fence, Amber Studio, TIGA, Pocket Gamer.biz, Art Station, Bain & Company, Birch, SDLC Corp, Think With Google, Neonhive, PC Games Insider, Game Developer, AAA Agency, Cominted Labs, Statista, 80LV, Games Industry, Deloitte, Cognitive Market Research, Elait, EOS Intelligence, Fourth Floor Creative, VentureBeat, Wired, BBC, Sportspro, Gamalytic, GRYNOW, Kofluence, Socially Powerful, Simon-Kucher, Remedy, Juego Studio, TapNation, Steam, Newzoo, Game Influencer, Amazonia Investiga, Servers, Premortem Games, PwC, Ready Player Me, Entertainment Weekly, SteamDB, TweakTown, Subscription Flow, WeChat.\n- *Authors/Analysts:* Harvey Newman, Mine Okur, Jarrod Palmer, Danielle Riendeau, Nick Romano, Agostino Simonetta, Derek Strickland, Dean Takahashi.\n- *Titles/Events/Creatives:* Palworld, 2024 Esports World Cup, League of Leg...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\2025年全球游戏发行与营销行业研究报告（英） -46页\\images\\46\\893_578_1532_1098_image.jpg",
+              "image_caption": "图表类型：二维码/图标\n\n图像内容：这是一张绿色的微信二维码图片。二维码矩阵中心印有白色的微信（WeChat）双气泡图标。图片右侧有竖排黑色文字“扫码添加微信”，文字上方有三个向上的黑色箭头，二维码左下方有三个向下的黑色箭头。"
+            }
+          ],
+          "start_index": 43,
+          "end_index": 46,
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    }
+  ]
+}

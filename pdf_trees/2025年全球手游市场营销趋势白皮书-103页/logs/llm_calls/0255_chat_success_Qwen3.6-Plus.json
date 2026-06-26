@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:00:16.253811+00:00",
+  "sequence": 255,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 21308,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 娱乐场手游 投放趋势观察.\n    The given page_text is 64\nSource ：广大大 -广告主分析模块，选取时间段内新投放展现或热度表现较高素材展现\nDate Range ：2025/1~2025/12\n84.5%83.2%86.1% 85.4%83.4%84.7%83.1% 83.4% 83.9%86.9% 87.8%89.2%\n0.0 K20.0 K40.0 K\n1月2月3月4月5月6月7月8月9月10月11月12月广告主数量月度变化趋势\n月广告主数量 投放新素材广告主占比\n69.2%\n65.9%72.3%\n71.0%72.4%\n67.7%\n65.9%68.8%69.4%72.7%74.7%76.1%\n050100150\n1月2月3月4月5月6月7月8月9月10月11月12月月均在投素材量变化趋势\n月均素材量 当月新素材占比娱乐场手游的同比涨幅和图片素材展现占比居全品类之首，黄金、美金、现金钞票成为素材最吸睛元素娱乐场手游  投放趋势观察\n视频, \n57.9%图片, \n41.3%可玩, \n0.2% 其他, \n0.6%各类型素材带来展现占比\n不同系统策略素材占比\n视频, \n73.3%图片, \n24.5%\n视频, \n69.1%图片, \n30.2%16% 45% 31%视频素材时长分布\n0-15s 15-30s 30-60s 60s-Max\n12%1% 86%图片素材形式分布\n竖版 横版 方形 横幅\nTOP100 广告主出海厂商占比\n45%\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-8f3be8d7-982f-9c22-af58-81dfb64753f4",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if a given section title appears or starts in the given `page_text`.\n   - **Section Title:** `娱乐场手游 投放趋势观察`\n   - **Page Text:** A long string containing numbers, percentages, chart labels, and some Chinese text. I need to scan it for the exact or fuzzy match of the section title.\n   - **Constraints:** Fuzzy matching allowed, ignore space inconsistencies. Output only JSON: `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Scan Page Text for Section Title:**\n   Let's look at the `page_text` carefully:\n   `64 Source ：广大大 -广告主分析模块，选取时间段内新投放展现或热度表现较高素材展现 Date Range ：2025/1~2025/12 84.5%83.2%86.1% 85.4%83.4%84.7%83.1% 83.4% 83.9%86.9% 87.8%89.2% 0.0 K20.0 K40.0 K 1月2月3月4月5月6月7月8月9月10月11月12月广告主数量月度变化趋势 月广告主数量 投放新素材广告主占比 69.2% 65.9%72.3% 71.0%72.4% 67.7% 65.9%68.8%69.4%72.7%74.7%76.1% 050100150 1月2月3月4月5月6月7月8月9月10月11月12月月均在投素材量变化趋势 月均素材量 当月新素材占比娱乐场手游的同比涨幅和图片素材展现占比居全品类之首，黄金、美金、现金钞票成为素材最吸睛元素娱乐场手游  投放趋势观察 视频, 57.9%图片, 41.3%可玩, 0.2% 其他, 0.6%各类型素材带来展现占比 不同系统策略素材占比 视频, 73.3%图片, 24.5% 视频, 69.1%图片, 30.2%16% 45% 31%视频素材时长分布 0-15s 15-30s 30-60s 60s-Max 12%1% 86%图片素材形式分布 竖版 横版 方形 横幅 TOP100 广告主出海厂商占比 45% .`\n\n   I'll search for `娱乐场手游 投放趋势观察` or similar.\n   Looking closely at the text: `...当月新素材占比娱乐场手游的同比涨幅和图片素材展现占比居全品类之首，黄金、美金、现金钞票成为素材最吸睛元素娱乐场手游  投放趋势观察 视频, 57.9%...`\n   I see `娱乐场手游  投放趋势观察` (with two spaces between 手游 and 投放).\n   The prompt says: \"ignore any space inconsistency in the page_text\" and \"do fuzzy matching\".\n   So `娱乐场手游  投放趋势观察` matches `娱乐场手游 投放趋势观察`.\n\n3.  **Determine Answer:**\n   The section title appears in the page text.\n   Answer should be \"yes\".\n\n4.  **Format Output:**\n   `{\"answer\": \"yes\"}`\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   Let's double check the exact string in the text: `娱乐场手游  投放趋势观察`\n   Target: `娱乐场手游 投放趋势观察`\n   They match perfectly ignoring spaces.\n   Result: yes.\n   Output matches requested format.✅\n   Proceed. \n   Output: `{\"answer\": \"yes\"}`\n   (Note: I will make sure it's exactly as requested.) \n   All steps verified.✅\n   Final Output Generation. \n   `{\"answer\": \"yes\"}`\n   Done. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   (Self-Correction/Refinement during generation prep: The prompt says `yes or no` in lowercase in the description, but I'll stick to lowercase as requested: `\"yes\"`.)\n   Ready. \n   Output matches exactly. \n   Proceeds. \n   [Final Check of the Prompt]: \"Reply format: { \"answer\": \"yes or no\" ... }\"\n   I will output exactly `{\"answer\": \"yes\"}`.✅\n   Done. \n   [Output Generation] (Proceeds)\n   `{\"answer\": \"yes\"}`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if a given section title appears or starts in the given `page_text`.\n   - **Section Title:** `娱乐场手游 投放趋势观察`\n   - **Page Text:** A long string containing numbers, percentages, chart labels, and some Chinese text. I need to scan it for the exact or fuzzy match of the section title.\n   - **Constraints:** Fuzzy matching allowed, ignore space inconsistencies. Output only JSON: `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Scan Page Text for Section Title:**\n   Let's look at the `page_text` carefully:\n   `64 Source ：广大大 -广告主分析模块，选取时间段内新投放展现或热度表现较高素材展现 Date Range ：2025/1~2025/12 84.5%83.2%86.1% 85.4%83.4%84.7%83.1% 83.4% 83.9%86.9% 87.8%89.2% 0.0 K20.0 K40.0 K 1月2月3月4月5月6月7月8月9月10月11月12月广告主数量月度变化趋势 月广告主数量 投放新素材广告主占比 69.2% 65.9%72.3% 71.0%72.4% 67.7% 65.9%68.8%69.4%72.7%74.7%76.1% 050100150 1月2月3月4月5月6月7月8月9月10月11月12月月均在投素材量变化趋势 月均素材量 当月新素材占比娱乐场手游的同比涨幅和图片素材展现占比居全品类之首，黄金、美金、现金钞票成为素材最吸睛元素娱乐场手游  投放趋势观察 视频, 57.9%图片, 41.3%可玩, 0.2% 其他, 0.6%各类型素材带来展现占比 不同系统策略素材占比 视频, 73.3%图片, 24.5% 视频, 69.1%图片, 30.2%16% 45% 31%视频素材时长分布 0-15s 15-30s 30-60s 60s-Max 12%1% 86%图片素材形式分布 竖版 横版 方形 横幅 TOP100 广告主出海厂商占比 45% .`\n\n   I'll search for `娱乐场手游 投放趋势观察` or similar.\n   Looking closely at the text: `...当月新素材占比娱乐场手游的同比涨幅和图片素材展现占比居全品类之首，黄金、美金、现金钞票成为素材最吸睛元素娱乐场手游  投放趋势观察 视频, 57.9%...`\n   I see `娱乐场手游  投放趋势观察` (with two spaces between 手游 and 投放).\n   The prompt says: \"ignore any space inconsistency in the page_text\" and \"do fuzzy matching\".\n   So `娱乐场手游  投放趋势观察` matches `娱乐场手游 投放趋势观察`.\n\n3.  **Determine Answer:**\n   The section title appears in the page text.\n   Answer should be \"yes\".\n\n4.  **Format Output:**\n   `{\"answer\": \"yes\"}`\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   Let's double check the exact string in the text: `娱乐场手游  投放趋势观察`\n   Target: `娱乐场手游 投放趋势观察`\n   They match perfectly ignoring spaces.\n   Result: yes.\n   Output matches requested format.✅\n   Proceed. \n   Output: `{\"answer\": \"yes\"}`\n   (Note: I will make sure it's exactly as requested.) \n   All steps verified.✅\n   Final Output Generation. \n   `{\"answer\": \"yes\"}`\n   Done. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   (Self-Correction/Refinement during generation prep: The prompt says `yes or no` in lowercase in the description, but I'll stick to lowercase as requested: `\"yes\"`.)\n   Ready. \n   Output matches exactly. \n   Proceeds. \n   [Final Check of the Prompt]: \"Reply format: { \"answer\": \"yes or no\" ... }\"\n   I will output exactly `{\"answer\": \"yes\"}`.✅\n   Done. \n   [Output Generation] (Proceeds)\n   `{\"answer\": \"yes\"}`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360020,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1143,
+      "prompt_tokens": 626,
+      "total_tokens": 1769,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1132,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1143
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 626
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

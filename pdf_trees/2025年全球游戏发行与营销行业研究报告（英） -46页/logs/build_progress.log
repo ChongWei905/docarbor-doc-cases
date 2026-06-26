@@ -1,0 +1,147 @@
+2026-06-25T03:37:11.237951+00:00 EVENT run_metadata input_path=D:\code\semantic-construct\md_and_pdf\2025年全球游戏发行与营销行业研究报告（英） -46页.pdf input_kind=pdf artifact_root=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页 model=Qwen3.6-Plus fallback_model=Qwen3.6-Plus include_summary=True write_postgres=False write_global_index=False global_index_model=embedding-3 markdown_layout=auto pdf_strategy=auto toc_text_role_model=Qwen3.6-Plus toc_text_role_fallback_model=Qwen3.6-Plus toc_vlm_model=Qwen3.6-Plus toc_vlm_fallback_model=Qwen3.6-Plus native_model=Qwen3.6-Plus native_fallback_model=Qwen3.6-Plus summary_model=Qwen3.6-Plus summary_fallback_model=Qwen3.6-Plus
+2026-06-25T03:37:13.705882+00:00 START load_docarbor_config stage=load_docarbor_config
+2026-06-25T03:37:13.707387+00:00 END   load_docarbor_config status=SUCCESS duration_ms=0
+2026-06-25T03:37:13.708391+00:00 START get_page_tokens stage=get_page_tokens
+2026-06-25T03:37:14.506828+00:00 END   get_page_tokens status=SUCCESS duration_ms=798
+2026-06-25T03:37:14.507718+00:00 START extract_page_artifacts stage=extract_page_artifacts
+2026-06-25T03:37:28.754237+00:00 END   extract_page_artifacts status=SUCCESS duration_ms=14246
+2026-06-25T03:37:28.754237+00:00 START analyze_toc_pages stage=analyze_toc_pages
+2026-06-25T03:37:44.454282+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=15542 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0001_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:37:57.539671+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=13066 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0002_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:38:16.486013+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=18927 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0003_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:38:16.486013+00:00 END   analyze_toc_pages status=SUCCESS duration_ms=47732
+2026-06-25T03:38:16.487518+00:00 START extract_canonical_toc_outline stage=extract_canonical_toc_outline
+2026-06-25T03:38:49.997323+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=33464 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0004_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:38:50.873824+00:00 END   extract_canonical_toc_outline status=SUCCESS duration_ms=34386
+2026-06-25T03:38:50.882241+00:00 START analyze_catalog_repeat_pages stage=analyze_catalog_repeat_pages
+2026-06-25T03:38:50.885773+00:00 END   analyze_catalog_repeat_pages status=SUCCESS duration_ms=4
+2026-06-25T03:38:50.887282+00:00 START analyze_divider_pages stage=analyze_divider_pages
+2026-06-25T03:39:34.780505+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=43833 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0005_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:39:34.783516+00:00 END   analyze_divider_pages status=SUCCESS duration_ms=43895
+2026-06-25T03:39:34.786081+00:00 EVENT pdf_route_decision requested_strategy=auto
+2026-06-25T03:39:34.787087+00:00 START candidate_toc_seeded stage=candidate_toc_seeded
+2026-06-25T03:39:34.789095+00:00 EVENT pdf_candidate_build_start strategy=toc_seeded candidate_root=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\candidate_trees\toc_seeded page_count=47
+2026-06-25T03:39:34.789095+00:00 START candidate_toc_seeded_build_tree stage=candidate_toc_seeded_build_tree
+2026-06-25T03:39:34.789095+00:00 EVENT seeded_outline_prepared strategy=toc_seeded outline_count=29 page_count=47
+2026-06-25T03:39:34.790598+00:00 START toc_seeded_recursive_tree_build stage=toc_seeded_recursive_tree_build
+2026-06-25T03:39:34.791756+00:00 NATIVE info seeded_leaf_start title=Foreword start_index=3 end_index=3
+2026-06-25T03:39:34.791756+00:00 NATIVE info seeded_leaf_end title=Foreword start_index=3 end_index=3
+2026-06-25T03:39:34.792760+00:00 NATIVE info seeded_leaf_start title=Table of Contents start_index=3 end_index=3
+2026-06-25T03:39:34.792760+00:00 NATIVE info seeded_leaf_end title=Table of Contents start_index=3 end_index=3
+2026-06-25T03:39:34.793761+00:00 NATIVE info seeded_leaf_start title=List of Tables start_index=4 end_index=4
+2026-06-25T03:39:34.793761+00:00 NATIVE info seeded_leaf_end title=List of Tables start_index=4 end_index=4
+2026-06-25T03:39:34.793761+00:00 NATIVE info seeded_leaf_start title=List of Figures start_index=4 end_index=4
+2026-06-25T03:39:34.794894+00:00 NATIVE info seeded_leaf_end title=List of Figures start_index=4 end_index=4
+2026-06-25T03:39:34.794894+00:00 NATIVE info seeded_leaf_start title=Introduction start_index=5 end_index=7
+2026-06-25T03:39:34.795896+00:00 NATIVE info seeded_leaf_end title=Introduction start_index=5 end_index=7
+2026-06-25T03:39:34.795896+00:00 NATIVE info seeded_leaf_start title=Publisher-Developer Relationships start_index=8 end_index=8
+2026-06-25T03:39:34.795896+00:00 NATIVE info seeded_leaf_end title=Publisher-Developer Relationships start_index=8 end_index=8
+2026-06-25T03:39:34.795896+00:00 NATIVE info seeded_leaf_start title=Cross-Platform Publishing start_index=8 end_index=10
+2026-06-25T03:39:34.795896+00:00 NATIVE info seeded_leaf_end title=Cross-Platform Publishing start_index=8 end_index=10
+2026-06-25T03:39:34.797407+00:00 NATIVE info seeded_leaf_start title=Self-Publishing start_index=11 end_index=14
+2026-06-25T03:39:34.797407+00:00 NATIVE info seeded_leaf_end title=Self-Publishing start_index=11 end_index=14
+2026-06-25T03:39:34.798143+00:00 NATIVE info seeded_leaf_start title=Digital Channels and Decline of Traditional Retail start_index=15 end_index=16
+2026-06-25T03:39:34.798143+00:00 NATIVE info seeded_leaf_end title=Digital Channels and Decline of Traditional Retail start_index=15 end_index=16
+2026-06-25T03:39:34.798143+00:00 NATIVE info seeded_leaf_start title=Partnerships as Marketing Channels start_index=17 end_index=17
+2026-06-25T03:39:34.798143+00:00 NATIVE info seeded_leaf_end title=Partnerships as Marketing Channels start_index=17 end_index=17
+2026-06-25T03:39:34.798143+00:00 NATIVE info seeded_leaf_start title=Influencer Marketing start_index=18 end_index=20
+2026-06-25T03:39:34.799473+00:00 NATIVE info seeded_leaf_end title=Influencer Marketing start_index=18 end_index=20
+2026-06-25T03:39:34.799473+00:00 NATIVE info seeded_leaf_start title=Importance of Community in Gaming start_index=21 end_index=22
+2026-06-25T03:39:34.799473+00:00 NATIVE info seeded_leaf_end title=Importance of Community in Gaming start_index=21 end_index=22
+2026-06-25T03:39:34.799473+00:00 NATIVE info seeded_leaf_start title=Community Safety start_index=23 end_index=24
+2026-06-25T03:39:34.799473+00:00 NATIVE info seeded_leaf_end title=Community Safety start_index=23 end_index=24
+2026-06-25T03:39:34.799473+00:00 NATIVE info seeded_leaf_start title=The Role of Data in Publishing and Marketing start_index=25 end_index=27
+2026-06-25T03:39:34.800977+00:00 NATIVE info seeded_leaf_end title=The Role of Data in Publishing and Marketing start_index=25 end_index=27
+2026-06-25T03:39:34.800977+00:00 NATIVE info seeded_leaf_start title=Live Service Games start_index=28 end_index=28
+2026-06-25T03:39:34.800977+00:00 NATIVE info seeded_leaf_end title=Live Service Games start_index=28 end_index=28
+2026-06-25T03:39:34.801982+00:00 NATIVE info seeded_leaf_start title=Boxed Games/One-time Purchase Model start_index=29 end_index=30
+2026-06-25T03:39:34.801982+00:00 NATIVE info seeded_leaf_end title=Boxed Games/One-time Purchase Model start_index=29 end_index=30
+2026-06-25T03:39:34.801982+00:00 NATIVE info seeded_leaf_start title=Subscription Models start_index=31 end_index=32
+2026-06-25T03:39:34.802982+00:00 NATIVE info seeded_leaf_end title=Subscription Models start_index=31 end_index=32
+2026-06-25T03:39:34.802982+00:00 NATIVE info seeded_leaf_start title=Esports start_index=33 end_index=36
+2026-06-25T03:39:34.803982+00:00 NATIVE info seeded_leaf_end title=Esports start_index=33 end_index=36
+2026-06-25T03:39:34.803982+00:00 NATIVE info seeded_leaf_start title=Hybrid Models start_index=37 end_index=38
+2026-06-25T03:39:34.804980+00:00 NATIVE info seeded_leaf_end title=Hybrid Models start_index=37 end_index=38
+2026-06-25T03:39:34.804980+00:00 NATIVE info seeded_leaf_start title=Publishing as a Service start_index=39 end_index=39
+2026-06-25T03:39:34.804980+00:00 NATIVE info seeded_leaf_end title=Publishing as a Service start_index=39 end_index=39
+2026-06-25T03:39:34.804980+00:00 NATIVE info seeded_leaf_start title=Design Studios start_index=40 end_index=40
+2026-06-25T03:39:34.805980+00:00 NATIVE info seeded_leaf_end title=Design Studios start_index=40 end_index=40
+2026-06-25T03:39:34.805980+00:00 NATIVE info seeded_leaf_start title=Conclusion start_index=41 end_index=43
+2026-06-25T03:39:34.805980+00:00 NATIVE info seeded_leaf_end title=Conclusion start_index=41 end_index=43
+2026-06-25T03:39:34.805980+00:00 NATIVE info seeded_leaf_start title=Bibliography start_index=44 end_index=47
+2026-06-25T03:39:34.805980+00:00 NATIVE info seeded_leaf_end title=Bibliography start_index=44 end_index=47
+2026-06-25T03:39:34.807799+00:00 END   toc_seeded_recursive_tree_build status=SUCCESS duration_ms=17
+2026-06-25T03:39:34.807799+00:00 END   candidate_toc_seeded_build_tree status=SUCCESS duration_ms=18
+2026-06-25T03:39:34.808802+00:00 START candidate_toc_seeded_write_node_ids stage=candidate_toc_seeded_write_node_ids
+2026-06-25T03:39:34.808802+00:00 END   candidate_toc_seeded_write_node_ids status=SUCCESS duration_ms=0
+2026-06-25T03:39:34.808802+00:00 START candidate_toc_seeded_add_node_text stage=candidate_toc_seeded_add_node_text
+2026-06-25T03:39:34.914973+00:00 END   candidate_toc_seeded_add_node_text status=SUCCESS duration_ms=106
+2026-06-25T03:39:34.915974+00:00 START candidate_toc_seeded_summaries stage=candidate_toc_seeded_summaries
+2026-06-25T03:39:53.418122+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=18481 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0006_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:40:02.191654+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=27253 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0007_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:40:22.621577+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=47683 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0008_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:40:31.071076+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=56132 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0009_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:41:01.291969+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=59095 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0010_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:41:01.824432+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=68402 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0011_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:41:27.417610+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=56342 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0012_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:41:31.335962+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=68708 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0013_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:41:59.932065+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=58635 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0014_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:42:04.400997+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=62572 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0015_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:42:20.796318+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=53374 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0016_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:42:26.715483+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=55375 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0017_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:43:02.571101+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=62634 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0018_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:43:02.662469+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=58257 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0019_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:43:07.998357+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=47197 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0020_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:43:26.267192+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=59548 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0021_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:43:29.959480+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=27294 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0022_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:43:40.304167+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=32300 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0023_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:44:03.044095+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=22736 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0024_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:44:08.179932+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=65605 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0025_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:44:39.765860+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=73494 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0026_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:44:43.380981+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=73414 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0027_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:45:01.711457+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=53530 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0028_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:45:03.298918+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=60253 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0029_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:45:04.033975+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=24265 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0030_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:45:16.292782+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=12992 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0031_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:45:32.322643+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=30608 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0032_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:45:43.665665+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=60280 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0033_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:45:57.379697+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=25053 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0034_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:46:10.379851+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=66343 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0035_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:46:15.954041+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=59657 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0036_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:46:34.546756+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=24161 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0037_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:46:49.956109+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=52571 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0038_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:46:57.669082+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=73999 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0039_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:47:21.086202+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=23414 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0040_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:47:31.868523+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=57317 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0041_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:47:38.314490+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=82358 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0042_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:47:54.891802+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=64932 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0043_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:48:20.063506+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=58971 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0044_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:48:39.813919+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=61494 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0045_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:48:54.311816+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=82440 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0046_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:49:00.516982+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=65620 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0047_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:49:27.486773+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=67418 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0048_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:50:08.904760+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=89087 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0049_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:50:19.420660+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=85102 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0050_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:50:26.036261+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=85514 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0051_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:50:43.858245+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=76367 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0052_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:51:07.724097+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=48298 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0053_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:51:14.458015+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=65550 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0054_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:52:04.571387+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=80709 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0055_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:52:16.983452+00:00 LLM   chat status=success model=Qwen3.6-Plus duration_ms=110942 artifact=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\logs\llm_calls\0056_chat_success_Qwen3.6-Plus.json
+2026-06-25T03:52:16.986994+00:00 END   candidate_toc_seeded_summaries status=SUCCESS duration_ms=762071
+2026-06-25T03:52:16.990513+00:00 START candidate_toc_seeded_convert_tree stage=candidate_toc_seeded_convert_tree
+2026-06-25T03:52:16.991511+00:00 END   candidate_toc_seeded_convert_tree status=SUCCESS duration_ms=1
+2026-06-25T03:52:16.992955+00:00 START candidate_toc_seeded_normalize_output stage=candidate_toc_seeded_normalize_output
+2026-06-25T03:52:16.996546+00:00 END   candidate_toc_seeded_normalize_output status=SUCCESS duration_ms=3
+2026-06-25T03:52:16.997560+00:00 START candidate_toc_seeded_summarize_metrics stage=candidate_toc_seeded_summarize_metrics
+2026-06-25T03:52:17.006329+00:00 END   candidate_toc_seeded_summarize_metrics status=SUCCESS duration_ms=8
+2026-06-25T03:52:17.006835+00:00 START candidate_toc_seeded_score stage=candidate_toc_seeded_score
+2026-06-25T03:52:17.008287+00:00 END   candidate_toc_seeded_score status=SUCCESS duration_ms=1
+2026-06-25T03:52:17.009298+00:00 START candidate_toc_seeded_write_artifacts stage=candidate_toc_seeded_write_artifacts
+2026-06-25T03:52:17.020637+00:00 END   candidate_toc_seeded_write_artifacts status=SUCCESS duration_ms=11
+2026-06-25T03:52:17.020637+00:00 EVENT pdf_candidate_build_complete strategy=toc_seeded score=84.176 root_count=11 node_count=29 candidate_root=D:\code\semantic-construct\md_and_pdf\pdf_result_final\2025年全球游戏发行与营销行业研究报告（英） -46页\candidate_trees\toc_seeded
+2026-06-25T03:52:17.021630+00:00 END   candidate_toc_seeded status=SUCCESS duration_ms=762233
+2026-06-25T03:52:17.024133+00:00 START finalize_selected_candidate stage=finalize_selected_candidate
+2026-06-25T03:52:17.028181+00:00 END   finalize_selected_candidate status=SUCCESS duration_ms=4
+2026-06-25T03:52:17.030261+00:00 START save_final_output stage=save_final_output
+2026-06-25T03:52:17.032275+00:00 END   save_final_output status=SUCCESS duration_ms=1

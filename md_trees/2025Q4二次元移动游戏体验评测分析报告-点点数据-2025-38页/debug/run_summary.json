@@ -1,0 +1,61 @@
+{
+  "run_metadata": {
+    "input_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页",
+    "input_kind": "directory",
+    "artifact_root": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页",
+    "output_json": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\tree.json",
+    "model": "Qwen3.6-Plus",
+    "fallback_model": "Qwen3.6-Plus",
+    "include_summary": true,
+    "write_postgres": false,
+    "write_global_index": false,
+    "global_index_model": "embedding-3",
+    "markdown_layout": "auto",
+    "pdf_strategy": "auto",
+    "toc_text_role_model": "Qwen3.6-Plus",
+    "toc_text_role_fallback_model": "Qwen3.6-Plus",
+    "toc_vlm_model": "Qwen3.6-Plus",
+    "toc_vlm_fallback_model": "Qwen3.6-Plus",
+    "native_model": "Qwen3.6-Plus",
+    "native_fallback_model": "Qwen3.6-Plus",
+    "summary_model": "Qwen3.6-Plus",
+    "summary_fallback_model": "Qwen3.6-Plus"
+  },
+  "stage_records": [
+    {
+      "stage": "candidate_docarbor_native",
+      "status": "success",
+      "started_at": "2026-06-18T03:15:39.146245+00:00",
+      "duration_ms": 585529
+    },
+    {
+      "stage": "build_markdown_docarbor_from_directory",
+      "status": "success",
+      "started_at": "2026-06-18T03:15:39.141224+00:00",
+      "duration_ms": 585536
+    },
+    {
+      "stage": "save_final_output",
+      "status": "success",
+      "started_at": "2026-06-18T03:25:24.680146+00:00",
+      "duration_ms": 1
+    }
+  ],
+  "llm_usage_totals": {
+    "prompt_tokens": 38013,
+    "completion_tokens": 113080,
+    "total_tokens": 151093
+  },
+  "llm_call_counts": {
+    "chat": 41,
+    "embedding": 0,
+    "success": 41,
+    "error": 0
+  },
+  "target_output_path": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\tree.json",
+  "docarbor_raw_path": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\docarbor_raw.json",
+  "outline_entries_path": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\outline_entries.json",
+  "build_outline_path": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\build_outline.json",
+  "toc_assessment_path": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\toc_assessment.json",
+  "candidate_selection_path": "D:\\code\\semantic-construct\\md_and_pdf\\md_result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\candidate_selection.json"
+}

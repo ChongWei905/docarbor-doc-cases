@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:12:07.421770+00:00",
+  "sequence": 445,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 15605,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 1、内容营销更加依赖于数据洞察：.\n    The given page_text is 94\nYoudao Ads\nAI技术的应用速度，将决定未来的营销格局。作为游戏营销的国际化玩家， Youdao Ads 将主力聚焦四大关键场景的 AI营销应用：\n1、内容营销更加依赖于数据洞察：\nAI可分析目标市场及爆款游戏的营销逻辑、了解用户偏好，其洞察输出的精准度和反应速度，将成为内容营销的角力点；\n2、投放数据优化，引导高 LTV的用户获取：\n实现投放策略的实时迭代，提升高价值用户的捕捉精度，改变以往“拼渠道、拼预算”的传统营销竞争逻辑；\n3、KOL营销将更加高效和智能：\nAI可从海量达人中更高效地筛选匹配度高、性价比优的本地化 KOL，优化“洞察 —筛选—建联—复盘”全流程；\n4、创意素材环节的 AIGC革命持续火热：\nAI在极大提效素材生产的同时，借助数据优化的强大本土化优势，生成贴合目标市场文化偏好的爆款素材。\n值得注意的是， AI技术产出的高质量营销内容，能优化大模型产品对品牌的分析判断，最终对品牌 GEO产生长期的、正向的影响。\nYoudao Ads 致力于成为数字营销的造浪者和变革者，正在将单一的 AI营销功能，升级整合成为覆盖“内容创作 —素材投放 —运营优化 —项目管理”的全链路 AI\n智能营销平台。期待 2026与君，携手 AI共行共赢。\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-6e6510a7-bcb4-91d8-8a7e-a60dfcce7743",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Section Title:** `1、内容营销更加依赖于数据洞察：`\n   - **Page Text:**\n     ```\n     94\n     Youdao Ads\n     AI技术的应用速度，将决定未来的营销格局。作为游戏营销的国际化玩家， Youdao Ads 将主力聚焦四大关键场景的 AI营销应用：\n     1、内容营销更加依赖于数据洞察：\n     AI可分析目标市场及爆款游戏的营销逻辑、了解用户偏好，其洞察输出的精准度和反应速度，将成为内容营销的角力点；\n     ... (rest of the text)\n     ```\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate Page Text vs Section Title:**\n   - The `page_text` starts with:\n     `94`\n     `Youdao Ads`\n     `AI技术的应用速度，将决定未来的营销格局。作为游戏营销的国际化玩家， Youdao Ads 将主力聚焦四大关键场景的 AI营销应用：`\n   - Then comes the section title: `1、内容营销更加依赖于数据洞察：`\n   - Clearly, there is significant content before the section title in the `page_text`.\n   - Therefore, the section does *not* start at the beginning of the page text.\n\n3.  **Determine Output:**\n   - `start_begin`: \"no\"\n\n4.  **Format Output:**\n   - Must be exactly: `{\"start_begin\": \"no\"}`\n   - No extra text, no reasoning.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" -> OK.\n   Check logic: Content exists before the title -> \"no\". -> OK.\n   Fuzzy matching note: Irrelevant here since the title is clearly not at the start.\n   All good. Proceed. \n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   (Self-Correction/Verification during thought)\n   Wait, let's double check the exact prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   The page text has \"94\\nYoudao Ads\\nAI技术的应用速度...\" before the title. So definitely \"no\".\n   Format is strict JSON.\n   Ready. \n   Output matches. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no markdown formatting interferes if possible, but standard JSON is fine. The prompt says \"Directly return the final JSON structure.\")\n   I will output exactly `{\"start_begin\": \"no\"}`.✅\n   All steps verified. \n   Proceeds. \n   [Final Check of the Prompt]\n   \"The given section title is 1、内容营销更加依赖于数据洞察：.\"\n   \"The given page_text is 94\\nYoudao Ads\\nAI技术的应用速度...\"\n   Result: no.\n   Output: `{\"start_begin\": \"no\"}`. \n   Matches perfectly. \n   Done. \n   [Output Generation] (Proceeds)",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Section Title:** `1、内容营销更加依赖于数据洞察：`\n   - **Page Text:**\n     ```\n     94\n     Youdao Ads\n     AI技术的应用速度，将决定未来的营销格局。作为游戏营销的国际化玩家， Youdao Ads 将主力聚焦四大关键场景的 AI营销应用：\n     1、内容营销更加依赖于数据洞察：\n     AI可分析目标市场及爆款游戏的营销逻辑、了解用户偏好，其洞察输出的精准度和反应速度，将成为内容营销的角力点；\n     ... (rest of the text)\n     ```\n   - **Task:** Check if the current section starts at the beginning of the given `page_text`.\n   - **Rule:** If there are other contents before the current section title, then it does *not* start at the beginning. If the title is the first content, it *does*.\n   - **Note:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Evaluate Page Text vs Section Title:**\n   - The `page_text` starts with:\n     `94`\n     `Youdao Ads`\n     `AI技术的应用速度，将决定未来的营销格局。作为游戏营销的国际化玩家， Youdao Ads 将主力聚焦四大关键场景的 AI营销应用：`\n   - Then comes the section title: `1、内容营销更加依赖于数据洞察：`\n   - Clearly, there is significant content before the section title in the `page_text`.\n   - Therefore, the section does *not* start at the beginning of the page text.\n\n3.  **Determine Output:**\n   - `start_begin`: \"no\"\n\n4.  **Format Output:**\n   - Must be exactly: `{\"start_begin\": \"no\"}`\n   - No extra text, no reasoning.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" -> OK.\n   Check logic: Content exists before the title -> \"no\". -> OK.\n   Fuzzy matching note: Irrelevant here since the title is clearly not at the start.\n   All good. Proceed. \n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   (Self-Correction/Verification during thought)\n   Wait, let's double check the exact prompt: \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\n   The page text has \"94\\nYoudao Ads\\nAI技术的应用速度...\" before the title. So definitely \"no\".\n   Format is strict JSON.\n   Ready. \n   Output matches. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   (Note: I will ensure no markdown formatting interferes if possible, but standard JSON is fine. The prompt says \"Directly return the final JSON structure.\")\n   I will output exactly `{\"start_begin\": \"no\"}`.✅\n   All steps verified. \n   Proceeds. \n   [Final Check of the Prompt]\n   \"The given section title is 1、内容营销更加依赖于数据洞察：.\"\n   \"The given page_text is 94\\nYoudao Ads\\nAI技术的应用速度...\"\n   Result: no.\n   Output: `{\"start_begin\": \"no\"}`. \n   Matches perfectly. \n   Done. \n   [Output Generation] (Proceeds)"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360731,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 793,
+      "prompt_tokens": 533,
+      "total_tokens": 1326,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 781,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 793
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 533
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

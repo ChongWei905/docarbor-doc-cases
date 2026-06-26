@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:54:46.957421+00:00",
+  "sequence": 149,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4853,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 欧洲成今年唯一月均广告主超 4万地区；港澳台月均素材投放 TOP1 ，北美、大洋洲紧随其后.\n    The given page_text is 10\n欧洲成今年唯一月均广告主超 4万地区；港澳台月均素材投放 TOP1 ，北美、大洋洲紧随其后\n•欧洲地区 2025年月均手游广告主数量已经超过 4.6万名，比第二名北美地区高出\n6000多，是唯一月均手游广告主超 4万的地区。此外东南亚和南美月均手游广\n告主均超过 3万名；\n•中国港澳台地区以月均投放 122条素材成为 2025年营销竞争最卷地区，北美地区\n以月均 119条创意紧随其后，此外大洋洲和日韩市场月均素材都超过 110条。2025年热门地区手游营销观察\nSource ：广大大，根据后台抓取数据整理统计后展现；\nDate Range ：2025/1~2025/12月均广告主最高：\n欧洲地区 46.2K月均素材量最大：\n港澳台地区  122条\n103 119 \n75 104 \n81 113 \n107 115 122 \n93 \n0.0 K5.0 K10.0 K15.0 K20.0 K25.0 K30.0 K35.0 K40.0 K45.0 K50.0 K\n欧洲 北美 东南亚 南美 南亚 日韩 中东 大洋洲 中国港澳台 非洲月均广告主 月均素材数\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-5ad9744c-826e-9085-b5e1-559b3cb778d9",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the given section title appears or starts in the given page_text.\nSection title: 欧洲成今年唯一月均广告主超 4万地区；港澳台月均素材投放 TOP1 ，北美、大洋洲紧随其后.\nPage text: \n10\n欧洲成今年唯一月均广告主超 4万地区；港澳台月均素材投放 TOP1 ，北美、大洋洲紧随其后\n•欧洲地区 2025年月均手游广告主数量已经超过 4.6万名...\n\nThe section title exactly matches the first line of the page text (ignoring the page number \"10\").\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\nMatches exactly.\nReturn JSON only.\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON: {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the given section title appears or starts in the given page_text.\nSection title: 欧洲成今年唯一月均广告主超 4万地区；港澳台月均素材投放 TOP1 ，北美、大洋洲紧随其后.\nPage text: \n10\n欧洲成今年唯一月均广告主超 4万地区；港澳台月均素材投放 TOP1 ，北美、大洋洲紧随其后\n•欧洲地区 2025年月均手游广告主数量已经超过 4.6万名...\n\nThe section title exactly matches the first line of the page text (ignoring the page number \"10\").\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\nMatches exactly.\nReturn JSON only.\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON: {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359691,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 231,
+      "prompt_tokens": 516,
+      "total_tokens": 747,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 215,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 231
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 516
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

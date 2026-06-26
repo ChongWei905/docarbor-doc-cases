@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:03:47.518996+00:00",
+  "sequence": 319,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 6103,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 14 一线洞察.\n    The given page_text is 14一线洞察\n益世界、 NEOCRAFT 、英雄游戏、游艺春秋\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-f52fbbe5-45a5-9d9a-ad36-2f54865154bc",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"14 一线洞察\" starts at the beginning of the provided `page_text`.\nThe `page_text` is:\n\"14一线洞察\n益世界、 NEOCRAFT 、英雄游戏、游艺春秋\n.\"\n\nThe section title is \"14 一线洞察\".\nThe page_text starts with \"14一线洞察\".\nIgnoring spaces, \"14 一线洞察\" matches \"14一线洞察\".\nThere is no other content before it.\nSo, it starts at the beginning.\nResult: yes.\nFormat: JSON with \"start_begin\": \"yes\".\nCheck constraints: \"Do not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text.\"\nOutput matches exactly.\nDone. \nLet's construct the JSON.\n{\n    \"start_begin\": \"yes\"\n}\nDone. \nProceed. \nSelf-Correction/Verification:\nTitle: \"14 一线洞察\"\nPage text: \"14一线洞察\\n益世界...\"\nMatches exactly at the start. Fuzzy matching ignores the space.\nSo \"start_begin\" is \"yes\".\nOutput matches requirement.\nDone. \nProceeds. \nOutput:\n{\n    \"start_begin\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"14 一线洞察\" starts at the beginning of the provided `page_text`.\nThe `page_text` is:\n\"14一线洞察\n益世界、 NEOCRAFT 、英雄游戏、游艺春秋\n.\"\n\nThe section title is \"14 一线洞察\".\nThe page_text starts with \"14一线洞察\".\nIgnoring spaces, \"14 一线洞察\" matches \"14一线洞察\".\nThere is no other content before it.\nSo, it starts at the beginning.\nResult: yes.\nFormat: JSON with \"start_begin\": \"yes\".\nCheck constraints: \"Do not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text.\"\nOutput matches exactly.\nDone. \nLet's construct the JSON.\n{\n    \"start_begin\": \"yes\"\n}\nDone. \nProceed. \nSelf-Correction/Verification:\nTitle: \"14 一线洞察\"\nPage text: \"14一线洞察\\n益世界...\"\nMatches exactly at the start. Fuzzy matching ignores the space.\nSo \"start_begin\" is \"yes\".\nOutput matches requirement.\nDone. \nProceeds. \nOutput:\n{\n    \"start_begin\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360232,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 294,
+      "prompt_tokens": 245,
+      "total_tokens": 539,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 277,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 294
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 245
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

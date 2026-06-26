@@ -1,0 +1,95 @@
+{
+  "page_title": "Merged text-only TOC outline",
+  "items": [
+    {
+      "level": 1,
+      "title": "全球手游市场营销趋势洞察",
+      "printed_page": 1
+    },
+    {
+      "level": 1,
+      "title": "全球手游热门榜单",
+      "printed_page": 2
+    },
+    {
+      "level": 1,
+      "title": "游戏获客：真实变革何在",
+      "printed_page": 3
+    },
+    {
+      "level": 1,
+      "title": "全球手游全链路增长策略指南",
+      "printed_page": 4
+    },
+    {
+      "level": 1,
+      "title": "全球手游热门品类营销洞察",
+      "printed_page": 5
+    },
+    {
+      "level": 1,
+      "title": "全球热门地区手游营销观察",
+      "printed_page": 6
+    },
+    {
+      "level": 1,
+      "title": "全球手游热门广告主营销观察",
+      "printed_page": 7
+    }
+  ],
+  "notes": [
+    "text_fallback_extraction_mode:per_page"
+  ],
+  "extraction_mode": "per_page",
+  "page_payloads": [
+    {
+      "page_number": 6,
+      "item_count": 7,
+      "payload": {
+        "page_title": "目录 CONTENTS",
+        "items": [
+          {
+            "level": 1,
+            "title": "全球手游市场营销趋势洞察",
+            "printed_page": 1
+          },
+          {
+            "level": 1,
+            "title": "全球手游热门榜单",
+            "printed_page": 2
+          },
+          {
+            "level": 1,
+            "title": "游戏获客：真实变革何在",
+            "printed_page": 3
+          },
+          {
+            "level": 1,
+            "title": "全球手游全链路增长策略指南",
+            "printed_page": 4
+          },
+          {
+            "level": 1,
+            "title": "全球手游热门品类营销洞察",
+            "printed_page": 5
+          },
+          {
+            "level": 1,
+            "title": "全球热门地区手游营销观察",
+            "printed_page": 6
+          },
+          {
+            "level": 1,
+            "title": "全球手游热门广告主营销观察",
+            "printed_page": 7
+          }
+        ],
+        "notes": [
+          "Extracted from a single TOC page with duplicated layout text. Titles were normalized by merging line-break artifacts into coherent phrases.",
+          "'特别鸣谢 &报告说明' appeared in the source text but lacked a visible page number and was excluded from the main hierarchy per extraction rules."
+        ]
+      }
+    }
+  ],
+  "page_errors": []
+}

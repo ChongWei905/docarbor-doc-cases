@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:49:58.618692+00:00",
+  "sequence": 151,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5346,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年度实力出海移动游戏.\n    The given page_text is 权威背书：100%数据驱动评选，助力海内外融资与合作\n全球曝光：路透社等200+全球媒体报道，打造硬核影响力\n长效资产：出海白皮书、点点出海公众号专稿长尾流量\n2025年度实力出海移动游戏\n2025年度实力出海应用\n2025先锋出海游戏/应用\n2025年度卓越出海服务企业火热申报中\n申报截止至12.31.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-87c495d9-1664-908a-a698-603c4ffd94db",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年度实力出海移动游戏\" appears or starts in the given `page_text`.\nThe `page_text` contains:\n\"权威背书：100%数据驱动评选，助力海内外融资与合作\n全球曝光：路透社等200+全球媒体报道，打造硬核影响力\n长效资产：出海白皮书、点点出海公众号专稿长尾流量\n2025年度实力出海移动游戏\n2025年度实力出海应用\n2025先锋出海游戏/应用\n2025年度卓越出海服务企业火热申报中\n申报截止至12.31.\"\n\nThe exact string \"2025年度实力出海移动游戏\" is present in the `page_text`.\nSo the answer should be \"yes\".\nFormat required:\n{\n    \"answer\": \"yes\"\n}\nNo extra text.\nDone. \nCheck constraints: \"do fuzzy matching, ignore any space inconsistency in the page_text.\" - exact match is fine.\nReturn JSON.\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON:\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年度实力出海移动游戏\" appears or starts in the given `page_text`.\nThe `page_text` contains:\n\"权威背书：100%数据驱动评选，助力海内外融资与合作\n全球曝光：路透社等200+全球媒体报道，打造硬核影响力\n长效资产：出海白皮书、点点出海公众号专稿长尾流量\n2025年度实力出海移动游戏\n2025年度实力出海应用\n2025先锋出海游戏/应用\n2025年度卓越出海服务企业火热申报中\n申报截止至12.31.\"\n\nThe exact string \"2025年度实力出海移动游戏\" is present in the `page_text`.\nSo the answer should be \"yes\".\nFormat required:\n{\n    \"answer\": \"yes\"\n}\nNo extra text.\nDone. \nCheck constraints: \"do fuzzy matching, ignore any space inconsistency in the page_text.\" - exact match is fine.\nReturn JSON.\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON:\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355803,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 264,
+      "prompt_tokens": 243,
+      "total_tokens": 507,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 248,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 264
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 243
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

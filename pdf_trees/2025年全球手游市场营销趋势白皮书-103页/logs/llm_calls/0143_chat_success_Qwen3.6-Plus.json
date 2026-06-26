@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:54:33.524670+00:00",
+  "sequence": 143,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 6151,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING 2025年全球手游市场营销趋势洞察01.\n    The given page_text is 6\n2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING2025年全球手游\n市场营销趋势洞察01\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-134321b4-7f78-9669-aa8c-b54e7663d472",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING 2025年全球手游市场营销趋势洞察01.\" appears or starts in the given page_text.\nPage text: \"6\\n2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING2025年全球手游\\n市场营销趋势洞察01\\n.\"\nSection title: \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING 2025年全球手游市场营销趋势洞察01.\"\n\nLet's normalize spaces and newlines.\nPage text normalized: \"6 2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING2025年全球手游市场营销趋势洞察01 .\"\nSection title normalized: \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING 2025年全球手游市场营销趋势洞察01.\"\n\nThe section title matches the text in the page, ignoring spaces/newlines.\n\"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING\" + \"2025年全球手游\" + \"市场营销趋势洞察01\"\nMatches exactly.\nSo answer is yes.\nReturn JSON: {\"answer\": \"yes\"}\nCheck format: exactly as requested.\nDone. \nNo extra text.\nProceed. \nOutput: {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING 2025年全球手游市场营销趋势洞察01.\" appears or starts in the given page_text.\nPage text: \"6\\n2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING2025年全球手游\\n市场营销趋势洞察01\\n.\"\nSection title: \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING 2025年全球手游市场营销趋势洞察01.\"\n\nLet's normalize spaces and newlines.\nPage text normalized: \"6 2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING2025年全球手游市场营销趋势洞察01 .\"\nSection title normalized: \"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING 2025年全球手游市场营销趋势洞察01.\"\n\nThe section title matches the text in the page, ignoring spaces/newlines.\n\"2025 OBSERVATION ON GLOBAL MOBILE GAME MARKETING\" + \"2025年全球手游\" + \"市场营销趋势洞察01\"\nMatches exactly.\nSo answer is yes.\nReturn JSON: {\"answer\": \"yes\"}\nCheck format: exactly as requested.\nDone. \nNo extra text.\nProceed. \nOutput: {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359677,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 303,
+      "prompt_tokens": 193,
+      "total_tokens": 496,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 287,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 303
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 193
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

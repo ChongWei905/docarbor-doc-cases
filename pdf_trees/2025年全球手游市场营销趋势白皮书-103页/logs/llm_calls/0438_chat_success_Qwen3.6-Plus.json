@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:11:42.600522+00:00",
+  "sequence": 438,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 18114,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is Mahjong Wonders.\n    The given page_text is 87\n视频, 94.8%图片, 4.1%各类型素材占比\n广告主投放数据\n产品首次投放： 2025年7月\n双端累计去重后创意： 13.7万Mahjong Wonders\n麻将连连看  Nebula Studio6月上线 7月开投， 2025年麻将连连看赛道最强黑马，稳居美国桌面游戏免费榜前 10热门新品休闲益智手游营销观察\nSource ：投放数据来自广大大 -广告主分析模块；投放受众数据为汇总数据仅供参考\nDate Range ：2025/7~2025/1265+55-6445-5435-4425-3418-24游戏受众年龄分布\n男性 女性 未知\n菲律宾西班牙加拿大墨西哥意大利德国法国英国巴西美国投放国家 /地区TOP10\n男性 31.3% 女性 68.0%受众性别分布0.0 K10.0 K20.0 K30.0 K\n7/1 7/15 7/29 8/12 8/26 9/9 9/23 10/7 10/21 11/4 11/18 12/2 12/16 12/302025年广告主双端投放素材堆积图\niOS Android\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-3fe7981f-f3ff-9537-98a7-bff5ed0f2a71",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"start_begin\": \"no\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `Mahjong Wonders`\n   - **Current Page Text:** `87\\n视频, 94.8%图片, 4.1%各类型素材占比\\n广告主投放数据\\n产品首次投放： 2025年7月\\n双端累计去重后创意： 13.7万Mahjong Wonders\\n麻将连连看  Nebula Studio6月上线 7月开投， 2025年麻将连连看赛道最强黑马，稳居美国桌面游戏免费榜前 10热门新品休闲益智手游营销观察\\nSource ：投放数据来自广大大 -广告主分析模块；投放受众数据为汇总数据仅供参考\\nDate Range ：2025/7~2025/1265+55-6445-5435-4425-3418-24游戏受众年龄分布\\n男性 女性 未知\\n菲律宾西班牙加拿大墨西哥意大利德国法国英国巴西美国投放国家 /地区TOP10\\n男性 31.3% 女性 68.0%受众性别分布0.0 K10.0 K20.0 K30.0 K\\n7/1 7/15 7/29 8/12 8/26 9/9 9/23 10/7 10/21 11/4 11/18 12/2 12/16 12/302025年广告主双端投放素材堆积图\\niOS Android\\n.`\n   - **Task:** Check if the section title `Mahjong Wonders` starts at the beginning of the `page_text`.\n   - **Rule:** If there are other contents before the section title, it does NOT start at the beginning. If it's the first content, it DOES. Use fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The page text starts with: `87\\n视频, 94.8%图片, 4.1%各类型素材占比\\n广告主投放数据\\n产品首次投放： 2025年7月\\n双端累计去重后创意： 13.7万Mahjong Wonders\\n...`\n   The title `Mahjong Wonders` appears after `13.7万`. It is clearly not at the beginning of the page text. There is a lot of text before it (`87`, `视频, 94.8%...`, `广告主投放数据`, etc.).\n\n3.  **Determine Output:**\n   Since `Mahjong Wonders` is not the first content in the page text, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   Wait, let's look closely at the text: `双端累计去重后创意： 13.7万Mahjong Wonders`. The title is embedded in the middle of a line. Definitely not at the beginning.\n   Result is \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches exactly.✅\n   Proceeds. \n   [Final Check]\n   Input: Title: Mahjong Wonders\n   Page text starts with: 87\\n视频...\n   Is title at beginning? No.\n   Output: {\"start_begin\": \"no\"}\n   Matches instructions. No extra text. Ready. \n   Output Generation. \n   *(Self-Correction/Refinement during thought)*: I should make sure the JSON format is exact. The prompt says: `{\"start_begin\": \"yes or no\"}`. I will output exactly `{\"start_begin\": \"no\"}`.\n   All good. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Current Section Title:** `Mahjong Wonders`\n   - **Current Page Text:** `87\\n视频, 94.8%图片, 4.1%各类型素材占比\\n广告主投放数据\\n产品首次投放： 2025年7月\\n双端累计去重后创意： 13.7万Mahjong Wonders\\n麻将连连看  Nebula Studio6月上线 7月开投， 2025年麻将连连看赛道最强黑马，稳居美国桌面游戏免费榜前 10热门新品休闲益智手游营销观察\\nSource ：投放数据来自广大大 -广告主分析模块；投放受众数据为汇总数据仅供参考\\nDate Range ：2025/7~2025/1265+55-6445-5435-4425-3418-24游戏受众年龄分布\\n男性 女性 未知\\n菲律宾西班牙加拿大墨西哥意大利德国法国英国巴西美国投放国家 /地区TOP10\\n男性 31.3% 女性 68.0%受众性别分布0.0 K10.0 K20.0 K30.0 K\\n7/1 7/15 7/29 8/12 8/26 9/9 9/23 10/7 10/21 11/4 11/18 12/2 12/16 12/302025年广告主双端投放素材堆积图\\niOS Android\\n.`\n   - **Task:** Check if the section title `Mahjong Wonders` starts at the beginning of the `page_text`.\n   - **Rule:** If there are other contents before the section title, it does NOT start at the beginning. If it's the first content, it DOES. Use fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"start_begin\": \"yes\" or \"no\"}`\n\n2.  **Examine Page Text:**\n   The page text starts with: `87\\n视频, 94.8%图片, 4.1%各类型素材占比\\n广告主投放数据\\n产品首次投放： 2025年7月\\n双端累计去重后创意： 13.7万Mahjong Wonders\\n...`\n   The title `Mahjong Wonders` appears after `13.7万`. It is clearly not at the beginning of the page text. There is a lot of text before it (`87`, `视频, 94.8%...`, `广告主投放数据`, etc.).\n\n3.  **Determine Output:**\n   Since `Mahjong Wonders` is not the first content in the page text, `start_begin` should be `\"no\"`.\n\n4.  **Format Output:**\n   `{\"start_begin\": \"no\"}`\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Self-Correction/Verification during thought: \n   Wait, let's look closely at the text: `双端累计去重后创意： 13.7万Mahjong Wonders`. The title is embedded in the middle of a line. Definitely not at the beginning.\n   Result is \"no\".\n   Output matches requirement.✅\n   Generate response. \n   `{\"start_begin\": \"no\"}`\n   Done. \n   Output matches exactly.✅\n   Proceeds. \n   [Final Check]\n   Input: Title: Mahjong Wonders\n   Page text starts with: 87\\n视频...\n   Is title at beginning? No.\n   Output: {\"start_begin\": \"no\"}\n   Matches instructions. No extra text. Ready. \n   Output Generation. \n   *(Self-Correction/Refinement during thought)*: I should make sure the JSON format is exact. The prompt says: `{\"start_begin\": \"yes or no\"}`. I will output exactly `{\"start_begin\": \"no\"}`.\n   All good. \n   Proceeds. \n   [Output Generation] -> `{\"start_begin\": \"no\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360707,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 968,
+      "prompt_tokens": 553,
+      "total_tokens": 1521,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 956,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 968
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 553
+      }
+    }
+  },
+  "response_text": "{\"start_begin\": \"no\"}",
+  "error_type": null,
+  "error_message": null
+}

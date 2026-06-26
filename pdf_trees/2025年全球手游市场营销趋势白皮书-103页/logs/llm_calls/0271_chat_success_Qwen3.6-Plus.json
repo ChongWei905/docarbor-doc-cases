@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:01:00.794461+00:00",
+  "sequence": 271,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 10397,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 罗斯基.\n    The given page_text is 80\n罗斯基\n当下，出海仍是行业大势所趋，但入局者增多让多品类竞争愈发激烈。除游戏外，短剧、社交工具、金融产品等赛道崛起，正成为出海\n赛道的新参与者。\n移动游戏虽在海外移动产品下载量中占据半壁江山，但社交工具短剧类应用增长迅猛，未来或与游戏在营销端正面碰撞，推高获客成本。\n同时， AI技术的深度渗透重塑行业格局， AI在提升运营效率的同时，也催生“ AI对抗AI”的买量新态势。\n产品方向上，大公司锚定重度 SLG赛道，而越南、土耳其等新兴团队的崛起，让轻度休闲品类成全球开发者新焦点，益智、模拟类产品\n关注度走高。融合性轻度产品凭借较低竞争度，仍是潜在机会点。\n此外， PC游戏的热度攀升， Steam 平台成为 PC团队出海分发的重点渠道， 3A大作的发展潜力被持续看好。小程序游戏出海同样值得关\n注，海外小程序生态虽缓慢发展，但仍越来越受到关注。另外国内小游戏团队正加速从小程序端向 APP端、出海方向延伸，有望成为出\n海新增力量。  \n整体来看，自研自发、多端发行、融合创新的产品模式，正成为海内外团队布局的核心方向。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-51f72b0b-8efc-9d6e-86c5-b50b3292c35e",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"罗斯基\" appears or starts in the given page_text.\nThe page_text starts with \"80\\n罗斯基\\n当下，出海仍是行业大势所趋...\"\nThe section title \"罗斯基\" clearly appears at the beginning of the text (after the page number \"80\").\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nEverything matches.\nProceed. \nOutput matches exactly. \nDone. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nWait, the prompt says \"Reply format: { \"answer\": \"yes or no\" ... }\". I will just output the JSON.\nDone. \nSelf-Correction/Verification:\nPage text: \"80\\n罗斯基\\n当下...\"\nSection: \"罗斯基\"\nMatches exactly.\nAnswer: yes.\nJSON format correct.\nProceeds. \nOutput matches requirement. \nDone. \n[Final Check]\nInput: section title \"罗斯基\", page_text \"80\\n罗斯基\\n当下...\"\nResult: yes.\nFormat: JSON.\nReady. \nOutput Generation. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nMatches exactly. No extra text.\nDone. \nProceeds. \n(Self-Correction/Note during thought: I should make sure the JSON is exactly as requested, without markdown if possible, but markdown is usually fine. I'll just output raw JSON to be safe.)\n\"{\\n    \\\"answer\\\": \\\"yes\\\"\\n}\"\nDone. \nOutput matches. \nProceeds. \n[Final Output Generation] -> `{\"answer\": \"yes\"}` (or formatted)\nI will output exactly the JSON.\nDone. \n[Output Generation]\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"罗斯基\" appears or starts in the given page_text.\nThe page_text starts with \"80\\n罗斯基\\n当下，出海仍是行业大势所趋...\"\nThe section title \"罗斯基\" clearly appears at the beginning of the text (after the page number \"80\").\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nEverything matches.\nProceed. \nOutput matches exactly. \nDone. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nWait, the prompt says \"Reply format: { \"answer\": \"yes or no\" ... }\". I will just output the JSON.\nDone. \nSelf-Correction/Verification:\nPage text: \"80\\n罗斯基\\n当下...\"\nSection: \"罗斯基\"\nMatches exactly.\nAnswer: yes.\nJSON format correct.\nProceeds. \nOutput matches requirement. \nDone. \n[Final Check]\nInput: section title \"罗斯基\", page_text \"80\\n罗斯基\\n当下...\"\nResult: yes.\nFormat: JSON.\nReady. \nOutput Generation. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nMatches exactly. No extra text.\nDone. \nProceeds. \n(Self-Correction/Note during thought: I should make sure the JSON is exactly as requested, without markdown if possible, but markdown is usually fine. I'll just output raw JSON to be safe.)\n\"{\\n    \\\"answer\\\": \\\"yes\\\"\\n}\"\nDone. \nOutput matches. \nProceeds. \n[Final Output Generation] -> `{\"answer\": \"yes\"}` (or formatted)\nI will output exactly the JSON.\nDone. \n[Output Generation]\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360065,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 452,
+      "prompt_tokens": 418,
+      "total_tokens": 870,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 436,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 452
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 418
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

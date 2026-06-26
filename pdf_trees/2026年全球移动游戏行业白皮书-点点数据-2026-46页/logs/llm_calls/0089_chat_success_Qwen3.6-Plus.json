@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:58:30.168612+00:00",
+  "sequence": 89,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 10294,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 理想主义底色下的“不着急”与长线定力.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 35典型移动游戏企业案例分析：心动网络\n理想主义底色下的“不着急”与长线定力\n来源：点点数据自主研究及绘制。2025年心动网络旗下部分游戏国服月流水（仅App Store）空格心动网络的战略方向，深刻烙印着创始人黄一孟的理想主义色彩，这种色彩并非不切实际的空想，而是一种塑造了公司独特节奏与长期定力的核心哲学。在组织管理上，这种\n理想主义曾达到令人咋舌的极致：公司一度取消全员奖金，转而提供业内顶级的固定薪酬；推行无限假期；甚至为主动离职的员工提供高达六个月的“致意金”。这一系列反行业\n惯例的举措，其内核是极致的信任文化，旨在将员工从短期KPI和内部竞争中解放出来，专注于产品本身的热爱与长期价值。虽然部分激进制度后期因实际运营挑战而调整，但其\n精神遗产——对创意人才的尊重、对透明沟通的坚持、以及对“赛马内耗”的厌恶——已深入组织骨髓，这与他们做出的那些不循常规的“妖”产品在精神上一脉相承。\n空格在产品和商业战略上，这种理想主义则表现为一种“不着急”的从容感。长期以来，心动自研游戏线常被市场诟病“单薄”、“依赖爆款”，但公司似乎并未因此陷入焦虑，\n去盲目扩张团队或追逐市场风口。相反，它表现出一种罕见的耐心：持续发行众多商业回报有限的买断制手游，扶持独立游戏；即便在TapTap已成为优质渠道后，也未将其简单\n变为榨取流量的工具，而是克制地维持广告模式，捍卫开发者生态。近几年，这种长期主义的坚持开始迎来系统性收获：《出发吧麦芬》《心动小镇》《伊瑟》等游戏的接连成功，\n证明其聚焦“长青化”、在优势赛道持续深耕的方法论愈发成熟。\n空格这并非短期冲刺的结果，而是在一个独特系统支撑下的自然生长。TapTap作为“零分成”的独特渠道，是这一战略的基石。它让心动不必为了短期营收最大化而扭曲游戏设\n计，可以为了创新和用户体验牺牲部分短期利益；它提供了一个直接、纯净的玩家反馈环，让“妖”的产品创意能有被看见和验证的机会。因此，心动的战略给人一种“明明有机\n会赚快钱，却选择了更远的路”的印象。这份选择，正是创始人对“创造美好作品、构建健康生态”的理想主义坚持，这份坚持为公司抵御短期诱惑、执行长线战略提供了最根本\n的底气与支撑。\n0 900 1,800 2,700 3,600 \n1月 2月 3月 4月 5月 6月 7月 8月 9月 10月 11月 12月心动小镇\n出发吧麦芬\n伊瑟\n火炬之光：无限\n香肠派对\n仙境传说M（万元）\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-0a1d478d-80bc-9c55-ae4b-6bb278c931ef",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if a given section title appears or starts in the given `page_text`.\n   - **Section Title:** `理想主义底色下的“不着急”与长线定力`\n   - **Page Text:** `© 2026 DianDian.All Rights Reserved. 35典型移动游戏企业案例分析：心动网络\\n理想主义底色下的“不着急”与长线定力\\n来源：点点数据自主研究及绘制。2025年心动网络旗下部分游戏国服月流水（仅App Store）空格心动网络的战略方向...` (and continues)\n   - **Instructions:** Fuzzy matching allowed, ignore space inconsistencies. Reply format: JSON with `\"answer\": \"yes\" or \"no\"`. Directly return JSON, no extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - I'll scan the `page_text` for the exact or fuzzy match of `理想主义底色下的“不着急”与长线定力`.\n   - Looking at the beginning of the text: `© 2026 DianDian.All Rights Reserved. 35典型移动游戏企业案例分析：心动网络\\n理想主义底色下的“不着急”与长线定力\\n来源：...`\n   - The exact string `理想主义底色下的“不着急”与长线定力` appears right after the first line.\n   - It matches exactly.\n\n3.  **Determine Answer:**\n   - Since it appears exactly, the answer is \"yes\".\n\n4.  **Format Output:**\n   - Must be exactly: `{\"answer\": \"yes\"}`\n   - No extra text, no explanations.\n\n   Check constraints: \"Reply format: { \"answer\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Output matches requirement.✅\n   Final JSON: `{\"answer\": \"yes\"}`\n   I will generate exactly that. \n   Self-Correction/Verification during thought: \n   - Check for any tricky spacing or punctuation differences? The text has it exactly as `理想主义底色下的“不着急”与长线定力`.\n   - Fuzzy matching is allowed anyway, but exact match is present.\n   - Output format is strict.\n   - Ready. \n   Output matches. \n   Proceeds. \n   `[Done]`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if a given section title appears or starts in the given `page_text`.\n   - **Section Title:** `理想主义底色下的“不着急”与长线定力`\n   - **Page Text:** `© 2026 DianDian.All Rights Reserved. 35典型移动游戏企业案例分析：心动网络\\n理想主义底色下的“不着急”与长线定力\\n来源：点点数据自主研究及绘制。2025年心动网络旗下部分游戏国服月流水（仅App Store）空格心动网络的战略方向...` (and continues)\n   - **Instructions:** Fuzzy matching allowed, ignore space inconsistencies. Reply format: JSON with `\"answer\": \"yes\" or \"no\"`. Directly return JSON, no extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - I'll scan the `page_text` for the exact or fuzzy match of `理想主义底色下的“不着急”与长线定力`.\n   - Looking at the beginning of the text: `© 2026 DianDian.All Rights Reserved. 35典型移动游戏企业案例分析：心动网络\\n理想主义底色下的“不着急”与长线定力\\n来源：...`\n   - The exact string `理想主义底色下的“不着急”与长线定力` appears right after the first line.\n   - It matches exactly.\n\n3.  **Determine Answer:**\n   - Since it appears exactly, the answer is \"yes\".\n\n4.  **Format Output:**\n   - Must be exactly: `{\"answer\": \"yes\"}`\n   - No extra text, no explanations.\n\n   Check constraints: \"Reply format: { \"answer\": \"yes or no\" ... } Directly return the final JSON structure. Do not output anything else.\"\n\n   All good. Proceed. \n   Output matches requirement.✅\n   Final JSON: `{\"answer\": \"yes\"}`\n   I will generate exactly that. \n   Self-Correction/Verification during thought: \n   - Check for any tricky spacing or punctuation differences? The text has it exactly as `理想主义底色下的“不着急”与长线定力`.\n   - Fuzzy matching is allowed anyway, but exact match is present.\n   - Output format is strict.\n   - Ready. \n   Output matches. \n   Proceeds. \n   `[Done]`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359914,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 534,
+      "prompt_tokens": 784,
+      "total_tokens": 1318,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 523,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 534
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 784
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

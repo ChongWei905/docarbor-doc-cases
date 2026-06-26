@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:24:32.135259+00:00",
+  "sequence": 3,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 17620,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are deciding whether one report page belongs to the MAIN table of contents.\n\nA MAIN TOC page lists the report's actual section or chapter structure.\nVery important rules:\n1. Pages that only list tables, figures, charts, illustrations, abbreviations, or other auxiliary indexes are NOT main TOC pages.\n2. Chapter divider pages with one large title are NOT TOC pages.\n3. Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\n4. A page can be `toc_start` only if it clearly starts the main contents listing.\n5. A page can be `toc_continuation` only if it clearly continues a TOC list from a previous page.\n6. If there is no clear TOC evidence, return `not_toc`.\n7. Output JSON only.\n\nReturn this schema:\n{\n  \"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\",\n  \"confidence\": \"high\" | \"medium\" | \"low\",\n  \"reason\": <short string>\n}\n\nPage payload:\n```json\n{\n  \"page_number\": 2,\n  \"total_pages\": 47,\n  \"candidate_rank\": 3,\n  \"has_explicit_toc_title\": false,\n  \"top_lines\": [],\n  \"short_lines\": [],\n  \"candidate_rows\": [],\n  \"stats\": {\n    \"text_block_count\": 0,\n    \"parsed_line_matches\": 0,\n    \"heading_like_matches\": 0,\n    \"toc_pattern_matches\": 0,\n    \"short_line_count\": 0,\n    \"long_line_count\": 0,\n    \"sentence_like_line_count\": 0,\n    \"value_like_line_count\": 0\n  }\n}\n```"
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-701b377a-2410-98a5-ab88-ac4787d34a09",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"role\": \"not_toc\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page contains no extractable text, lines, or structural features indicative of a table of contents.\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Thinking Process:\n1.  **Analyze User Input:**\n   - Task: Determine if a report page belongs to the MAIN table of contents.\n   - Rules provided:\n     1. Auxiliary indexes (tables, figures, etc.) -> NOT main TOC.\n     2. Chapter divider pages -> NOT TOC.\n     3. Body pages (paragraphs, charts, data) -> NOT TOC.\n     4. `toc_start`: clearly starts main contents listing.\n     5. `toc_continuation`: clearly continues TOC list.\n     6. No clear TOC evidence -> `not_toc`.\n     7. Output JSON only.\n   - Schema: `{\"role\": \"...\", \"confidence\": \"...\", \"reason\": \"...\"}`\n   - Page Payload:\n     - `page_number`: 2\n     - `total_pages`: 47\n     - `candidate_rank`: 3\n     - `has_explicit_toc_title`: false\n     - `top_lines`: []\n     - `short_lines`: []\n     - `candidate_rows`: []\n     - `stats`: all zeros (text_block_count: 0, parsed_line_matches: 0, heading_like_matches: 0, toc_pattern_matches: 0, short_line_count: 0, long_line_count: 0, sentence_like_line_count: 0, value_like_line_count: 0)\n\n2.  **Evaluate Payload against Rules:**\n   - The payload shows an almost completely empty page in terms of extracted text/features.\n   - `top_lines`, `short_lines`, `candidate_rows` are all empty arrays.\n   - All stats are 0.\n   - `has_explicit_toc_title` is false.\n   - This strongly indicates it's a blank page, a cover page, a divider, or just a page with no extractable text relevant to a TOC.\n   - Rule 6: \"If there is no clear TOC evidence, return `not_toc`.\"\n   - Confidence: High, because there is literally zero text or structure indicating a TOC.\n\n3.  **Formulate Output:**\n   - `role`: \"not_toc\"\n   - `confidence`: \"high\"\n   - `reason`: \"Page contains no extractable text, lines, or structural features indicative of a table of contents.\"\n   - Check JSON format.\n\n   Construct JSON:\n   ```json\n   {\n     \"role\": \"not_toc\",\n     \"confidence\": \"high\",\n     \"reason\": \"Page contains no extractable text, lines, or structural features indicative of a table of contents.\"\n   }\n   ```\n   Matches schema exactly. No extra text. Proceed. \n   Self-Correction/Verification during thought: \n   Could it be a blank page at the start? Yes. Rule 6 applies. Confidence high. Output matches requirements. All good. \n   Proceeds. \n   Output Generation. \n   [Done] \n   *Self-Correction/Refinement during generation prep*: \n   I will ensure the JSON is strictly valid and matches the requested schema. The reason is concise. All constraints met.✅\n   Output matches response. \n   Proceeds. \n   `[Output Generation]` -> `{\"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page contains no extractable text, lines, or structural features indicative of a table of contents.\"}`\n   Checks: \n   - JSON only? Yes.\n   - Schema matches? Yes.\n   - Logic sound? Yes, empty stats/lines = not TOC.\n   Ready. \n   *Output Generation* (matches the final JSON)\n   `{ \"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page contains no extractable text, lines, or structural features indicative of a table of contents.\" }` -> formatted properly. \n   Proceeds. \n   [Final Check of the Prompt] \"Output JSON only.\" -> I will output just the JSON block.\n   All good. \n   *Output Generation* (Proceeds)",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Thinking Process:\n1.  **Analyze User Input:**\n   - Task: Determine if a report page belongs to the MAIN table of contents.\n   - Rules provided:\n     1. Auxiliary indexes (tables, figures, etc.) -> NOT main TOC.\n     2. Chapter divider pages -> NOT TOC.\n     3. Body pages (paragraphs, charts, data) -> NOT TOC.\n     4. `toc_start`: clearly starts main contents listing.\n     5. `toc_continuation`: clearly continues TOC list.\n     6. No clear TOC evidence -> `not_toc`.\n     7. Output JSON only.\n   - Schema: `{\"role\": \"...\", \"confidence\": \"...\", \"reason\": \"...\"}`\n   - Page Payload:\n     - `page_number`: 2\n     - `total_pages`: 47\n     - `candidate_rank`: 3\n     - `has_explicit_toc_title`: false\n     - `top_lines`: []\n     - `short_lines`: []\n     - `candidate_rows`: []\n     - `stats`: all zeros (text_block_count: 0, parsed_line_matches: 0, heading_like_matches: 0, toc_pattern_matches: 0, short_line_count: 0, long_line_count: 0, sentence_like_line_count: 0, value_like_line_count: 0)\n\n2.  **Evaluate Payload against Rules:**\n   - The payload shows an almost completely empty page in terms of extracted text/features.\n   - `top_lines`, `short_lines`, `candidate_rows` are all empty arrays.\n   - All stats are 0.\n   - `has_explicit_toc_title` is false.\n   - This strongly indicates it's a blank page, a cover page, a divider, or just a page with no extractable text relevant to a TOC.\n   - Rule 6: \"If there is no clear TOC evidence, return `not_toc`.\"\n   - Confidence: High, because there is literally zero text or structure indicating a TOC.\n\n3.  **Formulate Output:**\n   - `role`: \"not_toc\"\n   - `confidence`: \"high\"\n   - `reason`: \"Page contains no extractable text, lines, or structural features indicative of a table of contents.\"\n   - Check JSON format.\n\n   Construct JSON:\n   ```json\n   {\n     \"role\": \"not_toc\",\n     \"confidence\": \"high\",\n     \"reason\": \"Page contains no extractable text, lines, or structural features indicative of a table of contents.\"\n   }\n   ```\n   Matches schema exactly. No extra text. Proceed. \n   Self-Correction/Verification during thought: \n   Could it be a blank page at the start? Yes. Rule 6 applies. Confidence high. Output matches requirements. All good. \n   Proceeds. \n   Output Generation. \n   [Done] \n   *Self-Correction/Refinement during generation prep*: \n   I will ensure the JSON is strictly valid and matches the requested schema. The reason is concise. All constraints met.✅\n   Output matches response. \n   Proceeds. \n   `[Output Generation]` -> `{\"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page contains no extractable text, lines, or structural features indicative of a table of contents.\"}`\n   Checks: \n   - JSON only? Yes.\n   - Schema matches? Yes.\n   - Logic sound? Yes, empty stats/lines = not TOC.\n   Ready. \n   *Output Generation* (matches the final JSON)\n   `{ \"role\": \"not_toc\", \"confidence\": \"high\", \"reason\": \"Page contains no extractable text, lines, or structural features indicative of a table of contents.\" }` -> formatted properly. \n   Proceeds. \n   [Final Check of the Prompt] \"Output JSON only.\" -> I will output just the JSON block.\n   All good. \n   *Output Generation* (Proceeds)"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782357876,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 935,
+      "prompt_tokens": 407,
+      "total_tokens": 1342,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 884,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 935
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 407
+      }
+    }
+  },
+  "response_text": "{\n  \"role\": \"not_toc\",\n  \"confidence\": \"high\",\n  \"reason\": \"Page contains no extractable text, lines, or structural features indicative of a table of contents.\"\n}",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T02:50:56.201310+00:00",
+  "sequence": 168,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5380,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 二次元移动游戏体验评测分析报告.\n    The given page_text is 二次元移动游戏体验评测分析报告\n2025Q4\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-c8f93f59-58f2-9f13-b14f-51c0b56bcaee",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"二次元移动游戏体验评测分析报告\" starts at the beginning of the given `page_text`.\nThe `page_text` is:\n\"二次元移动游戏体验评测分析报告\n2025Q4\n.\"\n\nThe section title matches exactly the first line of the `page_text`.\nTherefore, the section starts at the beginning.\nOutput should be `{\"start_begin\": \"yes\"}`.\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nI will produce exactly the JSON.",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"二次元移动游戏体验评测分析报告\" starts at the beginning of the given `page_text`.\nThe `page_text` is:\n\"二次元移动游戏体验评测分析报告\n2025Q4\n.\"\n\nThe section title matches exactly the first line of the `page_text`.\nTherefore, the section starts at the beginning.\nOutput should be `{\"start_begin\": \"yes\"}`.\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nDone. \nI will produce exactly the JSON."
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782355859,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 137,
+      "prompt_tokens": 239,
+      "total_tokens": 376,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 120,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 137
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 239
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

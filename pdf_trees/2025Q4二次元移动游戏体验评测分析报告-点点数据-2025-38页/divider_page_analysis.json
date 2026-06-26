@@ -15,7 +15,7 @@
   "page_span": 0,
   "outline_entries": [
     {
-      "title": "二次元移动游戏体验评测分析报告",
+      "title": "2025 Q4二次元移动游戏体验评测分析报告",
       "printed_page": null,
       "physical_page": 1,
       "level_hint": 1,
@@ -49,11 +49,11 @@
         }
       ],
       "role": "section_divider",
-      "title": "二次元移动游戏体验评测分析报告",
+      "title": "2025 Q4二次元移动游戏体验评测分析报告",
       "level": 1,
       "ordinal": "2025 Q4",
       "confidence": "high",
-      "reason": "The page displays a prominent title stack '二次元移动游戏体验评测 分析报告' and a time period '2025 Q4' against a background collage, characteristic of a report cover or major section divider.",
+      "reason": "The page features a large, prominent title stack ('2025 Q4', '二次元移动游戏体验评测', '分析报告') typical of a report cover or major section opener, with no body content.",
       "accepted": true,
       "rejection_reason": null
     },
@@ -125,7 +125,7 @@
       "level": 1,
       "ordinal": null,
       "confidence": "high",
-      "reason": "The page is explicitly labeled '目录 Content' (Table of Contents) and lists multiple sections (Overview, Review, Trends), fitting the exclusion criteria for table-of-contents pages.",
+      "reason": "The page is explicitly labeled '目录 Content' and lists three distinct sections (Market Overview, Experience Review, Development Trends) with summaries, functioning as a table of contents rather than a single section divider.",
       "accepted": false,
       "rejection_reason": "not_divider"
     },
@@ -160,11 +160,11 @@
         }
       ],
       "role": "not_divider",
-      "title": null,
+      "title": "二次元移动游戏综合评分",
       "level": 1,
       "ordinal": null,
       "confidence": "high",
-      "reason": "The page contains detailed content describing an evaluation framework with 5 dimensions and 18 indicators, including specific criteria bullet points, making it a body content page rather than a simple section divider.",
+      "reason": "The page contains a detailed infographic/chart breaking down 5 dimensions and 18 indicators with specific bullet points, which classifies it as a normal body page with charts/tables rather than a simple section divider.",
       "accepted": false,
       "rejection_reason": "not_divider"
     },
@@ -214,7 +214,7 @@
       "level": 1,
       "ordinal": null,
       "confidence": "high",
-      "reason": "The page contains a detailed ranking table and bar charts comparing mobile games (scores, dimensions), which classifies it as a normal body page with charts/rankings, not a section divider.",
+      "reason": "The page contains a detailed ranking table and bar charts comparing mobile games, which classifies it as a normal body page with data visualization rather than a section divider.",
       "accepted": false,
       "rejection_reason": "not_divider"
     },
@@ -286,7 +286,7 @@
       "level": 1,
       "ordinal": null,
       "confidence": "high",
-      "reason": "This is a promotional advertisement page for 'POINT AWARDS' containing detailed information, bullet points, award categories, a QR code, and a deadline, rather than a structural section divider or chapter opener.",
+      "reason": "This is a promotional page or advertisement for the 'POINT AWARDS' featuring a call to action (QR code, deadline, 'Applications Open'), rather than a structural divider introducing a report section.",
       "accepted": false,
       "rejection_reason": "not_divider"
     },
@@ -310,15 +310,14 @@
         }
       ],
       "role": "not_divider",
-      "title": "游戏数据/移动应用分析平台",
+      "title": null,
       "level": 1,
       "ordinal": null,
       "confidence": "high",
-      "reason": "This page is a promotional or informational slide for the data provider 'Diandian Data' (点点数据). It lists platform features, supported app stores, company statistics (coverage, active devices, etc.), and includes a QR code for a community. It functions as an advertisement or 'About Us' page rather than a section divider introducing a specific report chapter.",
+      "reason": "This page is a company profile or promotional slide for 'Diandian Data', listing platform features, supported app stores, and key statistics. It serves as an advertisement or 'About Us' page, not a section divider for the report content.",
       "accepted": false,
       "rejection_reason": "not_divider"
     }
   ],
-  "exhibit_pages": [],
   "ready": false
 }

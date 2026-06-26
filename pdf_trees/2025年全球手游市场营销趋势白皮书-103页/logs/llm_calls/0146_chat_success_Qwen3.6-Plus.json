@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:54:43.366085+00:00",
+  "sequence": 146,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 11713,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年6月份在投手游广告主超过 9万，每月新投手游均值接近 8000.\n    The given page_text is 7\n2025年6月份在投手游广告主超过 9万，每月新投手游均值接近 8000\n•2025年月均手游广告主超 8.4万名，同比增长了 21.9%，在6月份达到峰值超过 9万名，全年手游广告主超 40万；\n•每月平均新增近 8000名手游广告主，月均占比 9.4%，其中 9、10、12这3个月占比超 10%，全年新广告主占比 23.4% ，与去年占比几乎持平。2025年全球手游 投放趋势观察\nSource ：广大大，根据后台抓取后数据整理后展现\nDate Range ：2025/1~2025/12\n2025年月均在投广告主\n同比21.9% ↑ 84.0K\n2025年月均新投广告主占比\n9.4% 月均新广告主： 7.9K8.1% 8.0%8.8%9.2%\n8.9% 8.9%9.7% 9.6%10.8%\n10.4% 9.9%10.2%\n0 K10 K20 K30 K40 K50 K60 K70 K80 K90 K100 K\n1月2月3月4月5月6月7月8月9月10月11月12月2025年全球手游各月广告主趋势\n在投广告主 新广告主占比\n51.6%\n23.6% 23.4%\n0 K100 K200 K300 K400 K500 K\n2023年 2024年 2025年近3年手游广告主趋势\n广告主 年新广告主占比\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-76fced2c-e9a8-9527-8af2-fccad40e6cfd",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年6月份在投手游广告主超过 9万，每月新投手游均值接近 8000\" appears or starts in the given `page_text`.\nLooking at the `page_text`:\n\"7\n2025年6月份在投手游广告主超过 9万，每月新投手游均值接近 8000\n•2025年月均手游广告主超 8.4万名...\"\n\nThe exact string \"2025年6月份在投手游广告主超过 9万，每月新投手游均值接近 8000\" is present at the beginning of the text (after the page number 7).\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\". The match is exact anyway.\nReturn only JSON.\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON: {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年6月份在投手游广告主超过 9万，每月新投手游均值接近 8000\" appears or starts in the given `page_text`.\nLooking at the `page_text`:\n\"7\n2025年6月份在投手游广告主超过 9万，每月新投手游均值接近 8000\n•2025年月均手游广告主超 8.4万名...\"\n\nThe exact string \"2025年6月份在投手游广告主超过 9万，每月新投手游均值接近 8000\" is present at the beginning of the text (after the page number 7).\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\". The match is exact anyway.\nReturn only JSON.\nDone. \nProceed. \nOutput matches requirement. \nFinal JSON: {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359687,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 252,
+      "prompt_tokens": 612,
+      "total_tokens": 864,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 236,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 252
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 612
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

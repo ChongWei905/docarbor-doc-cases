@@ -1,0 +1,11 @@
+{
+  "extraction_mode": "per_page",
+  "pages": [
+    {
+      "page_number": 6,
+      "response_text": "{\n  \"page_title\": \"目录 CONTENTS\",\n  \"items\": [\n    {\"level\": 1, \"title\": \"全球手游市场营销趋势洞察\", \"printed_page\": 1},\n    {\"level\": 1, \"title\": \"全球手游热门榜单\", \"printed_page\": 2},\n    {\"level\": 1, \"title\": \"游戏获客：真实变革何在\", \"printed_page\": 3},\n    {\"level\": 1, \"title\": \"全球手游全链路增长策略指南\", \"printed_page\": 4},\n    {\"level\": 1, \"title\": \"全球手游热门品类营销洞察\", \"printed_page\": 5},\n    {\"level\": 1, \"title\": \"全球热门地区手游营销观察\", \"printed_page\": 6},\n    {\"level\": 1, \"title\": \"全球手游热门广告主营销观察\", \"printed_page\": 7}\n  ],\n  \"notes\": [\n    \"Extracted from a single TOC page with duplicated layout text. Titles were normalized by merging line-break artifacts into coherent phrases.\",\n    \"'特别鸣谢 &报告说明' appeared in the source text but lacked a visible page number and was excluded from the main hierarchy per extraction rules.\"\n  ]\n}",
+      "error_type": null,
+      "error_message": null
+    }
+  ]
+}

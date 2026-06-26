@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:02:15.710865+00:00",
+  "sequence": 141,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 4062,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 免责声明.\n    The given page_text is 免责声明\n法律条款报告中所有的文字、图片、表格均受有关商标和著作权的法律保护，部分文字和数据采集于公开信息，所有权为原作者所有。没有经过本\n公司新媒体许可，任何组织和个人不得以任何形式复制或传递，报告中所涉及的所有素材版权均归广告主所有。任何未经授权使用本报告\n的相关商业行为都将违反《中华人民共和国著作权法》和其他法律法规以及有关国际公约的规定。\n本报告中行业数据及市场预测主要为分析师采用桌面研究、行业访谈及其他研究方法，并且结合点点数据团队监测产品数据，通过统计预\n测模型估算获得，仅供参考。受研究方法和数据获取资源的限制，本报告只提供给用户作为市场参考资料，本公司对该报告的数据和观点\n不承担法律责任。任何机构或个人援引或基于上述数据信息所采取的任何行动所造成的法律后果均与点点数据无关，由此引发的相关争议\n或法律责任皆由行为人承担。\n法律声明Legal Statement.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-c2c14e19-ea62-9087-96dd-ef80c80eec5f",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"免责声明\" appears or starts in the given `page_text`.\nThe `page_text` starts exactly with \"免责声明\".\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nEverything matches.\nProceed. \nOutput matches exactly.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"免责声明\" appears or starts in the given `page_text`.\nThe `page_text` starts exactly with \"免责声明\".\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nCheck constraints: \"do fuzzy matching, ignore any space inconsistency\", \"Directly return the final JSON structure. Do not output anything else.\"\nEverything matches.\nProceed. \nOutput matches exactly.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360140,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 125,
+      "prompt_tokens": 325,
+      "total_tokens": 450,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 109,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 125
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 325
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

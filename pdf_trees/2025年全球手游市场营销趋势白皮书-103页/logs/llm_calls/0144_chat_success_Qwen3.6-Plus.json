@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:54:41.009789+00:00",
+  "sequence": 144,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 24596,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年全球手游市场营销趋势白皮书.\n    The given page_text is 1\n2025年全球手游市场\n营销趋势白皮书\n2025 GLOBAL MOBILE GAME MARKETING TRENDS WHITE PAPER\n广大大数据研究院 x Singular x Aarki 数据支持：\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-8c803c03-a763-9ac3-bb88-e5ae5adfd636",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年全球手游市场营销趋势白皮书\" appears or starts in the given page_text.\nThe page_text is:\n\"1\n2025年全球手游市场\n营销趋势白皮书\n2025 GLOBAL MOBILE GAME MARKETING TRENDS WHITE PAPER\n广大大数据研究院 x Singular x Aarki 数据支持：\n.\"\n\nThe section title is \"2025年全球手游市场营销趋势白皮书\".\nIn the page_text, it is split across two lines:\n\"2025年全球手游市场\"\n\"营销趋势白皮书\"\nWhen combined, it matches exactly \"2025年全球手游市场营销趋势白皮书\".\nThe prompt says \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\nSo it should be considered a match.\nAnswer: yes.\nFormat: {\"answer\": \"yes\"}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput matches exactly.\nProceed. \n{\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年全球手游市场营销趋势白皮书\" appears or starts in the given page_text.\nThe page_text is:\n\"1\n2025年全球手游市场\n营销趋势白皮书\n2025 GLOBAL MOBILE GAME MARKETING TRENDS WHITE PAPER\n广大大数据研究院 x Singular x Aarki 数据支持：\n.\"\n\nThe section title is \"2025年全球手游市场营销趋势白皮书\".\nIn the page_text, it is split across two lines:\n\"2025年全球手游市场\"\n\"营销趋势白皮书\"\nWhen combined, it matches exactly \"2025年全球手游市场营销趋势白皮书\".\nThe prompt says \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\nSo it should be considered a match.\nAnswer: yes.\nFormat: {\"answer\": \"yes\"}\nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput matches exactly.\nProceed. \n{\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359685,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 239,
+      "prompt_tokens": 191,
+      "total_tokens": 430,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 223,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 239
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 191
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

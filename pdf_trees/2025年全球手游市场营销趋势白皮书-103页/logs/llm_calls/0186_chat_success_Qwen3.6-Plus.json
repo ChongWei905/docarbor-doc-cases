@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:56:41.325200+00:00",
+  "sequence": 186,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 15218,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年广告预算流向解析.\n    The given page_text is 34\n从全球市场来看，各移动平台的总体格局保持稳定。\n•安卓凭借其设备规模、更广泛的地域覆盖以及显著更低的平均用户获取成本\n（通常比 iOS低40%至60%），持续贡献了大部分的安装量：\n•iOS 虽安装量较少，却创造了与其数量不成比例的高额收入，进一步巩固了\n其作为高效变现渠道的核心地位。\n市场策略的关键演变在于，营销者对待两大平台的方式发生了转变：\n顶尖品牌不再以相同逻辑优化安卓与 iOS。他们将其视为截然不同的获客环境，\n针对各自特性量身定制创意方案、出价策略与效果评估体系。2025年广告预算流向解析\n数据来源： Singular 2025 年季度趋势报告Android 推动安装量增长，\niOS 则带来价值提升\n安卓以规模制胜， iOS以效率见长。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-fc12105b-d8b5-9c64-a5ea-c7ac578f768c",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given page_text.\n   - **Section Title:** `2025年广告预算流向解析`\n   - **Page Text:** \n     ```\n     34\n     从全球市场来看，各移动平台的总体格局保持稳定。\n     •安卓凭借其设备规模、更广泛的地域覆盖以及显著更低的平均用户获取成本\n     （通常比 iOS低40%至60%），持续贡献了大部分的安装量：\n     •iOS 虽安装量较少，却创造了与其数量不成比例的高额收入，进一步巩固了\n     其作为高效变现渠道的核心地位。\n     市场策略的关键演变在于，营销者对待两大平台的方式发生了转变：\n     顶尖品牌不再以相同逻辑优化安卓与 iOS。他们将其视为截然不同的获客环境，\n     针对各自特性量身定制创意方案、出价策略与效果评估体系。2025年广告预算流向解析\n     数据来源： Singular 2025 年季度趋势报告Android 推动安装量增长，\n     iOS 则带来价值提升\n     安卓以规模制胜， iOS以效率见长。\n     .\n     ```\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply with JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - I need to look for `2025年广告预算流向解析` in the provided text.\n   - Scanning the text...\n   - Found it exactly: `...针对各自特性量身定制创意方案、出价策略与效果评估体系。2025年广告预算流向解析\\n数据来源：...`\n   - It appears verbatim in the text.\n\n3.  **Determine Answer:**\n   - Since it appears in the text, the answer is \"yes\".\n\n4.  **Format Output:**\n   - Must be exactly: `{\"answer\": \"yes\"}`\n   - No extra text, no thinking process.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Output matches requirement.✅\n   Final JSON: `{\"answer\": \"yes\"}`\n   (Self-Correction/Verification during thought)\n   - Check exact string: `2025年广告预算流向解析`\n   - In text: `...体系。2025年广告预算流向解析\\n数据来源...`\n   - Matches exactly. Fuzzy matching not even strictly needed, but confirms it.\n   - Output format: `{\"answer\": \"yes\"}`\n   - Ready. \n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   (Note: I will ensure no markdown formatting interferes if possible, but standard JSON is fine. The prompt says \"Directly return the final JSON structure.\")\n   I will output exactly `{\"answer\": \"yes\"}`.✅\n   All steps verified. \n   Proceeds. \n   [Output] `{\"answer\": \"yes\"}`\n   *(Self-Correction/Refinement during thought)*: Wait, the prompt says `{\"answer\": \"yes or no\"}`. I will use `\"yes\"`.\n   Everything is correct. \n   Output matches. \n   [Done] \n   `{\"answer\": \"yes\"}`",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given page_text.\n   - **Section Title:** `2025年广告预算流向解析`\n   - **Page Text:** \n     ```\n     34\n     从全球市场来看，各移动平台的总体格局保持稳定。\n     •安卓凭借其设备规模、更广泛的地域覆盖以及显著更低的平均用户获取成本\n     （通常比 iOS低40%至60%），持续贡献了大部分的安装量：\n     •iOS 虽安装量较少，却创造了与其数量不成比例的高额收入，进一步巩固了\n     其作为高效变现渠道的核心地位。\n     市场策略的关键演变在于，营销者对待两大平台的方式发生了转变：\n     顶尖品牌不再以相同逻辑优化安卓与 iOS。他们将其视为截然不同的获客环境，\n     针对各自特性量身定制创意方案、出价策略与效果评估体系。2025年广告预算流向解析\n     数据来源： Singular 2025 年季度趋势报告Android 推动安装量增长，\n     iOS 则带来价值提升\n     安卓以规模制胜， iOS以效率见长。\n     .\n     ```\n   - **Instructions:** Fuzzy matching, ignore space inconsistencies. Reply with JSON `{\"answer\": \"yes\" or \"no\"}`. No extra text.\n\n2.  **Search for Section Title in Page Text:**\n   - I need to look for `2025年广告预算流向解析` in the provided text.\n   - Scanning the text...\n   - Found it exactly: `...针对各自特性量身定制创意方案、出价策略与效果评估体系。2025年广告预算流向解析\\n数据来源：...`\n   - It appears verbatim in the text.\n\n3.  **Determine Answer:**\n   - Since it appears in the text, the answer is \"yes\".\n\n4.  **Format Output:**\n   - Must be exactly: `{\"answer\": \"yes\"}`\n   - No extra text, no thinking process.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" \"Do not include any thinking field, explanation, or reasoning.\"\n\n   All good. Proceed. \n   Output matches requirement.✅\n   Final JSON: `{\"answer\": \"yes\"}`\n   (Self-Correction/Verification during thought)\n   - Check exact string: `2025年广告预算流向解析`\n   - In text: `...体系。2025年广告预算流向解析\\n数据来源...`\n   - Matches exactly. Fuzzy matching not even strictly needed, but confirms it.\n   - Output format: `{\"answer\": \"yes\"}`\n   - Ready. \n   Proceeds. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   (Note: I will ensure no markdown formatting interferes if possible, but standard JSON is fine. The prompt says \"Directly return the final JSON structure.\")\n   I will output exactly `{\"answer\": \"yes\"}`.✅\n   All steps verified. \n   Proceeds. \n   [Output] `{\"answer\": \"yes\"}`\n   *(Self-Correction/Refinement during thought)*: Wait, the prompt says `{\"answer\": \"yes or no\"}`. I will use `\"yes\"`.\n   Everything is correct. \n   Output matches. \n   [Done] \n   `{\"answer\": \"yes\"}`"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359805,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 783,
+      "prompt_tokens": 335,
+      "total_tokens": 1118,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 772,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 783
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 335
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

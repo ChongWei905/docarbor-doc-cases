@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:57:20.831781+00:00",
+  "sequence": 62,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 10188,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 10中国移动游戏2025年新品收入TOP榜.\n    The given page_text is © 2026 DianDian.All Rights Reserved. 10中国移动游戏2025年新品收入TOP榜\n大厂仍然领头但产品数量骤减 中小厂在边缘创新中奋力突围\n来源：点点数据自主研究及绘制。2025年中国移动游戏 每季度新品 全年收入TOP榜（仅App Store）(亿元）\niOS流水：12.82燕云十六声\n武侠 · 动作玩家评分：6.7\n2025Q1\niOS流水：4.02龙之谷世界\n3D · 动作 · 还原玩家评分：4.5\niOS流水：10.41英雄没有闪\n放置 · 策略 · 养成玩家评分：6.1\niOS流水：2.40时光大爆炸\n国风 · 种田 · 模拟玩家评分：4.5\niOS流水：4.19美职篮全明星\n2K · 篮球 · 竞技玩家评分：5.0\niOS流水：1.43龙息：神寂\n魔幻 · 策略 · 3D玩家评分：6.5\niOS流水：5.47杖剑传说\n放置 · 冒险 · 竖屏玩家评分：8.6\n2025Q2\niOS流水：1.89英勇之地\n动作 · 刷宝 · 联机玩家评分：4.6\niOS流水：4.84永远的蔚蓝星球\n塔防 · 合成 · 策略玩家评分：5.9\niOS流水：1.43雷霆战机：集结\n街机 · 弹幕 · 射击玩家评分：6.3\niOS流水：2.10胜利女神：新的希望\n二次元 · 卡牌 · 养成玩家评分：7.2\niOS流水：0.72全境守卫\n塔防 · 割草 · 解压玩家评分：6.9\niOS流水：8.43无畏契约：源能行动\n竞技 · 射击 · 动作玩家评分：8.0\n2025Q3\niOS流水：1.41斗罗大陆：猎魂世界\nIP · MMORPG玩家评分：6.8\niOS流水：2.90我的花园世界\n国风 · 种田 · 休闲玩家评分：6.5\niOS流水：0.86奔奔王国\n策略 · SLG玩家评分：5.2\niOS流水：1.54灵兽大冒险\n收集 · 宠物 · 养成玩家评分：7.0\niOS流水：0.64伊瑟\n卡牌 · 策略 · PVP玩家评分：7.4\niOS流水：1.09境·界 刀鸣\n动作 · ARPG · IP玩家评分：8.4\n2025Q4\niOS流水：0.39三国望神州\n战旗 · 三国 · 国风玩家评分：7.5\niOS流水：0.50遗弃之地\n策略 · 塔防玩家评分：4.9\niOS流水：0.21九牧之野\nSLG · 三国 · 战争玩家评分：5.4\n玩家评分：5.6\niOS流水：0.48三国群英传：策定九州\nSLG · 三国 · 战争\n iOS流水：0.19荒原曙光\n沙盒 · 建造 · 生存玩家评分：4.9\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-7cb772fd-68d3-9834-8f75-c0b937b7c897",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"10中国移动游戏2025年新品收入TOP榜\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the `page_text`:\n\"© 2026 DianDian.All Rights Reserved. 10中国移动游戏2025年新品收入TOP榜\\n大厂仍然领头但产品数量骤减 中小厂在边缘创新中奋力突围...\"\nThe exact string \"10中国移动游戏2025年新品收入TOP榜\" is present in the text.\nTherefore, the answer is \"yes\".\nI will output the JSON format as requested.\nCheck format:\n{\n    \"answer\": \"yes\"\n}\nDone. \nNo extra text.\nProceed. \nOutput matches requirement. \nFinal check of the prompt: \"Reply format: { \"answer\": \"yes or no\" } Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput: {\"answer\": \"yes\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"10中国移动游戏2025年新品收入TOP榜\" appears or starts in the given `page_text`.\nI need to perform fuzzy matching and ignore space inconsistencies.\nLooking at the `page_text`:\n\"© 2026 DianDian.All Rights Reserved. 10中国移动游戏2025年新品收入TOP榜\\n大厂仍然领头但产品数量骤减 中小厂在边缘创新中奋力突围...\"\nThe exact string \"10中国移动游戏2025年新品收入TOP榜\" is present in the text.\nTherefore, the answer is \"yes\".\nI will output the JSON format as requested.\nCheck format:\n{\n    \"answer\": \"yes\"\n}\nDone. \nNo extra text.\nProceed. \nOutput matches requirement. \nFinal check of the prompt: \"Reply format: { \"answer\": \"yes or no\" } Directly return the final JSON structure. Do not output anything else.\"\nReady. \nOutput: {\"answer\": \"yes\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359845,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 241,
+      "prompt_tokens": 876,
+      "total_tokens": 1117,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 225,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 241
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 876
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

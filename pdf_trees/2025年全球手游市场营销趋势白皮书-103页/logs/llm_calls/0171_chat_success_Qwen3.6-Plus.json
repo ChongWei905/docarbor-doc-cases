@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:56:02.160265+00:00",
+  "sequence": 171,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 6493,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年GooglePlay 下载收入 TOP20.\n    The given page_text is 23\n11 Gardenscapes Playrix\n12 Free Fire Garena\n13Last Z: Survival \nShooterFlorere\nGame\n14 Township Playrix\n15 Kingshot 点点互动\n16 리니지 M NCSOFT\n17 eFootball\n KONAMI\n18 PUBG MOBILE 腾讯\n19 Brawl Stars Supercell\n20 Fishdom Playrix1Last War:Survival\nGameFUNFLY\n2 Roblox Roblox\n3 MONOPOLY GO! Scopely\n4 Coin MasterMoon \nActive\n5 Royal MatchDream \nGames\n6 Whiteout Survival 点点互动\n7 Candy Crush Saga King\n8 Gossip Harbor® 柠檬微趣\n9 Pokémon GO Niantic\n10Pokémon TCG \nPocketPokemon11 Tile Explorer 乐信圣文\n12Extreme Car Driving \nSimulatorAxesInMotio\nnRacing\n13 Snake Calsh Supercent\n14Mini Games: Brainrot \nChallengeUnicorn \nStudio \nOfficial\n15 8 Ball Pool Miniclip\n16 Candy Crush Saga King\n17 Tile ClubGamo\nVation\n18Subway Princess \nRunner常春藤移动\n19 Football LeagueMOBILE \nSOCCER\n20 Moto Race GoXGAME \nSTUDIO1 Roblox Roblox\n2 Block  Blast!Hungry \nStudio\n3 Ludo King Gametion\n4 Subway SurfersSYBO \nGames\n5 Pizza Ready Supercent\n6 Free Fire MAX Garena\n7 Free Fire Garena\n8 Hole.io VOODOO\n9 Vita Mahjong 乐信圣文\n10 My Talking Tom 2 金科汤姆猫\n下载榜 收入榜\nSource ：广大大 -APP Intelligence ；收入数据来自 GooglePlay 商店应用内收入，不包括第三方安卓渠道数据，不包含第三方广告收入；\nDate Range ：2025/1~2025/122025年GooglePlay 下载收入 TOP20\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-ecc4a583-73ea-96bc-91c5-f6a9b918b5da",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"2025年GooglePlay 下载收入 TOP20\" appears or starts in the given page_text.\nI need to perform fuzzy matching, ignoring space inconsistencies.\nLooking at the page_text:\nAt the very end: \"Date Range ：2025/1~2025/122025年GooglePlay 下载收入 TOP20\\n.\"\nWait, it says \"2025/1~2025/122025年GooglePlay 下载收入 TOP20\". There's a missing space or newline between \"12\" and \"2025年\", but the exact string \"2025年GooglePlay 下载收入 TOP20\" is present.\nLet's check carefully: \"2025年GooglePlay 下载收入 TOP20\" matches exactly.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nDone. \nCheck constraints: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\nThe text contains \"2025年GooglePlay 下载收入 TOP20\".\nMatches exactly.\nOutput matches requested format.\nProceed. \nNo extra text.\nDone. \nOutput:\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"2025年GooglePlay 下载收入 TOP20\" appears or starts in the given page_text.\nI need to perform fuzzy matching, ignoring space inconsistencies.\nLooking at the page_text:\nAt the very end: \"Date Range ：2025/1~2025/122025年GooglePlay 下载收入 TOP20\\n.\"\nWait, it says \"2025/1~2025/122025年GooglePlay 下载收入 TOP20\". There's a missing space or newline between \"12\" and \"2025年\", but the exact string \"2025年GooglePlay 下载收入 TOP20\" is present.\nLet's check carefully: \"2025年GooglePlay 下载收入 TOP20\" matches exactly.\nSo the answer should be \"yes\".\nI will output the JSON as requested.\nFormat:\n{\n    \"answer\": \"yes\"\n}\nDone. \nCheck constraints: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\nThe text contains \"2025年GooglePlay 下载收入 TOP20\".\nMatches exactly.\nOutput matches requested format.\nProceed. \nNo extra text.\nDone. \nOutput:\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359766,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 316,
+      "prompt_tokens": 582,
+      "total_tokens": 898,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 300,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 316
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 582
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:24:14.478360+00:00",
+  "sequence": 2,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 62717,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "You are deciding whether one report page belongs to the MAIN table of contents.\n\nA MAIN TOC page lists the report's actual section or chapter structure.\nVery important rules:\n1. Pages that only list tables, figures, charts, illustrations, abbreviations, or other auxiliary indexes are NOT main TOC pages.\n2. Chapter divider pages with one large title are NOT TOC pages.\n3. Body pages with paragraphs, charts, rankings, prices, percentages, or data tables are NOT TOC pages.\n4. A page can be `toc_start` only if it clearly starts the main contents listing.\n5. A page can be `toc_continuation` only if it clearly continues a TOC list from a previous page.\n6. If there is no clear TOC evidence, return `not_toc`.\n7. Output JSON only.\n\nReturn this schema:\n{\n  \"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\",\n  \"confidence\": \"high\" | \"medium\" | \"low\",\n  \"reason\": <short string>\n}\n\nPage payload:\n```json\n{\n  \"page_number\": 14,\n  \"total_pages\": 47,\n  \"candidate_rank\": 2,\n  \"has_explicit_toc_title\": true,\n  \"top_lines\": [\n    \"目录Contents\",\n    \"02\",\n    \"海外移动游戏市场现\",\n    \"状分析\",\n    \"01\",\n    \"03\",\n    \"04\",\n    \"中国移动游戏市场现\",\n    \"移动游戏典型产品&\",\n    \"全球移动游戏市场发\",\n    \"市场收入规模增长持续平缓,双\",\n    \"平台下载量发生显著迁移;全新\"\n  ],\n  \"short_lines\": [\n    \"目录Contents\",\n    \"02\",\n    \"海外移动游戏市场现\",\n    \"状分析\",\n    \"01\",\n    \"03\",\n    \"04\",\n    \"中国移动游戏市场现\",\n    \"移动游戏典型产品&\",\n    \"全球移动游戏市场发\",\n    \"市场收入规模增长持续平缓,双\",\n    \"平台下载量发生显著迁移;全新\",\n    \"状分析\",\n    \"企业案例分析\",\n    \"展趋势\",\n    \"原创IP的大制作产品在2025几乎\",\n    \"缺席;多地针对App Store开放\",\n    \"第三方支付问题颁布相关法案。\"\n  ],\n  \"candidate_rows\": [],\n  \"stats\": {\n    \"text_block_count\": 15,\n    \"parsed_line_matches\": 0,\n    \"heading_like_matches\": 0,\n    \"toc_pattern_matches\": 0,\n    \"short_line_count\": 19,\n    \"long_line_count\": 0,\n    \"sentence_like_line_count\": 0,\n    \"value_like_line_count\": 4\n  }\n}\n```"
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-572e56a9-458c-98f0-a89d-dd3970d3fc60",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n  \"role\": \"toc_start\",\n  \"confidence\": \"high\",\n  \"reason\": \"Explicitly titled '目录Contents' and lists numbered main report sections (01-04), clearly indicating the start of the main table of contents.\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Determine if a report page belongs to the MAIN table of contents.\n   - **Rules:**\n     1. Auxiliary indexes (tables, figures, etc.) -> NOT main TOC.\n     2. Chapter divider pages -> NOT TOC.\n     3. Body pages (paragraphs, charts, data) -> NOT TOC.\n     4. `toc_start`: clearly starts the main contents listing.\n     5. `toc_continuation`: clearly continues a TOC list from a previous page.\n     6. No clear evidence -> `not_toc`.\n     7. Output JSON only.\n   - **Schema:** `{\"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\", \"confidence\": \"high\" | \"medium\" | \"low\", \"reason\": \"<short string>\"}`\n   - **Page Payload:**\n     - `page_number`: 14\n     - `total_pages`: 47\n     - `has_explicit_toc_title`: true\n     - `top_lines`: [\"目录Contents\", \"02\", \"海外移动游戏市场现\", \"状分析\", \"01\", \"03\", \"04\", \"中国移动游戏市场现\", \"移动游戏典型产品&\", \"全球移动游戏市场发\", \"市场收入规模增长持续平缓,双\", \"平台下载量发生显著迁移;全新\"]\n     - `short_lines`: Similar to top_lines, includes \"企业案例分析\", \"展趋势\", \"原创IP的大制作产品在2025几乎缺席;多地针对App Store开放第三方支付问题颁布相关法案。\"\n     - `stats`: `text_block_count`: 15, `short_line_count`: 19, `value_like_line_count`: 4, `toc_pattern_matches`: 0, `heading_like_matches`: 0.\n\n2.  **Evaluate Evidence against Rules:**\n   - `has_explicit_toc_title`: true. The title is \"目录Contents\". This strongly indicates a TOC.\n   - Content structure: Lists numbers (01, 02, 03, 04) followed by section titles like \"海外移动游戏市场现状分析\", \"中国移动游戏市场现...\", \"移动游戏典型产品&...\", \"全球移动游戏市场发...\". This is a classic chapter/section listing format.\n   - The lines are broken up (likely due to PDF extraction), but clearly form a list of main report sections.\n   - Page 14 out of 47. It's plausible for a TOC to be around page 14 in a 47-page report, or it could be a detailed TOC. The explicit title \"目录Contents\" and the numbered section list strongly point to `toc_start`.\n   - Check rules: Not an auxiliary index (it lists main sections/chapters). Not a chapter divider. Not a body page. Clearly starts the main contents listing.\n   - Confidence: High. The explicit title and numbered section list are definitive.\n\n3.  **Formulate Output:**\n   - `role`: \"toc_start\"\n   - `confidence`: \"high\"\n   - `reason`: \"Page explicitly titled '目录Contents' and lists numbered main report sections (01-04), clearly indicating the start of the main table of contents.\"\n\n   Check JSON schema compliance. All good.\n   Output matches requirements.✅\n   Proceed. \n   Self-Correction/Refinement during thought: \n   Could it be `toc_continuation`? The prompt says `toc_start` if it clearly starts the main contents listing. Given it has the title \"目录Contents\" and lists 01, 02, 03, 04, it's almost certainly the start. Even if it's page 14, reports often have executive summaries, methodology, etc., before the TOC, or the TOC is placed later. The explicit title confirms it's the start.\n   I will stick with `toc_start`.\n   Reason should be concise.\n   JSON only.\n   Ready. \n   Output matches the requested format.✅\n   ```json\n   {\n     \"role\": \"toc_start\",\n     \"confidence\": \"high\",\n     \"reason\": \"Explicitly titled '目录Contents' and lists numbered main sections (01-04), clearly marking the start of the main table of contents.\"\n   }\n   ```\n   All constraints met. Proceeds. \n   Output generation. \n   *(Self-Correction/Verification during generation prep)*: \n   Wait, let's double check the `top_lines` and `short_lines`. They contain descriptive text like \"市场收入规模增长持续平缓,双平台下载量发生显著迁移;全新原创IP的大制作产品在2025几乎缺席;多地针对App Store开放第三方支付问题颁布相关法案。\" This looks like a summary or abstract text mixed with the TOC, or maybe it's a detailed TOC with brief descriptions. However, the presence of \"目录Contents\" and the numbered sections 01, 02, 03, 04 strongly overrides this. It's still a TOC page. The role is `toc_start`. Confidence `high`. Reason covers it.\n   All good.✅\n   Output matches. \n   Proceeds. \n   [Output Generation] -> *Proceeds*\n   `{ \"role\": \"toc_start\", \"confidence\": \"high\", \"reason\": \"Explicitly titled '目录Contents' and lists numbered main sections (01-04), clearly marking the start of the main table of contents.\" }` (formatted as JSON)\n   Matches schema exactly. No extra text.✅\n   Done. \n   *Self-Correction/Note during thought*: The prompt says \"Output JSON only.\" I will ensure strictly JSON.\n   All good. \n   Output matches. \n   [Final Check of the Prompt]: \"Return this schema: { ... }\"\n   I will output exactly that.\n   Proceeds. \n   [Output Generation] (matches the final JSON)✅\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Determine if a report page belongs to the MAIN table of contents.\n   - **Rules:**\n     1. Auxiliary indexes (tables, figures, etc.) -> NOT main TOC.\n     2. Chapter divider pages -> NOT TOC.\n     3. Body pages (paragraphs, charts, data) -> NOT TOC.\n     4. `toc_start`: clearly starts the main contents listing.\n     5. `toc_continuation`: clearly continues a TOC list from a previous page.\n     6. No clear evidence -> `not_toc`.\n     7. Output JSON only.\n   - **Schema:** `{\"role\": \"toc_start\" | \"toc_continuation\" | \"not_toc\", \"confidence\": \"high\" | \"medium\" | \"low\", \"reason\": \"<short string>\"}`\n   - **Page Payload:**\n     - `page_number`: 14\n     - `total_pages`: 47\n     - `has_explicit_toc_title`: true\n     - `top_lines`: [\"目录Contents\", \"02\", \"海外移动游戏市场现\", \"状分析\", \"01\", \"03\", \"04\", \"中国移动游戏市场现\", \"移动游戏典型产品&\", \"全球移动游戏市场发\", \"市场收入规模增长持续平缓,双\", \"平台下载量发生显著迁移;全新\"]\n     - `short_lines`: Similar to top_lines, includes \"企业案例分析\", \"展趋势\", \"原创IP的大制作产品在2025几乎缺席;多地针对App Store开放第三方支付问题颁布相关法案。\"\n     - `stats`: `text_block_count`: 15, `short_line_count`: 19, `value_like_line_count`: 4, `toc_pattern_matches`: 0, `heading_like_matches`: 0.\n\n2.  **Evaluate Evidence against Rules:**\n   - `has_explicit_toc_title`: true. The title is \"目录Contents\". This strongly indicates a TOC.\n   - Content structure: Lists numbers (01, 02, 03, 04) followed by section titles like \"海外移动游戏市场现状分析\", \"中国移动游戏市场现...\", \"移动游戏典型产品&...\", \"全球移动游戏市场发...\". This is a classic chapter/section listing format.\n   - The lines are broken up (likely due to PDF extraction), but clearly form a list of main report sections.\n   - Page 14 out of 47. It's plausible for a TOC to be around page 14 in a 47-page report, or it could be a detailed TOC. The explicit title \"目录Contents\" and the numbered section list strongly point to `toc_start`.\n   - Check rules: Not an auxiliary index (it lists main sections/chapters). Not a chapter divider. Not a body page. Clearly starts the main contents listing.\n   - Confidence: High. The explicit title and numbered section list are definitive.\n\n3.  **Formulate Output:**\n   - `role`: \"toc_start\"\n   - `confidence`: \"high\"\n   - `reason`: \"Page explicitly titled '目录Contents' and lists numbered main report sections (01-04), clearly indicating the start of the main table of contents.\"\n\n   Check JSON schema compliance. All good.\n   Output matches requirements.✅\n   Proceed. \n   Self-Correction/Refinement during thought: \n   Could it be `toc_continuation`? The prompt says `toc_start` if it clearly starts the main contents listing. Given it has the title \"目录Contents\" and lists 01, 02, 03, 04, it's almost certainly the start. Even if it's page 14, reports often have executive summaries, methodology, etc., before the TOC, or the TOC is placed later. The explicit title confirms it's the start.\n   I will stick with `toc_start`.\n   Reason should be concise.\n   JSON only.\n   Ready. \n   Output matches the requested format.✅\n   ```json\n   {\n     \"role\": \"toc_start\",\n     \"confidence\": \"high\",\n     \"reason\": \"Explicitly titled '目录Contents' and lists numbered main sections (01-04), clearly marking the start of the main table of contents.\"\n   }\n   ```\n   All constraints met. Proceeds. \n   Output generation. \n   *(Self-Correction/Verification during generation prep)*: \n   Wait, let's double check the `top_lines` and `short_lines`. They contain descriptive text like \"市场收入规模增长持续平缓,双平台下载量发生显著迁移;全新原创IP的大制作产品在2025几乎缺席;多地针对App Store开放第三方支付问题颁布相关法案。\" This looks like a summary or abstract text mixed with the TOC, or maybe it's a detailed TOC with brief descriptions. However, the presence of \"目录Contents\" and the numbered sections 01, 02, 03, 04 strongly overrides this. It's still a TOC page. The role is `toc_start`. Confidence `high`. Reason covers it.\n   All good.✅\n   Output matches. \n   Proceeds. \n   [Output Generation] -> *Proceeds*\n   `{ \"role\": \"toc_start\", \"confidence\": \"high\", \"reason\": \"Explicitly titled '目录Contents' and lists numbered main sections (01-04), clearly marking the start of the main table of contents.\" }` (formatted as JSON)\n   Matches schema exactly. No extra text.✅\n   Done. \n   *Self-Correction/Note during thought*: The prompt says \"Output JSON only.\" I will ensure strictly JSON.\n   All good. \n   Output matches. \n   [Final Check of the Prompt]: \"Return this schema: { ... }\"\n   I will output exactly that.\n   Proceeds. \n   [Output Generation] (matches the final JSON)✅\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782357858,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 1381,
+      "prompt_tokens": 659,
+      "total_tokens": 2040,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 1319,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 1381
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 659
+      }
+    }
+  },
+  "response_text": "{\n  \"role\": \"toc_start\",\n  \"confidence\": \"high\",\n  \"reason\": \"Explicitly titled '目录Contents' and lists numbered main report sections (01-04), clearly indicating the start of the main table of contents.\"\n}",
+  "error_type": null,
+  "error_message": null
+}

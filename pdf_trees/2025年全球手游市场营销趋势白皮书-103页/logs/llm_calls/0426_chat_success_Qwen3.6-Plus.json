@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:10:54.914976+00:00",
+  "sequence": 426,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 5723,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    You will be given the current section title and the current page_text.\n    Your job is to check if the current section starts in the beginning of the given page_text.\n    If there are other contents before the current section title,\n    then the current section does not start in the beginning of the given page_text.\n    If the current section title is the first content in the given page_text,\n    then the current section starts in the beginning of the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 媒体声音.\n    The given page_text is 79媒体声音\n罗斯基、龙虾游戏推荐、急速行走的小 U盘、一枚游戏干饭人\n.\n\n    reply format:\n    {\n        \"start_begin\": \"yes or no\" (yes if the section starts in the beginning of the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-2faf6478-c1e2-94ff-b500-027b85bdf590",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"start_begin\": \"no\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"媒体声音\" starts at the beginning of the page_text \"79媒体声音\\n罗斯基、龙虾游戏推荐、急速行走的小 U盘、一枚游戏干饭人\\n.\".\nThe page_text starts with \"79媒体声音\".\nThe section title is \"媒体声音\".\nThere is a number \"79\" before \"媒体声音\".\nSo the section title is not the first content. It has \"79\" before it.\nTherefore, it does not start at the beginning.\nWait, \"79\" might be a page number. The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\nSo \"79\" is other content.\nThus, start_begin should be \"no\".\nLet's double check. \"79媒体声音\" -> \"79\" is before \"媒体声音\".\nSo answer is no.\nFormat: {\"start_begin\": \"no\"}\nDone. \nCheck fuzzy matching: ignore space inconsistency. But \"79\" is clearly not a space.\nSo \"no\".\nReturn JSON. \nProceed. \nOutput: {\"start_begin\": \"no\"}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"媒体声音\" starts at the beginning of the page_text \"79媒体声音\\n罗斯基、龙虾游戏推荐、急速行走的小 U盘、一枚游戏干饭人\\n.\".\nThe page_text starts with \"79媒体声音\".\nThe section title is \"媒体声音\".\nThere is a number \"79\" before \"媒体声音\".\nSo the section title is not the first content. It has \"79\" before it.\nTherefore, it does not start at the beginning.\nWait, \"79\" might be a page number. The prompt says \"If there are other contents before the current section title, then the current section does not start in the beginning of the given page_text.\"\nSo \"79\" is other content.\nThus, start_begin should be \"no\".\nLet's double check. \"79媒体声音\" -> \"79\" is before \"媒体声音\".\nSo answer is no.\nFormat: {\"start_begin\": \"no\"}\nDone. \nCheck fuzzy matching: ignore space inconsistency. But \"79\" is clearly not a space.\nSo \"no\".\nReturn JSON. \nProceed. \nOutput: {\"start_begin\": \"no\"}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360659,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 278,
+      "prompt_tokens": 247,
+      "total_tokens": 525,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 261,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 278
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 247
+      }
+    }
+  },
+  "response_text": "{\n    \"start_begin\": \"no\"\n}",
+  "error_type": null,
+  "error_message": null
+}

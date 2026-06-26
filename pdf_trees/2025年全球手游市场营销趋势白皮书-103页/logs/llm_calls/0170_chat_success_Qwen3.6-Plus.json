@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:56:01.647173+00:00",
+  "sequence": 170,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 15741,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 2025年iOS端投放 TOP30.\n    The given page_text is 20\n11Paint by Number Coloring Games\n乐信圣文益智\n解谜\n12Mafia City\n友塔网络策略\n13Mahjong Wonders\nNebula Studio休闲\n14Wuthering Waves\n库洛游戏RPG\n15Kingshot\n点点互动策略\n16The Grand Mafia\n友塔网络策略\n17Coin Master\nMoon Active冒险\n18Archero 2\n海彼游戏动作\n19Travel Town\nMoon Active桌面\n20Block Crush!\nWonderful Studio益智\n解谜21Braindom\nLahana Games益智\n解谜\n22Rise of Kingdoms\n莉莉丝游戏策略\n23Evony\nTOP GAMES策略\n24Idle Office Tycoon\n成都瓦瑞尔模拟\n25Emblem Assemble: Neo\nONG KONG LOME TRADINGRPG\n26Top War\n江娱互动策略\n27Solitaire Clash\nAviagames卡牌\n28Bingo Voyage\nVERTEX GAMES娱乐场\n29MapleStory : Idle RPG\nNEXONRPG\n30Bible Word Puzzle\n乐信圣文文字2025年iOS端投放 TOP30\nSource ：广大大 -APP Intelligence ，广告主分析模块，按照广告主按照时间段内去重后素材数量高低排序；\nDate Range ：2025/1~2025/12\n1Vita Mahjong\n乐信圣文休闲\n2Block Blast!\nHungry Studio休闲\n3Last War ：Survival\nFUNFLY PTE. LTD.策略\n4Jigsawscapes ®\n乐信圣文益智\n解谜\n5Zen Word®\n乐信圣文益智\n解谜\n6Zen Color\n乐信圣文益智\n解谜\n7Tile Explorer\n乐信圣文休闲\n8Lands of Jail\n益世界策略\n9Whiteout Survival\n点点互动策略\n10MONOPOLY GO!\nScopely桌面\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-7f81014a-7228-9306-99ea-aa34fa03510f",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\"answer\": \"yes\"}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given page_text.\n   - **Section Title:** `2025年iOS端投放 TOP30`\n   - **Page Text:** A long string containing a list of apps/games with rankings, names, developers, genres, and some metadata. It ends with `2025年iOS端投放 TOP30\\nSource ：广大大 -APP Intelligence...`\n   - **Matching Rule:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"answer\": \"yes\" or \"no\"}`\n   - **Constraint:** Directly return the final JSON structure. No thinking, explanation, or reasoning.\n\n2.  **Scan Page Text for Section Title:**\n   - I need to look for `2025年iOS端投放 TOP30` in the provided `page_text`.\n   - Looking at the text: `...29MapleStory : Idle RPG\\nNEXONRPG\\n30Bible Word Puzzle\\n乐信圣文文字2025年iOS端投放 TOP30\\nSource ：广大大...`\n   - The exact string `2025年iOS端投放 TOP30` is present in the text. It appears right after `乐信圣文文字` and before `Source ：广大大`.\n   - Even with fuzzy matching/ignoring spaces, it's an exact match.\n\n3.  **Determine Answer:**\n   - The section title appears in the page text.\n   - Answer should be \"yes\".\n\n4.  **Format Output:**\n   - `{\"answer\": \"yes\"}`\n   - Ensure no extra text is included.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" -> OK.\n   Check logic: The title is explicitly in the text. -> OK.\n   Ready.✅\n   Output matches requirement. \n   Proceed. \n   `{\"answer\": \"yes\"}`\n   (Self-Correction/Verification during thought)\n   Let's double-check the exact string in the prompt: `2025年iOS端投放 TOP30.` (Note the period at the end in the prompt: \"The given section title is 2025年iOS端投放 TOP30.\") Wait, the prompt says \"The given section title is 2025年iOS端投放 TOP30.\" The period is likely part of the sentence structure, not the title itself. I will treat the title as `2025年iOS端投放 TOP30`.\n   In the page text: `...乐信圣文文字2025年iOS端投放 TOP30\\nSource...`\n   It matches exactly.\n   Result: yes.\n   Output JSON.✅\n   All good. \n   Proceeds. \n   `{\"answer\": \"yes\"}`\n   (Note: I will strictly follow the format requested.) \n   Final Output Generation. \n   `{\"answer\": \"yes\"}`\n   Done. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   (Self-Correction/Refinement during thought)\n   Wait, let's look closely at the prompt: \"The given section title is 2025年iOS端投放 TOP30.\"\n   The text contains: `2025年iOS端投放 TOP30`\n   It's a direct match.\n   I will output exactly `{\"answer\": \"yes\"}`.\n   No extra text.\n   Done. \n   Proceeds. \n   [Output] `{\"answer\": \"yes\"}`\n   *(Done.)*",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given page_text.\n   - **Section Title:** `2025年iOS端投放 TOP30`\n   - **Page Text:** A long string containing a list of apps/games with rankings, names, developers, genres, and some metadata. It ends with `2025年iOS端投放 TOP30\\nSource ：广大大 -APP Intelligence...`\n   - **Matching Rule:** Fuzzy matching, ignore space inconsistencies.\n   - **Output Format:** JSON `{\"answer\": \"yes\" or \"no\"}`\n   - **Constraint:** Directly return the final JSON structure. No thinking, explanation, or reasoning.\n\n2.  **Scan Page Text for Section Title:**\n   - I need to look for `2025年iOS端投放 TOP30` in the provided `page_text`.\n   - Looking at the text: `...29MapleStory : Idle RPG\\nNEXONRPG\\n30Bible Word Puzzle\\n乐信圣文文字2025年iOS端投放 TOP30\\nSource ：广大大...`\n   - The exact string `2025年iOS端投放 TOP30` is present in the text. It appears right after `乐信圣文文字` and before `Source ：广大大`.\n   - Even with fuzzy matching/ignoring spaces, it's an exact match.\n\n3.  **Determine Answer:**\n   - The section title appears in the page text.\n   - Answer should be \"yes\".\n\n4.  **Format Output:**\n   - `{\"answer\": \"yes\"}`\n   - Ensure no extra text is included.\n\n   Check constraints: \"Directly return the final JSON structure. Do not output anything else.\" -> OK.\n   Check logic: The title is explicitly in the text. -> OK.\n   Ready.✅\n   Output matches requirement. \n   Proceed. \n   `{\"answer\": \"yes\"}`\n   (Self-Correction/Verification during thought)\n   Let's double-check the exact string in the prompt: `2025年iOS端投放 TOP30.` (Note the period at the end in the prompt: \"The given section title is 2025年iOS端投放 TOP30.\") Wait, the prompt says \"The given section title is 2025年iOS端投放 TOP30.\" The period is likely part of the sentence structure, not the title itself. I will treat the title as `2025年iOS端投放 TOP30`.\n   In the page text: `...乐信圣文文字2025年iOS端投放 TOP30\\nSource...`\n   It matches exactly.\n   Result: yes.\n   Output JSON.✅\n   All good. \n   Proceeds. \n   `{\"answer\": \"yes\"}`\n   (Note: I will strictly follow the format requested.) \n   Final Output Generation. \n   `{\"answer\": \"yes\"}`\n   Done. \n   [Output Generation] -> `{\"answer\": \"yes\"}`\n   (Self-Correction/Refinement during thought)\n   Wait, let's look closely at the prompt: \"The given section title is 2025年iOS端投放 TOP30.\"\n   The text contains: `2025年iOS端投放 TOP30`\n   It's a direct match.\n   I will output exactly `{\"answer\": \"yes\"}`.\n   No extra text.\n   Done. \n   Proceeds. \n   [Output] `{\"answer\": \"yes\"}`\n   *(Done.)*"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359766,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 820,
+      "prompt_tokens": 576,
+      "total_tokens": 1396,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 809,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 820
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 576
+      }
+    }
+  },
+  "response_text": "{\"answer\": \"yes\"}",
+  "error_type": null,
+  "error_message": null
+}

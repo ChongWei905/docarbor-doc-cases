@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T04:00:54.880296+00:00",
+  "sequence": 267,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 8382,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 媒体声音.\n    The given page_text is 79媒体声音\n罗斯基、龙虾游戏推荐、急速行走的小 U盘、一枚游戏干饭人\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-0e7a2ee5-1d31-9272-8066-025bf45f16d1",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "The user wants to check if the section title \"媒体声音\" appears or starts in the given page_text.\nPage text: \"79媒体声音\\n罗斯基、龙虾游戏推荐、急速行走的小 U盘、一枚游戏干饭人\\n.\"\nThe section title is \"媒体声音\".\nIt clearly appears in the page text (\"79媒体声音\").\nFuzzy matching, ignoring spaces: \"媒体声音\" matches exactly.\nSo the answer is \"yes\".\nOutput format: JSON with \"answer\": \"yes\".\nNo extra text.\nDone. \nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nFormat:\n{\n    \"answer\": \"yes\"\n}\nReady. \nProceed. \nOutput matches exactly. \nDone. \n(Self-Correction/Verification during thought)\nPage text: \"79媒体声音\\n罗斯基...\"\nSection: \"媒体声音\"\nDoes it appear? Yes.\nIs it fuzzy match? Yes.\nAnswer: yes.\nJSON format correct.\nProceeds. \nOutput generation. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nMatches requirement. \nDone. \n[Final Check]\nInput: section title \"媒体声音\", page_text \"79媒体声音\\n罗斯基、龙虾游戏推荐、急速行走的小 U盘、一枚游戏干饭人\\n.\"\nResult: yes.\nFormat: JSON.\nAll good. \nOutput matches. \nProceeds. \n[Output Generation] -> `{\"answer\": \"yes\"}` (with proper formatting as requested)\nWait, the prompt says:\n{\n\n    \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n}\nI will output exactly that.\nDone. \nProceeds. \n[Final Output Generation]\n{\n    \"answer\": \"yes\"\n}",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "The user wants to check if the section title \"媒体声音\" appears or starts in the given page_text.\nPage text: \"79媒体声音\\n罗斯基、龙虾游戏推荐、急速行走的小 U盘、一枚游戏干饭人\\n.\"\nThe section title is \"媒体声音\".\nIt clearly appears in the page text (\"79媒体声音\").\nFuzzy matching, ignoring spaces: \"媒体声音\" matches exactly.\nSo the answer is \"yes\".\nOutput format: JSON with \"answer\": \"yes\".\nNo extra text.\nDone. \nCheck constraints: \"Directly return the final JSON structure. Do not output anything else.\"\nFormat:\n{\n    \"answer\": \"yes\"\n}\nReady. \nProceed. \nOutput matches exactly. \nDone. \n(Self-Correction/Verification during thought)\nPage text: \"79媒体声音\\n罗斯基...\"\nSection: \"媒体声音\"\nDoes it appear? Yes.\nIs it fuzzy match? Yes.\nAnswer: yes.\nJSON format correct.\nProceeds. \nOutput generation. \n```json\n{\n    \"answer\": \"yes\"\n}\n```\nMatches requirement. \nDone. \n[Final Check]\nInput: section title \"媒体声音\", page_text \"79媒体声音\\n罗斯基、龙虾游戏推荐、急速行走的小 U盘、一枚游戏干饭人\\n.\"\nResult: yes.\nFormat: JSON.\nAll good. \nOutput matches. \nProceeds. \n[Output Generation] -> `{\"answer\": \"yes\"}` (with proper formatting as requested)\nWait, the prompt says:\n{\n\n    \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n}\nI will output exactly that.\nDone. \nProceeds. \n[Final Output Generation]\n{\n    \"answer\": \"yes\"\n}"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782360059,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 423,
+      "prompt_tokens": 164,
+      "total_tokens": 587,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 407,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 423
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 164
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

@@ -1,0 +1,70 @@
+{
+  "timestamp": "2026-06-25T03:56:50.907839+00:00",
+  "sequence": 188,
+  "api_kind": "chat",
+  "status": "success",
+  "requested_model": "Qwen3.6-Plus",
+  "actual_model": "Qwen3.6-Plus",
+  "attempt": 1,
+  "duration_ms": 9581,
+  "request": {
+    "model": "Qwen3.6-Plus",
+    "messages": [
+      {
+        "role": "user",
+        "content": "\n    Your job is to check if the given section appears or starts in the given page_text.\n\n    Note: do fuzzy matching, ignore any space inconsistency in the page_text.\n\n    The given section title is 三大核心要义：2025年游戏营销者的启示：迈向2026年的关键洞察.\n    The given page_text is 38\n三大核心要义：2025年游戏营销者的启示：迈向 2026年的关键洞察\n数据来源： Singular 2025 年季度趋势报告1稳扎稳打胜于激进扩张，体系化增长优于盲目追逐流量规模。\n2创意迭代比单纯拓宽渠道更能铸就持久优势。\n3尤为关键的是，信心成就智慧增长。信赖自身衡量体系的广告主，\n以更敏捷的步伐应对竞争，在 2025年的征程中实现了实力跃升，\n以比年初更稳健的姿态迎接新程。\n.\n\n    Reply format:\n    {\n\n        \"answer\": \"yes or no\" (yes if the section appears or starts in the page_text, no otherwise)\n    }\n    Directly return the final JSON structure. Do not output anything else.\n\nDo not include any thinking field, explanation, or reasoning. Return only the final requested JSON or text."
+      }
+    ],
+    "temperature": 0
+  },
+  "response": {
+    "id": "chatcmpl-ca29e681-1063-9d71-aca9-0fb05d1803ef",
+    "choices": [
+      {
+        "finish_reason": "stop",
+        "index": 0,
+        "logprobs": null,
+        "message": {
+          "content": "{\n    \"answer\": \"yes\"\n}",
+          "refusal": null,
+          "role": "assistant",
+          "annotations": null,
+          "audio": null,
+          "function_call": null,
+          "tool_calls": null,
+          "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Rule:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `三大核心要义：2025年游戏营销者的启示：迈向2026年的关键洞察`\n   - **Page Text:** \n     ```\n     38\n     三大核心要义：2025年游戏营销者的启示：迈向 2026年的关键洞察\n     数据来源： Singular 2025 年季度趋势报告1稳扎稳打胜于激进扩张，体系化增长优于盲目追逐流量规模。\n     2创意迭代比单纯拓宽渠道更能铸就持久优势。\n     3尤为关键的是，信心成就智慧增长。信赖自身衡量体系的广告主，\n     以更敏捷的步伐应对竞争，在 2025年的征程中实现了实力跃升，\n     以比年初更稳健的姿态迎接新程。\n     .\n     ```\n   - **Output Format:** JSON `{\"answer\": \"yes\" or \"no\"}`\n\n2.  **Compare Section Title and Page Text:**\n   - Section Title: `三大核心要义：2025年游戏营销者的启示：迈向2026年的关键洞察`\n   - Page Text contains: `三大核心要义：2025年游戏营销者的启示：迈向 2026年的关键洞察`\n   - Differences: The page text has a space between `迈向` and `2026年` (`迈向 2026年` vs `迈向2026年`).\n   - Rule says: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\n   - Therefore, they match.\n\n3.  **Determine Answer:**\n   - The section appears/starts in the page text.\n   - Answer: \"yes\"\n\n4.  **Format Output:**\n   - `{\"answer\": \"yes\"}`\n   - Ensure no extra text, reasoning, or thinking fields are included. Directly return the JSON.✅",
+          "provider_specific_fields": {
+            "refusal": null,
+            "reasoning_content": "Here's a thinking process:\n\n1.  **Analyze User Input:**\n   - **Task:** Check if the given section title appears or starts in the given `page_text`.\n   - **Rule:** Use fuzzy matching, ignore space inconsistencies.\n   - **Section Title:** `三大核心要义：2025年游戏营销者的启示：迈向2026年的关键洞察`\n   - **Page Text:** \n     ```\n     38\n     三大核心要义：2025年游戏营销者的启示：迈向 2026年的关键洞察\n     数据来源： Singular 2025 年季度趋势报告1稳扎稳打胜于激进扩张，体系化增长优于盲目追逐流量规模。\n     2创意迭代比单纯拓宽渠道更能铸就持久优势。\n     3尤为关键的是，信心成就智慧增长。信赖自身衡量体系的广告主，\n     以更敏捷的步伐应对竞争，在 2025年的征程中实现了实力跃升，\n     以比年初更稳健的姿态迎接新程。\n     .\n     ```\n   - **Output Format:** JSON `{\"answer\": \"yes\" or \"no\"}`\n\n2.  **Compare Section Title and Page Text:**\n   - Section Title: `三大核心要义：2025年游戏营销者的启示：迈向2026年的关键洞察`\n   - Page Text contains: `三大核心要义：2025年游戏营销者的启示：迈向 2026年的关键洞察`\n   - Differences: The page text has a space between `迈向` and `2026年` (`迈向 2026年` vs `迈向2026年`).\n   - Rule says: \"do fuzzy matching, ignore any space inconsistency in the page_text.\"\n   - Therefore, they match.\n\n3.  **Determine Answer:**\n   - The section appears/starts in the page text.\n   - Answer: \"yes\"\n\n4.  **Format Output:**\n   - `{\"answer\": \"yes\"}`\n   - Ensure no extra text, reasoning, or thinking fields are included. Directly return the JSON.✅"
+          }
+        },
+        "provider_specific_fields": {}
+      }
+    ],
+    "created": 1782359815,
+    "model": "Qwen3.6-Plus",
+    "object": "chat.completion",
+    "service_tier": null,
+    "system_fingerprint": null,
+    "usage": {
+      "completion_tokens": 490,
+      "prompt_tokens": 284,
+      "total_tokens": 774,
+      "completion_tokens_details": {
+        "accepted_prediction_tokens": null,
+        "audio_tokens": null,
+        "reasoning_tokens": 474,
+        "rejected_prediction_tokens": null,
+        "text_tokens": 490
+      },
+      "prompt_tokens_details": {
+        "audio_tokens": null,
+        "cached_tokens": null,
+        "text_tokens": 284
+      }
+    }
+  },
+  "response_text": "{\n    \"answer\": \"yes\"\n}",
+  "error_type": null,
+  "error_message": null
+}

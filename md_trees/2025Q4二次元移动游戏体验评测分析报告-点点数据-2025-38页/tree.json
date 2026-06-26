@@ -1,0 +1,963 @@
+{
+  "summary": "",
+  "result": [
+    {
+      "title": "2025 Q4",
+      "node_id": "0000",
+      "summary": "This section serves as a comprehensive analytical report on the 2025 Q4 anime/2D-style (二次元) mobile game market, published by 点点数据 (Diandian Data). It is structured to support retrieval across market performance, product evaluation, industry trends, and data methodology. **Topics & Entities** cover Chinese ACG mobile market revenue/download trends, competitive landscape shifts, commercialization models, and experience benchmarking. Key entities include major titles (《崩坏：星穹铁道》, 《原神》, 《明日方舟》, 《绝区零》, 《蔚蓝档案》, 《胜利女神：新的希望》, 《恋与深空》, 《阴阳师》, 《鸣潮》, 《碧蓝航线》, 《伊瑟》, 《二重螺旋》), developers (miHoYo, Hypergryph, Shift Up), platforms (App Store, iOS, Android, PC, PS5, Steam), and industry concepts (谷子经济, 抽卡/Gacha, 长草期, OOC, 人设防火墙). **Dates & Timeframes** center on 2025 Q4, with quantitative tracking spanning 2025 Q1–Q3, historical context from 2021–2023 peaks and 2024–2025 declines, future projections for 2026–2027 releases, and specific milestones (e.g., April 2023 launch, v2.0/v3.2 updates, 8th-anniversary patches, and a December 31 award deadline). **Definitions & Procedures** define “二次元” as a cultural identity attribute rather than a fixed visual style, outline a standardized 5-dimension/18-indicator experience evaluation framework (weighted: Combat 30%, Visuals 25%, Content 20%, Operations 15%, Performance 10%), detail AI NPC implementation workflows (“人设防火墙” constraints, “有限自由” deployment), explain gacha mechanics (pity thresholds, Synchronizer progression), and describe report access procedures via WeChat community sharing. **Claims & Trends** assert a significant YoY revenue decline in 2025 driven by formulaic gameplay/commercialization and consumer spending shifts toward merchandise; state that market competition has pivoted from art/IP reliance to gameplay innovation, commercial...",
+      "images": [],
+      "start_index": 1,
+      "end_index": 1,
+      "nodes": [
+        {
+          "title": "2025 Q4",
+          "node_id": "0001",
+          "summary": "This section can answer retrieval queries regarding:\n- **Date/Timeframe:** What period does the document cover? (Q4 2025)\n- **Topic/Subject:** What is the primary focus of the report? (Experience evaluation and analysis of anime/2D-style mobile games)\n- **Entities:** Which specific game genre or category is being analyzed? (二次元移动游戏 / Anime/2D mobile games)\n- **Document Type:** What is the nature of the document? (An analytical evaluation report)\n- **Definitions/Procedures/Claims/Tables/Figures/Metrics/Evidence Types:** None are present. The section contains only a temporal header and a report title. It provides no methodological steps, quantitative metrics, visual data, analytical claims, or cited evidence. Retrieval should be restricted to report identification, publication period, and subject genre classification.",
+          "images": [],
+          "start_index": 1,
+          "end_index": 1,
+          "chunk_ids": []
+        },
+        {
+          "title": "获取每日免费报告",
+          "node_id": "0002",
+          "summary": "This section answers questions regarding the access, distribution, and usage terms of free industry reports. It covers:\n- **Procedure/Access:** How to obtain daily free reports (distributed via daily WeChat group sharing).\n- **Topics/Entities:** Latest industry reports, a \"high-end community,\" and WeChat groups as the distribution channel.\n- **Claims/Usage Terms:** States that all shared reports are publicly compliant versions, intellectual property rights belong to the original publishing institutions, and usage is strictly limited to small-scale internal learning.\n- **Figures:** Contains one referenced image (typically a promotional or group-access graphic).\n- **Frequency:** Daily updates.\nThe section does not provide specific dates, quantitative metrics, tables, or external evidence, focusing exclusively on access instructions and copyright/usage disclaimers.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\1\\893_578_1532_1098_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 2,
+          "end_index": 2,
+          "chunk_ids": []
+        },
+        {
+          "title": "二次元移动游戏市场概况&体验指标分析",
+          "node_id": "0003",
+          "summary": "This section addresses retrieval queries regarding the 2025 anime-style (二次元) mobile game market. It answers questions on:\n- **Topics & Entities:** Market performance, revenue trends, competitive landscape, gameplay innovation, commercialization shifts, experience evaluation, and development trends for anime-style mobile games.\n- **Dates:** 2025 (current market status and year-on-year comparisons).\n- **Claims & Metrics:** Confirms a significant year-on-year revenue decline in 2025; states the top-grossing anime-style mobile game has fallen to 9th place on the overall game bestseller list; asserts that market competition has shifted toward gameplay breakthroughs and commercialization models are undergoing transformation.\n- **Figures & Evidence Types:** Contains three figures/charts depicting market overview/revenue data, typical game experience evaluation metrics, and market development trends. Evidence is based on sales ranking data, revenue performance metrics, and experiential assessment frameworks.\n- **Definitions & Procedures:** Not explicitly detailed in this section.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\2\\205_451_389_625_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\2\\1026_787_1208_946_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\2\\1826_762_2005_961_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 3,
+          "end_index": 3,
+          "chunk_ids": []
+        },
+        {
+          "title": "二次元移动游戏的定义与特征",
+          "node_id": "0004",
+          "summary": "This section provides a definitional framework and characteristic overview for \"二次元移动游戏\" (2D/ACG mobile games), enabling retrieval for the following:\n- **Definitions:** Defines \"二次元\" not as a fixed visual style but as a \"cultural attribute of group identity.\" Defines \"二次元移动游戏\" as products that either meet a specific set of cultural/design traits or primarily target \"core 2D players.\"\n- **Entities & Topics:** 二次元移动游戏, ACGN, 核心二次元玩家, 泛二次元玩家, 抽卡/Gacha/扭蛋, 斯金纳箱 (Skinner box), 卡牌战斗, ARPG, 恋爱养成, 点点数据.\n- **Claims & Characteristics (Table: 二次元移动游戏主要特征概览):** \n  • Cultural Influence: Rooted in Japanese ACGN but emphasizes cultural identity over genre; includes titles that gradually shifted toward 2D culture during updates.\n  • Core Design: Character-centric (art, modeling, voice acting, narrative, combat) to foster emotional player-character bonds.\n  • Visual Style: Originally Japanese anime-style, now expanded to include Korean and Chinese comic aesthetics.\n  • Gameplay: Genre-diverse; mainstream includes card battles, ARPG, and dating sims; not restricted to PVP or PVE.\n  • Business Model: Gacha is the dominant monetization method, operating on Skinner box psychological principles.\n  • Player Demographics: Categorized into \"core\" and \"pan\" 2D players, differentiated by cultural affinity and willingness to invest time/money.\n- **Evidence & Source:** Qualitative classification framework presented in a structured table; sourced from independent research by 点点数据 (Diandian Data).\n- **Absent Elements:** No specific dates, quantitative metrics, procedural steps, or figures are provided.\n- **Retrieval Questions Answered:** What is the core definition of \"二次元\" in gaming? How does the report define/classify 2D mobile games? What are the key cultural, design, visual, gameplay, and moneti...",
+          "images": [],
+          "start_index": 4,
+          "end_index": 4,
+          "chunk_ids": []
+        },
+        {
+          "title": "中国移动游戏市场主要二次元移动游戏产品汇总",
+          "node_id": "0005",
+          "summary": "This section answers questions regarding the inventory of major ACG (anime-style) mobile games in the Chinese market. It contains a single table listing over 90 specific game entities (e.g., 原神, 崩坏：星穹铁道, 明日方舟, 恋与深空, 阴阳师, etc.). The text explicitly claims the compilation is unranked (\"排名不分先后\") and identifies Diandian Data (点点数据) independent research as the evidence source. It does not provide release dates, genre definitions, gameplay procedures, commercial metrics, or analytical figures. Retrieval queries can leverage this section to verify a title's inclusion in the Chinese ACG mobile market, extract a comprehensive reference list of key products, or confirm the non-ranked nature and data provenance of the inventory.",
+          "images": [],
+          "start_index": 5,
+          "end_index": 5,
+          "chunk_ids": []
+        },
+        {
+          "title": "中国二次元移动游戏市场收入规模",
+          "node_id": "0006",
+          "summary": "**可回答的检索问题维度：**\n- **主题：** 中国二次元移动游戏市场收入规模变化、商业化模式转型、玩家消费行为迁移、游戏厂商战略调整。\n- **实体：** 点点数据、《全球二次元移动游戏市场研究报告》、《二重螺旋》（游戏产品）、App Store、谷子经济（周边衍生品消费）。\n- **时间：** 2024年10月（报告发布时间）、2024年（市场收入开始小幅收缩）、2025年（下滑趋势加剧）、2025年Q3（图表数据周期）、10月末（《二重螺旋》上线时间）。\n- **定义与统计口径：** “中国移动游戏市场”仅涵盖中国大陆地区上线的移动端版本（排除PC、主机及其他硬件平台）；“收入规模”仅统计用户直接消费总额（排除广告变现与第三方充值）；注明后续报告可能对部分数据进行修正。\n- **核心观点/趋势：** 市场收入同比显著下滑，主要归因于产品玩法/养成/商业化高度“定式化”引发玩家审美疲劳，以及玩家消费向“谷子经济”等周边领域转移；厂商正尝试打破传统抽卡模式，转向Avatar付费等新型商业化路径。\n- **图表与指标：** 包含图表《2025Q3中国二次元移动游戏市场收入规模（仅App Store）》；核心指标为App Store渠道的季度收入规模及同比变动趋势。\n- **证据类型与来源：** 行业研究报告引用、数据可视化图表；底层数据综合自点点数据平台、上市企业财报、行业专家访谈，并通过点点数据统计模型核算得出。",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\5\\170_618_2485_1272_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 6,
+          "end_index": 6,
+          "chunk_ids": []
+        },
+        {
+          "title": "中国二次元移动游戏市场下载量变化趋势",
+          "node_id": "0007",
+          "summary": "**可回答主题**：中国二次元移动游戏下载量趋势、下载量波动与新品周期的关联、二次元游戏市场竞争焦点的演变路径。\n**关键实体**：游戏产品（《恋与深空》《鸣潮》《绝区零》《宝可梦大集结》《航海王：壮志雄心》《永远的蔚蓝星球》《胜利女神：新的希望》）、数据机构（点点数据）、分发平台（App Store）。\n**时间/日期**：2024Q1至2025Q2（各季度头部新品上线时间轴）、2025Q3（下载量数据节点）、近一年（趋势观察期）。\n**定义/统计口径**：“下载量”指中国大陆地区移动端游戏的首次下载设备数量；明确排除应用更新、同设备重复下载，且仅统计移动端（不含PC/主机端）。\n**核心观点/声明**：下载量呈“断崖式波动”，与头部新品上线周期强相关；二次元游戏竞争阶段已完成从拼美术/画面/设定向拼玩法深度与创新、商业化性价比及长期内容供给信任度的转移。\n**图表与指标**：包含图表《2025Q3中国二次元移动游戏市场下载量（仅App Store）》；核心追踪指标为App Store端中国大陆二次元手游下载量。\n**证据类型**：季度新品发行记录追踪、第三方数据机构（点点数据）分析、行业竞争趋势研判、数据统计模型与口径说明（含数据后续调整提示）。",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\6\\170_618_2490_1272_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 7,
+          "end_index": 7,
+          "chunk_ids": []
+        },
+        {
+          "title": "中国二次元移动游戏收入排名变化",
+          "node_id": "0008",
+          "summary": "This section can answer retrieval queries regarding the revenue ranking evolution and competitive dynamics of China’s ACG (anime-style) mobile game market. Specifically, it addresses:\n\n- **Topics & Market Trends:** Shifts from a 2021–2023 market peak to a 2024–2025 landscape defined by rigid monetization models, high quality barriers, and a strategic pivot toward gameplay innovation.\n- **Entities & Metrics:** Historical chart-topper 《原神》; 2025Q3 ACG revenue leader 《火影忍者》 (ranked #9 on the overall game revenue chart); TOP4 ACG titles covering fighting, card, action, and turn-based genres.\n- **Dates & Timeframes:** 2021–2023 (peak performance period), 2024Q3–2025Q3 (ranking tracking window), 2025Q3 (specific ranking snapshot).\n- **Claims & Insights:** Older ACG titles show declining performance; only top-tier quality products sustain viability; commercialization strategies remain formulaic; market competition is transitioning from IP/monetization reliance to gameplay differentiation.\n- **Figures & Data Sources:** Includes a chart visualizing 2024Q3–2025Q3 ACG mobile game revenue rankings (App Store only), with data sourced from Diandian Data (点点数据).\n- **Retrieval Utility:** Supports queries on historical vs. current ACG game revenue rankings, specific title performance metrics, genre distribution among top earners, market trend analysis, and App Store revenue tracking methodologies.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\7\\128_562_2570_1377_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 8,
+          "end_index": 8,
+          "chunk_ids": []
+        },
+        {
+          "title": "点点数据-二次元移动游戏体验评测体系",
+          "node_id": "0009",
+          "summary": "This section outlines the “点点数据-二次元移动游戏体验评测体系” (点点数据 Anime-Style Mobile Game Experience Evaluation System), a structured assessment framework. It can answer retrieval questions regarding:\n- **Topics:** Game experience benchmarking, anime-style mobile game evaluation, UX/UI assessment, combat & gameplay design analysis, performance optimization, and community/monetization operations.\n- **Entities:** 点点数据 (evaluation framework developer), 二次元移动游戏 (target game genre).\n- **Dates:** None specified in this section.\n- **Definitions & Procedures:** Defines a standardized evaluation model built on 5 major dimensions and 18 sub-indicators. Outlines a systematic scoring procedure using checklist-style criteria to assess artistic presentation, gameplay mechanics, system design, operational health, and technical performance.\n- **Claims:** The framework comprehensively evaluates game experience by integrating technical, artistic, gameplay, operational, and community metrics into a unified 5-dimension, 18-indicator model.\n- **Metrics & Indicators:** Art style consistency, character/scene design quality, animation impact & feedback clarity, control responsiveness & button layout, combat depth (skill differentiation, attribute counters, team synergy), level/enemy design, narrative/worldview integration, progression systems, gameplay mode diversity, UI/UX functionality, monetization-worldview alignment, operational event quality, technical support/service, community ecosystem, cross-device compatibility, install size, battery consumption, and thermal management.\n- **Tables & Figures:** None present in this section.\n- **Evidence Types:** Evaluation rubrics, assessment criteria checklists, and qualitative/quantitative benchmarking standards for game development and review.",
+          "images": [],
+          "start_index": 9,
+          "end_index": 9,
+          "chunk_ids": []
+        },
+        {
+          "title": "点点数据-二次元移动游戏体验评测方法与原则",
+          "node_id": "0010",
+          "summary": "This section answers retrieval queries regarding:\n- **Topics:** ACG (二次元) mobile game experience evaluation, monetization fairness, long-term operational sustainability.\n- **Entities:** 点点数据 (Diandian Data), ACG mobile games, players/users, UX experts, developers & operators.\n- **Dates:** None specified.\n- **Definitions & Framework:** Defines a \"trinity\" evaluation system integrating product big data, user reviews, and expert assessments (core standard). Core principles include comprehensiveness, value-orientation, objective quantifiability, and emotional experience.\n- **Procedures:** Outlines a user-centric evaluation workflow that uses big data as a baseline, synthesizes mass user feedback, and applies expert deep evaluation as the decisive standard, with product innovation and gameplay experience as foundational criteria.\n- **Claims:** Asserts that fair monetization hinges on players feeling respected and perceiving \"value for money.\" Claims that long-term viability depends on developers' and operators' proven capability and sincerity for healthy, sustained operation.\n- **Metrics & Evidence Types:** Utilizes big data performance metrics, aggregated user reviews/feedback, expert qualitative/quantitative assessments, perceived fairness/value indicators, and operational sustainability metrics.\n- **Figures/Tables:** Contains two referenced images (framework/principle diagrams). No data tables are included.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\9\\141_526_1312_1360_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\9\\1429_544_2477_1159_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 10,
+          "end_index": 10,
+          "chunk_ids": []
+        },
+        {
+          "title": "二次元移动游戏市场 概况&体验指标分析",
+          "node_id": "0011",
+          "summary": "This section covers the anime-style mobile game market overview, experience evaluation metrics, and development trends. It can answer retrieval questions regarding:\n- **Topics & Entities:** Market status and evaluation of anime-style mobile games; analysis provider (点点数据) and evaluated sample (10 popular titles).\n- **Metrics & Definitions:** Experience evaluation framework structure (5 major dimensions, 18 detailed sub-metrics).\n- **Claims & Findings:** Cross-dimensional performance (no single product dominates all categories); core evaluation criteria (graphics and gameplay remain the primary focus).\n- **Procedures & Evidence:** Analytical methodology (application of the structured evaluation model for comprehensive comparative analysis); evidence type (data-driven metric scoring and comparative visualizations).\n- **Figures/Tables:** Referenced images containing market overview data, metric breakdowns, and evaluation comparison results.\n- **Dates:** None specified in this section.\n- **Trends:** Outlines current and future market development directions for the anime-style mobile game sector.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\10\\176_772_349_951_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\10\\1026_418_1226_576_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\10\\1842_760_2029_961_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 11,
+          "end_index": 11,
+          "chunk_ids": []
+        },
+        {
+          "title": "典型二次元移动游戏综合评分对比",
+          "node_id": "0012",
+          "summary": "This section addresses retrieval queries regarding the comparative evaluation of typical anime-style mobile games. It answers: (1) What are the core assessment metrics and performance claims? Graphics and gameplay are the central evaluation criteria, with the key claim that no single product achieves top scores across all dimensions. (2) How were the compared titles selected and what are the limitations? Products were chosen by Diandian Data’s expert team based on market popularity and player attention, explicitly noted as not representing a strict market TOP 10. (3) What evidence and data formats are provided? A multi-dimensional comprehensive score chart/figure derived from Diandian Data’s independent research. Key entities include typical anime-style mobile games and Diandian Data. The section contains no specific dates, definitions, or procedural steps, focusing instead on comparative metrics, selection methodology, and visual evidence.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\11\\141_349_2480_1383_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 12,
+          "end_index": 12,
+          "chunk_ids": []
+        },
+        {
+          "title": "《崩坏：星穹铁道》基础数据",
+          "node_id": "0013",
+          "summary": "This section answers retrieval queries regarding the product analysis, user metrics, and market performance of 《崩坏：星穹铁道》(Honkai: Star Rail). \n- **Topics & Entities:** Game product evaluation, player demographics, retention, revenue trends, developer (米哈游), platform (iOS), and data provider (点点数据).\n- **Claims & Features:** Addresses the game's core advantages: industry-leading art, music, and production quality; strategic depth in traditional turn-based combat via “action order” and “weakness break” mechanics; integration of Roguelite elements for replayability; and a consistent, high-quality update cadence that sustains player engagement.\n- **Metrics & Data Points:** Provides 2025 Q1–Q3 user statistics: ~48.9% average next-day retention, ~17.6% average monthly retention, and ~67.9% male user ratio. References visual data for 2025 domestic revenue scale, active user counts, and iOS monthly active users.\n- **Dates & Versions:** Covers the April 2023 launch date and highlights strong revenue performance for 2025 major version updates (v3.2 in April, v3.4 in July).\n- **User Interests:** Answers what the player base engages with outside the game: anime, internet content, tech news, simulation/auxiliary apps, system tools, and variety shows.\n- **Evidence Types:** Combines qualitative gameplay/production analysis with quantitative charts (revenue, MAU, retention rates, interest distribution) and explicitly cites 点点数据 as the research source. No procedural steps are detailed.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\12\\104_610_800_1356_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\12\\877_612_1789_1041_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\12\\1864_622_2560_1278_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 13,
+          "end_index": 13,
+          "chunk_ids": []
+        },
+        {
+          "title": "《崩坏：星穹铁道》- 点点数据测评分析",
+          "node_id": "0014",
+          "summary": "本节为点点数据对《崩坏：星穹铁道》的专项测评分析，主要回答以下维度的检索问题：\n- **主题与实体**：游戏《崩坏：星穹铁道》、测评机构“点点数据”、游戏内场景（贝洛伯格、仙舟「罗浮」）、支持平台（iOS、Android、PC、主机）、游戏内资源（星琼）。\n- **关键指标与数据**：综合评分87.8；测评权重分布（核心战斗与玩法30%、画面与音效25%、游戏内容与系统20%、运营/商业化与社区15%、性能与设备适配10%）；抽卡基础概率0.6%；大保底阈值160抽。\n- **机制定义与流程**：回合制卡牌RPG核心机制（行动序列、共享战技点、属性弱点破解、角色技能配合）；角色养成流程（依赖装备随机属性形成差异化培养）；日常任务流程（委托耗时短、合成材料免前往特定合成台）；商业化流程（角色与武器池分离、通过活动与版本更新发放免费星琼）。\n- **核心主张与结论**：视听表现达行业标杆；成熟回合制结合Roguelite创新提供策略深度；稳定高质量版本更新保障稳健营收与玩家活跃；抽卡定价属手游较高档位，但免费资源积累途径充足；多端数据互通且主流设备帧率/功耗发热控制良好。\n- **图表与证据类型**：各测评维度均配有对应截图或数据可视化配图（共5张）；证据类型为结构化评分指标、机制描述性声明、商业化参数说明及视觉/UI表现佐证。文本中无明确日期信息。\n- **适用检索问题示例**：该游戏综合评分及分项权重是多少？回合制战斗包含哪些核心机制与策略点？抽卡概率与保底规则如何设定？支持哪些平台且是否数据互通？日常任务与合成系统有何便利性优化？版本更新节奏对商业表现与活跃度有何影响？",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\13\\90_360_1152_1078_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\13\\1365_366_1461_451_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\13\\1365_579_1461_672_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\13\\1365_810_1461_883_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\13\\1365_1017_1458_1105_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\13\\1365_1233_1458_1324_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 14,
+          "end_index": 14,
+          "chunk_ids": []
+        },
+        {
+          "title": "《原神》基础数据",
+          "node_id": "0015",
+          "summary": "This section provides foundational data and industry analysis for 《原神》(Genshin Impact), structured to support retrieval for the following query dimensions:\n\n- **Topics & Entities:** Genshin Impact’s influence on contemporary ACG/mobile gaming, cross-platform (mobile/PC/console) account synchronization, and player interest/demographic profiles.\n- **Dates & Timeframes:** 2025 annual performance data, specifically Q1–Q3 2025 retention metrics.\n- **Metrics & Data Points:** Average next-day retention (~56.5%), average monthly retention (~21.4%), male user proportion (~68.5%), 2025 CN server revenue scale, active user counts, and iOS monthly active users (MAU).\n- **Claims & Qualitative Insights:** Maintains industry-leading audiovisual and music design; art system blends surrealism with fantasy elements; gameplay depth stems from elemental reaction mechanics and combat design; led the mobile cross-platform trend through hardware-agnostic optimization and data synchronization.\n- **Figures, Tables & Evidence Types:** Includes visualizations for 2025 CN server revenue & active user trends and iOS MAU trajectories. Evidence comprises quantitative user metrics, categorical interest tags (anime, basic/higher education, movies, web novels, TV dramas), and market research data sourced from 点点数据 (Diandian Data).\n- **Retrieval Questions Answered:** What are Genshin Impact’s 2025 retention, demographic, and MAU metrics? How does the game technically and artistically impact the mobile/ACG sector? What cross-platform capabilities and optimization claims are documented? Which charts and data sources validate its 2025 market performance?",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\14\\104_610_800_1360_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\14\\877_613_1786_1041_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\14\\1864_622_2562_1281_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 15,
+          "end_index": 15,
+          "chunk_ids": []
+        },
+        {
+          "title": "《原神》- 点点数据测评分析",
+          "node_id": "0016",
+          "summary": "本章节为点点数据对《原神》的加权测评分析，主要支持以下检索查询：\n- **核心指标与定位**：综合评分87.1；定位为开放世界与二次元手游双重标杆，但指出长期内容迭代已初显疲态。\n- **评估维度与权重（Metrics）**：核心战斗与玩法（30%）、画面与音效（25%）、游戏内容与系统（20%）、运营/商业化/社区（15%）、性能与设备适配（10%）。\n- **关键主张与结论（Claims）**：\n  - 画面音效：区域美学（蒙德/璃月/纳塔）统一多变，音效反馈精准，角色设计融合幻想与中华文化。\n  - 战斗玩法：元素反应体系策略深度成熟；但存在角色强度膨胀、Boss机制复杂难懂、内容消耗过快导致“长草期”日常重复等体验损耗。\n  - 内容系统：叙事框架宏大但部分任务文本量大且不可跳过；角色养成线清晰（行业标杆），随机词条提升深度；玩法覆盖主线、活动、深渊与尘歌壶。\n  - 运营与社区：抽卡定价为行业标杆现处中等水平，活跃游玩可获取充足原石；更新节奏稳定、质量可控；二创文化繁荣但玩家群体分化明显。\n  - 性能适配：跨平台（高端PC至中端移动端）兼容优异，但随版本更新安装包体积膨胀。\n- **实体与概念（Entities/Definitions）**：涉及《原神》、点点数据、蒙德/璃月/纳塔、元素反应体系、长草期、二游、抽卡、原石、深渊、尘歌壶等。\n- **证据类型与形式（Evidence/Figures）**：采用专家定性分析与加权评分模型，各评估维度均配有对应数据图表/示意图。适用于检索游戏行业评测标准、产品优劣势分析、商业化与社区运营策略、技术性能指标及玩家体验反馈。",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\15\\88_360_1152_1078_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\15\\1365_366_1461_451_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\15\\1365_579_1461_672_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\15\\1365_810_1461_883_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\15\\1365_1015_1458_1105_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\15\\1365_1231_1458_1324_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 16,
+          "end_index": 16,
+          "chunk_ids": []
+        },
+        {
+          "title": "《明日方舟》",
+          "node_id": "0017",
+          "summary": "This section provides a performance and feature analysis of the mobile game 《明日方舟》 (Arknights), enabling retrieval for the following queries:\n- **Topics & Entities:** 《明日方舟》 (Arknights), tower defense gameplay mechanics, integrated strategy/crisis contract modes, \"音律联觉\" (offline music concert), character art/skins, narrative design.\n- **Dates & Timeframes:** Game operational lifespan (>7 years as of context), 2025 national server performance year, 2025 Q1-Q3 retention tracking period.\n- **Claims & Evaluations:** Identifies core strengths as strategic depth, level design, distinctive character art, and highly popular music events. Notes persistent weaknesses including cryptic main story writing (\"谜语人\"), weak narrative tension, low upgrade material drop rates, and time-consuming progression despite auto-battle (\"代理\") features.\n- **Metrics & Data Points:** 2025 Q1-Q3 average next-day retention (~50.6%), average monthly retention (~15.3%), male user demographic share (~79.6%). References 2025 CN server revenue scale, active user volume, and iOS monthly active users (measured in 10,000s).\n- **User Preferences:** Target audience interests span anime, films, web novels, basic and higher education subjects, and television dramas.\n- **Figures, Tables & Evidence Types:** Includes visual data representations for 2025 revenue & active user trends, iOS MAU charts, and user interest distribution. All quantitative data is attributed to proprietary research by \"点点数据\" (Diandian Data).",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\16\\104_610_800_1356_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\16\\877_613_1786_1036_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\16\\1864_622_2557_1278_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 17,
+          "end_index": 17,
+          "chunk_ids": []
+        },
+        {
+          "title": "《明日方舟》- 点点数据测评分析",
+          "node_id": "0018",
+          "summary": "This section provides a structured critical review of the mobile game 《明日方舟》(Arknights), designed to answer retrieval queries regarding its gameplay evaluation, monetization model, community dynamics, and technical performance.\n\n- **Topics & Answerable Questions:** How does Arknights compare to other ACG mobile games in strategic depth and level design? What are its core gameplay modes and progression systems? How are its gacha rates, player spending requirements, and official compensation policies perceived? What are its hardware requirements and optimization status? How does its audiovisual presentation and external community engagement rank?\n- **Entities:** 《明日方舟》(Arknights), 点点数据 (Diandian Data), 集成战略/肉鸽 (Integrated Strategy/Roguelike), 危机合约 (Contingency Contract), 音律联觉 (Ambience Synesthesia concert), 干员 (Operators).\n- **Dates:** 2021 (start year of the recurring “音律联觉” offline concert series).\n- **Definitions/Key Concepts:** 二游 (ACG-style mobile games), 肉鸽 (Roguelike gameplay loop), 长草期 (content drought period), 氪度/歪率 (player spending levels/off-banner gacha probabilities).\n- **Claims & Evaluations:** Delivers top-tier strategic depth and level design within the ACG genre; features high gacha rates with low off-banner probabilities; provides generous official compensation (cited as an industry benchmark); imposes high character progression costs and resource demands; maintains weak in-game social systems but a highly active external community; offers top-tier music and high-quality character art; requires low hardware specs with stable frame rates and optimized file size.\n- **Metrics:** Overall composite score: 86.8. Evaluation weight distribution: Core Combat & Gameplay (30%), Visuals & Audio (25%), Content & Systems (20%), Operations/Monetization/Community (15%)...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\17\\88_360_1152_1078_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\17\\1365_366_1461_451_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\17\\1365_579_1461_672_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\17\\1365_810_1461_883_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\17\\1365_1017_1458_1105_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\17\\1365_1233_1458_1324_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 18,
+          "end_index": 18,
+          "chunk_ids": []
+        },
+        {
+          "title": "《绝区零》基础数据",
+          "node_id": "0019",
+          "summary": "本章节聚焦《绝区零》产品特性与市场表现数据，可支持以下维度的检索问答：\n- **实体与主题**：游戏《绝区零》（米哈游）、跨端平台（iOS/安卓/PC/PS5）、养成系统（角色/武器/驱动盘）、核心玩法机制（连携技/弹刀/走格子）。\n- **关键声明与评价**：美术采用“潮酷漫画风”；战斗系统易上手难精通；版本更新稳定；存在硬核与轻度玩家难度感知分化、前期战斗提示不足、主线“走格子”前期节奏慢（已重做）、多维养成带来资源压力与审美疲劳等争议。\n- **时间节点**：2025年（国服收入与活跃数据）、2025年Q1-Q3（留存统计周期）。\n- **核心指标**：平均次日留存率约24.4%；平均月留存率约3.4%；男性玩家占比约68.1%；iOS月活跃用户数（单位：万人）；2025年国服收入规模与活跃用户趋势。\n- **用户画像与偏好**：兴趣偏好集中于聊天社交、影音娱乐、效率办公、购物、生活实用、阅读。\n- **图表与证据类型**：含4张数据可视化图表（收入与活跃趋势图、留存与性别占比图、兴趣偏好分布图、iOS月活趋势图）；数据证据来源为“点点数据自主研究及绘制”。\n- **适用检索问题**：《绝区零》的核心玩法与运营特点是什么？2025年该游戏的留存率、性别比例与iOS月活数据如何？玩家主要兴趣偏好有哪些？游戏存在哪些体验争议与后续优化？相关数据图表来源为何？",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\18\\104_610_800_1356_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\18\\877_613_1789_1036_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\18\\1864_622_2560_1302_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 19,
+          "end_index": 19,
+          "chunk_ids": []
+        },
+        {
+          "title": "《绝区零》- 点点数据测评分析",
+          "node_id": "0020",
+          "summary": "**可回答的检索问题与核心要点**\n\n- **主题与范畴**：《绝区零》游戏综合测评分析，涵盖视听表现、核心战斗、内容系统、运营商业化、社区反馈与设备性能适配。\n- **关键实体**：《绝区零》（游戏）、点点数据（测评发布方）、米哈游（研发/发行方）、新艾利都（游戏内都市）、空洞（游戏内超自然灾害设定）。\n- **指标与评分权重**：综合评分86.6。维度权重：核心战斗与玩法体验（30%）、画面与音效表现（25%）、游戏内容与系统（20%）、运营/商业化与社区（15%）、性能与设备适配（10%）。\n- **机制与定义**：战斗核心机制包含闪避、弹刀/格挡、连携技、失衡状态与子弹时间；操作采用普攻、闪避、特殊技、连携技四键组合，辅以长按/短按/QTE变体；早期“走格子”玩法为被迭代内容；商业化采用抽卡付费模式。\n- **核心主张与评价**：战斗设计“易上手难精通”，兼顾爽快感与操作深度；美术融合复古与潮流元素，角色建模具物理效果，剧情演出形式多样；官方态度积极，能根据反馈进行底层架构调整；因动作门槛较高，社区口碑呈两极分化；角色养成系统与米哈游其他产品相似，易使老玩家产生审美疲劳。\n- **时间与周期**：游戏背景设定为“近未来”；备受争议的“走格子”玩法在上线后不到半年内完成全部更新迭代。\n- **平台与性能数据**：支持iOS、Android、PC、PS5多平台；主流设备帧率稳定性良好；中低端设备可通过降低画质保障至少30帧稳定运行。\n- **证据与内容类型**：加权评分体系、玩法机制解析、运营迭代记录、跨平台性能说明、社区舆情观察；含多张游戏画面/界面截图作为视觉佐证。",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\19\\90_360_1152_1078_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\19\\1365_366_1461_451_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\19\\1365_579_1461_672_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\19\\1365_810_1461_883_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\19\\1365_1015_1461_1105_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\19\\1365_1231_1458_1324_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 20,
+          "end_index": 20,
+          "chunk_ids": []
+        },
+        {
+          "title": "以清亮的视觉风格和“老师与学生”的深厚羁绊构建了独一无二的青春乌托邦",
+          "node_id": "0021",
+          "summary": "本章节聚焦《蔚蓝档案》的产品特征、运营表现与2025年用户数据，可支持以下维度的检索问答：\n- **主题/实体**：《蔚蓝档案》(Blue Archive) 游戏的美术风格、剧情叙事、战斗机制、运营策略及国服市场表现。\n- **日期/时间范围**：2025年、2025年Q1-Q3。\n- **关键主张/评价**：视觉采用高辨识度赛璐璐风格；剧情达“二游T1水准”，以“师生羁绊”构建理想主义温情叙事；运营更新稳定且重视玩家反馈；战斗系统缺乏操作纵深与战术变化；后期内容消耗快、重复性高，亟待创新。\n- **核心指标/数据**：Steam版本好评率93%；2025Q1-Q3平均次日留存率约63.2%，平均月留存率约18.6%，男性用户占比约69.1%。\n- **图表/可视化**：“2025年《蔚蓝档案》国服收入规模与活跃用户数据表现”图表（2张）；“用户兴趣偏好”分布图（1张）。\n- **机制/定义**：战斗系统采用角色自动前进与攻击机制，辅以cost资源管理机制进行策略选择。\n- **证据类型/来源**：平台用户评价数据、用户留存与画像行为指标、第三方市场研究（点点数据自主研究及绘制）。\n- **可解答的典型检索问题**：该游戏视觉与叙事有何特色？战斗系统优缺点是什么？2025年Q1-Q3的用户留存与性别比例数据如何？目标玩家兴趣偏好有哪些？Steam平台口碑与运营策略表现如何？后期玩法面临什么挑战？",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\20\\104_610_800_1360_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\20\\877_610_1792_1041_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\20\\1864_622_2562_1357_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 21,
+          "end_index": 21,
+          "chunk_ids": []
+        },
+        {
+          "title": "《蔚蓝档案》- 点点数据测评分析",
+          "node_id": "0022",
+          "summary": "This section provides a structured review and analysis of the game 《蔚蓝档案》(Blue Archive) by 点点数据, designed to answer retrieval queries on:\n- **Metrics & Scoring:** Overall composite score of 86.2; category weights (Visuals/Audio 25%, Combat 30%, Content 20%, Operations 15%, Performance 10%); Steam positive review rate >90% (“特别好评”).\n- **Gameplay & Mechanics (Procedures):** Top-down auto-cover shooter with auto-combat, dynamic/static cover interaction, and cost-based skill deployment. Progression relies on gacha pulls, fragment consumption for star-ups, and material farming for weapon upgrades.\n- **Narrative & Systems:** Story rated “T1 level” in ACG games, featuring a dual-identity protagonist (Federal Investigation leader/Kivotos teacher) with an idealistic tone. Daily interactive systems (e.g., student group chats) enhance character bonding.\n- **Monetization & Operations:** Gacha-based model with generous reward distribution. CN server localization includes full Chinese voice acting for main storylines.\n- **Performance & Compatibility:** Low hardware requirements for mobile; officially released on Steam.\n- **Claims & Definitions:** Described as a lightweight, depth-limited but highly suitable “side game” (副游); defines “赛璐璐画风” (cel-shaded art) and “cost要素” (skill resource management) as core design pillars.\n- **Evidence & Media Types:** Supported by gameplay/UI screenshots, composite scoring breakdown, and platform review data. No tables or specific dates are provided.\nThis section can answer questions regarding the game’s review scores, combat mechanics, story quality, monetization structure, system requirements, localization features, and player sentiment metrics.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\21\\90_360_1152_1071_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\21\\1365_366_1461_451_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\21\\1365_579_1461_672_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\21\\1365_810_1461_882_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\21\\1365_1017_1458_1105_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\21\\1365_1233_1458_1324_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 22,
+          "end_index": 22,
+          "chunk_ids": []
+        },
+        {
+          "title": "《胜利女神：新的希望》基础数据",
+          "node_id": "0023",
+          "summary": "**Topics:** Game overview, artistic style & gameplay mechanics, localization impact, progression systems, market performance (revenue, active users, retention), ASO keyword strategy.\n**Entities:** 《胜利女神：新的希望》(Goddess of Victory: Nikke), Shift Up (developer), 金亨泰/Kim Hyung-tae (lead art director), 《剑灵》/Blade & Soul, 玛丽安/Marian (narrative character), 同步器/Synchronizer (game system), 点点数据/Diandian Data (analytics provider).\n**Dates:** 2025 (revenue & active user data period), 2025 Q1-Q3 (user retention tracking period).\n**Definitions/Procedures:** Describes the \"同步器\" (Synchronizer) system as a mechanic designed to reduce horizontal progression pressure across multiple characters. References the \"背身站桩射击\" (third-person back-view stationary shooting) combat loop.\n**Claims:** The fusion of Kim Hyung-tae's signature aesthetic and third-person back-view shooting creates a distinct niche in the ACG mobile market. CN server adjustments to character art and story text detract from the original experience for some players. Multi-character progression remains demanding; while the Synchronizer mitigates horizontal grinding, level caps requiring fully broken SSRs pose a notable mid-early game challenge.\n**Tables/Figures:** Two charts depicting 2025 CN server revenue scale and active user data. One chart mapping ASO keyword coverage (二次元, 射击, nikke, 游戏, 胜利女神, 抽卡, 射击游戏).\n**Metrics:** Average next-day retention: ~23.3%. Average monthly retention: ~3.6%. Male player ratio: ~81.7%.\n**Evidence Types:** Market analytics, user retention statistics, ASO keyword tracking, sourced from Diandian Data independent research and charting.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\22\\104_610_800_1356_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\22\\877_612_1789_1036_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\22\\1861_622_2560_1353_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 23,
+          "end_index": 23,
+          "chunk_ids": []
+        },
+        {
+          "title": "《胜利女神：新的希望》-点点数据测评分析",
+          "node_id": "0024",
+          "summary": "This section provides a structured review and analysis of the game 《胜利女神：新的希望》(Goddess of Victory: NIKKE) by 点点数据, designed to answer retrieval queries across the following dimensions:\n\n- **Topics & Entities:** Game review/analysis, developer Shift Up, art director Kim Hyung-tae (former Blade & Soul), key narrative moment (execution of \"Marian\"), community meme (\"Doro\").\n- **Metrics & Scoring:** Overall composite score of 85.5. Category weights: Core Combat (30%), Visuals & Audio (25%), Content & Systems (20%), Operations & Community (15%), Performance & Adaptation (10%).\n- **Procedures & Mechanics:** Third-person back-facing stationary shooting; core combat loop relies on a \"Burst skill\" cycle (stages I, II, III) requiring strategic team composition; hybrid auto-battle with manual skill activation; \"Synchronizer\" progression system to reduce horizontal grinding; max level caps require fully duplicated SSR characters.\n- **Claims & Monetization:** Gacha structure features a 200-pull pity on event banners and no pity on standard banners; claims generous in-game rewards offset pricing, making it favorable for mid/low spenders; asserts strong community engagement, prolific fan creation, and official integration of viral player memes.\n- **Technical & Platform Features:** Supports mobile-PC cross-play and portrait/landscape screen switching to cater to different player preferences (e.g., combat-focused vs. character-focused).\n- **Evidence Types:** Weighted review rubrics, gameplay mechanic breakdowns, narrative/theme analysis, monetization structure comparison, community culture examples, and technical adaptation notes.\n\nSuitable for retrieving precise information on NIKKE’s gameplay loop, gacha economy, artistic direction, progression systems, cross-platform capabilities, a...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\23\\88_360_1152_1078_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\23\\1365_366_1461_451_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\23\\1365_579_1461_672_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\23\\1365_810_1461_883_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\23\\1365_1017_1458_1105_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\23\\1365_1233_1458_1324_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 24,
+          "end_index": 24,
+          "chunk_ids": []
+        },
+        {
+          "title": "以革新性的3D沉浸技术重新定义了恋爱手游的感官体验",
+          "node_id": "0025",
+          "summary": "**Topics:** 3D immersive mobile gaming, otome game design, player retention & demographics, game community culture, 2025 market performance analysis.\n**Entities:** 《恋与深空》, iOS, 点点数据.\n**Dates:** 2025, 2025 Q1-Q3.\n**Claims & Features:** Full 3D modeling and first-person perspective deliver industry-benchmark character/scene rendering; action combat is integrated with romance progression to create \"equal partnership\" dynamics; daily interactions include mini-games (photo booth, card games, claw machines) and high-customization face/voice systems. Criticisms note pacing delays, static dialogue (\"站桩\"), shallow narrative depth, and \"fandom-style\" community behavior that may deter new players.\n**Metrics & Data:** 2025 revenue and active user trends (chart-referenced); Q1-Q3 2025 average next-day retention ~24.8%; average monthly retention ~3.4%; female player ratio ~75.4%; iOS monthly active users (in 10k); top user interests: anime, movies, web novels, basic education, TV dramas, cuisine.\n**Evidence Types:** Analytical review text, statistical charts/figures (revenue/MAU trends, retention curves, demographic breakdowns, interest distribution), third-party data attribution (点点数据).\n**Retrieval Questions Answered:** What technical and gameplay innovations define 《恋与深空》? What are the documented criticisms regarding its narrative pacing, depth, and community culture? What are the 2025 Q1-Q3 retention rates and gender demographics? What are the primary interest preferences of its player base? What visual and data evidence supports the 2025 performance analysis?",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\24\\104_610_800_1356_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\24\\877_613_1789_1036_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\24\\858_1281_904_1342_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\24\\1864_622_2557_1302_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 25,
+          "end_index": 25,
+          "chunk_ids": []
+        },
+        {
+          "title": "《恋与深空》- 点点数据测评分析",
+          "node_id": "0026",
+          "summary": "本节为点点数据对手游《恋与深空》的专项测评分析，面向检索场景可精准回答以下问题：\n\n**核心实体与主题**\n- 游戏名称：《恋与深空》\n- 测评机构：点点数据\n- 核心主题：女性向/乙女游戏赛道的产品创新、玩法设计、商业化策略、社区生态与技术性能评估。\n\n**关键指标与权重**\n- 综合评分：85.1分\n- 维度权重：画面与音效（25%）、核心战斗与玩法体验（30%）、游戏内容与系统（20%）、运营/商业化与社区（15%）、性能与设备适配（10%）\n\n**核心主张与事实主张（Claims）**\n- **画面与音效**：全3D建模+第一人称实时渲染，UI质感高级；邀请莎拉·布莱曼献唱主题曲；综合美术与沉浸感达全球同题材手游标杆。\n- **战斗与玩法**：战斗系统相对简洁，设计定位为“陪伴环节”；剧情演出与角色互动为游戏真正核心，在同类产品中属绝对T0级别。\n- **内容与养成**：提供运动陪伴、拍照合影、大头照、喵喵牌、抓娃娃等玩法，版本更新加入“陪我睡觉”“手帐”；养成线清晰，但高星卡牌资源需求大，编队强制同男主且区分属性，前期养成压力显著。\n- **商业化与运营**：抽卡付费模式，卡池排期密集、钻石获取途径有限，部分道具/皮肤定价偏高；版本更新稳定且质量高，曾多次登顶iOS畅销榜。\n- **社区生态**：玩家社群活跃，但存在一定程度的“饭圈化”问题。\n- **性能适配**：全3D导致安装包体积较大，对设备存储空间有要求；主流设备上帧率表现稳定。\n\n**图表与证据类型**\n- 包含5张配图（游戏实机画面/数据可视化截图）\n- 证据类型：平台专业测评报告、玩法机制拆解、商业化结构分析、社区生态观察、设备性能测试结论。\n\n**可解答的典型检索问题**\n1. 《恋与深空》的综合评分及各评测维度权重是多少？\n2. 该游戏在女性向赛道采用了哪些技术与内容创新（如视角、建模、战斗融合）？\n3. 游戏的核心玩法重心是什么？战斗系统在设计上如何定位？\n4. 《恋与深空》的抽卡商业化模式、资源获取难度与定价策略有何特点？\n5. 游戏版本更新节奏、iOS畅销榜表现及玩家社区氛围如何？\n6. 该游戏对手机硬件配置、存储空间及帧率表现有何具体要求？",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\25\\90_360_1152_1071_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\25\\1365_366_1461_451_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\25\\1365_579_1461_672_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\25\\1365_810_1461_883_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\25\\1365_1017_1461_1105_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\25\\1365_1231_1458_1324_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 26,
+          "end_index": 26,
+          "chunk_ids": []
+        },
+        {
+          "title": "《阴阳师》基础数据",
+          "node_id": "0027",
+          "summary": "本章节提供《阴阳师》手游的基础数据与产品评估，可支持以下维度的检索问答：\n- **主题与实体**：《阴阳师》游戏本体、和风美学、回合制战斗、御魂搭配系统、经典玩法（秘闻副本/为崽而战/超鬼王）、免费玩家/月卡党。\n- **时间范围**：近九年运营周期、2025年整体数据、2025年Q1-Q3季度数据。\n- **产品声明与评价**：视听辨识度与文化符号定位；长线养成资源循环机制；玩家痛点声明（月度活动模板化、后期内容重复、御魂强化随机性“强歪”、新玩家入坑门槛高）。\n- **核心指标**：平均次日留存率（约22.1%）、平均月留存率（约4.8%）、男性用户占比（约74.8%）。\n- **ASO关键词**：阴阳师、式神、痔痒鼠、日和风、晴明、onmyoji。\n- **图表与证据类型**：2025年国服收入规模与活跃用户数据图、iOS月活跃用户数（万人）趋势图；定量数据与第三方行业数据报告（来源：点点数据自主研究及绘制）。",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\26\\104_610_800_1356_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\26\\877_610_1789_1036_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\26\\1864_622_2557_1302_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 27,
+          "end_index": 27,
+          "chunk_ids": []
+        },
+        {
+          "title": "《阴阳师》- 点点数据测评分析",
+          "node_id": "0028",
+          "summary": "This section provides a structured analytical review of the mobile game 《阴阳师》(Onmyoji) by 点点数据, optimized to answer retrieval queries across the following dimensions:\n\n**Topics:** Long-term mobile game evaluation, turn-based RPG strategy design, live-ops & community management, gacha monetization models, cross-platform performance optimization.\n**Entities:** 《阴阳师》, 点点数据, 式神 (Shikigami), 御魂 (Soul equipment), UR式神, SSR全集赏, 平安京 (Heian-kyo), 秘闻副本, 斗技 (PVP Arena), LBS社交, 桌面版模拟器.\n**Dates/Timeframes:** 2025 (introduction of UR shikigami & SSR collection reward pathway); ~9 years (continuous operational lifespan).\n**Definitions/Mechanics:** Turn-based card RPG combat (strategy via skill timing & deployment); 御魂 system (equipment with randomized stat enhancement); UR shikigami synergy/combo mechanics; SSR全集赏 (guaranteed collection reward system).\n**Procedures/Operations:** Stable version update & festival event cadence; gacha-based monetization with F2P/monthly-card resource loops; developer feedback response via “制作组回信” (dev letters); soul enhancement RNG progression; desktop emulator deployment for PC-like experience.\n**Claims & Findings:** Art/audio quality remains high with iterative model/effect upgrades; strategy depth is sustained via shikigami-soul combinations and expanded by 2025 UR mechanics; F2P players have sustainable resource cycles; PVP meta shifts rapidly, increasing dependency on new shikigami; soul RNG enhancement is a persistent player pain point; operations maintain stable updates, direct dev communication, and active UGC/LBS social engagement; device compatibility is continuously optimized.\n**Metrics:** Overall composite score: 84.9. Evaluation weights: 画面与音效表现 (25%), 核心战斗与玩法体验 (30%), 游戏内容与系统 (20%), 运营、商业化与社区 (15%), 性能与设备适配 (10%).\n**Figures/Tables & Eviden...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\27\\90_360_1221_1072_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\27\\1365_366_1461_451_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\27\\1365_579_1461_672_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\27\\1365_810_1461_882_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\27\\1365_1017_1458_1105_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\27\\1365_1233_1458_1324_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 28,
+          "end_index": 28,
+          "chunk_ids": []
+        },
+        {
+          "title": "《鸣潮》基础数据",
+          "node_id": "0029",
+          "summary": "**可回答的检索问题与核心信息摘要**\n\n- **主题与实体**：聚焦手游《鸣潮》的基础数据、玩法系统评价、2025年市场表现及用户画像。核心实体包括游戏机制（“合轴”机制、“弹刀”、闪避、空中连段、声骸）、探索工具（钩索、跑墙、滑翔）、竞品对标（ACT二游、主流竞品）及数据来源（点点数据）。\n- **时间范围**：2025年（国服收入与活跃数据）、2025年第一季度至第三季度（用户留存数据）。\n- **机制定义与玩法评价（Claims/Definitions）**：\n  - 战斗系统：被评价为行业标杆，操作反馈清晰扎实；“合轴”机制通过精准释放技能触发协奏反应，提供高策略性与操作深度。\n  - 探索与内容：移动手段流畅自由，但开放世界内容深度不足、地图设计平淡、缺乏标志性景观；收集品奖励多为养成材料与基础货币，缺乏独特性。\n  - 养成与商业化：角色/武器/声骸养成线长、资源需求大，后期存在“坐牢刷词条”压力；抽卡保底机制与主流一致，但角色/武器混池受部分玩家批评。\n  - 技术表现：移动端及部分PC配置存在卡顿、掉帧、穿模等优化问题。\n- **核心指标（Metrics）**：\n  - 2025Q1-Q3平均次日留存率：约31.9%\n  - 2025Q1-Q3平均月留存率：约4.9%\n  - 男性用户占比：约83.1%\n  - 用户兴趣偏好标签：动漫、电影、网络小说、音乐、高等教育、基础教育。\n- **图表与证据类型（Figures/Evidence）**：包含3张数据可视化图表（2025年国服收入规模与活跃用户数据图、留存数据图、用户兴趣偏好图）；证据类型为第三方数据机构（点点数据）的自主研究定量统计与定性玩法/系统分析结论。\n- **典型检索问题覆盖**：《鸣潮》战斗系统与“合轴”机制有何特点？《鸣潮》开放世界探索与养成体系存在哪些优缺点？2025年Q1-Q3《鸣潮》的次留、月留及男性用户占比是多少？《鸣潮》玩家群体的主要兴趣偏好有哪些？《鸣潮》抽卡机制与技术优化表现如何？",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\28\\104_610_800_1356_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\28\\877_613_1789_1036_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\28\\1864_622_2560_1353_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 29,
+          "end_index": 29,
+          "chunk_ids": []
+        },
+        {
+          "title": "《鸣潮》-点点数据测评分析",
+          "node_id": "0030",
+          "summary": "This section provides a structured review and analysis of 《鸣潮》(Wuthering Waves) by 点点数据, optimized to answer retrieval queries across the following dimensions:\n\n- **Topics & Entities:** Game evaluation, 《鸣潮》, 点点数据, 虚幻引擎 (Unreal Engine), open-world exploration, gacha monetization, player community feedback.\n- **Metrics & Scoring:** Overall comprehensive score: 84.6. Evaluation weights: Core Combat (30%), Graphics & Audio (25%), Content & Systems (20%), Operations & Commercialization (15%), Performance & Device Adaptation (10%). Base gacha probability: 0.8%.\n- **Definitions & Mechanics:** Explains core combat terminology including “弹刀” (parry/deflect), “合轴” (concerto timing), and “协奏反应” (concerto reaction) for strategic damage output. Details the “声骸” (Echo) progression system and open-world mobility tools (grappling hook, wall-running, gliding).\n- **Claims & Evaluations:** Combat system widely praised for depth, feedback, and rarity in domestic ACG games. Graphics feature a cold post-apocalyptic aesthetic with improved map precision in v2.0, though some character designs stylistically clash. Early narrative pacing and protagonist motivation were criticized but improved by v2.7. Long-term progression involves heavy resource demands and Echo stat farming friction. High-end PC delivers optimal experience; mobile and low-end PC suffer from stuttering, frame drops, and clipping, marking mobile optimization as an ongoing challenge.\n- **Procedures & Operations:** Stable version update cycle with continuous content optimization. Gacha monetization relies on character/weapon mixed pools, sparking community discussion on acquisition difficulty. Active player community engages in ongoing feedback, driving iterative adjustments.\n- **Dates & Versions:** References version 2.0 (graph...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\29\\90_360_1218_1071_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\29\\1365_366_1458_450_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\29\\1365_579_1461_672_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\29\\1365_810_1461_882_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\29\\1365_1017_1458_1105_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\29\\1368_1233_1450_1324_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 30,
+          "end_index": 30,
+          "chunk_ids": []
+        },
+        {
+          "title": "高审美立绘与轻玩法成就副游典范 多年长线运营以诚意滋养玩家生态",
+          "node_id": "0031",
+          "summary": "This retrieval-oriented summary outlines the questions this section can answer regarding 《碧蓝航线》(Azur Lane). **Topics & Entities:** Core gameplay mechanics (dual-stick bullet hell + shipgirl collection), technical implementation (Live2D, CN/JP bilingual voice acting), and monetization structure. **Dates:** 2025, 2025 Q1-Q3, and the game's 8th anniversary milestone. **Procedures & Operations:** Long-term content delivery via monthly events and quarterly major versions, 8th-anniversary UX optimizations (newbie guide overhaul, story system integration), and ongoing community management. **Claims & Player Feedback:** F2P and monthly-card friendly progression, skin-only monetization (no forced spending or constellation/gacha pity systems), stable community atmosphere, and player critiques regarding its \"electronic bonsai\" nature and relatively weak core gameplay depth. **Metrics & Data:** 2025 Q1-Q3 average Day-1 retention (~21.8%), average Month-1 retention (~3.9%), male user proportion (~79.9%), and primary user interest categories (anime, movies, web novels, basic education, live streaming, TV dramas). **Figures & Evidence Types:** Referenced charts/figures detailing 2025 CN server revenue scale and iOS MAU trends, with all quantitative metrics and analytical evidence sourced from 点点数据 research.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\30\\85_610_808_1360_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\30\\877_613_1792_1041_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\30\\1864_622_2560_1302_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 31,
+          "end_index": 31,
+          "chunk_ids": []
+        },
+        {
+          "title": "《碧蓝航线》-点点数据测评分析",
+          "node_id": "0032",
+          "summary": "**Topics:** Game review and analysis covering gameplay mechanics, monetization strategy, audio-visual design, content progression, community operations, and device performance optimization.\n**Entities:** 《碧蓝航线》(Azur Lane), 点点数据 (review publisher), 塞壬 (Sirens, in-game antagonist faction), Live2D (dynamic animation technology).\n**Metrics & Scoring:** Overall review score: 84.2. Evaluation category weights: Core Combat & Gameplay (30%), Audio & Visuals (25%), Content & Systems (20%), Operations, Monetization & Community (15%), Performance & Device Compatibility (10%).\n**Key Claims:** Successfully merges dual-joystick bullet-hell shooting with shipgirl collection; maintains a highly F2P/low-spend friendly economy with monetization focused on skins and gacha (explicitly notes \"no constellation/forced spending\"); fosters a stable, UGC-driven community with strong player retention; delivers consistent performance across mainstream devices and emulators after long-term operation.\n**Procedures & Mechanics:** Dual-joystick control scheme (left for movement, right for manual aiming/shooting); ship-type counter hierarchy (Destroyer → Light Cruiser → Heavy Cruiser → Battleship); dynamic bullet evasion and multi-phase boss encounters; quality-of-life automation features including auto-battle (自律作战), proxy command (代理指挥), and low-cost fleet configuration.\n**Dates & Milestones:** 8th Anniversary update introduced a chronological story archive system to consolidate faction narratives and reduce onboarding friction for new players.\n**Evidence & Assets:** Qualitative review analysis supported by 5 referenced images (likely gameplay, UI, and data visualizations); descriptive evidence of bilingual voice acting, dynamic BGM genre transitions, Live2D skin touch/breathing feedback, and commun...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\31\\88_360_1152_1078_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\31\\1365_366_1458_450_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\31\\1365_579_1461_672_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\31\\1365_810_1461_883_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\31\\1365_1017_1458_1105_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\31\\1365_1233_1458_1324_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 32,
+          "end_index": 32,
+          "chunk_ids": []
+        },
+        {
+          "title": "二次元移动游戏市场概况&体验指标分析",
+          "node_id": "0033",
+          "summary": "This section enables retrieval for the following questions and data points:\n- **Topics & Entities:** What is the current overview and experience metric analysis of the anime-style mobile game market? How are representative titles evaluated for user experience? Key entities include AI technology, simulation-management gameplay mechanics, and diversified business models.\n- **Dates/Timeframes:** What is the projected timeframe for upcoming market competition? (Next 3 years globally).\n- **Claims & Predictions:** What are the stated future competitive focuses for the sector? (AI-participated multi-thread narratives, exploration of diversified business models, and deepening of \"simulation-management\" elements into core gameplay loops).\n- **Figures & Evidence Types:** What visual evidence supports the analysis? (Three referenced figures/charts covering market overview & experience metrics, typical game experience evaluations, and market development trends). Evidence is presented through visual data representations and analytical trend statements.\n- **Metrics, Definitions & Procedures:** Are specific numerical metrics, formal definitions, or operational procedures provided? (None are detailed in the provided text).\n- **Core Retrieval Questions:** What are the current market conditions and user experience benchmarks for anime-style mobile games? What strategic trends and competitive priorities will define the global market over the next three years?",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\32\\170_769_352_954_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\32\\1026_784_1213_946_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\32\\1842_387_2029_594_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 33,
+          "end_index": 33,
+          "chunk_ids": []
+        },
+        {
+          "title": "AI参与的多线程叙事是趋势还是陷阱？",
+          "node_id": "0034",
+          "summary": "本章节可支持以下维度的检索与问答：\n- **核心议题/可回答问题**：AI如何影响二次元游戏的多线程叙事与角色塑造？AI对话功能在提升沉浸感的同时面临哪些叙事与商业风险？当前游戏行业实装AI NPC的主流策略是什么？如何平衡AI互动自由度与角色人设可控性？\n- **关键实体**：《逆水寒》手游、《Whispers from the star》、《和平精英》、蔡浩宇（米哈游创始人）、吉莉（AI队友）、点点数据。\n- **时间信息**：无具体日期，仅使用“直至今日”“近年”等相对时间表述，反映当前行业现状。\n- **核心定义/概念**：OOC（Out of Character/人设崩塌）、“人设防火墙”（约束AI输出以严格符合角色底层逻辑的机制）、“有限自由”策略（将AI置于主线外作为补充玩法）、AI NPC、多线程叙事。\n- **实施策略/流程**：将AI功能部署于主线叙事之外，定位为日常陪伴补充玩法；为AI模型建立严格的“人设防火墙”，确保所有交互响应遵循角色预设逻辑。\n- **核心主张/论点**：AI对话能极大满足情感陪伴需求，但不可预测性会破坏二次元游戏依赖的精密人设与叙事权威；无限制互动易导致角色“玩坏”（OOC），削弱核心粉丝付费动机；当前AI NPC多作为非核心娱乐玩法，不影响主线世界观；技术想象力需与商业风险平衡。\n- **图表/证据类型**：含3张游戏实装AI功能的配图（产品截图/示意图）；无表格；证据类型为行业产品案例分析，数据来源标注为“点点数据自主研究及绘制”。\n- **关键指标/数据**：《Whispers from the star》PC端售价为33.99元。",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\33\\77_805_882_1260_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\33\\930_811_1736_1266_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\33\\1781_814_2584_1266_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 34,
+          "end_index": 34,
+          "chunk_ids": []
+        },
+        {
+          "title": "商业模式的多元化探索",
+          "node_id": "0035",
+          "summary": "**可回答的检索问题与核心内容摘要：**\n- **主题/领域：** 二次元移动游戏商业模式多元化探索、变现路径优化、玩家价值感知重塑、抽卡机制改革。\n- **核心实体：** 《伊瑟》、《二重螺旋》、二次元移动游戏行业。\n- **关键概念/定义：** \n  - “深度付费”：以榨取单客价值为核心，通过拆分角色机制（命座/碎片）实现高ARPU的模型。\n  - “广度付费”：以扩大玩家基数和维持长期生态为核心，降低单点付费门槛的模型。\n  - “小保底歪池”：抽卡机制中的概率保底与角色偏移设定。\n- **核心主张/趋势：** 传统抽卡模式面临两大困境：①机制拆分导致“付费才能变完整”，损害大众体验；②随机性透支引发玩家焦虑与疲惫。行业正从“深度付费”向“广度付费”转型，商业化逻辑从“卖角色”转向“卖体验”。该转型是红海竞争中寻求差异化与可持续发展的必然尝试，但新模式成效尚待验证。\n- **具体机制/流程（案例）：** \n  - 《伊瑟》改革：重复抽取收益仅限数值成长，角色机制初始即为“完全体”。\n  - 《二重螺旋》革新：取消角色与武器抽卡，本体及专属武器通过玩法/活动免费产出，付费点完全转移至不影响强度的外观/皮肤。\n  - 温和改良路径：取消小保底歪池、提高基础概率等（未颠覆底层框架）。\n- **图表/证据类型：** 包含两张示意图/截图，分别展示《伊瑟》的重复抽取数值成长机制与《二重螺旋》的外观付费模式。证据类型为定性分析（行业设计趋势、玩家心理反馈、产品机制对比），无具体财务数据或量化指标。\n- **未覆盖信息：** 无具体时间节点、无营收/留存等量化数据、无新模式长期验证结果。",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\34\\450_851_1258_1356_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\34\\1413_851_2221_1356_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 35,
+          "end_index": 35,
+          "chunk_ids": []
+        },
+        {
+          "title": "“类模拟经营”元素进一步深化核心玩法循环中",
+          "node_id": "0036",
+          "summary": "This section addresses the strategic integration of \"simulation-like management\" (类模拟经营) elements into anime-style (二次元) mobile games. It can answer retrieval questions regarding:\n- **Topics & Concepts:** The evolution of in-game home/base systems from static, narrative-focused \"decorative companionship\" to heavy simulation mechanics that actively deepen core gameplay loops.\n- **Entities:** Games and developers driving the trend: 《蓝色星原：旅遥》(蛮湫网络), 《明日方舟：终末地》(鹰角网络), 《望月》(诗悦网络), plus legacy examples 《明日方舟》, 《原神》, and 《重返未来1999》.\n- **Dates:** 2026–2027 (projected release window for upcoming titles heavily promoting simulation management as a core feature).\n- **Definitions & System Evolution:** Contrasts traditional \"家园系统\" (low-pressure, high-display, emotionally driven, non-impactful on core loops) with new \"类模拟经营\" systems (building, farming, automation, resource-loop driven, high player agency).\n- **Key Claims & Drivers:** (1) Provides long-term daily content to mitigate post-update \"content droughts\" (长草); (2) Creates systemic resource loops linking management output to character progression and combat; (3) Shifts players from passive observers to active builders, aligning with open-world autonomy trends. The section claims success requires deeply integrating management mechanics with character narratives to avoid conflicting with traditional players' low-burden preferences, potentially forming a new competitive moat for the genre.\n- **Figures & Visual Evidence:** Comparative screenshots/concept art showcasing legacy systems (《明日方舟》基建, 《原神》尘歌壶, 《重返未来1999》家园) alongside newer implementations featuring urban management, industrial infrastructure, and farming mechanics.\n- **Evidence Types & Metrics:** Qualitative design analysis, comparative gameplay breakdowns, and promotio...",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\35\\125_789_680_1081_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\35\\565_1119_608_1176_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\35\\562_1212_613_1255_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\35\\565_1296_616_1335_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\35\\728_793_1282_1078_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\35\\730_1116_1282_1395_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\35\\1456_789_1994_1066_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\35\\1994_783_2533_1093_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\35\\1450_1084_1997_1395_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 36,
+          "end_index": 36,
+          "chunk_ids": []
+        },
+        {
+          "title": "法律声明",
+          "node_id": "0037",
+          "summary": "This section outlines the legal and copyright terms for the report, enabling retrieval of answers to the following:\n- **Topics & Claims:** Copyright protection scope, intellectual property ownership, and liability disclaimers for report usage.\n- **Entities:** The publishing company/Diandian Data team, advertisers, original authors of publicly sourced data, and report users/institutions.\n- **Procedures:** Requirement to obtain explicit permission from the company's new media before reproducing or distributing content; strict prohibition of unauthorized commercial use.\n- **Tables, Figures & Protected Content:** All text, images, and tables within the report are legally protected under trademark and copyright laws.\n- **Metrics & Evidence Types:** Industry data and market forecasts are generated via desktop research, industry interviews, Diandian Data monitoring product data, and statistical prediction models.\n- **Governing Laws:** Unauthorized use violates the PRC Copyright Law, other relevant domestic regulations, and applicable international conventions.\n- **Liability Claims:** All data and predictions are provided for reference only; the publisher assumes zero legal responsibility, and users bear full liability for any actions, disputes, or consequences arising from the report's use.",
+          "images": [],
+          "start_index": 37,
+          "end_index": 37,
+          "chunk_ids": []
+        },
+        {
+          "title": "POINT AWARDS 》 火热申报中",
+          "node_id": "0038",
+          "summary": "This section outlines the application details for the 2025 POINT AWARDS, designed to answer retrieval queries regarding:\n- **Topics & Categories:** Annual rankings for overseas mobile games and apps, specifically covering four award categories: 2025 Outstanding Overseas Mobile Game, 2025 Outstanding Overseas App, 2025 Pioneer Overseas Game/App, and 2025 Excellent Overseas Service Enterprise.\n- **Procedures & Dates:** Open submission process for the awards with a firm application deadline of December 31.\n- **Claims & Metrics:** Asserts a 100% data-driven selection methodology to support domestic and overseas financing and partnerships; claims global exposure via 200+ international media outlets (explicitly naming Reuters); and promises long-term promotional assets including an overseas white paper and dedicated articles on the “点点出海” (Diandian Chuhai) WeChat official account.\n- **Entities:** POINT AWARDS, Reuters, 点点出海公众号 (Diandian Chuhai Official Account), 出海白皮书 (Overseas White Paper).\n- **Figures & Evidence Types:** Includes a promotional image/banner. Relies on quantitative metrics (100% data-driven, 200+ media outlets) and promotional claims as evidence of the award’s authority and reach. No tables or formal definitions are provided.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\37\\1821_732_2320_1230_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 38,
+          "end_index": 38,
+          "chunk_ids": []
+        },
+        {
+          "title": "游戏数据/移动应用分析平台",
+          "node_id": "0039",
+          "summary": "This section introduces **点点数据 (Diandian Data)**, a mobile application and game data analytics platform. It supports retrieval for the following:\n- **Entity & Definition:** Identifies 点点数据 as an integrated data monitoring service provider for global enterprises, offering tracking for app downloads, revenue, user behavior, and app market performance.\n- **Topics & Capabilities:** Answers what functionalities the platform provides, including global store data, multi-dimensional rankings, download/revenue tracking, competitor analysis, user profiling, SDK technical integration, user stickiness analysis, and ASO/ASA strategy analysis.\n- **Metrics & Scale:** Provides operational coverage data: 10 million+ apps covered, 170 million+ daily active devices monitored, 10 billion+ daily data storage volume, and 276 countries/regions tracked.\n- **Figures, Tables & Evidence Types:** Contains multiple UI/dashboard screenshots illustrating platform interfaces and data visualization. No tables are present. Evidence consists of platform capability claims and quantitative scale metrics.\n- **Retrieval Scope:** Optimized for queries regarding mobile app/game market intelligence tools, ASO/ASA analytics platforms, competitor tracking services, user behavior monitoring, and data infrastructure benchmarks for app analytics providers. No specific dates or step-by-step procedures are included.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\154_405_248_511_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\312_397_424_511_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\485_402_573_507_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\637_400_749_510_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\965_400_1077_510_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\1133_400_1237_510_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\1293_400_1402_510_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\122_615_181_664_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\538_615_589_663_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\920_615_968_666_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\1256_615_1304_664_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\122_717_178_766_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\448_717_498_766_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\1186_717_1237_766_image.jpg",
+              "image_caption": ""
+            },
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\38\\1920_264_2410_742_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 39,
+          "end_index": 39,
+          "chunk_ids": []
+        },
+        {
+          "title": "获取每日免费报告",
+          "node_id": "0040",
+          "summary": "This section addresses queries regarding the acquisition and usage of free industry reports. It answers:\n- **Procedures:** How to obtain daily free reports (via daily sharing in a WeChat group).\n- **Topics & Entities:** Distribution of the latest industry reports through a \"high-end community\" WeChat group.\n- **Claims & Usage Guidelines:** What are the copyright and compliance restrictions? All shared reports are publicly compliant versions; intellectual property belongs to the original publishing institutions; usage is strictly limited to small-scale internal learning.\n- **Figures:** Contains one embedded reference image (likely a QR code or promotional graphic for group access).\nThe section does not contain specific dates, quantitative metrics, tables, definitions, or empirical evidence types.",
+          "images": [
+            {
+              "image_path": "D:\\code\\semantic-construct\\md_and_pdf\\result\\result\\2025Q4二次元移动游戏体验评测分析报告-点点数据-2025-38页\\images\\39\\893_578_1532_1098_image.jpg",
+              "image_caption": ""
+            }
+          ],
+          "start_index": 40,
+          "end_index": 40,
+          "chunk_ids": []
+        }
+      ],
+      "chunk_ids": []
+    }
+  ]
+}
